@@ -22,8 +22,11 @@ LIBRARY_URL = "https://songkyungho.github.io/ai-safety-library/"
 LIBRARY_LABEL = "AI 안전 라이브러리"
 NAV_ITEMS = NAV_LEFT + NAV_RIGHT
 
-# 동향(#474284 퍼플 네이비·#f6f1e4 크림·#f3b84f 골드)과 같은 시리즈이되
-# 아카이브 톤으로 살짝 식힌 슬레이트 네이비·차가운 크림·브라스 골드.
+# 세 사이트가 한 시리즈로 보이도록 지면·타이포·구조는 라이브러리와 같게 두고,
+# 헤더 계열색만 갈라 놓는다. 동향은 퍼플 네이비(#474284), 라이브러리는 슬레이트
+# 네이비(#3a5270)를 쓰므로 용어집은 색상환에서 확실히 떨어진 딥 파인 그린을
+# 쓴다. 하이라이트도 두 사이트의 골드(#f3b84f)·브라스(#d4a45a)와 겹치지 않게
+# 구리빛으로 바꾼다.
 NAV_CSS = """
 :root {
   color-scheme: light;
@@ -41,11 +44,11 @@ NAV_CSS = """
   --gridline: #ebe6da;
   --baseline: #ddd6c8;
   --accent: #c45c48;
-  --accent-focus: #3a5270;
-  --navy: #3a5270;
-  --navy-2: #4a6584;
-  --gold: #d4a45a;
-  --gold-strong: #e0b56e;
+  --accent-focus: #2f5951;
+  --navy: #2f5951;
+  --navy-2: #3e6f64;
+  --gold: #cf8b5e;
+  --gold-strong: #dda078;
   --on-navy: #f4f2eb;
   --on-navy-muted: #c5ced8;
   --sage: #3f5340;
@@ -172,7 +175,7 @@ def _nav_items(items: list[tuple[str, str]], current: str, *, rel_prefix: str) -
 
 
 def nav_html(current: str = "", *, rel_prefix: str = "") -> str:
-    left = list(NAV_LEFT) + [(LIBRARY_URL, LIBRARY_LABEL), (DIGEST_URL, DIGEST_LABEL)]
+    left = list(NAV_LEFT) + [(DIGEST_URL, DIGEST_LABEL), (LIBRARY_URL, LIBRARY_LABEL)]
     return (
         '<nav class="global-nav" aria-label="사이트">'
         '<div class="global-nav-inner">'
@@ -198,8 +201,7 @@ def shell_html(
         parts.append("<h1>AI 안전 용어집</h1>")
         parts.append(
             '<p class="tagline">AI 안전 동향 코퍼스에서 뽑은 핵심 용어 '
-            f'<span id="headCount">{n}</span>개. 각 표제어에 실제 용례와 '
-            '수집 지표를 붙였다.'
+            f'<span id="headCount">{n}</span>개.'
             f"{author_byline_html()}</p>"
         )
     else:
