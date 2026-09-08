@@ -1,0 +1,4134 @@
+term,df,months,recency,병기문서,병기율,괄호안등장,topic1,lang
+디지털서비스법,19,7,1.0,15,0.7895,1,youth,ko
+Zenodo,42,1,1.0,30,0.7143,0,safety_research,en
+탐지 시간,20,8,0.85,11,0.55,0,cybersecurity,ko
+양해각서,18,10,0.889,8,0.4444,0,guideline,ko
+attack success rate,14,5,1.0,5,0.3333,1,safety_research,en
+언어 모델,163,34,0.816,86,0.3221,0,safety_research,ko
+재단,16,10,0.938,7,0.3043,0,norms,ko
+authority,18,6,0.944,6,0.2857,1,cybersecurity,en
+adaptation,13,7,1.0,4,0.2857,1,safety_research,en
+한국지능정보사회진흥원,29,13,0.724,8,0.2759,0,guideline,ko
+탈옥,21,11,0.81,6,0.2727,1,safety_research,ko
+optimization,34,7,1.0,10,0.2703,0,safety_research,en
+증류,32,6,1.0,10,0.2703,0,frontier,ko
+정렬,260,19,0.965,78,0.2644,1,safety_research,ko
+Protocol,16,7,0.875,5,0.2381,0,agentic_ai,en
+붕괴,20,7,0.95,7,0.2333,0,safety_research,ko
+시간 지평,13,9,0.615,3,0.2308,0,agentic_ai,ko
+보정,19,6,1.0,7,0.2258,0,safety_research,ko
+지평,17,11,0.706,4,0.2222,0,incidents,ko
+연구소,98,20,0.908,41,0.2216,0,frontier,ko
+안전연구소,20,12,0.6,9,0.2195,0,frontier,ko
+Distillation,35,8,1.0,8,0.2162,3,frontier,en
+공격 성공률,49,11,0.918,11,0.2157,2,safety_research,ko
+chain-of-thought,28,10,0.786,6,0.2143,1,frontier,en
+SWE-bench Pro,14,6,1.0,3,0.2143,0,frontier,en
+개인정보보호법,14,7,0.714,3,0.2143,0,law,ko
+프롬프트 인젝션,14,5,1.0,3,0.2143,0,cybersecurity,ko
+Security Institute,19,12,0.579,4,0.2105,0,frontier,en
+unclear,40,6,0.925,8,0.2,0,frontier,en
+refused,35,8,0.914,7,0.2,0,safety_research,en
+보호법,21,10,0.857,8,0.2,0,law,ko
+인공지능안전연구소,20,6,1.0,4,0.2,0,norms,ko
+추론 모델,15,10,0.733,3,0.2,1,safety_research,ko
+LLM-as-a-Judge,14,7,0.929,3,0.2,1,agentic_ai,en
+URL,56,17,0.804,12,0.1967,0,frontier,en
+생각,26,12,0.808,6,0.1935,0,frontier,ko
+안전 정렬,37,5,1.0,8,0.1905,0,safety_research,ko
+아동 성착취물,19,9,0.895,4,0.1905,0,youth,ko
+학습 없이,14,5,0.929,4,0.1905,0,safety_research,ko
+complied,37,7,0.919,7,0.1892,0,safety_research,en
+Prediction,16,6,1.0,3,0.1875,0,safety_research,en
+생성형 인공지능,27,12,0.741,5,0.1852,0,cybersecurity,ko
+안전 연구소,18,8,0.889,11,0.1833,0,guideline,ko
+인코더,20,5,1.0,4,0.1818,0,safety_research,ko
+컨퍼런스,19,12,0.632,4,0.1818,0,norms,ko
+대회,13,9,0.769,6,0.1818,0,cybersecurity,ko
+컴퓨트,34,12,0.824,6,0.1765,0,frontier,ko
+인젝션,17,6,1.0,3,0.1765,0,cybersecurity,ko
+미토스,17,5,1.0,3,0.1765,0,cybersecurity,ko
+Council,15,9,0.6,3,0.1765,0,law,en
+감사 가능성,15,5,1.0,3,0.1765,1,guideline,ko
+대규모 언어모델,45,11,0.956,8,0.1739,8,safety_research,ko
+세부 내용,29,9,0.931,5,0.1724,0,frontier,ko
+궤적,53,8,0.981,9,0.1698,0,safety_research,ko
+품질관리,12,9,0.75,2,0.1667,0,law,ko
+감사 로그,12,7,0.917,2,0.1667,0,agentic_ai,ko
+딥시크,12,7,0.583,2,0.1667,0,frontier,ko
+스킬,31,9,0.968,5,0.1613,3,cybersecurity,ko
+엔진,19,9,1.0,5,0.1613,0,cybersecurity,ko
+거절,39,10,0.923,8,0.16,8,safety_research,ko
+M tokens,25,10,0.92,4,0.16,0,frontier,en
+검증 체계,23,7,1.0,4,0.16,0,safety_research,ko
+하네스,19,6,1.0,3,0.1579,1,cybersecurity,ko
+오작동,18,12,0.944,3,0.1579,0,incidents,ko
+Theory,18,6,0.944,3,0.1579,0,safety_research,en
+일반화 범위,17,2,1.0,3,0.1579,0,safety_research,ko
+설득력,13,11,0.462,2,0.1538,0,safety_research,ko
+업무협약,13,5,0.923,2,0.1538,0,frontier,ko
+패밀리,13,5,0.923,2,0.1538,0,safety_research,ko
+루브릭,13,4,1.0,2,0.1538,0,agentic_ai,ko
+개인정보 보호법,12,6,1.0,4,0.1538,0,law,ko
+언어모델,88,14,0.898,15,0.1531,0,safety_research,ko
+Claude Mythos Preview,20,6,0.95,3,0.15,0,cybersecurity,en
+특정 모델,19,8,0.895,3,0.15,0,frontier,ko
+산출물,27,8,0.963,4,0.1481,0,agentic_ai,ko
+Index,57,17,0.895,9,0.1475,0,frontier,en
+인공지능법,39,22,0.462,6,0.1429,0,law,ko
+실패 모드,28,8,0.929,4,0.1429,0,safety_research,ko
+attention,24,8,0.958,4,0.1429,2,frontier,en
+post-training,21,11,0.857,3,0.1429,4,safety_research,en
+성능 검증,13,2,1.0,2,0.1429,0,safety_research,ko
+Score,24,6,0.958,6,0.1395,0,safety_research,en
+benchmarks,22,7,0.955,3,0.1364,0,frontier,en
+리스크 관리,20,11,0.75,3,0.1364,0,guideline,ko
+상호운용성,30,10,0.9,4,0.1333,0,standards,ko
+reinforcement learning,29,10,0.931,4,0.1333,1,safety_research,en
+Policies,15,9,0.733,2,0.1333,0,frontier,en
+옴니버스,15,6,0.933,2,0.1333,2,law,ko
+어휘,14,6,0.929,2,0.1333,0,safety_research,ko
+사무국,13,11,0.692,2,0.1333,0,law,ko
+Consensus,13,7,1.0,2,0.1333,2,agentic_ai,en
+불일치,64,13,0.922,9,0.1324,0,safety_research,ko
+Diffusion,21,8,0.857,3,0.1304,0,safety_research,en
+Panel,19,8,0.842,3,0.1304,0,law,en
+트랙,16,6,1.0,3,0.1304,0,norms,ko
+카드,24,9,0.875,4,0.129,0,cybersecurity,ko
+experts,22,9,0.636,4,0.129,0,frontier,en
+미세 조정,13,10,0.615,4,0.129,0,cybersecurity,ko
+Flash,56,9,1.0,8,0.125,0,frontier,en
+preview,45,12,0.978,7,0.125,0,frontier,en
+커버리지,24,7,1.0,3,0.125,0,safety_research,ko
+Safety Institute,24,11,0.625,3,0.125,0,norms,en
+권고사항,16,8,0.875,2,0.125,0,agentic_ai,ko
+사례들,16,8,0.812,2,0.125,0,frontier,ko
+법무부,15,7,1.0,2,0.125,0,law,ko
+CBRN,14,13,0.643,2,0.125,2,national_security,en
+사회적 영향,14,8,0.643,2,0.125,0,agentic_ai,ko
+제출 마감,12,7,0.917,2,0.125,0,law,ko
+Institute,81,19,0.716,10,0.1235,0,frontier,en
+함수,37,21,0.486,6,0.1224,0,safety_research,ko
+등급,27,10,0.815,4,0.1212,1,frontier,ko
+스타일,22,7,0.909,3,0.12,0,safety_research,ko
+민감도,13,6,1.0,3,0.12,0,safety_research,ko
+벤더,17,7,0.941,2,0.1176,0,cybersecurity,ko
+클로드,17,6,1.0,2,0.1176,0,frontier,ko
+성공률,102,17,0.863,12,0.1154,0,safety_research,ko
+패키지,44,10,0.909,5,0.1111,0,law,ko
+CoT,30,12,0.733,4,0.1111,12,frontier,en
+기구,27,10,0.889,9,0.1111,0,law,ko
+Mythos Preview,27,6,0.963,3,0.1111,0,cybersecurity,en
+온라인 플랫폼,26,10,0.885,3,0.1111,0,youth,ko
+지속성,18,10,0.944,2,0.1111,0,cybersecurity,ko
+태스크포스,18,7,1.0,2,0.1111,0,guideline,ko
+G7,18,6,0.778,2,0.1111,0,norms,en
+함의,17,9,0.765,2,0.1111,0,national_security,ko
+감사 체계,17,4,1.0,2,0.1111,0,safety_research,ko
+강화 학습,16,10,0.625,5,0.1111,1,safety_research,ko
+유예,13,8,0.692,3,0.1111,0,law,ko
+독성,12,4,0.917,2,0.1111,0,safety_research,ko
+센터,54,18,0.833,24,0.1096,0,frontier,ko
+협약,31,10,0.903,5,0.1087,0,law,ko
+다양성,47,13,0.936,5,0.1064,0,safety_research,ko
+설문,43,12,0.884,6,0.1053,0,frontier,ko
+Summit,19,11,0.684,2,0.1053,0,norms,en
+면책,17,10,0.824,2,0.1053,0,law,ko
+인과적,17,7,0.882,2,0.1053,0,safety_research,ko
+설명 가능성,15,10,0.867,4,0.1053,0,guideline,ko
+데이터 거버넌스,29,11,0.897,3,0.1034,1,law,ko
+메타데이터,27,12,0.852,3,0.1034,0,deepfake_disinfo,ko
+코드 실행,26,13,0.923,3,0.1034,0,cybersecurity,ko
+사용 사례,16,13,0.688,3,0.1034,0,guideline,ko
+process,15,8,0.8,3,0.1034,1,norms,en
+tokens,36,11,0.944,4,0.1026,0,frontier,en
+가드레일,68,16,0.838,7,0.1014,4,safety_research,ko
+강화학습,30,11,0.9,3,0.1,1,safety_research,ko
+불가능한,20,12,0.8,2,0.1,0,agentic_ai,ko
+transformer,20,8,0.8,3,0.1,0,safety_research,en
+오탐,19,6,0.947,2,0.1,0,safety_research,ko
+권위,16,5,1.0,3,0.1,0,safety_research,ko
+면제,15,10,0.667,2,0.1,0,law,ko
+유치,13,10,0.692,2,0.1,0,healthcare,ko
+평가 체계,34,9,0.941,5,0.098,0,safety_research,ko
+소유,21,10,0.81,4,0.0976,0,law,ko
+시스템적 위험,31,17,0.613,3,0.0968,0,law,ko
+난이도,17,12,0.647,2,0.0952,0,cybersecurity,ko
+루프,26,10,0.885,3,0.0938,0,agentic_ai,ko
+GPAI,44,16,0.614,4,0.0909,25,law,en
+서한,26,9,0.731,3,0.0909,0,frontier,ko
+Google AI Studio,22,9,1.0,2,0.0909,0,frontier,en
+타당성,22,10,0.818,2,0.0909,0,frontier,ko
+크레딧,22,8,0.909,2,0.0909,0,frontier,ko
+헌법,15,8,0.933,3,0.0909,0,law,ko
+분야별,33,12,0.848,3,0.0882,0,law,ko
+지수,27,13,0.741,3,0.0882,0,frontier,ko
+속성,31,12,0.903,5,0.0877,0,safety_research,ko
+설명가능성,23,11,0.826,2,0.087,0,norms,ko
+정체성,23,9,0.957,2,0.087,0,safety_research,ko
+협의체,21,10,0.857,2,0.087,0,guideline,ko
+지출,19,8,0.842,2,0.087,0,politics,ko
+상한,16,7,0.875,2,0.087,0,safety_research,ko
+group,45,14,0.889,5,0.0833,1,law,en
+보증,28,9,0.929,3,0.0833,0,law,ko
+백도어,24,10,0.958,2,0.0833,2,cybersecurity,ko
+블랙박스,24,8,0.917,2,0.0833,0,safety_research,ko
+초지능,23,12,0.913,2,0.0833,1,agentic_ai,ko
+Network,20,8,0.9,3,0.0833,0,agentic_ai,en
+기반 접근,18,4,1.0,2,0.0833,0,safety_research,ko
+크고,12,9,0.917,1,0.0833,0,cybersecurity,ko
+사보타주,12,9,0.833,1,0.0833,2,frontier,ko
+고려사항,12,10,0.75,1,0.0833,0,norms,ko
+March,12,7,0.917,1,0.0833,0,frontier,en
+평가 항목,12,7,0.917,1,0.0833,0,safety_research,ko
+현실성,12,6,1.0,1,0.0833,0,frontier,ko
+prompting,12,6,0.917,1,0.0833,0,safety_research,en
+상반기,12,10,0.5,1,0.0833,0,deepfake_disinfo,ko
+뉴런,12,6,0.833,1,0.0833,0,safety_research,ko
+collapse,12,5,1.0,1,0.0833,1,safety_research,en
+청사진,12,5,1.0,1,0.0833,0,cybersecurity,ko
+사이버보안 역량,12,5,0.917,1,0.0833,0,cybersecurity,ko
+백본,12,4,1.0,1,0.0833,0,safety_research,ko
+리만 가설,12,12,0.083,1,0.0833,0,safety_research,ko
+감사,187,15,0.947,17,0.0829,0,safety_research,ko
+제약,130,17,0.946,12,0.0822,0,safety_research,ko
+제재,66,14,0.864,6,0.0822,0,law,ko
+채널,46,9,0.913,4,0.0816,0,frontier,ko
+컨텍스트,35,10,0.943,3,0.0811,0,safety_research,ko
+포럼,44,16,0.818,4,0.08,0,norms,ko
+Hallucination,18,6,0.944,2,0.08,1,safety_research,en
+위조,14,7,0.929,2,0.08,0,cybersecurity,ko
+접근 통제,13,6,0.846,2,0.08,0,cybersecurity,ko
+품질 관리,12,6,1.0,2,0.08,0,law,ko
+일치,25,11,0.84,11,0.0791,0,safety_research,ko
+인터페이스,37,13,0.838,3,0.0789,0,safety_research,ko
+MCP,35,11,0.914,3,0.0789,3,agentic_ai,en
+learning,81,22,0.815,7,0.0778,0,safety_research,en
+파이프라인,90,12,0.944,7,0.0769,0,safety_research,ko
+Generation,30,9,0.9,3,0.0769,1,open_weight,en
+Skills,26,10,0.962,2,0.0769,0,cybersecurity,en
+상무부,26,11,0.808,2,0.0769,0,frontier,ko
+높았고,26,9,0.885,2,0.0769,0,safety_research,ko
+steering,26,9,0.769,2,0.0769,0,safety_research,en
+memory,24,7,0.875,2,0.0769,0,safety_research,en
+input,20,7,0.95,2,0.0769,0,frontier,en
+설문조사,13,9,1.0,1,0.0769,0,norms,ko
+스키마,13,8,0.923,1,0.0769,0,safety_research,ko
+연내,13,9,0.769,1,0.0769,0,agentic_ai,ko
+명확화,13,7,0.923,1,0.0769,0,law,ko
+실패 양상,13,6,1.0,1,0.0769,0,safety_research,ko
+적용 사례,13,7,0.846,1,0.0769,0,agentic_ai,ko
+커넥터,13,7,0.846,1,0.0769,0,frontier,ko
+NCSC,13,6,0.923,1,0.0769,5,cybersecurity,en
+requirements,13,6,0.923,1,0.0769,0,law,en
+클래스,13,4,0.923,1,0.0769,0,safety_research,ko
+해석가능성,13,3,1.0,1,0.0769,1,safety_research,ko
+questions,12,9,0.667,1,0.0769,1,frontier,en
+금융기관,12,8,0.75,1,0.0769,0,frontier,ko
+행동 변화,12,6,1.0,1,0.0769,0,frontier,ko
+완화책,12,7,0.75,1,0.0769,0,agentic_ai,ko
+Workshop,12,7,0.75,1,0.0769,0,norms,en
+시장감시,12,5,0.75,1,0.0769,0,law,ko
+크기,48,16,0.771,4,0.0755,0,safety_research,ko
+오용,36,12,0.889,3,0.075,0,cybersecurity,ko
+앤트로픽,107,16,0.935,8,0.0748,1,frontier,ko
+Framework,153,19,0.876,12,0.0736,0,safety_research,en
+였고,14,7,1.0,5,0.0735,0,frontier,ko
+공모,48,16,0.854,4,0.0727,0,cybersecurity,ko
+경계,82,17,0.902,7,0.0714,0,safety_research,ko
+judge,30,7,0.967,4,0.0714,0,safety_research,en
+병목,27,7,1.0,2,0.0714,0,frontier,ko
+규정 준수,25,14,0.84,2,0.0714,0,law,ko
+모집,19,10,0.895,2,0.0714,0,law,ko
+연기,15,9,0.8,2,0.0714,0,law,ko
+상관관계,14,11,0.857,1,0.0714,0,cybersecurity,ko
+믿음,14,9,0.786,1,0.0714,0,politics,ko
+reddit,14,8,0.857,1,0.0714,0,deepfake_disinfo,en
+모니터링 시스템,14,7,0.929,1,0.0714,0,frontier,ko
+Coalition,14,8,0.786,1,0.0714,0,frontier,en
+사실관계,14,7,0.857,1,0.0714,0,frontier,ko
+방어 전략,14,6,1.0,1,0.0714,0,cybersecurity,ko
+장시간,14,9,0.571,1,0.0714,0,agentic_ai,ko
+부정행위,14,6,0.857,1,0.0714,0,frontier,ko
+시위,14,5,0.929,1,0.0714,0,frontier,ko
+오픈 가중치,14,5,0.929,1,0.0714,0,frontier,ko
+Mapping,13,9,0.846,1,0.0714,0,safety_research,en
+집행 권한,13,8,0.769,1,0.0714,0,law,ko
+요금제,13,6,0.923,1,0.0714,0,agentic_ai,ko
+안경,13,5,1.0,1,0.0714,0,law,ko
+보안 테스트,13,4,1.0,1,0.0714,0,cybersecurity,ko
+인스턴스,12,8,0.917,1,0.0714,0,agentic_ai,ko
+진술,12,8,0.667,1,0.0714,0,law,ko
+아티팩트,12,5,1.0,1,0.0714,0,standards,ko
+가중치 모델,12,5,0.917,1,0.0714,0,cybersecurity,ko
+항목,65,17,0.908,5,0.0704,0,safety_research,ko
+위원회,67,18,0.851,27,0.0694,1,law,ko
+training,51,16,0.882,6,0.069,0,frontier,en
+Evidence,46,9,0.978,4,0.069,0,safety_research,en
+피드백,86,24,0.756,6,0.0682,0,safety_research,ko
+거부,63,16,0.889,8,0.0672,0,safety_research,ko
+라벨링,38,11,0.921,3,0.0667,0,law,ko
+ASR,29,7,0.966,2,0.0667,15,safety_research,en
+충돌,28,10,0.929,3,0.0667,0,national_security,ko
+레드팀,28,8,1.0,2,0.0667,0,safety_research,ko
+구간,26,10,0.885,2,0.0667,0,safety_research,ko
+경보,20,12,0.75,2,0.0667,0,frontier,ko
+방해,17,12,0.882,3,0.0667,0,frontier,ko
+Incidents,15,11,0.8,1,0.0667,1,incidents,en
+연결성,15,10,0.733,1,0.0667,0,norms,ko
+커질수록,15,10,0.667,1,0.0667,0,safety_research,ko
+성능 격차,15,5,1.0,1,0.0667,0,frontier,ko
+계층적,15,5,1.0,1,0.0667,0,safety_research,ko
+읽기,14,12,0.714,1,0.0667,0,agentic_ai,ko
+실패 사례,14,10,0.786,1,0.0667,0,agentic_ai,ko
+기반 공격,13,7,1.0,1,0.0667,0,cybersecurity,ko
+스케일링,13,8,0.769,1,0.0667,0,safety_research,ko
+Cursor,12,3,1.0,1,0.0667,0,cybersecurity,en
+모드,60,17,0.867,4,0.0656,0,frontier,ko
+MoE,46,13,0.891,3,0.0652,4,frontier,en
+중소기업,44,18,0.75,3,0.0652,0,law,ko
+환각,42,15,0.905,3,0.0652,1,safety_research,ko
+근거,197,21,0.904,14,0.0651,0,law,ko
+견고성,61,11,0.951,4,0.0645,0,safety_research,ko
+마이크로소프트,30,8,0.967,2,0.0645,0,frontier,ko
+융합,20,9,0.95,2,0.0645,0,national_security,ko
+보안 평가,20,9,0.95,2,0.0645,0,cybersecurity,ko
+변동,19,8,0.895,2,0.0645,0,safety_research,ko
+XAI,59,13,0.814,4,0.0625,13,frontier,en
+특징,55,19,0.782,4,0.0625,0,safety_research,ko
+프로세스,48,17,0.771,3,0.0625,1,guideline,ko
+Services,48,12,0.854,3,0.0625,0,youth,en
+국방부,47,12,0.851,3,0.0625,0,national_security,ko
+압축,18,7,0.889,2,0.0625,0,safety_research,ko
+질의응답,16,9,0.875,1,0.0625,0,frontier,ko
+않게,16,8,0.875,1,0.0625,0,frontier,ko
+유효성,16,7,0.812,1,0.0625,0,safety_research,ko
+임계값,16,6,0.938,1,0.0625,1,agentic_ai,ko
+포이즈닝,16,6,0.938,1,0.0625,0,cybersecurity,ko
+방법들,16,6,0.875,1,0.0625,0,safety_research,ko
+북한,15,9,0.933,1,0.0625,0,cybersecurity,ko
+보조금,15,8,0.8,1,0.0625,0,frontier,ko
+disclosure,15,7,0.867,1,0.0625,0,law,en
+올트먼,15,6,0.933,1,0.0625,0,frontier,ko
+생존,14,9,0.857,1,0.0625,0,agentic_ai,ko
+상품,13,8,0.923,1,0.0625,0,agentic_ai,ko
+수개월,12,8,0.917,1,0.0625,0,frontier,ko
+수치,94,10,0.979,7,0.0619,0,safety_research,ko
+연구원,33,13,0.848,6,0.0612,0,cybersecurity,ko
+프론티어 모델,29,8,0.862,2,0.0606,0,frontier,ko
+복지,28,12,0.821,2,0.0606,0,youth,ko
+만큼,27,11,0.852,2,0.0606,0,law,ko
+검사,25,9,0.88,2,0.0606,0,agentic_ai,ko
+자격 증명,22,6,1.0,2,0.0606,0,cybersecurity,ko
+구독,16,8,1.0,2,0.0606,0,frontier,ko
+기만,15,8,0.933,2,0.0606,0,law,ko
+위임,13,7,0.846,2,0.0606,0,agentic_ai,ko
+워크숍,50,19,0.76,3,0.06,0,safety_research,ko
+bias,64,12,0.844,4,0.0588,2,safety_research,en
+간소화,26,11,0.846,2,0.0588,0,law,ko
+동맹,20,10,0.85,2,0.0588,0,national_security,ko
+과징금,17,8,0.941,1,0.0588,0,law,ko
+늘고,17,8,0.882,1,0.0588,0,agentic_ai,ko
+생명과학,16,11,0.938,1,0.0588,0,frontier,ko
+연구 방향,16,11,0.688,1,0.0588,0,safety_research,ko
+임무,16,9,0.75,1,0.0588,0,national_security,ko
+Lifecycle,15,8,0.867,1,0.0588,0,law,en
+감사 가능한,15,7,0.933,1,0.0588,0,agentic_ai,ko
+약물,15,6,1.0,1,0.0588,0,healthcare,ko
+모델 추론,14,9,0.857,1,0.0588,0,frontier,ko
+학대,14,6,0.929,1,0.0588,0,youth,ko
+중독,13,6,0.923,1,0.0588,0,youth,ko
+여행,12,8,0.75,1,0.0588,0,cybersecurity,ko
+자금 지원,12,7,0.75,1,0.0588,0,frontier,ko
+review,43,15,0.93,7,0.0583,0,frontier,en
+프로토콜,84,18,0.869,5,0.0581,0,safety_research,ko
+요건,64,18,0.812,4,0.058,0,law,ko
+선언,33,13,0.909,3,0.0577,0,norms,ko
+시스템 위험,20,11,0.75,3,0.0577,0,law,ko
+RLHF,35,12,0.8,2,0.0571,6,safety_research,en
+Development,33,10,0.909,2,0.0571,0,frontier,en
+신기술,22,13,0.773,2,0.0571,0,norms,ko
+분류 체계,18,8,0.889,2,0.0571,1,law,ko
+race,16,9,0.75,2,0.0571,0,national_security,en
+국제 표준,12,7,1.0,2,0.0571,0,standards,ko
+지침,200,28,0.835,12,0.0566,0,guideline,ko
+요구사항,53,16,0.792,3,0.0566,0,law,ko
+신호,128,15,0.961,8,0.0563,0,safety_research,ko
+지연,60,14,0.917,5,0.0556,1,law,ko
+AGI,41,14,0.878,5,0.0556,6,frontier,en
+생애주기,35,14,0.8,2,0.0556,0,standards,ko
+분류기,35,14,0.743,2,0.0556,0,safety_research,ko
+인터뷰,35,11,0.914,2,0.0556,0,frontier,ko
+폭력,33,10,0.939,3,0.0556,0,youth,ko
+관련 규정,18,11,0.833,1,0.0556,0,law,ko
+Vertex,18,9,0.944,1,0.0556,0,frontier,en
+Safety Alignment,18,6,1.0,1,0.0556,0,safety_research,en
+다양한 모델,17,10,0.882,1,0.0556,0,safety_research,ko
+세금,17,7,0.882,1,0.0556,0,law,ko
+평가 환경,17,6,0.941,1,0.0556,0,cybersecurity,ko
+Advisory,17,7,0.588,1,0.0556,0,law,en
+prompts,16,7,1.0,1,0.0556,1,frontier,en
+표본,16,7,0.938,1,0.0556,0,safety_research,ko
+환경 영향,15,9,0.933,1,0.0556,0,norms,ko
+대기업,14,7,0.929,1,0.0556,0,law,ko
+국제표준,14,10,0.5,1,0.0556,0,standards,ko
+안전 규제,13,8,1.0,1,0.0556,0,law,ko
+말까지,13,8,0.923,1,0.0556,0,guideline,ko
+과학 패널,13,10,0.538,1,0.0556,0,law,ko
+벤치마킹,12,6,1.0,1,0.0556,0,safety_research,ko
+DPO,12,5,1.0,1,0.0556,1,safety_research,en
+책임 체계,12,5,1.0,1,0.0556,0,agentic_ai,ko
+선호,60,18,0.8,5,0.0549,1,safety_research,ko
+Language Models,99,22,0.818,6,0.0541,0,safety_research,en
+연구기관,32,12,0.875,2,0.0541,0,frontier,ko
+care,13,6,0.923,2,0.0541,0,healthcare,en
+일관성,74,16,0.932,4,0.0533,2,safety_research,ko
+주제,108,26,0.722,6,0.0531,0,norms,ko
+지표,193,20,0.933,11,0.0529,0,safety_research,ko
+safeguards,38,13,0.789,2,0.0526,2,frontier,en
+보안 취약점,33,9,0.97,2,0.0526,0,cybersecurity,ko
+foundation,30,9,0.967,2,0.0526,0,frontier,en
+신뢰도,20,8,0.9,2,0.0526,0,safety_research,ko
+과업,19,8,0.947,1,0.0526,0,safety_research,ko
+높고,19,7,1.0,1,0.0526,0,youth,ko
+공급망 위험,19,6,1.0,1,0.0526,1,national_security,ko
+Kimi K3,19,2,1.0,1,0.0526,0,frontier,en
+삼고,18,9,0.944,1,0.0526,0,law,ko
+poisoning,18,8,0.944,1,0.0526,1,cybersecurity,en
+프로토타입,17,9,0.882,1,0.0526,0,cybersecurity,ko
+probe,15,6,0.8,1,0.0526,0,safety_research,en
+execution,13,6,1.0,1,0.0526,0,agentic_ai,en
+Alignment,198,19,0.934,12,0.0517,41,safety_research,en
+시험,64,17,0.828,6,0.0513,0,frontier,ko
+리터러시,39,14,0.795,2,0.0513,0,deepfake_disinfo,ko
+정답,32,9,0.938,2,0.0513,2,frontier,ko
+채점,24,11,0.625,2,0.0513,0,norms,ko
+데이터셋,152,27,0.836,8,0.051,0,safety_research,ko
+조정,119,24,0.849,11,0.0507,0,frontier,ko
+RL,29,11,0.897,15,0.0503,1,safety_research,en
+계열,52,11,0.962,3,0.05,0,safety_research,ko
+변형,42,13,0.881,3,0.05,0,safety_research,ko
+Studio,40,12,0.975,2,0.05,0,frontier,en
+Detection,40,8,1.0,2,0.05,0,agentic_ai,en
+원래,20,11,0.95,1,0.05,0,safety_research,ko
+폐쇄형,20,7,1.0,1,0.05,0,open_weight,ko
+돌봄,19,9,0.895,1,0.05,0,healthcare,ko
+모델 크기,19,12,0.579,1,0.05,0,safety_research,ko
+Resilience,19,7,0.947,1,0.05,0,cybersecurity,en
+개발도상국,19,11,0.579,1,0.05,0,norms,ko
+문맥,18,7,0.889,1,0.05,0,frontier,ko
+효율화,17,8,0.824,1,0.05,0,guideline,ko
+언제,16,7,1.0,1,0.05,0,safety_research,ko
+수행 능력,16,12,0.5,1,0.05,0,agentic_ai,ko
+직무,15,8,0.867,1,0.05,0,norms,ko
+폐기,14,10,0.929,1,0.05,0,law,ko
+코드 생성,14,8,0.929,1,0.05,0,cybersecurity,ko
+플래그,13,8,0.923,1,0.05,0,cybersecurity,ko
+stability,13,7,0.846,1,0.05,0,safety_research,en
+Files,12,4,0.833,1,0.05,0,law,en
+메커니즘,158,25,0.892,8,0.0497,0,safety_research,ko
+공간,84,16,0.929,6,0.0496,0,safety_research,ko
+가중치,100,19,0.89,5,0.0495,0,open_weight,ko
+injection,55,11,0.873,3,0.0492,0,safety_research,en
+못해,41,12,0.854,2,0.0488,0,law,ko
+Response,33,15,0.727,2,0.0488,0,cybersecurity,en
+보안 위협,29,10,1.0,2,0.0488,0,cybersecurity,ko
+오염,25,8,0.96,2,0.0488,0,agentic_ai,ko
+Large Language Models,61,12,0.934,3,0.0484,1,safety_research,en
+regulation,71,16,0.873,4,0.0476,0,law,en
+misalignment,39,14,0.923,2,0.0476,5,safety_research,en
+회피,37,17,0.757,3,0.0476,0,cybersecurity,ko
+장벽,33,13,0.788,2,0.0476,0,national_security,ko
+Dialogue,21,10,0.905,1,0.0476,0,norms,en
+red teaming,21,12,0.762,1,0.0476,1,safety_research,en
+SynthID,21,8,1.0,1,0.0476,0,deepfake_disinfo,en
+간극,21,7,0.952,1,0.0476,0,safety_research,ko
+benign,20,5,0.95,1,0.0476,0,safety_research,en
+추측,19,8,0.895,1,0.0476,0,frontier,ko
+Signs,19,11,0.632,1,0.0476,0,norms,en
+기술기업,16,7,0.875,1,0.0476,0,youth,ko
+확실성,14,10,0.857,5,0.0476,0,guideline,ko
+사이버 위험,13,6,0.923,1,0.0476,0,frontier,ko
+Work,27,11,0.778,15,0.0473,0,agentic_ai,en
+잘못된,43,15,0.86,2,0.0465,0,frontier,ko
+적용 범위,43,12,0.907,2,0.0465,0,law,ko
+성격,37,13,0.838,2,0.0465,0,frontier,ko
+협상,35,9,0.971,2,0.0465,0,frontier,ko
+논리,34,12,0.882,2,0.0465,0,frontier,ko
+종료,33,14,0.818,2,0.0465,0,agentic_ai,ko
+반응,29,10,0.828,2,0.0465,0,frontier,ko
+사이트,28,9,0.964,4,0.0465,0,frontier,ko
+변환,20,10,0.9,2,0.0465,0,safety_research,ko
+Systems,104,17,0.856,5,0.0459,0,agentic_ai,en
+원인,73,13,0.904,4,0.0455,0,safety_research,ko
+증명,57,11,0.93,4,0.0455,0,cybersecurity,ko
+사후,53,13,0.925,3,0.0455,0,safety_research,ko
+fine-tuning,43,14,0.814,2,0.0455,2,safety_research,en
+Controls,22,11,0.773,1,0.0455,0,cybersecurity,en
+헬스케어,22,9,0.864,1,0.0455,0,healthcare,ko
+허깅페이스,22,6,0.909,1,0.0455,0,frontier,ko
+시간적,22,5,1.0,1,0.0455,0,safety_research,ko
+ETHICS,21,10,0.905,1,0.0455,0,norms,en
+Guardrails,21,9,0.905,1,0.0455,1,cybersecurity,en
+인지적,20,10,1.0,1,0.0455,0,healthcare,ko
+사례 연구,20,9,0.95,1,0.0455,0,guideline,ko
+프레이밍,20,5,1.0,1,0.0455,0,safety_research,ko
+결제,19,7,0.947,1,0.0455,0,law,ko
+Agency,19,6,0.947,1,0.0455,0,law,en
+meeting,18,8,0.944,1,0.0455,0,law,en
+매칭,18,7,0.944,1,0.0455,0,safety_research,ko
+정규화,18,6,0.944,1,0.0455,0,safety_research,ko
+유인,17,10,0.941,1,0.0455,0,national_security,ko
+임시,17,10,0.706,1,0.0455,1,law,ko
+악용 가능성,17,8,0.765,1,0.0455,0,cybersecurity,ko
+집합,14,7,0.929,1,0.0455,0,healthcare,ko
+선발,13,8,0.846,1,0.0455,0,law,ko
+단계,358,29,0.902,21,0.0453,0,safety_research,ko
+하는지,27,11,0.852,9,0.0452,0,safety_research,ko
+시간,274,26,0.836,19,0.045,0,frontier,ko
+양성,55,16,0.818,5,0.0446,0,law,ko
+치료,38,11,0.921,2,0.0444,0,healthcare,ko
+누적,25,9,0.96,2,0.0444,0,safety_research,ko
+딥마인드,68,15,0.868,3,0.0441,0,frontier,ko
+불확실성,92,19,0.88,4,0.0435,0,law,ko
+에이전틱,69,14,0.942,3,0.0435,1,agentic_ai,ko
+Fable,45,4,1.0,2,0.0435,0,frontier,en
+해석 가능성,33,23,0.273,2,0.0435,2,safety_research,ko
+나타났고,23,11,0.826,1,0.0435,0,frontier,ko
+편향된,23,9,0.913,1,0.0435,0,safety_research,ko
+자율형,23,8,1.0,1,0.0435,0,agentic_ai,ko
+Forum,23,7,0.783,1,0.0435,0,law,en
+태스크,23,6,0.913,2,0.0435,0,safety_research,ko
+Max,22,9,0.955,2,0.0435,2,frontier,en
+독립성,22,9,0.864,1,0.0435,0,law,ko
+알림,22,7,0.818,1,0.0435,0,youth,ko
+설계하고,20,9,0.95,1,0.0435,0,norms,ko
+안전성 검증,19,8,0.947,1,0.0435,0,frontier,ko
+불균형,15,8,0.867,1,0.0435,0,frontier,ko
+failure,13,7,1.0,1,0.0435,0,safety_research,en
+사칭,13,8,0.769,1,0.0435,0,deepfake_disinfo,ko
+일반 목적,13,6,0.923,1,0.0435,1,guideline,ko
+격차,161,19,0.932,7,0.0432,0,frontier,ko
+형성,34,10,0.853,4,0.043,0,law,ko
+개월,102,21,0.833,6,0.0429,0,law,ko
+Study,44,12,0.886,2,0.0426,0,frontier,en
+소수,41,10,0.976,2,0.0426,0,frontier,ko
+Design,32,9,0.938,2,0.0426,0,youth,en
+단축,17,9,0.882,2,0.0426,0,agentic_ai,ko
+네트워크,114,18,0.877,5,0.0424,1,cybersecurity,ko
+배치,113,16,0.867,7,0.0419,0,safety_research,ko
+실행,252,22,0.909,14,0.0417,1,agentic_ai,ko
+prompt injection,47,10,0.872,2,0.0417,0,safety_research,en
+신원,45,9,0.978,2,0.0417,0,cybersecurity,ko
+대안,41,10,0.951,2,0.0417,0,frontier,ko
+전제,40,9,0.975,2,0.0417,0,safety_research,ko
+Center,26,8,0.885,2,0.0417,0,frontier,en
+유럽의회,24,10,0.875,1,0.0417,0,law,ko
+표현 자유,24,7,0.958,1,0.0417,1,law,ko
+베타,23,14,0.739,1,0.0417,2,frontier,ko
+조절,23,9,0.913,2,0.0417,0,safety_research,ko
+타깃,23,6,0.957,1,0.0417,0,safety_research,ko
+Discovery,23,5,1.0,1,0.0417,0,cybersecurity,en
+실험 설계,21,10,0.762,1,0.0417,0,frontier,ko
+Initiative,21,7,1.0,1,0.0417,0,norms,en
+추정치,20,9,0.9,1,0.0417,0,frontier,ko
+케이스,19,8,0.842,1,0.0417,0,cybersecurity,ko
+증강,19,9,0.737,1,0.0417,3,frontier,ko
+VLM,17,6,1.0,1,0.0417,4,safety_research,en
+인수,16,10,0.875,1,0.0417,0,frontier,ko
+liability,14,7,0.857,1,0.0417,0,law,en
+보안 역량,12,8,0.75,1,0.0417,0,cybersecurity,ko
+범위,322,23,0.885,16,0.0413,0,safety_research,ko
+시뮬레이션,78,14,0.897,4,0.0412,0,agentic_ai,ko
+service,22,11,0.955,3,0.0411,0,law,en
+동향,122,29,0.721,5,0.041,0,law,ko
+영역,149,21,0.852,7,0.0409,0,safety_research,ko
+웹사이트,49,16,0.857,2,0.0408,0,frontier,ko
+Space,21,7,0.905,2,0.0408,0,safety_research,en
+유형,111,22,0.883,5,0.0403,0,safety_research,ko
+제어,96,16,0.917,5,0.0403,0,safety_research,ko
+인증,99,20,0.869,5,0.04,0,cybersecurity,ko
+Multimodal,49,13,0.898,2,0.04,0,frontier,en
+형식,47,13,0.915,3,0.04,0,agentic_ai,ko
+전용,44,14,0.795,2,0.04,0,law,ko
+전이,34,7,0.971,5,0.04,0,safety_research,ko
+Risk Management,25,11,0.88,1,0.04,0,standards,en
+코딩 에이전트,25,9,1.0,1,0.04,1,cybersecurity,ko
+고정된,25,8,1.0,1,0.04,0,safety_research,ko
+무결성,24,13,0.917,1,0.04,0,cybersecurity,ko
+상관,24,8,0.917,2,0.04,0,safety_research,ko
+K3,24,3,1.0,1,0.04,0,frontier,en
+징후,23,9,0.913,1,0.04,0,frontier,ko
+제고,22,15,0.727,1,0.04,0,law,ko
+의문,22,10,0.909,1,0.04,0,frontier,ko
+기반 모델,22,9,0.864,1,0.04,0,safety_research,ko
+규제 완화,21,12,0.667,1,0.04,1,law,ko
+요구 사항,20,5,1.0,3,0.04,0,law,ko
+모델 기반,18,13,0.667,1,0.04,0,frontier,ko
+대응 체계,18,9,0.889,1,0.04,1,cybersecurity,ko
+표면,16,5,1.0,1,0.04,0,cybersecurity,ko
+LoRA,14,6,0.929,1,0.04,2,safety_research,en
+AX,23,9,1.0,5,0.0397,3,national_security,en
+메모리,74,17,0.905,3,0.0395,0,agentic_ai,ko
+전력,56,14,0.839,3,0.0395,0,frontier,ko
+Standard,25,12,0.72,2,0.0392,0,frontier,en
+기하,17,4,1.0,4,0.0388,0,safety_research,ko
+view,29,5,0.931,7,0.0387,0,cybersecurity,en
+샌드박스,68,18,0.838,3,0.0385,0,law,ko
+정합성,52,12,0.923,2,0.0385,0,safety_research,ko
+refusal,42,8,0.976,2,0.0385,6,safety_research,en
+미칠 영향,26,11,0.962,1,0.0385,0,agentic_ai,ko
+개인정보보호위원회,26,10,0.846,1,0.0385,0,law,ko
+걸친,26,9,0.923,1,0.0385,0,guideline,ko
+거버넌스 프레임워크,26,9,0.923,1,0.0385,0,safety_research,ko
+Sycophancy,26,9,0.885,1,0.0385,7,safety_research,en
+오픈웨이트,26,7,1.0,1,0.0385,0,open_weight,ko
+도구 호출,25,8,0.96,1,0.0385,0,frontier,ko
+신경망,23,12,0.522,1,0.0385,0,safety_research,ko
+확신,21,11,0.81,1,0.0385,0,frontier,ko
+트리거,21,10,0.857,1,0.0385,0,cybersecurity,ko
+harness,20,5,1.0,1,0.0385,3,frontier,en
+안전성,340,32,0.868,13,0.0381,0,safety_research,ko
+Models,258,31,0.849,10,0.0377,0,frontier,en
+품질,180,22,0.933,8,0.0377,0,safety_research,ko
+Platform,39,12,0.974,2,0.0377,0,cybersecurity,en
+연산,35,11,0.914,2,0.0377,0,safety_research,ko
+오픈 웨이트,27,8,0.852,2,0.0377,1,open_weight,ko
+속도,153,19,0.935,6,0.0375,0,frontier,ko
+오류,152,20,0.882,6,0.0375,1,cybersecurity,ko
+조건,242,21,0.938,11,0.0374,0,safety_research,ko
+분류,144,22,0.861,11,0.0372,0,law,ko
+LLM,477,30,0.897,20,0.037,58,safety_research,en
+완화,169,28,0.781,11,0.037,0,frontier,ko
+가설,48,24,0.625,2,0.037,0,safety_research,ko
+모델 학습,41,12,0.927,2,0.037,0,law,ko
+지속가능성,27,13,0.815,1,0.037,0,norms,ko
+성향,27,11,0.926,1,0.037,1,safety_research,ko
+기준선,27,10,0.926,1,0.037,0,safety_research,ko
+Assurance,27,8,0.963,1,0.037,3,safety_research,en
+단서,25,8,1.0,1,0.037,0,safety_research,ko
+합성 데이터,23,10,0.826,1,0.037,0,safety_research,ko
+사전학습,22,11,0.909,1,0.037,0,safety_research,ko
+혼란,22,12,0.5,1,0.037,0,deepfake_disinfo,ko
+리뷰,22,6,1.0,2,0.037,0,cybersecurity,ko
+법령,17,10,0.765,1,0.037,0,law,ko
+방문,16,9,0.812,1,0.037,0,law,ko
+Horizon,15,7,0.933,1,0.037,0,cybersecurity,en
+native,14,8,1.0,1,0.037,1,frontier,en
+모방,12,8,0.667,1,0.037,0,deepfake_disinfo,ko
+프레임워크,442,29,0.905,17,0.0366,1,safety_research,ko
+당국,80,18,0.825,4,0.0364,0,law,ko
+구글 딥마인드,55,15,0.855,2,0.0364,0,frontier,ko
+전면,41,12,0.927,2,0.0364,0,law,ko
+적응,41,13,0.854,4,0.036,0,safety_research,ko
+책임성,111,19,0.892,4,0.0357,1,norms,ko
+의도,75,15,0.907,5,0.0357,0,agentic_ai,ko
+Jailbreaking,28,12,0.893,1,0.0357,0,safety_research,en
+깊이,28,13,0.75,1,0.0357,0,safety_research,ko
+아래,28,9,0.929,1,0.0357,0,safety_research,ko
+허브,24,11,0.917,1,0.0357,0,frontier,ko
+상담,20,10,0.85,1,0.0357,0,healthcare,ko
+여론,20,9,0.85,1,0.0357,0,politics,ko
+누락,16,8,1.0,1,0.0357,0,frontier,ko
+게이트,16,7,0.938,1,0.0357,0,cybersecurity,ko
+취약점 찾아,13,6,1.0,1,0.0357,0,cybersecurity,ko
+교체,12,8,0.917,1,0.0357,0,frontier,ko
+인프라,147,17,0.891,13,0.0356,0,frontier,ko
+순위,29,8,0.931,4,0.0354,0,safety_research,ko
+도출,13,6,0.846,2,0.0351,0,norms,ko
+조작,108,18,0.88,6,0.0349,0,deepfake_disinfo,ko
+초안,83,18,0.867,3,0.0349,2,law,ko
+아키텍처,108,13,0.954,4,0.0348,0,safety_research,ko
+채용,52,20,0.731,2,0.0345,0,law,ko
+생산성 향상,29,12,0.897,1,0.0345,0,frontier,ko
+컴플라이언스,29,12,0.828,1,0.0345,1,agentic_ai,ko
+Codex,28,8,1.0,1,0.0345,1,frontier,en
+투명성 의무,28,8,0.893,1,0.0345,0,law,ko
+자해,24,10,0.875,1,0.0345,0,youth,ko
+Output,19,5,1.0,1,0.0345,1,safety_research,en
+기억,18,8,0.944,1,0.0345,0,agentic_ai,ko
+Level,16,10,0.875,2,0.0345,0,frontier,en
+정식,13,8,0.846,1,0.0345,0,agentic_ai,ko
+가정,55,10,0.964,3,0.0341,0,safety_research,ko
+호출,53,10,0.943,2,0.0339,0,agentic_ai,ko
+약속,41,14,0.805,2,0.0339,0,frontier,ko
+LLMs,82,15,0.915,3,0.0337,20,safety_research,en
+합의,116,20,0.905,6,0.0335,0,law,ko
+가능성,612,44,0.817,23,0.0334,0,frontier,ko
+특성,82,23,0.768,3,0.0333,0,safety_research,ko
+IP,31,14,0.903,13,0.0333,3,cybersecurity,en
+갈등,30,11,0.9,1,0.0333,0,national_security,ko
+않음,30,11,0.9,1,0.0333,0,frontier,ko
+규제 준수,29,13,0.897,1,0.0333,0,law,ko
+주기,29,9,0.931,3,0.0333,0,guideline,ko
+자살,24,9,0.833,1,0.0333,0,youth,ko
+의존도,24,7,1.0,1,0.0333,0,sovereign_ai,ko
+위험 기반,21,12,0.857,1,0.0333,0,law,ko
+진출,18,9,0.944,1,0.0333,0,frontier,ko
+처리,122,22,0.869,7,0.033,0,frontier,ko
+쟁점,87,20,0.77,3,0.033,0,law,ko
+정도,48,14,0.875,2,0.0328,0,safety_research,ko
+작업 수행,19,11,0.474,2,0.0328,0,frontier,ko
+경로,121,17,0.934,4,0.0325,0,safety_research,ko
+위협,257,25,0.856,10,0.0324,0,cybersecurity,ko
+프로그램,177,28,0.831,6,0.0324,0,frontier,ko
+준수,197,23,0.848,8,0.0323,0,law,ko
+챗봇,152,19,0.868,5,0.0323,0,law,ko
+모델 능력,30,13,0.833,1,0.0323,0,frontier,ko
+응용,29,12,0.828,1,0.0323,0,norms,ko
+판결,26,10,0.923,1,0.0323,1,law,ko
+Labs,26,9,0.923,1,0.0323,0,cybersecurity,en
+교란,25,11,0.88,1,0.0323,0,safety_research,ko
+표현,152,19,0.895,6,0.0319,0,safety_research,ko
+장치,65,14,0.923,7,0.0318,0,safety_research,ko
+맞춤형,63,18,0.889,2,0.0317,0,law,ko
+Compute,41,11,0.902,2,0.0317,4,frontier,en
+감독,231,27,0.848,9,0.0315,0,law,ko
+규칙,121,21,0.876,4,0.0315,0,safety_research,ko
+약점,20,10,0.85,9,0.0314,0,frontier,ko
+연합,40,9,0.9,6,0.0312,0,law,ko
+robustness,31,8,0.968,1,0.0312,2,safety_research,en
+의미적,31,8,0.968,1,0.0312,0,safety_research,ko
+재구성,28,8,1.0,2,0.0312,0,safety_research,ko
+weights,27,11,0.852,1,0.0312,1,frontier,en
+통제 상실,23,12,0.913,1,0.0312,0,frontier,ko
+복구,23,7,1.0,1,0.0312,0,frontier,ko
+최신 모델,22,9,0.909,1,0.0312,0,frontier,ko
+Market,14,8,0.714,1,0.0312,0,law,en
+신뢰성,226,29,0.836,7,0.031,0,safety_research,ko
+기법,114,31,0.789,4,0.031,0,safety_research,ko
+rate,52,7,1.0,8,0.031,1,safety_research,en
+규정,226,27,0.858,9,0.0309,0,law,ko
+요인,79,16,0.949,3,0.0309,0,frontier,ko
+체계,430,26,0.914,21,0.0308,0,safety_research,ko
+차원,177,24,0.853,6,0.0306,0,law,ko
+법안,153,23,0.85,5,0.0303,0,law,ko
+배경,54,16,0.852,2,0.0303,0,frontier,ko
+보였고,33,13,0.939,1,0.0303,0,safety_research,ko
+사용량,33,13,0.879,1,0.0303,0,frontier,ko
+유해한,33,13,0.818,1,0.0303,0,safety_research,ko
+주지사,33,13,0.788,1,0.0303,0,law,ko
+대량,32,11,0.938,1,0.0303,0,frontier,ko
+회복력,31,13,0.903,1,0.0303,0,cybersecurity,ko
+harmful,31,10,0.935,1,0.0303,0,safety_research,en
+데이터 품질,30,12,0.9,1,0.0303,0,standards,ko
+innovation,30,14,0.667,1,0.0303,0,national_security,en
+확충,30,11,0.833,1,0.0303,0,cybersecurity,ko
+기밀,21,12,0.762,1,0.0303,2,cybersecurity,ko
+개인화,21,8,0.857,1,0.0303,0,safety_research,ko
+철회,18,7,1.0,1,0.0303,1,law,ko
+Udio,16,6,0.938,2,0.0303,0,law,en
+지배,12,8,1.0,1,0.0303,0,law,ko
+지향,12,5,0.917,1,0.0303,0,safety_research,ko
+합성,95,15,0.916,6,0.03,0,safety_research,ko
+점수,155,23,0.916,5,0.0299,0,frontier,ko
+실험 결과,60,18,0.8,2,0.0299,0,safety_research,ko
+마감,40,13,0.825,5,0.0298,0,guideline,ko
+artificial intelligence,133,16,0.842,4,0.0296,1,law,en
+멀티모달,68,14,0.941,2,0.0294,0,safety_research,ko
+CAISI,34,13,0.912,1,0.0294,11,frontier,en
+에이전트형,34,10,0.971,1,0.0294,0,agentic_ai,ko
+단계별,33,11,0.879,1,0.0294,0,safety_research,ko
+성공적,20,9,0.85,1,0.0294,0,cybersecurity,ko
+사이버 역량,20,8,0.9,1,0.0294,0,frontier,ko
+집계,20,6,1.0,1,0.0294,0,safety_research,ko
+필요성 강조,19,11,0.842,2,0.0294,0,frontier,ko
+보호 조치,19,11,0.737,1,0.0294,0,frontier,ko
+AI',18,7,0.889,1,0.0294,0,cybersecurity,en
+Fund,15,6,0.733,1,0.0294,0,frontier,en
+최첨단,69,22,0.739,2,0.029,0,frontier,ko
+계산,51,13,0.843,2,0.029,0,safety_research,ko
+자원,123,25,0.829,5,0.0287,0,frontier,ko
+공백,69,13,0.913,2,0.0286,0,law,ko
+잠재력,35,12,0.714,1,0.0286,0,law,ko
+모델 가중치,33,16,0.758,1,0.0286,0,open_weight,ko
+초기 단계,32,11,0.906,1,0.0286,0,norms,ko
+투명한,29,12,0.862,1,0.0286,0,norms,ko
+규제 샌드박스,25,14,0.64,1,0.0286,2,law,ko
+Gemma,23,11,0.87,1,0.0286,0,frontier,en
+은행,15,6,1.0,1,0.0286,0,law,ko
+결정 과정,12,5,0.833,1,0.0286,0,law,ko
+기관,245,27,0.873,14,0.0284,1,cybersecurity,ko
+거버넌스,491,32,0.866,14,0.0283,4,norms,ko
+클라우드,87,21,0.851,3,0.0283,0,frontier,ko
+정확성,67,16,0.821,2,0.0282,0,law,ko
+편집,53,15,0.887,2,0.0282,0,frontier,ko
+안전장치,141,15,0.915,4,0.028,2,safety_research,ko
+시나리오,137,18,0.92,4,0.028,0,frontier,ko
+추적,74,16,0.905,4,0.028,0,cybersecurity,ko
+편향,186,25,0.801,6,0.0278,2,safety_research,ko
+개입,130,21,0.869,4,0.0278,0,safety_research,ko
+등록,49,11,0.898,2,0.0278,0,law,ko
+평가 기준,33,8,1.0,1,0.0278,1,frontier,ko
+사무소,32,11,0.812,1,0.0278,0,frontier,ko
+토론,24,13,0.792,1,0.0278,0,deepfake_disinfo,ko
+총리,23,11,0.739,1,0.0278,0,law,ko
+관리 체계,21,10,0.952,1,0.0278,0,law,ko
+설계,338,25,0.917,15,0.0276,0,safety_research,ko
+범주,89,15,0.944,3,0.0275,0,safety_research,ko
+적대적,71,13,0.944,2,0.0274,0,safety_research,ko
+분포,66,13,0.939,2,0.0274,0,safety_research,ko
+설정,200,27,0.865,7,0.0272,0,cybersecurity,ko
+자유,52,12,0.885,2,0.027,0,law,ko
+복잡성,37,13,0.865,1,0.027,0,cybersecurity,ko
+공고 게재일,37,13,0.865,1,0.027,0,law,ko
+국가별,37,15,0.757,1,0.027,0,law,ko
+행정명령,36,17,0.694,1,0.027,0,law,ko
+Online,36,11,0.889,1,0.027,0,youth,en
+벌금,34,11,0.882,1,0.027,2,law,ko
+분산,32,13,0.906,2,0.027,0,agentic_ai,ko
+경력,32,14,0.75,1,0.027,0,frontier,ko
+연구 모델,25,13,0.72,1,0.027,0,frontier,ko
+대조,14,7,0.786,1,0.027,0,safety_research,ko
+복원,12,6,0.917,1,0.027,0,safety_research,ko
+원칙,208,32,0.822,6,0.0269,0,norms,ko
+텍스트,151,26,0.854,5,0.0263,0,safety_research,ko
+대화형,38,11,0.947,1,0.0263,0,guideline,ko
+로드맵,38,11,0.868,1,0.0263,0,agentic_ai,ko
+strategy,37,13,0.892,1,0.0263,0,norms,en
+Education,35,13,0.714,1,0.0263,0,frontier,en
+DSA,35,9,1.0,1,0.0263,21,youth,en
+인물,27,10,0.778,1,0.0263,0,law,ko
+시기,21,12,0.905,1,0.0263,0,safety_research,ko
+오픈 모델,14,6,1.0,1,0.0263,0,open_weight,ko
+회복,14,5,0.929,2,0.0263,0,guideline,ko
+사항,115,26,0.765,6,0.026,0,frontier,ko
+범용,67,24,0.657,2,0.026,0,law,ko
+안전 장치,12,7,0.75,4,0.026,2,safety_research,ko
+가이드라인,115,23,0.826,3,0.0259,2,guideline,ko
+관계,113,20,0.876,9,0.0258,0,safety_research,ko
+취약점,268,22,0.955,7,0.0257,1,cybersecurity,ko
+진단,54,11,0.944,2,0.0256,0,healthcare,ko
+attack,47,10,0.957,3,0.0256,0,safety_research,en
+감정,40,13,0.875,2,0.0256,0,frontier,ko
+템플릿,37,12,0.838,1,0.0256,0,standards,ko
+상실,34,12,0.941,1,0.0256,0,frontier,ko
+deepfake,30,10,0.9,1,0.0256,0,deepfake_disinfo,en
+여성,29,11,0.828,1,0.0256,0,law,ko
+전파,22,11,0.818,1,0.0256,0,frontier,ko
+위험 완화,21,14,0.524,1,0.0256,0,safety_research,ko
+독점,19,8,0.947,1,0.0256,0,cybersecurity,ko
+신청,57,13,0.877,2,0.0253,0,law,ko
+Audit,40,9,0.95,2,0.0253,9,frontier,en
+무료,80,21,0.863,2,0.025,1,frontier,ko
+취약성,80,16,0.875,2,0.025,0,safety_research,ko
+공정성,78,19,0.859,2,0.025,0,norms,ko
+최초,40,17,0.775,1,0.025,0,agentic_ai,ko
+결함,38,12,0.947,1,0.025,0,cybersecurity,ko
+정상회의,26,17,0.462,1,0.025,0,norms,ko
+버그,22,12,0.682,1,0.025,0,frontier,ko
+고정,22,8,1.0,2,0.025,0,safety_research,ko
+보유,17,8,0.882,1,0.025,0,cybersecurity,ko
+보수,13,9,0.846,1,0.025,0,norms,ko
+업데이트,125,22,0.784,4,0.0247,0,safety_research,ko
+large language model,19,11,0.737,2,0.0247,1,safety_research,en
+기능,335,26,0.836,9,0.0246,1,frontier,ko
+권한,197,18,0.924,5,0.0246,0,agentic_ai,ko
+토큰,115,17,0.939,3,0.0246,0,frontier,ko
+intelligence,184,19,0.864,5,0.0245,1,norms,en
+에이전트,582,34,0.902,15,0.0244,0,agentic_ai,ko
+자료,123,23,0.805,4,0.0244,0,frontier,ko
+오남용,41,14,0.829,1,0.0244,0,safety_research,ko
+목록,40,16,0.825,1,0.0244,0,law,ko
+Rules,39,12,0.846,1,0.0244,0,law,en
+컨소시엄,38,9,0.974,1,0.0244,1,cybersecurity,ko
+영어,37,10,0.973,1,0.0244,0,safety_research,ko
+사이버 위협,33,9,0.939,1,0.0244,0,cybersecurity,ko
+안전 조치,23,14,0.783,1,0.0244,0,frontier,ko
+훼손,14,9,0.643,1,0.0244,0,safety_research,ko
+API,157,20,0.93,5,0.0243,0,frontier,en
+표준,213,28,0.869,8,0.0242,0,standards,ko
+맥락,142,20,0.923,4,0.0242,1,safety_research,ko
+자율성,83,19,0.807,2,0.0241,0,agentic_ai,ko
+현장,74,14,0.946,2,0.0241,0,physical_ai,ko
+전문성,42,13,0.857,1,0.0238,0,law,ko
+높게,42,11,0.952,1,0.0238,0,frontier,ko
+하드웨어,42,11,0.905,1,0.0238,0,frontier,ko
+의존성,41,9,1.0,1,0.0238,0,safety_research,ko
+로컬,36,9,0.889,1,0.0238,0,safety_research,ko
+레이어,35,10,0.943,1,0.0238,1,safety_research,ko
+가족,35,10,0.914,1,0.0238,0,youth,ko
+연속,26,7,0.962,1,0.0238,0,safety_research,ko
+과제,347,30,0.836,9,0.0237,0,safety_research,ko
+해석,105,31,0.648,4,0.0237,0,safety_research,ko
+민간,107,26,0.766,3,0.0236,0,national_security,ko
+위험 평가,74,21,0.743,3,0.0236,0,law,ko
+메타,80,13,0.9,3,0.0234,1,frontier,ko
+control,73,16,0.877,3,0.0233,4,safety_research,en
+포함하고,43,15,0.837,1,0.0233,0,safety_research,ko
+수학적,42,18,0.69,1,0.0233,0,safety_research,ko
+조합,31,7,0.968,2,0.0233,0,safety_research,ko
+incident,27,11,0.963,1,0.0233,0,incidents,en
+창작,22,10,0.909,1,0.0233,0,law,ko
+질문,115,28,0.774,3,0.0231,0,frontier,ko
+실험,332,32,0.867,9,0.023,0,safety_research,ko
+심사,59,17,0.814,2,0.023,1,law,ko
+비용,243,26,0.893,6,0.0229,0,frontier,ko
+관점,215,23,0.907,5,0.0227,0,safety_research,ko
+Management,42,13,0.881,1,0.0227,0,guideline,en
+소장,39,9,0.872,1,0.0227,0,law,ko
+고지,37,16,0.838,1,0.0227,1,law,ko
+배분,32,13,0.844,1,0.0227,0,law,ko
+실천,27,12,0.889,1,0.0227,0,norms,ko
+Challenge,20,9,0.75,1,0.0227,0,cybersecurity,en
+착취,15,7,0.933,1,0.0227,0,youth,ko
+능력 평가,14,11,0.286,1,0.0227,0,frontier,ko
+프롬프트,213,21,0.92,5,0.0226,0,safety_research,ko
+사전,178,25,0.871,5,0.0226,0,safety_research,ko
+도메인,124,12,0.96,3,0.0226,1,safety_research,ko
+탐색,72,16,0.917,3,0.0226,0,cybersecurity,ko
+조항,83,16,0.819,2,0.0225,0,law,ko
+작동,40,16,0.75,3,0.0224,0,safety_research,ko
+목소리,45,10,0.933,1,0.0222,0,law,ko
+red-teaming,45,11,0.778,1,0.0222,1,safety_research,en
+솔루션,44,14,0.864,1,0.0222,0,cybersecurity,ko
+부재,41,7,0.951,1,0.0222,0,law,ko
+재판,35,12,0.829,1,0.0222,0,law,ko
+시사점,181,22,0.867,4,0.0221,0,safety_research,ko
+지시,84,17,0.917,3,0.0221,1,cybersecurity,ko
+고객,73,15,0.932,2,0.022,0,frontier,ko
+컴퓨팅,124,22,0.831,3,0.0219,0,frontier,ko
+우회,55,12,0.891,3,0.0219,0,frontier,ko
+절차,259,26,0.873,6,0.0217,0,law,ko
+손실,44,11,0.932,1,0.0217,0,safety_research,ko
+권력,43,14,0.86,1,0.0217,0,national_security,ko
+제거,39,12,0.897,2,0.0217,2,safety_research,ko
+분리,35,11,0.914,2,0.0217,0,safety_research,ko
+Trust,34,9,0.941,2,0.0217,1,agentic_ai,en
+Bill,32,12,0.875,1,0.0217,0,law,en
+논문,175,30,0.817,4,0.0216,1,safety_research,ko
+모델들,136,28,0.779,3,0.0216,0,frontier,ko
+변화,260,26,0.85,7,0.0215,0,frontier,ko
+상호작용,153,21,0.876,4,0.0215,0,agentic_ai,ko
+라벨,51,9,0.961,2,0.0215,0,safety_research,ko
+게시,13,10,0.769,2,0.0215,0,guideline,ko
+reasoning,139,18,0.892,3,0.0214,5,frontier,en
+기간,109,21,0.835,3,0.0214,0,law,ko
+효율성,92,22,0.87,2,0.0213,0,frontier,ko
+시스템적,47,23,0.532,1,0.0213,0,cybersecurity,ko
+Claude Code,46,15,0.804,1,0.0213,1,frontier,en
+MMLU,43,21,0.558,1,0.0213,1,frontier,en
+point,13,6,1.0,1,0.0213,0,frontier,en
+약화,25,11,0.88,2,0.0211,0,law,ko
+Team,20,10,0.6,2,0.0211,0,frontier,en
+검증,464,24,0.95,13,0.0209,0,safety_research,ko
+조치,315,30,0.857,8,0.0209,0,frontier,ko
+요청,126,23,0.825,4,0.0209,0,frontier,ko
+최적화,109,17,0.936,3,0.0208,0,safety_research,ko
+다중 에이전트,48,15,0.875,1,0.0208,0,agentic_ai,ko
+데이터베이스,48,11,0.979,1,0.0208,0,cybersecurity,ko
+정황,48,10,0.979,1,0.0208,0,cybersecurity,ko
+Grok,47,12,0.787,1,0.0208,2,frontier,en
+Access,43,11,0.884,1,0.0208,1,frontier,en
+보안 위험,39,11,0.846,1,0.0208,0,cybersecurity,ko
+사진,35,11,0.829,1,0.0208,0,law,ko
+Program,26,11,0.692,1,0.0208,0,frontier,en
+업무,167,21,0.868,4,0.0206,0,frontier,ko
+Commission,90,11,0.889,2,0.0206,0,law,en
+로그,56,13,0.875,6,0.0206,0,agentic_ai,ko
+연결,51,14,0.902,4,0.0206,0,cybersecurity,ko
+게재일,49,14,0.898,1,0.0204,0,cybersecurity,ko
+전역,47,10,0.957,1,0.0204,0,law,ko
+impact,37,16,0.838,1,0.0204,1,frontier,en
+behavior,25,8,1.0,1,0.0204,0,frontier,en
+장애,19,7,0.737,1,0.0204,0,cybersecurity,ko
+형태,142,18,0.88,3,0.0203,0,safety_research,ko
+시행,123,20,0.837,6,0.0203,1,law,ko
+비판,60,13,0.883,3,0.0203,0,frontier,ko
+사기,76,19,0.737,2,0.0202,0,deepfake_disinfo,ko
+방향,255,30,0.827,6,0.0201,0,law,ko
+시점,98,17,0.878,2,0.02,0,frontier,ko
+benchmark,62,11,0.935,2,0.02,1,safety_research,en
+지원하고,50,17,0.88,1,0.02,0,cybersecurity,ko
+물리적,50,10,0.96,1,0.02,0,physical_ai,ko
+부정,15,8,0.8,2,0.02,0,cybersecurity,ko
+Engine,12,9,0.917,1,0.02,0,frontier,en
+agents,146,23,0.877,3,0.0199,1,agentic_ai,en
+주권,80,14,0.925,2,0.0196,0,sovereign_ai,ko
+Cybersecurity,50,9,0.86,1,0.0196,0,cybersecurity,en
+유도,41,12,0.878,3,0.0196,1,safety_research,ko
+문의,14,9,0.714,1,0.0196,0,frontier,ko
+공적,14,6,0.929,1,0.0196,0,law,ko
+감시,117,16,0.889,3,0.0195,0,national_security,ko
+구조,226,21,0.92,8,0.0192,1,safety_research,ko
+문서,183,24,0.847,5,0.0192,0,law,ko
+샘플,39,10,0.897,1,0.0192,0,safety_research,ko
+중대,13,10,0.769,1,0.0192,0,law,ko
+공급망,103,15,0.922,2,0.019,0,national_security,ko
+유출,80,18,0.863,2,0.0189,0,cybersecurity,ko
+격리,35,10,0.914,1,0.0189,0,cybersecurity,ko
+보완,32,11,0.812,2,0.0189,0,frontier,ko
+주입,24,9,0.917,1,0.0189,0,cybersecurity,ko
+vision,22,12,0.864,1,0.0189,1,frontier,en
+사고,136,22,0.824,3,0.0186,1,cybersecurity,ko
+일정,157,18,0.892,3,0.0185,0,law,ko
+경향,144,32,0.785,3,0.0185,0,frontier,ko
+보상,92,23,0.859,2,0.0185,1,safety_research,ko
+파운데이션 모델,53,12,0.887,1,0.0185,0,cybersecurity,ko
+비공개,52,14,0.923,1,0.0185,1,frontier,ko
+사용자들,52,15,0.827,1,0.0185,0,frontier,ko
+발언,50,14,0.86,1,0.0185,0,frontier,ko
+훈련,173,30,0.792,4,0.0182,0,frontier,ko
+반도체,109,22,0.752,2,0.0182,0,physical_ai,ko
+표준화,60,15,0.867,2,0.0182,0,standards,ko
+허위정보,55,16,0.745,1,0.0182,0,deepfake_disinfo,ko
+엔지니어링,52,21,0.712,1,0.0182,0,cybersecurity,ko
+애플리케이션,51,14,0.863,1,0.0182,0,cybersecurity,ko
+우위,51,13,0.902,1,0.0182,0,frontier,ko
+확률,39,14,0.846,1,0.0182,0,safety_research,ko
+인용,31,10,0.935,1,0.0182,0,safety_research,ko
+release,17,5,0.941,1,0.0182,0,frontier,en
+안내,54,14,0.907,3,0.0181,0,law,ko
+요소,118,21,0.881,3,0.018,0,frontier,ko
+자동화,142,21,0.859,4,0.0179,2,cybersecurity,ko
+논란,56,12,0.839,1,0.0179,0,law,ko
+의제,42,12,0.762,1,0.0179,0,norms,ko
+Kill,13,6,1.0,1,0.0179,0,national_security,en
+식별,98,21,0.796,4,0.0176,0,law,ko
+가치,177,23,0.904,4,0.0175,1,norms,ko
+확장,155,26,0.845,5,0.0175,1,frontier,ko
+METR,78,28,0.59,2,0.0175,2,frontier,en
+기술 기업,22,8,0.909,1,0.0175,0,law,ko
+윤리,124,29,0.79,4,0.0174,0,norms,ko
+해킹,90,17,0.944,2,0.0174,0,cybersecurity,ko
+비율,113,24,0.867,2,0.0172,0,frontier,ko
+예측,164,23,0.89,4,0.0171,1,safety_research,ko
+인지,65,14,0.923,3,0.0169,0,frontier,ko
+Technology,58,16,0.862,1,0.0169,0,frontier,en
+안전성 평가,50,10,1.0,1,0.0169,0,safety_research,ko
+위치,36,8,0.972,1,0.0169,0,frontier,ko
+Sol,20,4,1.0,1,0.0169,0,frontier,en
+rule,14,6,0.929,1,0.0169,0,law,en
+하거나,12,7,0.833,4,0.0169,0,cybersecurity,ko
+방어,188,20,0.926,4,0.0167,0,cybersecurity,ko
+위반,147,20,0.85,3,0.0167,0,law,ko
+예시,55,18,0.818,1,0.0167,0,guideline,ko
+수단,54,14,0.852,1,0.0167,0,law,ko
+system,48,11,0.854,3,0.0167,0,frontier,en
+Attacks,47,14,0.915,1,0.0167,0,safety_research,en
+연령,45,11,0.889,1,0.0167,0,youth,ko
+활성,29,8,0.966,2,0.0167,0,safety_research,ko
+Fake,15,6,0.867,1,0.0167,0,law,en
+주의,45,13,0.867,3,0.0165,0,law,ko
+의회,67,14,0.896,2,0.0164,0,law,ko
+전반적,54,16,0.889,1,0.0164,0,frontier,ko
+패널,52,15,0.827,1,0.0164,0,norms,ko
+워크플로,19,5,1.0,1,0.0164,0,agentic_ai,ko
+촉진,32,11,0.844,2,0.0163,0,law,ko
+활동,155,23,0.877,3,0.0162,0,cybersecurity,ko
+반대,50,15,0.88,1,0.0161,0,law,ko
+포인트,32,8,0.969,1,0.0161,0,safety_research,ko
+수정,116,21,0.853,3,0.016,0,frontier,ko
+Act,298,28,0.802,11,0.0159,1,law,en
+출력,175,26,0.886,3,0.0159,0,safety_research,ko
+GPT-5,122,14,0.959,2,0.0159,0,frontier,en
+자격,45,14,0.822,1,0.0159,0,cybersecurity,ko
+용량,25,11,0.84,1,0.0159,0,frontier,ko
+분해,25,9,0.92,1,0.0159,0,safety_research,ko
+Code,113,19,0.796,3,0.0156,0,guideline,en
+Analysis,60,7,0.983,1,0.0156,0,frontier,en
+명령,59,15,0.898,2,0.0156,1,cybersecurity,ko
+부여,23,10,0.913,1,0.0156,0,agentic_ai,ko
+세대,21,11,0.905,1,0.0156,0,frontier,ko
+공격,440,25,0.923,8,0.0155,0,cybersecurity,ko
+인식,122,22,0.877,3,0.0155,1,frontier,ko
+선택,102,17,0.892,3,0.0155,3,safety_research,ko
+추정,56,8,0.929,2,0.0155,0,agentic_ai,ko
+계약,99,16,0.909,2,0.0154,0,law,ko
+줄이고,65,21,0.785,1,0.0154,0,law,ko
+양상,64,12,0.922,1,0.0154,0,safety_research,ko
+만들고,64,12,0.906,1,0.0154,0,frontier,ko
+상승,23,7,1.0,1,0.0154,0,cybersecurity,ko
+제출,104,19,0.856,3,0.0153,0,law,ko
+과도한,66,12,0.924,1,0.0152,0,law,ko
+관측,36,9,0.944,1,0.0152,0,safety_research,ko
+벤치마크,368,23,0.948,6,0.0151,1,safety_research,ko
+결정,138,18,0.913,6,0.0149,0,law,ko
+기계,49,12,0.918,1,0.0149,0,law,ko
+동적,58,12,0.914,1,0.0147,0,safety_research,ko
+조달,55,13,0.945,1,0.0147,0,national_security,ko
+결합,35,10,0.914,3,0.0147,0,safety_research,ko
+launch,15,6,0.933,1,0.0147,0,frontier,en
+의견,185,29,0.832,3,0.0146,0,law,ko
+향상,202,30,0.861,5,0.0145,0,safety_research,ko
+회의,116,24,0.81,4,0.0145,0,law,ko
+Sonnet,67,25,0.597,1,0.0145,0,frontier,en
+평가하고,66,19,0.833,1,0.0145,0,safety_research,ko
+촉구,57,9,0.965,2,0.0145,0,frontier,ko
+통계,25,9,0.8,1,0.0145,0,frontier,ko
+달러,192,19,0.854,3,0.0144,0,frontier,ko
+text,29,8,0.966,2,0.0144,0,frontier,en
+의무,197,25,0.817,4,0.0143,0,law,ko
+중간,53,14,0.887,1,0.0143,0,safety_research,ko
+coding,50,12,0.96,1,0.0143,1,frontier,en
+복제,36,17,0.75,1,0.0143,0,law,ko
+자연,12,6,0.917,1,0.0143,0,frontier,ko
+검색,115,16,0.939,2,0.0142,0,frontier,ko
+AISI,90,16,0.844,2,0.0142,25,frontier,en
+심각한,71,18,0.887,1,0.0141,0,frontier,ko
+모델 성능,64,18,0.875,1,0.0141,0,safety_research,ko
+문헌,58,13,0.931,1,0.0141,0,safety_research,ko
+Search,34,11,1.0,3,0.0141,0,deepfake_disinfo,en
+source,17,9,0.941,1,0.0141,0,safety_research,en
+AI,4128,45,0.859,65,0.0139,167,frontier,en
+Evaluation,110,24,0.8,2,0.0139,0,safety_research,en
+구성,95,17,0.926,6,0.0139,1,safety_research,ko
+커뮤니티,70,17,0.843,1,0.0139,1,frontier,ko
+language model,34,18,0.618,2,0.0139,0,safety_research,en
+Token,27,6,1.0,1,0.0139,0,frontier,en
+연구 개발,14,14,0.5,1,0.0139,0,frontier,ko
+가능한,328,30,0.893,5,0.0137,0,safety_research,ko
+행위,91,18,0.879,5,0.0137,0,law,ko
+비전,55,14,0.927,1,0.0137,0,safety_research,ko
+코딩,121,21,0.876,2,0.0135,0,frontier,ko
+유해,102,12,0.941,2,0.0134,0,safety_research,ko
+Report,74,18,0.811,2,0.0134,0,frontier,en
+상태,134,18,0.925,2,0.0133,0,safety_research,ko
+개념,119,32,0.807,2,0.0133,0,safety_research,ko
+뉴욕,44,12,0.864,1,0.0133,0,law,ko
+RAG,26,9,0.923,1,0.0133,7,cybersecurity,en
+조직,182,21,0.896,3,0.0132,0,cybersecurity,ko
+효율,55,13,0.909,3,0.0132,0,safety_research,ko
+마크,12,5,1.0,6,0.0132,0,law,ko
+사건,215,18,0.921,3,0.013,0,frontier,ko
+입력,127,23,0.89,2,0.013,0,safety_research,ko
+정의,109,20,0.826,4,0.013,0,law,ko
+자사,74,13,0.878,1,0.013,0,frontier,ko
+정리,32,12,0.875,3,0.0129,0,law,ko
+없음,78,13,0.923,1,0.0128,1,frontier,ko
+안정성,66,13,0.955,1,0.0128,0,safety_research,ko
+가상,58,16,0.759,1,0.0128,0,agentic_ai,ko
+게재,15,11,0.733,1,0.0128,0,law,ko
+없이,307,28,0.896,4,0.0127,0,law,ko
+비교,152,18,0.941,4,0.0127,0,safety_research,ko
+중단,90,18,0.856,2,0.0127,0,frontier,ko
+운영,314,26,0.901,6,0.0126,1,cybersecurity,ko
+대화,219,23,0.817,4,0.0126,0,frontier,ko
+예정,135,18,0.881,5,0.0125,2,frontier,ko
+어려운,79,20,0.848,1,0.0125,0,safety_research,ko
+허위 정보,21,7,0.857,1,0.0123,0,deepfake_disinfo,ko
+전장,20,9,0.7,2,0.0123,0,national_security,ko
+운용,19,10,0.947,1,0.0123,0,national_security,ko
+Harm,19,8,0.789,1,0.0123,0,law,en
+부족,121,17,0.926,3,0.0122,0,frontier,ko
+답변,75,17,0.813,1,0.0122,0,frontier,ko
+주체,66,17,0.879,1,0.0122,0,agentic_ai,ko
+질의,43,11,0.977,1,0.0122,1,safety_research,ko
+집행,137,24,0.796,4,0.0121,0,law,ko
+금융,105,21,0.848,2,0.012,0,law,ko
+중요성,83,22,0.783,1,0.012,0,frontier,ko
+출범,46,17,0.783,1,0.012,0,norms,ko
+접근성,84,19,0.857,1,0.0119,0,frontier,ko
+인재,81,21,0.802,1,0.0119,0,law,ko
+적절한,54,20,0.704,1,0.0119,0,guideline,ko
+계층,51,12,0.922,1,0.0119,0,agentic_ai,ko
+고도화,36,14,0.861,1,0.0118,0,frontier,ko
+CLI,17,7,1.0,1,0.0118,0,agentic_ai,en
+단위,82,15,0.939,1,0.0116,0,safety_research,ko
+call,30,9,0.933,1,0.0116,0,law,en
+Model,245,30,0.845,6,0.0115,0,frontier,en
+보존,44,14,0.932,1,0.0115,0,safety_research,ko
+찾아,35,13,0.914,1,0.0115,0,cybersecurity,ko
+메모,12,6,0.583,1,0.0115,0,safety_research,ko
+지역,147,18,0.905,2,0.0114,0,frontier,ko
+삭제,55,13,0.891,1,0.0114,0,law,ko
+재현,32,12,0.875,1,0.0114,0,safety_research,ko
+측정,118,20,0.864,3,0.0113,1,safety_research,ko
+의존,88,11,0.909,3,0.0113,0,safety_research,ko
+Pro,80,13,0.963,9,0.0113,0,frontier,en
+유지,79,21,0.823,4,0.0113,0,frontier,ko
+첨단,97,19,0.907,2,0.0112,0,frontier,ko
+수집,96,21,0.844,2,0.0112,0,law,ko
+Office,78,21,0.795,1,0.0112,0,law,en
+통신,72,15,0.931,3,0.0112,0,cybersecurity,ko
+나타나,61,14,0.885,1,0.0112,0,safety_research,ko
+장관,32,12,0.75,1,0.0112,0,frontier,ko
+파트너십,89,18,0.843,1,0.0111,0,frontier,ko
+명시적,83,16,0.855,1,0.0111,0,safety_research,ko
+프레임워크 제안,21,5,0.905,1,0.0111,0,safety_research,ko
+set,12,6,0.917,1,0.0111,0,safety_research,en
+고위험,181,25,0.845,2,0.011,1,law,ko
+대체,99,20,0.859,2,0.011,0,safety_research,ko
+악용,96,16,0.885,2,0.011,0,cybersecurity,ko
+계정,87,15,0.897,1,0.011,0,frontier,ko
+버전,85,27,0.765,1,0.011,0,cybersecurity,ko
+취지,77,15,0.909,1,0.011,0,frontier,ko
+인도,65,20,0.892,1,0.011,0,law,ko
+동기,64,9,0.938,1,0.011,0,safety_research,ko
+서명,49,14,0.857,1,0.011,0,law,ko
+프로젝트,174,25,0.891,2,0.0109,3,frontier,ko
+Cyber,113,17,0.912,2,0.0109,0,cybersecurity,en
+권리,70,20,0.829,1,0.0109,0,law,ko
+역량,349,25,0.865,4,0.0108,0,cybersecurity,ko
+safety,343,26,0.863,4,0.0108,4,safety_research,en
+의사결정,179,20,0.877,2,0.0108,0,law,ko
+감지,41,13,0.854,1,0.0108,0,safety_research,ko
+MIT,35,15,0.857,2,0.0107,0,frontier,en
+교육,225,24,0.796,3,0.0106,0,frontier,ko
+일까지,87,22,0.816,1,0.0106,0,law,ko
+선정,49,15,0.898,1,0.0106,1,cybersecurity,ko
+변경,65,20,0.815,1,0.0105,0,law,ko
+부담,85,15,0.906,1,0.0104,0,law,ko
+협업,81,20,0.79,1,0.0104,0,frontier,ko
+협의,40,15,0.8,1,0.0104,0,guideline,ko
+전환,163,23,0.914,3,0.0103,0,frontier,ko
+가이드,72,18,0.819,2,0.0103,0,guideline,ko
+조사,161,22,0.882,3,0.0102,1,frontier,ko
+출처,92,16,0.891,1,0.0102,0,deepfake_disinfo,ko
+성적,84,14,0.833,1,0.0102,0,youth,ko
+context,72,15,0.903,1,0.0102,0,frontier,en
+유발,16,7,0.812,1,0.0102,0,safety_research,ko
+미치 영향,99,21,0.808,1,0.0101,0,frontier,ko
+Tech,65,10,0.892,2,0.0101,0,law,en
+본문,299,22,0.896,3,0.01,0,frontier,ko
+노출,50,11,0.86,1,0.01,0,cybersecurity,ko
+개정,49,13,0.898,1,0.01,0,law,ko
+대규모,303,27,0.898,3,0.0099,0,safety_research,ko
+테스트,252,29,0.861,3,0.0098,1,cybersecurity,ko
+여부,200,21,0.88,2,0.0098,0,law,ko
+무기,51,15,0.863,1,0.0098,0,national_security,ko
+통합,166,19,0.892,3,0.0097,0,agentic_ai,ko
+아닌,103,15,0.913,1,0.0097,0,safety_research,ko
+되며,21,12,0.81,4,0.0097,0,frontier,ko
+EU AI Act,104,23,0.856,1,0.0096,1,law,en
+전략적,103,19,0.835,1,0.0096,0,frontier,ko
+집단,59,16,0.898,1,0.0096,0,frontier,ko
+유로,36,11,0.917,1,0.0096,0,law,ko
+코드,260,27,0.881,3,0.0095,0,cybersecurity,ko
+탐지,262,22,0.885,3,0.0094,0,cybersecurity,ko
+red,38,15,0.763,3,0.0094,0,safety_research,en
+개선,254,30,0.831,4,0.0093,0,safety_research,ko
+실증,60,14,0.917,1,0.0093,0,law,ko
+프라이버시,108,17,0.824,1,0.0092,0,law,ko
+건강,50,11,0.88,1,0.0092,0,healthcare,ko
+인터넷,89,18,0.888,1,0.009,0,cybersecurity,ko
+안전 평가,42,10,0.905,1,0.009,0,safety_research,ko
+발견,120,26,0.808,2,0.0089,0,cybersecurity,ko
+세부,102,22,0.863,1,0.0088,0,frontier,ko
+피해,177,25,0.842,2,0.0087,0,law,ko
+기회,109,22,0.789,1,0.0087,0,norms,ko
+사회,123,23,0.862,4,0.0086,0,norms,ko
+현실,56,12,0.911,1,0.0086,0,safety_research,ko
+있고,117,20,0.795,1,0.0085,0,frontier,ko
+딥페이크,116,22,0.793,1,0.0085,0,deepfake_disinfo,ko
+판단,146,24,0.856,2,0.0083,0,safety_research,ko
+데이터센터,119,15,0.908,1,0.0083,0,law,ko
+까지,114,18,0.886,5,0.0083,0,safety_research,ko
+존재,34,12,0.882,1,0.0083,0,agentic_ai,ko
+Digital,118,16,0.915,1,0.0082,0,law,en
+회사,94,18,0.915,1,0.0082,0,frontier,ko
+모니터링,223,22,0.857,2,0.0081,0,cybersecurity,ko
+방법론,110,26,0.782,1,0.0081,0,safety_research,ko
+경험,87,18,0.897,1,0.0081,0,frontier,ko
+채택,75,17,0.84,1,0.0081,0,frontier,ko
+지지,40,15,0.85,1,0.0081,0,law,ko
+가속,14,8,0.714,1,0.0081,0,frontier,ko
+보고서,364,31,0.753,3,0.0079,1,frontier,ko
+최신,125,25,0.864,1,0.0079,0,frontier,ko
+알고리즘,128,23,0.836,1,0.0076,0,law,ko
+표시,78,17,0.897,1,0.0076,0,law,ko
+있어,253,31,0.798,2,0.0074,0,frontier,ko
+전문가,116,22,0.828,3,0.0074,0,law,ko
+policy,112,17,0.902,1,0.0074,1,law,en
+균형,107,22,0.832,1,0.0074,0,law,ko
+보장,46,14,0.891,1,0.0074,0,agentic_ai,ko
+정확도,103,13,0.913,1,0.0073,1,safety_research,ko
+구글,138,19,0.899,1,0.0072,0,frontier,ko
+제품,123,20,0.902,1,0.0072,1,law,ko
+과학기술정보통신부,141,28,0.681,1,0.0071,0,cybersecurity,ko
+Test,28,10,0.786,1,0.0071,0,frontier,en
+기한,27,13,0.815,1,0.0071,0,law,ko
+데이터 센터,20,6,0.95,1,0.0071,0,frontier,ko
+EU,393,34,0.837,4,0.007,28,law,en
+상황,257,28,0.864,2,0.007,0,safety_research,ko
+차이,133,23,0.842,1,0.007,0,frontier,ko
+인력,129,18,0.907,1,0.007,0,law,ko
+영상,124,18,0.839,1,0.007,0,deepfake_disinfo,ko
+반복,70,17,0.914,1,0.007,1,safety_research,ko
+일반화,112,15,0.893,1,0.0069,0,safety_research,ko
+HAI,23,10,0.87,1,0.0069,1,sovereign_ai,en
+승인,92,15,0.859,1,0.0068,0,law,ko
+법원,88,13,0.943,1,0.0068,0,law,ko
+노동,80,20,0.863,1,0.0068,0,frontier,ko
+소개,62,19,0.855,2,0.0068,0,law,ko
+점에서,28,8,0.893,1,0.0068,0,safety_research,ko
+확보,176,30,0.79,2,0.0067,0,law,ko
+공유,163,28,0.804,2,0.0067,0,safety_research,ko
+잠재,22,8,0.864,1,0.0067,0,safety_research,ko
+off,13,7,0.923,1,0.0067,0,frontier,en
+대응,385,29,0.862,4,0.0066,0,cybersecurity,ko
+투명성,293,30,0.836,2,0.0066,1,law,ko
+Governance,149,16,0.893,1,0.0066,0,norms,en
+제안,237,18,0.911,6,0.0065,0,safety_research,ko
+집행위원회,144,22,0.847,1,0.0065,0,law,ko
+정치,48,15,0.812,1,0.0065,0,politics,ko
+고도,36,13,0.806,1,0.0064,0,cybersecurity,ko
+질적,24,9,0.917,1,0.0064,0,norms,ko
+lab,21,11,0.857,1,0.0064,0,frontier,en
+도입,281,21,0.904,3,0.0063,0,law,ko
+패턴,154,31,0.747,1,0.0063,0,safety_research,ko
+방지,96,17,0.865,1,0.0061,0,law,ko
+동의,69,16,0.884,1,0.0061,0,law,ko
+배포,264,24,0.898,2,0.006,2,safety_research,ko
+소프트웨어,163,22,0.822,1,0.006,0,cybersecurity,ko
+미래,131,27,0.786,1,0.006,0,law,ko
+경고,99,14,0.919,1,0.0059,0,cybersecurity,ko
+GPT,53,13,0.906,2,0.0059,1,frontier,en
+증거,168,28,0.887,1,0.0058,0,cybersecurity,ko
+지식,123,19,0.87,1,0.0058,0,frontier,ko
+ML,17,10,0.706,1,0.0057,0,law,en
+안정,17,7,0.941,1,0.0057,0,cybersecurity,ko
+사이버보안,169,18,0.882,1,0.0056,0,cybersecurity,ko
+기업들,164,20,0.896,1,0.0056,0,frontier,ko
+Research,144,19,0.868,1,0.0056,1,frontier,en
+파일,76,18,0.882,1,0.0056,0,cybersecurity,ko
+보호,384,28,0.893,3,0.0055,0,law,ko
+Data,136,18,0.919,1,0.0055,1,law,en
+사실,133,17,0.865,1,0.0054,0,law,ko
+가지,344,34,0.872,2,0.0053,0,frontier,ko
+하며,197,30,0.822,9,0.0053,0,law,ko
+효과,165,25,0.861,2,0.0053,1,safety_research,ko
+구현,129,20,0.922,1,0.0053,0,guideline,ko
+명시,18,8,0.889,1,0.0053,0,guideline,ko
+출시,118,20,0.839,1,0.0051,0,frontier,ko
+금지,108,16,0.917,1,0.005,0,law,ko
+제도,100,23,0.87,1,0.005,0,law,ko
+시작,57,15,0.93,1,0.005,0,law,ko
+개인정보,178,23,0.854,1,0.0049,0,law,ko
+적용,315,30,0.851,3,0.0047,0,law,ko
+성과,177,31,0.797,3,0.0047,0,frontier,ko
+정적,24,6,1.0,1,0.0047,0,cybersecurity,ko
+개인 정보,22,7,0.909,1,0.0045,0,law,ko
+추가,346,28,0.89,2,0.0043,0,safety_research,ko
+응답,182,24,0.852,1,0.0043,2,safety_research,ko
+Security,177,21,0.836,1,0.0043,1,cybersecurity,en
+IT,35,13,0.886,9,0.0043,0,cybersecurity,en
+해결,81,20,0.778,1,0.0041,0,frontier,ko
+부터,46,15,0.87,2,0.0041,0,law,ko
+수행,106,26,0.745,2,0.004,0,frontier,ko
+전반,194,20,0.887,1,0.0039,0,frontier,ko
+제한,170,26,0.871,2,0.0039,0,frontier,ko
+프레임,55,9,0.945,2,0.0039,0,safety_research,ko
+모니터,22,11,0.864,1,0.0039,0,frontier,ko
+기여,132,13,0.97,1,0.0038,0,safety_research,ko
+신뢰,195,25,0.836,2,0.0037,0,norms,ko
+문제,731,41,0.882,3,0.0036,0,safety_research,ko
+보고,213,27,0.822,3,0.0036,0,cybersecurity,ko
+하고,72,19,0.806,10,0.0036,0,law,ko
+US,57,14,0.877,4,0.0035,2,frontier,en
+있음,301,31,0.86,1,0.0033,0,safety_research,ko
+사이버 보안,126,21,0.849,1,0.0033,0,cybersecurity,ko
+정확,48,9,0.958,1,0.0033,0,safety_research,ko
+반영,30,10,0.933,1,0.0033,0,frontier,ko
+우려,258,21,0.837,1,0.0032,0,frontier,ko
+혁신,248,29,0.778,1,0.0032,0,law,ko
+OpenAI,341,25,0.886,1,0.0029,13,frontier,en
+특정,315,36,0.835,1,0.0029,0,safety_research,ko
+으로,307,25,0.899,10,0.0028,0,safety_research,ko
+과학,99,24,0.717,1,0.0027,0,frontier,ko
+작업,345,34,0.777,1,0.0026,0,frontier,ko
+경쟁,215,28,0.856,1,0.0026,0,frontier,ko
+개인,141,23,0.872,1,0.0026,1,law,ko
+사이,152,27,0.862,2,0.0025,0,law,ko
+자율,150,28,0.807,1,0.0025,2,agentic_ai,ko
+다양한,423,40,0.813,1,0.0024,0,safety_research,ko
+agent,149,16,0.919,1,0.0024,1,agentic_ai,en
+Safe,52,12,0.904,1,0.0021,0,safety_research,en
+mode,19,9,0.895,1,0.0018,0,frontier,en
+Era,14,6,1.0,1,0.0018,0,agentic_ai,en
+확인,292,24,0.89,1,0.0014,0,frontier,ko
+com,89,14,0.933,1,0.0014,0,frontier,en
+불가,21,8,0.857,1,0.0013,0,agentic_ai,ko
+CL,19,2,1.0,1,0.0011,0,safety_research,en
+제시,149,24,0.872,1,0.0009,0,safety_research,ko
+에서,691,31,0.902,2,0.0006,0,safety_research,ko
+있으,527,38,0.835,0,0.0,0,frontier,ko
+등을,499,33,0.824,0,0.0,0,law,ko
+Anthropic,495,43,0.752,0,0.0,13,frontier,en
+Claude,385,35,0.784,0,0.0,11,frontier,en
+사이버,378,27,0.905,0,0.0,0,cybersecurity,ko
+향후,352,33,0.838,0,0.0,0,frontier,ko
+해당,334,26,0.862,0,0.0,0,law,ko
+아니,306,25,0.922,0,0.0,0,safety_research,ko
+바탕,287,30,0.826,0,0.0,0,frontier,ko
+발전,279,33,0.81,0,0.0,0,law,ko
+내부,275,25,0.876,0,0.0,0,frontier,ko
+생성형,261,28,0.793,0,0.0,1,law,ko
+법적,251,25,0.845,0,0.0,0,law,ko
+전문,248,28,0.839,0,0.0,1,law,ko
+오픈,248,20,0.944,0,0.0,0,frontier,ko
+따른,247,30,0.806,0,0.0,0,law,ko
+크게,244,28,0.881,0,0.0,0,frontier,ko
+인프,241,21,0.892,0,0.0,0,cybersecurity,ko
+활용해,223,21,0.901,0,0.0,0,cybersecurity,ko
+최대,222,20,0.887,0,0.0,0,frontier,ko
+구체적,219,19,0.913,0,0.0,0,safety_research,ko
+포함한,213,24,0.878,0,0.0,0,law,ko
+개의,211,28,0.891,0,0.0,0,frontier,ko
+공동,208,29,0.856,0,0.0,0,frontier,ko
+필요성,205,31,0.829,0,0.0,0,law,ko
+외부,203,22,0.892,0,0.0,0,cybersecurity,ko
+측면,203,16,0.946,0,0.0,0,safety_research,ko
+대비,202,18,0.931,0,0.0,0,safety_research,ko
+초기,201,29,0.821,0,0.0,0,frontier,ko
+있도록,201,28,0.796,0,0.0,0,frontier,ko
+점을,198,22,0.904,0,0.0,0,frontier,ko
+frontier,197,21,0.888,0,0.0,7,frontier,en
+국가 전략,196,7,0.99,0,0.0,0,safety_research,ko
+Google,195,16,0.887,0,0.0,10,frontier,en
+등이,189,24,0.82,0,0.0,0,frontier,ko
+구체적인,188,20,0.926,0,0.0,0,frontier,ko
+연구진,186,25,0.833,0,0.0,0,frontier,ko
+가장,182,27,0.846,0,0.0,0,frontier,ko
+직접,181,21,0.912,0,0.0,0,frontier,ko
+복잡한,176,31,0.778,0,0.0,0,frontier,ko
+있지,171,28,0.848,0,0.0,0,law,ko
+실패,170,23,0.888,0,0.0,0,safety_research,ko
+초점,169,26,0.858,0,0.0,0,frontier,ko
+기술적,169,22,0.923,0,0.0,0,law,ko
+또는,169,24,0.811,0,0.0,1,law,ko
+단일,169,17,0.964,0,0.0,0,safety_research,ko
+공공,167,21,0.898,0,0.0,0,law,ko
+자체,166,22,0.904,0,0.0,0,frontier,ko
+소송,162,17,0.92,0,0.0,0,law,ko
+등의,161,29,0.839,0,0.0,0,frontier,ko
+자동,160,24,0.869,0,0.0,0,safety_research,ko
+모두,159,25,0.868,0,0.0,0,safety_research,ko
+기사,159,18,0.862,0,0.0,0,frontier,ko
+생태계,158,24,0.854,0,0.0,0,norms,ko
+동시,155,18,0.916,0,0.0,0,safety_research,ko
+있게,152,29,0.796,0,0.0,0,frontier,ko
+risk,152,19,0.882,0,0.0,0,frontier,en
+artificial,152,16,0.855,0,0.0,0,law,en
+Gemini,151,16,0.947,0,0.0,0,frontier,en
+중요한,150,28,0.793,0,0.0,0,law,ko
+다루,150,20,0.913,0,0.0,0,safety_research,ko
+반면,148,22,0.858,0,0.0,0,frontier,ko
+인한,144,26,0.812,0,0.0,0,law,ko
+침해,144,25,0.819,0,0.0,0,law,ko
+안전한,142,25,0.838,0,0.0,0,safety_research,ko
+Language,141,32,0.773,0,0.0,0,safety_research,en
+요약,141,27,0.773,0,0.0,0,law,ko
+마감일,138,16,0.913,0,0.0,0,frontier,ko
+통한,137,31,0.796,0,0.0,0,safety_research,ko
+미치,137,24,0.832,0,0.0,0,frontier,ko
+신뢰할,136,23,0.838,0,0.0,0,norms,ko
+법률,136,20,0.868,0,0.0,0,law,ko
+않은,135,24,0.881,0,0.0,0,frontier,ko
+유럽연합,135,28,0.778,0,0.0,0,law,ko
+경제,135,18,0.822,0,0.0,0,frontier,ko
+아동,133,17,0.895,0,0.0,0,youth,ko
+등에,132,24,0.856,0,0.0,0,frontier,ko
+포함,132,23,0.879,0,0.0,0,law,ko
+활용한,131,22,0.863,0,0.0,0,cybersecurity,ko
+필요한,130,21,0.877,0,0.0,0,frontier,ko
+연방,130,18,0.831,0,0.0,0,law,ko
+중이,126,19,0.762,0,0.0,0,frontier,ko
+arxiv,126,12,0.976,0,0.0,1,safety_research,en
+오픈소스,124,20,0.847,0,0.0,0,open_weight,ko
+다중,122,20,0.918,0,0.0,0,agentic_ai,ko
+독립,122,20,0.877,0,0.0,0,law,ko
+의료,122,17,0.877,0,0.0,0,healthcare,ko
+강력한,121,20,0.876,0,0.0,0,frontier,ko
+않는,121,21,0.81,0,0.0,0,safety_research,ko
+전문가들,120,22,0.825,0,0.0,0,law,ko
+최종,120,19,0.875,0,0.0,0,law,ko
+https,120,12,0.958,0,0.0,0,frontier,en
+경쟁력,118,24,0.839,0,0.0,0,law,ko
+시대,118,23,0.847,0,0.0,0,agentic_ai,ko
+평균,118,18,0.932,0,0.0,0,safety_research,ko
+동안,117,21,0.88,0,0.0,0,frontier,ko
+간의,116,23,0.836,0,0.0,0,frontier,ko
+제공된,116,18,0.879,0,0.0,0,frontier,ko
+전략 측면,116,2,1.0,0,0.0,0,safety_research,ko
+일부터,115,22,0.809,0,0.0,0,law,ko
+agentic,115,15,0.948,0,0.0,1,agentic_ai,en
+대형,114,26,0.798,0,0.0,0,frontier,ko
+구조적,114,15,0.956,0,0.0,0,safety_research,ko
+주로,113,21,0.823,0,0.0,0,law,ko
+체계적,113,17,0.867,0,0.0,0,safety_research,ko
+넘어,112,16,0.92,0,0.0,0,agentic_ai,ko
+글은,110,20,0.891,0,0.0,0,law,ko
+평가하,110,21,0.845,0,0.0,0,safety_research,ko
+시행일,108,13,0.944,0,0.0,0,frontier,ko
+않고,106,17,0.896,0,0.0,0,frontier,ko
+실시간,104,17,0.894,0,0.0,0,cybersecurity,ko
+유사한,102,24,0.824,0,0.0,0,frontier,ko
+일반,102,20,0.853,0,0.0,0,safety_research,ko
+접근법,101,26,0.812,0,0.0,0,safety_research,ko
+Open,101,21,0.832,0,0.0,0,frontier,en
+Large,100,20,0.88,0,0.0,0,safety_research,en
+안보,100,20,0.82,0,0.0,0,national_security,ko
+페이지,100,16,0.92,0,0.0,0,frontier,ko
+보이,100,17,0.81,0,0.0,0,safety_research,ko
+도움,98,27,0.714,0,0.0,0,frontier,ko
+현상,98,19,0.867,0,0.0,0,safety_research,ko
+Global,98,17,0.827,0,0.0,0,norms,en
+jailbreak,98,12,0.969,0,0.0,7,safety_research,en
+ChatGPT,97,15,0.876,0,0.0,1,frontier,en
+관한,96,22,0.833,0,0.0,0,law,ko
+점이,96,16,0.917,0,0.0,0,safety_research,ko
+Meta,96,16,0.802,0,0.0,5,frontier,en
+아직,95,24,0.832,0,0.0,0,frontier,ko
+활용할,94,21,0.84,0,0.0,0,frontier,ko
+대신,94,17,0.915,0,0.0,0,safety_research,ko
+강화하고,93,20,0.871,0,0.0,0,cybersecurity,ko
+제공하,93,20,0.871,0,0.0,0,frontier,ko
+작성,93,24,0.72,0,0.0,0,frontier,ko
+최소,93,18,0.882,0,0.0,0,law,ko
+않아,93,17,0.892,0,0.0,0,frontier,ko
+기술 발전,92,22,0.837,0,0.0,0,law,ko
+사이버 공격,92,18,0.913,0,0.0,0,cybersecurity,ko
+지원하,92,20,0.837,0,0.0,0,frontier,ko
+에너지,92,18,0.848,0,0.0,0,national_security,ko
+신규,92,17,0.87,0,0.0,2,frontier,ko
+더욱,90,26,0.8,0,0.0,0,cybersecurity,ko
+공식,90,18,0.9,0,0.0,0,frontier,ko
+European,90,14,0.9,0,0.0,0,law,en
+고급,89,23,0.73,0,0.0,0,frontier,ko
+효과적,89,19,0.831,0,0.0,0,frontier,ko
+없어,89,14,0.899,0,0.0,0,frontier,ko
+분석하고,88,27,0.716,0,0.0,0,safety_research,ko
+활용될,88,18,0.818,0,0.0,0,guideline,ko
+허위,88,15,0.886,0,0.0,1,deepfake_disinfo,ko
+보여주,87,23,0.805,0,0.0,0,frontier,ko
+Opus,87,17,0.874,0,0.0,0,frontier,en
+연구팀,86,31,0.698,0,0.0,0,frontier,ko
+년간,85,18,0.894,0,0.0,0,frontier,ko
+현황,85,23,0.718,0,0.0,0,law,ko
+기본,85,18,0.859,0,0.0,0,frontier,ko
+등으,85,17,0.824,0,0.0,0,cybersecurity,ko
+프론티어,85,13,0.941,0,0.0,1,frontier,ko
+트럼프,84,17,0.917,0,0.0,0,frontier,ko
+차단,84,18,0.857,0,0.0,1,frontier,ko
+자율적,83,22,0.855,0,0.0,0,agentic_ai,ko
+지속,83,19,0.867,0,0.0,0,frontier,ko
+로봇,83,15,0.94,0,0.0,0,physical_ai,ko
+있으나,82,18,0.902,0,0.0,0,safety_research,ko
+흐름,82,16,0.89,0,0.0,0,cybersecurity,ko
+등에서,82,16,0.829,0,0.0,0,frontier,ko
+Mythos,82,9,0.988,0,0.0,3,cybersecurity,en
+줄이기,81,20,0.827,0,0.0,0,safety_research,ko
+Large Language,81,17,0.901,0,0.0,0,safety_research,en
+지속적인,81,17,0.827,0,0.0,0,cybersecurity,ko
+호주,81,14,0.901,0,0.0,0,law,ko
+장기,81,12,0.963,0,0.0,0,frontier,ko
+음성,81,13,0.877,0,0.0,0,deepfake_disinfo,ko
+문제의식,81,7,0.975,0,0.0,0,safety_research,ko
+Public,80,21,0.85,0,0.0,0,frontier,en
+미칠,80,20,0.875,0,0.0,0,law,ko
+수행하,80,18,0.863,0,0.0,0,agentic_ai,ko
+악성,80,17,0.9,0,0.0,0,cybersecurity,ko
+연계,80,13,0.95,0,0.0,0,cybersecurity,ko
+점검,80,13,0.887,0,0.0,0,cybersecurity,ko
+모델 개발,79,18,0.911,0,0.0,0,frontier,ko
+명의,79,16,0.924,0,0.0,0,frontier,ko
+사용해,79,15,0.937,0,0.0,0,safety_research,ko
+일자리,79,17,0.835,0,0.0,1,frontier,ko
+생산성,79,18,0.759,0,0.0,0,frontier,ko
+리스크,79,15,0.861,0,0.0,0,cybersecurity,ko
+www,79,7,0.975,0,0.0,0,cybersecurity,en
+K ctx,78,21,0.769,0,0.0,0,frontier,en
+강화하,78,19,0.833,0,0.0,0,law,ko
+시도,78,20,0.795,0,0.0,0,cybersecurity,ko
+경제적,78,19,0.821,0,0.0,0,frontier,ko
+분석한,77,24,0.714,0,0.0,0,frontier,ko
+내에서,77,19,0.831,0,0.0,0,frontier,ko
+국가안보,77,15,0.883,0,0.0,0,national_security,ko
+공통,77,15,0.857,0,0.0,0,norms,ko
+prompt,77,11,0.883,0,0.0,0,safety_research,en
+가능하게,76,19,0.842,0,0.0,0,agentic_ai,ko
+뉴스,76,13,0.961,0,0.0,0,cybersecurity,ko
+후속,75,21,0.84,0,0.0,0,safety_research,ko
+잠재적,74,28,0.73,0,0.0,0,frontier,ko
+수행할,74,20,0.865,0,0.0,0,cybersecurity,ko
+NIST,74,17,0.878,0,0.0,8,standards,en
+거의,74,17,0.851,0,0.0,0,frontier,ko
+무단,74,15,0.878,0,0.0,0,frontier,ko
+Risks,74,14,0.878,0,0.0,0,frontier,en
+건의,73,19,0.795,0,0.0,0,frontier,ko
+가짜,73,16,0.863,0,0.0,0,deepfake_disinfo,ko
+제한적,73,15,0.877,0,0.0,0,frontier,ko
+상대,73,14,0.89,0,0.0,0,law,ko
+연구 결과,72,26,0.694,0,0.0,0,frontier,ko
+라는,72,20,0.833,0,0.0,0,frontier,ko
+별도,72,17,0.889,0,0.0,0,cybersecurity,ko
+높이,72,17,0.833,0,0.0,0,safety_research,ko
+서로,72,12,0.944,0,0.0,0,safety_research,ko
+발생할,71,23,0.817,0,0.0,0,safety_research,ko
+안전하고,71,19,0.831,0,0.0,0,norms,ko
+human,71,16,0.831,0,0.0,1,safety_research,en
+학습 데이터,70,20,0.843,0,0.0,0,law,ko
+연구자들,70,25,0.671,0,0.0,0,frontier,ko
+GPU,70,18,0.857,0,0.0,1,cybersecurity,en
+엄격한,70,14,0.886,0,0.0,0,frontier,ko
+Action,70,16,0.714,0,0.0,1,law,en
+Face,70,10,0.943,0,0.0,0,frontier,en
+효과적인,69,18,0.826,0,0.0,0,law,ko
+결론,69,16,0.899,0,0.0,0,frontier,ko
+최고,69,17,0.812,0,0.0,0,frontier,ko
+막기,69,14,0.841,0,0.0,0,frontier,ko
+의해,69,12,0.957,0,0.0,0,safety_research,ko
+집행위,69,11,0.884,0,0.0,0,law,ko
+추가 검증,69,4,0.986,0,0.0,0,safety_research,ko
+못하,68,15,0.882,0,0.0,0,safety_research,ko
+권고,68,14,0.897,0,0.0,0,guideline,ko
+맞춰,68,16,0.794,0,0.0,0,safety_research,ko
+어려움,67,20,0.881,0,0.0,0,law,ko
+유럽연합 집행위원회,67,21,0.776,0,0.0,0,law,ko
+초래할,67,19,0.836,0,0.0,0,law,ko
+관련된,67,20,0.761,0,0.0,0,frontier,ko
+민감한,67,11,0.955,0,0.0,0,frontier,ko
+하에서,67,11,0.94,0,0.0,0,safety_research,ko
+정치적,66,18,0.864,0,0.0,0,politics,ko
+두고,66,15,0.864,0,0.0,0,law,ko
+우선,66,14,0.894,0,0.0,0,cybersecurity,ko
+발생하,66,13,0.939,0,0.0,0,safety_research,ko
+판정,66,11,0.909,0,0.0,0,safety_research,ko
+공개된,65,19,0.831,0,0.0,0,frontier,ko
+수립,65,20,0.769,0,0.0,0,law,ko
+위험한,65,25,0.631,0,0.0,0,frontier,ko
+제시하고,65,16,0.908,0,0.0,0,safety_research,ko
+과거,65,14,0.862,0,0.0,0,frontier,ko
+학생,65,16,0.754,0,0.0,0,frontier,ko
+파트너,65,12,0.954,0,0.0,0,cybersecurity,ko
+준비,65,13,0.877,0,0.0,0,norms,ko
+월부터,64,17,0.891,0,0.0,0,law,ko
+학계,64,19,0.812,0,0.0,0,law,ko
+강한,64,16,0.875,0,0.0,0,safety_research,ko
+청소년,64,15,0.906,0,0.0,0,youth,ko
+요구하,64,13,0.875,0,0.0,0,law,ko
+평가 결과,63,22,0.762,0,0.0,0,frontier,ko
+노력,63,22,0.746,0,0.0,0,cybersecurity,ko
+행정,63,18,0.81,0,0.0,0,law,ko
+입법,63,22,0.683,0,0.0,0,law,ko
+사용할,63,17,0.841,0,0.0,0,agentic_ai,ko
+상대적,63,18,0.794,0,0.0,0,frontier,ko
+제안하고,63,13,0.937,0,0.0,0,safety_research,ko
+제목,63,13,0.873,0,0.0,0,frontier,ko
+결과적,62,14,0.887,0,0.0,0,safety_research,ko
+파라미터,62,13,0.919,0,0.0,1,safety_research,ko
+UK,62,15,0.758,0,0.0,1,frontier,en
+한편,62,15,0.758,0,0.0,0,frontier,ko
+스타트업,61,18,0.869,0,0.0,1,law,ko
+개인정보 보호,61,16,0.918,0,0.0,0,law,ko
+주도,61,19,0.77,0,0.0,0,norms,ko
+자발적,61,16,0.852,0,0.0,0,law,ko
+담은,61,16,0.836,0,0.0,0,law,ko
+행사,61,17,0.787,0,0.0,0,norms,ko
+설립,61,16,0.82,0,0.0,0,law,ko
+임상,61,13,0.934,0,0.0,0,healthcare,ko
+높일,61,14,0.869,0,0.0,0,safety_research,ko
+단순,61,12,0.934,0,0.0,0,safety_research,ko
+under,61,12,0.918,0,0.0,0,law,en
+만드,61,12,0.902,0,0.0,0,safety_research,ko
+Hugging Face,61,9,0.951,0,0.0,1,frontier,en
+news,61,9,0.902,0,0.0,0,law,en
+예를,60,21,0.767,0,0.0,0,frontier,ko
+대통령,60,18,0.833,0,0.0,0,law,ko
+세션,60,15,0.883,0,0.0,0,agentic_ai,ko
+National,60,16,0.833,0,0.0,0,national_security,en
+시민,60,15,0.867,0,0.0,0,law,ko
+Future,60,15,0.833,0,0.0,0,norms,en
+China,60,12,0.817,0,0.0,0,national_security,en
+위험 관리,59,20,0.864,0,0.0,0,law,ko
+규범,59,23,0.712,0,0.0,0,norms,ko
+회원국,59,22,0.729,0,0.0,0,law,ko
+장기적,59,17,0.847,0,0.0,0,frontier,ko
+직원,59,17,0.847,0,0.0,0,frontier,ko
+맞춘,59,16,0.881,0,0.0,0,law,ko
+않으,59,15,0.898,0,0.0,0,law,ko
+시각,59,11,0.966,0,0.0,0,safety_research,ko
+메시지,59,10,0.949,0,0.0,0,frontier,ko
+Newsletter,58,16,0.914,0,0.0,0,law,en
+행정부,58,17,0.862,0,0.0,0,frontier,ko
+대학,58,16,0.897,0,0.0,0,law,ko
+포함해,58,16,0.862,0,0.0,0,safety_research,ko
+하지,58,15,0.879,0,0.0,0,frontier,ko
+위기,58,12,0.931,0,0.0,0,healthcare,ko
+adversarial,58,13,0.862,0,0.0,1,safety_research,en
+DeepMind,58,11,0.897,0,0.0,2,frontier,en
+전략 시사점,58,2,1.0,0,0.0,0,safety_research,ko
+빠른,57,19,0.825,0,0.0,0,frontier,ko
+관련해,57,18,0.807,0,0.0,0,frontier,ko
+명확한,57,16,0.842,0,0.0,0,law,ko
+Microsoft,57,14,0.93,0,0.0,4,frontier,en
+도구 사용,57,15,0.877,0,0.0,0,agentic_ai,ko
+제한된,57,15,0.877,0,0.0,0,cybersecurity,ko
+범죄,57,17,0.772,0,0.0,0,deepfake_disinfo,ko
+CEO,57,14,0.895,0,0.0,2,frontier,en
+특화,57,13,0.912,0,0.0,0,cybersecurity,ko
+환경에서,57,12,0.947,0,0.0,0,safety_research,ko
+동일한,57,11,0.947,0,0.0,0,frontier,ko
+구체,57,10,0.93,0,0.0,0,law,ko
+도전,56,21,0.768,0,0.0,0,norms,ko
+년까지,56,16,0.893,0,0.0,0,frontier,ko
+만든,56,15,0.911,0,0.0,0,deepfake_disinfo,ko
+제작,56,16,0.857,0,0.0,0,law,ko
+실질적,56,13,0.929,0,0.0,0,safety_research,ko
+성공,56,14,0.857,0,0.0,0,safety_research,ko
+Law,56,14,0.857,0,0.0,0,law,en
+개국,56,16,0.75,0,0.0,0,norms,ko
+백악관,56,14,0.821,0,0.0,0,frontier,ko
+독립적,56,11,0.893,0,0.0,0,agentic_ai,ko
+국민,55,16,0.927,0,0.0,0,law,ko
+못한,55,21,0.727,0,0.0,0,cybersecurity,ko
+Introducing,55,16,0.891,0,0.0,0,frontier,en
+자금,55,17,0.836,0,0.0,0,frontier,ko
+여전히,55,16,0.873,0,0.0,0,safety_research,ko
+대형 언어,55,18,0.782,0,0.0,0,safety_research,ko
+중인,55,19,0.745,0,0.0,0,frontier,ko
+강화할,55,15,0.891,0,0.0,0,frontier,ko
+컴퓨터,55,17,0.782,0,0.0,0,frontier,ko
+수출,55,17,0.727,0,0.0,0,national_security,ko
+미만,55,11,0.909,0,0.0,0,youth,ko
+기여할,54,19,0.759,0,0.0,0,frontier,ko
+활용하,54,15,0.889,0,0.0,0,cybersecurity,ko
+관행,54,15,0.87,0,0.0,0,law,ko
+개발하고,54,17,0.778,0,0.0,0,frontier,ko
+제조,54,13,0.944,0,0.0,0,physical_ai,ko
+가진,54,15,0.833,0,0.0,0,safety_research,ko
+구조화된,54,11,0.944,0,0.0,0,safety_research,ko
+Science,53,17,0.83,0,0.0,0,frontier,en
+인류,53,16,0.868,0,0.0,0,norms,ko
+번째,53,16,0.868,0,0.0,0,law,ko
+분석 결과,53,16,0.849,0,0.0,0,frontier,ko
+영향력,53,18,0.755,0,0.0,0,national_security,ko
+줄이,53,16,0.83,0,0.0,0,safety_research,ko
+즉시,53,14,0.887,0,0.0,0,cybersecurity,ko
+고용,53,15,0.83,0,0.0,0,law,ko
+돕는,53,15,0.811,0,0.0,0,law,ko
+군사,53,14,0.849,0,0.0,0,national_security,ko
+Claude Opus,53,13,0.868,0,0.0,0,frontier,en
+보도,53,13,0.792,0,0.0,0,frontier,ko
+결합해,53,10,0.981,0,0.0,0,cybersecurity,ko
+europe,53,10,0.943,0,0.0,0,frontier,en
+명이,52,19,0.846,0,0.0,0,norms,ko
+실질적인,52,15,0.942,0,0.0,0,law,ko
+대중,52,15,0.904,0,0.0,0,frontier,ko
+공고,52,15,0.885,0,0.0,0,cybersecurity,ko
+검토하고,52,17,0.788,0,0.0,0,law,ko
+제공할,52,17,0.788,0,0.0,0,cybersecurity,ko
+등은,52,14,0.865,0,0.0,0,frontier,ko
+불법,52,15,0.808,0,0.0,0,youth,ko
+Against,52,13,0.904,0,0.0,0,frontier,en
+라이선스,52,15,0.788,0,0.0,0,law,ko
+생성된,52,13,0.865,0,0.0,0,deepfake_disinfo,ko
+인간 감독,52,14,0.808,0,0.0,0,law,ko
+서버,52,10,0.923,0,0.0,0,agentic_ai,ko
+커지고,51,18,0.843,0,0.0,0,cybersecurity,ko
+OECD,51,19,0.804,0,0.0,1,norms,en
+Closed,51,17,0.863,0,0.0,0,frontier,en
+독립적인,51,16,0.902,0,0.0,0,law,ko
+있을,51,19,0.784,0,0.0,0,frontier,ko
+만들,51,21,0.706,0,0.0,0,agentic_ai,ko
+추진하고,51,17,0.804,0,0.0,0,law,ko
+DeepSeek,51,15,0.882,0,0.0,5,frontier,en
+상호,51,14,0.922,0,0.0,0,national_security,ko
+enterprise,51,15,0.863,0,0.0,1,frontier,en
+자동화된,51,14,0.902,0,0.0,0,cybersecurity,ko
+제도적,51,13,0.902,0,0.0,0,law,ko
+분석해,51,13,0.882,0,0.0,0,cybersecurity,ko
+첨부파일,51,12,0.922,0,0.0,48,law,ko
+다수,51,11,0.941,0,0.0,0,cybersecurity,ko
+경찰,51,11,0.863,0,0.0,0,deepfake_disinfo,ko
+Government,51,13,0.725,0,0.0,0,frontier,en
+Generative,51,11,0.843,0,0.0,0,law,en
+LG,51,9,0.961,0,0.0,0,cybersecurity,en
+각국,50,20,0.76,0,0.0,0,norms,ko
+데이터 기반,50,18,0.82,0,0.0,0,law,ko
+다섯,50,14,0.94,0,0.0,0,safety_research,ko
+단순한,50,16,0.82,0,0.0,0,frontier,ko
+발생,50,16,0.8,0,0.0,0,cybersecurity,ko
+입장,50,16,0.78,0,0.0,0,law,ko
+하나,50,15,0.82,0,0.0,0,frontier,ko
+tool,50,14,0.84,0,0.0,0,agentic_ai,en
+전에,50,14,0.8,0,0.0,0,frontier,ko
+내용 확인,50,10,0.92,0,0.0,0,frontier,ko
+진전,49,25,0.673,0,0.0,0,safety_research,ko
+마련하고,49,21,0.755,0,0.0,0,law,ko
+높이고,49,19,0.776,0,0.0,0,frontier,ko
+대규모 언어,49,14,0.898,0,0.0,0,safety_research,ko
+개발자들,49,22,0.571,0,0.0,0,frontier,ko
+부문,49,12,0.918,0,0.0,0,law,ko
+포함하,49,11,0.959,0,0.0,0,cybersecurity,ko
+구축하고,48,22,0.771,0,0.0,0,cybersecurity,ko
+성능 향상,48,19,0.854,0,0.0,0,safety_research,ko
+완전히,48,18,0.812,0,0.0,0,safety_research,ko
+모델인,48,20,0.708,0,0.0,0,frontier,ko
+시민사회,48,16,0.833,0,0.0,0,law,ko
+활성화,48,15,0.875,0,0.0,0,safety_research,ko
+Why,48,15,0.854,0,0.0,1,law,en
+매우,48,14,0.896,0,0.0,0,frontier,ko
+인권,48,16,0.792,0,0.0,0,norms,ko
+단계적,48,15,0.812,0,0.0,2,frontier,ko
+신고,48,13,0.896,0,0.0,0,frontier,ko
+광범위한,48,15,0.792,0,0.0,0,law,ko
+구성된,48,13,0.833,0,0.0,0,safety_research,ko
+plan,48,10,0.729,0,0.0,0,frontier,en
+개별,47,18,0.83,0,0.0,0,safety_research,ko
+걸쳐,47,16,0.894,0,0.0,0,safety_research,ko
+연구개발,47,23,0.617,0,0.0,0,law,ko
+국방,47,15,0.83,0,0.0,0,national_security,ko
+제공하고,47,13,0.915,0,0.0,0,frontier,ko
+적용해,47,12,0.936,0,0.0,0,safety_research,ko
+결합한,47,13,0.872,0,0.0,0,safety_research,ko
+모델링,47,12,0.872,0,0.0,0,safety_research,ko
+정보 본문,47,9,0.894,0,0.0,0,frontier,ko
+일관되게,47,8,0.979,0,0.0,0,safety_research,ko
+와의,46,17,0.848,0,0.0,0,frontier,ko
+조성,46,18,0.804,0,0.0,0,law,ko
+기관들,46,17,0.804,0,0.0,0,frontier,ko
+가격,46,15,0.87,0,0.0,0,frontier,ko
+쉽게,46,17,0.783,0,0.0,0,frontier,ko
+집중,46,15,0.826,0,0.0,0,frontier,ko
+기반한,46,14,0.87,0,0.0,0,safety_research,ko
+개정안,46,12,0.978,0,0.0,0,law,ko
+확대하고,46,16,0.739,0,0.0,0,frontier,ko
+제안된,46,8,0.978,0,0.0,0,safety_research,ko
+정량,46,6,1.0,0,0.0,0,safety_research,ko
+과기정통부,45,19,0.733,0,0.0,0,cybersecurity,ko
+활용하고,45,18,0.756,0,0.0,0,frontier,ko
+Through,45,15,0.844,0,0.0,0,safety_research,en
+생성한,45,14,0.889,0,0.0,0,safety_research,ko
+실무,45,14,0.867,0,0.0,0,guideline,ko
+선거,45,16,0.756,0,0.0,0,politics,ko
+general,45,19,0.644,0,0.0,0,frontier,en
+허가,45,14,0.822,0,0.0,0,law,ko
+건을,45,12,0.911,0,0.0,0,cybersecurity,ko
+Practice,45,15,0.733,0,0.0,0,guideline,en
+포함된,45,13,0.822,0,0.0,0,frontier,ko
+위험성,45,11,0.933,0,0.0,0,frontier,ko
+소셜미디어,45,10,0.911,0,0.0,0,youth,ko
+Evaluating,44,17,0.795,0,0.0,0,frontier,en
+반영해,44,17,0.795,0,0.0,0,law,ko
+모델 평가,44,15,0.864,0,0.0,0,safety_research,ko
+열고,44,15,0.864,0,0.0,0,deepfake_disinfo,ko
+규제기관,44,16,0.818,0,0.0,0,law,ko
+개를,44,14,0.909,0,0.0,0,frontier,ko
+기본법,44,18,0.727,0,0.0,0,law,ko
+문제 해결,44,18,0.727,0,0.0,0,frontier,ko
+지정,44,14,0.864,0,0.0,0,law,ko
+Case,44,16,0.75,0,0.0,0,law,en
+사용하,44,14,0.841,0,0.0,0,frontier,ko
+유도하,44,13,0.864,0,0.0,0,safety_research,ko
+않도록,44,14,0.795,0,0.0,0,law,ko
+유사,44,12,0.909,0,0.0,0,frontier,ko
+정신건강,44,11,0.909,0,0.0,0,healthcare,ko
+후보,44,10,0.955,0,0.0,0,safety_research,ko
+본문 확인,44,8,0.932,0,0.0,0,frontier,ko
+국제적,43,16,0.884,0,0.0,0,frontier,ko
+주요국,43,24,0.628,0,0.0,0,norms,ko
+중점,43,19,0.744,0,0.0,0,frontier,ko
+사용한,43,16,0.837,0,0.0,0,frontier,ko
+둘러싼,43,16,0.814,0,0.0,0,law,ko
+음악,43,14,0.907,0,0.0,0,law,ko
+안전하게,43,17,0.767,0,0.0,0,safety_research,ko
+국가 안보,43,17,0.767,0,0.0,0,national_security,ko
+보조,43,15,0.791,0,0.0,0,frontier,ko
+벗어나,43,12,0.907,0,0.0,0,frontier,ko
+일관된,43,12,0.907,0,0.0,0,safety_research,ko
+자기,43,11,0.93,0,0.0,0,safety_research,ko
+관찰,43,12,0.837,0,0.0,1,safety_research,ko
+Legal,43,10,0.884,0,0.0,0,law,en
+내용 없어,43,9,0.884,0,0.0,0,frontier,ko
+세팅,43,4,1.0,0,0.0,0,safety_research,ko
+높이기,42,18,0.786,0,0.0,0,norms,ko
+제공되,42,15,0.881,0,0.0,0,frontier,ko
+않을,42,15,0.857,0,0.0,0,law,ko
+부처,42,14,0.905,0,0.0,0,cybersecurity,ko
+위해서,42,15,0.833,0,0.0,0,norms,ko
+계속,42,13,0.929,0,0.0,0,cybersecurity,ko
+compliance,42,13,0.929,0,0.0,3,law,en
+수학,42,15,0.81,0,0.0,0,frontier,ko
+평가 방법,42,13,0.905,0,0.0,0,safety_research,ko
+안전 기준,42,12,0.929,0,0.0,0,frontier,ko
+광고,42,12,0.929,0,0.0,0,law,ko
+AI-generated,42,13,0.857,0,0.0,0,deepfake_disinfo,en
+악의적,42,17,0.667,0,0.0,0,cybersecurity,ko
+Transparency,42,11,0.976,0,0.0,0,law,en
+차세대,42,11,0.952,0,0.0,0,frontier,ko
+과학적,42,14,0.762,0,0.0,0,norms,ko
+Testing,42,13,0.81,0,0.0,0,cybersecurity,en
+생성 콘텐츠,42,13,0.81,0,0.0,0,law,ko
+패치,42,10,1.0,0,0.0,0,cybersecurity,ko
+확인되지,42,11,0.905,0,0.0,0,cybersecurity,ko
+launches,42,14,0.714,0,0.0,0,frontier,en
+생산,42,11,0.881,0,0.0,0,national_security,ko
+혐의,42,7,1.0,0,0.0,0,deepfake_disinfo,ko
+Capabilities,41,17,0.829,0,0.0,2,cybersecurity,en
+적합성,41,16,0.805,0,0.0,0,standards,ko
+마지막,41,17,0.756,0,0.0,0,safety_research,ko
+국제 협력,41,19,0.683,0,0.0,0,norms,ko
+추천,41,14,0.878,0,0.0,0,guideline,ko
+수렴,41,13,0.927,0,0.0,0,law,ko
+State,41,14,0.854,0,0.0,2,law,en
+프런티어,41,13,0.902,0,0.0,0,frontier,ko
+평가할,41,13,0.902,0,0.0,0,safety_research,ko
+Responsible,41,15,0.78,0,0.0,0,norms,en
+등과,41,13,0.829,0,0.0,0,frontier,ko
+트럼프 행정부,41,11,0.927,0,0.0,0,frontier,ko
+영향 미칠,41,10,0.927,0,0.0,0,law,ko
+제공되지,41,9,0.976,0,0.0,0,frontier,ko
+RSS,41,2,1.0,0,0.0,0,cybersecurity,en
+예방,40,17,0.8,0,0.0,0,law,ko
+보였,40,16,0.825,0,0.0,0,safety_research,ko
+Project,40,15,0.85,0,0.0,0,frontier,en
+Mistral,40,16,0.8,0,0.0,0,frontier,en
+차별,40,21,0.625,0,0.0,0,law,ko
+통과,40,14,0.875,0,0.0,0,law,ko
+정보 공유,40,15,0.825,0,0.0,0,cybersecurity,ko
+다국어,40,15,0.825,0,0.0,0,safety_research,ko
+확인할,40,13,0.925,0,0.0,0,deepfake_disinfo,ko
+관심,40,17,0.725,0,0.0,0,frontier,ko
+식별하고,40,13,0.9,0,0.0,0,safety_research,ko
+산업계,40,16,0.75,0,0.0,0,norms,ko
+적용되,40,15,0.775,0,0.0,0,law,ko
+많이,40,12,0.925,0,0.0,0,frontier,ko
+Open-weight,40,12,0.875,0,0.0,4,open_weight,en
+SWE-bench,40,10,0.925,0,0.0,0,frontier,en
+동일,40,9,0.975,0,0.0,0,safety_research,ko
+our,39,18,0.769,0,0.0,0,frontier,en
+육성,39,18,0.744,0,0.0,0,law,ko
+처음,39,14,0.897,0,0.0,0,frontier,ko
+거쳐,39,15,0.846,0,0.0,0,law,ko
+수백,39,15,0.821,0,0.0,0,frontier,ko
+번역,39,13,0.923,0,0.0,0,frontier,ko
+인프 구축,39,15,0.795,0,0.0,0,norms,ko
+포함되어,39,14,0.821,0,0.0,0,frontier,ko
+미공개,39,12,0.923,0,0.0,0,frontier,ko
+RAND,39,12,0.923,0,0.0,0,national_security,en
+생성하,39,12,0.897,0,0.0,0,safety_research,ko
+않았,39,11,0.949,0,0.0,0,law,ko
+오디오,39,12,0.872,0,0.0,0,deepfake_disinfo,ko
+국경,39,11,0.897,0,0.0,0,norms,ko
+reward,39,11,0.897,0,0.0,0,safety_research,en
+열린,39,16,0.615,0,0.0,0,norms,ko
+NVIDIA,39,11,0.872,0,0.0,1,frontier,en
+교사,39,9,0.974,0,0.0,1,youth,ko
+런타임,39,8,1.0,0,0.0,0,agentic_ai,ko
+article,39,8,0.974,0,0.0,0,law,en
+기본권,38,18,0.737,0,0.0,0,law,ko
+역량 강화,38,17,0.763,0,0.0,0,norms,ko
+정책적,38,13,0.947,0,0.0,0,cybersecurity,ko
+연결하,38,14,0.868,0,0.0,0,norms,ko
+조언,38,14,0.868,0,0.0,0,frontier,ko
+소스,38,13,0.921,0,0.0,0,frontier,ko
+양국,38,14,0.842,0,0.0,0,norms,ko
+하위,38,14,0.842,0,0.0,0,safety_research,ko
+Critical,38,13,0.895,0,0.0,3,cybersecurity,en
+완전한,38,13,0.895,0,0.0,0,frontier,ko
+Privacy,38,13,0.895,0,0.0,0,law,en
+모델 훈련,38,15,0.763,0,0.0,0,frontier,ko
+캠페인,38,13,0.842,0,0.0,0,cybersecurity,ko
+task,38,13,0.816,0,0.0,0,frontier,en
+않았고,38,11,0.921,0,0.0,0,frontier,ko
+보이지,38,12,0.842,0,0.0,0,frontier,ko
+허용,38,10,0.947,0,0.0,1,law,ko
+PDF,38,10,0.947,0,0.0,11,frontier,en
+게임,38,11,0.868,0,0.0,0,frontier,ko
+lawsuit,38,10,0.921,0,0.0,0,law,en
+함을,38,9,0.974,0,0.0,0,cybersecurity,ko
+앤스로픽,38,7,1.0,0,0.0,0,frontier,ko
+강건성,38,7,0.947,0,0.0,2,safety_research,ko
+Nuclear,38,6,0.921,0,0.0,0,safety_research,en
+현행,37,15,0.865,0,0.0,0,law,ko
+중대한,37,14,0.892,0,0.0,0,cybersecurity,ko
+받을,37,15,0.838,0,0.0,0,law,ko
+마련할,37,16,0.784,0,0.0,0,law,ko
+효율적,37,14,0.865,0,0.0,0,safety_research,ko
+공개하고,37,15,0.811,0,0.0,0,frontier,ko
+고성능,37,14,0.838,0,0.0,0,cybersecurity,ko
+economic,37,15,0.784,0,0.0,0,frontier,en
+원격,37,13,0.838,0,0.0,1,cybersecurity,ko
+공개했,37,13,0.838,0,0.0,0,frontier,ko
+Active,37,13,0.838,0,0.0,0,frontier,en
+포괄적,37,14,0.784,0,0.0,0,law,ko
+Content,37,10,0.973,0,0.0,0,deepfake_disinfo,en
+생성하고,37,11,0.892,0,0.0,0,frontier,ko
+autonomous,37,10,0.946,0,0.0,0,agentic_ai,en
+학교,37,10,0.919,0,0.0,0,youth,ko
+스스,37,9,1.0,0,0.0,0,cybersecurity,ko
+Google DeepMind,37,10,0.865,0,0.0,0,frontier,en
+Assessment,37,8,0.946,0,0.0,0,law,en
+하에,37,8,0.946,0,0.0,0,agentic_ai,ko
+앞두고,36,16,0.833,0,0.0,0,law,ko
+데이터 수집,36,15,0.861,0,0.0,0,law,ko
+지원할,36,17,0.75,0,0.0,0,law,ko
+비해,36,13,0.917,0,0.0,0,frontier,ko
+공유하고,36,17,0.722,0,0.0,0,frontier,ko
+표적,36,12,0.944,0,0.0,0,national_security,ko
+대표,36,17,0.694,0,0.0,0,safety_research,ko
+GitHub,36,15,0.75,0,0.0,0,cybersecurity,en
+반영한,36,14,0.778,0,0.0,0,law,ko
+House,36,13,0.806,0,0.0,0,frontier,en
+사이 균형,36,12,0.861,0,0.0,0,law,ko
+먼저,36,12,0.861,0,0.0,0,cybersecurity,ko
+유용성,36,12,0.833,0,0.0,0,safety_research,ko
+GPQA,36,12,0.833,0,0.0,0,frontier,en
+빅테크,36,11,0.889,0,0.0,0,frontier,ko
+oversight,36,13,0.75,0,0.0,4,frontier,en
+tools,36,11,0.861,0,0.0,0,frontier,en
+하이브리드,36,10,0.917,0,0.0,0,safety_research,ko
+전쟁,36,9,0.972,0,0.0,0,national_security,ko
+건설,36,9,0.944,0,0.0,0,frontier,ko
+문서화,36,11,0.75,0,0.0,0,guideline,ko
+다룬,36,10,0.75,0,0.0,0,law,ko
+Asia,36,6,0.972,0,0.0,0,law,en
+ICT,35,14,0.971,0,0.0,1,law,en
+혜택,35,14,0.914,0,0.0,0,frontier,ko
+문화,35,14,0.914,0,0.0,0,safety_research,ko
+협력해,35,15,0.857,0,0.0,0,norms,ko
+제한하,35,15,0.829,0,0.0,0,law,ko
+훨씬,35,16,0.771,0,0.0,0,frontier,ko
+world,35,13,0.914,0,0.0,0,frontier,en
+남아,35,14,0.829,0,0.0,0,frontier,ko
+종합,35,14,0.829,0,0.0,6,norms,ko
+학생들,35,15,0.771,0,0.0,0,frontier,ko
+넘는,35,12,0.914,0,0.0,0,frontier,ko
+상위,35,12,0.914,0,0.0,0,safety_research,ko
+명을,35,11,0.971,0,0.0,0,cybersecurity,ko
+White,35,13,0.829,0,0.0,0,frontier,en
+구성요소,35,12,0.886,0,0.0,0,safety_research,ko
+다양한 분야,35,14,0.771,0,0.0,0,national_security,ko
+문제점,35,14,0.771,0,0.0,0,safety_research,ko
+벤치마크 미공개,35,11,0.943,0,0.0,0,frontier,ko
+공급,35,11,0.943,0,0.0,0,frontier,ko
+산하,35,12,0.857,0,0.0,0,law,ko
+Partnership,35,11,0.914,0,0.0,0,frontier,en
+기대,35,10,0.971,0,0.0,0,safety_research,ko
+책임감,35,10,0.943,0,0.0,0,norms,ko
+반영하지,35,11,0.857,0,0.0,0,safety_research,ko
+민감,35,11,0.857,0,0.0,0,safety_research,ko
+접근할,35,10,0.914,0,0.0,0,frontier,ko
+대해서,35,12,0.771,0,0.0,0,law,ko
+작은,35,12,0.771,0,0.0,0,safety_research,ko
+길이,35,11,0.829,0,0.0,0,frontier,ko
+비디오,35,11,0.829,0,0.0,0,safety_research,ko
+비판적,35,10,0.886,0,0.0,0,frontier,ko
+Claude Mythos,35,9,0.971,0,0.0,0,cybersecurity,en
+년에,35,10,0.829,0,0.0,0,law,ko
+데이터 보호,35,9,0.914,0,0.0,0,law,ko
+안전 관련,35,9,0.886,0,0.0,0,frontier,ko
+측은,35,10,0.771,0,0.0,0,law,ko
+개가,35,8,0.943,0,0.0,0,frontier,ko
+Inc,35,7,1.0,0,0.0,0,law,en
+위험관리,34,19,0.794,0,0.0,0,guideline,ko
+분석한 결과,34,16,0.824,0,0.0,0,frontier,ko
+적용할,34,15,0.853,0,0.0,0,cybersecurity,ko
+년부터,34,13,0.941,0,0.0,0,law,ko
+monitoring,34,13,0.912,0,0.0,0,frontier,en
+Cloud,34,13,0.912,0,0.0,0,frontier,en
+증가하고,34,14,0.824,0,0.0,0,safety_research,ko
+검증하,34,12,0.912,0,0.0,0,frontier,ko
+capability,34,14,0.794,0,0.0,2,frontier,en
+동작,34,11,0.941,0,0.0,0,safety_research,ko
+압박,34,11,0.912,0,0.0,1,frontier,ko
+국가들,34,11,0.882,0,0.0,0,norms,ko
+기기,34,10,0.941,0,0.0,0,law,ko
+표준화된,34,10,0.941,0,0.0,0,standards,ko
+커질,34,11,0.853,0,0.0,0,national_security,ko
+Code of Practice,34,12,0.676,0,0.0,3,guideline,en
+소규모,34,9,0.882,0,0.0,0,frontier,ko
+만에,34,8,0.971,0,0.0,0,safety_research,ko
+손해배상,34,8,0.853,0,0.0,0,law,ko
+arXiv cs,34,3,1.0,0,0.0,0,safety_research,en
+엔비디아,33,15,0.879,0,0.0,0,physical_ai,ko
+참여해,33,16,0.788,0,0.0,0,cybersecurity,ko
+민주주,33,14,0.879,0,0.0,0,norms,ko
+움직임,33,13,0.848,0,0.0,0,law,ko
+악성코드,33,12,0.909,0,0.0,0,cybersecurity,ko
+정확한,33,12,0.909,0,0.0,0,cybersecurity,ko
+정확히,33,13,0.848,0,0.0,0,safety_research,ko
+유지하,33,13,0.848,0,0.0,0,safety_research,ko
+리더십,33,16,0.697,0,0.0,0,frontier,ko
+사용되,33,12,0.879,0,0.0,0,frontier,ko
+우수한,33,13,0.818,0,0.0,0,frontier,ko
+ISO,33,11,0.939,0,0.0,0,standards,en
+다시,33,12,0.848,0,0.0,0,frontier,ko
+발간,33,12,0.848,0,0.0,1,norms,ko
+자주,33,11,0.909,0,0.0,0,frontier,ko
+줄일,33,11,0.879,0,0.0,0,agentic_ai,ko
+reports,33,11,0.879,0,0.0,0,frontier,en
+의무화,33,10,0.909,0,0.0,0,law,ko
+평가한,33,10,0.909,0,0.0,0,safety_research,ko
+개방형,33,10,0.909,0,0.0,0,frontier,ko
+맞는,33,12,0.758,0,0.0,0,norms,ko
+evaluations,33,18,0.485,0,0.0,0,cybersecurity,en
+Llama,33,11,0.788,0,0.0,0,frontier,en
+검증된,33,9,0.939,0,0.0,0,frontier,ko
+없어 구체적인,33,9,0.909,0,0.0,0,frontier,ko
+finds,33,9,0.879,0,0.0,0,frontier,en
+처럼,33,11,0.697,0,0.0,0,safety_research,ko
+Economy,33,8,0.939,0,0.0,0,cybersecurity,en
+파인튜닝,33,7,0.909,0,0.0,0,safety_research,ko
+공공기관,32,12,0.969,0,0.0,0,law,ko
+뉴스레터,32,12,0.969,0,0.0,0,law,ko
+나타났,32,14,0.844,0,0.0,0,frontier,ko
+워터마크,32,13,0.875,0,0.0,0,law,ko
+information,32,13,0.875,0,0.0,0,law,en
+어렵고,32,13,0.875,0,0.0,0,national_security,ko
+추가적인,32,17,0.688,0,0.0,0,frontier,ko
+겨냥한,32,13,0.844,0,0.0,0,law,ko
+공공부문,32,15,0.719,0,0.0,0,norms,ko
+초점 맞추고,32,13,0.812,0,0.0,0,frontier,ko
+필터링,32,11,0.938,0,0.0,0,frontier,ko
+계기,32,12,0.844,0,0.0,0,frontier,ko
+드론,32,11,0.906,0,0.0,0,physical_ai,ko
+반복적,32,11,0.906,0,0.0,0,safety_research,ko
+제정,32,17,0.594,0,0.0,0,law,ko
+진행 중이,32,11,0.875,0,0.0,0,law,ko
+media,32,10,0.938,0,0.0,0,law,en
+사이버공격,32,10,0.938,0,0.0,0,cybersecurity,ko
+자세한,32,17,0.562,0,0.0,0,frontier,ko
+단순히,32,11,0.844,0,0.0,0,frontier,ko
+구성하고,32,10,0.906,0,0.0,0,safety_research,ko
+적응형,32,10,0.906,0,0.0,0,safety_research,ko
+낮추,32,10,0.906,0,0.0,0,safety_research,ko
+속에서,32,11,0.781,0,0.0,0,law,ko
+모듈,32,9,0.938,0,0.0,0,safety_research,ko
+진화,32,9,0.938,0,0.0,0,agentic_ai,ko
+Social,32,9,0.906,0,0.0,0,youth,en
+유발하,32,9,0.906,0,0.0,0,safety_research,ko
+상용,32,8,1.0,0,0.0,0,frontier,ko
+안정적,32,8,0.969,0,0.0,0,safety_research,ko
+소셜,32,9,0.812,0,0.0,0,youth,ko
+MLex,32,8,0.906,0,0.0,0,law,en
+제기되고,32,7,0.906,0,0.0,0,frontier,ko
+제시되지,32,6,1.0,0,0.0,0,safety_research,ko
+SK,32,6,0.938,0,0.0,0,cybersecurity,en
+추진할,31,15,0.871,0,0.0,0,law,ko
+월까지,31,13,0.903,0,0.0,0,law,ko
+관리하,31,13,0.903,0,0.0,0,frontier,ko
+대응 방안,31,17,0.71,0,0.0,0,deepfake_disinfo,ko
+사람들,31,12,0.903,0,0.0,0,frontier,ko
+협력 강화,31,12,0.903,0,0.0,0,norms,ko
+성인,31,13,0.839,0,0.0,0,frontier,ko
+선제적,31,11,0.968,0,0.0,0,cybersecurity,ko
+Verified,31,11,0.935,0,0.0,0,frontier,en
+본문 요약,31,14,0.742,0,0.0,0,standards,ko
+engineering,31,11,0.903,0,0.0,1,frontier,en
+자문,31,12,0.806,0,0.0,0,law,ko
+제한하고,31,11,0.871,0,0.0,0,cybersecurity,ko
+갖춘,31,10,0.935,0,0.0,0,frontier,ko
+컴퓨팅 자원,31,10,0.935,0,0.0,0,frontier,ko
+실효성,31,12,0.774,0,0.0,0,law,ko
+대응하,31,9,1.0,0,0.0,0,cybersecurity,ko
+논쟁,31,10,0.903,0,0.0,0,law,ko
+Chinese,31,9,0.935,0,0.0,0,frontier,en
+동의 없이,31,10,0.839,0,0.0,0,law,ko
+에는,31,8,0.935,0,0.0,0,frontier,ko
+교차,31,7,0.968,0,0.0,0,safety_research,ko
+추세,30,14,0.9,0,0.0,0,frontier,ko
+Claude Sonnet,30,14,0.9,0,0.0,0,frontier,en
+다단계,30,14,0.867,0,0.0,0,cybersecurity,ko
+국가인공지능전략위원회,30,12,0.967,0,0.0,0,law,ko
+월에,30,14,0.833,0,0.0,0,frontier,ko
+국회,30,13,0.867,0,0.0,0,law,ko
+달러 규모,30,13,0.833,0,0.0,0,frontier,ko
+비즈니스,30,13,0.833,0,0.0,0,cybersecurity,ko
+신속한,30,12,0.867,0,0.0,0,law,ko
+추출,30,12,0.867,0,0.0,1,safety_research,ko
+생성물,30,12,0.867,0,0.0,0,law,ko
+ORG,30,11,0.933,0,0.0,1,frontier,en
+상원,30,14,0.733,0,0.0,1,law,ko
+상당,30,11,0.9,0,0.0,0,frontier,ko
+장비,30,10,0.933,0,0.0,0,frontier,ko
+주석,30,10,0.933,0,0.0,0,safety_research,ko
+탈취,30,10,0.933,0,0.0,0,cybersecurity,ko
+양측,30,10,0.933,0,0.0,0,frontier,ko
+구성되,30,11,0.833,0,0.0,0,law,ko
+자연어,30,10,0.9,0,0.0,0,safety_research,ko
+직접적인,30,10,0.9,0,0.0,0,guideline,ko
+모델 안전성,30,12,0.733,0,0.0,0,safety_research,ko
+international,30,13,0.667,0,0.0,0,guideline,en
+defense,30,9,0.933,0,0.0,0,safety_research,en
+independent,30,9,0.933,0,0.0,0,frontier,en
+허가 없이,30,9,0.9,0,0.0,0,law,ko
+널리,30,9,0.9,0,0.0,0,safety_research,ko
+정확하게,30,13,0.6,0,0.0,0,frontier,ko
+Deployment,30,8,0.933,0,0.0,0,agentic_ai,en
+재현성,30,8,0.9,0,0.0,0,safety_research,ko
+과도하게,30,9,0.8,0,0.0,0,safety_research,ko
+Gap,30,7,1.0,0,0.0,0,safety_research,en
+청구,30,7,0.933,0,0.0,0,law,ko
+텔레콤,30,5,0.933,0,0.0,0,cybersecurity,ko
+CERN European Organization,30,1,1.0,0,0.0,0,safety_research,en
+Organization for Nuclear,30,1,1.0,0,0.0,0,safety_research,en
+Nuclear Research,30,1,1.0,0,0.0,0,safety_research,en
+모델 행동,29,19,0.69,0,0.0,0,safety_research,ko
+개발한,29,15,0.828,0,0.0,0,frontier,ko
+클라이언트,29,13,0.897,0,0.0,0,cybersecurity,ko
+목표 하며,29,15,0.793,0,0.0,0,guideline,ko
+생물학,29,13,0.828,0,0.0,0,safety_research,ko
+화학,29,15,0.724,0,0.0,0,frontier,ko
+긍정적,29,14,0.759,0,0.0,0,frontier,ko
+Age,29,11,0.931,0,0.0,1,youth,en
+인간 개입,29,12,0.862,0,0.0,0,agentic_ai,ko
+못하고,29,13,0.793,0,0.0,0,agentic_ai,ko
+체계 구축,29,11,0.897,0,0.0,0,cybersecurity,ko
+Infrastructure,29,11,0.897,0,0.0,0,frontier,en
+강도,29,11,0.897,0,0.0,0,safety_research,ko
+강제,29,10,0.966,0,0.0,0,frontier,ko
+주간,29,10,0.966,0,0.0,0,frontier,ko
+구축할,29,13,0.759,0,0.0,0,agentic_ai,ko
+Advanced,29,11,0.862,0,0.0,0,cybersecurity,en
+에이전트들,29,10,0.931,0,0.0,0,agentic_ai,ko
+개월간,29,11,0.828,0,0.0,0,cybersecurity,ko
+정서적,29,10,0.897,0,0.0,0,youth,ko
+충분한,29,10,0.897,0,0.0,0,law,ko
+다섯 가지,29,10,0.897,0,0.0,0,safety_research,ko
+정리한,29,10,0.897,0,0.0,0,agentic_ai,ko
+숨겨진,29,13,0.69,0,0.0,0,cybersecurity,ko
+GDPR,29,9,0.966,0,0.0,2,law,en
+하원,29,10,0.862,0,0.0,0,law,ko
+원고,29,9,0.931,0,0.0,0,law,ko
+MATH,29,17,0.483,0,0.0,0,frontier,en
+부적절한,29,10,0.828,0,0.0,0,youth,ko
+국내외,29,14,0.586,0,0.0,0,standards,ko
+Video,29,10,0.793,0,0.0,0,frontier,en
+adaptive,29,8,0.966,0,0.0,0,safety_research,en
+multi-agent,29,8,0.966,0,0.0,0,agentic_ai,en
+보안 강화,29,9,0.862,0,0.0,0,cybersecurity,ko
+Music,29,9,0.862,0,0.0,0,law,en
+공개한,29,9,0.862,0,0.0,0,frontier,ko
+사용하고,29,8,0.897,0,0.0,0,law,ko
+UN,29,9,0.793,0,0.0,1,norms,en
+실증적,29,7,1.0,0,0.0,0,safety_research,ko
+Enforcement,29,7,0.966,0,0.0,1,law,en
+Kimi,29,7,0.966,0,0.0,0,frontier,en
+약한,29,7,0.966,0,0.0,0,safety_research,ko
+제시한,28,16,0.821,0,0.0,0,law,ko
+법의,28,15,0.821,0,0.0,0,law,ko
+Measuring,28,18,0.679,0,0.0,0,cybersecurity,en
+긍정적인,28,16,0.75,0,0.0,0,frontier,ko
+부정적,28,13,0.893,0,0.0,0,frontier,ko
+참가자들,28,13,0.893,0,0.0,0,law,ko
+데이터 분석,28,15,0.786,0,0.0,0,frontier,ko
+팀이,28,14,0.821,0,0.0,0,cybersecurity,ko
+치명적,28,12,0.929,0,0.0,1,frontier,ko
+재정,28,12,0.929,0,0.0,0,law,ko
+링크,28,13,0.857,0,0.0,2,frontier,ko
+확대할,28,13,0.857,0,0.0,0,frontier,ko
+물리,28,11,0.964,0,0.0,0,agentic_ai,ko
+현지,28,12,0.893,0,0.0,0,frontier,ko
+아이디어,28,18,0.607,0,0.0,0,agentic_ai,ko
+우회하,28,13,0.821,0,0.0,0,safety_research,ko
+법은,28,16,0.679,0,0.0,0,law,ko
+모델 내부,28,15,0.714,0,0.0,0,safety_research,ko
+단독,28,11,0.929,0,0.0,0,frontier,ko
+분쟁,28,11,0.929,0,0.0,0,law,ko
+대응할,28,12,0.857,0,0.0,0,cybersecurity,ko
+훈련 데이터,28,12,0.857,0,0.0,0,frontier,ko
+Tasks,28,13,0.786,0,0.0,0,agentic_ai,en
+Accountability,28,11,0.893,0,0.0,4,law,en
+만으,28,11,0.893,0,0.0,0,safety_research,ko
+거래,28,11,0.893,0,0.0,0,frontier,ko
+불평등,28,11,0.893,0,0.0,0,law,ko
+image,28,11,0.893,0,0.0,0,frontier,en
+따라서,28,11,0.893,0,0.0,0,safety_research,ko
+기술 개발,28,12,0.821,0,0.0,0,law,ko
+White House,28,12,0.821,0,0.0,0,frontier,en
+인센티브,28,12,0.821,0,0.0,1,safety_research,ko
+체인,28,12,0.821,0,0.0,0,cybersecurity,ko
+Support,28,12,0.821,0,0.0,0,law,en
+일반적인,28,12,0.821,0,0.0,0,safety_research,ko
+차례,28,10,0.964,0,0.0,0,cybersecurity,ko
+매핑,28,10,0.964,0,0.0,0,cybersecurity,ko
+내에,28,13,0.75,0,0.0,0,cybersecurity,ko
+문장,28,11,0.857,0,0.0,0,safety_research,ko
+설치,28,11,0.857,0,0.0,0,law,ko
+B active,28,11,0.857,0,0.0,0,frontier,en
+발생한,28,10,0.929,0,0.0,0,frontier,ko
+구분,28,11,0.821,0,0.0,1,frontier,ko
+Automated,28,10,0.893,0,0.0,0,frontier,en
+주장하,28,10,0.893,0,0.0,0,law,ko
+제공하지,28,10,0.893,0,0.0,0,law,ko
+Qwen3,28,9,0.964,0,0.0,0,frontier,en
+전달,28,9,0.964,0,0.0,0,cybersecurity,ko
+존재하지,28,13,0.679,0,0.0,0,law,ko
+구속력,28,12,0.714,0,0.0,0,norms,ko
+프로필,28,9,0.929,0,0.0,0,law,ko
+절반,28,10,0.821,0,0.0,0,cybersecurity,ko
+취약점 탐지,28,8,1.0,0,0.0,1,cybersecurity,ko
+데이터 접근,28,9,0.893,0,0.0,0,safety_research,ko
+작전,28,8,0.964,0,0.0,0,national_security,ko
+제공되지 않아,28,8,0.964,0,0.0,0,frontier,ko
+companies,28,9,0.821,0,0.0,0,frontier,en
+쓰는,28,8,0.893,0,0.0,0,safety_research,ko
+자본,28,7,1.0,0,0.0,0,frontier,ko
+기초,27,16,0.852,0,0.0,0,frontier,ko
+해소,27,14,0.852,0,0.0,0,cybersecurity,ko
+understanding,27,14,0.852,0,0.0,1,safety_research,en
+학습한,27,14,0.852,0,0.0,0,safety_research,ko
+실현,27,15,0.778,0,0.0,0,frontier,ko
+복잡한 작업,27,15,0.778,0,0.0,0,frontier,ko
+보안 정책,27,13,0.852,0,0.0,0,cybersecurity,ko
+절감,27,12,0.889,0,0.0,0,frontier,ko
+담당,27,12,0.889,0,0.0,0,law,ko
+강조하고,27,12,0.889,0,0.0,0,frontier,ko
+제시했,27,13,0.815,0,0.0,0,cybersecurity,ko
+도입하고,27,11,0.926,0,0.0,0,agentic_ai,ko
+완전,27,11,0.926,0,0.0,0,national_security,ko
+비동,27,11,0.926,0,0.0,0,law,ko
+다루기,27,13,0.778,0,0.0,0,cybersecurity,ko
+아우르,27,11,0.889,0,0.0,0,cybersecurity,ko
+연간,27,11,0.889,0,0.0,0,frontier,ko
+전통적,27,11,0.889,0,0.0,0,safety_research,ko
+브라우저,27,10,0.963,0,0.0,0,cybersecurity,ko
+시설,27,11,0.852,0,0.0,0,national_security,ko
+AIME,27,16,0.593,0,0.0,0,frontier,en
+비교해,27,10,0.926,0,0.0,0,frontier,ko
+일상,27,10,0.926,0,0.0,0,frontier,ko
+넓은,27,10,0.926,0,0.0,0,frontier,ko
+통계적,27,12,0.778,0,0.0,0,safety_research,ko
+필요할,27,10,0.889,0,0.0,0,safety_research,ko
+있으므,27,10,0.889,0,0.0,0,safety_research,ko
+조기,27,12,0.741,0,0.0,0,frontier,ko
+수사,27,10,0.852,0,0.0,0,deepfake_disinfo,ko
+현대,27,10,0.852,0,0.0,0,safety_research,ko
+구성해,27,9,0.926,0,0.0,0,safety_research,ko
+Beyond,27,9,0.926,0,0.0,0,safety_research,en
+받아,27,9,0.926,0,0.0,0,cybersecurity,ko
+브라질,27,9,0.926,0,0.0,0,law,ko
+개발 과정,27,15,0.556,0,0.0,0,frontier,ko
+Million,27,10,0.815,0,0.0,0,law,en
+방향성,27,8,1.0,0,0.0,0,safety_research,ko
+제기한,27,9,0.889,0,0.0,0,law,ko
+예외,27,9,0.852,0,0.0,0,law,ko
+자산,27,9,0.852,0,0.0,0,national_security,ko
+수행하고,27,8,0.926,0,0.0,0,safety_research,ko
+게시물,27,8,0.852,0,0.0,0,frontier,ko
+도덕적,27,7,0.963,0,0.0,0,safety_research,ko
+통제된,27,7,0.926,0,0.0,0,safety_research,ko
+임베딩,27,6,0.963,0,0.0,2,safety_research,ko
+baseline,27,5,1.0,0,0.0,1,safety_research,en
+Americas,27,3,1.0,0,0.0,0,law,en
+신설,26,14,0.885,0,0.0,0,law,ko
+빈도,26,12,0.923,0,0.0,0,frontier,ko
+보건,26,13,0.846,0,0.0,0,norms,ko
+무작위,26,13,0.846,0,0.0,0,frontier,ko
+프리뷰,26,11,0.962,0,0.0,1,frontier,ko
+직원들,26,12,0.885,0,0.0,0,frontier,ko
+세계적,26,12,0.885,0,0.0,0,norms,ko
+민주적,26,13,0.808,0,0.0,0,national_security,ko
+완화하,26,11,0.923,0,0.0,0,safety_research,ko
+증가했,26,11,0.923,0,0.0,0,cybersecurity,ko
+일환,26,11,0.923,0,0.0,0,frontier,ko
+개발사,26,12,0.846,0,0.0,0,frontier,ko
+확인하,26,12,0.846,0,0.0,0,safety_research,ko
+악용될,26,12,0.846,0,0.0,0,cybersecurity,ko
+모델 안전,26,12,0.846,0,0.0,0,safety_research,ko
+오히려,26,11,0.885,0,0.0,0,frontier,ko
+패러다임,26,11,0.885,0,0.0,0,safety_research,ko
+예상,26,11,0.885,0,0.0,0,law,ko
+기업용,26,11,0.885,0,0.0,0,agentic_ai,ko
+워크플로우,26,11,0.885,0,0.0,0,agentic_ai,ko
+분기,26,10,0.962,0,0.0,0,frontier,ko
+Verification,26,10,0.962,0,0.0,1,youth,en
+받은,26,10,0.962,0,0.0,0,frontier,ko
+안전하고 신뢰할,26,15,0.654,0,0.0,0,norms,ko
+IEC,26,10,0.923,0,0.0,0,standards,en
+인간 통제,26,11,0.846,0,0.0,0,agentic_ai,ko
+세트,26,11,0.846,0,0.0,0,safety_research,ko
+성별,26,13,0.692,0,0.0,0,law,ko
+다르게,26,10,0.885,0,0.0,0,frontier,ko
+분류하고,26,10,0.885,0,0.0,0,cybersecurity,ko
+담고,26,11,0.808,0,0.0,0,law,ko
+부작용,26,11,0.808,0,0.0,1,guideline,ko
+High,26,11,0.808,0,0.0,5,frontier,en
+가능하고,26,9,0.962,0,0.0,0,agentic_ai,ko
+학습된,26,9,0.923,0,0.0,0,safety_research,ko
+해커,26,8,1.0,0,0.0,0,cybersecurity,ko
+사이버 방어,26,8,1.0,0,0.0,0,cybersecurity,ko
+진행되,26,10,0.808,0,0.0,0,frontier,ko
+외국,26,10,0.808,0,0.0,0,national_security,ko
+수천,26,11,0.731,0,0.0,0,law,ko
+참조,26,9,0.885,0,0.0,0,agentic_ai,ko
+요구하고,26,8,0.962,0,0.0,0,law,ko
+접근 권한,26,9,0.846,0,0.0,0,frontier,ko
+달리,26,9,0.846,0,0.0,0,cybersecurity,ko
+예비,26,11,0.692,0,0.0,0,youth,ko
+정량적,26,8,0.923,0,0.0,0,safety_research,ko
+제시하,26,8,0.923,0,0.0,0,law,ko
+향상시키,26,8,0.923,0,0.0,0,safety_research,ko
+잘못,26,9,0.808,0,0.0,0,law,ko
+취약한,26,7,1.0,0,0.0,0,safety_research,ko
+모델 접근,26,7,1.0,0,0.0,0,frontier,ko
+제시된,26,8,0.846,0,0.0,0,safety_research,ko
+검증 가능한,26,7,0.962,0,0.0,0,agentic_ai,ko
+프라이버시 보호,26,7,0.962,0,0.0,0,norms,ko
+SOTA,26,7,0.962,0,0.0,1,safety_research,en
+피지컬,26,6,1.0,0,0.0,0,physical_ai,ko
+집단소송,26,6,0.923,0,0.0,0,law,ko
+간단한,25,18,0.64,0,0.0,0,frontier,ko
+지점,25,13,0.84,0,0.0,0,safety_research,ko
+의지,25,13,0.84,0,0.0,0,norms,ko
+Regulatory,25,12,0.88,0,0.0,0,law,en
+부족한,25,12,0.88,0,0.0,0,law,ko
+개선하,25,12,0.88,0,0.0,0,safety_research,ko
+측정하,25,14,0.76,0,0.0,0,frontier,ko
+자국,25,13,0.8,0,0.0,0,sovereign_ai,ko
+대한민국,25,12,0.84,0,0.0,0,norms,ko
+Threat,25,12,0.84,0,0.0,1,cybersecurity,en
+항상,25,12,0.84,0,0.0,0,safety_research,ko
+체계적인,25,12,0.84,0,0.0,0,cybersecurity,ko
+미스트랄,25,12,0.84,0,0.0,0,open_weight,ko
+인공지능 기술,25,18,0.56,0,0.0,0,law,ko
+병렬,25,10,0.96,0,0.0,0,safety_research,ko
+고품질,25,11,0.88,0,0.0,0,safety_research,ko
+장기적인,25,12,0.8,0,0.0,0,cybersecurity,ko
+개발하,25,12,0.8,0,0.0,0,frontier,ko
+안전 연구,25,12,0.8,0,0.0,0,frontier,ko
+만들기,25,12,0.8,0,0.0,0,frontier,ko
+무해한,25,15,0.64,0,0.0,0,safety_research,ko
+정상,25,10,0.92,0,0.0,0,cybersecurity,ko
+Scale,25,10,0.92,0,0.0,0,agentic_ai,en
+아시아,25,10,0.92,0,0.0,0,frontier,ko
+중앙,25,10,0.92,0,0.0,0,norms,ko
+받고,25,10,0.92,0,0.0,0,law,ko
+수출 통제,25,13,0.72,0,0.0,0,frontier,ko
+향상된,25,15,0.6,0,0.0,0,frontier,ko
+부모,25,10,0.88,0,0.0,0,youth,ko
+압력,25,10,0.88,0,0.0,0,safety_research,ko
+참여하,25,11,0.8,0,0.0,0,norms,ko
+스마트,25,9,0.96,0,0.0,0,norms,ko
+세미나,25,9,0.96,0,0.0,1,law,ko
+Trustworthy,25,12,0.72,0,0.0,0,norms,en
+Secure,25,11,0.76,0,0.0,0,cybersecurity,en
+체결,25,8,1.0,0,0.0,0,frontier,ko
+Trump,25,10,0.8,0,0.0,0,frontier,en
+주도권,25,9,0.88,0,0.0,0,national_security,ko
+중복,25,9,0.88,0,0.0,0,law,ko
+Press,25,9,0.88,0,0.0,0,law,en
+Releases,25,8,0.96,0,0.0,0,frontier,en
+유발할,25,10,0.76,0,0.0,0,cybersecurity,ko
+연방법원,25,8,0.92,0,0.0,0,law,ko
+GenAI,25,8,0.92,0,0.0,10,safety_research,en
+건이,25,7,1.0,0,0.0,0,cybersecurity,ko
+Success,25,7,0.96,0,0.0,0,safety_research,en
+구분하,25,7,0.96,0,0.0,0,open_weight,ko
+경량,25,7,0.96,0,0.0,0,safety_research,ko
+활용되,25,8,0.84,0,0.0,0,frontier,ko
+warns,25,8,0.8,0,0.0,0,frontier,en
+Health,25,8,0.8,0,0.0,0,healthcare,en
+Semantic,25,6,0.96,0,0.0,1,safety_research,en
+제목 기준,25,6,0.92,0,0.0,0,frontier,ko
+존엄성,25,5,1.0,0,0.0,0,norms,ko
+법을,24,13,0.875,0,0.0,0,law,ko
+의혹,24,14,0.792,0,0.0,0,law,ko
+노동 시장,24,14,0.792,0,0.0,0,frontier,ko
+데이터 활용,24,13,0.833,0,0.0,0,law,ko
+엔지니어,24,12,0.875,0,0.0,0,agentic_ai,ko
+충격,24,12,0.875,0,0.0,0,youth,ko
+없으,24,12,0.875,0,0.0,0,law,ko
+Gemini API,24,10,1.0,0,0.0,0,frontier,en
+의견 수렴,24,11,0.917,0,0.0,2,law,ko
+의사,24,11,0.917,0,0.0,0,healthcare,ko
+유통,24,11,0.917,0,0.0,0,deepfake_disinfo,ko
+민감정보,24,12,0.833,0,0.0,0,safety_research,ko
+판매,24,12,0.833,0,0.0,0,law,ko
+단체,24,10,0.958,0,0.0,0,frontier,ko
+Sovereign,24,10,0.917,0,0.0,0,sovereign_ai,en
+공정,24,10,0.917,0,0.0,0,law,ko
+시리즈,24,10,0.917,0,0.0,0,frontier,ko
+발표하고,24,14,0.667,0,0.0,0,law,ko
+시범,24,9,1.0,0,0.0,0,agentic_ai,ko
+활용 사례,24,11,0.833,0,0.0,0,guideline,ko
+You,24,10,0.875,0,0.0,0,deepfake_disinfo,en
+심리적,24,10,0.875,0,0.0,0,youth,ko
+유용한,24,10,0.875,0,0.0,0,safety_research,ko
+참여한,24,10,0.833,0,0.0,0,norms,ko
+inference,24,9,0.917,0,0.0,1,safety_research,en
+Build,24,9,0.917,0,0.0,0,frontier,en
+오프라인,24,9,0.917,0,0.0,1,safety_research,ko
+법적 책임,24,8,1.0,0,0.0,0,law,ko
+분석하,24,10,0.792,0,0.0,0,cybersecurity,ko
+평가했,24,9,0.875,0,0.0,0,frontier,ko
+파일럿,24,9,0.875,0,0.0,0,cybersecurity,ko
+가속화,24,11,0.708,0,0.0,0,national_security,ko
+점진적,24,8,0.958,0,0.0,0,safety_research,ko
+수업,24,9,0.833,0,0.0,0,frontier,ko
+제공해,24,9,0.833,0,0.0,0,frontier,ko
+고려한,24,8,0.917,0,0.0,0,safety_research,ko
+취약,24,8,0.917,0,0.0,1,cybersecurity,ko
+people,24,8,0.917,0,0.0,0,law,en
+평가 프레임워크,24,8,0.917,0,0.0,0,safety_research,ko
+Medical,24,7,0.958,0,0.0,0,healthcare,en
+아동 안전,24,7,0.958,0,0.0,0,youth,ko
+보이고,24,7,0.958,0,0.0,0,safety_research,ko
+제안한,24,8,0.833,0,0.0,0,safety_research,ko
+여지,24,8,0.792,0,0.0,0,safety_research,ko
+AIID,24,5,0.917,0,0.0,2,frontier,en
+특화된,23,13,0.87,0,0.0,0,frontier,ko
+공개되지,23,12,0.913,0,0.0,0,agentic_ai,ko
+고도화된,23,12,0.913,0,0.0,0,cybersecurity,ko
+발표했,23,11,0.913,0,0.0,0,norms,ko
+국가 차원,23,13,0.783,0,0.0,0,law,ko
+정교한,23,13,0.783,0,0.0,0,cybersecurity,ko
+촉진하,23,13,0.783,0,0.0,0,norms,ko
+Cost,23,12,0.826,0,0.0,1,frontier,en
+GPT-4o,23,12,0.826,0,0.0,1,frontier,en
+소버린,23,10,0.957,0,0.0,0,sovereign_ai,ko
+필수,23,10,0.957,0,0.0,1,law,ko
+공개적,23,13,0.739,0,0.0,0,frontier,ko
+추진하,23,12,0.783,0,0.0,0,national_security,ko
+설명하,23,12,0.783,0,0.0,0,guideline,ko
+Draft,23,12,0.783,0,0.0,0,guideline,en
+평가 지표,23,10,0.913,0,0.0,0,safety_research,ko
+마련하,23,10,0.913,0,0.0,0,frontier,ko
+의견수렴,23,10,0.913,0,0.0,2,law,ko
+데이터 유출,23,10,0.913,0,0.0,0,cybersecurity,ko
+SWE-bench Verified,23,10,0.913,0,0.0,0,frontier,en
+중요성 강조,23,11,0.826,0,0.0,0,national_security,ko
+위험 줄이기,23,11,0.826,0,0.0,0,safety_research,ko
+Apache,23,11,0.826,0,0.0,0,frontier,en
+자세한 내용,23,17,0.522,0,0.0,0,frontier,ko
+필요함,23,12,0.739,0,0.0,0,norms,ko
+소재,23,10,0.87,0,0.0,0,law,ko
+Qwen,23,10,0.87,0,0.0,0,frontier,en
+일반적,23,10,0.87,0,0.0,0,safety_research,ko
+구매,23,10,0.87,0,0.0,1,national_security,ko
+생물학적,23,10,0.87,0,0.0,0,safety_research,ko
+모델 대상,23,9,0.957,0,0.0,0,safety_research,ko
+자율주행,23,9,0.957,0,0.0,0,physical_ai,ko
+도입해,23,11,0.783,0,0.0,0,safety_research,ko
+Open-Source,23,11,0.783,0,0.0,0,frontier,en
+정책 동향,23,12,0.696,0,0.0,0,law,ko
+knowledge,23,9,0.913,0,0.0,0,agentic_ai,en
+수출통제,23,9,0.913,0,0.0,0,frontier,ko
+false,23,9,0.913,0,0.0,1,safety_research,en
+실용적,23,10,0.826,0,0.0,0,norms,ko
+안전 정책,23,8,1.0,0,0.0,0,frontier,ko
+강하게,23,11,0.739,0,0.0,0,safety_research,ko
+평가 방법론,23,11,0.739,0,0.0,0,frontier,ko
+추가 연구,23,11,0.739,0,0.0,0,open_weight,ko
+General-Purpose,23,13,0.609,0,0.0,1,guideline,en
+hybrid,23,9,0.87,0,0.0,0,frontier,en
+통합하,23,9,0.87,0,0.0,0,cybersecurity,ko
+개념적,23,8,0.957,0,0.0,0,safety_research,ko
+HuggingFace,23,8,0.957,0,0.0,0,safety_research,en
+관할,23,8,0.957,0,0.0,0,law,ko
+예상치 못한,23,14,0.522,0,0.0,0,cybersecurity,ko
+단어,23,9,0.826,0,0.0,0,safety_research,ko
+딜레마,23,8,0.913,0,0.0,0,safety_research,ko
+했으,23,8,0.913,0,0.0,0,frontier,ko
+연결해,23,8,0.913,0,0.0,0,safety_research,ko
+아울러,23,8,0.913,0,0.0,0,frontier,ko
+도약,23,14,0.478,0,0.0,0,norms,ko
+오해,23,9,0.783,0,0.0,0,guideline,ko
+Sovereignty,23,7,1.0,0,0.0,0,sovereign_ai,en
+관리하고,23,10,0.696,0,0.0,0,cybersecurity,ko
+Industry,23,10,0.696,0,0.0,0,agentic_ai,en
+Algorithmic,23,7,0.957,0,0.0,0,law,en
+장면,23,7,0.957,0,0.0,0,safety_research,ko
+인정,23,7,0.957,0,0.0,0,law,ko
+억제,23,7,0.913,0,0.0,0,safety_research,ko
+Activation,23,7,0.913,0,0.0,0,safety_research,en
+스트레스,23,7,0.913,0,0.0,0,safety_research,ko
+하루,23,6,1.0,0,0.0,0,national_security,ko
+순차,23,6,1.0,0,0.0,0,frontier,ko
+HE,23,13,0.391,0,0.0,0,frontier,en
+국산,23,7,0.739,0,0.0,0,cybersecurity,ko
+Action Plan,23,6,0.565,0,0.0,0,cybersecurity,en
+LLC,23,3,1.0,0,0.0,0,law,en
+민관,22,14,0.818,0,0.0,0,cybersecurity,ko
+인구,22,11,0.955,0,0.0,0,frontier,ko
+스택,22,11,0.955,0,0.0,0,cybersecurity,ko
+평가해,22,11,0.909,0,0.0,0,safety_research,ko
+에이전트 시스템,22,16,0.636,0,0.0,0,agentic_ai,ko
+진행할,22,13,0.773,0,0.0,0,frontier,ko
+Building,22,12,0.818,0,0.0,0,frontier,en
+팀을,22,12,0.818,0,0.0,0,cybersecurity,ko
+Company,22,10,0.955,0,0.0,0,frontier,en
+클러스터,22,11,0.864,0,0.0,0,cybersecurity,ko
+교류,22,11,0.864,0,0.0,0,norms,ko
+제출할,22,11,0.864,0,0.0,0,law,ko
+리더,22,11,0.864,0,0.0,0,national_security,ko
+모범사례,22,11,0.864,0,0.0,0,guideline,ko
+관련 정보,22,14,0.682,0,0.0,0,law,ko
+관련 위험,22,13,0.727,0,0.0,0,law,ko
+선택적,22,9,1.0,0,0.0,0,safety_research,ko
+제조업,22,10,0.909,0,0.0,0,physical_ai,ko
+답을,22,11,0.818,0,0.0,0,frontier,ko
+진입,22,11,0.818,0,0.0,0,frontier,ko
+정부 기관,22,11,0.818,0,0.0,0,cybersecurity,ko
+인사,22,9,0.955,0,0.0,0,law,ko
+조사 결과,22,9,0.955,0,0.0,0,cybersecurity,ko
+심층,22,9,0.955,0,0.0,0,safety_research,ko
+GPQA Diamond,22,9,0.955,0,0.0,0,frontier,en
+개선할,22,12,0.727,0,0.0,0,guideline,ko
+공공서비스,22,10,0.864,0,0.0,0,norms,ko
+측정하고,22,10,0.864,0,0.0,0,safety_research,ko
+받는,22,11,0.773,0,0.0,0,frontier,ko
+새로,22,11,0.773,0,0.0,0,cybersecurity,ko
+연계해,22,9,0.909,0,0.0,0,frontier,ko
+의원,22,9,0.909,0,0.0,0,law,ko
+보장하,22,9,0.909,0,0.0,0,law,ko
+알려진,22,9,0.909,0,0.0,0,cybersecurity,ko
+유엔,22,10,0.818,0,0.0,0,norms,ko
+Rights,22,10,0.818,0,0.0,0,norms,en
+투명하게,22,10,0.818,0,0.0,0,frontier,ko
+커뮤니케이션,22,10,0.818,0,0.0,0,safety_research,ko
+판사,22,10,0.818,0,0.0,0,law,ko
+데이터 공유,22,12,0.682,0,0.0,0,law,ko
+고려해,22,12,0.682,0,0.0,0,cybersecurity,ko
+최고 수준,22,11,0.727,0,0.0,0,frontier,ko
+의사결정 과정,22,11,0.727,0,0.0,0,norms,ko
+공정한,22,11,0.727,0,0.0,0,law,ko
+상세,22,11,0.727,0,0.0,0,frontier,ko
+성명,22,9,0.864,0,0.0,0,frontier,ko
+국제협력,22,15,0.5,0,0.0,0,norms,ko
+안전 위험,22,10,0.773,0,0.0,0,cybersecurity,ko
+포함되,22,10,0.773,0,0.0,0,law,ko
+chain,22,8,0.955,0,0.0,0,safety_research,en
+얼굴,22,8,0.955,0,0.0,0,deepfake_disinfo,ko
+자율 에이전트,22,8,0.955,0,0.0,0,agentic_ai,ko
+Alibaba,22,8,0.955,0,0.0,0,frontier,en
+Suno,22,9,0.818,0,0.0,0,law,en
+Gov,22,9,0.818,0,0.0,0,law,en
+hacking,22,8,0.909,0,0.0,0,cybersecurity,en
+MOU,22,8,0.909,0,0.0,11,frontier,en
+지정학적,22,7,1.0,0,0.0,0,national_security,ko
+연례,22,9,0.773,0,0.0,0,law,ko
+급속한,22,8,0.864,0,0.0,0,cybersecurity,ko
+효율적인,22,8,0.864,0,0.0,0,frontier,ko
+실험적,22,8,0.864,0,0.0,0,frontier,ko
+다루지,22,7,0.955,0,0.0,0,safety_research,ko
+검증할,22,7,0.955,0,0.0,0,safety_research,ko
+유해 콘텐츠,22,7,0.955,0,0.0,0,youth,ko
+구제,22,7,0.955,0,0.0,0,law,ko
+상업적,22,7,0.955,0,0.0,0,frontier,ko
+통합한,22,8,0.818,0,0.0,0,law,ko
+일시,22,8,0.818,0,0.0,0,frontier,ko
+스탠퍼드,22,8,0.818,0,0.0,0,norms,ko
+Ethical,22,6,0.955,0,0.0,0,norms,en
+연구 대규모,22,6,0.955,0,0.0,0,safety_research,ko
+발표한,22,8,0.682,0,0.0,0,frontier,ko
+도시,22,5,1.0,0,0.0,0,physical_ai,ko
+소셜 미디어,22,5,0.818,0,0.0,0,youth,ko
+신뢰 기반,21,14,0.81,0,0.0,0,cybersecurity,ko
+Thinking,21,13,0.857,0,0.0,1,frontier,en
+Act Newsletter,21,11,0.952,0,0.0,0,law,en
+논의하,21,13,0.81,0,0.0,0,law,ko
+적용하,21,12,0.857,0,0.0,0,frontier,ko
+비용 절감,21,12,0.857,0,0.0,0,frontier,ko
+위를,21,12,0.857,0,0.0,0,frontier,ko
+인간 중심,21,11,0.905,0,0.0,0,norms,ko
+분야에서,21,14,0.714,0,0.0,0,frontier,ko
+시스템 개발,21,15,0.667,0,0.0,0,frontier,ko
+패권,21,12,0.81,0,0.0,0,national_security,ko
+년의,21,12,0.81,0,0.0,0,law,ko
+참여할,21,12,0.81,0,0.0,0,frontier,ko
+경쟁력 강화,21,12,0.81,0,0.0,0,law,ko
+교통,21,10,0.952,0,0.0,0,standards,ko
+전환하,21,10,0.952,0,0.0,0,norms,ko
+사유,21,11,0.857,0,0.0,0,frontier,ko
+전통적인,21,11,0.857,0,0.0,0,frontier,ko
+암호화,21,11,0.857,0,0.0,0,frontier,ko
+수동,21,11,0.857,0,0.0,0,frontier,ko
+충분하지,21,11,0.857,0,0.0,0,guideline,ko
+논의하고,21,14,0.667,0,0.0,0,safety_research,ko
+나타날,21,13,0.714,0,0.0,0,safety_research,ko
+Machine,21,10,0.905,0,0.0,0,safety_research,en
+규정하고,21,10,0.905,0,0.0,0,law,ko
+연구하고,21,16,0.571,0,0.0,0,frontier,ko
+비슷한,21,12,0.762,0,0.0,0,safety_research,ko
+집중하고,21,11,0.81,0,0.0,0,frontier,ko
+Challenges,21,11,0.81,0,0.0,0,guideline,en
+수행하도록,21,11,0.81,0,0.0,0,agentic_ai,ko
+적용하고,21,9,0.952,0,0.0,0,safety_research,ko
+Auditing,21,9,0.952,0,0.0,1,safety_research,en
+달라,21,9,0.952,0,0.0,0,law,ko
+정밀,21,9,0.952,0,0.0,0,cybersecurity,ko
+Insights,21,14,0.619,0,0.0,0,frontier,en
+노출된,21,10,0.857,0,0.0,0,cybersecurity,ko
+없고,21,10,0.857,0,0.0,0,safety_research,ko
+위험평,21,10,0.857,0,0.0,0,law,ko
+States,21,10,0.857,0,0.0,0,law,en
+막는,21,12,0.714,0,0.0,0,frontier,ko
+선형,21,12,0.714,0,0.0,0,safety_research,ko
+AWS,21,11,0.762,0,0.0,4,frontier,en
+거짓,21,11,0.762,0,0.0,0,frontier,ko
+Standards,21,11,0.762,0,0.0,0,guideline,en
+확보하고,21,11,0.762,0,0.0,0,frontier,ko
+때의,21,11,0.762,0,0.0,0,safety_research,ko
+의존하,21,9,0.905,0,0.0,0,law,ko
+도입할,21,9,0.905,0,0.0,0,cybersecurity,ko
+무역,21,9,0.905,0,0.0,0,norms,ko
+유연성,21,9,0.905,0,0.0,0,law,ko
+M context,21,9,0.905,0,0.0,0,frontier,en
+제한적인,21,8,1.0,0,0.0,0,law,ko
+대응해,21,10,0.81,0,0.0,0,frontier,ko
+Amazon,21,10,0.81,0,0.0,2,frontier,en
+못했,21,10,0.81,0,0.0,0,safety_research,ko
+인재 양성,21,10,0.81,0,0.0,0,norms,ko
+해로운,21,14,0.571,0,0.0,0,safety_research,ko
+점도,21,13,0.619,0,0.0,0,safety_research,ko
+경제적 영향,21,12,0.667,0,0.0,0,frontier,ko
+Constitutional,21,11,0.714,0,0.0,0,safety_research,en
+주는,21,11,0.714,0,0.0,0,law,ko
+학술,21,9,0.857,0,0.0,0,norms,ko
+예측하,21,9,0.857,0,0.0,0,safety_research,ko
+모바일,21,9,0.857,0,0.0,0,frontier,ko
+기간 동안,21,9,0.857,0,0.0,0,law,ko
+였으,21,8,0.952,0,0.0,0,safety_research,ko
+온라인 안전,21,8,0.952,0,0.0,0,youth,ko
+해결책,21,8,0.952,0,0.0,1,frontier,ko
+유연한,21,10,0.762,0,0.0,0,cybersecurity,ko
+기후,21,10,0.762,0,0.0,0,physical_ai,ko
+심의,21,10,0.762,0,0.0,0,law,ko
+트럼프 대통령,21,9,0.81,0,0.0,0,frontier,ko
+researchers,21,9,0.81,0,0.0,0,frontier,en
+synthetic,21,8,0.905,0,0.0,2,safety_research,en
+접근 제한,21,8,0.905,0,0.0,0,youth,ko
+정의하고,21,8,0.905,0,0.0,0,cybersecurity,ko
+통합해,21,8,0.905,0,0.0,0,guideline,ko
+관리할,21,8,0.905,0,0.0,0,cybersecurity,ko
+등도,21,10,0.714,0,0.0,0,frontier,ko
+취약점 발견,21,7,1.0,0,0.0,0,cybersecurity,ko
+모델별,21,7,1.0,0,0.0,0,frontier,ko
+정리하고,21,9,0.762,0,0.0,0,standards,ko
+평가 과정,21,10,0.667,0,0.0,0,cybersecurity,ko
+보호하,21,10,0.667,0,0.0,0,law,ko
+Trajectory,21,7,0.952,0,0.0,5,safety_research,en
+Moonshot,21,7,0.952,0,0.0,0,frontier,en
+발견 사항,21,11,0.571,0,0.0,0,frontier,ko
+네이버,21,7,0.905,0,0.0,0,cybersecurity,ko
+August,21,7,0.905,0,0.0,0,law,en
+조건부,21,6,1.0,0,0.0,1,safety_research,ko
+수집하고,21,6,0.952,0,0.0,0,frontier,ko
+해당 없음,21,6,0.952,0,0.0,1,frontier,ko
+문구,21,6,0.905,0,0.0,0,frontier,ko
+ChinAI,21,5,1.0,0,0.0,0,frontier,en
+시각적,21,5,1.0,0,0.0,0,safety_research,ko
+Preference,21,5,1.0,0,0.0,2,safety_research,en
+July,21,5,0.905,0,0.0,0,cybersecurity,en
+적용될,20,15,0.75,0,0.0,0,law,ko
+정비,20,12,0.9,0,0.0,0,law,ko
+협력 방안,20,12,0.85,0,0.0,0,norms,ko
+소통,20,12,0.85,0,0.0,0,agentic_ai,ko
+처벌,20,11,0.9,0,0.0,0,law,ko
+법제,20,13,0.75,0,0.0,0,law,ko
+포괄적인,20,11,0.85,0,0.0,0,law,ko
+life,20,11,0.85,0,0.0,0,norms,en
+접근 방식,20,10,0.9,0,0.0,0,guideline,ko
+분의,20,10,0.9,0,0.0,0,frontier,ko
+농업,20,10,0.9,0,0.0,0,frontier,ko
+생태계 구축,20,10,0.9,0,0.0,0,norms,ko
+statement,20,10,0.9,0,0.0,0,safety_research,en
+학습데이터,20,14,0.65,0,0.0,0,law,ko
+Update,20,12,0.75,0,0.0,0,cybersecurity,en
+Universal,20,12,0.75,0,0.0,0,safety_research,en
+위험 요소,20,11,0.8,0,0.0,0,safety_research,ko
+디지털 전환,20,9,0.95,0,0.0,0,guideline,ko
+틀을,20,10,0.85,0,0.0,0,frontier,ko
+확인하지,20,10,0.85,0,0.0,0,law,ko
+아프리카,20,10,0.85,0,0.0,0,norms,ko
+진행 상황,20,10,0.85,0,0.0,0,law,ko
+팀은,20,10,0.85,0,0.0,0,frontier,ko
+맞게,20,12,0.7,0,0.0,0,safety_research,ko
+LLM Agents,20,11,0.75,0,0.0,0,safety_research,en
+포함돼,20,9,0.9,0,0.0,0,cybersecurity,ko
+평가한 결과,20,9,0.9,0,0.0,0,safety_research,ko
+삼아,20,9,0.9,0,0.0,0,safety_research,ko
+비영리,20,8,1.0,0,0.0,0,frontier,ko
+명을 대상,20,8,1.0,0,0.0,0,safety_research,ko
+침입,20,8,1.0,0,0.0,0,cybersecurity,ko
+발전 속도,20,8,1.0,0,0.0,0,law,ko
+에이전트 행동,20,9,0.85,0,0.0,0,agentic_ai,ko
+워싱턴,20,9,0.85,0,0.0,0,frontier,ko
+직업,20,9,0.85,0,0.0,0,frontier,ko
+관련 연구,20,9,0.85,0,0.0,0,frontier,ko
+창의성,20,9,0.85,0,0.0,0,safety_research,ko
+사법,20,9,0.85,0,0.0,0,law,ko
+사용했,20,8,0.95,0,0.0,0,frontier,ko
+한국어,20,8,0.95,0,0.0,0,safety_research,ko
+구축하,20,8,0.95,0,0.0,0,cybersecurity,ko
+공개하지,20,8,0.9,0,0.0,0,frontier,ko
+Operational,20,8,0.9,0,0.0,1,national_security,en
+Dataset,20,8,0.9,0,0.0,0,safety_research,en
+맞추,20,9,0.8,0,0.0,0,safety_research,ko
+금지하고,20,10,0.7,0,0.0,0,law,ko
+다룰,20,10,0.7,0,0.0,0,law,ko
+위협 대응,20,8,0.85,0,0.0,0,cybersecurity,ko
+경험적,20,8,0.85,0,0.0,0,safety_research,ko
+방화벽 보안,20,8,0.85,0,0.0,0,cybersecurity,ko
+언론,20,9,0.75,0,0.0,0,deepfake_disinfo,ko
+반발,20,7,0.95,0,0.0,0,frontier,ko
+제기된,20,7,0.95,0,0.0,0,law,ko
+Vulnerability,20,7,0.9,0,0.0,1,cybersecurity,en
+scientific,20,8,0.75,0,0.0,0,law,en
+F1,20,6,1.0,0,0.0,0,safety_research,en
+안전 문제,20,6,1.0,0,0.0,0,youth,ko
+트레이드오프,20,6,1.0,0,0.0,0,safety_research,ko
+벡터,20,7,0.85,0,0.0,1,safety_research,ko
+외부 시스템,20,6,0.95,0,0.0,0,cybersecurity,ko
+정신,20,6,0.95,0,0.0,0,healthcare,ko
+대만,20,6,0.95,0,0.0,0,cybersecurity,ko
+결론적,20,6,0.95,0,0.0,0,law,ko
+스케일,20,6,0.95,0,0.0,0,safety_research,ko
+조치들,20,7,0.8,0,0.0,0,national_security,ko
+Financial,20,6,0.9,0,0.0,0,frontier,en
+남성,20,7,0.75,0,0.0,0,frontier,ko
+court,20,6,0.85,0,0.0,0,law,en
+Oceania,20,3,1.0,0,0.0,0,youth,en
+연구 인공지능,20,3,0.95,0,0.0,0,agentic_ai,ko
+Specialist news,20,3,0.95,0,0.0,0,frontier,en
+news and analysis,20,3,0.95,0,0.0,0,frontier,en
+analysis on legal,20,3,0.95,0,0.0,0,frontier,en
+legal risk,20,3,0.95,0,0.0,0,frontier,en
+risk and regulation,20,3,0.95,0,0.0,0,frontier,en
+뉴시스,20,2,1.0,0,0.0,0,cybersecurity,ko
+newsis,20,2,1.0,0,0.0,0,cybersecurity,en
+견해,19,15,0.737,0,0.0,0,frontier,ko
+국제기구,19,14,0.737,0,0.0,0,norms,ko
+유료,19,12,0.842,0,0.0,0,frontier,ko
+하반기,19,11,0.895,0,0.0,0,cybersecurity,ko
+생태계 조성,19,11,0.895,0,0.0,0,deepfake_disinfo,ko
+커지,19,10,0.947,0,0.0,0,safety_research,ko
+명으,19,13,0.737,0,0.0,0,law,ko
+머신러닝,19,14,0.684,0,0.0,0,safety_research,ko
+창출,19,12,0.789,0,0.0,0,frontier,ko
+증가하,19,12,0.789,0,0.0,0,frontier,ko
+확대하,19,11,0.842,0,0.0,0,cybersecurity,ko
+노동시장,19,11,0.842,0,0.0,0,law,ko
+짧은,19,11,0.842,0,0.0,0,agentic_ai,ko
+약화시킬,19,11,0.842,0,0.0,0,law,ko
+대체할,19,11,0.842,0,0.0,0,frontier,ko
+보여주고,19,11,0.842,0,0.0,0,frontier,ko
+자율무기,19,9,1.0,0,0.0,0,national_security,ko
+현실적인,19,9,1.0,0,0.0,0,national_security,ko
+긴장,19,10,0.895,0,0.0,0,national_security,ko
+실행할,19,10,0.895,0,0.0,0,frontier,ko
+점검하고,19,10,0.895,0,0.0,0,cybersecurity,ko
+기반해,19,10,0.895,0,0.0,0,safety_research,ko
+화면,19,12,0.737,0,0.0,0,cybersecurity,ko
+뛰어난,19,12,0.737,0,0.0,0,cybersecurity,ko
+법에,19,11,0.789,0,0.0,0,law,ko
+강점,19,11,0.789,0,0.0,0,frontier,ko
+빠르고,19,11,0.789,0,0.0,0,frontier,ko
+상당한,19,9,0.947,0,0.0,0,open_weight,ko
+재난,19,9,0.947,0,0.0,0,deepfake_disinfo,ko
+adoption,19,9,0.947,0,0.0,0,norms,en
+금지하,19,9,0.947,0,0.0,0,law,ko
+판단하,19,10,0.842,0,0.0,0,law,ko
+악용하,19,10,0.842,0,0.0,0,cybersecurity,ko
+관련 정책,19,10,0.842,0,0.0,0,frontier,ko
+조작된,19,10,0.842,0,0.0,0,law,ko
+연동,19,10,0.842,0,0.0,0,frontier,ko
+열리,19,10,0.842,0,0.0,0,norms,ko
+능력 향상,19,13,0.632,0,0.0,0,safety_research,ko
+인도네시아,19,8,1.0,0,0.0,0,law,ko
+수용,19,8,1.0,0,0.0,1,norms,ko
+참석자들,19,9,0.895,0,0.0,0,law,ko
+Brief,19,9,0.895,0,0.0,0,cybersecurity,en
+상당 부분,19,9,0.895,0,0.0,0,frontier,ko
+설계하,19,9,0.895,0,0.0,0,agentic_ai,ko
+함으,19,9,0.895,0,0.0,0,national_security,ko
+분석한 보고서,19,15,0.526,0,0.0,0,law,ko
+black-box,19,8,0.947,0,0.0,0,safety_research,en
+Three,19,8,0.947,0,0.0,0,frontier,en
+반영하,19,8,0.947,0,0.0,0,safety_research,ko
+Uses,19,8,0.947,0,0.0,0,cybersecurity,en
+확인하고,19,9,0.842,0,0.0,0,law,ko
+Multilingual,19,9,0.842,0,0.0,0,safety_research,en
+급격히,19,9,0.842,0,0.0,0,frontier,ko
+오브,19,9,0.842,0,0.0,0,guideline,ko
+중요한 역할,19,11,0.684,0,0.0,0,frontier,ko
+Feedback,19,10,0.737,0,0.0,0,safety_research,en
+카메,19,8,0.895,0,0.0,0,law,ko
+머스크,19,8,0.895,0,0.0,0,frontier,ko
+규범적,19,8,0.895,0,0.0,0,law,ko
+비동 성적,19,8,0.895,0,0.0,0,law,ko
+approach,19,9,0.789,0,0.0,0,safety_research,en
+Business,19,9,0.789,0,0.0,0,law,en
+데이터 관리,19,9,0.789,0,0.0,0,law,ko
+전국,19,9,0.789,0,0.0,0,frontier,ko
+보안 관련,19,9,0.789,0,0.0,0,cybersecurity,ko
+앞으,19,13,0.526,0,0.0,0,agentic_ai,ko
+행동 패턴,19,13,0.526,0,0.0,0,safety_research,ko
+개입 없이,19,7,1.0,0,0.0,0,frontier,ko
+문제 다루,19,7,1.0,0,0.0,0,safety_research,ko
+필터,19,7,1.0,0,0.0,0,agentic_ai,ko
+모델 사이버,19,7,1.0,0,0.0,0,frontier,ko
+명시되지,19,7,1.0,0,0.0,0,law,ko
+재교육,19,11,0.632,0,0.0,0,safety_research,ko
+상원의원,19,10,0.684,0,0.0,0,law,ko
+Federal,19,10,0.684,0,0.0,0,law,en
+임금,19,8,0.842,0,0.0,0,law,ko
+못할,19,9,0.737,0,0.0,0,frontier,ko
+Epoch,19,7,0.947,0,0.0,0,open_weight,en
+규제 동향,19,11,0.579,0,0.0,0,law,ko
+Board,19,8,0.789,0,0.0,0,law,en
+South,19,7,0.895,0,0.0,0,norms,en
+위험 식별,19,11,0.526,0,0.0,0,norms,ko
+런던,19,10,0.579,0,0.0,0,frontier,ko
+전송,19,6,1.0,0,0.0,0,frontier,ko
+Power,19,6,0.947,0,0.0,0,law,en
+북부지방법원,19,6,0.947,0,0.0,0,law,ko
+최적,19,6,0.842,0,0.0,0,safety_research,ko
+value,19,5,1.0,0,0.0,1,safety_research,en
+Misuse,19,9,0.474,0,0.0,3,frontier,en
+규제 프레임워크,19,5,0.947,0,0.0,0,law,ko
+발생했,19,5,0.895,0,0.0,0,cybersecurity,ko
+Reg,19,4,1.0,0,0.0,0,law,en
+노이즈,19,4,1.0,0,0.0,0,safety_research,ko
+업스테이지,19,4,0.947,0,0.0,0,sovereign_ai,ko
+인간 존엄성,19,3,1.0,0,0.0,0,norms,ko
+연구 대형,19,2,1.0,0,0.0,0,safety_research,ko
+구도,18,11,0.944,0,0.0,0,frontier,ko
+투표,18,13,0.778,0,0.0,0,politics,ko
+수가,18,12,0.833,0,0.0,0,frontier,ko
+진행한,18,11,0.889,0,0.0,0,frontier,ko
+확장하고,18,11,0.889,0,0.0,0,frontier,ko
+규제 체계,18,10,0.944,0,0.0,0,law,ko
+초과,18,13,0.722,0,0.0,0,frontier,ko
+모색,18,12,0.778,0,0.0,0,frontier,ko
+않기,18,12,0.778,0,0.0,0,cybersecurity,ko
+기반 사이버,18,10,0.889,0,0.0,0,cybersecurity,ko
+top,18,10,0.889,0,0.0,0,agentic_ai,en
+개혁,18,10,0.889,0,0.0,0,law,ko
+유지하고,18,10,0.889,0,0.0,0,safety_research,ko
+오픈 소스,18,10,0.889,0,0.0,0,frontier,ko
+증거 기반,18,10,0.889,0,0.0,0,agentic_ai,ko
+Chatbot,18,12,0.722,0,0.0,0,youth,en
+연방 차원,18,12,0.722,0,0.0,0,law,ko
+지방,18,9,0.944,0,0.0,0,law,ko
+SB,18,9,0.944,0,0.0,0,law,en
+problems,18,9,0.944,0,0.0,0,frontier,en
+돕기,18,9,0.944,0,0.0,0,guideline,ko
+완료,18,11,0.778,0,0.0,0,cybersecurity,ko
+영향 미치,18,11,0.778,0,0.0,0,law,ko
+Python,18,10,0.833,0,0.0,0,frontier,en
+후에,18,10,0.833,0,0.0,0,cybersecurity,ko
+정보 제공,18,10,0.833,0,0.0,0,law,ko
+보지,18,10,0.833,0,0.0,0,law,ko
+연방 정부,18,10,0.833,0,0.0,0,law,ko
+도달,18,8,1.0,0,0.0,0,frontier,ko
+Protection,18,8,1.0,0,0.0,0,law,en
+Governing,18,8,1.0,0,0.0,0,law,en
+학습하,18,9,0.889,0,0.0,0,safety_research,ko
+과의,18,9,0.889,0,0.0,0,frontier,ko
+심리,18,9,0.889,0,0.0,0,law,ko
+정책 제안,18,9,0.889,0,0.0,0,frontier,ko
+잠재적 위험,18,12,0.667,0,0.0,0,safety_research,ko
+모델 위험,18,12,0.667,0,0.0,1,frontier,ko
+정책 방향,18,13,0.611,0,0.0,0,cybersecurity,ko
+안에,18,11,0.722,0,0.0,0,cybersecurity,ko
+시스템 구축,18,11,0.722,0,0.0,0,law,ko
+견고한,18,11,0.722,0,0.0,0,safety_research,ko
+대책,18,10,0.778,0,0.0,0,cybersecurity,ko
+활용되고,18,10,0.778,0,0.0,0,law,ko
+도전 과제,18,10,0.778,0,0.0,0,guideline,ko
+GPT-4,18,15,0.5,0,0.0,0,frontier,en
+누가,18,8,0.944,0,0.0,0,law,ko
+seeks,18,8,0.944,0,0.0,0,law,en
+strategic,18,8,0.944,0,0.0,0,national_security,en
+라이브러리,18,8,0.944,0,0.0,0,safety_research,ko
+의도치,18,8,0.944,0,0.0,0,cybersecurity,ko
+페르소나,18,8,0.944,0,0.0,2,safety_research,ko
+조화,18,9,0.833,0,0.0,0,law,ko
+미세,18,12,0.611,0,0.0,0,frontier,ko
+강국,18,13,0.556,0,0.0,0,sovereign_ai,ko
+본격,18,11,0.667,0,0.0,0,law,ko
+행동계획,18,11,0.667,0,0.0,0,law,ko
+deep,18,10,0.722,0,0.0,0,frontier,en
+발전 따른,18,10,0.722,0,0.0,0,guideline,ko
+가치사슬,18,10,0.722,0,0.0,0,guideline,ko
+매개변수,18,8,0.889,0,0.0,0,frontier,ko
+승인된,18,8,0.889,0,0.0,0,agentic_ai,ko
+html,18,8,0.889,0,0.0,1,cybersecurity,en
+sector,18,8,0.889,0,0.0,0,cybersecurity,en
+안정적인,18,8,0.889,0,0.0,0,safety_research,ko
+의무화하,18,8,0.889,0,0.0,0,law,ko
+관련성,18,8,0.889,0,0.0,0,agentic_ai,ko
+정책 입안자들,18,8,0.889,0,0.0,0,law,ko
+뒷받침하,18,8,0.889,0,0.0,0,safety_research,ko
+유의미한,18,8,0.889,0,0.0,0,safety_research,ko
+NIA,18,7,1.0,0,0.0,8,agentic_ai,en
+수행해,18,7,1.0,0,0.0,0,safety_research,ko
+대시보드,18,7,1.0,0,0.0,0,cybersecurity,ko
+identity,18,7,1.0,0,0.0,0,agentic_ai,en
+Cognitive,18,7,1.0,0,0.0,0,safety_research,en
+작성한,18,9,0.778,0,0.0,0,frontier,ko
+소프트웨어 엔지니어링,18,13,0.5,0,0.0,0,cybersecurity,ko
+calls,18,8,0.833,0,0.0,0,law,en
+파악하고,18,8,0.833,0,0.0,0,cybersecurity,ko
+왜곡,18,8,0.833,0,0.0,0,safety_research,ko
+SWE,18,8,0.833,0,0.0,0,frontier,en
+간에,18,7,0.944,0,0.0,0,safety_research,ko
+재사용,18,7,0.944,0,0.0,0,safety_research,ko
+Tests,18,7,0.944,0,0.0,0,frontier,en
+모델 보안,18,7,0.944,0,0.0,0,cybersecurity,ko
+인공지능 시스템,18,9,0.722,0,0.0,0,guideline,ko
+Anthropic Economic Index,18,9,0.722,0,0.0,0,frontier,en
+설명하고,18,8,0.778,0,0.0,0,safety_research,ko
+연관성,18,7,0.889,0,0.0,0,cybersecurity,ko
+Claims,18,7,0.889,0,0.0,0,law,en
+상대 소송,18,7,0.889,0,0.0,0,law,ko
+결국,18,7,0.889,0,0.0,0,law,ko
+Guidelines,18,9,0.667,0,0.0,0,guideline,en
+지역사회,18,6,1.0,0,0.0,0,frontier,ko
+dynamic,18,6,1.0,0,0.0,1,safety_research,en
+Digital Services,18,6,1.0,0,0.0,0,youth,en
+소비,18,8,0.722,0,0.0,0,deepfake_disinfo,ko
+관련 법률,18,7,0.833,0,0.0,0,law,ko
+밝힘,18,6,0.944,0,0.0,0,cybersecurity,ko
+모델 출시,18,6,0.889,0,0.0,0,frontier,ko
+편향성,18,6,0.889,0,0.0,0,safety_research,ko
+암묵적,18,6,0.889,0,0.0,0,safety_research,ko
+Copyright,18,9,0.556,0,0.0,0,law,en
+Calibration,18,5,1.0,0,0.0,6,safety_research,en
+안전 벤치마크,18,5,1.0,0,0.0,0,safety_research,ko
+Guard,18,5,1.0,0,0.0,0,safety_research,en
+축소,18,5,1.0,0,0.0,1,safety_research,ko
+구체적인 수치,18,5,1.0,0,0.0,0,safety_research,ko
+Big,18,6,0.778,0,0.0,0,law,en
+수행되,18,5,0.944,0,0.0,0,safety_research,ko
+정보통신정책연구원,18,12,0.222,0,0.0,0,deepfake_disinfo,ko
+Ctrl,18,4,1.0,0,0.0,0,law,en
+하도록,17,11,0.941,0,0.0,0,safety_research,ko
+규정 적용,17,10,1.0,0,0.0,0,law,ko
+Reference,17,11,0.882,0,0.0,1,safety_research,en
+하게,17,11,0.882,0,0.0,0,safety_research,ko
+보험,17,10,0.941,0,0.0,0,frontier,ko
+베트남,17,10,0.941,0,0.0,0,law,ko
+피싱,17,10,0.941,0,0.0,0,cybersecurity,ko
+안전조치,17,9,1.0,0,0.0,0,frontier,ko
+작동하,17,9,1.0,0,0.0,0,safety_research,ko
+Policy Newsletter,17,9,1.0,0,0.0,0,law,en
+개에서,17,12,0.765,0,0.0,0,open_weight,ko
+위험 초래할,17,12,0.765,0,0.0,0,law,ko
+신흥,17,11,0.824,0,0.0,0,cybersecurity,ko
+등을 포함한,17,10,0.882,0,0.0,0,norms,ko
+RMF,17,10,0.882,0,0.0,0,standards,en
+점검하,17,10,0.882,0,0.0,0,safety_research,ko
+축으,17,10,0.882,0,0.0,0,safety_research,ko
+단기,17,10,0.882,0,0.0,0,safety_research,ko
+찾아내,17,10,0.882,0,0.0,0,cybersecurity,ko
+Society,17,10,0.882,0,0.0,0,law,en
+Sandbox,17,9,0.941,0,0.0,0,frontier,en
+목표 달성,17,9,0.941,0,0.0,0,cybersecurity,ko
+산업별,17,9,0.941,0,0.0,0,cybersecurity,ko
+Expert,17,9,0.941,0,0.0,1,safety_research,en
+해당하,17,9,0.941,0,0.0,0,law,ko
+식별하,17,9,0.941,0,0.0,0,frontier,ko
+거버넌스 구축,17,12,0.706,0,0.0,0,law,ko
+Taxonomy,17,12,0.706,0,0.0,0,safety_research,en
+소개하고,17,12,0.706,0,0.0,0,law,ko
+쉬운,17,11,0.765,0,0.0,0,safety_research,ko
+긴급,17,11,0.765,0,0.0,0,cybersecurity,ko
+신속히,17,11,0.765,0,0.0,0,national_security,ko
+Guidance,17,11,0.765,0,0.0,0,guideline,en
+부합하,17,10,0.824,0,0.0,0,law,ko
+관련한,17,10,0.824,0,0.0,0,law,ko
+Laws,17,10,0.824,0,0.0,2,law,en
+반영할,17,10,0.824,0,0.0,0,norms,ko
+개월 동안,17,10,0.824,0,0.0,0,agentic_ai,ko
+데이터 처리,17,10,0.824,0,0.0,0,cybersecurity,ko
+internal,17,8,1.0,0,0.0,0,frontier,en
+전담,17,9,0.882,0,0.0,0,deepfake_disinfo,ko
+pass,17,9,0.882,0,0.0,0,frontier,en
+Guide,17,9,0.882,0,0.0,0,law,en
+집중되어,17,9,0.882,0,0.0,0,frontier,ko
+체크포인트,17,9,0.882,0,0.0,0,cybersecurity,ko
+real-world,17,9,0.882,0,0.0,0,agentic_ai,en
+도구인,17,12,0.647,0,0.0,0,frontier,ko
+어렵게,17,11,0.706,0,0.0,0,law,ko
+신중한,17,11,0.706,0,0.0,0,cybersecurity,ko
+개인정보보호,17,10,0.765,0,0.0,0,law,ko
+즉각적인,17,10,0.765,0,0.0,0,frontier,ko
+법적 근거,17,10,0.765,0,0.0,0,law,ko
+감지하고,17,10,0.765,0,0.0,0,safety_research,ko
+종을,17,8,0.941,0,0.0,0,cybersecurity,ko
+적극적,17,8,0.941,0,0.0,0,cybersecurity,ko
+Child,17,8,0.941,0,0.0,0,youth,en
+제공업체,17,8,0.941,0,0.0,0,law,ko
+campaign,17,8,0.941,0,0.0,0,cybersecurity,en
+조율,17,8,0.941,0,0.0,0,agentic_ai,ko
+숨은,17,8,0.941,0,0.0,0,safety_research,ko
+참고,17,8,0.941,0,0.0,0,safety_research,ko
+어느,17,8,0.941,0,0.0,0,safety_research,ko
+비교하고,17,8,0.941,0,0.0,0,safety_research,ko
+공개될,17,8,0.941,0,0.0,0,law,ko
+엄격히,17,8,0.941,0,0.0,0,safety_research,ko
+기술 도입,17,8,0.941,0,0.0,0,frontier,ko
+제시되,17,8,0.941,0,0.0,0,law,ko
+레드,17,8,0.941,0,0.0,0,safety_research,ko
+상호작용하,17,8,0.941,0,0.0,0,cybersecurity,ko
+않으면,17,9,0.824,0,0.0,0,frontier,ko
+공공 안전,17,9,0.824,0,0.0,0,frontier,ko
+평가 도구,17,9,0.824,0,0.0,0,safety_research,ko
+K context,17,9,0.824,0,0.0,0,frontier,en
+규제 필요성,17,12,0.588,0,0.0,0,law,ko
+라고,17,11,0.647,0,0.0,0,frontier,ko
+에이전트 인간,17,11,0.647,0,0.0,0,agentic_ai,ko
+포용,17,10,0.706,0,0.0,0,norms,ko
+Workers,17,8,0.882,0,0.0,0,agentic_ai,en
+지도,17,8,0.882,0,0.0,0,standards,ko
+체제,17,8,0.882,0,0.0,0,cybersecurity,ko
+공학,17,8,0.882,0,0.0,0,national_security,ko
+Order,17,7,1.0,0,0.0,0,law,en
+변호사,17,7,1.0,0,0.0,0,law,ko
+체계 마련,17,7,1.0,0,0.0,0,safety_research,ko
+때는,17,9,0.765,0,0.0,0,politics,ko
+Results,17,12,0.529,0,0.0,0,frontier,en
+하락,17,7,0.941,0,0.0,0,guideline,ko
+blog,17,7,0.941,0,0.0,0,frontier,en
+다루고,17,7,0.941,0,0.0,0,safety_research,ko
+변수,17,7,0.941,0,0.0,0,frontier,ko
+인공지능 모델,17,7,0.941,0,0.0,0,frontier,ko
+Speech,17,7,0.941,0,0.0,0,cybersecurity,en
+효과성,17,7,0.941,0,0.0,0,safety_research,ko
+베이징,17,7,0.941,0,0.0,0,frontier,ko
+달라질,17,7,0.941,0,0.0,0,safety_research,ko
+Users,17,8,0.824,0,0.0,0,frontier,en
+good,17,8,0.824,0,0.0,0,norms,en
+않지,17,8,0.824,0,0.0,0,frontier,ko
+탐구,17,10,0.647,0,0.0,0,frontier,ko
+국가 인공지능,17,14,0.412,0,0.0,0,norms,ko
+전문 인력,17,7,0.882,0,0.0,0,cybersecurity,ko
+Australia,17,7,0.882,0,0.0,0,law,en
+Software,17,7,0.882,0,0.0,0,frontier,en
+확장성,17,7,0.882,0,0.0,0,cybersecurity,ko
+M GPQA,17,8,0.765,0,0.0,0,frontier,en
+통찰력,17,11,0.529,0,0.0,0,safety_research,ko
+선도,17,10,0.588,0,0.0,0,frontier,ko
+호는,17,6,1.0,0,0.0,0,law,ko
+OpenClaw,17,6,1.0,0,0.0,2,agentic_ai,en
+소형,17,6,1.0,0,0.0,0,safety_research,ko
+프로덕션,17,6,1.0,0,0.0,0,safety_research,ko
+적용 가능한,17,7,0.824,0,0.0,0,guideline,ko
+과학기술,17,7,0.824,0,0.0,0,norms,ko
+진위,17,7,0.824,0,0.0,0,deepfake_disinfo,ko
+해결하,17,7,0.824,0,0.0,0,cybersecurity,ko
+외교,17,8,0.706,0,0.0,0,national_security,ko
+사용된,17,8,0.706,0,0.0,0,frontier,ko
+소프트웨어 개발,17,11,0.471,0,0.0,0,frontier,ko
+위험 수준,17,10,0.529,0,0.0,0,guideline,ko
+비교적,17,6,0.941,0,0.0,0,frontier,ko
+공급업체,17,6,0.941,0,0.0,0,cybersecurity,ko
+분류체계,17,6,0.941,0,0.0,1,agentic_ai,ko
+검열,17,6,0.941,0,0.0,0,cybersecurity,ko
+간접,17,6,0.941,0,0.0,0,safety_research,ko
+쿼리,17,6,0.941,0,0.0,0,safety_research,ko
+구성 요소,17,6,0.941,0,0.0,0,guideline,ko
+통제력,17,6,0.941,0,0.0,0,law,ko
+옵션,17,6,0.941,0,0.0,0,safety_research,ko
+개발된,17,9,0.588,0,0.0,0,cybersecurity,ko
+안전 거버넌스,17,7,0.765,0,0.0,0,norms,ko
+했지,17,6,0.824,0,0.0,0,frontier,ko
+Attack Success,17,5,1.0,0,0.0,0,safety_research,en
+테스트 환경,17,5,1.0,0,0.0,0,frontier,ko
+적응적,17,5,1.0,0,0.0,0,safety_research,ko
+unsafe,17,5,0.941,0,0.0,0,safety_research,en
+비교하,17,5,0.941,0,0.0,0,safety_research,ko
+images,17,6,0.765,0,0.0,0,youth,en
+보안 문제,17,5,0.882,0,0.0,0,cybersecurity,ko
+structured,17,5,0.882,0,0.0,0,safety_research,en
+Claude Fable,17,4,1.0,0,0.0,0,frontier,en
+동아일보,17,2,1.0,0,0.0,0,frontier,ko
+donga,17,2,1.0,0,0.0,0,frontier,en
+한계 특정,17,2,1.0,0,0.0,0,safety_research,ko
+전반 걸쳐,16,11,0.875,0,0.0,0,frontier,ko
+찾는,16,12,0.75,0,0.0,0,agentic_ai,ko
+연계된,16,11,0.812,0,0.0,0,frontier,ko
+적용한,16,11,0.812,0,0.0,0,frontier,ko
+다운로드,16,10,0.875,0,0.0,0,law,ko
+원문,16,10,0.875,0,0.0,0,safety_research,ko
+client,16,10,0.875,0,0.0,0,guideline,en
+물류,16,9,0.938,0,0.0,0,physical_ai,ko
+대비해,16,9,0.938,0,0.0,0,cybersecurity,ko
+확장하,16,9,0.938,0,0.0,0,safety_research,ko
+마련해,16,11,0.75,0,0.0,0,law,ko
+신뢰성 확보,16,11,0.75,0,0.0,0,norms,ko
+사고 보고,16,11,0.75,0,0.0,0,law,ko
+강화해,16,11,0.75,0,0.0,0,frontier,ko
+Small,16,11,0.75,0,0.0,0,law,en
+포용적,16,13,0.625,0,0.0,0,norms,ko
+입증,16,10,0.812,0,0.0,0,frontier,ko
+관련 법안,16,10,0.812,0,0.0,0,law,ko
+획득,16,10,0.812,0,0.0,0,cybersecurity,ko
+검토할,16,10,0.812,0,0.0,0,law,ko
+지식재산권,16,10,0.812,0,0.0,0,law,ko
+활용 확대,16,10,0.812,0,0.0,0,norms,ko
+보인,16,10,0.812,0,0.0,0,safety_research,ko
+생성 모델,16,10,0.812,0,0.0,0,frontier,ko
+Mitigating,16,10,0.812,0,0.0,0,safety_research,en
+결합하,16,8,1.0,0,0.0,0,safety_research,ko
+악용해,16,8,1.0,0,0.0,0,cybersecurity,ko
+투입,16,8,1.0,0,0.0,0,physical_ai,ko
+점과,16,8,1.0,0,0.0,0,law,ko
+수행했,16,8,1.0,0,0.0,0,safety_research,ko
+production,16,9,0.875,0,0.0,0,frontier,en
+탐지하,16,9,0.875,0,0.0,0,safety_research,ko
+수는,16,9,0.875,0,0.0,0,safety_research,ko
+적은,16,9,0.875,0,0.0,0,safety_research,ko
+malicious,16,9,0.875,0,0.0,0,safety_research,en
+생성할,16,9,0.875,0,0.0,0,cybersecurity,ko
+Expands,16,9,0.875,0,0.0,0,frontier,en
+평균적,16,9,0.875,0,0.0,0,frontier,ko
+적절히,16,9,0.875,0,0.0,0,law,ko
+반하,16,9,0.875,0,0.0,0,cybersecurity,ko
+국제적인,16,9,0.875,0,0.0,0,norms,ko
+개발할,16,11,0.688,0,0.0,0,frontier,ko
+만족하,16,12,0.625,0,0.0,0,safety_research,ko
+반영하고,16,8,0.938,0,0.0,0,guideline,ko
+부정적 영향,16,8,0.938,0,0.0,0,youth,ko
+높았,16,8,0.938,0,0.0,0,safety_research,ko
+사안,16,8,0.938,0,0.0,0,law,ko
+예상되,16,8,0.938,0,0.0,0,frontier,ko
+보고서 발간,16,8,0.938,0,0.0,0,norms,ko
+간담회,16,10,0.75,0,0.0,0,cybersecurity,ko
+의식,16,10,0.75,0,0.0,1,norms,ko
+완성,16,10,0.75,0,0.0,0,frontier,ko
+Working,16,10,0.75,0,0.0,0,guideline,en
+정기적,16,10,0.75,0,0.0,0,law,ko
+나온,16,10,0.75,0,0.0,0,frontier,ko
+진행 중인,16,10,0.75,0,0.0,0,frontier,ko
+Measures,16,9,0.812,0,0.0,0,norms,en
+공조,16,9,0.812,0,0.0,0,frontier,ko
+용도,16,9,0.812,0,0.0,0,law,ko
+방대한,16,9,0.812,0,0.0,0,frontier,ko
+사실상,16,7,1.0,0,0.0,0,cybersecurity,ko
+user,16,7,1.0,0,0.0,0,frontier,en
+Built,16,7,1.0,0,0.0,0,frontier,en
+교환,16,7,1.0,0,0.0,0,cybersecurity,ko
+misaligned,16,8,0.875,0,0.0,0,safety_research,en
+사고 대응,16,8,0.875,0,0.0,0,incidents,ko
+체크리스트,16,8,0.875,0,0.0,1,standards,ko
+emerging,16,8,0.875,0,0.0,0,law,en
+드러내,16,8,0.875,0,0.0,0,cybersecurity,ko
+reward hacking,16,8,0.875,0,0.0,0,safety_research,en
+탐지하고,16,8,0.875,0,0.0,0,cybersecurity,ko
+교수,16,8,0.875,0,0.0,0,norms,ko
+의도적,16,8,0.875,0,0.0,0,frontier,ko
+선택하,16,8,0.875,0,0.0,0,safety_research,ko
+침해 소송,16,8,0.875,0,0.0,0,law,ko
+개시,16,8,0.875,0,0.0,0,law,ko
+했고,16,8,0.875,0,0.0,0,frontier,ko
+AI-Assisted,16,8,0.875,0,0.0,0,cybersecurity,en
+안전하지,16,8,0.875,0,0.0,0,safety_research,ko
+Detect,16,8,0.875,0,0.0,0,frontier,en
+용어,16,11,0.625,0,0.0,0,law,ko
+향후 연구,16,12,0.562,0,0.0,0,safety_research,ko
+고영향,16,10,0.688,0,0.0,0,law,ko
+때까지,16,9,0.75,0,0.0,0,safety_research,ko
+에이전트 성능,16,9,0.75,0,0.0,0,agentic_ai,ko
+데이터 바탕,16,9,0.75,0,0.0,0,frontier,ko
+운영되,16,9,0.75,0,0.0,0,norms,ko
+초당적,16,9,0.75,0,0.0,0,law,ko
+악화,16,7,0.938,0,0.0,0,youth,ko
+주장하고,16,7,0.938,0,0.0,0,law,ko
+확장해,16,7,0.938,0,0.0,0,frontier,ko
+무엇인지,16,7,0.938,0,0.0,0,frontier,ko
+시행 시점,16,7,0.938,0,0.0,0,law,ko
+년도,16,8,0.812,0,0.0,0,law,ko
+공개할,16,8,0.812,0,0.0,0,frontier,ko
+languages,16,8,0.812,0,0.0,0,frontier,en
+지역별,16,8,0.812,0,0.0,0,norms,ko
+접수,16,8,0.812,0,0.0,0,law,ko
+Five,16,7,0.875,0,0.0,0,cybersecurity,en
+학습해,16,7,0.875,0,0.0,0,safety_research,ko
+Threats,16,7,0.875,0,0.0,0,cybersecurity,en
+기반 에이전트,16,7,0.875,0,0.0,0,safety_research,ko
+포용성,16,7,0.875,0,0.0,0,norms,ko
+추구,16,7,0.875,0,0.0,0,sovereign_ai,ko
+정책 수립,16,8,0.75,0,0.0,0,law,ko
+구현하,16,8,0.75,0,0.0,0,safety_research,ko
+갖는,16,6,1.0,0,0.0,0,safety_research,ko
+사생활,16,6,1.0,0,0.0,0,law,ko
+Vulnerabilities,16,6,1.0,0,0.0,0,cybersecurity,en
+Digital Services Act,16,6,1.0,0,0.0,0,youth,en
+살상,16,6,1.0,0,0.0,0,national_security,ko
+일리노,16,6,1.0,0,0.0,0,law,ko
+지속 가능한,16,6,1.0,0,0.0,0,norms,ko
+필수적임,16,6,1.0,0,0.0,0,norms,ko
+Canada,16,9,0.625,0,0.0,0,norms,en
+작업 수행할,16,9,0.625,0,0.0,0,cybersecurity,ko
+California,16,7,0.812,0,0.0,0,law,en
+기술 활용해,16,7,0.812,0,0.0,0,national_security,ko
+Chatbots,16,7,0.812,0,0.0,0,youth,en
+통제하,16,6,0.938,0,0.0,0,law,ko
+정부 인공지능,16,6,0.938,0,0.0,0,norms,ko
+호주 정부,16,6,0.938,0,0.0,0,frontier,ko
+시스템 프롬프트,16,6,0.875,0,0.0,0,frontier,ko
+정보 보호,16,6,0.875,0,0.0,0,law,ko
+발행일,16,6,0.875,0,0.0,0,cybersecurity,ko
+데이터센터 건설,16,5,1.0,0,0.0,0,frontier,ko
+LLM Safety,16,5,1.0,0,0.0,0,safety_research,en
+설정 오류,16,5,1.0,0,0.0,0,cybersecurity,ko
+일자리 감소,16,5,1.0,0,0.0,0,healthcare,ko
+달려,16,5,1.0,0,0.0,0,guideline,ko
+설계 원칙,16,5,1.0,0,0.0,0,agentic_ai,ko
+담긴,16,5,1.0,0,0.0,0,law,ko
+Benchmarking,16,5,1.0,0,0.0,1,safety_research,en
+정렬된,16,5,1.0,0,0.0,0,safety_research,ko
+조직들,16,5,1.0,0,0.0,0,cybersecurity,ko
+사건들,16,5,1.0,0,0.0,0,cybersecurity,ko
+networks,16,5,0.938,0,0.0,0,cybersecurity,en
+reuters,16,6,0.625,0,0.0,0,frontier,en
+동역학,16,4,1.0,0,0.0,0,safety_research,ko
+사항 확인,16,4,1.0,0,0.0,0,frontier,ko
+네이버클라우드,16,4,0.938,0,0.0,0,cybersecurity,ko
+증가함,16,4,0.875,0,0.0,0,frontier,ko
+보안 특화,16,3,1.0,0,0.0,0,cybersecurity,ko
+khan,16,3,1.0,0,0.0,0,cybersecurity,en
+베이스라인,16,3,0.938,0,0.0,0,safety_research,ko
+조선일보,16,2,1.0,0,0.0,0,cybersecurity,ko
+chosun,16,2,1.0,0,0.0,0,cybersecurity,en
+아스트,16,2,1.0,0,0.0,0,frontier,ko
+깊은,15,10,0.933,0,0.0,0,safety_research,ko
+생명,15,10,0.933,0,0.0,0,law,ko
+익명,15,9,1.0,0,0.0,0,frontier,ko
+성장률,15,11,0.8,0,0.0,0,frontier,ko
+두는,15,11,0.8,0,0.0,0,law,ko
+파워,15,11,0.8,0,0.0,0,frontier,ko
+개로,15,10,0.867,0,0.0,0,agentic_ai,ko
+보안 조치,15,10,0.867,0,0.0,0,frontier,ko
+직접적,15,9,0.933,0,0.0,0,safety_research,ko
+신념,15,9,0.933,0,0.0,0,frontier,ko
+범정부,15,9,0.933,0,0.0,0,politics,ko
+사용 제한,15,8,1.0,0,0.0,0,national_security,ko
+의장,15,8,1.0,0,0.0,0,frontier,ko
+준수 여부,15,8,1.0,0,0.0,0,guideline,ko
+전략위,15,8,1.0,0,0.0,0,national_security,ko
+Better,15,8,1.0,0,0.0,0,guideline,en
+아동 보호,15,8,1.0,0,0.0,0,youth,ko
+팀의,15,11,0.733,0,0.0,0,safety_research,ko
+제대,15,10,0.8,0,0.0,0,frontier,ko
+결과물,15,10,0.8,0,0.0,0,law,ko
+진짜,15,9,0.867,0,0.0,0,safety_research,ko
+ISSUE,15,9,0.867,0,0.0,0,norms,en
+리더들,15,9,0.867,0,0.0,0,norms,ko
+모델 모두,15,9,0.867,0,0.0,0,safety_research,ko
+받지,15,9,0.867,0,0.0,0,law,ko
+공개해,15,9,0.867,0,0.0,0,frontier,ko
+뒤처져,15,9,0.867,0,0.0,0,frontier,ko
+현대화,15,9,0.867,0,0.0,0,frontier,ko
+technical,15,9,0.867,0,0.0,0,law,en
+비밀,15,8,0.933,0,0.0,0,frontier,ko
+검증하고,15,8,0.933,0,0.0,0,frontier,ko
+악의적인,15,8,0.933,0,0.0,0,cybersecurity,ko
+behavioral,15,8,0.933,0,0.0,0,safety_research,en
+확산되,15,8,0.933,0,0.0,0,agentic_ai,ko
+적합한,15,8,0.933,0,0.0,0,law,ko
+적용 대상,15,8,0.933,0,0.0,0,law,ko
+수행한,15,8,0.933,0,0.0,0,agentic_ai,ko
+파악,15,8,0.933,0,0.0,0,cybersecurity,ko
+확장할,15,8,0.933,0,0.0,0,safety_research,ko
+Anthropic's,15,8,0.933,0,0.0,0,frontier,en
+출판,15,8,0.933,0,0.0,0,agentic_ai,ko
+법이,15,8,0.933,0,0.0,0,law,ko
+되지,15,8,0.933,0,0.0,0,cybersecurity,ko
+자리,15,8,0.933,0,0.0,0,law,ko
+파리,15,11,0.667,0,0.0,0,norms,ko
+Healthcare,15,9,0.8,0,0.0,0,healthcare,en
+Chips,15,9,0.8,0,0.0,1,law,en
+인종,15,9,0.8,0,0.0,0,law,ko
+강조하,15,9,0.8,0,0.0,0,politics,ko
+권고안,15,9,0.8,0,0.0,0,guideline,ko
+설계된,15,9,0.8,0,0.0,0,frontier,ko
+해법,15,9,0.8,0,0.0,0,frontier,ko
+원본,15,7,1.0,0,0.0,0,law,ko
+On-Policy,15,7,1.0,0,0.0,0,safety_research,en
+positive,15,7,1.0,0,0.0,0,safety_research,en
+책임 소재,15,7,1.0,0,0.0,0,law,ko
+Omnibus,15,7,1.0,0,0.0,0,law,en
+Performance,15,7,1.0,0,0.0,0,frontier,en
+범부처,15,8,0.867,0,0.0,0,deepfake_disinfo,ko
+감독 체계,15,8,0.867,0,0.0,0,norms,ko
+금융권,15,8,0.867,0,0.0,0,cybersecurity,ko
+유지할,15,8,0.867,0,0.0,0,frontier,ko
+높여,15,8,0.867,0,0.0,0,frontier,ko
+도입하,15,8,0.867,0,0.0,0,law,ko
+소식,15,8,0.867,0,0.0,0,cybersecurity,ko
+좋은,15,8,0.867,0,0.0,0,frontier,ko
+촉진할,15,8,0.867,0,0.0,0,frontier,ko
+캐릭터,15,8,0.867,0,0.0,0,frontier,ko
+컴퓨팅 인프,15,8,0.867,0,0.0,0,sovereign_ai,ko
+개선 방안,15,8,0.867,0,0.0,0,law,ko
+다층,15,8,0.867,0,0.0,0,safety_research,ko
+모델 자체,15,8,0.867,0,0.0,0,agentic_ai,ko
+인과,15,8,0.867,0,0.0,0,safety_research,ko
+일이,15,11,0.6,0,0.0,0,frontier,ko
+검토해,15,11,0.6,0,0.0,0,safety_research,ko
+Fair,15,11,0.6,0,0.0,0,law,en
+연구 분야,15,10,0.667,0,0.0,0,safety_research,ko
+스페인,15,7,0.933,0,0.0,0,law,ko
+Surveillance,15,7,0.933,0,0.0,0,politics,en
+중국과,15,7,0.933,0,0.0,0,frontier,ko
+주장 소송,15,7,0.933,0,0.0,0,law,ko
+Targeted,15,7,0.933,0,0.0,0,safety_research,en
+포털,15,7,0.933,0,0.0,0,healthcare,ko
+확대될,15,7,0.933,0,0.0,0,law,ko
+오버헤드,15,7,0.933,0,0.0,0,safety_research,ko
+flagship,15,7,0.933,0,0.0,0,frontier,en
+모델 대비,15,7,0.933,0,0.0,0,open_weight,ko
+있어야,15,8,0.8,0,0.0,0,national_security,ko
+Singapore,15,8,0.8,0,0.0,0,agentic_ai,en
+인텔리전스,15,8,0.8,0,0.0,0,cybersecurity,ko
+바꾸,15,8,0.8,0,0.0,0,frontier,ko
+Quality,15,8,0.8,0,0.0,0,safety_research,en
+등장,15,10,0.6,0,0.0,0,frontier,ko
+Japan,15,9,0.667,0,0.0,0,guideline,en
+키울,15,9,0.667,0,0.0,0,frontier,ko
+autonomy,15,9,0.667,0,0.0,0,agentic_ai,en
+Updates,15,12,0.467,0,0.0,0,safety_research,en
+강화된,15,7,0.867,0,0.0,0,youth,ko
+법체계,15,7,0.867,0,0.0,0,law,ko
+integrity,15,7,0.867,0,0.0,0,safety_research,en
+문화적,15,7,0.867,0,0.0,0,safety_research,ko
+녹음,15,7,0.867,0,0.0,0,law,ko
+차단하,15,7,0.867,0,0.0,0,safety_research,ko
+일에,15,6,1.0,0,0.0,0,youth,ko
+침투,15,6,1.0,0,0.0,0,cybersecurity,ko
+약화시키,15,6,1.0,0,0.0,0,safety_research,ko
+경영진,15,6,1.0,0,0.0,0,law,ko
+매체,15,6,1.0,0,0.0,0,frontier,ko
+Fairness,15,6,1.0,0,0.0,0,safety_research,en
+기술 주권,15,6,1.0,0,0.0,0,guideline,ko
+라이프사이클,15,6,1.0,0,0.0,0,guideline,ko
+Early,15,8,0.733,0,0.0,0,frontier,en
+시퀀스,15,8,0.733,0,0.0,0,safety_research,ko
+반복적인,15,7,0.8,0,0.0,0,frontier,ko
+사용성,15,7,0.8,0,0.0,0,safety_research,ko
+추적하고,15,6,0.933,0,0.0,0,frontier,ko
+중단하고,15,6,0.933,0,0.0,0,frontier,ko
+의존할,15,6,0.933,0,0.0,0,guideline,ko
+못하 문제,15,6,0.933,0,0.0,0,safety_research,ko
+정책 연구,15,6,0.933,0,0.0,0,guideline,ko
+배제,15,6,0.933,0,0.0,0,law,ko
+Latent,15,6,0.933,0,0.0,1,safety_research,en
+객관적,15,6,0.933,0,0.0,0,frontier,ko
+June,15,6,0.933,0,0.0,0,frontier,en
+최상위,15,6,0.933,0,0.0,0,frontier,ko
+엔터프라이즈,15,6,0.933,0,0.0,0,safety_research,ko
+초록,15,6,0.933,0,0.0,0,safety_research,ko
+조사하고,15,6,0.867,0,0.0,0,frontier,ko
+장을,15,6,0.867,0,0.0,0,cybersecurity,ko
+공격 능력,15,6,0.867,0,0.0,0,frontier,ko
+분석했,15,6,0.867,0,0.0,0,cybersecurity,ko
+급속한 발전,15,6,0.867,0,0.0,0,cybersecurity,ko
+추론 과정,15,8,0.6,0,0.0,0,cybersecurity,ko
+GLM-5,15,5,1.0,0,0.0,0,frontier,en
+워크플,15,5,1.0,0,0.0,0,agentic_ai,ko
+LENS,15,5,1.0,0,0.0,0,norms,en
+중단하,15,5,1.0,0,0.0,0,frontier,ko
+차량,15,5,1.0,0,0.0,0,physical_ai,ko
+드리프트,15,5,1.0,0,0.0,0,safety_research,ko
+Four,15,5,1.0,0,0.0,0,youth,en
+무죄,15,5,1.0,0,0.0,0,deepfake_disinfo,ko
+우크라,15,5,0.933,0,0.0,0,national_security,ko
+정신 건강,15,5,0.933,0,0.0,0,healthcare,ko
+알리바바,15,5,0.933,0,0.0,0,frontier,ko
+인공,15,6,0.667,0,0.0,0,national_security,ko
+독립 감사,15,4,1.0,0,0.0,0,law,ko
+라우팅,15,4,1.0,0,0.0,0,safety_research,ko
+Terminal-Bench,15,4,1.0,0,0.0,0,frontier,en
+여섯,15,4,0.933,0,0.0,0,open_weight,ko
+modeling,15,4,0.933,0,0.0,0,safety_research,en
+공공선,15,4,0.933,0,0.0,0,norms,ko
+특정할,15,4,0.933,0,0.0,0,safety_research,ko
+university,15,6,0.533,0,0.0,0,frontier,en
+경향신문,15,2,1.0,0,0.0,0,deepfake_disinfo,ko
+HuggingFace Daily Papers,15,2,1.0,0,0.0,0,safety_research,en
+보안 분야,14,11,0.929,0,0.0,0,cybersecurity,ko
+Executive,14,11,0.857,0,0.0,0,law,en
+부족해,14,11,0.857,0,0.0,0,law,ko
+조사한,14,9,1.0,0,0.0,0,cybersecurity,ko
+기업 대상,14,9,1.0,0,0.0,0,law,ko
+창업,14,9,1.0,0,0.0,0,law,ko
+산업 분야,14,11,0.786,0,0.0,0,frontier,ko
+제도 개선,14,11,0.786,0,0.0,0,law,ko
+frontier model,14,10,0.857,0,0.0,0,frontier,en
+automation,14,10,0.857,0,0.0,0,norms,en
+펀드,14,10,0.857,0,0.0,0,norms,ko
+증가한,14,10,0.857,0,0.0,0,deepfake_disinfo,ko
+your,14,10,0.857,0,0.0,0,norms,en
+튜링,14,10,0.857,0,0.0,0,healthcare,ko
+산업 발전,14,12,0.714,0,0.0,0,law,ko
+프로그래밍,14,9,0.929,0,0.0,0,frontier,ko
+발견하고,14,9,0.929,0,0.0,0,cybersecurity,ko
+통제 가능성,14,8,1.0,0,0.0,0,norms,ko
+순차적,14,8,1.0,0,0.0,0,safety_research,ko
+Gemini Enterprise,14,8,1.0,0,0.0,0,frontier,en
+Available,14,8,1.0,0,0.0,0,frontier,en
+수십,14,8,1.0,0,0.0,0,law,ko
+malware,14,8,1.0,0,0.0,0,cybersecurity,en
+Scaling,14,14,0.571,0,0.0,0,safety_research,en
+운영할,14,10,0.786,0,0.0,0,agentic_ai,ko
+줄여,14,10,0.786,0,0.0,0,frontier,ko
+거버넌스 체계,14,11,0.714,0,0.0,0,law,ko
+제안했,14,10,0.786,0,0.0,0,law,ko
+공익,14,10,0.786,0,0.0,0,deepfake_disinfo,ko
+Haiku,14,10,0.786,0,0.0,0,frontier,en
+급격한,14,10,0.786,0,0.0,0,national_security,ko
+EU AI Office,14,10,0.786,0,0.0,0,law,en
+스크립트,14,9,0.857,0,0.0,0,cybersecurity,ko
+담론,14,9,0.857,0,0.0,0,norms,ko
+Principles,14,9,0.857,0,0.0,1,frontier,en
+받으,14,9,0.857,0,0.0,0,law,ko
+기록했,14,9,0.857,0,0.0,0,frontier,ko
+텍사스,14,9,0.857,0,0.0,0,law,ko
+Introducing Claude,14,9,0.857,0,0.0,0,frontier,en
+허용하,14,9,0.857,0,0.0,0,cybersecurity,ko
+보상 해킹,14,9,0.857,0,0.0,0,cybersecurity,ko
+위험 대응,14,9,0.857,0,0.0,0,frontier,ko
+기획,14,9,0.857,0,0.0,0,agentic_ai,ko
+Trusted,14,9,0.857,0,0.0,0,cybersecurity,en
+통합하고,14,8,0.929,0,0.0,0,frontier,ko
+위성,14,8,0.929,0,0.0,0,national_security,ko
+기술 혁신,14,8,0.929,0,0.0,0,law,ko
+진보,14,8,0.929,0,0.0,0,norms,ko
+Google Cloud,14,8,0.929,0,0.0,0,frontier,en
+산업 전반,14,8,0.929,0,0.0,0,law,ko
+Political,14,8,0.929,0,0.0,0,politics,en
+특례,14,8,0.929,0,0.0,0,law,ko
+않거나,14,8,0.929,0,0.0,0,frontier,ko
+확립,14,8,0.929,0,0.0,0,standards,ko
+emergent,14,8,0.929,0,0.0,0,safety_research,en
+연방정부,14,10,0.714,0,0.0,0,law,ko
+lessons,14,10,0.714,0,0.0,0,law,en
+현실적,14,10,0.714,0,0.0,0,national_security,ko
+규율,14,10,0.714,0,0.0,0,law,ko
+안전 프레임워크,14,10,0.714,0,0.0,0,frontier,ko
+정보 수집,14,11,0.643,0,0.0,0,cybersecurity,ko
+적극,14,11,0.643,0,0.0,0,law,ko
+책임 있게,14,11,0.643,0,0.0,0,guideline,ko
+학습 과정,14,9,0.786,0,0.0,0,frontier,ko
+충족,14,9,0.786,0,0.0,0,frontier,ko
+상호운용,14,9,0.786,0,0.0,0,norms,ko
+제언,14,9,0.786,0,0.0,0,norms,ko
+평가하지,14,7,1.0,0,0.0,0,safety_research,ko
+보고서 발표,14,7,1.0,0,0.0,0,norms,ko
+sparse,14,7,1.0,0,0.0,0,frontier,en
+멜리사,14,7,1.0,0,0.0,0,deepfake_disinfo,ko
+심스,14,7,1.0,0,0.0,0,deepfake_disinfo,ko
+문자메시지,14,7,1.0,0,0.0,0,deepfake_disinfo,ko
+컨설팅,14,7,1.0,0,0.0,0,law,ko
+소프트웨어 취약점,14,7,1.0,0,0.0,0,cybersecurity,ko
+way,14,7,1.0,0,0.0,0,cybersecurity,en
+오케스트레이션,14,7,1.0,0,0.0,0,cybersecurity,ko
+인공지능 활용,14,12,0.571,0,0.0,0,law,ko
+안에서,14,8,0.857,0,0.0,0,agentic_ai,ko
+implementation,14,8,0.857,0,0.0,1,guideline,en
+시범사업,14,8,0.857,0,0.0,0,healthcare,ko
+단체들,14,8,0.857,0,0.0,0,law,ko
+장소,14,8,0.857,0,0.0,0,frontier,ko
+Apply,14,8,0.857,0,0.0,0,law,en
+요약할,14,8,0.857,0,0.0,0,frontier,ko
+훈련된,14,10,0.643,0,0.0,0,safety_research,ko
+지속가능한,14,10,0.643,0,0.0,0,norms,ko
+Partners,14,10,0.643,0,0.0,0,frontier,en
+Clinical,14,7,0.929,0,0.0,0,healthcare,en
+retrieval,14,7,0.929,0,0.0,0,safety_research,en
+번의,14,7,0.929,0,0.0,0,frontier,ko
+jailbreaks,14,7,0.929,0,0.0,2,safety_research,en
+궁극적,14,7,0.929,0,0.0,0,national_security,ko
+Technologies,14,7,0.929,0,0.0,0,law,en
+확산될,14,7,0.929,0,0.0,0,agentic_ai,ko
+혼합,14,7,0.929,0,0.0,1,safety_research,ko
+개편,14,7,0.929,0,0.0,0,law,ko
+전까지,14,7,0.929,0,0.0,0,cybersecurity,ko
+네이티브,14,7,0.929,0,0.0,0,frontier,ko
+허점,14,7,0.929,0,0.0,0,cybersecurity,ko
+행동하,14,7,0.929,0,0.0,0,agentic_ai,ko
+Department,14,7,0.929,0,0.0,0,national_security,en
+지속되,14,7,0.929,0,0.0,0,safety_research,ko
+의도치 않은,14,7,0.929,0,0.0,0,safety_research,ko
+언급되,14,7,0.929,0,0.0,0,cybersecurity,ko
+질서,14,11,0.571,0,0.0,0,norms,ko
+생물,14,9,0.714,0,0.0,0,frontier,ko
+주별,14,9,0.714,0,0.0,0,law,ko
+글을,14,9,0.714,0,0.0,0,frontier,ko
+세부 사항,14,9,0.714,0,0.0,0,law,ko
+Safety Newsletter,14,9,0.714,0,0.0,0,law,en
+전년,14,8,0.786,0,0.0,0,cybersecurity,ko
+구분하고,14,8,0.786,0,0.0,0,safety_research,ko
+동료,14,8,0.786,0,0.0,1,safety_research,ko
+규제 강화,14,8,0.786,0,0.0,0,law,ko
+존재하지 않는,14,8,0.786,0,0.0,0,law,ko
+외에,14,8,0.786,0,0.0,0,law,ko
+shows,14,8,0.786,0,0.0,0,cybersecurity,en
+완화할,14,8,0.786,0,0.0,0,norms,ko
+KT,14,7,0.857,0,0.0,0,cybersecurity,en
+올바른,14,7,0.857,0,0.0,0,safety_research,ko
+Causal,14,7,0.857,0,0.0,2,safety_research,en
+지식재산,14,7,0.857,0,0.0,0,cybersecurity,ko
+윤리 원칙,14,7,0.857,0,0.0,0,norms,ko
+만한,14,7,0.857,0,0.0,0,frontier,ko
+세이프티,14,7,0.857,0,0.0,0,standards,ko
+Cooperation,14,7,0.857,0,0.0,0,frontier,en
+일시적,14,7,0.857,0,0.0,0,cybersecurity,ko
+전반 걸친,14,7,0.857,0,0.0,0,guideline,ko
+진화하,14,7,0.857,0,0.0,0,cybersecurity,ko
+유의하게,14,6,1.0,0,0.0,0,safety_research,ko
+점으,14,6,1.0,0,0.0,0,frontier,ko
+불안정성,14,6,1.0,0,0.0,0,safety_research,ko
+유포,14,6,1.0,0,0.0,0,deepfake_disinfo,ko
+청소년 보호,14,6,1.0,0,0.0,0,youth,ko
+전환할,14,6,1.0,0,0.0,0,frontier,ko
+Embodied,14,6,1.0,0,0.0,3,physical_ai,en
+대체하,14,6,1.0,0,0.0,0,safety_research,ko
+벤치마크 평가,14,6,1.0,0,0.0,0,frontier,ko
+낮추고,14,6,1.0,0,0.0,0,safety_research,ko
+스캔,14,6,1.0,0,0.0,0,cybersecurity,ko
+앱을,14,6,1.0,0,0.0,0,deepfake_disinfo,ko
+강화하려,14,6,1.0,0,0.0,0,cybersecurity,ko
+부과,14,6,1.0,0,0.0,0,law,ko
+Without,14,9,0.643,0,0.0,0,frontier,en
+National Security,14,9,0.643,0,0.0,0,national_security,en
+인공지능 시대,14,9,0.643,0,0.0,0,law,ko
+강연,14,9,0.643,0,0.0,0,cybersecurity,ko
+가능하도록,14,9,0.643,0,0.0,0,frontier,ko
+최첨단 모델,14,8,0.714,0,0.0,0,frontier,ko
+보호조치,14,8,0.714,0,0.0,0,youth,ko
+어려울,14,8,0.714,0,0.0,0,frontier,ko
+상시,14,6,0.929,0,0.0,0,cybersecurity,ko
+미국인,14,6,0.929,0,0.0,0,law,ko
+뉴욕시,14,6,0.929,0,0.0,0,safety_research,ko
+모델 공개,14,6,0.929,0,0.0,0,frontier,ko
+의무화하고,14,6,0.929,0,0.0,0,frontier,ko
+부위원장,14,6,0.929,0,0.0,0,sovereign_ai,ko
+정렬하,14,6,0.929,0,0.0,0,safety_research,ko
+Decision,14,6,0.929,0,0.0,0,frontier,en
+정부기관,14,6,0.929,0,0.0,0,cybersecurity,ko
+CI,14,6,0.929,0,0.0,2,frontier,en
+케냐,14,6,0.929,0,0.0,0,law,ko
+local,14,6,0.929,0,0.0,0,frontier,en
+롤아웃,14,6,0.929,0,0.0,0,agentic_ai,ko
+법무장관,14,7,0.786,0,0.0,0,frontier,ko
+비롯한,14,7,0.786,0,0.0,0,norms,ko
+모델 출력,14,7,0.786,0,0.0,0,frontier,ko
+콘텐츠 생성,14,7,0.786,0,0.0,0,safety_research,ko
+chat,14,10,0.5,0,0.0,0,agentic_ai,en
+정립,14,9,0.571,0,0.0,0,norms,ko
+인터넷 접근,14,6,0.857,0,0.0,0,cybersecurity,ko
+샘플링,14,6,0.857,0,0.0,0,safety_research,ko
+재원,14,6,0.857,0,0.0,0,norms,ko
+Tracker,14,6,0.857,0,0.0,0,law,en
+고려,14,6,0.857,0,0.0,0,norms,ko
+생길,14,6,0.857,0,0.0,0,safety_research,ko
+등은 확인,14,6,0.857,0,0.0,0,politics,ko
+기준 마련,14,5,1.0,0,0.0,0,law,ko
+악성 코드,14,5,1.0,0,0.0,0,cybersecurity,ko
+모호성,14,5,1.0,0,0.0,0,safety_research,ko
+두며,14,5,1.0,0,0.0,0,safety_research,ko
+재학습,14,5,1.0,0,0.0,0,safety_research,ko
+과정 발생하,14,5,1.0,0,0.0,0,frontier,ko
+accuracy,14,5,1.0,0,0.0,0,safety_research,en
+GRPO,14,5,1.0,0,0.0,1,safety_research,en
+허위정보 확산,14,8,0.571,0,0.0,0,deepfake_disinfo,ko
+인력 양성,14,6,0.786,0,0.0,0,law,ko
+법적 구속력,14,7,0.643,0,0.0,0,norms,ko
+확인했,14,5,0.929,0,0.0,0,national_security,ko
+조에,14,5,0.929,0,0.0,0,law,ko
+정상회,14,8,0.429,0,0.0,0,norms,ko
+loop,14,6,0.643,0,0.0,0,frontier,en
+우수한 성능,14,5,0.786,0,0.0,0,safety_research,ko
+웨이트 모델,14,4,1.0,0,0.0,0,open_weight,ko
+윤리원칙,14,4,1.0,0,0.0,0,norms,ko
+Neural,14,4,1.0,0,0.0,0,safety_research,en
+hacked,14,4,0.929,0,0.0,0,cybersecurity,en
+게시판,14,3,1.0,0,0.0,0,frontier,ko
+않았으나,14,3,1.0,0,0.0,0,cybersecurity,ko
+Astra,14,2,1.0,0,0.0,0,cybersecurity,en
+전략 관점,14,2,1.0,0,0.0,0,safety_research,ko
+소속,13,10,1.0,0,0.0,0,agentic_ai,ko
+방송미디어통신위원회,13,10,1.0,0,0.0,0,deepfake_disinfo,ko
+Frontier Models,13,10,0.846,0,0.0,0,frontier,en
+공공 부문,13,9,0.923,0,0.0,0,law,ko
+우회해,13,9,0.923,0,0.0,0,agentic_ai,ko
+회원,13,9,0.923,0,0.0,0,norms,ko
+복원력,13,9,0.923,0,0.0,0,cybersecurity,ko
+부서,13,9,0.923,0,0.0,0,guideline,ko
+취약점 탐색,13,8,1.0,0,0.0,0,cybersecurity,ko
+분야 협력,13,8,1.0,0,0.0,0,frontier,ko
+Llama-3,13,10,0.769,0,0.0,0,frontier,en
+비대칭,13,10,0.769,0,0.0,0,cybersecurity,ko
+인공지능 관련,13,10,0.769,0,0.0,0,law,ko
+정렬 연구,13,10,0.769,0,0.0,0,safety_research,ko
+개방,13,10,0.769,0,0.0,0,safety_research,ko
+격차 해소,13,9,0.846,0,0.0,0,norms,ko
+선두,13,11,0.692,0,0.0,0,frontier,ko
+개인정보 침해,13,11,0.692,0,0.0,0,deepfake_disinfo,ko
+결과 바탕,13,9,0.846,0,0.0,0,politics,ko
+행정안전부,13,9,0.846,0,0.0,0,deepfake_disinfo,ko
+참여했,13,11,0.692,0,0.0,0,norms,ko
+적용 가능성,13,9,0.846,0,0.0,0,frontier,ko
+규제하,13,11,0.692,0,0.0,0,law,ko
+작업 수행하,13,11,0.692,0,0.0,0,agentic_ai,ko
+차기,13,8,0.923,0,0.0,0,frontier,ko
+운동,13,8,0.923,0,0.0,0,youth,ko
+결과 발표,13,8,0.923,0,0.0,0,standards,ko
+실행 가능한,13,8,0.923,0,0.0,0,safety_research,ko
+늘리,13,8,0.923,0,0.0,0,cybersecurity,ko
+확정,13,8,0.923,0,0.0,0,law,ko
+주지,13,8,0.923,0,0.0,0,law,ko
+트래픽,13,8,0.923,0,0.0,0,frontier,ko
+대상 하며,13,8,0.923,0,0.0,0,standards,ko
+네덜란드,13,8,0.923,0,0.0,0,law,ko
+상세히,13,8,0.923,0,0.0,0,frontier,ko
+예고,13,8,0.923,0,0.0,0,law,ko
+자립,13,7,1.0,0,0.0,0,sovereign_ai,ko
+강화한,13,7,1.0,0,0.0,0,frontier,ko
+좁은,13,7,1.0,0,0.0,0,frontier,ko
+노동자들,13,7,1.0,0,0.0,0,frontier,ko
+높이려,13,7,1.0,0,0.0,0,safety_research,ko
+효율성 향상,13,7,1.0,0,0.0,0,guideline,ko
+나타남,13,7,1.0,0,0.0,0,safety_research,ko
+최소한,13,10,0.692,0,0.0,0,safety_research,ko
+적합성 평가,13,10,0.692,0,0.0,0,standards,ko
+뒷받침할,13,10,0.692,0,0.0,0,frontier,ko
+자율적인,13,10,0.692,0,0.0,0,frontier,ko
+분석할,13,10,0.692,0,0.0,0,law,ko
+어시스턴트,13,10,0.692,0,0.0,0,frontier,ko
+표시 의무,13,10,0.692,0,0.0,0,law,ko
+인공지능 기반,13,10,0.692,0,0.0,0,cybersecurity,ko
+구성되어,13,10,0.692,0,0.0,0,frontier,ko
+기본적인,13,9,0.769,0,0.0,0,law,ko
+인간 판단,13,9,0.769,0,0.0,0,safety_research,ko
+예정인,13,9,0.769,0,0.0,0,safety_research,ko
+안전성 확보,13,9,0.769,0,0.0,0,frontier,ko
+공무원,13,8,0.846,0,0.0,0,cybersecurity,ko
+사용될,13,8,0.846,0,0.0,0,frontier,ko
+성능 크게,13,8,0.846,0,0.0,0,national_security,ko
+total,13,8,0.846,0,0.0,0,frontier,en
+확보하,13,8,0.846,0,0.0,0,frontier,ko
+피드백 루프,13,8,0.846,0,0.0,0,agentic_ai,ko
+직장,13,8,0.846,0,0.0,0,norms,ko
+로부터,13,8,0.846,0,0.0,0,safety_research,ko
+참여하고,13,7,0.923,0,0.0,0,cybersecurity,ko
+확대되고,13,7,0.923,0,0.0,0,national_security,ko
+검토하,13,7,0.923,0,0.0,0,frontier,ko
+않았지,13,7,0.923,0,0.0,0,cybersecurity,ko
+Audits,13,7,0.923,0,0.0,0,frontier,en
+전문 의견,13,7,0.923,0,0.0,0,guideline,ko
+숙련,13,7,0.923,0,0.0,0,healthcare,ko
+SFT,13,7,0.923,0,0.0,1,safety_research,en
+Linux,13,7,0.923,0,0.0,0,cybersecurity,en
+Hidden,13,7,0.923,0,0.0,0,safety_research,en
+학습용,13,7,0.923,0,0.0,0,law,ko
+프록시,13,7,0.923,0,0.0,0,agentic_ai,ko
+위험 감소,13,7,0.923,0,0.0,0,frontier,ko
+수집된,13,7,0.923,0,0.0,0,safety_research,ko
+혁신적인,13,7,0.923,0,0.0,0,norms,ko
+프레임워크 구축,13,7,0.923,0,0.0,0,frontier,ko
+규제 기관,13,7,0.923,0,0.0,0,law,ko
+제한적일,13,7,0.923,0,0.0,0,safety_research,ko
+수준 성능,13,10,0.615,0,0.0,0,frontier,ko
+reporting,13,10,0.615,0,0.0,0,incidents,en
+거부하,13,9,0.692,0,0.0,0,safety_research,ko
+공개하,13,9,0.692,0,0.0,0,frontier,ko
+Best,13,9,0.692,0,0.0,0,guideline,en
+코드 작성,13,8,0.769,0,0.0,0,frontier,ko
+착수,13,8,0.769,0,0.0,0,frontier,ko
+역사적,13,8,0.769,0,0.0,0,national_security,ko
+있었,13,8,0.769,0,0.0,0,frontier,ko
+대규모 데이터,13,8,0.769,0,0.0,0,cybersecurity,ko
+회로,13,8,0.769,0,0.0,0,safety_research,ko
+IBM,13,8,0.769,0,0.0,0,cybersecurity,en
+관련 내용,13,8,0.769,0,0.0,0,law,ko
+Class,13,8,0.769,0,0.0,0,law,en
+성공적인,13,8,0.769,0,0.0,0,safety_research,ko
+재편,13,6,1.0,0,0.0,0,national_security,ko
+예약,13,6,1.0,0,0.0,0,cybersecurity,ko
+수도,13,6,1.0,0,0.0,0,agentic_ai,ko
+문항,13,6,1.0,0,0.0,0,frontier,ko
+달라지는지,13,6,1.0,0,0.0,0,frontier,ko
+Multi-Turn,13,6,1.0,0,0.0,0,safety_research,en
+해당 내용,13,6,1.0,0,0.0,0,law,ko
+홍보,13,6,1.0,0,0.0,0,politics,ko
+법정,13,6,1.0,0,0.0,0,law,ko
+로직,13,6,1.0,0,0.0,0,guideline,ko
+단백질,13,6,1.0,0,0.0,0,frontier,ko
+일로,13,6,1.0,0,0.0,0,law,ko
+published,13,6,1.0,0,0.0,0,frontier,en
+통제권,13,6,1.0,0,0.0,1,law,ko
+proposes,13,6,1.0,0,0.0,0,frontier,en
+찾고,13,7,0.846,0,0.0,0,safety_research,ko
+주장했,13,7,0.846,0,0.0,0,frontier,ko
+되고,13,7,0.846,0,0.0,0,frontier,ko
+인간 가치,13,7,0.846,0,0.0,0,safety_research,ko
+Structural,13,7,0.846,0,0.0,0,standards,en
+관련 기술,13,7,0.846,0,0.0,0,law,ko
+의심,13,7,0.846,0,0.0,0,cybersecurity,ko
+기술 확산,13,7,0.846,0,0.0,0,standards,ko
+Firms,13,7,0.846,0,0.0,0,cybersecurity,en
+Actions,13,7,0.846,0,0.0,0,law,en
+CSAM,13,7,0.846,0,0.0,8,youth,en
+Detect client IP,13,7,0.846,0,0.0,12,cybersecurity,en
+Detect URL,13,7,0.846,0,0.0,12,cybersecurity,en
+금융 분야,13,9,0.615,0,0.0,0,guideline,ko
+보관,13,9,0.615,0,0.0,0,law,ko
+법과,13,9,0.615,0,0.0,0,law,ko
+확산 따른,13,9,0.615,0,0.0,0,deepfake_disinfo,ko
+증가할,13,9,0.615,0,0.0,0,cybersecurity,ko
+제로,13,10,0.538,0,0.0,0,safety_research,ko
+선호도,13,8,0.692,0,0.0,0,safety_research,ko
+Character,13,8,0.692,0,0.0,0,frontier,en
+채팅,13,8,0.692,0,0.0,0,frontier,ko
+개선된,13,8,0.692,0,0.0,0,safety_research,ko
+Classifiers,13,8,0.692,0,0.0,0,safety_research,en
+낮고,13,6,0.923,0,0.0,0,frontier,ko
+최소화,13,6,0.923,0,0.0,0,safety_research,ko
+블록,13,6,0.923,0,0.0,0,frontier,ko
+위험 행동,13,6,0.923,0,0.0,0,frontier,ko
+주고,13,6,0.923,0,0.0,0,frontier,ko
+특허,13,6,0.923,0,0.0,0,frontier,ko
+Representation,13,6,0.923,0,0.0,0,safety_research,en
+나은,13,6,0.923,0,0.0,0,safety_research,ko
+향후 과제,13,6,0.923,0,0.0,0,safety_research,ko
+연관된,13,6,0.923,0,0.0,0,cybersecurity,ko
+AI-Enabled,13,6,0.923,0,0.0,0,cybersecurity,en
+transfer,13,6,0.923,0,0.0,1,safety_research,en
+Major,13,6,0.923,0,0.0,0,cybersecurity,en
+시진핑,13,6,0.923,0,0.0,0,national_security,ko
+인지하고,13,6,0.923,0,0.0,0,cybersecurity,ko
+최적화하,13,6,0.923,0,0.0,0,agentic_ai,ko
+디지털 기술,13,6,0.923,0,0.0,0,norms,ko
+음원,13,6,0.923,0,0.0,0,law,ko
+민주주의,13,7,0.769,0,0.0,0,politics,ko
+가져올,13,7,0.769,0,0.0,0,agentic_ai,ko
+behind,13,7,0.769,0,0.0,0,frontier,en
+의무적,13,7,0.769,0,0.0,0,law,ko
+변화하,13,10,0.462,0,0.0,0,guideline,ko
+신속,13,8,0.615,0,0.0,0,cybersecurity,ko
+연구 인간,13,8,0.615,0,0.0,0,safety_research,ko
+제시하지,13,6,0.846,0,0.0,0,agentic_ai,ko
+순서,13,6,0.846,0,0.0,0,safety_research,ko
+Architecture,13,6,0.846,0,0.0,0,agentic_ai,en
+보안 기준,13,6,0.846,0,0.0,0,frontier,ko
+Card,13,6,0.846,0,0.0,0,frontier,en
+Toward,13,6,0.846,0,0.0,0,guideline,en
+American,13,6,0.846,0,0.0,0,frontier,en
+Effect,13,6,0.846,0,0.0,0,cybersecurity,en
+초점 맞춘,13,6,0.846,0,0.0,0,law,ko
+쓰이,13,6,0.846,0,0.0,0,safety_research,ko
+후속 조치,13,11,0.385,0,0.0,0,norms,ko
+영향평,13,7,0.692,0,0.0,0,law,ko
+고위급,13,7,0.692,0,0.0,0,norms,ko
+Computer,13,7,0.692,0,0.0,0,frontier,en
+V4,13,5,1.0,0,0.0,0,frontier,en
+Layer,13,5,1.0,0,0.0,0,safety_research,en
+유해성,13,5,1.0,0,0.0,0,safety_research,ko
+비상,13,5,1.0,0,0.0,0,agentic_ai,ko
+조직적,13,5,1.0,0,0.0,0,agentic_ai,ko
+흔적,13,5,1.0,0,0.0,0,cybersecurity,ko
+남자친구,13,5,1.0,0,0.0,0,deepfake_disinfo,ko
+디지털 서비스,13,5,1.0,0,0.0,0,cybersecurity,ko
+라운드,13,5,1.0,0,0.0,0,frontier,ko
+적대,13,5,1.0,0,0.0,1,safety_research,ko
+강국 도약,13,9,0.462,0,0.0,0,politics,ko
+조건 하에서,13,6,0.769,0,0.0,0,frontier,ko
+기반 학습,13,6,0.769,0,0.0,0,safety_research,ko
+Web,13,6,0.769,0,0.0,0,cybersecurity,en
+확률적,13,5,0.923,0,0.0,0,agentic_ai,ko
+지방정부,13,5,0.923,0,0.0,0,law,ko
+literacy,13,5,0.923,0,0.0,0,law,en
+Applications,13,5,0.923,0,0.0,0,law,en
+검찰,13,5,0.923,0,0.0,0,deepfake_disinfo,ko
+Robust,13,5,0.923,0,0.0,0,safety_research,en
+모달리티,13,5,0.923,0,0.0,0,safety_research,ko
+매년,13,5,0.923,0,0.0,0,guideline,ko
+변이,13,5,0.923,0,0.0,0,safety_research,ko
+운영하,13,7,0.615,0,0.0,0,law,ko
+결정하,13,6,0.692,0,0.0,0,guideline,ko
+불명확,13,5,0.846,0,0.0,4,safety_research,ko
+출시된,13,6,0.615,0,0.0,0,cybersecurity,ko
+카카오,13,4,1.0,0,0.0,0,agentic_ai,ko
+원고들,13,4,1.0,0,0.0,0,law,ko
+China's,13,4,1.0,0,0.0,0,national_security,en
+연령 확인,13,4,1.0,0,0.0,0,youth,ko
+기능적,13,4,1.0,0,0.0,0,safety_research,ko
+단일한,13,4,1.0,0,0.0,0,norms,ko
+기하학적,13,4,1.0,0,0.0,0,safety_research,ko
+알고리즘 편향,13,5,0.692,0,0.0,0,law,ko
+보호 장치,13,3,1.0,0,0.0,0,law,ko
+레오,13,3,1.0,0,0.0,0,national_security,ko
+B200,13,3,0.923,0,0.0,0,cybersecurity,en
+모티프테크놀로지스,13,2,1.0,0,0.0,0,sovereign_ai,ko
+해결하려,13,2,1.0,0,0.0,0,safety_research,ko
+발전 방향,12,11,0.833,0,0.0,0,norms,ko
+확정할,12,10,0.833,0,0.0,0,law,ko
+낮았,12,9,0.917,0,0.0,0,healthcare,ko
+촉구하,12,9,0.917,0,0.0,0,cybersecurity,ko
+앨런 튜링,12,9,0.917,0,0.0,0,national_security,ko
+IITP,12,11,0.75,0,0.0,1,frontier,en
+점에,12,11,0.75,0,0.0,0,safety_research,ko
+대응책,12,8,1.0,0,0.0,0,cybersecurity,ko
+제공되고,12,8,1.0,0,0.0,0,frontier,ko
+휴머노이드,12,8,1.0,0,0.0,0,physical_ai,ko
+명은,12,8,1.0,0,0.0,0,law,ko
+리서치,12,8,1.0,0,0.0,0,cybersecurity,ko
+튜링 연구소,12,8,1.0,0,0.0,0,healthcare,ko
+VIBE,12,8,1.0,0,0.0,0,open_weight,en
+민간 기업,12,9,0.833,0,0.0,0,cybersecurity,ko
+의존하지,12,9,0.833,0,0.0,0,safety_research,ko
+Democratic,12,9,0.833,0,0.0,0,frontier,en
+progress,12,9,0.833,0,0.0,0,frontier,en
+나머지,12,9,0.833,0,0.0,0,safety_research,ko
+발굴,12,9,0.833,0,0.0,0,law,ko
+보고서 공개,12,9,0.833,0,0.0,0,frontier,ko
+방어 체계,12,10,0.75,0,0.0,0,cybersecurity,ko
+의원들,12,10,0.75,0,0.0,0,law,ko
+장기간,12,10,0.75,0,0.0,0,cybersecurity,ko
+미리,12,10,0.75,0,0.0,0,frontier,ko
+주가,12,10,0.75,0,0.0,0,law,ko
+고위험 시스템,12,10,0.75,0,0.0,0,law,ko
+비밀번호,12,8,0.917,0,0.0,0,frontier,ko
+사용하지,12,8,0.917,0,0.0,0,guideline,ko
+완화하고,12,8,0.917,0,0.0,0,law,ko
+센서,12,8,0.917,0,0.0,0,national_security,ko
+추적하,12,8,0.917,0,0.0,0,frontier,ko
+생성하도록,12,8,0.917,0,0.0,0,cybersecurity,ko
+고위,12,8,0.917,0,0.0,0,frontier,ko
+미흡,12,8,0.917,0,0.0,0,youth,ko
+공시,12,8,0.917,0,0.0,0,deepfake_disinfo,ko
+밖에,12,8,0.917,0,0.0,0,cybersecurity,ko
+WhatsApp,12,8,0.917,0,0.0,0,law,en
+인기,12,8,0.917,0,0.0,0,agentic_ai,ko
+UK AISI,12,8,0.917,0,0.0,2,frontier,en
+따라가지,12,7,1.0,0,0.0,0,safety_research,ko
+규정하,12,7,1.0,0,0.0,0,law,ko
+기업 책임,12,7,1.0,0,0.0,0,youth,ko
+친화적,12,7,1.0,0,0.0,0,safety_research,ko
+SPOT,12,7,1.0,0,0.0,0,agentic_ai,en
+유효한,12,7,1.0,0,0.0,0,cybersecurity,ko
+YouTube,12,7,1.0,0,0.0,0,law,en
+현금,12,7,1.0,0,0.0,1,law,ko
+Flow,12,7,1.0,0,0.0,0,frontier,en
+연쇄,12,7,1.0,0,0.0,0,cybersecurity,ko
+앙상블,12,7,1.0,0,0.0,0,safety_research,ko
+Partner,12,7,1.0,0,0.0,0,law,en
+의존하고,12,7,1.0,0,0.0,0,safety_research,ko
+고유,12,7,1.0,0,0.0,0,cybersecurity,ko
+Alliance,12,7,1.0,0,0.0,0,law,en
+Nano,12,7,1.0,0,0.0,0,frontier,en
+잠정,12,9,0.75,0,0.0,0,law,ko
+고려할,12,9,0.75,0,0.0,0,frontier,ko
+철학,12,9,0.75,0,0.0,0,norms,ko
+발전된,12,9,0.75,0,0.0,0,frontier,ko
+보고서 작성,12,10,0.667,0,0.0,0,cybersecurity,ko
+지나치게,12,8,0.833,0,0.0,0,frontier,ko
+반영되지,12,8,0.833,0,0.0,0,law,ko
+시행되,12,8,0.833,0,0.0,0,law,ko
+학습할,12,8,0.833,0,0.0,0,safety_research,ko
+Detecting,12,8,0.833,0,0.0,0,safety_research,en
+고려하,12,8,0.833,0,0.0,0,healthcare,ko
+추론 능력,12,8,0.833,0,0.0,0,cybersecurity,ko
+시사,12,8,0.833,0,0.0,0,frontier,ko
+한도,12,8,0.833,0,0.0,0,frontier,ko
+높지,12,8,0.833,0,0.0,0,agentic_ai,ko
+정당한,12,7,0.917,0,0.0,0,politics,ko
+확인된,12,7,0.917,0,0.0,0,cybersecurity,ko
+카메라,12,7,0.917,0,0.0,0,national_security,ko
+Live,12,7,0.917,0,0.0,0,guideline,en
+adversarial robustness,12,7,0.917,0,0.0,1,safety_research,en
+나누고,12,7,0.917,0,0.0,0,cybersecurity,ko
+증진,12,7,0.917,0,0.0,0,law,ko
+콜로라,12,7,0.917,0,0.0,0,law,ko
+모의,12,7,0.917,0,0.0,0,cybersecurity,ko
+FTC,12,7,0.917,0,0.0,4,law,en
+고통,12,7,0.917,0,0.0,0,law,ko
+거부율,12,7,0.917,0,0.0,0,safety_research,ko
+생체정보,12,7,0.917,0,0.0,0,law,ko
+서사,12,7,0.917,0,0.0,0,law,ko
+백만,12,7,0.917,0,0.0,0,frontier,ko
+디지털 인프,12,7,0.917,0,0.0,0,cybersecurity,ko
+가짜뉴스,12,9,0.667,0,0.0,0,deepfake_disinfo,ko
+글에서,12,9,0.667,0,0.0,0,cybersecurity,ko
+의한,12,9,0.667,0,0.0,0,frontier,ko
+적용되지,12,9,0.667,0,0.0,0,law,ko
+시스템 인간,12,9,0.667,0,0.0,0,agentic_ai,ko
+시민단체,12,9,0.667,0,0.0,0,law,ko
+복잡하고,12,9,0.667,0,0.0,0,safety_research,ko
+license,12,9,0.667,0,0.0,0,frontier,en
+David,12,10,0.583,0,0.0,0,safety_research,en
+국회입법조사처,12,10,0.583,0,0.0,0,law,ko
+사용 패턴,12,10,0.583,0,0.0,0,frontier,ko
+능력 크게,12,10,0.583,0,0.0,0,cybersecurity,ko
+감정적,12,8,0.75,0,0.0,0,youth,ko
+평가하도록,12,8,0.75,0,0.0,0,cybersecurity,ko
+분배,12,8,0.75,0,0.0,0,frontier,ko
+실리콘밸리,12,8,0.75,0,0.0,0,frontier,ko
+zero,12,8,0.75,0,0.0,0,safety_research,en
+자가,12,8,0.75,0,0.0,0,safety_research,ko
+공공안전,12,8,0.75,0,0.0,0,national_security,ko
+선거 관련,12,8,0.75,0,0.0,1,politics,ko
+경과,12,8,0.75,0,0.0,0,guideline,ko
+치명적인,12,8,0.75,0,0.0,0,cybersecurity,ko
+AISI-UK,12,8,0.75,0,0.0,0,agentic_ai,en
+데이터 부족,12,6,1.0,0,0.0,0,open_weight,ko
+발의,12,6,1.0,0,0.0,0,law,ko
+create,12,6,1.0,0,0.0,0,frontier,en
+포함하지,12,6,1.0,0,0.0,0,law,ko
+smart,12,6,1.0,0,0.0,0,law,en
+제로데,12,6,1.0,0,0.0,0,cybersecurity,ko
+Introduces,12,6,1.0,0,0.0,0,frontier,en
+false positive,12,6,1.0,0,0.0,1,safety_research,en
+Vision-Language,12,6,1.0,0,0.0,0,safety_research,en
+recall,12,6,1.0,0,0.0,0,incidents,en
+지적하고,12,6,1.0,0,0.0,0,safety_research,ko
+검증되지,12,6,1.0,0,0.0,0,deepfake_disinfo,ko
+벤치마크 점수,12,6,1.0,0,0.0,0,cybersecurity,ko
+개는,12,6,1.0,0,0.0,0,frontier,ko
+모델 활용해,12,6,1.0,0,0.0,0,cybersecurity,ko
+규정 시행,12,6,1.0,0,0.0,0,law,ko
+manipulation,12,6,1.0,0,0.0,0,safety_research,en
+collaboration,12,6,1.0,0,0.0,0,frontier,en
+앱의,12,6,1.0,0,0.0,0,law,ko
+Personal,12,6,1.0,0,0.0,0,guideline,en
+수집해,12,6,1.0,0,0.0,0,law,ko
+instruction,12,6,1.0,0,0.0,0,safety_research,en
+유틸리티,12,6,1.0,0,0.0,1,safety_research,ko
+Speed,12,6,1.0,0,0.0,2,frontier,en
+audio,12,6,1.0,0,0.0,0,safety_research,en
+사이버 능력,12,6,1.0,0,0.0,0,cybersecurity,ko
+third,12,6,1.0,0,0.0,0,frontier,en
+유로 규모,12,6,1.0,0,0.0,0,law,ko
+네트워킹,12,6,1.0,0,0.0,0,norms,ko
+grounding,12,6,1.0,0,0.0,4,frontier,en
+멘토링,12,6,1.0,0,0.0,0,frontier,ko
+정보 공개,12,7,0.833,0,0.0,0,guideline,ko
+어려운 문제,12,7,0.833,0,0.0,0,frontier,ko
+교육적,12,7,0.833,0,0.0,0,frontier,ko
+창의적,12,7,0.833,0,0.0,0,frontier,ko
+검토한,12,7,0.833,0,0.0,0,law,ko
+중임,12,7,0.833,0,0.0,0,law,ko
+배포 환경,12,7,0.833,0,0.0,0,agentic_ai,ko
+삽입,12,7,0.833,0,0.0,0,cybersecurity,ko
+종교,12,7,0.833,0,0.0,0,safety_research,ko
+Children,12,7,0.833,0,0.0,0,youth,en
+영화,12,7,0.833,0,0.0,0,frontier,ko
+Assistant,12,7,0.833,0,0.0,0,cybersecurity,en
+적용했,12,7,0.833,0,0.0,0,frontier,ko
+거버넌스 모델,12,7,0.833,0,0.0,0,norms,ko
+Union,12,7,0.833,0,0.0,1,law,en
+멀티에이전트,12,7,0.833,0,0.0,0,agentic_ai,ko
+도구 개발,12,7,0.833,0,0.0,0,cybersecurity,ko
+규제 부담,12,7,0.833,0,0.0,0,law,ko
+Towards,12,9,0.583,0,0.0,0,safety_research,en
+Providers,12,9,0.583,0,0.0,0,guideline,en
+겪고,12,6,0.917,0,0.0,0,guideline,ko
+장악,12,6,0.917,0,0.0,0,frontier,ko
+workflows,12,6,0.917,0,0.0,0,frontier,en
+감염,12,6,0.917,0,0.0,0,cybersecurity,ko
+Moral,12,6,0.917,0,0.0,0,safety_research,en
+바꿔,12,6,0.917,0,0.0,0,safety_research,ko
+말고,12,6,0.917,0,0.0,0,national_security,ko
+말라,12,6,0.917,0,0.0,0,law,ko
+Defenses,12,6,0.917,0,0.0,0,cybersecurity,en
+결정론적,12,6,0.917,0,0.0,0,agentic_ai,ko
+NIST AI RMF,12,6,0.917,0,0.0,0,standards,en
+don,12,6,0.917,0,0.0,0,frontier,en
+양사,12,6,0.917,0,0.0,0,cybersecurity,ko
+챌린지,12,6,0.917,0,0.0,0,cybersecurity,ko
+announces,12,6,0.917,0,0.0,0,frontier,en
+특별,12,6,0.917,0,0.0,0,deepfake_disinfo,ko
+낮아,12,6,0.917,0,0.0,0,law,ko
+의학,12,6,0.917,0,0.0,0,national_security,ko
+암호화폐,12,6,0.917,0,0.0,0,cybersecurity,ko
+조정하,12,6,0.917,0,0.0,0,frontier,ko
+지금,12,6,0.917,0,0.0,0,agentic_ai,ko
+시에,12,6,0.917,0,0.0,0,frontier,ko
+B MoE,12,6,0.917,0,0.0,0,frontier,en
+역시,12,6,0.917,0,0.0,0,frontier,ko
+해고,12,6,0.917,0,0.0,0,law,ko
+Woman,12,6,0.917,0,0.0,0,deepfake_disinfo,en
+중국산,12,6,0.917,0,0.0,0,frontier,ko
+효과적이지,12,6,0.917,0,0.0,0,national_security,ko
+워터마킹,12,6,0.917,0,0.0,0,deepfake_disinfo,ko
+갖추고,12,6,0.917,0,0.0,0,frontier,ko
+Making,12,6,0.917,0,0.0,0,deepfake_disinfo,en
+MiniMax,12,6,0.917,0,0.0,4,frontier,en
+시행될,12,8,0.667,0,0.0,0,law,ko
+진행될,12,8,0.667,0,0.0,0,law,ko
+보였지,12,10,0.5,0,0.0,0,frontier,ko
+해를,12,7,0.75,0,0.0,0,politics,ko
+가능성 있어,12,7,0.75,0,0.0,0,frontier,ko
+모델 인간,12,7,0.75,0,0.0,0,frontier,ko
+샌프란시스코,12,7,0.75,0,0.0,0,frontier,ko
+M MMLU,12,12,0.333,0,0.0,0,frontier,en
+학업,12,6,0.833,0,0.0,0,frontier,ko
+비판적 사고,12,6,0.833,0,0.0,0,norms,ko
+불안정,12,6,0.833,0,0.0,0,agentic_ai,ko
+자녀,12,6,0.833,0,0.0,0,youth,ko
+전력망,12,6,0.833,0,0.0,0,frontier,ko
+위험도,12,6,0.833,0,0.0,0,law,ko
+국가 경쟁력,12,6,0.833,0,0.0,0,law,ko
+혐오,12,6,0.833,0,0.0,0,law,ko
+fraud,12,6,0.833,0,0.0,0,cybersecurity,en
+민감한 정보,12,6,0.833,0,0.0,0,open_weight,ko
+influence,12,6,0.833,0,0.0,0,frontier,en
+대체하지,12,6,0.833,0,0.0,0,law,ko
+실무적,12,6,0.833,0,0.0,0,safety_research,ko
+코드베이스,12,6,0.833,0,0.0,0,cybersecurity,ko
+미해결,12,5,1.0,0,0.0,0,frontier,ko
+중간선거,12,5,1.0,0,0.0,0,politics,ko
+태국,12,5,1.0,0,0.0,0,agentic_ai,ko
+확인한,12,5,1.0,0,0.0,0,law,ko
+private,12,5,1.0,0,0.0,0,law,en
+자동차,12,5,1.0,0,0.0,0,law,ko
+객체,12,5,1.0,0,0.0,0,agentic_ai,ko
+Australian,12,5,1.0,0,0.0,0,guideline,en
+사이 간극,12,5,1.0,0,0.0,0,guideline,ko
+적절성,12,5,1.0,0,0.0,0,frontier,ko
+기사 게재일,12,5,1.0,0,0.0,0,cybersecurity,ko
+visual,12,5,1.0,0,0.0,0,safety_research,en
+학습하고,12,5,1.0,0,0.0,0,safety_research,ko
+인공지능 기본법,12,9,0.5,0,0.0,0,law,ko
+랜섬웨어,12,7,0.667,0,0.0,0,cybersecurity,ko
+교육 분야,12,7,0.667,0,0.0,0,frontier,ko
+검토 중이,12,7,0.667,0,0.0,0,law,ko
+밝혔지,12,6,0.75,0,0.0,0,safety_research,ko
+미묘한,12,6,0.75,0,0.0,0,safety_research,ko
+Scientific Panel,12,6,0.75,0,0.0,0,law,en
+Eyes,12,5,0.917,0,0.0,0,cybersecurity,en
+FBI,12,5,0.917,0,0.0,1,frontier,en
+모델 프로젝트,12,5,0.917,0,0.0,0,sovereign_ai,ko
+요소들,12,5,0.917,0,0.0,0,norms,ko
+confidence,12,5,0.917,0,0.0,0,open_weight,en
+포함되지,12,5,0.917,0,0.0,0,law,ko
+기술 경쟁,12,5,0.917,0,0.0,0,national_security,ko
+Data Center,12,5,0.917,0,0.0,0,politics,en
+설계한,12,5,0.917,0,0.0,0,safety_research,ko
+진정한,12,5,0.917,0,0.0,0,safety_research,ko
+충족하지,12,5,0.917,0,0.0,0,agentic_ai,ko
+Publishes,12,5,0.917,0,0.0,0,frontier,en
+거동,12,5,0.917,0,0.0,0,safety_research,ko
+구체적인 정책,12,5,0.917,0,0.0,0,youth,ko
+가능함,12,5,0.917,0,0.0,0,safety_research,ko
+로이터,12,8,0.5,0,0.0,0,youth,ko
+인간 전문가,12,9,0.417,0,0.0,0,frontier,ko
+처리하,12,5,0.833,0,0.0,0,norms,ko
+평가 모델,12,5,0.833,0,0.0,0,frontier,ko
+Unified,12,5,0.833,0,0.0,0,frontier,en
+편을,12,5,0.833,0,0.0,0,safety_research,ko
+확대되,12,6,0.667,0,0.0,0,guideline,ko
+수석,12,6,0.667,0,0.0,0,law,ko
+테러,12,6,0.667,0,0.0,0,law,ko
+LLM Agent,12,4,1.0,0,0.0,0,cybersecurity,en
+달성했,12,4,1.0,0,0.0,0,safety_research,ko
+human-in-the-loop,12,4,1.0,0,0.0,0,cybersecurity,en
+일관되지,12,4,1.0,0,0.0,0,frontier,ko
+뮤직,12,4,1.0,0,0.0,0,law,ko
+problem,12,4,1.0,0,0.0,0,safety_research,en
+관할권,12,4,1.0,0,0.0,0,law,ko
+window,12,4,1.0,0,0.0,2,frontier,en
+기술 기업들,12,4,1.0,0,0.0,0,youth,ko
+스탠포드,12,4,1.0,0,0.0,0,healthcare,ko
+수입,12,4,0.917,0,0.0,0,physical_ai,ko
+학년,12,4,0.917,0,0.0,0,safety_research,ko
+도널드 트럼프,12,4,0.917,0,0.0,0,norms,ko
+신임,12,4,0.917,0,0.0,0,physical_ai,ko
+TikTok,12,4,0.917,0,0.0,0,youth,en
+지급,12,4,0.917,0,0.0,0,law,ko
+포함할,12,4,0.917,0,0.0,0,safety_research,ko
+제기됐,12,3,1.0,0,0.0,0,law,ko
+법원 사실,12,3,1.0,0,0.0,0,law,ko
+social media,12,3,1.0,0,0.0,0,youth,en
+여섯 가지,12,3,0.917,0,0.0,0,guideline,ko
+범위 추가,12,2,1.0,0,0.0,0,safety_research,ko

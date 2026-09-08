@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>소개 · AI 안전 용어집</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light;
+  --ink: #243044;
+  --ink-muted: #3a4658;
+  --text-muted: #5c6670;
+  --text-primary: #243044;
+  --text-secondary: #3a4658;
+  --plane: #f4f2eb;
+  --surface-1: #fffcf6;
+  --surface-2: #f7f4ec;
+  --surface-pearl: #fffcf6;
+  --hairline: #ddd6c8;
+  --border: #ddd6c8;
+  --gridline: #ebe6da;
+  --baseline: #ddd6c8;
+  --accent: #c45c48;
+  --accent-focus: #3a5270;
+  --navy: #3a5270;
+  --navy-2: #4a6584;
+  --gold: #d4a45a;
+  --gold-strong: #e0b56e;
+  --on-navy: #f4f2eb;
+  --on-navy-muted: #c5ced8;
+  --sage: #3f5340;
+  --on-dark: #f4f2eb;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--plane);
+  color: var(--ink);
+  font-family: "IBM Plex Sans KR", "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  line-height: 1.7;
+}
+.viz-root { min-height: 100vh; background: var(--plane); color: var(--ink); }
+.global-nav {
+  position: sticky; top: 0; z-index: 40;
+  background: var(--navy); color: var(--on-navy); height: 40px;
+}
+.global-nav-inner {
+  max-width: 980px; margin: 0 auto; height: 40px; padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  font-size: 0.78rem; font-weight: 500; letter-spacing: -0.02em;
+}
+.global-nav-left, .global-nav-right {
+  display: flex; align-items: center; gap: 16px; flex-shrink: 0;
+}
+.global-nav a, .global-nav .nav-current {
+  color: var(--on-navy); text-decoration: none; white-space: nowrap;
+}
+.global-nav a { opacity: 0.78; }
+.global-nav a:hover { opacity: 1; color: var(--gold); }
+.global-nav .nav-current { opacity: 1; font-weight: 650; }
+header.page-head {
+  background: linear-gradient(165deg, var(--navy) 0%, var(--navy-2) 100%);
+  color: var(--on-navy);
+}
+.page-head-inner {
+  max-width: 980px; margin: 0 auto; padding: 28px 20px 22px;
+}
+header.page-head h1 {
+  font-size: 1.55rem; margin: 0 0 6px; font-weight: 700; letter-spacing: -0.02em;
+  line-height: 1.35;
+}
+header.page-head .tagline {
+  margin: 0; font-size: 0.95rem; color: var(--on-navy-muted); line-height: 1.55;
+  max-width: 48em;
+}
+header.page-head .tagline a {
+  color: var(--on-navy-muted);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+header.page-head .tagline a:hover { color: var(--gold); }
+.list-search.omni-wrap {
+  position: relative; margin: 14px 0 18px; max-width: 100%;
+}
+.omni-wrap input {
+  width: 100%; height: 40px;
+  border: 1px solid var(--hairline);
+  background: var(--surface-1);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 0 14px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  letter-spacing: -0.02em;
+}
+.omni-wrap input::placeholder { color: var(--text-muted); }
+.omni-wrap input:focus {
+  outline: 2px solid var(--navy);
+  outline-offset: 1px;
+  border-color: transparent;
+}
+.omni-results {
+  position: absolute; z-index: 40; left: 0; right: 0; top: calc(100% + 6px);
+  background: var(--surface-1); border: 1px solid var(--hairline); border-radius: 12px;
+  max-height: 420px; overflow: auto;
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--ink) 10%, transparent);
+}
+.omni-results.hidden { display: none; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 18px 20px 80px; }
+.site-footer {
+  margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--hairline);
+  font-size: 0.82rem; color: var(--text-muted); line-height: 1.55;
+}
+.site-footer a { color: var(--sage); }
+.org-flag { font-style: normal; font-size: 1.05em; line-height: 1; margin-right: 4px; }
+
+/* 지면 토큰은 ui_common.NAV_CSS(:root) — 라이브러리와 같은 팔레트 */
+a { color: var(--sage); }
+a:hover { color: var(--accent); }
+.wrap { max-width: 980px; }
+
+#listControls { margin: 0 0 18px; }
+.filter-toolbar {
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  padding: 10px 0; border-bottom: 1px solid var(--hairline);
+}
+#listControls .filter-toolbar:first-child { padding-top: 0; }
+#listControls .filter-toolbar:last-child { border-bottom: 0; }
+.filter-label {
+  flex: 0 0 auto; min-width: 3.2em; margin-right: 4px;
+  font-size: 12px; font-weight: 700; color: var(--text-muted);
+  letter-spacing: -0.02em; white-space: nowrap;
+}
+button.filter-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  border: 1px solid var(--hairline); background: transparent;
+  color: var(--text-secondary); border-radius: 999px;
+  padding: 3px 10px; font: inherit; font-size: 12px; line-height: 1.35;
+  cursor: pointer; white-space: nowrap;
+}
+button.filter-chip:hover { color: var(--ink); border-color: var(--text-muted); }
+button.filter-chip .n {
+  font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 11px;
+}
+button.filter-chip.active {
+  background: color-mix(in srgb, var(--chip, var(--navy)) 14%, var(--surface-1));
+  color: var(--chip, var(--navy));
+  border-color: color-mix(in srgb, var(--chip, var(--navy)) 32%, var(--hairline));
+  font-weight: 600;
+}
+button.filter-chip.active .n {
+  color: color-mix(in srgb, var(--chip, var(--navy)) 65%, var(--text-muted));
+}
+
+.result-line {
+  font-size: 12px; color: var(--text-muted); margin: 0 0 12px;
+  font-variant-numeric: tabular-nums;
+}
+.bucket-head {
+  font-size: 13px; font-weight: 700; letter-spacing: -0.02em;
+  color: var(--text-muted); margin: 22px 0 8px; padding-bottom: 6px;
+  border-bottom: 1px solid var(--gridline);
+}
+.bucket-head:first-of-type { margin-top: 4px; }
+.bucket-head .bk { color: var(--chip); }
+
+.term-card {
+  background: var(--surface-1); border: 1px solid var(--hairline);
+  border-radius: 14px; padding: 14px 16px; margin-bottom: 10px;
+  border-left: 3px solid var(--chip);
+}
+.term-card.hidden { display: none; }
+.term-head {
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline;
+}
+.term-n {
+  font-variant-numeric: tabular-nums; font-size: 12px;
+  color: var(--text-muted); min-width: 2.2em;
+}
+.term-name {
+  font-size: 18px; font-weight: 700; letter-spacing: -0.03em; color: var(--ink);
+}
+.term-en {
+  font-size: 13px; color: var(--text-muted); letter-spacing: -0.01em;
+}
+.badge {
+  margin-left: auto; font-size: 11px; font-weight: 600; border-radius: 999px;
+  padding: 2px 9px; white-space: nowrap;
+  background: color-mix(in srgb, var(--chip) 14%, var(--surface-1));
+  color: var(--chip);
+  border: 1px solid color-mix(in srgb, var(--chip) 32%, var(--hairline));
+}
+.term-metrics {
+  display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 9px;
+  font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums;
+}
+.term-metrics b { color: var(--text-secondary); font-weight: 650; }
+.term-metrics .m-strong b { color: var(--ink); }
+.rec-bar {
+  display: inline-block; width: 38px; height: 5px; border-radius: 3px;
+  background: var(--gridline); vertical-align: 1px; margin-left: 4px;
+  overflow: hidden;
+}
+.rec-bar i { display: block; height: 100%; background: var(--gold); }
+.term-variants {
+  margin-top: 7px; font-size: 11.5px; color: var(--text-muted);
+  letter-spacing: -0.01em;
+}
+.term-examples {
+  margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--gridline);
+}
+.term-examples ol { margin: 0; padding-left: 0; list-style: none; }
+.term-examples li {
+  font-size: 13px; line-height: 1.5; margin-bottom: 3px;
+  display: flex; gap: 7px; align-items: baseline;
+}
+.term-examples .ex-date {
+  font-variant-numeric: tabular-nums; font-size: 11px; color: var(--text-muted);
+  flex: 0 0 auto; min-width: 5.2em;
+}
+.term-examples a {
+  color: var(--navy); text-decoration: underline;
+  text-decoration-thickness: 1px; text-underline-offset: 2px;
+}
+.term-examples a:hover { color: var(--accent); }
+.term-examples .ex-src { font-size: 11px; color: var(--text-muted); }
+
+details.legend {
+  margin: 0 0 16px; font-size: 13px; color: var(--text-secondary);
+  background: var(--surface-2); border: 1px solid var(--hairline);
+  border-radius: 12px; padding: 10px 14px;
+}
+details.legend summary {
+  cursor: pointer; font-size: 12px; font-weight: 700; color: var(--text-muted);
+  letter-spacing: -0.02em;
+}
+details.legend table { border-collapse: collapse; margin-top: 10px; width: 100%; }
+details.legend td { padding: 4px 8px 4px 0; vertical-align: top; line-height: 1.5; }
+details.legend td:first-child {
+  white-space: nowrap; font-weight: 700; color: var(--ink); font-size: 12px;
+}
+.empty-note {
+  padding: 28px 4px; color: var(--text-muted); font-size: 14px; display: none;
+}
+.prose { font-size: 14.5px; line-height: 1.75; }
+.prose h2 {
+  font-size: 15px; margin: 26px 0 8px; letter-spacing: -0.02em;
+  padding-bottom: 6px; border-bottom: 1px solid var(--gridline);
+}
+.prose h3 { font-size: 13.5px; margin: 18px 0 6px; color: var(--ink-muted); }
+.prose table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 13px; }
+.prose th, .prose td {
+  border-bottom: 1px solid var(--gridline); padding: 6px 8px;
+  text-align: left; vertical-align: top; line-height: 1.55;
+}
+.prose th { color: var(--text-muted); font-size: 12px; font-weight: 700; }
+.prose code {
+  background: var(--surface-2); border: 1px solid var(--hairline);
+  border-radius: 5px; padding: 1px 5px; font-size: 0.88em;
+}
+.prose pre {
+  background: var(--surface-2); border: 1px solid var(--hairline);
+  border-radius: 10px; padding: 12px 14px; overflow-x: auto; font-size: 12.5px;
+}
+.prose pre code { background: none; border: 0; padding: 0; }
+.prose ul { padding-left: 20px; }
+.prose li { margin-bottom: 4px; }
+@media (max-width: 620px) {
+  .badge { margin-left: 0; }
+  .term-examples li { flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+<div class="viz-root">
+<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="index.html">용어집</a><a href="https://songkyungho.github.io/ai-safety-library/" target="_blank" rel="noopener noreferrer">AI 안전 라이브러리</a><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 동향</a></div><div class="global-nav-right"><span class="nav-current">소개</span></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>소개</h1><p class="tagline">표제어를 어떻게 골랐고, 어떤 지표가 쓸모 없었나</p></div></header>
+<main class="wrap">
+<div class="prose">
+<p>AI 안전 동향 코퍼스에서 용어집으로 만들 값어치가 있는 표제어
+<b>100개</b>를 뽑았다. 코퍼스는 <a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank"
+rel="noopener">AI 안전 동향</a>이 매일 모으는 뉴스·논문·정책문서
+<b>5,798건</b>(2009-04-13 ~ 2026-09-08)이다.</p>
+
+<h2>어떻게 골랐나</h2>
+<p>MCP 검색만으로 뽑으면 <i>이미 아는 용어를 검색해 확인하는</i> 순환이 된다.
+그래서 코퍼스에서 기계적으로 긁어 올린 뒤 사람이 선별하는 순서로 갔다.</p>
+<pre><code>extract_candidates.py   제목+요약에서 한글 1~2gram·영문 1~3gram → 후보 10,435개
+select_top100.py        표제어 확정 (의미 판단) + 지표 자동 결합
+gloss_and_hubs.py       병기율·허브 중심성
+build_json.py           표제어별 실제 용례 수집
+build_site.py           이 사이트</code></pre>
+
+<h3>분류 쿼터를 둔다</h3>
+<p>점수 순으로 그냥 100개를 자르면 보도량이 많은 법제·정치 용어가 과반을
+먹고 평가·정렬 기술 용어가 밀린다. 13개 분류에 쿼터를 배분했다.</p>
+
+<h3>변이 표기의 빈도를 합산하지 않는다</h3>
+<p><code>정렬</code>(260)과 <code>alignment</code>(198)를 더하면 같은 문서를 두 번
+센다. 대표 표기 하나의 문서 수만 헤드라인 숫자로 쓴다.</p>
+
+<h3>광의어를 대표로 쓰지 않는다</h3>
+<p><code>안전성 평가</code>의 근거는 <code>안전성</code>(340)이 아니라
+<code>안전성 평가</code>(50)다. 전자를 쓰면 표제어의 근거를 오해하게 된다.</p>
+
+<h2>중심성 실험 — 무엇이 작동했나</h2>
+<p>"최근성만 보지 말고 중심성도 따지자"에서 네 가지를 계산했다. 결과가 갈렸다.</p>
+
+<h3>작동하지 않은 것 — 전부 일반어 탐지기였다</h3>
+<table>
+<tr><th>지표</th><th>최상위에 나온 것</th></tr>
+<tr><td>degree (동시출현 이웃 수)</td><td>AI, 문제, 가능성, 있으, 에서, 등을</td></tr>
+<tr><td>topic_entropy (17개 토픽 분산)</td><td>의사결정, 자원, 생태계, 등에, 있고, 통한</td></tr>
+<tr><td>pagerank_pmi (PMI 가중 PageRank)</td><td>문제의식, 기여, 동기, 점이, 측면, 주로</td></tr>
+</table>
+<p>이유: <b>코퍼스 전체가 이미 AI 안전 문서다.</b> 그래서 그래프 중심성이 개념
+위계가 아니라 국문 논문·기사의 상투적 연결어를 재발견한다. 중심성이 쓸모
+있으려면 여러 도메인이 섞인 코퍼스에서 AI 안전 용어가 구별되는 군집을
+이뤄야 하는데, 여기서는 그 군집이 곧 전체다.</p>
+<p><code>topic_entropy</code>에 걸었던 가설("여러 영역을 관통하면 기초 개념")도
+틀렸다. 코퍼스가 알려주는 건 <b>관통 = 모호함</b>이다.</p>
+<p>세 지표는 <b>음의 신호로만</b> 값어치가 있다. degree가 높은데 병기율이 0에
+가까우면 일반어이고(<code>위협</code> 0.79/0.03), 둘 다 높으면 핵심
+기술어다(<code>정렬</code> 0.74/0.26).</p>
+
+<h3>작동한 것 — 병기율</h3>
+<p>원문이 <code>표제어(뜻풀이)</code> 형태로 쓴 비율. <b>필자가 "이건 설명이
+필요하다"고 이미 판단한 흔적</b>이라, 용어집 적격성의 가장 직접적인 증거다.
+이 지표가 누락 표제어 4개를 찾아냈다 — <b>사고연쇄(CoT)</b>,
+<b>보정(calibration)</b>, <b>LLM 심판(LLM-as-a-Judge)</b>,
+<b>작업 시간 지평</b>. <code>GPAI</code>·<code>ASR</code>·<code>XAI</code>는
+기존 표제어의 원어로 확인돼 영문 표기를 보강했다.</p>
+<p>괄호 내용이 실제 뜻풀이인지 검사한다. <code>첨부파일(hwp)</code>·
+<code>모집(~5.30)</code> 같은 서식 괄호는 걸러낸다 — 정교화 전에는
+<code>첨부파일</code>이 병기율 0.96으로 1위였다.</p>
+
+<h2>알려진 한계</h2>
+<ul>
+<li><b>형태소 분석기를 쓰지 않는다.</b> 조사 제거가 휴리스틱이라 오절단이 남는다
+(<code>비동의 성적</code> → <code>비동 성적</code>, 표제어에서 교정).</li>
+<li><b>광의어 용례에 잡음이 있다.</b> <code>AI 감사</code>는 대표 표기가
+<code>감사</code>라서 감사원 맥락까지 걸린다. 용례를 고를 때 구체적 변이를
+우선하지만 완전히 걸러지지는 않는다.</li>
+<li><b>정의문은 아직 없다.</b> 지금은 표제어·지표·용례까지다.</li>
+<li><b>고유명사는 표제어에서 제외했다</b> (EU AI Act·NIST AI RMF·K-AISI 등).
+별도 부록 대상이다.</li>
+<li><b>코퍼스 요약 품질.</b> 5,798건 중 829건은 요약이 placeholder
+(<code>요약불가</code> 등)다. 용례에서는 제외한다.</li>
+</ul>
+
+<h2>소스</h2>
+<p><a href="https://github.com/songkyungho/ai-safety-glossary" target="_blank"
+rel="noopener">github.com/songkyungho/ai-safety-glossary</a></p>
+</div>
+<footer class="site-footer">
+<p>AI 안전 용어집 · 표제어는 <a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener">AI 안전 동향</a>
+코퍼스에서 기계적으로 추출한 뒤 사람이 선별했다. 지표는 코퍼스에서 자동 계산된다.</p>
+<p>같은 시리즈: <a href="https://songkyungho.github.io/ai-safety-library/" target="_blank" rel="noopener">AI 안전 라이브러리</a> ·
+<a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener">AI 안전 동향</a></p>
+</footer>
+</main>
+</div>
+
+</body>
+</html>
