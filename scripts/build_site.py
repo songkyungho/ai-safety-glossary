@@ -85,6 +85,10 @@ button.filter-chip.active .n {
 .term-name {
   font-size: 18px; font-weight: 700; letter-spacing: -0.03em; color: var(--ink);
 }
+.term-alt {
+  font-weight: 500; font-size: 14px; color: var(--text-muted);
+  letter-spacing: -0.01em;
+}
 .term-en {
   font-size: 13px; color: var(--text-muted); letter-spacing: -0.01em;
 }
@@ -111,8 +115,29 @@ button.filter-chip.active .n {
   margin-top: 7px; font-size: 11.5px; color: var(--text-muted);
   letter-spacing: -0.01em;
 }
+/* 설명 블록 — 참고기사 위에 한 겹 더 그은 흐린 선 안쪽에 들어간다 */
+.term-def {
+  margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--gridline);
+}
+.term-def .def-one {
+  margin: 0 0 8px; font-size: 14.5px; line-height: 1.6;
+  font-weight: 650; color: var(--ink); letter-spacing: -0.02em;
+}
+.term-def p.def-body {
+  margin: 0 0 7px; font-size: 13.5px; line-height: 1.72;
+  color: var(--text-secondary); letter-spacing: -0.01em;
+}
+.term-def p.def-body:last-of-type { margin-bottom: 0; }
+.term-def .def-src {
+  margin: 8px 0 0; font-size: 11.5px; color: var(--text-muted);
+}
+.term-def .def-src::before { content: "근거 · "; }
 .term-examples {
-  margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--gridline);
+  margin-top: 11px; padding-top: 9px; border-top: 1px solid var(--hairline);
+}
+.term-examples .ex-label {
+  font-size: 11px; font-weight: 700; color: var(--text-muted);
+  letter-spacing: -0.02em; margin: 0 0 5px;
 }
 .term-examples ol { margin: 0; padding-left: 0; list-style: none; }
 .term-examples li {
@@ -209,6 +234,18 @@ def page(title, current, body, *, head_count=None, extra_js=""):
 """
 
 
+def def_block(e):
+    """설명 블록. 정의가 아직 없으면 아무것도 그리지 않는다."""
+    if not e.get("one"):
+        return ""
+    paras = "".join(
+        '<p class="def-body">%s</p>' % html.escape(p) for p in e.get("body", [])
+    )
+    src = ('<p class="def-src">%s</p>' % html.escape(e["src"])) if e.get("src") else ""
+    return ('<div class="term-def"><p class="def-one">%s</p>%s%s</div>'
+            % (html.escape(e["one"]), paras, src))
+
+
 def card_html(e):
     ex = "".join(
         '<li><span class="ex-date">{d}</span>'
@@ -228,7 +265,7 @@ def card_html(e):
         'data-q="{q}" style="--chip:{color}">'
         '<div class="term-head">'
         '<span class="term-n">{n}</span>'
-        '<span class="term-name">{head}</span>'
+        '<span class="term-name">{head}{alt}</span>'
         '<span class="term-en">{en}</span>'
         '<span class="badge">{bucket}</span>'
         "</div>"
@@ -245,7 +282,9 @@ def card_html(e):
         "허브 <b>{hub}</b></span>"
         "</div>"
         '<div class="term-variants">코퍼스 표기 · {variants}</div>'
-        '<div class="term-examples"><ol>{ex}</ol></div>'
+        "{defblock}"
+        '<div class="term-examples"><p class="ex-label">참고 기사</p>'
+        "<ol>{ex}</ol></div>"
         "</article>"
     ).format(
         bc=html.escape(e["bucket_code"]),
@@ -260,12 +299,17 @@ def card_html(e):
         hub=("%.2f" % e["hub_norm"]),
         color=html.escape(e["color"]),
         head=html.escape(e["head"]),
+        alt=('<span class="term-alt">(%s)</span>' % html.escape(e["alt"]))
+        if e.get("alt") else "",
+        defblock=def_block(e),
         en=html.escape(e["en"]),
         bucket=html.escape(e["bucket"]),
         variants=html.escape(e["variants"]),
         q=html.escape(
             " ".join(
-                [e["head"], e["en"], e["bucket"], e["variants"]]
+                [e["head"], e.get("alt", ""), e["en"], e["bucket"],
+                 e["variants"], e.get("one", "")]
+                + list(e.get("body", []))
                 + [x["title"] for x in e["examples"]]
             ).lower()
         ),
@@ -467,6 +511,25 @@ build_site.py           이 사이트</code></pre>
 <p><code>안전성 평가</code>의 근거는 <code>안전성</code>(340)이 아니라
 <code>안전성 평가</code>(50)다. 전자를 쓰면 표제어의 근거를 오해하게 된다.</p>
 
+<h2>정의문을 어떻게 썼나</h2>
+<p>표제어마다 <b>번역어(대안적 번역어) 원어</b> · <b>한줄 정의</b> · <b>설명 두 문단</b>을
+같은 틀로 붙였다. 예컨대 <code>파인튜닝(미세조정) fine-tuning</code>처럼, 국문 표기가
+둘 이상 통용되는 경우 대안역을 괄호에 넣었다 — 100개 가운데 95개가 여기 해당한다.</p>
+<p>두 문단은 역할을 나눠 쓴다. 첫 문단은 <b>무엇이며 왜 그렇게 되는가</b>(메커니즘),
+둘째 문단은 <b>실무·정책에서 어떻게 다뤄지는가</b> 또는 <b>흔한 혼동</b>이다. 뒤쪽에
+혼동 항목을 두는 이유는, 이 분야에서 잘못 읽히는 대부분이 인접 개념과의 구별에서
+생기기 때문이다 — 해석가능성과 설명가능성, 오용과 남용, 환각과 기만, 프라이버시와
+개인정보 보호, 범용 AI 모델(GPAI)과 범용인공지능(AGI)이 그렇다.</p>
+<p><b>조문·표준을 특정할 수 있는 항목에는 근거를 달았다</b>(13개). EU AI법의 인간
+감독·금지 관행·고위험·투명성 의무·범용 AI 모델·AI 리터러시·중대 사고 보고 조항,
+GDPR과 국내 개인정보 보호법의 자동화된 결정 조항, NIST AI RMF와 ISO/IEC 42001,
+성폭력처벌법과 아동·청소년성보호법, 그리고 자유권규약 제19조다. 나머지 항목의
+정의문은 이 용어집을 위해 쓴 것이며 인용문이 아니다. 확인할 수 없는 수치나 날짜는
+쓰지 않고 개념 설명에 머물렀다.</p>
+<p>정의문은 검색 대상에 포함된다. 그래서 표제어에 없는 말로도 찾을 수 있다 —
+<code>보상 해킹</code>, <code>과도 거부</code>, <code>C2PA</code>, <code>LAWS</code>,
+<code>머신 언러닝</code>처럼 본문에서만 언급한 개념들이다.</p>
+
 <h2>중심성 실험 — 무엇이 작동했나</h2>
 <p>"최근성만 보지 말고 중심성도 따지자"에서 네 가지를 계산했다. 결과가 갈렸다.</p>
 
@@ -505,7 +568,10 @@ build_site.py           이 사이트</code></pre>
 <li><b>광의어 용례에 잡음이 있다.</b> <code>AI 감사</code>는 대표 표기가
 <code>감사</code>라서 감사원 맥락까지 걸린다. 용례를 고를 때 구체적 변이를
 우선하지만 완전히 걸러지지는 않는다.</li>
-<li><b>정의문은 아직 없다.</b> 지금은 표제어·지표·용례까지다.</li>
+<li><b>정의문은 인용이 아니다.</b> 근거를 표시한 13개 항목을 뺀 나머지는 이
+용어집을 위해 작성한 설명이다. 사실관계를 틀리지 않게 쓰는 데 무게를 뒀지만,
+권위 있는 출처의 문구를 옮긴 것이 아니므로 인용이 필요한 자리에는 원 문헌을
+확인해야 한다.</li>
 <li><b>고유명사는 표제어에서 제외했다</b> (EU AI Act·NIST AI RMF·K-AISI 등).
 별도 부록 대상이다.</li>
 <li><b>코퍼스 요약 품질.</b> {c['docs']:,}건 중 829건은 요약이 placeholder

@@ -24,6 +24,7 @@ import config  # noqa: E402
 config.require_digest_repo()
 config.add_digest_to_path()
 
+from definitions import DEFS  # noqa: E402
 from gloss_and_hubs import is_gloss, surface_re  # noqa: E402
 
 N_EXAMPLES = 3
@@ -125,10 +126,15 @@ def main():
                        if not k.startswith("_")})
             if len(ex) >= N_EXAMPLES:
                 break
+        d = DEFS.get(head) or {}
         entries.append({
             "n": i + 1,
             "head": head,
             "en": r["영문"],
+            "alt": d.get("alt") or "",
+            "one": d.get("one", ""),
+            "body": list(d.get("body", ())),
+            "src": d.get("src", ""),
             "bucket_code": code,
             "bucket": label,
             "color": color,
@@ -167,11 +173,19 @@ def main():
         "buckets": buckets,
         "corpus": {"docs": total, "from": dmin, "to": dmax},
         "no_example": [e["head"] for e in entries if not e["examples"]],
+        "no_def": [e["head"] for e in entries if not e["one"]],
     }
     with open(config.SITE_JSON, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
-    print("표제어 %d개 · 용례 없는 항목 %d개 · 코퍼스 %d건"
-          % (len(entries), len(payload["no_example"]), total))
+    print("표제어 %d개 · 정의 %d개 · 용례 없는 항목 %d개 · 코퍼스 %d건"
+          % (len(entries), len(entries) - len(payload["no_def"]),
+             len(payload["no_example"]), total))
+    unknown = sorted(set(DEFS) - {e["head"] for e in entries})
+    if unknown:
+        print("  !! 표제어에 없는 정의 키(오타?): " + ", ".join(unknown))
+    if payload["no_def"]:
+        print("  정의 미작성 %d개: %s"
+              % (len(payload["no_def"]), ", ".join(payload["no_def"])))
     if payload["no_example"]:
         print("  용례 없음: " + ", ".join(payload["no_example"]))
     print("-> " + config.SITE_JSON)
