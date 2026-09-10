@@ -27,6 +27,7 @@ HUBS = os.path.join(DATA, "glossary_top100_hubs.csv")
 GLOSS_RANKED = os.path.join(DATA, "glossary_gloss_ranked.csv")
 SCORED = os.path.join(DATA, "glossary_candidates_scored.csv")
 SITE_JSON = os.path.join(DATA, "glossary.json")
+MERGED_JSON = os.path.join(DATA, "glossary_merged.json")
 
 
 def require_digest_repo() -> None:

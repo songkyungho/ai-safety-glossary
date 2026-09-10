@@ -200,7 +200,7 @@ def shell_html(
         n = head_count if head_count is not None else 0
         parts.append("<h1>AI 안전 용어집</h1>")
         parts.append(
-            '<p class="tagline">AI 안전 동향 코퍼스에서 뽑은 핵심 용어 '
+            '<p class="tagline">동향 코퍼스와 PDF 원문에서 모은 핵심 용어 '
             f'<span id="headCount">{n}</span>개.'
             f"{author_byline_html()}</p>"
         )

@@ -1,0 +1,101 @@
+n,head,en,bucket,df,gloss_df,score,status,sources
+1,정렬,alignment,A,29,2,15.0814,found,IASR 2025 p.218
+2,기만,deception,A,18,3,12.7351,multi,IASR 2026 p.150; EU GPAI CoP 안내서 (KO) p.109
+3,오정렬,misalignment,A,15,2,6.5999,multi,IASR 2025 p.100; IASR 2026 p.152; IASR 2025 p.223
+4,Sabotage,Sabotage,A,13,1,5.7482,found,IASR 2025 p.63
+5,환각,hallucination,A,10,1,5.7364,found,IASR 2025 p.222
+6,목표 명세 오류,goal misspecification,A,3,2,3.8061,multi,IASR 2025 p.100; IASR 2026 p.151; IASR 2025 p.222
+7,아첨,sycophancy,A,7,1,3.7117,multi,IASR 2026 p.154; IASR 2026 p.155
+8,Deceptive alignment,Deceptive alignment,A,3,1,3.2366,multi,IASR 2025 p.100; IASR 2025 p.220
+9,Pluralistic alignment,Pluralistic alignment,A,3,1,3.0528,found,IASR 2026 p.153
+10,평가,evaluation,B,38,7,18.6692,multi,IASR 2025 p.38; IASR 2026 p.150; IASR 2025 p.170; IASR 2025 p.182; IASR 2025 p.221
+11,레드팀,red teaming,B,22,4,15.8634,multi,IASR 2026 p.154; IASR 2025 p.182; IASR 2025 p.192; IASR 2025 p.225
+12,안전장치,safeguards,B,28,4,15.3372,multi,IASR 2026 p.154; IASR 2025 p.222
+13,벤치마크,benchmark,B,27,3,15.0425,multi,IASR 2025 p.38; IASR 2025 p.47; IASR 2026 p.149; IASR 2025 p.182; IASR 2025 p.219
+14,Model evaluation,Model evaluation,B,19,2,14.4445,found,EU GPAI CoP 안내서 (KO) p.111
+15,감사,audit,B,23,2,13.3067,multi,IASR 2025 p.182; IASR 2025 p.219
+16,해석가능성,interpretability,B,20,3,12.2636,multi,IASR 2026 p.152; IASR 2025 p.192; IASR 2025 p.201; IASR 2025 p.223
+17,탈옥,jailbreak,B,14,2,6.8328,multi,IASR 2026 p.152; IASR 2025 p.170; IASR 2025 p.182; IASR 2025 p.192; IASR 2025 p.223
+18,프롬프트 인젝션,prompt injection,B,8,0,5.4573,found,AI 핵심용어 단면 p.86
+19,Interpretability Research,Interpretability Research,B,3,1,3.1274,multi,IASR 2025 p.170; IASR 2025 p.223
+20,검증 데이터,검증 데이터,B,2,1,2.476,found,EU GPAI CoP 안내서 (KO) p.13
+21,벤치마크 데이터셋,벤치마크 데이터셋,B,2,0,1.861,found,AI 핵심용어 단면 p.45
+22,악용,malicious use,C,23,3,15.9157,multi,IASR 2026 p.152; IASR 2025 p.223
+23,Adversarial training,Adversarial training,C,7,2,6.4307,multi,IASR 2026 p.148; IASR 2025 p.192; IASR 2025 p.218
+24,Insider threats,Insider threats,C,10,1,6.1574,found,EU GPAI CoP 안내서 (KO) p.110
+25,Malware,Malware,C,12,2,5.9678,multi,IASR 2025 p.72; IASR 2026 p.152; IASR 2025 p.223
+26,Cyberattack,Cyberattack,C,10,3,5.686,found,IASR 2026 p.150
+27,Dual-use science,Dual-use science,C,3,2,3.7573,multi,IASR 2025 p.80; IASR 2026 p.150; IASR 2025 p.221
+28,Toxin,Toxin,C,4,2,3.3529,multi,IASR 2025 p.80; IASR 2025 p.227
+29,Zero-day vulnerability,Zero-day vulnerability,C,4,1,3.2896,multi,IASR 2025 p.72; IASR 2025 p.228
+30,능력,capability,D,36,7,18.5456,multi,IASR 2025 p.38; IASR 2025 p.158; IASR 2025 p.219; IASR 2025 p.319
+31,에이전트,agent,D,27,2,14.6067,multi,IASR 2025 p.38; IASR 2025 p.47; IASR 2025 p.67; IASR 2025 p.80; IASR 2025 p.80
+32,AI 에이전트,AI agent,D,18,2,11.2182,multi,IASR 2025 p.38; IASR 2025 p.47; IASR 2025 p.67; IASR 2025 p.80; IASR 2025 p.100
+33,프론티어 AI,frontier AI,D,24,1,9.8184,multi,IASR 2025 p.221; AI 핵심용어 단면 p.84
+34,통제 상실,loss of control,D,13,2,8.3113,multi,IASR 2025 p.100; IASR 2026 p.152; IASR 2025 p.223
+35,Multi-agent system,Multi-agent system,D,5,1,3.823,found,IASR 2026 p.152
+36,Autonomous planning,Autonomous planning,D,2,1,2.476,found,IASR 2026 p.149
+37,Fairness,Fairness,E,23,3,13.6023,found,IASR 2025 p.221
+38,Algorithmic Transparency,Algorithmic Transparency,E,6,1,4.0717,multi,IASR 2025 p.176; IASR 2025 p.218
+39,Institutional transparency,Institutional transparency,E,3,2,4.0106,multi,IASR 2025 p.129; IASR 2026 p.152; IASR 2025 p.176; IASR 2025 p.223
+40,인공지능,artificial intelligence,F,43,7,23.8835,multi,인공지능기본법 p.3; IASR 2025 p.219; 기본법 지원데스크 사례집 p.16; 기본법 지원데스크 사례집 p.83; 안정성 확보 가이드라인 p.13
+41,생성형 AI,generative AI,F,23,3,13.1047,multi,인공지능기본법 p.3; IASR 2025 p.222; 기본법 지원데스크 사례집 p.16; 기본법 지원데스크 사례집 p.83
+42,범용 AI,general-purpose AI,F,21,4,11.7046,multi,IASR 2025 p.221; AI 핵심용어 단면 p.164
+43,시스템적 위험,systemic risk,F,16,3,10.1576,multi,IASR 2026 p.155; IASR 2025 p.227; EU GPAI CoP 안내서 (KO) p.112; EU GPAI CoP 안내서 (KO) p.113; EU GPAI CoP 안내서 (KO) p.113
+44,Conformity Assessment,Conformity Assessment,F,7,2,6.1585,multi,EU GPAI CoP 안내서 (KO) p.12; EU GPAI CoP 안내서 (KO) p.12
+45,고영향 인공지능,high-impact AI,F,6,2,5.8046,multi,인공지능기본법 p.3; 기본법 지원데스크 사례집 p.16; 기본법 지원데스크 사례집 p.79; 기본법 지원데스크 사례집 p.83
+46,인공지능시스템,인공지능시스템,F,5,3,4.9363,multi,인공지능기본법 p.3; 기본법 지원데스크 사례집 p.16; 기본법 지원데스크 사례집 p.83; 안정성 확보 가이드라인 p.13
+47,Systemic risk assessment,Systemic risk assessment,F,4,2,4.8101,multi,IASR 2026 p.155; IASR 2025 p.227; EU GPAI CoP 안내서 (KO) p.113
+48,인공지능기술,인공지능기술,F,5,3,4.7278,multi,인공지능기본법 p.3; 기본법 지원데스크 사례집 p.16; 기본법 지원데스크 사례집 p.83; 안정성 확보 가이드라인 p.13
+49,인공지능산업,인공지능산업,F,5,3,4.5085,multi,인공지능기본법 p.3; 기본법 지원데스크 사례집 p.16; 기본법 지원데스크 사례집 p.83
+50,인공지능 수명주기,인공지능 수명주기,F,4,2,4.4427,found,안정성 확보 가이드라인 p.13
+51,Systemic risk tiers,Systemic risk tiers,F,4,2,4.3371,multi,IASR 2026 p.155; IASR 2025 p.227; EU GPAI CoP 안내서 (KO) p.113
+52,위험관리,risk management,G,30,8,15.5729,multi,IASR 2025 p.158; IASR 2025 p.225
+53,AI lifecycle,AI lifecycle,G,15,2,13.5394,found,IASR 2025 p.218
+54,위험 허용도,risk tolerance,G,8,2,7.5802,multi,IASR 2026 p.154; IASR 2025 p.225
+55,위험 임계값,risk threshold,G,6,2,5.7718,multi,IASR 2026 p.154; IASR 2025 p.225
+56,위험관리체계,위험관리체계,G,4,1,3.05,found,안정성 확보 가이드라인 p.13
+57,harmonised standard,harmonised standard,G,2,1,1.6468,found,EU GPAI CoP 안내서 (KO) p.13
+58,Disinformation,Disinformation,H,13,1,9.8098,multi,IASR 2025 p.220; IASR 2025 p.221
+59,Synthetic Data,synthetic-data,H,12,2,7.4859,multi,IASR 2025 p.47; IASR 2026 p.155; IASR 2025 p.226
+60,Data Provenance,Data Provenance,H,11,2,7.113,found,IASR 2026 p.150
+61,딥페이크,deepfake,H,12,2,6.7906,multi,IASR 2025 p.62; IASR 2025 p.139; IASR 2026 p.150; IASR 2025 p.150; IASR 2025 p.201
+62,Misinformation,Misinformation,H,15,1,6.2105,found,IASR 2025 p.223
+63,Watermark,Watermark,H,10,1,5.1437,multi,IASR 2025 p.201; IASR 2025 p.227
+64,AI-generated fake content,AI-generated fake content,H,2,1,2.9605,multi,IASR 2025 p.62; IASR 2025 p.67; IASR 2025 p.201; IASR 2025 p.218
+65,합성데이터,합성데이터,H,3,0,1.9918,found,AI 핵심용어 단면 p.90
+66,Training Data,Training Data,I,32,6,20.135,found,EU GPAI CoP 안내서 (KO) p.13
+67,Weights,Weights,I,21,6,14.6577,multi,IASR 2025 p.30; IASR 2025 p.150; IASR 2025 p.170; IASR 2025 p.227
+68,Compute,Compute,I,30,3,14.555,multi,IASR 2025 p.30; IASR 2025 p.47; IASR 2025 p.129; IASR 2025 p.219
+69,Parameters,Parameters,I,23,6,14.3546,found,IASR 2025 p.224
+70,Deep Learning,deep-learning,I,14,3,14.2005,multi,IASR 2025 p.30; IASR 2026 p.150; IASR 2025 p.220
+71,신경망,neural network,I,11,3,14.1745,multi,IASR 2025 p.30; IASR 2026 p.152; IASR 2025 p.223
+72,Inference,Inference,I,22,3,11.7218,multi,IASR 2025 p.38; IASR 2025 p.47; IASR 2025 p.222; IASR 2025 p.319
+73,파인튜닝,fine-tuning,I,22,4,10.65,multi,IASR 2026 p.151; IASR 2025 p.170; IASR 2025 p.221; AI 핵심용어 단면 p.42
+74,파운데이션 모델,foundation model,I,17,1,9.1142,multi,IASR 2025 p.221; AI 핵심용어 단면 p.81
+75,학습 데이터,학습 데이터,I,9,2,8.7467,found,EU GPAI CoP 안내서 (KO) p.13
+76,LLM,LLM,I,27,3,8.6533,found,AI 핵심용어 단면 p.11
+77,Intellectual property,Intellectual property,J,22,6,17.9981,multi,IASR 2025 p.144; IASR 2025 p.223
+78,Personal Data,Personal Data,J,19,3,16.0667,found,EU GPAI CoP 안내서 (KO) p.15
+79,Privacy,Privacy,J,38,3,15.8978,multi,IASR 2025 p.139; IASR 2026 p.154; IASR 2025 p.208; IASR 2025 p.224
+80,Bias,Bias,J,30,6,15.8027,multi,IASR 2025 p.92; IASR 2025 p.219
+81,Reliability,Reliability,J,33,4,14.7094,multi,IASR 2025 p.88; IASR 2025 p.225
+82,Law Enforcement,Law Enforcement,J,21,2,14.6003,multi,EU GPAI CoP 안내서 (KO) p.15; EU GPAI CoP 안내서 (KO) p.15
+83,Copyright,Copyright,J,26,3,13.8566,multi,IASR 2025 p.144; IASR 2026 p.149; IASR 2025 p.220
+84,Automation,Automation,J,23,4,13.7199,multi,IASR 2025 p.111; IASR 2025 p.219
+85,Sensitive data,Sensitive data,J,14,2,13.0827,multi,IASR 2025 p.139; IASR 2025 p.208; IASR 2025 p.226
+86,Data collection,Data collection,J,19,2,13.0447,multi,IASR 2025 p.92; IASR 2025 p.97; IASR 2026 p.150; IASR 2025 p.220
+87,Algorithm,Algorithm,J,20,4,12.956,found,IASR 2025 p.218
+88,Discrimination,Discrimination,J,17,2,11.7494,multi,IASR 2025 p.92; IASR 2025 p.220
+89,Digital infrastructure,Digital infrastructure,J,10,2,11.4348,multi,IASR 2025 p.119; IASR 2026 p.150; IASR 2025 p.220
+90,Narrow AI,Narrow AI,J,8,2,10.811,multi,IASR 2026 p.152; IASR 2025 p.223
+91,Labour Market,Labour Market,J,8,2,10.5009,multi,IASR 2025 p.111; IASR 2025 p.111; IASR 2026 p.152; IASR 2026 p.152; IASR 2025 p.223
+92,Malfunction,Malfunction,J,13,5,10.487,found,IASR 2026 p.152
+93,Modalities,Modalities,J,16,2,10.4322,multi,IASR 2025 p.38; IASR 2025 p.47; IASR 2026 p.152; IASR 2025 p.158; IASR 2025 p.223
+94,Persuasion,Persuasion,J,13,2,10.3575,found,IASR 2026 p.153
+95,AI literacy,AI literacy,J,9,2,9.9563,found,EU GPAI CoP 안내서 (KO) p.16
+96,Encryption,Encryption,J,10,3,9.3204,found,IASR 2026 p.150
+97,Hacking,Hacking,J,16,1,9.1735,multi,IASR 2025 p.72; IASR 2025 p.222
+98,State-of-the-art,State-of-the-art,J,20,2,9.1095,found,EU GPAI CoP 안내서 (KO) p.112
+99,Developer,Developer,J,22,2,8.6776,multi,IASR 2025 p.30; IASR 2025 p.220
+100,Testing Data,Testing Data,J,5,2,8.6514,found,EU GPAI CoP 안내서 (KO) p.13

@@ -1,0 +1,11 @@
+표제어,영문,status,accept_n,partial_n,languages,primary_sources
+정렬,alignment,multi,4,0,EN+KO,sg-consensus; GenAI Report; 핵심용어; TTA
+오정렬,misalignment,multi,3,0,EN,IASR2025 Key Definitions; Frontier RMF; IASR2026
+환각,hallucination,multi,3,0,EN+KO,IASR2025; NIST AI RMF GAI (confabulation); IASR2026 KO
+탈옥,jailbreak,multi,4,0,EN+KO,Adversarial Misuse; GenAI Report; IASR2025; 핵심용어
+레드팀,red teaming,multi,3,0,EN,NIST AI 800-1; HLEG; IASR2025
+프롬프트 인젝션,prompt injection,multi,4,0,EN+KO,IASR2026; Adversarial Misuse; 핵심용어; IASR2026 KO
+인간 피드백 기반 강화학습,RLHF,multi,2,0,EN,GenAI Report; IASR2026
+인간 감독,human oversight,found,2,0,EN,HLEG; IASR2025 Control (adjacent)
+사고연쇄,chain-of-thought (CoT),found,1,0,EN,IASR2026
+가드레일,guardrail,found,1,1,KO+EN,핵심용어; IASR2026 technical safeguards (partial)

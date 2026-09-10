@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>소개 · PDF 원문 인용 용어집</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  color-scheme: light;
+  --ink: #243044;
+  --ink-muted: #3a4658;
+  --text-muted: #5c6670;
+  --text-primary: #243044;
+  --text-secondary: #3a4658;
+  --plane: #f4f2eb;
+  --surface-1: #fffcf6;
+  --surface-2: #f7f4ec;
+  --surface-pearl: #fffcf6;
+  --hairline: #ddd6c8;
+  --border: #ddd6c8;
+  --gridline: #ebe6da;
+  --baseline: #ddd6c8;
+  --accent: #c45c48;
+  --accent-focus: #2f5951;
+  --navy: #2f5951;
+  --navy-2: #3e6f64;
+  --gold: #cf8b5e;
+  --gold-strong: #dda078;
+  --on-navy: #f4f2eb;
+  --on-navy-muted: #c5ced8;
+  --sage: #3f5340;
+  --on-dark: #f4f2eb;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--plane);
+  color: var(--ink);
+  font-family: "IBM Plex Sans KR", "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  line-height: 1.7;
+}
+.viz-root { min-height: 100vh; background: var(--plane); color: var(--ink); }
+.global-nav {
+  position: sticky; top: 0; z-index: 40;
+  background: var(--navy); color: var(--on-navy); height: 40px;
+}
+.global-nav-inner {
+  max-width: 980px; margin: 0 auto; height: 40px; padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  font-size: 0.78rem; font-weight: 500; letter-spacing: -0.02em;
+}
+.global-nav-left, .global-nav-right {
+  display: flex; align-items: center; gap: 16px; flex-shrink: 0;
+}
+.global-nav a, .global-nav .nav-current {
+  color: var(--on-navy); text-decoration: none; white-space: nowrap;
+}
+.global-nav a { opacity: 0.78; }
+.global-nav a:hover { opacity: 1; color: var(--gold); }
+.global-nav .nav-current { opacity: 1; font-weight: 650; }
+header.page-head {
+  background: linear-gradient(165deg, var(--navy) 0%, var(--navy-2) 100%);
+  color: var(--on-navy);
+}
+.page-head-inner {
+  max-width: 980px; margin: 0 auto; padding: 28px 20px 22px;
+}
+header.page-head h1 {
+  font-size: 1.55rem; margin: 0 0 6px; font-weight: 700; letter-spacing: -0.02em;
+  line-height: 1.35;
+}
+header.page-head .tagline {
+  margin: 0; font-size: 0.95rem; color: var(--on-navy-muted); line-height: 1.55;
+  max-width: 48em;
+}
+header.page-head .tagline a {
+  color: var(--on-navy-muted);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+header.page-head .tagline a:hover { color: var(--gold); }
+.list-search.omni-wrap {
+  position: relative; margin: 14px 0 18px; max-width: 100%;
+}
+.omni-wrap input {
+  width: 100%; height: 40px;
+  border: 1px solid var(--hairline);
+  background: var(--surface-1);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 0 14px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  letter-spacing: -0.02em;
+}
+.omni-wrap input::placeholder { color: var(--text-muted); }
+.omni-wrap input:focus {
+  outline: 2px solid var(--navy);
+  outline-offset: 1px;
+  border-color: transparent;
+}
+.omni-results {
+  position: absolute; z-index: 40; left: 0; right: 0; top: calc(100% + 6px);
+  background: var(--surface-1); border: 1px solid var(--hairline); border-radius: 12px;
+  max-height: 420px; overflow: auto;
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--ink) 10%, transparent);
+}
+.omni-results.hidden { display: none; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 18px 20px 80px; }
+.site-footer {
+  margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--hairline);
+  font-size: 0.82rem; color: var(--text-muted); line-height: 1.55;
+}
+.site-footer a { color: var(--sage); }
+.org-flag { font-style: normal; font-size: 1.05em; line-height: 1; margin-right: 4px; }
+
+
+a { color: var(--sage); }
+a:hover { color: var(--accent); }
+.wrap { max-width: 980px; }
+
+#listControls { margin: 0 0 18px; }
+.filter-toolbar {
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  padding: 10px 0; border-bottom: 1px solid var(--hairline);
+}
+#listControls .filter-toolbar:first-child { padding-top: 0; }
+#listControls .filter-toolbar:last-child { border-bottom: 0; }
+.filter-label {
+  flex: 0 0 auto; min-width: 3.2em; margin-right: 4px;
+  font-size: 12px; font-weight: 700; color: var(--text-muted);
+  letter-spacing: -0.02em; white-space: nowrap;
+}
+button.filter-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  border: 1px solid var(--hairline); background: transparent;
+  color: var(--text-secondary); border-radius: 999px;
+  padding: 3px 10px; font: inherit; font-size: 12px; line-height: 1.35;
+  cursor: pointer; white-space: nowrap;
+}
+button.filter-chip:hover { color: var(--ink); border-color: var(--text-muted); }
+button.filter-chip .n {
+  font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 11px;
+}
+button.filter-chip.active {
+  background: color-mix(in srgb, var(--chip, var(--navy)) 14%, var(--surface-1));
+  color: var(--chip, var(--navy));
+  border-color: color-mix(in srgb, var(--chip, var(--navy)) 32%, var(--hairline));
+  font-weight: 600;
+}
+button.filter-chip.active .n {
+  color: color-mix(in srgb, var(--chip, var(--navy)) 65%, var(--text-muted));
+}
+
+.result-line {
+  font-size: 12px; color: var(--text-muted); margin: 0 0 12px;
+  font-variant-numeric: tabular-nums;
+}
+.bucket-head {
+  font-size: 13px; font-weight: 700; letter-spacing: -0.02em;
+  color: var(--text-muted); margin: 22px 0 8px; padding-bottom: 6px;
+  border-bottom: 1px solid var(--gridline);
+}
+.bucket-head:first-of-type { margin-top: 4px; }
+.bucket-head .bk { color: var(--chip); }
+
+.term-card {
+  background: var(--surface-1); border: 1px solid var(--hairline);
+  border-radius: 14px; padding: 14px 16px; margin-bottom: 10px;
+  border-left: 3px solid var(--chip);
+}
+.term-card.hidden { display: none; }
+.term-head {
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline;
+}
+.term-n {
+  font-variant-numeric: tabular-nums; font-size: 12px;
+  color: var(--text-muted); min-width: 2.2em;
+}
+.term-name {
+  font-size: 18px; font-weight: 700; letter-spacing: -0.03em; color: var(--ink);
+}
+.term-en {
+  font-size: 13px; color: var(--text-muted); letter-spacing: -0.01em;
+}
+.badge {
+  margin-left: auto; font-size: 11px; font-weight: 600; border-radius: 999px;
+  padding: 2px 9px; white-space: nowrap;
+  background: color-mix(in srgb, var(--chip) 14%, var(--surface-1));
+  color: var(--chip);
+  border: 1px solid color-mix(in srgb, var(--chip) 32%, var(--hairline));
+}
+.badge.missing {
+  background: var(--surface-2); color: var(--text-muted);
+  border-color: var(--hairline);
+}
+.missing-note {
+  margin: 12px 0 0; font-size: 13px; color: var(--text-muted); line-height: 1.6;
+}
+.term-metrics {
+  display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 9px;
+  font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums;
+}
+.term-metrics b { color: var(--text-secondary); font-weight: 650; }
+.quote-block {
+  margin-top: 12px; padding: 12px 14px;
+  background: var(--surface-2); border-radius: 10px;
+  border: 1px solid var(--gridline);
+}
+.quote-block + .quote-block { margin-top: 8px; }
+.quote-text {
+  margin: 0; font-size: 13.5px; line-height: 1.72;
+  color: var(--ink-muted); letter-spacing: -0.01em;
+}
+.quote-ko {
+  margin: 0 0 10px; font-size: 14.5px; line-height: 1.75;
+  color: var(--ink); letter-spacing: -0.02em; font-weight: 500;
+}
+.quote-ko .ko-label {
+  display: inline-block; margin-right: 6px;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.02em;
+  color: var(--navy);
+  border: 1px solid color-mix(in srgb, var(--navy) 28%, var(--hairline));
+  border-radius: 4px; padding: 1px 5px; vertical-align: 1px;
+}
+.quote-ko.muted { font-size: 12.5px; font-weight: 400; color: var(--text-muted); }
+.quote-cite {
+  margin: 8px 0 0; font-size: 11.5px; color: var(--text-muted);
+  line-height: 1.5;
+}
+.quote-cite .tier-a {
+  display: inline-block; font-size: 10px; font-weight: 700;
+  color: var(--navy); margin-right: 4px;
+}
+details.legend {
+  margin: 0 0 16px; font-size: 13px; color: var(--text-secondary);
+  background: var(--surface-2); border: 1px solid var(--hairline);
+  border-radius: 12px; padding: 10px 14px;
+}
+details.legend summary {
+  cursor: pointer; font-size: 12px; font-weight: 700; color: var(--text-muted);
+}
+details.legend p, details.legend table { margin: 8px 0 0; line-height: 1.6; }
+details.legend table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+details.legend td { padding: 3px 8px 3px 0; vertical-align: top; }
+details.legend td:first-child { font-weight: 700; color: var(--ink); white-space: nowrap; }
+.empty-note {
+  padding: 28px 4px; color: var(--text-muted); font-size: 14px; display: none;
+}
+.prose { font-size: 14.5px; line-height: 1.75; }
+.prose h2 {
+  font-size: 15px; margin: 26px 0 8px; letter-spacing: -0.02em;
+  padding-bottom: 6px; border-bottom: 1px solid var(--gridline);
+}
+.prose h3 { font-size: 13.5px; margin: 18px 0 6px; color: var(--ink-muted); }
+.prose table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 13px; }
+.prose th, .prose td {
+  border-bottom: 1px solid var(--gridline); padding: 6px 8px;
+  text-align: left; vertical-align: top; line-height: 1.55;
+}
+.prose th { color: var(--text-muted); font-size: 12px; font-weight: 700; }
+.prose ul, .prose ol { padding-left: 20px; }
+.prose li { margin-bottom: 4px; }
+.prose code {
+  background: var(--surface-2); border: 1px solid var(--hairline);
+  border-radius: 5px; padding: 1px 5px; font-size: 0.88em;
+}
+.series-link {
+  display: inline-block; margin-top: 6px; font-size: 12.5px;
+  color: var(--on-navy-muted);
+}
+.series-link a { color: var(--gold-strong); }
+@media (max-width: 620px) {
+  .badge { margin-left: 0; }
+}
+
+</style>
+</head>
+<body>
+<div class="viz-root">
+<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="../index.html">동향 용어집</a><a href="index.html">PDF 인용</a><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 동향</a><a href="https://songkyungho.github.io/ai-safety-library/" target="_blank" rel="noopener noreferrer">AI 안전 라이브러리</a></div><div class="global-nav-right"><span class="nav-current">소개</span></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>소개 · PDF 원문 인용 용어집</h1><p class="tagline">PDF에서 표제어를 고르고 원문으로 채운 방법</p></div></header>
+<main class="wrap">
+
+<div class="prose">
+<h2>동향 용어집과의 관계</h2>
+<p>참고한 것은 <b>선정 방법론</b>(빈도·지속성 신호, 토픽 쿼터, 개념어 중심)입니다.
+표제어 목록은 가져오지 않았고, <b>PDF 코퍼스 등장 빈도</b>로 다시 뽑았습니다.
+정의는 같은 리포지토리 원문입니다.</p>
+
+<h2>파이프라인</h2>
+<ol>
+<li><code>extract_pdf_corpus_candidates.py</code> — 전체 PDF n-gram · df · gloss_df</li>
+<li><code>extract_pdf_def_sections.py</code> — Glossary / Key Definitions / 법령 정의조 등</li>
+<li><code>select_pdf_glossary.py</code> — 점수·쿼터 선정 → 원문 정의 매칭</li>
+<li><code>pdf_localize.py</code> — 영문 표제어·정의 한글화</li>
+<li><code>build_pdf_site.py</code> — 이 사이트</li>
+</ol>
+<p>재빌드: <code>./run_pdf_build.sh</code></p>
+
+<h2>점수</h2>
+<p><code>corpus-frequency → score → bucket-quota → verbatim definitions</code></p>
+<ul>
+<li><b>df</b> — 용어가 등장한 서로 다른 PDF 수</li>
+<li><b>gloss_df</b> — 정의 섹션에도 오른 문서 수 (병기율 가점)</li>
+<li><b>year_span</b> — 출판연도 분산</li>
+<li>정의 매칭은 선정 후 단계이며, 정의 섹션 우선·본문 정의형 문장 보조</li>
+<li><b>한글화</b> — 영문 표제어에 번역어, 영문 정의에 편집 대역(<code>quote_ko</code>) 병기. 원문은 유지</li>
+</ul>
+
+<h2>규모</h2>
+<table>
+<tr><th>코퍼스 후보</th><td>75401</td></tr>
+<tr><th>선정 표제어</th><td>100</td></tr>
+<tr><th>원문 확보</th><td>100 (복수 68)</td></tr>
+<tr><th>본문 보조</th><td>0</td></tr>
+<tr><th>정의 미확보</th><td>0</td></tr>
+</table>
+
+<h2>버킷 배분</h2>
+<table>
+<tr><th>코드</th><th>분류</th><th>n</th></tr>
+<tr><td>A</td><td>정렬·모델 행동</td><td>9</td></tr><tr><td>B</td><td>안전성 평가·측정</td><td>12</td></tr><tr><td>C</td><td>오용·악용·보안</td><td>8</td></tr><tr><td>D</td><td>에이전트·자율성·능력</td><td>7</td></tr><tr><td>E</td><td>거버넌스·원칙</td><td>3</td></tr><tr><td>F</td><td>법·규제 개념</td><td>12</td></tr><tr><td>G</td><td>위험관리·표준</td><td>6</td></tr><tr><td>H</td><td>정보생태계·합성미디어</td><td>8</td></tr><tr><td>I</td><td>기반 기술·학습</td><td>11</td></tr><tr><td>J</td><td>기타·횡단</td><td>24</td></tr>
+</table>
+
+<h2>점수 상위 15</h2>
+<table>
+<tr><th>#</th><th>표제어</th><th>영문</th><th>df</th><th>score</th></tr>
+<tr><td>40</td><td>인공지능</td><td>artificial intelligence</td><td>43</td><td>23.8835</td></tr><tr><td>66</td><td>학습 데이터</td><td>Training Data</td><td>32</td><td>20.135</td></tr><tr><td>10</td><td>평가</td><td>evaluation</td><td>38</td><td>18.6692</td></tr><tr><td>30</td><td>능력</td><td>capability</td><td>36</td><td>18.5456</td></tr><tr><td>77</td><td>지식재산</td><td>Intellectual property</td><td>22</td><td>17.9981</td></tr><tr><td>78</td><td>개인정보</td><td>Personal Data</td><td>19</td><td>16.0667</td></tr><tr><td>22</td><td>악용</td><td>malicious use</td><td>23</td><td>15.9157</td></tr><tr><td>79</td><td>프라이버시</td><td>Privacy</td><td>38</td><td>15.8978</td></tr><tr><td>11</td><td>레드팀</td><td>red teaming</td><td>22</td><td>15.8634</td></tr><tr><td>80</td><td>편향</td><td>Bias</td><td>30</td><td>15.8027</td></tr><tr><td>52</td><td>위험관리</td><td>risk management</td><td>30</td><td>15.5729</td></tr><tr><td>12</td><td>안전장치</td><td>safeguards</td><td>28</td><td>15.3372</td></tr><tr><td>1</td><td>정렬</td><td>alignment</td><td>29</td><td>15.0814</td></tr><tr><td>13</td><td>벤치마크</td><td>benchmark</td><td>27</td><td>15.0425</td></tr><tr><td>81</td><td>신뢰성</td><td>Reliability</td><td>33</td><td>14.7094</td></tr>
+</table>
+</div>
+
+<footer class="site-footer">
+  PDF 코퍼스 빈도 선정 · 원문 인용 · Evidence Desk<br>
+  빌드 2026-09-09T00:14:34+09:00 ·
+  <a href="../index.html">동향 용어집</a> ·
+  <a href="about.html">방법론</a>
+</footer>
+</main>
+</div>
+<script id="search-index" type="application/json">{"docs": [{"id": "t1", "title": "정렬", "subtitle": "alignment", "hay": "정렬 alignment 정렬·모델 행동 Alignment An AI's propensity to use its capabilities in line with human intentions or values. Depending on the"}, {"id": "t2", "title": "기만", "subtitle": "deception", "hay": "기만 deception 정렬·모델 행동 Deception 기만 A form of influence characterised by systematically inducing false beliefs in others in pursuit of s 타인에게 체계적으로 잘못된 믿음을 형성하게 하는 모델 행동으로서 모델이 자신이 평 , 가되고 있음을 탐지하여 의도적으로 성능을 낮추거나 그 밖의 방식으로 감독을 약화시 키는 등 감"}, {"id": "t3", "title": "오정렬", "subtitle": "misalignment", "hay": "오정렬 misalignment 정렬·모델 행동 Misalignment Misalignment Misalignment An AI's propensity to use its capabilities in ways that conflict with human intentions or values. De An AI's propensity to use its capabilities in ways that conflict with human intentions, values, or n An AI's propensity to use its capabilities in ways that conflict with human intentions or values. De"}, {"id": "t4", "title": "사보타주", "subtitle": "Sabotage", "hay": "사보타주 Sabotage 정렬·모델 행동 Sabotage Generating fake content that presents an individual engaging in compromising activities, such as sex"}, {"id": "t5", "title": "환각", "subtitle": "hallucination", "hay": "환각 hallucination 정렬·모델 행동 Hallucination Inaccurate or misleading information generated by an AI system, for instance false facts or citation"}, {"id": "t6", "title": "목표 명세 오류", "subtitle": "goal misspecification", "hay": "목표 명세 오류 goal misspecification 정렬·모델 행동 Goal misspecification Goal misspecification Goal misspecification A mismatch between the objective given to an AI and the developer's intention, leading the AI to pur A failure mode in AI development where the specified objective serves as an imperfect proxy for the  A mismatch between the objective given to an AI and the developer's intention, leading the AI to pur"}, {"id": "t7", "title": "아첨", "subtitle": "sycophancy", "hay": "아첨 sycophancy 정렬·모델 행동 Sycophancy Sycophancy The tendency of general-purpose AI models and systems to flatter or validate their users, even when  The tendency of general-purpose AI models and systems to flatter or validate their users, even when "}, {"id": "t8", "title": "기만적 정렬", "subtitle": "Deceptive alignment", "hay": "기만적 정렬 Deceptive alignment 정렬·모델 행동 Deceptive alignment Deceptive alignment Misalignment that is difficult to detect, because the system behaves in ways that at least initially Misalignment that is difficult to detect, because the system behaves in ways that at least initially"}, {"id": "t9", "title": "다원적 정렬", "subtitle": "Pluralistic alignment", "hay": "다원적 정렬 Pluralistic alignment 정렬·모델 행동 Pluralistic alignment An approach to developing AI systems that seeks to represent and balance different, and sometimes co"}, {"id": "t10", "title": "평가", "subtitle": "evaluation", "hay": "평가 evaluation 안전성 평가·측정 Evaluations Evaluations Evaluations Evaluations Evaluations Systematic assessments of an AI system's performance, capabilities, vulnerabilities or potential imp Systematic assessments, before or after deployment, of the performance, capabilities, vulnerability, Systematic assessments of an AI system's performance, capabilities, vulnerabilities or potential imp Systematic assessments of an AI system's performance, capabilities, vulnerabilities or potential imp Systematic assessments of an AI system's performance, capabilities, vulnerabilities or potential imp"}, {"id": "t11", "title": "레드팀", "subtitle": "red teaming", "hay": "레드팀 red teaming 안전성 평가·측정 Red-teaming Red-teaming Red-teaming A systematic process in which dedicated individuals or teams search for vulnerabilities, limitations A systematic process in which dedicated individuals or teams search for vulnerabilities, limitations A systematic process in which dedicated individuals or teams search for vulnerabilities, limitations"}, {"id": "t12", "title": "안전장치", "subtitle": "safeguards", "hay": "안전장치 safeguards 안전성 평가·측정 Safeguard Guardrails A protective measure intended to prevent an AI system from causing harm. Built-in safety constraints to ensure that an AI system operates as desired and avoids harmful outco"}, {"id": "t13", "title": "벤치마크", "subtitle": "benchmark", "hay": "벤치마크 benchmark 안전성 평가·측정 Benchmark Benchmark Benchmark Benchmark Benchmark A standardised, often quantitative test or metric used to evaluate and compare the performance of AI A standardised, often quantitative test or metric used to evaluate and compare the performance of AI A standardised, often quantitative test or metric used to evaluate and compare the performance of AI A standardised, often quantitative test or metric used to evaluate and compare the performance of AI A standardised, often quantitative test or metric used to evaluate and compare the performance of AI"}, {"id": "t14", "title": "모델 평가", "subtitle": "Model evaluation", "hay": "모델 평가 Model evaluation 안전성 평가·측정 모델 평가 시스템적 위험 평가 기법으로서 시스템적 위험 평가 의 모든 단계 아래 정의 (ass) , (ass) ( 참조 에서 사용될 수 있는 기법 )"}, {"id": "t15", "title": "감사", "subtitle": "audit", "hay": "감사 audit 안전성 평가·측정 Audit Audit A formal review of an organisation's compliance with standards, policies, and procedures, typically  A formal review of an organisation's compliance with standards, policies, and procedures, typically "}, {"id": "t16", "title": "해석가능성", "subtitle": "interpretability", "hay": "해석가능성 interpretability 안전성 평가·측정 Interpretability Interpretability Interpretability Interpretability The degree to which humans can understand the inner workings of an AI model, including why it genera The degree to which humans can understand the inner workings of an AI model, including why it genera The degree to which humans can understand the inner workings of an AI model, including why it genera The degree to which humans can understand the inner workings of an AI model, including why it genera"}, {"id": "t17", "title": "탈옥", "subtitle": "jailbreak", "hay": "탈옥 jailbreak 안전성 평가·측정 Jailbreaking Jailbreaking Jailbreaking Jailbreaking Jailbreaking Generating and submitting prompts designed to bypass safeguards and make an AI system produce harmfu Generating and submitting prompts designed to bypass guardrails and make an AI system produce harmfu Generating and submitting prompts designed to bypass guardrails and make an AI system produce harmfu Generating and submitting prompts designed to bypass guardrails and make an AI system produce harmfu Generating and submitting prompts designed to bypass guardrails and make an AI system produce harmfu"}, {"id": "t18", "title": "프롬프트 인젝션", "subtitle": "prompt injection", "hay": "프롬프트 인젝션 prompt injection 안전성 평가·측정 프롬프트 인젝션 사용자가 텍스트 안에 숨겨 둔 지시가 AI의 시스템 규칙·안전 정책보다 우선 적용되도록 만들어, 모델이 본래 의도와 다른 행동을 수행하게 만드는 공격 기법입니다. 생성형 AI는 입"}, {"id": "t19", "title": "해석가능성 연구", "subtitle": "Interpretability Research", "hay": "해석가능성 연구 Interpretability Research 안전성 평가·측정 Interpretability research Interpretability research The study of how general-purpose AI models function internally, and the development of methods to ma The study of how general-purpose AI models function internally, and the development of methods to ma"}, {"id": "t20", "title": "검증 데이터", "subtitle": "검증 데이터", "hay": "검증 데이터 검증 데이터 안전성 평가·측정 검증 데이터 학습된 시스템에 대한 평가를 제공하고 특히 과소적합 또는 과대적 AI , (underfitting) 합 을 방지하는 등을 목적으로 해당 시스템의 학습 불가능한 파라미터 및 (ove"}, {"id": "t21", "title": "벤치마크 데이터셋", "subtitle": "벤치마크 데이터셋", "hay": "벤치마크 데이터셋 벤치마크 데이터셋 안전성 평가·측정 벤치마크 데이터셋 벤치마크 데이터셋은 AI 모델의 성능을 객관적이고 재현 가능하게 평가하기 위한 데이터 집합입니다. 단순한 학습용 데이터가 아니라 공통된 테스트 환경과 평가 지표를 함께 제공해 모델"}, {"id": "t22", "title": "악용", "subtitle": "malicious use", "hay": "악용 malicious use 오용·악용·보안 Malicious use Malicious use Using something, such as an AI system, to intentionally cause harm. Employing AI to intentionally cause harm."}, {"id": "t23", "title": "적대적 학습", "subtitle": "Adversarial training", "hay": "적대적 학습 Adversarial training 오용·악용·보안 Adversarial training Adversarial training Adversarial training A machine learning technique used to make models more reliable. First, developers construct inputs t A machine learning technique used to make models more reliable. First, developers construct 'adversa A machine learning technique used to make models more reliable. First, developers construct 'adversa"}, {"id": "t24", "title": "내부자 위협", "subtitle": "Insider threats", "hay": "내부자 위협 Insider threats 오용·악용·보안 내부자 위협 민감한 조직 자원에 접근할 수 있는 인간 모델 및 또는 시스템 예 고위 경영진 ·AI / AI ( : , 조직 연구팀의 고위 구성원 불만을 가진 직원 목표 조직에 침투한 산업 스파"}, {"id": "t25", "title": "악성코드", "subtitle": "Malware", "hay": "악성코드 Malware 오용·악용·보안 Malware Malware Malware Harmful software designed to damage, disrupt, or gain unauthorised access to a computer system. It i Harmful software designed to damage, disrupt, or gain unauthorised access to a computer system. It i Harmful software designed to damage, disrupt, or gain unauthorised access to a computer system. It i"}, {"id": "t26", "title": "사이버공격", "subtitle": "Cyberattack", "hay": "사이버공격 Cyberattack 오용·악용·보안 Cyberattack A malicious attempt to gain access to a computer system, network or digital device, for example, in "}, {"id": "t27", "title": "이중용도 과학", "subtitle": "Dual-use science", "hay": "이중용도 과학 Dual-use science 오용·악용·보안 Dual-use science Dual-use science Dual-use science Research and technology that can be applied for beneficial purposes, such as medicine or environment Research and technology that can be applied for beneficial purposes, such as in healthcare or energy Research and technology that can be applied for beneficial purposes, such as medicine or environment"}, {"id": "t28", "title": "독소", "subtitle": "Toxin", "hay": "독소 Toxin 오용·악용·보안 Toxin Toxin A poisonous substance produced by living organisms (such as bacteria, plants, or animals), or synthe A poisonous substance produced by living organisms (such as bacteria, plants, or animals), or synthe"}, {"id": "t29", "title": "제로데이 취약점", "subtitle": "Zero-day vulnerability", "hay": "제로데이 취약점 Zero-day vulnerability 오용·악용·보안 Zero-day vulnerability Zero-day vulnerability An undiscovered or unpatched security flaw in software or hardware. As attackers can already exploit An undiscovered or unpatched security flaw in software or hardware. As attackers can already exploit"}, {"id": "t30", "title": "능력", "subtitle": "capability", "hay": "능력 capability 에이전트·자율성·능력 Capabilities Capabilities Capabilities Capabilities The range of tasks or functions that an AI system can perform, and how competently it can perform th The range of tasks or functions that an AI system can perform, and how competently it can perform th The range of tasks or functions that an AI system can perform, and how competently it can perform th The range of tasks that an AI system can perform, and how competently it can perform them."}, {"id": "t31", "title": "에이전트", "subtitle": "agent", "hay": "에이전트 agent 에이전트·자율성·능력 AI agent AI agent AI agent Agent AI agent A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multi A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multi A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multi For the purposes of this section, 'agent' usually refers to a biological, chemical, or toxicological A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multi"}, {"id": "t32", "title": "AI 에이전트", "subtitle": "AI agent", "hay": "AI 에이전트 AI agent 에이전트·자율성·능력 AI agent AI agent AI agent AI agent AI agent A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multi A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multi A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multi A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multi A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multi"}, {"id": "t33", "title": "프론티어 AI", "subtitle": "frontier AI", "hay": "프론티어 AI frontier AI 에이전트·자율성·능력 Frontier AI 프론티어 AI A term sometimes used to refer to particularly capable AI that matches or exceeds the capabilities o 프론티어 AI는 공개·비공개 여부와 상관없이, 최첨단 수준의 성능을 보이며 광범위한 영향력과 잠재적 위험을 동시에 갖는 차세대 AI 모델군을 포괄적으로 지칭하는 용어입니다. 202"}, {"id": "t34", "title": "통제 상실", "subtitle": "loss of control", "hay": "통제 상실 loss of control 에이전트·자율성·능력 Loss of control scenario Loss of control scenario Loss of control scenario A scenario in which one or more general-purpose AI systems come to operate outside of anyone's contr A scenario in which one or more general-purpose AI systems come to operate outside of anyone's contr A scenario in which one or more general-purpose AI systems come to operate outside of anyone's contr"}, {"id": "t35", "title": "다중 에이전트 시스템", "subtitle": "Multi-agent system", "hay": "다중 에이전트 시스템 Multi-agent system 에이전트·자율성·능력 Multi-agent system A network of interacting (AI) agents that may adapt to each other's behaviour and goals, including b"}, {"id": "t36", "title": "자율 계획", "subtitle": "Autonomous planning", "hay": "자율 계획 Autonomous planning 에이전트·자율성·능력 Autonomous planning An AI system's ability to develop and execute multi-step strategies with little or no human guidance"}, {"id": "t37", "title": "공정성", "subtitle": "Fairness", "hay": "공정성 Fairness 거버넌스·원칙 Fairness A societal value according to which AI systems should make decisions that are free from bias or unju"}, {"id": "t38", "title": "알고리즘 투명성", "subtitle": "Algorithmic Transparency", "hay": "알고리즘 투명성 Algorithmic Transparency 거버넌스·원칙 Algorithmic transparency Algorithmic transparency The degree to which the factors informing general-purpose AI output, e.g. recommendations or decisio The degree to which the factors informing general-purpose AI output, e.g. recommendations or decisio"}, {"id": "t39", "title": "제도적 투명성", "subtitle": "Institutional transparency", "hay": "제도적 투명성 Institutional transparency 거버넌스·원칙 Institutional Transparency Institutional transparency Institutional transparency Institutional transparency The degree to which AI companies disclose technical or organisational information to public or gover The degree to which organisations publicly disclose information, such as (in the case of AI develope The degree to which AI companies disclose technical or organisational information to public or gover The degree to which AI companies disclose technical or organisational information to public or gover"}, {"id": "t40", "title": "인공지능", "subtitle": "artificial intelligence", "hay": "인공지능 artificial intelligence 법·규제 개념 인공지능 Artificial intelligence (AI) 인공지능 인공지능 인공지능 '인공지능'이란 학습, 추론, 지각, 판단, 언어의 이해 등 인간이 가진 지적 능력을 전자적 방법으로 구현한 것을 말 한다. The field of computer science focused on creating systems or machines capable of performing tasks th '인공지능'이란 학습, 추론, 지각, 판단, 언어의 이해 등 인간이 가진 지적 능력을 전자적 방법으로 구현 한 것을 말한다. 2.\u0007 '인공지능'이란 학습, 추론, 지각, 판단, 언어의 이해 등 인간이 가진 지적 능력을 전자적 방 법으로 구현한 것을 말한다. \u0007 ∙ 학습, 추론, 지각, 판단, 언어의 이해 등 인간이 가진 지적 능력을 전자적 방법으로 구현한 것 | 법 제2조"}, {"id": "t41", "title": "생성형 AI", "subtitle": "generative AI", "hay": "생성형 AI generative AI 법·규제 개념 생성형 인공지능 Generative AI 생성형 인공지능 생성형 인공지능 '생성형 인공지능'이란 입력한 데이터(「데이터 산업진흥 및 이용촉진에 관한 기본법」 제2조제1호에 따른 데이터 를 말한다. 이하 같다)의 구조와 특성을 모방하여 글, 소리, 그림, AI that can create new content such as text, images, or audio by learning patterns from existing dat '생성형 인공지능'이란 입력한 데이터(「데이터 산업진흥 및 이용촉진에 관한 기본법」 제2조제1호에 따른 데이터를 말한다. 이하 같다)의 구조와 특성을 모방하여 글, 소리, 그림,  '생성형 인공지능'이란 입력한 데이터(「데이터 산업진흥 및 이용촉진에 관한 기본법」 제2조 제1호에 따른 데이터를 말한다. 이하 같다)의 구조와 특성을 모방하여 글, 소리, 그림,"}, {"id": "t42", "title": "범용 AI", "subtitle": "general-purpose AI", "hay": "범용 AI general-purpose AI 법·규제 개념 General-purpose AI 범용 AI 에이전트 AI systems designed to perform a wide range of tasks across various domains, rather than being speci 범용 AI 에이전트는 특정 작업 자동화에 최적화된 기존 AI 에이전트와 달리, 서로 성격이 다른 다양한 작업을 하나의 시스템이 자율적으로 조합·전환하며 수행하도록 설계된 고도형 에"}, {"id": "t43", "title": "시스템적 위험", "subtitle": "systemic risk", "hay": "시스템적 위험 systemic risk 법·규제 개념 Systemic risks Systemic risks systemic risk acceptance criteria 시스템적 위험 수용 기준 시스템적 위험 평가 Risks that arise from how AI development and deployment changes human behaviour, organisational prac Broader societal risks associated with general-purpose AI development and deployment, beyond the cap 서명자가 자신의 모델로부터 발생하는 시스템적 위험의 수용 가능 여부를 결정하기 위 하여 프레임워크에서 정의한 기준 시스템적 위험 등급 아래 정 . (systemic risk tie 의 참조 는 시스템적 위험 수용 기준의 한 유형임 ) . 추가 내용은 이행조치 참조 4.1 . 시스템적 위험 식별 약정 에 따름 시스템적 위험 분석 약정 에 따름 및 시스템적 ( 2 ), ( 3 ) 위험 수용 여부 결정 약정 에 따름 을 모두 포괄하는 상위 개념 ( 4 )"}, {"id": "t44", "title": "적합성 평가", "subtitle": "Conformity Assessment", "hay": "적합성 평가 Conformity Assessment 법·규제 개념 적합성 평가 적합성 평가기관 고위험 시스템에 관한 제 장 제 절에 규정된 요건이 충족되었는지 여부를 입증하는 AI 3 2 절차 시험 인증 및 검사를 포함하여 제 자 적합성 평가 활동을 수행하는 기관 , 3"}, {"id": "t45", "title": "고영향 인공지능", "subtitle": "high-impact AI", "hay": "고영향 인공지능 high-impact AI 법·규제 개념 고영향 인공지능 고영향 인공지능 고영향 인공지능 고영향 인공지능 '고영향 인공지능'이란 사람의 생명, 신체의 안전 및 기본권에 중대한 영향을 미치거나 위험을 초래할 우려가 있 는 인공지능시스템으로서 다음 각 목의 어느 하나의 영역에서 활용되는  '고영향 인공지능'이란 사람의 생명, 신체의 안전 및 기본권에 중대한 영향을 미치거나 위험을 초래할 우려 가 있는 인공지능시스템으로서 다음 각 목의 어느 하나의 영역에서 활용되는  '고영향 인공지능'이란 사람의 생명, 신체의 안전 및 기본권에 중대한 영향을 미치거나 위험을 초래할 우려가 있는 인공지능시스템으로서 다음 각 목의 어느 하나의 영역에서 활용되는 것 '고영향 인공지능'이란 사람의 생명, 신체의 안전 및 기본권에 중대한 영향을 미치거나 위험 을 초래할 우려가 있는 인공지능시스템으로서 다음 각 목의 어느 하나의 영역에서 활용되는 "}, {"id": "t46", "title": "인공지능시스템", "subtitle": "인공지능시스템", "hay": "인공지능시스템 인공지능시스템 법·규제 개념 인공지능시스템 인공지능시스템 인공지능시스템 인공지능시스템 '인공지능시스템'이란 다양한 수준의 자율성과 적응성을 가지고 주어진 목표를 위하여 실제 및 가상환경에 영향 을 미치는 예측, 추천, 결정 등의 결과물을 추론하는 인공지능 기반 시스 '인공지능시스템'이란 다양한 수준의 자율성과 적응성을 가지고 주어진 목표를 위하여 실제 및 가상환경에 영향을 미치는 예측, 추천, 결정 등의 결과물을 추론하는 인공지능 기반 시스템 '인공지능시스템'이란 다양한 수준의 자율성과 적응성을 가지고 주어진 목표를 위하여 실제 및 가상환경에 영향을 미치는 예측, 추천, 결정 등의 결과물을 추론하는 인공지능 기반 시스  ∙ 다양한 수준의 자율성과 적응성을 가지고 주어진 목표를 위하여 실제 및 가상환경에 영향을 미치는 예측, 추천, 결정 등의 결과물을 추론하는 인공지능 기반 시스템 | 법 제2조"}, {"id": "t47", "title": "시스템적 위험 평가", "subtitle": "Systemic risk assessment", "hay": "시스템적 위험 평가 Systemic risk assessment 법·규제 개념 Systemic risks Systemic risks 시스템적 위험 평가 Risks that arise from how AI development and deployment changes human behaviour, organisational prac Broader societal risks associated with general-purpose AI development and deployment, beyond the cap 시스템적 위험 식별 약정 에 따름 시스템적 위험 분석 약정 에 따름 및 시스템적 ( 2 ), ( 3 ) 위험 수용 여부 결정 약정 에 따름 을 모두 포괄하는 상위 개념 ( 4 )"}, {"id": "t48", "title": "인공지능기술", "subtitle": "인공지능기술", "hay": "인공지능기술 인공지능기술 법·규제 개념 인공지능기술 인공지능기술 인공지능기술 인공지능기술 '인공지능기술'이란 인공지능을 구현하기 위하여 필요한 하드웨어ㆍ소프트웨어 기술 또는 그 활용 기술을 말한 다. '인공지능기술'이란 인공지능을 구현하기 위하여 필요한 하드웨어ㆍ소프트웨어 기술 또는 그 활용 기술 을 말한다. \u0007 '인공지능기술'이란 인공지능을 구현하기 위하여 필요한 하드웨어ㆍ소프트웨어 기술 또는 그 활용 기술을 말한다. \u0007 ∙ 인공지능을 구현하기 위하여 필요한 하드웨어ㆍ소프트웨어 기술 또는 그 활용 기술 | 법 제2조"}, {"id": "t49", "title": "인공지능산업", "subtitle": "인공지능산업", "hay": "인공지능산업 인공지능산업 법·규제 개념 인공지능산업 인공지능산업 인공지능산업 '인공지능산업'이란 인공지능 또는 인공지능기술을 활용한 제품(이하 '인공지능제품'이라 한다)을 개발ㆍ제조ㆍ 생산 또는 유통하거나 이와 관련한 서비스(이하 '인공지능서비스'라 한다) '인공지능산업'이란 인공지능 또는 인공지능기술을 활용한 제품(이하 '인공지능제품'이라 한다)을 개 발ㆍ제조ㆍ생산 또는 유통하거나 이와 관련한 서비스(이하 '인공지능서비스'라 한다) '인공지능산업'이란 인공지능 또는 인공지능기술을 활용한 제품(이하 '인공지능제품'이라 한 다)을 개발ㆍ제조ㆍ생산 또는 유통하거나 이와 관련한 서비스(이하 '인공지능서비스'라 한 다"}, {"id": "t50", "title": "인공지능 수명주기", "subtitle": "인공지능 수명주기", "hay": "인공지능 수명주기 인공지능 수명주기 법·규제 개념 인공지능 수명주기 ∙ 인공지능의 개발, 배포, 운영 및 폐기에 이르기까지의 전 과정 | 고시 제2조"}, {"id": "t51", "title": "시스템적 위험 등급", "subtitle": "Systemic risk tiers", "hay": "시스템적 위험 등급 Systemic risk tiers 법·규제 개념 Systemic risks Systemic risks 시스템적 위험 등급 Risks that arise from how AI development and deployment changes human behaviour, organisational prac Broader societal risks associated with general-purpose AI development and deployment, beyond the cap 모델로부터 발생하는 일정 수준의 시스템적 위험에 대응하도록 프레임워크에서 정의된 단계 시스템적 위험 등급은 시스템적 위험 수용 기준의 한 유형임 . 추가 내용은 이행조치 참조 4."}, {"id": "t52", "title": "위험관리", "subtitle": "risk management", "hay": "위험관리 risk management 위험관리·표준 Risk management Risk management The systematic process of identifying, evaluating, mitigating and monitoring risks. The systematic process of identifying, evaluating, mitigating and monitoring risks."}, {"id": "t53", "title": "AI 생애주기", "subtitle": "AI lifecycle", "hay": "AI 생애주기 AI lifecycle 위험관리·표준 AI lifecycle The distinct stages of developing AI, including data collection and pre-processing, pre-training, fi"}, {"id": "t54", "title": "위험 허용도", "subtitle": "risk tolerance", "hay": "위험 허용도 risk tolerance 위험관리·표준 Risk tolerance Risk tolerance The level of risk that an individual or organisation is willing to take on. The level of risk that an individual or organisation is willing to take on."}, {"id": "t55", "title": "위험 임계값", "subtitle": "risk threshold", "hay": "위험 임계값 risk threshold 위험관리·표준 Risk threshold Risk threshold A quantitative or qualitative limit that distinguishes acceptable from unacceptable risks and trigge A quantitative or qualitative limit that distinguishes acceptable from unacceptable risks and trigge"}, {"id": "t56", "title": "위험관리체계", "subtitle": "위험관리체계", "hay": "위험관리체계 위험관리체계 위험관리·표준 위험관리체계 ∙ 인공지능 관련 안전사고를 모니터링하고 대응하는 책임 주체의 권한과 의무 등을 규정한 체계 | 고시 제2조"}, {"id": "t57", "title": "조화 표준", "subtitle": "harmonised standard", "hay": "조화 표준 harmonised standard 위험관리·표준 조화 표준 제 호 제 조 에 정의된 조화된 표준 Regulation (EU) 1025/2012 2 (1)(c)"}, {"id": "t58", "title": "허위조작정보", "subtitle": "Disinformation", "hay": "허위조작정보 Disinformation 정보생태계·합성미디어 Disinformation Disinformation False or misleading information generated or spread with the intent to deceive or influence people.  False or misleading information generated or spread with the intent to deceive or influence people. "}, {"id": "t59", "title": "합성 데이터", "subtitle": "synthetic-data", "hay": "합성 데이터 synthetic-data 정보생태계·합성미디어 Synthetic data Synthetic data Synthetic data Data like text or images that has been artificially generated, for instance by general-purpose AI sy Artificially generated data, such as text or images, that is sometimes used to train AI models, for  Data like text or images that has been artificially generated, for instance by general-purpose AI sy"}, {"id": "t60", "title": "데이터 출처", "subtitle": "Data Provenance", "hay": "데이터 출처 Data Provenance 정보생태계·합성미디어 Data provenance A historical record of where data comes from and how it has been processed."}, {"id": "t61", "title": "딥페이크", "subtitle": "deepfake", "hay": "딥페이크 deepfake 정보생태계·합성미디어 Deepfake Deepfake Deepfake Deepfake Deepfake A type of AI-generated fake content, consisting of audio or visual content, that misrepresents real  A type of AI-generated fake content, consisting of audio or visual content, that misrepresents real  A type of AI-generated audio or visual content that depicts people saying or doing things they did n A type of AI-generated fake content, consisting of audio or visual content, that misrepresents real  A type of AI-generated fake content, consisting of audio or visual content, that misrepresents real "}, {"id": "t62", "title": "허위정보", "subtitle": "Misinformation", "hay": "허위정보 Misinformation 정보생태계·합성미디어 Misinformation False or misleading information that is generated or spread without intent to deceive. See 'Disinfor"}, {"id": "t63", "title": "워터마크", "subtitle": "Watermark", "hay": "워터마크 Watermark 정보생태계·합성미디어 Watermark Watermark A subtle, often imperceptible pattern embedded within AI-generated content (such as text, images, or A subtle, often imperceptible pattern embedded within AI-generated content (such as text, images, or"}, {"id": "t64", "title": "AI 생성 가짜 콘텐츠", "subtitle": "AI-generated fake content", "hay": "AI 생성 가짜 콘텐츠 AI-generated fake content 정보생태계·합성미디어 AI-generated fake content AI-generated fake content AI-generated fake content AI-generated fake content Audio, text, or visual content, produced by generative AI, that depicts people or events in a way th Audio, text, or visual content, produced by generative AI, that depicts people or events in a way th Audio, text, or visual content, produced by generative AI, that depicts people or events in a way th Audio, text, or visual content, produced by generative AI, that depicts people or events in a way th"}, {"id": "t65", "title": "합성데이터", "subtitle": "합성데이터", "hay": "합성데이터 합성데이터 정보생태계·합성미디어 합성데이터 합성데이터는 실제 데이터를 직접 사용하지 않고, 원본 데이터의 패턴과 분포를 참고해 알고리즘이 새롭게 생성한 인공 데이터입니다. 실제 존재하는 개인이나 사건을 그대로 반영하지 않기"}, {"id": "t66", "title": "학습 데이터", "subtitle": "Training Data", "hay": "학습 데이터 Training Data 기반 기술·학습 학습 데이터 학습 가능한 파라미터를 조정함으로써 시스템을 학습시키는 데 사용되는 데이터 AI"}, {"id": "t67", "title": "가중치", "subtitle": "Weights", "hay": "가중치 Weights 기반 기술·학습 Weights Weights Weights Weights Model parameters that represent the strength of connection between nodes in a neural network. Weight Model parameters that represent the strength of connection between nodes in a neural network. Weight Model parameters that represent the strength of connection between nodes in a neural network. Weight Model parameters that represent the strength of connection between nodes in a neural network. Weight"}, {"id": "t68", "title": "컴퓨팅", "subtitle": "Compute", "hay": "컴퓨팅 Compute 기반 기술·학습 Compute Compute Compute Compute Shorthand for 'computational resources', which refers to the hardware (e.g. graphics processing unit Shorthand for 'computational resources', which refers to the hardware (e.g. GPUs), software (e.g. da Shorthand for 'computational resources', which refers to the hardware (e.g. GPUs), software (e.g. da Shorthand for 'computational resources', which refers to the hardware (e.g. GPUs), software (e.g. da"}, {"id": "t69", "title": "파라미터", "subtitle": "Parameters", "hay": "파라미터 Parameters 기반 기술·학습 Parameters The numerical components of an AI model, such as weights and biases, that are learned from data duri"}, {"id": "t70", "title": "딥러닝", "subtitle": "deep-learning", "hay": "딥러닝 deep-learning 기반 기술·학습 Deep learning Deep learning Deep learning A machine learning technique in which large amounts of data and compute are used to train multilayer A machine learning technique in which large amounts of compute are used to train multilayered, artif A machine learning technique in which large amounts of data and compute are used to train multilayer"}, {"id": "t71", "title": "신경망", "subtitle": "neural network", "hay": "신경망 neural network 기반 기술·학습 Neural network Neural network Neural network A type of AI model consisting of a mathematical structure that is inspired by the human brain and co A type of AI model composed of interconnected nodes (loosely inspired by biological neurons), organi A type of AI model consisting of a mathematical structure that is inspired by the human brain and co"}, {"id": "t72", "title": "추론", "subtitle": "Inference", "hay": "추론 Inference 기반 기술·학습 Inference Inference Inference Inference The process in which an AI generates outputs based on a given input, thereby applying the knowledge  The process in which an AI generates outputs based on a given input, thereby applying the knowledge  The process in which an AI generates outputs based on a given input, thereby applying the knowledge  The process in which an AI generates outputs based on a given input, thereby applying the knowledge "}, {"id": "t73", "title": "파인튜닝", "subtitle": "fine-tuning", "hay": "파인튜닝 fine-tuning 기반 기술·학습 Fine-tuning Fine-tuning Fine-tuning 미세조정 The process of adapting an AI model after its initial training to a specific task or making it more  The process of adapting a pre-trained AI model to a specific task or making it more useful in genera The process of adapting a pre-trained AI model to a specific task or making it more useful in genera 미세조정은 이미 학습된 AI 모델을 새로운 목적이나 환경에 맞게 다시 조정하는 학습 과정으로, 대규모 데이터로 사전 학습된 모델이 특정 분야에서 더 정확하고 안정적으로 작동하도록 "}, {"id": "t74", "title": "파운데이션 모델", "subtitle": "foundation model", "hay": "파운데이션 모델 foundation model 기반 기술·학습 Foundation model 파운데이션 모델 A general-purpose AI model designed to be adaptable to a wide range of downstream tasks. 파운데이션 모델은 방대한 양의 데이터로 학습된 범용 AI 모델로, 한 번의 학습을 통해 다양한 작업에 활용할 수 있는 구조를 말합니다. 기존의 AI 모델이 특정 목적(예: 번역, "}, {"id": "t75", "title": "학습 데이터", "subtitle": "학습 데이터", "hay": "학습 데이터 학습 데이터 기반 기술·학습 학습 데이터 학습 가능한 파라미터를 조정함으로써 시스템을 학습시키는 데 사용되는 데이터 AI"}, {"id": "t76", "title": "대규모 언어 모델", "subtitle": "LLM", "hay": "대규모 언어 모델 LLM 기반 기술·학습 LLM LLM은 방대한 텍스트를 학습해 단어 간 패턴과 의미를 확률적으로 예측하는 언어 중심 AI 모델입니다. 문장 내 모든 단어 간의 관계를 동시에 고려하여 각 단어의 문맥적 중요도를 "}, {"id": "t77", "title": "지식재산", "subtitle": "Intellectual property", "hay": "지식재산 Intellectual property 기타·횡단 Intellectual property Intellectual property Creations of the mind over which legal rights may be granted, including literary and artistic works, Creations of the mind over which legal rights may be granted, including literary and artistic works,"}, {"id": "t78", "title": "개인정보", "subtitle": "Personal Data", "hay": "개인정보 Personal Data 기타·횡단 개인정보 제 조 에 정의된 개인정보 Regulation (EU) 2016/679 4 (1)"}, {"id": "t79", "title": "프라이버시", "subtitle": "Privacy", "hay": "프라이버시 Privacy 기타·횡단 Privacy Privacy Privacy Privacy A person's or group's right to control how others access or process their sensitive information and  A person's right to control how others access or process data about them. | a mathematical proof, to A person's or group's right to control how others access or process their sensitive information and  A person's or group's right to control how others access or process their sensitive information and "}, {"id": "t80", "title": "편향", "subtitle": "Bias", "hay": "편향 Bias 기타·횡단 Bias Bias Systematic errors in algorithmic systems that favour certain groups or worldviews and often create u Systematic errors in algorithmic systems that favour certain groups or worldviews and often create u"}, {"id": "t81", "title": "신뢰성", "subtitle": "Reliability", "hay": "신뢰성 Reliability 기타·횡단 Reliability Reliability An AI system's ability to consistently perform its intended function. An AI system's ability to consistently perform its intended function."}, {"id": "t82", "title": "법 집행", "subtitle": "Law Enforcement", "hay": "법 집행 Law Enforcement 기타·횡단 법 집행 기관 법 집행 공공 안전에 대한 위협을 방지하고 이에 대비하는 기능을 포함하여 범죄의 예방 (a) , , 탐지 수사 또는 기소 혹은 형사 처벌의 집행을 담당하는 모든 공공 기관 , , 공공 안전 범죄의 예방 탐지 수사 또는 기소 혹은 형사 처벌의 집행을 위하여 법 집행 기관이 직 , , , 접 수행하거나 이를 대리하여 수행하는 활동을 의미하며 공공 안전에 대한 위협으로부 "}, {"id": "t83", "title": "저작권", "subtitle": "Copyright", "hay": "저작권 Copyright 기타·횡단 Copyright Copyright A form of legal protection granted to creators of original works, giving them exclusive rights to us A form of legal protection granted to creators of original works, giving them exclusive rights to us"}, {"id": "t84", "title": "자동화", "subtitle": "Automation", "hay": "자동화 Automation 기타·횡단 Automation Automation The use of technology to perform tasks with reduced or no human involvement. The use of technology to perform tasks with reduced or no human involvement."}, {"id": "t85", "title": "민감정보", "subtitle": "Sensitive data", "hay": "민감정보 Sensitive data 기타·횡단 Sensitive data Sensitive data Sensitive data Information that, if disclosed or mishandled, could result in harm, embarrassment, inconvenience, or Information that, if disclosed or mishandled, could result in harm, embarrassment, inconvenience, or Information that, if disclosed or mishandled, could result in harm, embarrassment, inconvenience, or"}, {"id": "t86", "title": "데이터 수집", "subtitle": "Data collection", "hay": "데이터 수집 Data collection 기타·횡단 Data collection and pre-processing Data collection and curation Data collection and pre-processing A stage of AI development in which developers and data workers collect, clean, label, standardise, a A stage of AI development in which developers and data workers collect, clean, label, standardise, a A stage of AI development in which developers and data workers collect, clean, label, standardise, a"}, {"id": "t87", "title": "알고리즘", "subtitle": "Algorithm", "hay": "알고리즘 Algorithm 기타·횡단 Algorithm A set of rules or instructions that enable an AI system to process data and perform specific tasks."}, {"id": "t88", "title": "차별", "subtitle": "Discrimination", "hay": "차별 Discrimination 기타·횡단 Discrimination Discrimination The unfair treatment of individuals or groups based on their attributes, such as race, gender, age,  The unfair treatment of individuals or groups based on their attributes, such as race, gender, age, "}, {"id": "t89", "title": "디지털 인프라", "subtitle": "Digital infrastructure", "hay": "디지털 인프라 Digital infrastructure 기타·횡단 Digital infrastructure Digital infrastructure Digital infrastructure The foundational services and facilities necessary for digital technologies to function, including h The foundational services and facilities necessary for computerbased technologies to function, inclu The foundational services and facilities necessary for digital technologies to function, including h"}, {"id": "t90", "title": "협소 AI", "subtitle": "Narrow AI", "hay": "협소 AI Narrow AI 기타·횡단 Narrow AI Narrow AI An AI model or system that is designed to perform only one specific task or a few very similar tasks A kind of AI that is specialised to perform one specific task or a few very similar tasks, such as r"}, {"id": "t91", "title": "노동시장", "subtitle": "Labour Market", "hay": "노동시장 Labour Market 기타·횡단 Labour market Labour market disruption Labour market Labour market disruption Labour market The system in which employers seek to hire workers and workers seek employment, encompassing job cre Significant and often complex changes in the labour market that affect job availability, required sk The system in which employers seek to hire workers and workers seek employment, encompassing job cre Significant and often complex changes in the labour market that affect job availability, required sk The system in which employers seek to hire workers and workers seek employment, encompassing job cre"}, {"id": "t92", "title": "오작동", "subtitle": "Malfunction", "hay": "오작동 Malfunction 기타·횡단 Malfunction The failure of a system to operate as intended by its developer or user, resulting in incorrect or h"}, {"id": "t93", "title": "모달리티", "subtitle": "Modalities", "hay": "모달리티 Modalities 기타·횡단 Modalities Modalities Modalities Modalities Modalities The kinds of data that an AI system can competently receive as input and produce as output, includin The kinds of data that an AI system can competently receive as input and produce as output, includin The kinds of data that an AI model or system can receive as input and produce as output, such as tex The kinds of data that an AI system can competently receive as input and produce as output, includin The kinds of data that an AI system can competently receive as input and produce as output, includin"}, {"id": "t94", "title": "설득", "subtitle": "Persuasion", "hay": "설득 Persuasion 기타·횡단 Persuasion A form of influence that uses communication - including rational argument, emotional appeals, or app"}, {"id": "t95", "title": "AI 리터러시", "subtitle": "AI literacy", "hay": "AI 리터러시 AI literacy 기타·횡단 리터러시 AI 제공자 운용자 및 영향을 받는 자들이 본 규정의 맥락에서 각자의 권리와 의무를 고려 , 하여 시스템을 충분한 정보에 입각하여 활용할 수 있도록 하고 의 기회와 위험 , AI , A"}, {"id": "t96", "title": "암호화", "subtitle": "Encryption", "hay": "암호화 Encryption 기타·횡단 Encryption The process of converting information into a coded format that can only be read by authorised partie"}, {"id": "t97", "title": "해킹", "subtitle": "Hacking", "hay": "해킹 Hacking 기타·횡단 Hacking Hacking The act of exploiting vulnerabilities or weaknesses in a computer system, network, or software to ga The act of exploiting vulnerabilities or weaknesses in a computer system, network, or software to ga"}, {"id": "t98", "title": "최신(최고 수준)", "subtitle": "State-of-the-art", "hay": "최신(최고 수준) State-of-the-art 기타·횡단 최첨단 수준 모범사례 를 넘어서는 관련 연구 거버넌스 및 기술의 최전선 (best practice) · (frontier)"}, {"id": "t99", "title": "개발자", "subtitle": "Developer", "hay": "개발자 Developer 기타·횡단 Developer Developer Any organisation that designs, builds, integrates, adapts or combines AI models or systems. Any organisation that designs, builds, integrates, adapts or combines AI models or systems."}, {"id": "t100", "title": "시험 데이터", "subtitle": "Testing Data", "hay": "시험 데이터 Testing Data 기타·횡단 테스트 데이터 시스템이 시장에 출시되거나 서비스가 개시되기 전에 해당 시스템의 예상 성능을 확 AI 인하기 위해 독립적인 평가를 제공하는 데 사용되는 데이터"}]}</script>
+<script>
+(function() {
+  document.addEventListener('click', (ev) => {
+    const a = ev.target.closest && ev.target.closest('a[href]');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (/^https?:\/\//i.test(href) || href.startsWith('//')) {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    }
+  }, true);
+  const box = document.getElementById('omniBox');
+  const panel = document.getElementById('omniResults');
+  if (!box) return;
+  if (panel) panel.classList.add('hidden');
+  document.addEventListener('keydown', (ev) => {
+    if (ev.key === '/' && ev.target.tagName !== 'INPUT' && ev.target.tagName !== 'TEXTAREA') {
+      ev.preventDefault();
+      box.focus();
+    }
+    if (ev.key === 'Escape') {
+      box.blur();
+      if (panel) panel.classList.add('hidden');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

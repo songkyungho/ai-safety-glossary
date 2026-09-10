@@ -1,8 +1,9 @@
 # AI 안전 용어집
 
-AI 안전 동향 코퍼스에서 용어집으로 만들 값어치가 있는 표제어 **100개**를 뽑아
-실제 용례와 수집 지표를 붙여 보여 준다. 독자는 비전문가, 표제어는 **개념어만**
-— 기관·법령·모델명 같은 고유명사는 별도 부록 대상이다.
+동향 코퍼스에서 뽑은 표제어(집필 정의·참고 기사)와 PDF 리포지토리에서 뽑은
+표제어(원문 인용)를 **한 목록**으로 보여 준다. 카드의 **동향 / PDF / 양쪽**
+칩이 출처다. 독자는 비전문가, 표제어는 **개념어만** — 기관·법령·모델명 같은
+고유명사는 별도 부록 대상이다.
 
 - **공개 사이트:** https://songkyungho.github.io/ai-safety-glossary/
 - **소개:** https://songkyungho.github.io/ai-safety-glossary/about.html
@@ -10,10 +11,22 @@ AI 안전 동향 코퍼스에서 용어집으로 만들 값어치가 있는 표�
 같은 시리즈: [AI 안전 동향](https://songkyungho.github.io/ai-safety-digest/) ·
 [AI 안전 라이브러리](https://songkyungho.github.io/ai-safety-library/)
 
+## PDF 원문 인용
+
+표제어는 PDF 코퍼스 빈도, 정의는 같은 리포지토리 원문. 빌드 후 동향판과
+병합되어 통합 사이트에 합쳐진다 (`?src=pdf` 로 PDF 출처만 필터).
+
+```bash
+./run_pdf_build.sh      # PDF 파이프라인 → 병합 → docs/index.html
+```
+
+- 방법론: [`docs/pdf-glossary.md`](docs/pdf-glossary.md)
+- 예전 `docs/pdf/` 경로는 통합본으로 리다이렉트한다.
+
 ## 빠른 사용
 
 ```bash
-./run_build.sh          # 전체 재빌드 (후보 추출 → 표제어 → 지표 → 용례 → 사이트)
+./run_build.sh          # 동향 재빌드 → 병합 → 통합 사이트
 ```
 
 개별 단계:
