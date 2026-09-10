@@ -1,43 +1,43 @@
 n,bucket_code,head,en,df,gloss_df,score,status,n_defs
 1,A,정렬,alignment,29,2,15.0814,found,1
 2,A,기만,deception,18,3,12.7351,multi,2
-3,A,오정렬,misalignment,15,2,6.5999,multi,3
+3,A,오정렬,misalignment,15,2,6.5999,multi,2
 4,A,Sabotage,Sabotage,13,1,5.7482,found,1
 5,A,환각,hallucination,10,1,5.7364,found,1
-6,A,목표 명세 오류,goal misspecification,3,2,3.8061,multi,3
-7,A,아첨,sycophancy,7,1,3.7117,multi,2
+6,A,목표 명세 오류,goal misspecification,3,2,3.8061,multi,2
+7,A,아첨,sycophancy,7,1,3.7117,found,1
 8,A,Deceptive alignment,Deceptive alignment,3,1,3.2366,multi,2
 9,A,Pluralistic alignment,Pluralistic alignment,3,1,3.0528,found,1
-10,B,평가,evaluation,38,7,18.6692,multi,5
-11,B,레드팀,red teaming,22,4,15.8634,multi,4
+10,B,평가,evaluation,38,7,18.6692,multi,2
+11,B,레드팀,red teaming,22,4,15.8634,multi,2
 12,B,안전장치,safeguards,28,4,15.3372,multi,2
 13,B,벤치마크,benchmark,27,3,15.0425,multi,5
 14,B,Model evaluation,Model evaluation,19,2,14.4445,found,1
-15,B,감사,audit,23,2,13.3067,multi,2
-16,B,해석가능성,interpretability,20,3,12.2636,multi,4
-17,B,탈옥,jailbreak,14,2,6.8328,multi,5
+15,B,감사,audit,23,2,13.3067,found,1
+16,B,해석가능성,interpretability,20,3,12.2636,multi,2
+17,B,탈옥,jailbreak,14,2,6.8328,multi,4
 18,B,프롬프트 인젝션,prompt injection,8,0,5.4573,found,1
-19,B,Interpretability Research,Interpretability Research,3,1,3.1274,multi,2
+19,B,Interpretability Research,Interpretability Research,3,1,3.1274,found,1
 20,B,검증 데이터,검증 데이터,2,1,2.476,found,1
 21,B,벤치마크 데이터셋,벤치마크 데이터셋,2,0,1.861,found,1
 22,C,악용,malicious use,23,3,15.9157,multi,2
-23,C,Adversarial training,Adversarial training,7,2,6.4307,multi,3
+23,C,Adversarial training,Adversarial training,7,2,6.4307,multi,2
 24,C,Insider threats,Insider threats,10,1,6.1574,found,1
 25,C,Malware,Malware,12,2,5.9678,multi,3
 26,C,Cyberattack,Cyberattack,10,3,5.686,found,1
-27,C,Dual-use science,Dual-use science,3,2,3.7573,multi,3
-28,C,Toxin,Toxin,4,2,3.3529,multi,2
+27,C,Dual-use science,Dual-use science,3,2,3.7573,multi,2
+28,C,Toxin,Toxin,4,2,3.3529,found,1
 29,C,Zero-day vulnerability,Zero-day vulnerability,4,1,3.2896,multi,2
-30,D,능력,capability,36,7,18.5456,multi,4
+30,D,능력,capability,36,7,18.5456,multi,3
 31,D,에이전트,agent,27,2,14.6067,multi,5
 32,D,AI 에이전트,AI agent,18,2,11.2182,multi,5
 33,D,프론티어 AI,frontier AI,24,1,9.8184,multi,2
-34,D,통제 상실,loss of control,13,2,8.3113,multi,3
+34,D,통제 상실,loss of control,13,2,8.3113,multi,2
 35,D,Multi-agent system,Multi-agent system,5,1,3.823,found,1
 36,D,Autonomous planning,Autonomous planning,2,1,2.476,found,1
 37,E,Fairness,Fairness,23,3,13.6023,found,1
-38,E,Algorithmic Transparency,Algorithmic Transparency,6,1,4.0717,multi,2
-39,E,Institutional transparency,Institutional transparency,3,2,4.0106,multi,4
+38,E,Algorithmic Transparency,Algorithmic Transparency,6,1,4.0717,found,1
+39,E,Institutional transparency,Institutional transparency,3,2,4.0106,multi,3
 40,F,인공지능,artificial intelligence,43,7,23.8835,multi,5
 41,F,생성형 AI,generative AI,23,3,13.1047,multi,4
 42,F,범용 AI,general-purpose AI,21,4,11.7046,multi,2
@@ -50,52 +50,52 @@ n,bucket_code,head,en,df,gloss_df,score,status,n_defs
 49,F,인공지능산업,인공지능산업,5,3,4.5085,multi,3
 50,F,인공지능 수명주기,인공지능 수명주기,4,2,4.4427,found,1
 51,F,Systemic risk tiers,Systemic risk tiers,4,2,4.3371,multi,3
-52,G,위험관리,risk management,30,8,15.5729,multi,2
+52,G,위험관리,risk management,30,8,15.5729,found,1
 53,G,AI lifecycle,AI lifecycle,15,2,13.5394,found,1
 54,G,위험 허용도,risk tolerance,8,2,7.5802,multi,2
 55,G,위험 임계값,risk threshold,6,2,5.7718,multi,2
 56,G,위험관리체계,위험관리체계,4,1,3.05,found,1
 57,G,harmonised standard,harmonised standard,2,1,1.6468,found,1
-58,H,Disinformation,Disinformation,13,1,9.8098,multi,2
-59,H,Synthetic Data,synthetic-data,12,2,7.4859,multi,3
+58,H,Disinformation,Disinformation,13,1,9.8098,found,1
+59,H,Synthetic Data,synthetic-data,12,2,7.4859,multi,2
 60,H,Data Provenance,Data Provenance,11,2,7.113,found,1
 61,H,딥페이크,deepfake,12,2,6.7906,multi,5
 62,H,Misinformation,Misinformation,15,1,6.2105,found,1
-63,H,Watermark,Watermark,10,1,5.1437,multi,2
-64,H,AI-generated fake content,AI-generated fake content,2,1,2.9605,multi,4
+63,H,Watermark,Watermark,10,1,5.1437,found,1
+64,H,AI-generated fake content,AI-generated fake content,2,1,2.9605,multi,2
 65,H,합성데이터,합성데이터,3,0,1.9918,found,1
 66,I,Training Data,Training Data,32,6,20.135,found,1
-67,I,Weights,Weights,21,6,14.6577,multi,4
-68,I,Compute,Compute,30,3,14.555,multi,4
+67,I,Weights,Weights,21,6,14.6577,multi,3
+68,I,Compute,Compute,30,3,14.555,multi,2
 69,I,Parameters,Parameters,23,6,14.3546,found,1
-70,I,Deep Learning,deep-learning,14,3,14.2005,multi,3
-71,I,신경망,neural network,11,3,14.1745,multi,3
-72,I,Inference,Inference,22,3,11.7218,multi,4
-73,I,파인튜닝,fine-tuning,22,4,10.65,multi,4
+70,I,Deep Learning,deep-learning,14,3,14.2005,multi,2
+71,I,신경망,neural network,11,3,14.1745,multi,2
+72,I,Inference,Inference,22,3,11.7218,found,1
+73,I,파인튜닝,fine-tuning,22,4,10.65,multi,3
 74,I,파운데이션 모델,foundation model,17,1,9.1142,multi,2
 75,I,학습 데이터,학습 데이터,9,2,8.7467,found,1
 76,I,LLM,LLM,27,3,8.6533,found,1
-77,J,Intellectual property,Intellectual property,22,6,17.9981,multi,2
+77,J,Intellectual property,Intellectual property,22,6,17.9981,found,1
 78,J,Personal Data,Personal Data,19,3,16.0667,found,1
-79,J,Privacy,Privacy,38,3,15.8978,multi,4
-80,J,Bias,Bias,30,6,15.8027,multi,2
-81,J,Reliability,Reliability,33,4,14.7094,multi,2
+79,J,Privacy,Privacy,38,3,15.8978,multi,2
+80,J,Bias,Bias,30,6,15.8027,found,1
+81,J,Reliability,Reliability,33,4,14.7094,found,1
 82,J,Law Enforcement,Law Enforcement,21,2,14.6003,multi,2
-83,J,Copyright,Copyright,26,3,13.8566,multi,3
-84,J,Automation,Automation,23,4,13.7199,multi,2
-85,J,Sensitive data,Sensitive data,14,2,13.0827,multi,3
+83,J,Copyright,Copyright,26,3,13.8566,multi,2
+84,J,Automation,Automation,23,4,13.7199,found,1
+85,J,Sensitive data,Sensitive data,14,2,13.0827,found,1
 86,J,Data collection,Data collection,19,2,13.0447,multi,4
 87,J,Algorithm,Algorithm,20,4,12.956,found,1
-88,J,Discrimination,Discrimination,17,2,11.7494,multi,2
-89,J,Digital infrastructure,Digital infrastructure,10,2,11.4348,multi,3
+88,J,Discrimination,Discrimination,17,2,11.7494,found,1
+89,J,Digital infrastructure,Digital infrastructure,10,2,11.4348,multi,2
 90,J,Narrow AI,Narrow AI,8,2,10.811,multi,2
-91,J,Labour Market,Labour Market,8,2,10.5009,multi,5
+91,J,Labour Market,Labour Market,8,2,10.5009,multi,4
 92,J,Malfunction,Malfunction,13,5,10.487,found,1
-93,J,Modalities,Modalities,16,2,10.4322,multi,5
+93,J,Modalities,Modalities,16,2,10.4322,multi,2
 94,J,Persuasion,Persuasion,13,2,10.3575,found,1
 95,J,AI literacy,AI literacy,9,2,9.9563,found,1
 96,J,Encryption,Encryption,10,3,9.3204,found,1
-97,J,Hacking,Hacking,16,1,9.1735,multi,2
+97,J,Hacking,Hacking,16,1,9.1735,found,1
 98,J,State-of-the-art,State-of-the-art,20,2,9.1095,found,1
-99,J,Developer,Developer,22,2,8.6776,multi,2
+99,J,Developer,Developer,22,2,8.6776,found,1
 100,J,Testing Data,Testing Data,5,2,8.6514,found,1

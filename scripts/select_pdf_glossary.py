@@ -544,6 +544,71 @@ def def_term_matches(cand_keys: set[str], term: str, term_en: str | None) -> boo
     return False
 
 
+def quote_fingerprint(quote: str) -> str:
+    return re.sub(r"\s+", " ", (quote or "").strip())
+
+
+def format_page_span(start, end) -> str:
+    if not start:
+        return ""
+    if end and end != start:
+        return f"p.{start}–{end}"
+    return f"p.{start}"
+
+
+def merge_same_quotes(defs: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """같은 문서·같은 인용문은 페이지를 합친다 (본문 용어집 ↔ 뒤쪽 Glossary 중복)."""
+    order: list[tuple[str, str]] = []
+    groups: dict[tuple[str, str], dict[str, Any]] = {}
+    for d in defs:
+        key = (d.get("document_id") or "", quote_fingerprint(d.get("quote") or ""))
+        if not key[1]:
+            continue
+        if key not in groups:
+            order.append(key)
+            rec = dict(d)
+            span = format_page_span(d.get("pdf_page_start"), d.get("pdf_page_end"))
+            rec["page_spans"] = []
+            if span:
+                rec["page_spans"].append(
+                    {
+                        "start": d.get("pdf_page_start"),
+                        "end": d.get("pdf_page_end"),
+                        "label": span,
+                    }
+                )
+            groups[key] = rec
+        else:
+            g = groups[key]
+            span = format_page_span(d.get("pdf_page_start"), d.get("pdf_page_end"))
+            labels = {p["label"] for p in g["page_spans"]}
+            if span and span not in labels:
+                g["page_spans"].append(
+                    {
+                        "start": d.get("pdf_page_start"),
+                        "end": d.get("pdf_page_end"),
+                        "label": span,
+                    }
+                )
+            # 더 이른 페이지를 대표로
+            a = d.get("pdf_page_start")
+            if a is not None and (
+                g.get("pdf_page_start") is None or a < g["pdf_page_start"]
+            ):
+                g["pdf_page_start"] = a
+                g["pdf_page_end"] = d.get("pdf_page_end")
+                g["chunk_id"] = d.get("chunk_id")
+                g["heading_path"] = d.get("heading_path")
+
+    out = []
+    for key in order:
+        g = groups[key]
+        g["page_spans"].sort(key=lambda p: (p.get("start") or 0, p.get("end") or 0))
+        g["pages_label"] = ", ".join(p["label"] for p in g["page_spans"])
+        out.append(g)
+    return out
+
+
 def match_definitions(
     cand: dict[str, Any], def_items: list[dict[str, Any]]
 ) -> list[dict[str, Any]]:
@@ -574,7 +639,11 @@ def match_definitions(
             "authority": it["document_type"],
             "source_kind": "definition_section",
         }
-        sig = (rec["document_id"], rec["pdf_page_start"], rec["quote"][:90])
+        sig = (
+            rec["document_id"],
+            rec["pdf_page_start"],
+            quote_fingerprint(rec["quote"])[:120],
+        )
         if sig in seen:
             continue
         seen.add(sig)
@@ -587,7 +656,7 @@ def match_definitions(
             d["pdf_page_start"] or 0,
         )
     )
-    return hits[:5]
+    return merge_same_quotes(hits)[:5]
 
 
 def find_body_definitions(cand: dict[str, Any], limit: int = 2) -> list[dict[str, Any]]:

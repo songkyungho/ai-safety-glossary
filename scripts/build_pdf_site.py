@@ -128,9 +128,11 @@ button.filter-chip.active .n {
   margin: 8px 0 0; font-size: 11.5px; color: var(--text-muted);
   line-height: 1.5;
 }
-.quote-cite .tier-a {
+.quote-cite .cite-label {
   display: inline-block; font-size: 10px; font-weight: 700;
-  color: var(--navy); margin-right: 4px;
+  color: var(--navy); margin-right: 6px;
+  border: 1px solid color-mix(in srgb, var(--navy) 28%, var(--hairline));
+  border-radius: 4px; padding: 1px 5px; vertical-align: 1px;
 }
 details.legend {
   margin: 0 0 16px; font-size: 13px; color: var(--text-secondary);
@@ -274,13 +276,14 @@ def render_card(e: dict) -> str:
     badge_cls = "badge missing" if e["status"] == "missing" else "badge"
     quotes = []
     for d in e["definitions"]:
-        page = d["pdf_page_start"]
-        page_s = (
-            f"p.{page}"
-            if page == d["pdf_page_end"] or not d["pdf_page_end"]
-            else f"p.{page}–{d['pdf_page_end']}"
-        )
-        tier = '<span class="tier-a">권위</span>' if d.get("tier") == "A" else ""
+        page_s = d.get("pages_label") or ""
+        if not page_s:
+            page = d["pdf_page_start"]
+            page_s = (
+                f"p.{page}"
+                if page == d["pdf_page_end"] or not d["pdf_page_end"]
+                else f"p.{page}–{d['pdf_page_end']}"
+            )
         kind = "정의섹션" if d.get("source_kind") == "definition_section" else "본문"
         ko_block = ""
         if d.get("quote_ko"):
@@ -292,12 +295,14 @@ def render_card(e: dict) -> str:
             "\uac00" <= c <= "\ud7a3" for c in (d.get("quote") or "")
         ):
             ko_block = '<p class="quote-ko muted">한글 대역 미수록</p>'
+        title = d.get("title") or d.get("short") or ""
         quotes.append(
             f'<div class="quote-block">'
             f'{ko_block}'
             f'<p class="quote-text">{html.escape(d["quote"])}</p>'
-            f'<p class="quote-cite">{tier}'
-            f'{html.escape(d.get("short") or d["title"])} · {page_s}'
+            f'<p class="quote-cite">'
+            f'<span class="cite-label">출처</span> '
+            f'{html.escape(title)} · {html.escape(page_s)}'
             f' · {html.escape(d.get("language") or "")}'
             f' · {kind}'
             f' · 원문'

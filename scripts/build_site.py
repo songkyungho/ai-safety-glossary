@@ -151,6 +151,12 @@ button.filter-chip.active .n {
 .quote-cite {
   margin: 8px 0 0; font-size: 11.5px; color: var(--text-muted); line-height: 1.5;
 }
+.quote-cite .cite-label {
+  display: inline-block; font-size: 10px; font-weight: 700;
+  color: var(--navy); margin-right: 4px;
+  border: 1px solid color-mix(in srgb, var(--navy) 28%, var(--hairline));
+  border-radius: 4px; padding: 1px 5px; vertical-align: 1px;
+}
 .quote-cite .tier-a {
   display: inline-block; font-size: 10px; font-weight: 700;
   color: var(--navy); margin-right: 4px;
@@ -323,15 +329,14 @@ def pdf_quotes_html(p):
         return '<p class="missing-note">PDF 원문 정의를 아직 확보하지 못했습니다.</p>'
     blocks = []
     for d in defs:
-        page = d.get("pdf_page_start")
-        page_end = d.get("pdf_page_end")
-        if page and page_end and page != page_end:
-            page_s = f"p.{page}–{page_end}"
-        elif page:
-            page_s = f"p.{page}"
-        else:
-            page_s = ""
-        tier = '<span class="tier-a">권위</span>' if d.get("tier") == "A" else ""
+        page_s = d.get("pages_label") or ""
+        if not page_s:
+            page = d.get("pdf_page_start")
+            page_end = d.get("pdf_page_end")
+            if page and page_end and page != page_end:
+                page_s = f"p.{page}–{page_end}"
+            elif page:
+                page_s = f"p.{page}"
         kind = "정의섹션" if d.get("source_kind") == "definition_section" else "본문"
         ko = ""
         if d.get("quote_ko"):
@@ -339,12 +344,14 @@ def pdf_quotes_html(p):
                 f'<p class="quote-ko"><span class="ko-label">번역</span>'
                 f'{html.escape(d["quote_ko"])}</p>'
             )
+        title = d.get("title") or d.get("short") or ""
         blocks.append(
             f'<div class="quote-block">{ko}'
             f'<p class="quote-text">{html.escape(d.get("quote") or "")}</p>'
-            f'<p class="quote-cite">{tier}'
-            f'{html.escape(d.get("short") or d.get("title") or "")}'
-            f'{(" · " + page_s) if page_s else ""}'
+            f'<p class="quote-cite">'
+            f'<span class="cite-label">출처</span> '
+            f'{html.escape(title)}'
+            f'{(" · " + html.escape(page_s)) if page_s else ""}'
             f' · {html.escape(d.get("language") or "")}'
             f" · {kind} · 원문</p></div>"
         )

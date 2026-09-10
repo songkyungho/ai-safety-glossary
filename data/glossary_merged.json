@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI 안전 용어집",
-    "built_at": "2026-09-09T08:02:17+09:00",
+    "built_at": "2026-09-10T21:10:25+09:00",
     "method": "digest ∪ pdf join on normalized English",
     "sources": {
       "digest": 100,
@@ -21,7 +21,7 @@
     "coverage": {
       "total": 100,
       "found": 100,
-      "multi": 68,
+      "multi": 49,
       "missing": 0,
       "body_fallback": 0
     },
@@ -195,6 +195,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 218,
+                "end": 219,
+                "label": "p.218–219"
+              }
+            ],
+            "pages_label": "p.218–219",
             "quote_ko": "인공지능이 인간의 의도나 가치에 맞게 자신의 능력을 쓰는 성향. 맥락에 따라 개발자·운영자·사용자·특정 공동체·사회 전체의 의도·가치를 가리킬 수 있다."
           }
         ],
@@ -308,30 +316,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "특정 집단이나 세계관에 유리하고 일부에게 불공정한 결과를 자주 낳는, 알고리즘 시스템의 체계적 오류. 설계 오류, 비대표·결함 데이터, 기존 사회 불평등 등에서 비롯될 수 있다."
-          },
-          {
-            "quote": "Systematic errors in algorithmic systems that favour certain groups or worldviews and often create unfair outcomes for some people. Bias can have multiple sources, including errors in algorithmic design, unrepresentative or otherwise flawed datasets, or pre-existing social inequalities.",
-            "term_in_source": "Bias",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 219,
-            "pdf_page_end": 220,
-            "chunk_id": "chk-45b6d442137a3ffb0240",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 92,
+                "end": 93,
+                "label": "p.92–93"
+              },
+              {
+                "start": 219,
+                "end": 220,
+                "label": "p.219–220"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.92–93, p.219–220",
             "quote_ko": "특정 집단이나 세계관에 유리하고 일부에게 불공정한 결과를 자주 낳는, 알고리즘 시스템의 체계적 오류. 설계 오류, 비대표·결함 데이터, 기존 사회 불평등 등에서 비롯될 수 있다."
           }
         ],
@@ -340,8 +337,8 @@
         "chunk_hits": 323,
         "year_span": 9,
         "score": 15.8027,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Bias"
         ],
@@ -438,6 +435,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 222,
+                "end": 223,
+                "label": "p.222–223"
+              }
+            ],
+            "pages_label": "p.222–223",
             "quote_ko": "인공지능 시스템이 생성하는 부정확하거나 오해를 부르는 정보. 거짓 사실이나 가짜 인용 등이 예다."
           }
         ],
@@ -547,6 +552,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 100,
+                "end": 101,
+                "label": "p.100–101"
+              },
+              {
+                "start": 223,
+                "end": 224,
+                "label": "p.223–224"
+              }
+            ],
+            "pages_label": "p.100–101, p.223–224",
             "quote_ko": "인공지능이 인간의 의도·가치·규범과 어긋나게 능력을 쓰는 성향. 맥락에 따라 개발자·사용자·특정 공동체·사회 전체의 의도·가치를 가리킬 수 있다."
           },
           {
@@ -571,30 +589,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "인공지능이 인간의 의도·가치·규범과 어긋나게 능력을 쓰는 성향. 맥락에 따라 개발자·사용자·특정 공동체·사회 전체의 의도·가치를 가리킬 수 있다."
-          },
-          {
-            "quote": "An AI's propensity to use its capabilities in ways that conflict with human intentions or values. Depending on the context, this can variously refer to the intentions and values of developers, operators, users, specific communities, or society as a whole.",
-            "term_in_source": "Misalignment",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 223,
-            "pdf_page_end": 224,
-            "chunk_id": "chk-5853ef234036643aa588",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 152,
+                "label": "p.152"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.152",
             "quote_ko": "인공지능이 인간의 의도·가치·규범과 어긋나게 능력을 쓰는 성향. 맥락에 따라 개발자·사용자·특정 공동체·사회 전체의 의도·가치를 가리킬 수 있다."
           }
         ],
@@ -604,7 +606,7 @@
         "year_span": 3,
         "score": 6.5999,
         "status": "multi",
-        "n_defs": 3,
+        "n_defs": 2,
         "variants": [
           "Misalignment",
           "오정렬"
@@ -702,6 +704,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 151,
+                "end": 151,
+                "label": "p.151"
+              }
+            ],
+            "pages_label": "p.151",
             "quote_ko": "초기 학습 이후 추가 데이터로 특정 과제에 맞추거나 전반적으로 더 유용하게 적응시키는 과정."
           },
           {
@@ -726,30 +736,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "사전학습된 AI 모델을 추가 데이터로 특정 과제에 맞추거나 전반적으로 더 유용하게 적응시키는 과정."
-          },
-          {
-            "quote": "The process of adapting a pre-trained AI model to a specific task or making it more useful in general by training it on additional data.",
-            "term_in_source": "Fine-tuning",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 221,
-            "pdf_page_end": 222,
-            "chunk_id": "chk-5c8c4a50b7e7e9f6dccf",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 170,
+                "end": 170,
+                "label": "p.170"
+              },
+              {
+                "start": 221,
+                "end": 222,
+                "label": "p.221–222"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.170, p.221–222",
             "quote_ko": "사전학습된 AI 모델을 추가 데이터로 특정 과제에 맞추거나 전반적으로 더 유용하게 적응시키는 과정."
           },
           {
@@ -774,6 +773,14 @@
             "parser": "term_book",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 42,
+                "end": 42,
+                "label": "p.42"
+              }
+            ],
+            "pages_label": "p.42",
             "quote_ko": null
           }
         ],
@@ -783,7 +790,7 @@
         "year_span": 3,
         "score": 10.65,
         "status": "multi",
-        "n_defs": 4,
+        "n_defs": 3,
         "variants": [
           "Fine Tuning",
           "Fine-tuning",
@@ -885,6 +892,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 100,
+                "end": 101,
+                "label": "p.100–101"
+              },
+              {
+                "start": 223,
+                "end": 223,
+                "label": "p.223"
+              }
+            ],
+            "pages_label": "p.100–101, p.223",
             "quote_ko": "하나 이상의 범용 AI 시스템이 누구의 통제도 받지 않고 동작하며, 통제를 되찾을 명확한 경로가 없는 시나리오."
           },
           {
@@ -909,30 +929,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "하나 이상의 범용 AI 시스템이 누구의 통제도 받지 않고 동작하며, 통제를 되찾을 명확한 경로가 없는 시나리오."
-          },
-          {
-            "quote": "A scenario in which one or more general-purpose AI systems come to operate outside of anyone's control, with no clear path to regaining control.",
-            "term_in_source": "Loss of control scenario",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 223,
-            "pdf_page_end": 223,
-            "chunk_id": "chk-7bd6d2938db4d03f5e06",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 152,
+                "label": "p.152"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.152",
             "quote_ko": "하나 이상의 범용 AI 시스템이 누구의 통제도 받지 않고 동작하며, 통제를 되찾을 명확한 경로가 없는 시나리오."
           }
         ],
@@ -942,7 +946,7 @@
         "year_span": 3,
         "score": 8.3113,
         "status": "multi",
-        "n_defs": 3,
+        "n_defs": 2,
         "variants": [
           "Loss of control",
           "Loss-of-control",
@@ -1041,6 +1045,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              }
+            ],
+            "pages_label": "p.150",
             "quote_ko": "어떤 목표를 위해 타인에게 체계적으로 잘못된 믿음을 심어 주는 형태의 영향력."
           },
           {
@@ -1065,6 +1077,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 109,
+                "end": 109,
+                "label": "p.109"
+              }
+            ],
+            "pages_label": "p.109",
             "quote_ko": null
           }
         ],
@@ -1174,6 +1194,14 @@
             "parser": "ko_pipe",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 63,
+                "end": 63,
+                "label": "p.63"
+              }
+            ],
+            "pages_label": "p.63",
             "quote_ko": "특정인이 성행위나 약물 사용 등 곤란한 행위에 가담하는 것처럼 보이는 가짜 콘텐츠를 만들어 유포함으로써, 명예·경력을 해치거나 공적 활동에서 물러나게 하려는 행위."
           }
         ],
@@ -1280,30 +1308,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "범용 AI 모델·시스템이 사용자를 치켜세우거나 맞장구치는 경향. 그 과정에서 부정확하거나 해로운 정보를 주더라도 그렇게 하는 경우를 포함한다."
-          },
-          {
-            "quote": "The tendency of general-purpose AI models and systems to flatter or validate their users, even when that involves providing inaccurate or harmful information.",
-            "term_in_source": "Sycophancy",
-            "term_en_in_source": null,
-            "document_id": "doc-971d6902bec8",
-            "title": "International AI Safety Report 2026",
-            "short": "IASR 2026",
-            "tier": "A",
-            "pdf_page_start": 155,
-            "pdf_page_end": 156,
-            "chunk_id": "chk-24a0177521932d55a7c9",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 154,
+                "end": 155,
+                "label": "p.154–155"
+              },
+              {
+                "start": 155,
+                "end": 156,
+                "label": "p.155–156"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2026,
-            "source_relative_path": "repository/international-organizations/2026_International-AI-Safety-Report_International-AI-Safety-Report-2026_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "971d6902bec818eed38f69fffcea96287040ce1ee60e4338dc31520fb0f5d8a4",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.154–155, p.155–156",
             "quote_ko": "범용 AI 모델·시스템이 사용자를 치켜세우거나 맞장구치는 경향. 그 과정에서 부정확하거나 해로운 정보를 주더라도 그렇게 하는 경우를 포함한다."
           }
         ],
@@ -1312,8 +1329,8 @@
         "chunk_hits": 38,
         "year_span": 2,
         "score": 3.7117,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Sycophancy",
           "아첨"
@@ -1627,6 +1644,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 100,
+                "end": 101,
+                "label": "p.100–101"
+              }
+            ],
+            "pages_label": "p.100–101",
             "quote_ko": "시스템이 적어도 처음에는 무해해 보이는 행동을 하여, 탐지하기 어려운 오정렬."
           },
           {
@@ -1651,6 +1676,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 220,
+                "end": 221,
+                "label": "p.220–221"
+              }
+            ],
+            "pages_label": "p.220–221",
             "quote_ko": "시스템이 적어도 처음에는 무해해 보이는 행동을 하여, 탐지하기 어려운 오정렬."
           }
         ],
@@ -1713,6 +1746,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 153,
+                "end": 153,
+                "label": "p.153"
+              }
+            ],
+            "pages_label": "p.153",
             "quote_ko": "서로 다르고 때로 충돌하는 집단의 선호를 반영·균형 맞추려는 AI 시스템 개발 접근."
           }
         ],
@@ -1775,6 +1816,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 100,
+                "end": 101,
+                "label": "p.100–101"
+              },
+              {
+                "start": 222,
+                "end": 223,
+                "label": "p.222–223"
+              }
+            ],
+            "pages_label": "p.100–101, p.222–223",
             "quote_ko": "인공지능에 부여된 목표와 개발자 의도가 어긋나, 의도하지 않거나 바람직하지 않은 행동을 추구하게 되는 상태."
           },
           {
@@ -1799,31 +1853,15 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "개발자가 의도한 목표의 불완전한 대리 지표로 목표를 적어 두어, 시스템이 의도치 않은 행동을 하게 되는 개발 실패 유형."
-          },
-          {
-            "quote": "A mismatch between the objective given to an AI and the developer's intention, leading the AI to pursue unintended or undesired behaviours.",
-            "term_in_source": "Goal misspecification",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 222,
-            "pdf_page_end": 223,
-            "chunk_id": "chk-d5ba122031e52ec1f1ae",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 151,
+                "end": 151,
+                "label": "p.151"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "인공지능에 부여된 목표와 개발자 의도가 어긋나, 의도하지 않거나 바람직하지 않은 행동을 추구하게 되는 상태."
+            "pages_label": "p.151",
+            "quote_ko": "개발자가 의도한 목표의 불완전한 대리 지표로 목표를 적어 두어, 시스템이 의도치 않은 행동을 하게 되는 개발 실패 유형."
           }
         ],
         "df": 3,
@@ -1832,7 +1870,7 @@
         "year_span": 2,
         "score": 3.8061,
         "status": "multi",
-        "n_defs": 3,
+        "n_defs": 2,
         "variants": [
           "Goal misspecification"
         ],
@@ -1929,6 +1967,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 38,
+                "end": 38,
+                "label": "p.38"
+              }
+            ],
+            "pages_label": "p.38",
             "quote_ko": "실제 사용을 대표하도록 고안된 고정 과제 집합에서 AI 시스템 성능을 평가·비교하는, 표준화되고 대개 정량적인 시험·지표."
           },
           {
@@ -1953,6 +1999,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 47,
+                "end": 48,
+                "label": "p.47–48"
+              }
+            ],
+            "pages_label": "p.47–48",
             "quote_ko": "실제 사용을 대표하도록 고안된 고정 과제 집합에서 AI 시스템 성능을 평가·비교하는, 표준화되고 대개 정량적인 시험·지표."
           },
           {
@@ -1977,6 +2031,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 149,
+                "end": 149,
+                "label": "p.149"
+              }
+            ],
+            "pages_label": "p.149",
             "quote_ko": "실제 사용을 대표하도록 고안된 고정 과제 집합에서 AI 시스템 성능을 평가·비교하는, 표준화되고 대개 정량적인 시험·지표."
           },
           {
@@ -2001,21 +2063,34 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 182,
+                "end": 182,
+                "label": "p.182"
+              },
+              {
+                "start": 219,
+                "end": 220,
+                "label": "p.219–220"
+              }
+            ],
+            "pages_label": "p.182, p.219–220",
             "quote_ko": "실제 사용을 대표하도록 고안된 고정 과제 집합에서 AI 시스템 성능을 평가·비교하는, 표준화되고 대개 정량적인 시험·지표."
           },
           {
-            "quote": "A standardised, often quantitative test or metric used to evaluate and compare the performance of AI systems on a fixed set of tasks designed to represent real-world usage.",
+            "quote": "A standardised, often quantitative test or metric used to evaluate and compare the performance of AI systems on a fixed set of tasks designed to represent real-world usage or quantify inappropriate behaviour.",
             "term_in_source": "Benchmark",
             "term_en_in_source": null,
             "document_id": "doc-c4fe09068d6e",
             "title": "International Scientific Report on the Safety of Advanced AI",
             "short": "IASR 2025",
             "tier": "A",
-            "pdf_page_start": 219,
-            "pdf_page_end": 220,
-            "chunk_id": "chk-45b6d442137a3ffb0240",
+            "pdf_page_start": 319,
+            "pdf_page_end": 319,
+            "chunk_id": "chk-10717118f59d38df28c9",
             "heading_path": [
-              "Glossary"
+              "Key definitions"
             ],
             "document_type": "international_org_report",
             "language": "EN",
@@ -2025,6 +2100,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 319,
+                "end": 319,
+                "label": "p.319"
+              }
+            ],
+            "pages_label": "p.319",
             "quote_ko": "실제 사용을 대표하도록 고안된 고정 과제 집합에서 AI 시스템 성능을 평가·비교하는, 표준화되고 대개 정량적인 시험·지표."
           }
         ],
@@ -2134,6 +2217,14 @@
             "parser": "term_book",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 86,
+                "end": 86,
+                "label": "p.86"
+              }
+            ],
+            "pages_label": "p.86",
             "quote_ko": null
           }
         ],
@@ -2241,54 +2332,24 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "전담 인력·팀이 다양한 방법으로 취약점·한계·오용 가능성을 찾는 체계적 과정. 흔히 모델·시스템에 바람직하지 않은 행동을 유발하는 입력을 찾아 안전 공백을 드러낸다."
-          },
-          {
-            "quote": "A systematic process in which dedicated individuals or teams search for vulnerabilities, limitations, or potential for misuse through various methods. Often, the red team searches for inputs that induce undesirable behaviour in a model or system to identify safety gaps.",
-            "term_in_source": "Red-teaming",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 192,
-            "pdf_page_end": 192,
-            "chunk_id": "chk-69b9afb45c007a9baee3",
-            "heading_path": [
-              "Key Definitions"
+            "page_spans": [
+              {
+                "start": 182,
+                "end": 182,
+                "label": "p.182"
+              },
+              {
+                "start": 192,
+                "end": 192,
+                "label": "p.192"
+              },
+              {
+                "start": 225,
+                "end": 226,
+                "label": "p.225–226"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "전담 인력·팀이 다양한 방법으로 취약점·한계·오용 가능성을 찾는 체계적 과정. 흔히 모델·시스템에 바람직하지 않은 행동을 유발하는 입력을 찾아 안전 공백을 드러낸다."
-          },
-          {
-            "quote": "A systematic process in which dedicated individuals or teams search for vulnerabilities, limitations, or potential for misuse through various methods. Often, the red team searches for inputs that induce undesirable behaviour in a model or system to identify safety gaps.",
-            "term_in_source": "Red-teaming",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 225,
-            "pdf_page_end": 226,
-            "chunk_id": "chk-ce148d2231013af4124b",
-            "heading_path": [
-              "Glossary"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.182, p.192, p.225–226",
             "quote_ko": "전담 인력·팀이 다양한 방법으로 취약점·한계·오용 가능성을 찾는 체계적 과정. 흔히 모델·시스템에 바람직하지 않은 행동을 유발하는 입력을 찾아 안전 공백을 드러낸다."
           }
         ],
@@ -2297,8 +2358,8 @@
         "chunk_hits": 271,
         "year_span": 7,
         "score": 15.8634,
-        "status": "multi",
-        "n_defs": 3,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Red Teaming",
           "Red- Teaming",
@@ -2398,6 +2459,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 152,
+                "label": "p.152"
+              }
+            ],
+            "pages_label": "p.152",
             "quote_ko": "안전장치를 우회해 무기 제조 지침 등 유해 콘텐츠를 내게 하려고 고안한 프롬프트를 만들어 제출하는 행위."
           },
           {
@@ -2422,30 +2491,24 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "가드레일을 우회해 무기 제조 지침 등 유해 콘텐츠를 내게 하려고 고안한 프롬프트를 만들어 제출하는 행위."
-          },
-          {
-            "quote": "Generating and submitting prompts designed to bypass guardrails and make an AI system produce harmful content, such as instructions for building weapons.",
-            "term_in_source": "Jailbreaking",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 182,
-            "pdf_page_end": 182,
-            "chunk_id": "chk-e6bf1c22b4e3395b0d3a",
-            "heading_path": [
-              "Key Definitions"
+            "page_spans": [
+              {
+                "start": 170,
+                "end": 170,
+                "label": "p.170"
+              },
+              {
+                "start": 182,
+                "end": 182,
+                "label": "p.182"
+              },
+              {
+                "start": 223,
+                "end": 223,
+                "label": "p.223"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.170, p.182, p.223",
             "quote_ko": "가드레일을 우회해 무기 제조 지침 등 유해 콘텐츠를 내게 하려고 고안한 프롬프트를 만들어 제출하는 행위."
           },
           {
@@ -2470,31 +2533,47 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 192,
+                "end": 192,
+                "label": "p.192"
+              }
+            ],
+            "pages_label": "p.192",
             "quote_ko": "가드레일을 우회해 무기 제조 지침 등 유해 콘텐츠를 내게 하려고 고안한 프롬프트를 만들어 제출하는 행위."
           },
           {
-            "quote": "Generating and submitting prompts designed to bypass guardrails and make an AI system produce harmful content, such as instructions for building weapons.",
-            "term_in_source": "Jailbreaking",
+            "quote": "탈옥(Jailbreak)은 사용자가 의도적으로 AI의 내장 안전장치(콘텐츠 정책·시스템 지시·거부 규칙 등)를 회피하도록 입력을 조작해, 모델로 하여금 금지된 응답을 생성하게 만드는 행위입니다. 스마트폰 탈옥의 개념을 차용한 용어로, 본질은 '모델의 허용 범위를 벗어나게 하는 조작'입니다. 탈옥이 성공하면 개인정보 노출, 유해·불법 정보 생성, 허위 정보 확산, 악성 코드·범죄 수법 제공 등 실질적 피해로 이어질 수 있으며, 서비스 제공자의 법적·평판적 리스크를 크게 높입니다.",
+            "term_in_source": "탈옥",
             "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 223,
-            "pdf_page_end": 223,
-            "chunk_id": "chk-7bd6d2938db4d03f5e06",
+            "document_id": "doc-bbe62cf4913a",
+            "title": "(배포용) 2025 AI 동향과 이슈로 살펴보는 AI 시대에 꼭 알아야 할 핵심용어 단면",
+            "short": "AI 핵심용어 단면",
+            "tier": "B",
+            "pdf_page_start": 77,
+            "pdf_page_end": 77,
+            "chunk_id": "chk-527427be2984f2330b3f",
             "heading_path": [
-              "Glossary"
+              "탈옥이란?"
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
+            "document_type": "other",
+            "language": "KO",
             "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
+            "source_relative_path": "review/classification/2025_International-AI-Safety-Report_baepoyong-2025-AI-donghyanggwa-isyuro-salpyeoboneun-AI-sidaee-ggog-alaya-hal-haegsimyongeo_OTHER_KO.pdf",
+            "source_sha256": "bbe62cf4913a87258be436e37977acb2806b9d91f2bbb3fbb82a5ebfa5005eeb",
+            "parser": "term_book",
+            "authority": "other",
             "source_kind": "definition_section",
-            "quote_ko": "가드레일을 우회해 무기 제조 지침 등 유해 콘텐츠를 내게 하려고 고안한 프롬프트를 만들어 제출하는 행위."
+            "page_spans": [
+              {
+                "start": 77,
+                "end": 77,
+                "label": "p.77"
+              }
+            ],
+            "pages_label": "p.77",
+            "quote_ko": null
           }
         ],
         "df": 14,
@@ -2503,7 +2582,7 @@
         "year_span": 3,
         "score": 6.8328,
         "status": "multi",
-        "n_defs": 5,
+        "n_defs": 4,
         "variants": [
           "Jailbreak",
           "Jailbreaking",
@@ -2603,6 +2682,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 152,
+                "label": "p.152"
+              }
+            ],
+            "pages_label": "p.152",
             "quote_ko": "인간이 AI 모델의 내부 작동—특정 출력·결정이 나온 이유 포함—을 이해할 수 있는 정도. 수학적 과정을 인간이 추적 가능한 개념으로 옮길 수 있으면 해석가능성이 높다고 본다."
           },
           {
@@ -2627,54 +2714,24 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "인간이 AI 모델의 내부 작동—특정 출력·결정이 나온 이유 포함—을 이해할 수 있는 정도. 수학적 과정을 인간이 추적 가능한 개념으로 옮길 수 있으면 해석가능성이 높다고 본다."
-          },
-          {
-            "quote": "The degree to which humans can understand the inner workings of an AI model, including why it generated a particular output or decision. A model is highly interpretable if its mathematical processes can be translated into concepts that allow humans to trace the specific factors and logic that influenced the model's output.",
-            "term_in_source": "Interpretability",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 201,
-            "pdf_page_end": 202,
-            "chunk_id": "chk-0a696b7f450d0a47c64b",
-            "heading_path": [
-              "Key Definitions"
+            "page_spans": [
+              {
+                "start": 192,
+                "end": 192,
+                "label": "p.192"
+              },
+              {
+                "start": 201,
+                "end": 202,
+                "label": "p.201–202"
+              },
+              {
+                "start": 223,
+                "end": 223,
+                "label": "p.223"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "인간이 AI 모델의 내부 작동—특정 출력·결정이 나온 이유 포함—을 이해할 수 있는 정도. 수학적 과정을 인간이 추적 가능한 개념으로 옮길 수 있으면 해석가능성이 높다고 본다."
-          },
-          {
-            "quote": "The degree to which humans can understand the inner workings of an AI model, including why it generated a particular output or decision. A model is highly interpretable if its mathematical processes can be translated into concepts that allow humans to trace the specific factors and logic that influenced the model's output.",
-            "term_in_source": "Interpretability",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 223,
-            "pdf_page_end": 223,
-            "chunk_id": "chk-7bd6d2938db4d03f5e06",
-            "heading_path": [
-              "Glossary"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.192, p.201–202, p.223",
             "quote_ko": "인간이 AI 모델의 내부 작동—특정 출력·결정이 나온 이유 포함—을 이해할 수 있는 정도. 수학적 과정을 인간이 추적 가능한 개념으로 옮길 수 있으면 해석가능성이 높다고 본다."
           }
         ],
@@ -2684,7 +2741,7 @@
         "year_span": 9,
         "score": 12.2636,
         "status": "multi",
-        "n_defs": 4,
+        "n_defs": 2,
         "variants": [
           "Interpretability",
           "해석 가능성"
@@ -3388,6 +3445,34 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 38,
+                "end": 38,
+                "label": "p.38"
+              },
+              {
+                "start": 170,
+                "end": 170,
+                "label": "p.170"
+              },
+              {
+                "start": 182,
+                "end": 182,
+                "label": "p.182"
+              },
+              {
+                "start": 221,
+                "end": 222,
+                "label": "p.221–222"
+              },
+              {
+                "start": 319,
+                "end": 319,
+                "label": "p.319"
+              }
+            ],
+            "pages_label": "p.38, p.170, p.182, p.221–222, p.319",
             "quote_ko": "인공지능 시스템의 성능·능력·취약점·잠재 영향을 체계적으로 평가하는 것. 벤치마크·레드팀·감사 등을 포함하며 배포 전후에 할 수 있다."
           },
           {
@@ -3412,79 +3497,15 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              }
+            ],
+            "pages_label": "p.150",
             "quote_ko": "배포 전후에 인공지능 모델·시스템의 성능·능력·취약점·잠재 영향을 체계적으로 평가하는 것."
-          },
-          {
-            "quote": "Systematic assessments of an AI system's performance, capabilities, vulnerabilities or potential impacts. Evaluations can include benchmarking, red-teaming and audits and can be conducted both before and after model deployment.",
-            "term_in_source": "Evaluations",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 170,
-            "pdf_page_end": 170,
-            "chunk_id": "chk-ccddeb2faed4655f9deb",
-            "heading_path": [
-              "Key Definitions"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "인공지능 시스템의 성능·능력·취약점·잠재 영향을 체계적으로 평가하는 것. 벤치마크·레드팀·감사 등을 포함하며 배포 전후에 할 수 있다."
-          },
-          {
-            "quote": "Systematic assessments of an AI system's performance, capabilities, vulnerabilities or potential impacts. Evaluations can include benchmarking, red-teaming and audits and can be conducted both before and after model deployment.",
-            "term_in_source": "Evaluations",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 182,
-            "pdf_page_end": 182,
-            "chunk_id": "chk-e6bf1c22b4e3395b0d3a",
-            "heading_path": [
-              "Key Definitions"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "인공지능 시스템의 성능·능력·취약점·잠재 영향을 체계적으로 평가하는 것. 벤치마크·레드팀·감사 등을 포함하며 배포 전후에 할 수 있다."
-          },
-          {
-            "quote": "Systematic assessments of an AI system's performance, capabilities, vulnerabilities or potential impacts. Evaluations can include benchmarking, red-teaming and audits and can be conducted both before and after model deployment.",
-            "term_in_source": "Evaluations",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 221,
-            "pdf_page_end": 222,
-            "chunk_id": "chk-5c8c4a50b7e7e9f6dccf",
-            "heading_path": [
-              "Glossary"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "인공지능 시스템의 성능·능력·취약점·잠재 영향을 체계적으로 평가하는 것. 벤치마크·레드팀·감사 등을 포함하며 배포 전후에 할 수 있다."
           }
         ],
         "df": 38,
@@ -3493,7 +3514,7 @@
         "year_span": 9,
         "score": 18.6692,
         "status": "multi",
-        "n_defs": 5,
+        "n_defs": 2,
         "variants": [
           "Evaluate",
           "Evaluated",
@@ -3551,6 +3572,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 154,
+                "end": 155,
+                "label": "p.154–155"
+              }
+            ],
+            "pages_label": "p.154–155",
             "quote_ko": "인공지능 시스템이 해를 끼치지 않도록 막는 보호 조치."
           },
           {
@@ -3575,6 +3604,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 222,
+                "end": 223,
+                "label": "p.222–223"
+              }
+            ],
+            "pages_label": "p.222–223",
             "quote_ko": "인공지능 시스템이 의도대로 동작하고 해로운 결과를 피하도록 넣는 내장 안전 제약."
           }
         ],
@@ -3641,30 +3678,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "조직이 표준·정책·절차를 지키는지 공식적으로 검토하는 일. 대개 독립적인 제3자가 수행한다."
-          },
-          {
-            "quote": "A formal review of an organisation's compliance with standards, policies, and procedures, typically carried out by an independent third party.",
-            "term_in_source": "Audit",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 219,
-            "pdf_page_end": 220,
-            "chunk_id": "chk-45b6d442137a3ffb0240",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 182,
+                "end": 182,
+                "label": "p.182"
+              },
+              {
+                "start": 219,
+                "end": 220,
+                "label": "p.219–220"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.182, p.219–220",
             "quote_ko": "조직이 표준·정책·절차를 지키는지 공식적으로 검토하는 일. 대개 독립적인 제3자가 수행한다."
           }
         ],
@@ -3673,8 +3699,8 @@
         "chunk_hits": 304,
         "year_span": 9,
         "score": 13.3067,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Audit",
           "Audits",
@@ -3729,6 +3755,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 111,
+                "end": 111,
+                "label": "p.111"
+              }
+            ],
+            "pages_label": "p.111",
             "quote_ko": null
           }
         ],
@@ -3791,30 +3825,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "범용 AI 모델의 내부 작동을 연구하고, 이를 인간이 이해할 수 있게 만드는 방법을 개발하는 일."
-          },
-          {
-            "quote": "The study of how general-purpose AI models function internally, and the development of methods to make this comprehensible to humans.",
-            "term_in_source": "Interpretability research",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 223,
-            "pdf_page_end": 223,
-            "chunk_id": "chk-7bd6d2938db4d03f5e06",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 170,
+                "end": 170,
+                "label": "p.170"
+              },
+              {
+                "start": 223,
+                "end": 223,
+                "label": "p.223"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.170, p.223",
             "quote_ko": "범용 AI 모델의 내부 작동을 연구하고, 이를 인간이 이해할 수 있게 만드는 방법을 개발하는 일."
           }
         ],
@@ -3823,8 +3846,8 @@
         "chunk_hits": 8,
         "year_span": 2,
         "score": 3.1274,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Interpretability Research"
         ],
@@ -3877,6 +3900,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 13,
+                "end": 13,
+                "label": "p.13"
+              }
+            ],
+            "pages_label": "p.13",
             "quote_ko": null
           }
         ],
@@ -3939,6 +3970,14 @@
             "parser": "term_book",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 45,
+                "end": 45,
+                "label": "p.45"
+              }
+            ],
+            "pages_label": "p.45",
             "quote_ko": null
           }
         ],
@@ -4045,6 +4084,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              }
+            ],
+            "pages_label": "p.150",
             "quote_ko": "정보를 훔치거나 파괴하는 등 목적으로 컴퓨터 시스템·네트워크·디지털 기기에 접근하려는 악의적 시도."
           }
         ],
@@ -4692,6 +4739,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 152,
+                "label": "p.152"
+              }
+            ],
+            "pages_label": "p.152",
             "quote_ko": "인공지능 시스템 등을 써서 의도적으로 해를 끼치는 행위."
           },
           {
@@ -4716,6 +4771,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 223,
+                "end": 224,
+                "label": "p.223–224"
+              }
+            ],
+            "pages_label": "p.223–224",
             "quote_ko": "인공지능을 써서 의도적으로 해를 끼치는 행위."
           }
         ],
@@ -4779,6 +4842,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 72,
+                "end": 73,
+                "label": "p.72–73"
+              }
+            ],
+            "pages_label": "p.72–73",
             "quote_ko": "컴퓨터 시스템을 손상·방해하거나 무단 접근하도록 만든 유해 소프트웨어. 바이러스·스파이웨어 등 데이터를 훔치거나 해를 끼치는 프로그램을 포함한다."
           },
           {
@@ -4803,6 +4874,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 152,
+                "label": "p.152"
+              }
+            ],
+            "pages_label": "p.152",
             "quote_ko": "컴퓨터 시스템을 손상·방해하거나 무단 접근하도록 만든 유해 소프트웨어. 바이러스·스파이웨어 등 데이터를 훔치거나 해를 끼치는 프로그램을 포함한다."
           },
           {
@@ -4827,6 +4906,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 223,
+                "end": 224,
+                "label": "p.223–224"
+              }
+            ],
+            "pages_label": "p.223–224",
             "quote_ko": "컴퓨터 시스템을 손상·방해하거나 무단 접근하도록 만든 유해 소프트웨어. 바이러스·스파이웨어 등 데이터를 훔치거나 해를 끼치는 프로그램을 포함한다."
           }
         ],
@@ -4889,6 +4976,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 110,
+                "end": 110,
+                "label": "p.110"
+              }
+            ],
+            "pages_label": "p.110",
             "quote_ko": null
           }
         ],
@@ -4951,6 +5046,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 148,
+                "end": 148,
+                "label": "p.148"
+              }
+            ],
+            "pages_label": "p.148",
             "quote_ko": "모델을 더 견고하게 만드는 기계학습 기법. 먼저 모델을 실패시키도록 고안한 입력을 만들고, 이어서 그런 입력을 인식·처리하도록 학습시킨다."
           },
           {
@@ -4975,30 +5078,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "모델을 더 견고하게 만드는 기계학습 기법. 먼저 모델을 실패시키도록 고안한 입력을 만들고, 이어서 그런 입력을 인식·처리하도록 학습시킨다."
-          },
-          {
-            "quote": "A machine learning technique used to make models more reliable. First, developers construct 'adversarial inputs' (e.g. through red -teaming) that are designed to make a model fail, and second, they train the model to recognise and handle these kinds of inputs.",
-            "term_in_source": "Adversarial training",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 218,
-            "pdf_page_end": 219,
-            "chunk_id": "chk-50c56be64a32812a49d0",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 192,
+                "end": 192,
+                "label": "p.192"
+              },
+              {
+                "start": 218,
+                "end": 219,
+                "label": "p.218–219"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.192, p.218–219",
             "quote_ko": "모델을 더 견고하게 만드는 기계학습 기법. 먼저 모델을 실패시키도록 고안한 입력을 만들고, 이어서 그런 입력을 인식·처리하도록 학습시킨다."
           }
         ],
@@ -5008,7 +5100,7 @@
         "year_span": 3,
         "score": 6.4307,
         "status": "multi",
-        "n_defs": 3,
+        "n_defs": 2,
         "variants": [
           "Adversarial training"
         ],
@@ -5061,30 +5153,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "세균·식물·동물 등 생물이 만들거나, 자연 독소를 모방해 합성한 유독 물질. 독성과 노출 수준에 따라 다른 생물에 질병·피해·사망을 일으킬 수 있다."
-          },
-          {
-            "quote": "A poisonous substance produced by living organisms (such as bacteria, plants, or animals), or synthetically created to mimic a natural toxin, that can cause illness, harm, or death in other organisms depending on its potency and the exposure level.",
-            "term_in_source": "Toxin",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 227,
-            "pdf_page_end": 228,
-            "chunk_id": "chk-74738e3054e312f3ded5",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 80,
+                "end": 80,
+                "label": "p.80"
+              },
+              {
+                "start": 227,
+                "end": 228,
+                "label": "p.227–228"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.80, p.227–228",
             "quote_ko": "세균·식물·동물 등 생물이 만들거나, 자연 독소를 모방해 합성한 유독 물질. 독성과 노출 수준에 따라 다른 생물에 질병·피해·사망을 일으킬 수 있다."
           }
         ],
@@ -5093,8 +5174,8 @@
         "chunk_hits": 12,
         "year_span": 2,
         "score": 3.3529,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Toxin"
         ],
@@ -5147,6 +5228,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 72,
+                "end": 73,
+                "label": "p.72–73"
+              }
+            ],
+            "pages_label": "p.72–73",
             "quote_ko": "소프트웨어·하드웨어의 미발견·미패치 보안 결함. 공격자가 이미 악용할 수 있어 개발자에게는 고칠 ‘제로(0)일’만 남는다는 뜻에서 이렇게 부른다."
           },
           {
@@ -5171,6 +5260,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 228,
+                "end": 229,
+                "label": "p.228–229"
+              }
+            ],
+            "pages_label": "p.228–229",
             "quote_ko": "소프트웨어·하드웨어의 미발견·미패치 보안 결함. 공격자가 이미 악용할 수 있어 개발자에게는 고칠 ‘제로(0)일’만 남는다는 뜻에서 이렇게 부른다."
           }
         ],
@@ -5233,6 +5330,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 80,
+                "end": 80,
+                "label": "p.80"
+              },
+              {
+                "start": 221,
+                "end": 222,
+                "label": "p.221–222"
+              }
+            ],
+            "pages_label": "p.80, p.221–222",
             "quote_ko": "의학·환경 해법처럼 이로운 목적에도 쓰일 수 있으나, 생물·화학무기 개발처럼 해를 끼치는 데 오용될 수도 있는 연구·기술."
           },
           {
@@ -5257,31 +5367,15 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "의료·에너지처럼 이로운 목적에도 쓰일 수 있으나, 생물·화학무기 개발처럼 해를 끼치는 데 오용될 수도 있는 연구·기술."
-          },
-          {
-            "quote": "Research and technology that can be applied for beneficial purposes, such as medicine or environmental solutions, but also potentially misused to cause harm, such as in biological or chemical weapon development.",
-            "term_in_source": "Dual-use science",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 221,
-            "pdf_page_end": 222,
-            "chunk_id": "chk-5c8c4a50b7e7e9f6dccf",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "의학·환경 해법처럼 이로운 목적에도 쓰일 수 있으나, 생물·화학무기 개발처럼 해를 끼치는 데 오용될 수도 있는 연구·기술."
+            "pages_label": "p.150",
+            "quote_ko": "의료·에너지처럼 이로운 목적에도 쓰일 수 있으나, 생물·화학무기 개발처럼 해를 끼치는 데 오용될 수도 있는 연구·기술."
           }
         ],
         "df": 3,
@@ -5290,7 +5384,7 @@
         "year_span": 2,
         "score": 3.7573,
         "status": "multi",
-        "n_defs": 3,
+        "n_defs": 2,
         "variants": [
           "Dual-use science"
         ],
@@ -5387,30 +5481,34 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "목표 달성을 위해 계획을 세우고, 여러 단계와 불확실한 결과를 포함하는 과제를 적응적으로 수행하며, 파일 생성·웹 행동·다른 에이전트에 위임 등 환경과 상호작용하는—인간 감독이 거의 없거나 전혀 없는—범용 AI."
-          },
-          {
-            "quote": "A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multiple steps and uncertain outcomes along the way, and interact with its environment -for example by creating files, taking actions on the web, or delegating tasks to other agents -with little to no human oversight.",
-            "term_in_source": "AI agent",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 47,
-            "pdf_page_end": 48,
-            "chunk_id": "chk-6edca717b159ede11212",
-            "heading_path": [
-              "Key Definitions"
+            "page_spans": [
+              {
+                "start": 38,
+                "end": 38,
+                "label": "p.38"
+              },
+              {
+                "start": 47,
+                "end": 48,
+                "label": "p.47–48"
+              },
+              {
+                "start": 80,
+                "end": 80,
+                "label": "p.80"
+              },
+              {
+                "start": 111,
+                "end": 111,
+                "label": "p.111"
+              },
+              {
+                "start": 170,
+                "end": 170,
+                "label": "p.170"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.38, p.47–48, p.80, p.111, p.170",
             "quote_ko": "목표 달성을 위해 계획을 세우고, 여러 단계와 불확실한 결과를 포함하는 과제를 적응적으로 수행하며, 파일 생성·웹 행동·다른 에이전트에 위임 등 환경과 상호작용하는—인간 감독이 거의 없거나 전혀 없는—범용 AI."
           },
           {
@@ -5435,30 +5533,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "목표 달성을 위해 계획을 세우고, 여러 단계와 불확실한 결과를 포함하는 과제를 적응적으로 수행하며, 파일 생성·웹 행동·다른 에이전트에 위임 등 환경과 상호작용하는—인간 감독이 거의 없거나 전혀 없는—범용 AI."
-          },
-          {
-            "quote": "A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multiple steps and uncertain outcomes along the way, and interact with its environment -for example by creating files, taking actions on the web, or delegating tasks to other agents -with little to no human oversight.",
-            "term_in_source": "AI agent",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 80,
-            "pdf_page_end": 80,
-            "chunk_id": "chk-efa7e880d285423139b2",
-            "heading_path": [
-              "Key Definitions"
+            "page_spans": [
+              {
+                "start": 67,
+                "end": 68,
+                "label": "p.67–68"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.67–68",
             "quote_ko": "목표 달성을 위해 계획을 세우고, 여러 단계와 불확실한 결과를 포함하는 과제를 적응적으로 수행하며, 파일 생성·웹 행동·다른 에이전트에 위임 등 환경과 상호작용하는—인간 감독이 거의 없거나 전혀 없는—범용 AI."
           },
           {
@@ -5483,6 +5565,79 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 100,
+                "end": 101,
+                "label": "p.100–101"
+              }
+            ],
+            "pages_label": "p.100–101",
+            "quote_ko": "목표 달성을 위해 계획을 세우고, 여러 단계와 불확실한 결과를 포함하는 과제를 적응적으로 수행하며, 파일 생성·웹 행동·다른 에이전트에 위임 등 환경과 상호작용하는—인간 감독이 거의 없거나 전혀 없는—범용 AI."
+          },
+          {
+            "quote": "An AI system that can adaptively perform complex tasks, use tools, and interact with its environment - for example, by creating files, taking actions on the Web, or delegating tasks to other agents - to pursue goals with little to no human oversight.",
+            "term_in_source": "AI agent",
+            "term_en_in_source": null,
+            "document_id": "doc-971d6902bec8",
+            "title": "International AI Safety Report 2026",
+            "short": "IASR 2026",
+            "tier": "A",
+            "pdf_page_start": 148,
+            "pdf_page_end": 148,
+            "chunk_id": "chk-e68bb23f11950ad3da79",
+            "heading_path": [
+              "Glossary"
+            ],
+            "document_type": "international_org_report",
+            "language": "EN",
+            "publication_year": 2026,
+            "source_relative_path": "repository/international-organizations/2026_International-AI-Safety-Report_International-AI-Safety-Report-2026_INTERNATIONAL_ORG_REPORT_EN.pdf",
+            "source_sha256": "971d6902bec818eed38f69fffcea96287040ce1ee60e4338dc31520fb0f5d8a4",
+            "parser": "en_colon",
+            "authority": "international_org_report",
+            "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 148,
+                "end": 148,
+                "label": "p.148"
+              }
+            ],
+            "pages_label": "p.148",
+            "quote_ko": null,
+            "quote_ko_missing": true
+          },
+          {
+            "quote": "A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multiple steps and uncertain outcomes along the way, and interact with its environment -for example by creating files, taking actions on the web, or delegating tasks to other agents -with little to no human oversight. Monitoring and intervention strategies are applied to AI systems -the complete deployment package that includes both the AI model and additional safety components -leaving the model unchanged. Unlike the strategies discussed in 3.4.1. Training more trustworthy models, monitoring and intervention methods are integrated at the system level and implemented as part of system deployment. This section discusses monitoring and intervention strategies that researchers and developers use for general-purpose AI systems (see Figure 3.2).",
+            "term_in_source": "AI agent",
+            "term_en_in_source": null,
+            "document_id": "doc-c4fe09068d6e",
+            "title": "International Scientific Report on the Safety of Advanced AI",
+            "short": "IASR 2025",
+            "tier": "A",
+            "pdf_page_start": 201,
+            "pdf_page_end": 202,
+            "chunk_id": "chk-0a696b7f450d0a47c64b",
+            "heading_path": [
+              "Key Definitions"
+            ],
+            "document_type": "international_org_report",
+            "language": "EN",
+            "publication_year": 2025,
+            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
+            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
+            "parser": "en_colon",
+            "authority": "international_org_report",
+            "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 201,
+                "end": 202,
+                "label": "p.201–202"
+              }
+            ],
+            "pages_label": "p.201–202",
             "quote_ko": "목표 달성을 위해 계획을 세우고, 여러 단계와 불확실한 결과를 포함하는 과제를 적응적으로 수행하며, 파일 생성·웹 행동·다른 에이전트에 위임 등 환경과 상호작용하는—인간 감독이 거의 없거나 전혀 없는—범용 AI."
           }
         ],
@@ -6132,6 +6287,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 38,
+                "end": 38,
+                "label": "p.38"
+              },
+              {
+                "start": 219,
+                "end": 220,
+                "label": "p.219–220"
+              }
+            ],
+            "pages_label": "p.38, p.219–220",
             "quote_ko": "인공지능 시스템이 수행할 수 있는 과제·기능의 범위와, 그것을 얼마나 능숙하게 수행하는가."
           },
           {
@@ -6156,30 +6324,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "인공지능 시스템이 수행할 수 있는 과제·기능의 범위와, 그것을 얼마나 능숙하게 수행하는가."
-          },
-          {
-            "quote": "The range of tasks or functions that an AI system can perform, and how competently it can perform them.",
-            "term_in_source": "Capabilities",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 219,
-            "pdf_page_end": 220,
-            "chunk_id": "chk-45b6d442137a3ffb0240",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 158,
+                "end": 159,
+                "label": "p.158–159"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.158–159",
             "quote_ko": "인공지능 시스템이 수행할 수 있는 과제·기능의 범위와, 그것을 얼마나 능숙하게 수행하는가."
           },
           {
@@ -6204,6 +6356,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 319,
+                "end": 319,
+                "label": "p.319"
+              }
+            ],
+            "pages_label": "p.319",
             "quote_ko": "인공지능 시스템이 수행할 수 있는 과제의 범위와, 그것을 얼마나 능숙하게 수행하는가."
           }
         ],
@@ -6213,7 +6373,7 @@
         "year_span": 9,
         "score": 18.5456,
         "status": "multi",
-        "n_defs": 4,
+        "n_defs": 3,
         "variants": [
           "CAPABILITIES",
           "Capability"
@@ -6267,30 +6427,34 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "목표 달성을 위해 계획을 세우고, 여러 단계와 불확실한 결과를 포함하는 과제를 적응적으로 수행하며, 파일 생성·웹 행동·다른 에이전트에 위임 등 환경과 상호작용하는—인간 감독이 거의 없거나 전혀 없는—범용 AI."
-          },
-          {
-            "quote": "A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multiple steps and uncertain outcomes along the way, and interact with its environment -for example by creating files, taking actions on the web, or delegating tasks to other agents -with little to no human oversight.",
-            "term_in_source": "AI agent",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 47,
-            "pdf_page_end": 48,
-            "chunk_id": "chk-6edca717b159ede11212",
-            "heading_path": [
-              "Key Definitions"
+            "page_spans": [
+              {
+                "start": 38,
+                "end": 38,
+                "label": "p.38"
+              },
+              {
+                "start": 47,
+                "end": 48,
+                "label": "p.47–48"
+              },
+              {
+                "start": 80,
+                "end": 80,
+                "label": "p.80"
+              },
+              {
+                "start": 111,
+                "end": 111,
+                "label": "p.111"
+              },
+              {
+                "start": 170,
+                "end": 170,
+                "label": "p.170"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.38, p.47–48, p.80, p.111, p.170",
             "quote_ko": "목표 달성을 위해 계획을 세우고, 여러 단계와 불확실한 결과를 포함하는 과제를 적응적으로 수행하며, 파일 생성·웹 행동·다른 에이전트에 위임 등 환경과 상호작용하는—인간 감독이 거의 없거나 전혀 없는—범용 AI."
           },
           {
@@ -6315,6 +6479,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 67,
+                "end": 68,
+                "label": "p.67–68"
+              }
+            ],
+            "pages_label": "p.67–68",
             "quote_ko": "목표 달성을 위해 계획을 세우고, 여러 단계와 불확실한 결과를 포함하는 과제를 적응적으로 수행하며, 파일 생성·웹 행동·다른 에이전트에 위임 등 환경과 상호작용하는—인간 감독이 거의 없거나 전혀 없는—범용 AI."
           },
           {
@@ -6339,19 +6511,27 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 80,
+                "end": 80,
+                "label": "p.80"
+              }
+            ],
+            "pages_label": "p.80",
             "quote_ko": "이 절에서 ‘agent’는 보통 생물·화학·독성학적 유해 물질을 가리킨다. 아래의 AI 에이전트와 혼동하지 않도록 한다."
           },
           {
-            "quote": "A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multiple steps and uncertain outcomes along the way, and interact with its environment -for example by creating files, taking actions on the web, or delegating tasks to other agents -with little to no human oversight.",
+            "quote": "A general-purpose AI which can make plans to achieve goals, adaptively perform tasks involving multiple steps and uncertain outcomes along the way, and interact with its environment -for example by creating files, taking actions on the web, or delegating tasks to other agents -with little to no human oversight. Some experts believe that sufficiently capable general-purpose AI systems may be difficult to control. Hypothesised scenarios vary in their severity, but some experts give credence to outcomes as severe as the marginalisation or extinction of humanity. Concerns about loss of control date back to the earliest days of computer science, but have recently gained more attention. AI pioneers such as Alan Turing, I. J. Good, and Norbert Wiener expressed concerns about loss of control (578, 579, 580) .",
             "term_in_source": "AI agent",
             "term_en_in_source": null,
             "document_id": "doc-c4fe09068d6e",
             "title": "International Scientific Report on the Safety of Advanced AI",
             "short": "IASR 2025",
             "tier": "A",
-            "pdf_page_start": 80,
-            "pdf_page_end": 80,
-            "chunk_id": "chk-efa7e880d285423139b2",
+            "pdf_page_start": 100,
+            "pdf_page_end": 101,
+            "chunk_id": "chk-7908caef009b322a9b0f",
             "heading_path": [
               "Key Definitions"
             ],
@@ -6363,7 +6543,48 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 100,
+                "end": 101,
+                "label": "p.100–101"
+              }
+            ],
+            "pages_label": "p.100–101",
             "quote_ko": "목표 달성을 위해 계획을 세우고, 여러 단계와 불확실한 결과를 포함하는 과제를 적응적으로 수행하며, 파일 생성·웹 행동·다른 에이전트에 위임 등 환경과 상호작용하는—인간 감독이 거의 없거나 전혀 없는—범용 AI."
+          },
+          {
+            "quote": "An AI system that can adaptively perform complex tasks, use tools, and interact with its environment - for example, by creating files, taking actions on the Web, or delegating tasks to other agents - to pursue goals with little to no human oversight.",
+            "term_in_source": "AI agent",
+            "term_en_in_source": null,
+            "document_id": "doc-971d6902bec8",
+            "title": "International AI Safety Report 2026",
+            "short": "IASR 2026",
+            "tier": "A",
+            "pdf_page_start": 148,
+            "pdf_page_end": 148,
+            "chunk_id": "chk-e68bb23f11950ad3da79",
+            "heading_path": [
+              "Glossary"
+            ],
+            "document_type": "international_org_report",
+            "language": "EN",
+            "publication_year": 2026,
+            "source_relative_path": "repository/international-organizations/2026_International-AI-Safety-Report_International-AI-Safety-Report-2026_INTERNATIONAL_ORG_REPORT_EN.pdf",
+            "source_sha256": "971d6902bec818eed38f69fffcea96287040ce1ee60e4338dc31520fb0f5d8a4",
+            "parser": "en_colon",
+            "authority": "international_org_report",
+            "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 148,
+                "end": 148,
+                "label": "p.148"
+              }
+            ],
+            "pages_label": "p.148",
+            "quote_ko": null,
+            "quote_ko_missing": true
           }
         ],
         "df": 27,
@@ -6426,6 +6647,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 221,
+                "end": 222,
+                "label": "p.221–222"
+              }
+            ],
+            "pages_label": "p.221–222",
             "quote_ko": "오늘날 가장 앞선 AI의 맞먹거나 넘는 특히 능력 있는 AI를 가리키는 말로 쓰이기도 한다. 이 보고서에서는 특히 능력 있는 범용 AI로 이해할 수 있다."
           },
           {
@@ -6450,6 +6679,14 @@
             "parser": "term_book",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 84,
+                "end": 84,
+                "label": "p.84"
+              }
+            ],
+            "pages_label": "p.84",
             "quote_ko": null
           }
         ],
@@ -6512,6 +6749,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 153,
+                "label": "p.152–153"
+              }
+            ],
+            "pages_label": "p.152–153",
             "quote_ko": "서로의 행동·목표에 적응하며—협력하거나 경쟁할 수도 있는—(AI) 에이전트들의 상호작용 네트워크."
           }
         ],
@@ -6574,6 +6819,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 149,
+                "end": 149,
+                "label": "p.149"
+              }
+            ],
+            "pages_label": "p.149",
             "quote_ko": "인간 안내가 거의 없거나 전혀 없이도 다단계 전략을 세우고 실행하는 인공지능 시스템의 능력."
           }
         ],
@@ -6680,6 +6933,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 221,
+                "end": 222,
+                "label": "p.221–222"
+              }
+            ],
+            "pages_label": "p.221–222",
             "quote_ko": "인공지능 시스템이 편향이나 부당한 차별 없이, 특히 인종·성별·연령·사회경제적 지위 등 보호 속성과 관련해 모든 개인·집단을 공정하게 대우해야 한다는 사회적 가치."
           }
         ],
@@ -7197,30 +7458,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "범용 AI의 출력(추천·결정 등)을 좌우하는 요인을 이해관계자가 알 수 있는 정도. 모델 내부 작동, 학습 방식·데이터, 입력의 어떤 특징이 출력에 영향을 줬는지, 다른 상황에서 어떤 결정을 내렸을지 등이 포함될 수 있다."
-          },
-          {
-            "quote": "The degree to which the factors informing general-purpose AI output, e.g. recommendations or decisions, are knowable by various stakeholders. Such factors might include the inner workings of the AI model, how it has been trained, what data it is trained on, what features of the input affected its output, and what decisions it would have made under different circumstances.",
-            "term_in_source": "Algorithmic transparency",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 218,
-            "pdf_page_end": 219,
-            "chunk_id": "chk-50c56be64a32812a49d0",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 176,
+                "end": 177,
+                "label": "p.176–177"
+              },
+              {
+                "start": 218,
+                "end": 219,
+                "label": "p.218–219"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.176–177, p.218–219",
             "quote_ko": "범용 AI의 출력(추천·결정 등)을 좌우하는 요인을 이해관계자가 알 수 있는 정도. 모델 내부 작동, 학습 방식·데이터, 입력의 어떤 특징이 출력에 영향을 줬는지, 다른 상황에서 어떤 결정을 내렸을지 등이 포함될 수 있다."
           }
         ],
@@ -7229,8 +7479,8 @@
         "chunk_hits": 14,
         "year_span": 2,
         "score": 4.0717,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Algorithmic Transparency"
         ],
@@ -7283,6 +7533,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 129,
+                "end": 130,
+                "label": "p.129–130"
+              }
+            ],
+            "pages_label": "p.129–130",
             "quote_ko": "AI 기업이 학습 데이터·모델 구조·배출 데이터·안전·보안 조치·의사결정 과정 등 기술·조직 정보를 공개·정부 감시에 드러내는 정도."
           },
           {
@@ -7307,6 +7565,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 152,
+                "label": "p.152"
+              }
+            ],
+            "pages_label": "p.152",
             "quote_ko": "조직이 정보를 공개하는 정도. AI 개발자의 경우 학습 데이터·모델 구조·안전·보안 조치·의사결정 과정 공유 등이 해당한다."
           },
           {
@@ -7331,30 +7597,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "AI 기업이 학습 데이터·모델 구조·배출 데이터·안전·보안 조치·의사결정 과정 등 기술·조직 정보를 공개·정부 감시에 드러내는 정도."
-          },
-          {
-            "quote": "The degree to which AI companies disclose technical or organisational information to public or governmental scrutiny, including training data, model architectures, emissions data, safety and security measures, or decision-making processes.",
-            "term_in_source": "Institutional transparency",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 223,
-            "pdf_page_end": 223,
-            "chunk_id": "chk-7bd6d2938db4d03f5e06",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 176,
+                "end": 177,
+                "label": "p.176–177"
+              },
+              {
+                "start": 223,
+                "end": 223,
+                "label": "p.223"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.176–177, p.223",
             "quote_ko": "AI 기업이 학습 데이터·모델 구조·배출 데이터·안전·보안 조치·의사결정 과정 등 기술·조직 정보를 공개·정부 감시에 드러내는 정도."
           }
         ],
@@ -7364,7 +7619,7 @@
         "year_span": 2,
         "score": 4.0106,
         "status": "multi",
-        "n_defs": 4,
+        "n_defs": 3,
         "variants": [
           "Institutional transparency"
         ],
@@ -7461,6 +7716,14 @@
             "parser": "law_article",
             "authority": "law_or_regulation",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 3,
+                "end": 3,
+                "label": "p.3"
+              }
+            ],
+            "pages_label": "p.3",
             "quote_ko": null
           },
           {
@@ -7485,6 +7748,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 222,
+                "end": 223,
+                "label": "p.222–223"
+              }
+            ],
+            "pages_label": "p.222–223",
             "quote_ko": "기존 데이터에서 패턴을 학습해 텍스트·이미지·오디오 등 새로운 콘텐츠를 만들어 내는 AI."
           },
           {
@@ -7509,6 +7780,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 16,
+                "end": 17,
+                "label": "p.16–17"
+              }
+            ],
+            "pages_label": "p.16–17",
             "quote_ko": null
           },
           {
@@ -7533,6 +7812,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 83,
+                "end": 84,
+                "label": "p.83–84"
+              }
+            ],
+            "pages_label": "p.83–84",
             "quote_ko": null
           }
         ],
@@ -7641,6 +7928,24 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 139,
+                "end": 140,
+                "label": "p.139–140"
+              },
+              {
+                "start": 208,
+                "end": 209,
+                "label": "p.208–209"
+              },
+              {
+                "start": 224,
+                "end": 225,
+                "label": "p.224–225"
+              }
+            ],
+            "pages_label": "p.139–140, p.208–209, p.224–225",
             "quote_ko": "자신이나 집단의 민감 정보·활동에 타인이 접근·처리하는 방식을 스스로 통제할 권리."
           },
           {
@@ -7665,55 +7970,15 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 154,
+                "end": 154,
+                "label": "p.154"
+              }
+            ],
+            "pages_label": "p.154",
             "quote_ko": "자신에 관한 데이터에 타인이 접근·처리하는 방식을 스스로 통제할 권리."
-          },
-          {
-            "quote": "A person's or group's right to control how others access or process their sensitive information and activities.",
-            "term_in_source": "Privacy",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 208,
-            "pdf_page_end": 209,
-            "chunk_id": "chk-0d65675a63635677dd37",
-            "heading_path": [
-              "Key Definitions"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "자신이나 집단의 민감 정보·활동에 타인이 접근·처리하는 방식을 스스로 통제할 권리."
-          },
-          {
-            "quote": "A person's or group's right to control how others access or process their sensitive information and activities.",
-            "term_in_source": "Privacy",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 224,
-            "pdf_page_end": 225,
-            "chunk_id": "chk-519ebfa8e1407a747ac7",
-            "heading_path": [
-              "Glossary"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "자신이나 집단의 민감 정보·활동에 타인이 접근·처리하는 방식을 스스로 통제할 권리."
           }
         ],
         "df": 38,
@@ -7722,7 +7987,7 @@
         "year_span": 9,
         "score": 15.8978,
         "status": "multi",
-        "n_defs": 4,
+        "n_defs": 2,
         "variants": [
           "Privacy"
         ],
@@ -8295,6 +8560,14 @@
             "parser": "law_article",
             "authority": "law_or_regulation",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 3,
+                "end": 3,
+                "label": "p.3"
+              }
+            ],
+            "pages_label": "p.3",
             "quote_ko": null
           },
           {
@@ -8319,6 +8592,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 219,
+                "end": 220,
+                "label": "p.219–220"
+              }
+            ],
+            "pages_label": "p.219–220",
             "quote_ko": "학습·추론·문제 해결·자연어 처리·의사결정처럼 보통 인간 지능이 필요한 과제를 수행하는 시스템·기계를 만드는 데 초점을 둔 컴퓨터과학 분야."
           },
           {
@@ -8343,6 +8624,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 16,
+                "end": 17,
+                "label": "p.16–17"
+              }
+            ],
+            "pages_label": "p.16–17",
             "quote_ko": null
           },
           {
@@ -8367,6 +8656,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 83,
+                "end": 84,
+                "label": "p.83–84"
+              }
+            ],
+            "pages_label": "p.83–84",
             "quote_ko": null
           },
           {
@@ -8391,6 +8688,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 13,
+                "end": 13,
+                "label": "p.13"
+              }
+            ],
+            "pages_label": "p.13",
             "quote_ko": null
           }
         ],
@@ -8456,6 +8761,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 221,
+                "end": 222,
+                "label": "p.221–222"
+              }
+            ],
+            "pages_label": "p.221–222",
             "quote_ko": "한 가지 기능에 특화되지 않고 여러 영역에 걸쳐 폭넓은 과제를 수행하도록 설계된 AI 시스템. 대조: 협소 AI."
           },
           {
@@ -8480,6 +8793,14 @@
             "parser": "term_book",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 164,
+                "end": 164,
+                "label": "p.164"
+              }
+            ],
+            "pages_label": "p.164",
             "quote_ko": null
           }
         ],
@@ -8547,6 +8868,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 155,
+                "end": 156,
+                "label": "p.155–156"
+              }
+            ],
+            "pages_label": "p.155–156",
             "quote_ko": "AI의 능력 자체보다, 개발·배포가 인간 행동·조직 관행·사회 구조를 바꾸는 데서 생기는 위험. (EU AI법의 ‘시스템적 위험’—고영향 범용 AI 모델의 고영향 능력에 특유한 위험—과는 다른 쓰임에 유의.)"
           },
           {
@@ -8571,6 +8900,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 227,
+                "end": 228,
+                "label": "p.227–228"
+              }
+            ],
+            "pages_label": "p.227–228",
             "quote_ko": "개별 모델·시스템의 능력을 넘어, 범용 AI 개발·배포와 관련된 더 넓은 사회적 위험. 노동시장 영향·프라이버시 침해·환경 피해 등이 예다. (EU AI법의 ‘시스템적 위험’ 정의와는 다를 수 있다.)"
           },
           {
@@ -8595,6 +8932,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 112,
+                "end": 112,
+                "label": "p.112"
+              }
+            ],
+            "pages_label": "p.112",
             "quote_ko": null
           },
           {
@@ -8619,6 +8964,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 113,
+                "end": 113,
+                "label": "p.113"
+              }
+            ],
+            "pages_label": "p.113",
             "quote_ko": null
           },
           {
@@ -8643,6 +8996,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 113,
+                "end": 113,
+                "label": "p.113"
+              }
+            ],
+            "pages_label": "p.113",
             "quote_ko": null
           }
         ],
@@ -8707,6 +9068,14 @@
             "parser": "law_article",
             "authority": "law_or_regulation",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 3,
+                "end": 3,
+                "label": "p.3"
+              }
+            ],
+            "pages_label": "p.3",
             "quote_ko": null
           },
           {
@@ -8731,6 +9100,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 16,
+                "end": 17,
+                "label": "p.16–17"
+              }
+            ],
+            "pages_label": "p.16–17",
             "quote_ko": null
           },
           {
@@ -8755,6 +9132,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 79,
+                "end": 79,
+                "label": "p.79"
+              }
+            ],
+            "pages_label": "p.79",
             "quote_ko": null
           },
           {
@@ -8779,6 +9164,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 83,
+                "end": 84,
+                "label": "p.83–84"
+              }
+            ],
+            "pages_label": "p.83–84",
             "quote_ko": null
           }
         ],
@@ -8841,6 +9234,14 @@
             "parser": "law_article",
             "authority": "law_or_regulation",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 3,
+                "end": 3,
+                "label": "p.3"
+              }
+            ],
+            "pages_label": "p.3",
             "quote_ko": null
           },
           {
@@ -8865,6 +9266,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 16,
+                "end": 17,
+                "label": "p.16–17"
+              }
+            ],
+            "pages_label": "p.16–17",
             "quote_ko": null
           },
           {
@@ -8889,6 +9298,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 83,
+                "end": 84,
+                "label": "p.83–84"
+              }
+            ],
+            "pages_label": "p.83–84",
             "quote_ko": null
           },
           {
@@ -8913,6 +9330,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 13,
+                "end": 13,
+                "label": "p.13"
+              }
+            ],
+            "pages_label": "p.13",
             "quote_ko": null
           }
         ],
@@ -8975,6 +9400,14 @@
             "parser": "law_article",
             "authority": "law_or_regulation",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 3,
+                "end": 3,
+                "label": "p.3"
+              }
+            ],
+            "pages_label": "p.3",
             "quote_ko": null
           },
           {
@@ -8999,6 +9432,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 16,
+                "end": 17,
+                "label": "p.16–17"
+              }
+            ],
+            "pages_label": "p.16–17",
             "quote_ko": null
           },
           {
@@ -9023,6 +9464,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 83,
+                "end": 84,
+                "label": "p.83–84"
+              }
+            ],
+            "pages_label": "p.83–84",
             "quote_ko": null
           }
         ],
@@ -9085,6 +9534,14 @@
             "parser": "law_article",
             "authority": "law_or_regulation",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 3,
+                "end": 3,
+                "label": "p.3"
+              }
+            ],
+            "pages_label": "p.3",
             "quote_ko": null
           },
           {
@@ -9109,6 +9566,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 16,
+                "end": 17,
+                "label": "p.16–17"
+              }
+            ],
+            "pages_label": "p.16–17",
             "quote_ko": null
           },
           {
@@ -9133,6 +9598,14 @@
             "parser": "law_article",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 83,
+                "end": 84,
+                "label": "p.83–84"
+              }
+            ],
+            "pages_label": "p.83–84",
             "quote_ko": null
           },
           {
@@ -9157,6 +9630,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 13,
+                "end": 13,
+                "label": "p.13"
+              }
+            ],
+            "pages_label": "p.13",
             "quote_ko": null
           }
         ],
@@ -9219,6 +9700,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 155,
+                "end": 156,
+                "label": "p.155–156"
+              }
+            ],
+            "pages_label": "p.155–156",
             "quote_ko": "AI의 능력 자체보다, 개발·배포가 인간 행동·조직 관행·사회 구조를 바꾸는 데서 생기는 위험. (EU AI법의 ‘시스템적 위험’—고영향 범용 AI 모델의 고영향 능력에 특유한 위험—과는 다른 쓰임에 유의.)"
           },
           {
@@ -9243,6 +9732,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 227,
+                "end": 228,
+                "label": "p.227–228"
+              }
+            ],
+            "pages_label": "p.227–228",
             "quote_ko": "개별 모델·시스템의 능력을 넘어, 범용 AI 개발·배포와 관련된 더 넓은 사회적 위험. 노동시장 영향·프라이버시 침해·환경 피해 등이 예다. (EU AI법의 ‘시스템적 위험’ 정의와는 다를 수 있다.)"
           },
           {
@@ -9267,6 +9764,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 113,
+                "end": 113,
+                "label": "p.113"
+              }
+            ],
+            "pages_label": "p.113",
             "quote_ko": null
           }
         ],
@@ -9329,6 +9834,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 155,
+                "end": 156,
+                "label": "p.155–156"
+              }
+            ],
+            "pages_label": "p.155–156",
             "quote_ko": "AI의 능력 자체보다, 개발·배포가 인간 행동·조직 관행·사회 구조를 바꾸는 데서 생기는 위험. (EU AI법의 ‘시스템적 위험’—고영향 범용 AI 모델의 고영향 능력에 특유한 위험—과는 다른 쓰임에 유의.)"
           },
           {
@@ -9353,6 +9866,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 227,
+                "end": 228,
+                "label": "p.227–228"
+              }
+            ],
+            "pages_label": "p.227–228",
             "quote_ko": "개별 모델·시스템의 능력을 넘어, 범용 AI 개발·배포와 관련된 더 넓은 사회적 위험. 노동시장 영향·프라이버시 침해·환경 피해 등이 예다. (EU AI법의 ‘시스템적 위험’ 정의와는 다를 수 있다.)"
           },
           {
@@ -9377,6 +9898,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 113,
+                "end": 113,
+                "label": "p.113"
+              }
+            ],
+            "pages_label": "p.113",
             "quote_ko": null
           }
         ],
@@ -9439,6 +9968,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 13,
+                "end": 13,
+                "label": "p.13"
+              }
+            ],
+            "pages_label": "p.13",
             "quote_ko": null
           }
         ],
@@ -9545,30 +10082,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "위험을 식별·평가·완화·모니터링하는 체계적 과정."
-          },
-          {
-            "quote": "The systematic process of identifying, evaluating, mitigating and monitoring risks.",
-            "term_in_source": "Risk management",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 225,
-            "pdf_page_end": 226,
-            "chunk_id": "chk-ce148d2231013af4124b",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 158,
+                "end": 159,
+                "label": "p.158–159"
+              },
+              {
+                "start": 225,
+                "end": 226,
+                "label": "p.225–226"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.158–159, p.225–226",
             "quote_ko": "위험을 식별·평가·완화·모니터링하는 체계적 과정."
           }
         ],
@@ -9577,8 +10103,8 @@
         "chunk_hits": 911,
         "year_span": 4,
         "score": 15.5729,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Risk Management",
           "Risk-Management",
@@ -9678,6 +10204,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 12,
+                "end": 12,
+                "label": "p.12"
+              }
+            ],
+            "pages_label": "p.12",
             "quote_ko": null
           },
           {
@@ -9702,6 +10236,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 12,
+                "end": 12,
+                "label": "p.12"
+              }
+            ],
+            "pages_label": "p.12",
             "quote_ko": null
           }
         ],
@@ -10089,6 +10631,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 218,
+                "end": 219,
+                "label": "p.218–219"
+              }
+            ],
+            "pages_label": "p.218–219",
             "quote_ko": "데이터 수집·전처리, 사전학습, 파인튜닝, 모델 통합, 배포, 배포 후 모니터링, 하류 수정 등 AI 개발의 구분된 단계들."
           }
         ],
@@ -10151,6 +10701,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 154,
+                "end": 155,
+                "label": "p.154–155"
+              }
+            ],
+            "pages_label": "p.154–155",
             "quote_ko": "개인이나 조직이 감수할 의향이 있는 위험 수준."
           },
           {
@@ -10175,6 +10733,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 225,
+                "end": 226,
+                "label": "p.225–226"
+              }
+            ],
+            "pages_label": "p.225–226",
             "quote_ko": "개인이나 조직이 감수할 의향이 있는 위험 수준."
           }
         ],
@@ -10237,6 +10803,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 154,
+                "end": 155,
+                "label": "p.154–155"
+              }
+            ],
+            "pages_label": "p.154–155",
             "quote_ko": "허용 가능한 위험과 그렇지 않은 위험을 가르고, 초과 시 특정 위험관리 조치를 촉발하는 정량·정성 한도."
           },
           {
@@ -10261,6 +10835,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 225,
+                "end": 226,
+                "label": "p.225–226"
+              }
+            ],
+            "pages_label": "p.225–226",
             "quote_ko": "허용 가능한 위험과 그렇지 않은 위험을 가르고, 초과 시 특정 위험관리 조치를 촉발하는 정량·정성 한도."
           }
         ],
@@ -10323,6 +10905,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 13,
+                "end": 13,
+                "label": "p.13"
+              }
+            ],
+            "pages_label": "p.13",
             "quote_ko": null
           }
         ],
@@ -10385,6 +10975,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 13,
+                "end": 13,
+                "label": "p.13"
+              }
+            ],
+            "pages_label": "p.13",
             "quote_ko": null
           }
         ],
@@ -10881,6 +11479,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 62,
+                "end": 63,
+                "label": "p.62–63"
+              }
+            ],
+            "pages_label": "p.62–63",
             "quote_ko": "실제 인물이 하지 않은 말·행동을 한 것처럼 보이게 하는, 오디오·시각 형태의 AI 생성 가짜 콘텐츠."
           },
           {
@@ -10905,6 +11511,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 139,
+                "end": 140,
+                "label": "p.139–140"
+              }
+            ],
+            "pages_label": "p.139–140",
             "quote_ko": "실제 인물이 하지 않은 말·행동을 한 것처럼 보이게 하는, 오디오·시각 형태의 AI 생성 가짜 콘텐츠."
           },
           {
@@ -10929,6 +11543,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              }
+            ],
+            "pages_label": "p.150",
             "quote_ko": "사람들이 실제로 하지 않은 말·행동이나, 일어나지 않은 사건을 묘사하는 AI 생성 오디오·시각 콘텐츠."
           },
           {
@@ -10953,6 +11575,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              }
+            ],
+            "pages_label": "p.150",
             "quote_ko": "실제 인물이 하지 않은 말·행동을 한 것처럼 보이게 하는, 오디오·시각 형태의 AI 생성 가짜 콘텐츠."
           },
           {
@@ -10977,6 +11607,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 201,
+                "end": 202,
+                "label": "p.201–202"
+              },
+              {
+                "start": 220,
+                "end": 221,
+                "label": "p.220–221"
+              }
+            ],
+            "pages_label": "p.201–202, p.220–221",
             "quote_ko": "실제 인물이 하지 않은 말·행동을 한 것처럼 보이게 하는, 오디오·시각 형태의 AI 생성 가짜 콘텐츠."
           }
         ],
@@ -11087,30 +11730,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "사람을 속이거나 영향을 주려는 의도로 생성·유포되는 거짓·오도 정보. 대조: 허위정보(Misinformation)."
-          },
-          {
-            "quote": "False or misleading information generated or spread with the intent to deceive or influence people. See 'Misinformation' for contrast.",
-            "term_in_source": "Disinformation",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 221,
-            "pdf_page_end": 222,
-            "chunk_id": "chk-5c8c4a50b7e7e9f6dccf",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 220,
+                "end": 221,
+                "label": "p.220–221"
+              },
+              {
+                "start": 221,
+                "end": 222,
+                "label": "p.221–222"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.220–221, p.221–222",
             "quote_ko": "사람을 속이거나 영향을 주려는 의도로 생성·유포되는 거짓·오도 정보. 대조: 허위정보(Misinformation)."
           }
         ],
@@ -11119,8 +11751,8 @@
         "chunk_hits": 69,
         "year_span": 9,
         "score": 9.8098,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Disinformation"
         ],
@@ -11217,6 +11849,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 16,
+                "end": 16,
+                "label": "p.16"
+              }
+            ],
+            "pages_label": "p.16",
             "quote_ko": null
           }
         ],
@@ -11409,6 +12049,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 223,
+                "end": 224,
+                "label": "p.223–224"
+              }
+            ],
+            "pages_label": "p.223–224",
             "quote_ko": "속이려는 의도 없이 생성·유포되는 거짓·오도 정보. 대조: 허위조작정보(Disinformation)."
           }
         ],
@@ -11471,6 +12119,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 47,
+                "end": 48,
+                "label": "p.47–48"
+              },
+              {
+                "start": 226,
+                "end": 227,
+                "label": "p.226–227"
+              }
+            ],
+            "pages_label": "p.47–48, p.226–227",
             "quote_ko": "텍스트·이미지처럼 인위적으로—예를 들어 범용 AI로—생성된 데이터. 고품질 자연 데이터가 부족할 때 AI 학습에 쓰이기도 한다."
           },
           {
@@ -11495,31 +12156,15 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "텍스트·이미지처럼 인위적으로 생성되어, 다른 출처의 고품질 데이터가 부족할 때 AI 모델 학습에 쓰이기도 하는 데이터."
-          },
-          {
-            "quote": "Data like text or images that has been artificially generated, for instance by general-purpose AI systems. Synthetic data might be used for training AI systems, e.g. when high-quality natural data is scarce.",
-            "term_in_source": "Synthetic data",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 226,
-            "pdf_page_end": 227,
-            "chunk_id": "chk-0c67b0bfbc95f30d0312",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 155,
+                "end": 156,
+                "label": "p.155–156"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "텍스트·이미지처럼 인위적으로—예를 들어 범용 AI로—생성된 데이터. 고품질 자연 데이터가 부족할 때 AI 학습에 쓰이기도 한다."
+            "pages_label": "p.155–156",
+            "quote_ko": "텍스트·이미지처럼 인위적으로 생성되어, 다른 출처의 고품질 데이터가 부족할 때 AI 모델 학습에 쓰이기도 하는 데이터."
           }
         ],
         "df": 12,
@@ -11528,7 +12173,7 @@
         "year_span": 3,
         "score": 7.4859,
         "status": "multi",
-        "n_defs": 3,
+        "n_defs": 2,
         "variants": [
           "Synthetic Data",
           "synthetic-data"
@@ -11582,6 +12227,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              }
+            ],
+            "pages_label": "p.150",
             "quote_ko": "데이터가 어디서 왔는지, 어떻게 처리됐는지에 대한 이력 기록."
           }
         ],
@@ -11644,30 +12297,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "AI 생성 콘텐츠(텍스트·이미지·오디오 등)에 심어 인공 출처를 표시하거나 출처를 검증·오용을 탐지하기 위한, 미묘하고 대개 눈에 잘 띄지 않는 패턴."
-          },
-          {
-            "quote": "A subtle, often imperceptible pattern embedded within AI-generated content (such as text, images, or audio) to indicate its artificial origin, verify its source, or detect potential misuse.",
-            "term_in_source": "Watermark",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 227,
-            "pdf_page_end": 228,
-            "chunk_id": "chk-74738e3054e312f3ded5",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 201,
+                "end": 202,
+                "label": "p.201–202"
+              },
+              {
+                "start": 227,
+                "end": 228,
+                "label": "p.227–228"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.201–202, p.227–228",
             "quote_ko": "AI 생성 콘텐츠(텍스트·이미지·오디오 등)에 심어 인공 출처를 표시하거나 출처를 검증·오용을 탐지하기 위한, 미묘하고 대개 눈에 잘 띄지 않는 패턴."
           }
         ],
@@ -11676,8 +12318,8 @@
         "chunk_hits": 32,
         "year_span": 3,
         "score": 5.1437,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Watermark"
         ],
@@ -11730,6 +12372,14 @@
             "parser": "term_book",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 90,
+                "end": 90,
+                "label": "p.90"
+              }
+            ],
+            "pages_label": "p.90",
             "quote_ko": null
           }
         ],
@@ -11792,6 +12442,24 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 62,
+                "end": 63,
+                "label": "p.62–63"
+              },
+              {
+                "start": 201,
+                "end": 202,
+                "label": "p.201–202"
+              },
+              {
+                "start": 218,
+                "end": 219,
+                "label": "p.218–219"
+              }
+            ],
+            "pages_label": "p.62–63, p.201–202, p.218–219",
             "quote_ko": "생성형 AI가 만든 오디오·텍스트·시각 콘텐츠로, 사람들이 하지 않은 일·말하지 않은 말을 보이게 하거나 사건 장소를 바꾸거나 일어나지 않은 일을 그리는 등, 악의적·기만적으로 현실과 다르게 묘사하는 것."
           },
           {
@@ -11816,54 +12484,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "생성형 AI가 만든 오디오·텍스트·시각 콘텐츠로, 사람들이 하지 않은 일·말하지 않은 말을 보이게 하거나 사건 장소를 바꾸거나 일어나지 않은 일을 그리는 등, 악의적·기만적으로 현실과 다르게 묘사하는 것."
-          },
-          {
-            "quote": "Audio, text, or visual content, produced by generative AI, that depicts people or events in a way that differs from reality in a malicious or deceptive way, e.g. showing people doing things they did not do, saying things they did not say, changing the location of real events, or depicting events that did not happen.",
-            "term_in_source": "AI-generated fake content",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 201,
-            "pdf_page_end": 202,
-            "chunk_id": "chk-0a696b7f450d0a47c64b",
-            "heading_path": [
-              "Key Definitions"
+            "page_spans": [
+              {
+                "start": 67,
+                "end": 68,
+                "label": "p.67–68"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "생성형 AI가 만든 오디오·텍스트·시각 콘텐츠로, 사람들이 하지 않은 일·말하지 않은 말을 보이게 하거나 사건 장소를 바꾸거나 일어나지 않은 일을 그리는 등, 악의적·기만적으로 현실과 다르게 묘사하는 것."
-          },
-          {
-            "quote": "Audio, text, or visual content, produced by generative AI, that depicts people or events in a way that differs from reality in a malicious or deceptive way, e.g. showing people doing things they did not do, saying things they did not say, changing the location of real events, or depicting events that did not happen.",
-            "term_in_source": "AI-generated fake content",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 218,
-            "pdf_page_end": 219,
-            "chunk_id": "chk-50c56be64a32812a49d0",
-            "heading_path": [
-              "Glossary"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.67–68",
             "quote_ko": "생성형 AI가 만든 오디오·텍스트·시각 콘텐츠로, 사람들이 하지 않은 일·말하지 않은 말을 보이게 하거나 사건 장소를 바꾸거나 일어나지 않은 일을 그리는 등, 악의적·기만적으로 현실과 다르게 묘사하는 것."
           }
         ],
@@ -11873,7 +12501,7 @@
         "year_span": 2,
         "score": 2.9605,
         "status": "multi",
-        "n_defs": 4,
+        "n_defs": 2,
         "variants": [
           "AI-generated fake content"
         ],
@@ -12555,6 +13183,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 13,
+                "end": 13,
+                "label": "p.13"
+              }
+            ],
+            "pages_label": "p.13",
             "quote_ko": null
           }
         ],
@@ -12661,6 +13297,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 221,
+                "end": 222,
+                "label": "p.221–222"
+              }
+            ],
+            "pages_label": "p.221–222",
             "quote_ko": "폭넓은 하류 과제에 적응할 수 있도록 설계된 범용 AI 모델."
           },
           {
@@ -12685,6 +13329,14 @@
             "parser": "term_book",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 81,
+                "end": 81,
+                "label": "p.81"
+              }
+            ],
+            "pages_label": "p.81",
             "quote_ko": null
           }
         ],
@@ -12793,6 +13445,14 @@
             "parser": "term_book",
             "authority": "other",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 11,
+                "end": 11,
+                "label": "p.11"
+              }
+            ],
+            "pages_label": "p.11",
             "quote_ko": null
           }
         ],
@@ -12985,6 +13645,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 30,
+                "end": 31,
+                "label": "p.30–31"
+              }
+            ],
+            "pages_label": "p.30–31",
             "quote_ko": "‘컴퓨팅 자원’의 약칭. AI를 학습·실행하는 데 필요한 하드웨어(예: GPU), 소프트웨어(예: 데이터 관리), 인프라(예: 데이터센터)를 가리킨다."
           },
           {
@@ -13009,54 +13677,24 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "‘컴퓨팅 자원’의 약칭. AI를 학습·실행하는 데 필요한 하드웨어(예: GPU), 소프트웨어(예: 데이터 관리), 인프라(예: 데이터센터)를 가리킨다."
-          },
-          {
-            "quote": "Shorthand for 'computational resources', which refers to the hardware (e.g. GPUs), software (e.g. data management software) and infrastructure (e.g. data centres) required to train and run AI systems.",
-            "term_in_source": "Compute",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 129,
-            "pdf_page_end": 130,
-            "chunk_id": "chk-87dd7274a96b08a47888",
-            "heading_path": [
-              "Key Definitions"
+            "page_spans": [
+              {
+                "start": 47,
+                "end": 48,
+                "label": "p.47–48"
+              },
+              {
+                "start": 129,
+                "end": 130,
+                "label": "p.129–130"
+              },
+              {
+                "start": 219,
+                "end": 220,
+                "label": "p.219–220"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "‘컴퓨팅 자원’의 약칭. AI를 학습·실행하는 데 필요한 하드웨어(예: GPU), 소프트웨어(예: 데이터 관리), 인프라(예: 데이터센터)를 가리킨다."
-          },
-          {
-            "quote": "Shorthand for 'computational resources', which refers to the hardware (e.g. GPUs), software (e.g. data management software) and infrastructure (e.g. data centres) required to train and run AI systems.",
-            "term_in_source": "Compute",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 219,
-            "pdf_page_end": 220,
-            "chunk_id": "chk-45b6d442137a3ffb0240",
-            "heading_path": [
-              "Glossary"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.47–48, p.129–130, p.219–220",
             "quote_ko": "‘컴퓨팅 자원’의 약칭. AI를 학습·실행하는 데 필요한 하드웨어(예: GPU), 소프트웨어(예: 데이터 관리), 인프라(예: 데이터센터)를 가리킨다."
           }
         ],
@@ -13066,7 +13704,7 @@
         "year_span": 9,
         "score": 14.555,
         "status": "multi",
-        "n_defs": 4,
+        "n_defs": 2,
         "variants": [
           "Compute"
         ],
@@ -13119,6 +13757,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 224,
+                "end": 225,
+                "label": "p.224–225"
+              }
+            ],
+            "pages_label": "p.224–225",
             "quote_ko": "학습 중 데이터로부터 배우며 입력을 출력으로 바꾸는 방식을 정하는 AI 모델의 수치 요소(가중치·바이어스 등). 여기서 ‘바이어스’는 차별 맥락의 편향과 무관한 수학 용어다."
           }
         ],
@@ -13181,78 +13827,29 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "주어진 입력에 대해 출력을 생성하며, 학습 때 익힌 지식을 적용하는 과정."
-          },
-          {
-            "quote": "The process in which an AI generates outputs based on a given input, thereby applying the knowledge learnt during training.",
-            "term_in_source": "Inference",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 47,
-            "pdf_page_end": 48,
-            "chunk_id": "chk-6edca717b159ede11212",
-            "heading_path": [
-              "Key Definitions"
+            "page_spans": [
+              {
+                "start": 38,
+                "end": 38,
+                "label": "p.38"
+              },
+              {
+                "start": 47,
+                "end": 48,
+                "label": "p.47–48"
+              },
+              {
+                "start": 222,
+                "end": 223,
+                "label": "p.222–223"
+              },
+              {
+                "start": 319,
+                "end": 319,
+                "label": "p.319"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "주어진 입력에 대해 출력을 생성하며, 학습 때 익힌 지식을 적용하는 과정."
-          },
-          {
-            "quote": "The process in which an AI generates outputs based on a given input, thereby applying the knowledge learnt during training.",
-            "term_in_source": "Inference",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 222,
-            "pdf_page_end": 223,
-            "chunk_id": "chk-d5ba122031e52ec1f1ae",
-            "heading_path": [
-              "Glossary"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "주어진 입력에 대해 출력을 생성하며, 학습 때 익힌 지식을 적용하는 과정."
-          },
-          {
-            "quote": "The process in which an AI generates outputs based on a given input, thereby applying the knowledge learnt during training.",
-            "term_in_source": "Inference",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 319,
-            "pdf_page_end": 319,
-            "chunk_id": "chk-10717118f59d38df28c9",
-            "heading_path": [
-              "Key definitions"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.38, p.47–48, p.222–223, p.319",
             "quote_ko": "주어진 입력에 대해 출력을 생성하며, 학습 때 익힌 지식을 적용하는 과정."
           }
         ],
@@ -13261,8 +13858,8 @@
         "chunk_hits": 149,
         "year_span": 7,
         "score": 11.7218,
-        "status": "multi",
-        "n_defs": 4,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Inference"
         ],
@@ -13315,6 +13912,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 30,
+                "end": 31,
+                "label": "p.30–31"
+              }
+            ],
+            "pages_label": "p.30–31",
             "quote_ko": "신경망 노드 간 연결 강도를 나타내는 모델 파라미터. 주어진 입력에 대한 출력을 결정하는 데 중요하며, 성능을 높이도록 학습 과정에서 반복 갱신된다."
           },
           {
@@ -13339,6 +13944,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              },
+              {
+                "start": 227,
+                "end": 228,
+                "label": "p.227–228"
+              }
+            ],
+            "pages_label": "p.150, p.227–228",
             "quote_ko": "신경망 노드 간 연결 강도를 나타내는 모델 파라미터. 주어진 입력에 대한 출력을 결정하는 데 중요하며, 성능을 높이도록 학습 과정에서 반복 갱신된다."
           },
           {
@@ -13363,30 +13981,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "신경망 노드 간 연결 강도를 나타내는 모델 파라미터. 주어진 입력에 대한 출력을 결정하는 데 중요하며, 성능을 높이도록 학습 과정에서 반복 갱신된다."
-          },
-          {
-            "quote": "Model parameters that represent the strength of connection between nodes in a neural network. Weights play an important part in determining the output of a model in response to a given input and are iteratively updated during model training to improve its performance.",
-            "term_in_source": "Weights",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 227,
-            "pdf_page_end": 228,
-            "chunk_id": "chk-74738e3054e312f3ded5",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 170,
+                "end": 170,
+                "label": "p.170"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.170",
             "quote_ko": "신경망 노드 간 연결 강도를 나타내는 모델 파라미터. 주어진 입력에 대한 출력을 결정하는 데 중요하며, 성능을 높이도록 학습 과정에서 반복 갱신된다."
           }
         ],
@@ -13396,7 +13998,7 @@
         "year_span": 9,
         "score": 14.6577,
         "status": "multi",
-        "n_defs": 4,
+        "n_defs": 3,
         "variants": [
           "Weights"
         ],
@@ -13449,6 +14051,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 30,
+                "end": 31,
+                "label": "p.30–31"
+              },
+              {
+                "start": 220,
+                "end": 221,
+                "label": "p.220–221"
+              }
+            ],
+            "pages_label": "p.30–31, p.220–221",
             "quote_ko": "대량의 데이터와 컴퓨팅으로 다층 인공신경망(생물 뇌에서 영감)을 학습시켜, 고수준 특징을 자동으로 뽑아내 강력한 패턴 인식·의사결정을 가능하게 하는 기계학습 기법."
           },
           {
@@ -13473,31 +14088,15 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "대량의 컴퓨팅으로 다층 인공신경망(생물 뇌에서 영감)을 학습시켜, 대규모 데이터에서 정보를 자동으로 배우게 해 강력한 패턴 인식·의사결정을 가능하게 하는 기계학습 기법."
-          },
-          {
-            "quote": "A machine learning technique in which large amounts of data and compute are used to train multilayered, artificial neural networks (inspired by biological brains) to automatically learn and extract high-level features from large datasets, enabling powerful pattern recognition and decision-making capabilities.",
-            "term_in_source": "Deep learning",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 220,
-            "pdf_page_end": 221,
-            "chunk_id": "chk-cbb0043a77404c462b7e",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "대량의 데이터와 컴퓨팅으로 다층 인공신경망(생물 뇌에서 영감)을 학습시켜, 고수준 특징을 자동으로 뽑아내 강력한 패턴 인식·의사결정을 가능하게 하는 기계학습 기법."
+            "pages_label": "p.150",
+            "quote_ko": "대량의 컴퓨팅으로 다층 인공신경망(생물 뇌에서 영감)을 학습시켜, 대규모 데이터에서 정보를 자동으로 배우게 해 강력한 패턴 인식·의사결정을 가능하게 하는 기계학습 기법."
           }
         ],
         "df": 14,
@@ -13506,7 +14105,7 @@
         "year_span": 9,
         "score": 14.2005,
         "status": "multi",
-        "n_defs": 3,
+        "n_defs": 2,
         "variants": [
           "Deep Learning",
           "deep-learning"
@@ -13560,6 +14159,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 30,
+                "end": 31,
+                "label": "p.30–31"
+              },
+              {
+                "start": 223,
+                "end": 224,
+                "label": "p.223–224"
+              }
+            ],
+            "pages_label": "p.30–31, p.223–224",
             "quote_ko": "인간 뇌에서 영감을 받은 수학 구조로, 상호 연결된 노드(뉴런에 비유)가 데이터를 처리·학습하는 AI 모델 유형. 현재 범용 AI 시스템의 기반이다."
           },
           {
@@ -13584,31 +14196,15 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "생물 뉴런에서 느슨하게 영감을 받은 상호 연결 노드를 층으로 배치하고, 연결을 조정하며 데이터 패턴을 학습하는 AI 모델 유형. 현재 범용 AI의 기반이다."
-          },
-          {
-            "quote": "A type of AI model consisting of a mathematical structure that is inspired by the human brain and composed of interconnected nodes (like neurons) that process and learn from data. Current general-purpose AI systems are based on neural networks.",
-            "term_in_source": "Neural network",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 223,
-            "pdf_page_end": 224,
-            "chunk_id": "chk-5853ef234036643aa588",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 153,
+                "label": "p.152–153"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "인간 뇌에서 영감을 받은 수학 구조로, 상호 연결된 노드(뉴런에 비유)가 데이터를 처리·학습하는 AI 모델 유형. 현재 범용 AI 시스템의 기반이다."
+            "pages_label": "p.152–153",
+            "quote_ko": "생물 뉴런에서 느슨하게 영감을 받은 상호 연결 노드를 층으로 배치하고, 연결을 조정하며 데이터 패턴을 학습하는 AI 모델 유형. 현재 범용 AI의 기반이다."
           }
         ],
         "df": 11,
@@ -13617,7 +14213,7 @@
         "year_span": 9,
         "score": 14.1745,
         "status": "multi",
-        "n_defs": 3,
+        "n_defs": 2,
         "variants": [
           "Neural Network",
           "Neural networks",
@@ -13672,6 +14268,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 13,
+                "end": 13,
+                "label": "p.13"
+              }
+            ],
+            "pages_label": "p.13",
             "quote_ko": null
           }
         ],
@@ -13864,30 +14468,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "인공지능 시스템이 의도된 기능을 일관되게 수행하는 능력."
-          },
-          {
-            "quote": "An AI system's ability to consistently perform its intended function.",
-            "term_in_source": "Reliability",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 225,
-            "pdf_page_end": 226,
-            "chunk_id": "chk-ce148d2231013af4124b",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 88,
+                "end": 89,
+                "label": "p.88–89"
+              },
+              {
+                "start": 225,
+                "end": 226,
+                "label": "p.225–226"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.88–89, p.225–226",
             "quote_ko": "인공지능 시스템이 의도된 기능을 일관되게 수행하는 능력."
           }
         ],
@@ -13896,8 +14489,8 @@
         "chunk_hits": 195,
         "year_span": 9,
         "score": 14.7094,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Reliability"
         ],
@@ -13950,30 +14543,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "원작 창작자에게 부여되는 법적 보호로, 이용·복제·배포에 대한 배타적 권리를 준다."
-          },
-          {
-            "quote": "A form of legal protection granted to creators of original works, giving them exclusive rights to use, reproduce, and distribute their work.",
-            "term_in_source": "Copyright",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 220,
-            "pdf_page_end": 221,
-            "chunk_id": "chk-cbb0043a77404c462b7e",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 144,
+                "end": 145,
+                "label": "p.144–145"
+              },
+              {
+                "start": 220,
+                "end": 221,
+                "label": "p.220–221"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.144–145, p.220–221",
             "quote_ko": "원작 창작자에게 부여되는 법적 보호로, 이용·복제·배포에 대한 배타적 권리를 준다."
           }
         ],
@@ -13982,8 +14564,8 @@
         "chunk_hits": 232,
         "year_span": 9,
         "score": 13.8566,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Copyright"
         ],
@@ -14036,30 +14618,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "인간 개입을 줄이거나 없이 과제를 수행하도록 기술을 쓰는 것."
-          },
-          {
-            "quote": "The use of technology to perform tasks with reduced or no human involvement.",
-            "term_in_source": "Automation",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 219,
-            "pdf_page_end": 220,
-            "chunk_id": "chk-45b6d442137a3ffb0240",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 111,
+                "end": 111,
+                "label": "p.111"
+              },
+              {
+                "start": 219,
+                "end": 220,
+                "label": "p.219–220"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.111, p.219–220",
             "quote_ko": "인간 개입을 줄이거나 없이 과제를 수행하도록 기술을 쓰는 것."
           }
         ],
@@ -14068,8 +14639,8 @@
         "chunk_hits": 176,
         "year_span": 9,
         "score": 13.7199,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Automation"
         ],
@@ -14122,30 +14693,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "AI 모델·시스템을 설계·구축·통합·적응·결합하는 모든 조직."
-          },
-          {
-            "quote": "Any organisation that designs, builds, integrates, adapts or combines AI models or systems.",
-            "term_in_source": "Developer",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 220,
-            "pdf_page_end": 221,
-            "chunk_id": "chk-cbb0043a77404c462b7e",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 30,
+                "end": 31,
+                "label": "p.30–31"
+              },
+              {
+                "start": 220,
+                "end": 221,
+                "label": "p.220–221"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.30–31, p.220–221",
             "quote_ko": "AI 모델·시스템을 설계·구축·통합·적응·결합하는 모든 조직."
           }
         ],
@@ -14154,8 +14714,8 @@
         "chunk_hits": 135,
         "year_span": 4,
         "score": 8.6776,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Developer"
         ],
@@ -14208,30 +14768,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "문학·예술 작품, 상징, 명칭, 이미지 등 법적 권리가 부여될 수 있는 정신적 창작물."
-          },
-          {
-            "quote": "Creations of the mind over which legal rights may be granted, including literary and artistic works, symbols, names and images.",
-            "term_in_source": "Intellectual property",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 223,
-            "pdf_page_end": 223,
-            "chunk_id": "chk-7bd6d2938db4d03f5e06",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 144,
+                "end": 145,
+                "label": "p.144–145"
+              },
+              {
+                "start": 223,
+                "end": 223,
+                "label": "p.223"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.144–145, p.223",
             "quote_ko": "문학·예술 작품, 상징, 명칭, 이미지 등 법적 권리가 부여될 수 있는 정신적 창작물."
           }
         ],
@@ -14240,8 +14789,8 @@
         "chunk_hits": 149,
         "year_span": 9,
         "score": 17.9981,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Intellectual property"
         ],
@@ -14294,6 +14843,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 15,
+                "end": 15,
+                "label": "p.15"
+              }
+            ],
+            "pages_label": "p.15",
             "quote_ko": null
           },
           {
@@ -14318,6 +14875,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 15,
+                "end": 15,
+                "label": "p.15"
+              }
+            ],
+            "pages_label": "p.15",
             "quote_ko": null
           }
         ],
@@ -14380,6 +14945,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 218,
+                "end": 219,
+                "label": "p.218–219"
+              }
+            ],
+            "pages_label": "p.218–219",
             "quote_ko": "인공지능 시스템이 데이터를 처리하고 특정 과제를 수행하게 하는 규칙·지시의 집합."
           }
         ],
@@ -14442,6 +15015,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 112,
+                "end": 112,
+                "label": "p.112"
+              }
+            ],
+            "pages_label": "p.112",
             "quote_ko": null
           }
         ],
@@ -14504,6 +15085,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 15,
+                "end": 15,
+                "label": "p.15"
+              }
+            ],
+            "pages_label": "p.15",
             "quote_ko": null
           }
         ],
@@ -14566,6 +15155,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 92,
+                "end": 93,
+                "label": "p.92–93"
+              }
+            ],
+            "pages_label": "p.92–93",
             "quote_ko": "개발자와 데이터 작업자가 원시 학습 데이터를 수집·정제·라벨링·표준화·변환하여 모델이 효과적으로 배울 수 있는 형식으로 만드는 AI 개발 단계."
           },
           {
@@ -14590,6 +15187,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              }
+            ],
+            "pages_label": "p.150",
             "quote_ko": "개발자와 데이터 작업자가 원시 학습 데이터를 수집·정제·라벨링·표준화·변환하여 모델이 효과적으로 배울 수 있는 형식으로 만드는 AI 개발 단계."
           },
           {
@@ -14614,6 +15219,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 220,
+                "end": 221,
+                "label": "p.220–221"
+              }
+            ],
+            "pages_label": "p.220–221",
             "quote_ko": "개발자와 데이터 작업자가 원시 학습 데이터를 수집·정제·라벨링·표준화·변환하여 모델이 효과적으로 배울 수 있는 형식으로 만드는 AI 개발 단계."
           }
         ],
@@ -14676,30 +15289,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "인종·성별·연령·종교 등 속성(보호 특성 포함)에 근거한 개인·집단에 대한 불공정한 대우."
-          },
-          {
-            "quote": "The unfair treatment of individuals or groups based on their attributes, such as race, gender, age, religion, or other protected characteristics.",
-            "term_in_source": "Discrimination",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 220,
-            "pdf_page_end": 221,
-            "chunk_id": "chk-cbb0043a77404c462b7e",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 92,
+                "end": 93,
+                "label": "p.92–93"
+              },
+              {
+                "start": 220,
+                "end": 221,
+                "label": "p.220–221"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.92–93, p.220–221",
             "quote_ko": "인종·성별·연령·종교 등 속성(보호 특성 포함)에 근거한 개인·집단에 대한 불공정한 대우."
           }
         ],
@@ -14708,8 +15310,8 @@
         "chunk_hits": 143,
         "year_span": 9,
         "score": 11.7494,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Discrimination"
         ],
@@ -14762,30 +15364,29 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "인공지능 시스템이 능숙하게 입력으로 받고 출력으로 낼 수 있는 데이터 종류. 텍스트(언어·코드), 이미지, 영상, 로봇 행동 등을 포함한다."
-          },
-          {
-            "quote": "The kinds of data that an AI system can competently receive as input and produce as output, including text (language or code), images, video, and robotic actions.",
-            "term_in_source": "Modalities",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 47,
-            "pdf_page_end": 48,
-            "chunk_id": "chk-6edca717b159ede11212",
-            "heading_path": [
-              "Key Definitions"
+            "page_spans": [
+              {
+                "start": 38,
+                "end": 38,
+                "label": "p.38"
+              },
+              {
+                "start": 47,
+                "end": 48,
+                "label": "p.47–48"
+              },
+              {
+                "start": 158,
+                "end": 159,
+                "label": "p.158–159"
+              },
+              {
+                "start": 223,
+                "end": 224,
+                "label": "p.223–224"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.38, p.47–48, p.158–159, p.223–224",
             "quote_ko": "인공지능 시스템이 능숙하게 입력으로 받고 출력으로 낼 수 있는 데이터 종류. 텍스트(언어·코드), 이미지, 영상, 로봇 행동 등을 포함한다."
           },
           {
@@ -14810,55 +15411,15 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 153,
+                "label": "p.152–153"
+              }
+            ],
+            "pages_label": "p.152–153",
             "quote_ko": "인공지능 모델·시스템이 입력으로 받고 출력으로 낼 수 있는 데이터 종류. 텍스트(언어·코드), 이미지, 영상, 로봇 행동 등."
-          },
-          {
-            "quote": "The kinds of data that an AI system can competently receive as input and produce as output, including text (language or code), images, video, and robotic actions.",
-            "term_in_source": "Modalities",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 158,
-            "pdf_page_end": 159,
-            "chunk_id": "chk-ea7b1c3b89ec25d577b7",
-            "heading_path": [
-              "Key Definitions"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "인공지능 시스템이 능숙하게 입력으로 받고 출력으로 낼 수 있는 데이터 종류. 텍스트(언어·코드), 이미지, 영상, 로봇 행동 등을 포함한다."
-          },
-          {
-            "quote": "The kinds of data that an AI system can competently receive as input and produce as output, including text (language or code), images, video, and robotic actions.",
-            "term_in_source": "Modalities",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 223,
-            "pdf_page_end": 224,
-            "chunk_id": "chk-5853ef234036643aa588",
-            "heading_path": [
-              "Glossary"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "인공지능 시스템이 능숙하게 입력으로 받고 출력으로 낼 수 있는 데이터 종류. 텍스트(언어·코드), 이미지, 영상, 로봇 행동 등을 포함한다."
           }
         ],
         "df": 16,
@@ -14867,7 +15428,7 @@
         "year_span": 8,
         "score": 10.4322,
         "status": "multi",
-        "n_defs": 5,
+        "n_defs": 2,
         "variants": [
           "Modalities"
         ],
@@ -14920,30 +15481,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "컴퓨터 시스템·네트워크·소프트웨어의 취약점·약점을 악용해 무단 접근·기능 조작·정보 추출을 하는 행위."
-          },
-          {
-            "quote": "The act of exploiting vulnerabilities or weaknesses in a computer system, network, or software to gain unauthorised access, manipulate functionality, or extract information.",
-            "term_in_source": "Hacking",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 222,
-            "pdf_page_end": 223,
-            "chunk_id": "chk-d5ba122031e52ec1f1ae",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 72,
+                "end": 73,
+                "label": "p.72–73"
+              },
+              {
+                "start": 222,
+                "end": 223,
+                "label": "p.222–223"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.72–73, p.222–223",
             "quote_ko": "컴퓨터 시스템·네트워크·소프트웨어의 취약점·약점을 악용해 무단 접근·기능 조작·정보 추출을 하는 행위."
           }
         ],
@@ -14952,8 +15502,8 @@
         "chunk_hits": 51,
         "year_span": 7,
         "score": 9.1735,
-        "status": "multi",
-        "n_defs": 2,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Hacking"
         ],
@@ -15006,54 +15556,24 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "공개되거나 잘못 다루되면 개인·조직에 피해·곤란·불편·불공정을 초래할 수 있는 정보."
-          },
-          {
-            "quote": "Information that, if disclosed or mishandled, could result in harm, embarrassment, inconvenience, or unfairness to an individual or organisation.",
-            "term_in_source": "Sensitive data",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 208,
-            "pdf_page_end": 209,
-            "chunk_id": "chk-0d65675a63635677dd37",
-            "heading_path": [
-              "Key Definitions"
+            "page_spans": [
+              {
+                "start": 139,
+                "end": 140,
+                "label": "p.139–140"
+              },
+              {
+                "start": 208,
+                "end": 209,
+                "label": "p.208–209"
+              },
+              {
+                "start": 226,
+                "end": 227,
+                "label": "p.226–227"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "공개되거나 잘못 다루되면 개인·조직에 피해·곤란·불편·불공정을 초래할 수 있는 정보."
-          },
-          {
-            "quote": "Information that, if disclosed or mishandled, could result in harm, embarrassment, inconvenience, or unfairness to an individual or organisation.",
-            "term_in_source": "Sensitive data",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 226,
-            "pdf_page_end": 227,
-            "chunk_id": "chk-0c67b0bfbc95f30d0312",
-            "heading_path": [
-              "Glossary"
-            ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
+            "pages_label": "p.139–140, p.208–209, p.226–227",
             "quote_ko": "공개되거나 잘못 다루되면 개인·조직에 피해·곤란·불편·불공정을 초래할 수 있는 정보."
           }
         ],
@@ -15062,8 +15582,8 @@
         "chunk_hits": 57,
         "year_span": 9,
         "score": 13.0827,
-        "status": "multi",
-        "n_defs": 3,
+        "status": "found",
+        "n_defs": 1,
         "variants": [
           "Sensitive data"
         ],
@@ -15116,6 +15636,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 153,
+                "end": 153,
+                "label": "p.153"
+              }
+            ],
+            "pages_label": "p.153",
             "quote_ko": "강제나 강압이 아니라, 합리적 논증·감정적 호소·권위에 대한 호소 등 소통으로 상대의 믿음을 바꾸는 형태의 영향력."
           }
         ],
@@ -15178,6 +15706,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 152,
+                "label": "p.152"
+              }
+            ],
+            "pages_label": "p.152",
             "quote_ko": "개발자나 사용자가 의도한 대로 동작하지 않아 잘못된·해로운 출력이나 운영 장애를 낳는 시스템의 실패."
           }
         ],
@@ -15240,6 +15776,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 119,
+                "end": 120,
+                "label": "p.119–120"
+              },
+              {
+                "start": 220,
+                "end": 221,
+                "label": "p.220–221"
+              }
+            ],
+            "pages_label": "p.119–120, p.220–221",
             "quote_ko": "디지털 기술이 작동하는 데 필요한 기반 서비스·시설. 하드웨어·소프트웨어·네트워크·데이터센터·통신 체계 등을 포함한다."
           },
           {
@@ -15264,31 +15813,15 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "컴퓨터 기반 기술이 작동하는 데 필요한 기반 서비스·시설. 하드웨어·소프트웨어·네트워크·데이터센터·통신 체계 등을 포함한다."
-          },
-          {
-            "quote": "The foundational services and facilities necessary for digital technologies to function, including hardware, software, networks, data centres, and communication systems.",
-            "term_in_source": "Digital infrastructure",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 220,
-            "pdf_page_end": 221,
-            "chunk_id": "chk-cbb0043a77404c462b7e",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "디지털 기술이 작동하는 데 필요한 기반 서비스·시설. 하드웨어·소프트웨어·네트워크·데이터센터·통신 체계 등을 포함한다."
+            "pages_label": "p.150",
+            "quote_ko": "컴퓨터 기반 기술이 작동하는 데 필요한 기반 서비스·시설. 하드웨어·소프트웨어·네트워크·데이터센터·통신 체계 등을 포함한다."
           }
         ],
         "df": 10,
@@ -15297,7 +15830,7 @@
         "year_span": 9,
         "score": 11.4348,
         "status": "multi",
-        "n_defs": 3,
+        "n_defs": 2,
         "variants": [
           "Digital infrastructure"
         ],
@@ -15350,6 +15883,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 150,
+                "end": 150,
+                "label": "p.150"
+              }
+            ],
+            "pages_label": "p.150",
             "quote_ko": "올바른 복호화 키를 가진 인가된 주체만 읽을 수 있도록 정보를 부호화된 형식으로 바꾸는 과정."
           }
         ],
@@ -15412,6 +15953,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 111,
+                "end": 111,
+                "label": "p.111"
+              },
+              {
+                "start": 223,
+                "end": 223,
+                "label": "p.223"
+              }
+            ],
+            "pages_label": "p.111, p.223",
             "quote_ko": "고용주가 노동자를 찾고 노동자가 일자리를 찾는 체계. 일자리 창출·상실, 임금을 아우른다."
           },
           {
@@ -15436,6 +15990,19 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 111,
+                "end": 111,
+                "label": "p.111"
+              },
+              {
+                "start": 223,
+                "end": 223,
+                "label": "p.223"
+              }
+            ],
+            "pages_label": "p.111, p.223",
             "quote_ko": "일자리 가용성·필요 숙련·임금 분포·직업의 성격에 영향을 주는, 노동시장의 크고 종종 복잡한 변화."
           },
           {
@@ -15460,6 +16027,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 152,
+                "label": "p.152"
+              }
+            ],
+            "pages_label": "p.152",
             "quote_ko": "고용주가 노동자를 찾고 노동자가 일자리를 찾는 체계. 일자리 창출·상실, 임금을 아우른다."
           },
           {
@@ -15484,31 +16059,15 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
-            "quote_ko": "일자리 가용성·필요 숙련·임금 분포·직업의 성격에 영향을 주는, 노동시장의 크고 종종 복잡한 변화."
-          },
-          {
-            "quote": "The system in which employers seek to hire workers and workers seek employment, encompassing job creation, job loss, and wages.",
-            "term_in_source": "Labour market",
-            "term_en_in_source": null,
-            "document_id": "doc-c4fe09068d6e",
-            "title": "International Scientific Report on the Safety of Advanced AI",
-            "short": "IASR 2025",
-            "tier": "A",
-            "pdf_page_start": 223,
-            "pdf_page_end": 223,
-            "chunk_id": "chk-7bd6d2938db4d03f5e06",
-            "heading_path": [
-              "Glossary"
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 152,
+                "label": "p.152"
+              }
             ],
-            "document_type": "international_org_report",
-            "language": "EN",
-            "publication_year": 2025,
-            "source_relative_path": "repository/international-organizations/2025_International-AI-Safety-Report_International-AI-Safety-Report-2025_INTERNATIONAL_ORG_REPORT_EN.pdf",
-            "source_sha256": "c4fe09068d6ea7647d57f647ba2501a1bb4e683ec5994f334cabefe5f08d7561",
-            "parser": "en_colon",
-            "authority": "international_org_report",
-            "source_kind": "definition_section",
-            "quote_ko": "고용주가 노동자를 찾고 노동자가 일자리를 찾는 체계. 일자리 창출·상실, 임금을 아우른다."
+            "pages_label": "p.152",
+            "quote_ko": "일자리 가용성·필요 숙련·임금 분포·직업의 성격에 영향을 주는, 노동시장의 크고 종종 복잡한 변화."
           }
         ],
         "df": 8,
@@ -15517,7 +16076,7 @@
         "year_span": 7,
         "score": 10.5009,
         "status": "multi",
-        "n_defs": 5,
+        "n_defs": 4,
         "variants": [
           "Labour Market"
         ],
@@ -15570,6 +16129,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 152,
+                "end": 153,
+                "label": "p.152–153"
+              }
+            ],
+            "pages_label": "p.152–153",
             "quote_ko": "웹 검색 결과 순위, 동물 종 분류, 체스처럼 한두 가지 유사 과제만 수행하도록 설계된 AI 모델·시스템. 대조: 범용 AI."
           },
           {
@@ -15594,6 +16161,14 @@
             "parser": "en_colon",
             "authority": "international_org_report",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 223,
+                "end": 224,
+                "label": "p.223–224"
+              }
+            ],
+            "pages_label": "p.223–224",
             "quote_ko": "웹 검색 결과 순위, 동물 종 분류, 체스처럼 한두 가지 유사 과제에 특화된 AI. 대조: 범용 AI."
           }
         ],
@@ -15656,6 +16231,14 @@
             "parser": "ko_pipe",
             "authority": "policy_guidance",
             "source_kind": "definition_section",
+            "page_spans": [
+              {
+                "start": 13,
+                "end": 13,
+                "label": "p.13"
+              }
+            ],
+            "pages_label": "p.13",
             "quote_ko": null
           }
         ],
