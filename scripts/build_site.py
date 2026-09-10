@@ -33,19 +33,19 @@ a:hover { color: var(--accent); }
 #listControls .filter-toolbar:last-child { border-bottom: 0; }
 .filter-label {
   flex: 0 0 auto; min-width: 3.2em; margin-right: 4px;
-  font-size: 12px; font-weight: 700; color: var(--text-muted);
+  font-size: 0.75rem; font-weight: 700; color: var(--text-muted);
   letter-spacing: -0.02em; white-space: nowrap;
 }
 button.filter-chip {
   display: inline-flex; align-items: center; gap: 5px;
   border: 1px solid var(--hairline); background: transparent;
   color: var(--text-secondary); border-radius: 999px;
-  padding: 3px 10px; font: inherit; font-size: 12px; line-height: 1.35;
+  padding: 3px 10px; font: inherit; font-size: 0.75rem; line-height: 1.35;
   cursor: pointer; white-space: nowrap;
 }
 button.filter-chip:hover { color: var(--ink); border-color: var(--text-muted); }
 button.filter-chip .n {
-  font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 11px;
+  font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 0.75rem;
 }
 button.filter-chip.active {
   background: color-mix(in srgb, var(--chip, var(--navy)) 14%, var(--surface-1));
@@ -58,11 +58,11 @@ button.filter-chip.active .n {
 }
 
 .result-line {
-  font-size: 12px; color: var(--text-muted); margin: 0 0 12px;
+  font-size: 0.75rem; color: var(--text-muted); margin: 0 0 12px;
   font-variant-numeric: tabular-nums;
 }
 .bucket-head {
-  font-size: 13px; font-weight: 700; letter-spacing: -0.02em;
+  font-size: 0.95rem; font-weight: 700; letter-spacing: -0.02em;
   color: var(--text-muted); margin: 22px 0 8px; padding-bottom: 6px;
   border-bottom: 1px solid var(--gridline);
 }
@@ -79,21 +79,21 @@ button.filter-chip.active .n {
   display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline;
 }
 .term-n {
-  font-variant-numeric: tabular-nums; font-size: 12px;
+  font-variant-numeric: tabular-nums; font-size: 0.75rem;
   color: var(--text-muted); min-width: 2.2em;
 }
 .term-name {
-  font-size: 18px; font-weight: 700; letter-spacing: -0.03em; color: var(--ink);
+  font-size: 1.05rem; font-weight: 700; letter-spacing: -0.03em; color: var(--ink);
 }
 .term-alt {
-  font-weight: 500; font-size: 14px; color: var(--text-muted);
+  font-weight: 500; font-size: 1rem; color: var(--text-muted);
   letter-spacing: -0.01em;
 }
 .term-en {
-  font-size: 13px; color: var(--text-muted); letter-spacing: -0.01em;
+  font-size: 0.95rem; color: var(--text-muted); letter-spacing: -0.01em;
 }
 .badge {
-  margin-left: auto; font-size: 11px; font-weight: 600; border-radius: 999px;
+  margin-left: auto; font-size: 0.75rem; font-weight: 600; border-radius: 999px;
   padding: 2px 9px; white-space: nowrap;
   background: color-mix(in srgb, var(--chip) 14%, var(--surface-1));
   color: var(--chip);
@@ -103,7 +103,7 @@ button.filter-chip.active .n {
   display: flex; flex-wrap: wrap; gap: 5px; margin-left: auto;
 }
 .source-chip {
-  font-size: 11px; font-weight: 700; border-radius: 999px;
+  font-size: 0.75rem; font-weight: 700; border-radius: 999px;
   padding: 2px 9px; white-space: nowrap; letter-spacing: -0.02em;
   border: 1px solid var(--hairline);
 }
@@ -123,7 +123,7 @@ button.filter-chip.active .n {
   border-color: color-mix(in srgb, var(--gold) 40%, var(--hairline));
 }
 .section-label {
-  margin: 12px 0 6px; font-size: 11px; font-weight: 700;
+  margin: 12px 0 6px; font-size: 0.75rem; font-weight: 700;
   color: var(--text-muted); letter-spacing: -0.02em;
 }
 .section-label:first-child { margin-top: 10px; }
@@ -134,38 +134,38 @@ button.filter-chip.active .n {
 }
 .quote-block + .quote-block { margin-top: 8px; }
 .quote-ko {
-  margin: 0 0 8px; font-size: 14px; line-height: 1.72;
+  margin: 0 0 8px; font-size: 1rem; line-height: 1.72;
   color: var(--ink); letter-spacing: -0.02em; font-weight: 500;
 }
 .quote-ko .ko-label {
   display: inline-block; margin-right: 6px;
-  font-size: 10px; font-weight: 700;
+  font-size: 0.68rem; font-weight: 700;
   color: var(--navy);
   border: 1px solid color-mix(in srgb, var(--navy) 28%, var(--hairline));
   border-radius: 4px; padding: 1px 5px; vertical-align: 1px;
 }
 .quote-text {
-  margin: 0; font-size: 13px; line-height: 1.7;
+  margin: 0; font-size: 0.95rem; line-height: 1.7;
   color: var(--ink-muted); letter-spacing: -0.01em;
 }
 .quote-cite {
-  margin: 8px 0 0; font-size: 11.5px; color: var(--text-muted); line-height: 1.5;
+  margin: 8px 0 0; font-size: 0.75rem; color: var(--text-muted); line-height: 1.5;
 }
 .quote-cite .cite-label {
-  display: inline-block; font-size: 10px; font-weight: 700;
+  display: inline-block; font-size: 0.68rem; font-weight: 700;
   color: var(--navy); margin-right: 4px;
   border: 1px solid color-mix(in srgb, var(--navy) 28%, var(--hairline));
   border-radius: 4px; padding: 1px 5px; vertical-align: 1px;
 }
 .quote-cite .tier-a {
-  display: inline-block; font-size: 10px; font-weight: 700;
+  display: inline-block; font-size: 0.68rem; font-weight: 700;
   color: var(--navy); margin-right: 4px;
 }
 .missing-note {
-  margin: 10px 0 0; font-size: 13px; color: var(--text-muted); line-height: 1.6;
+  margin: 10px 0 0; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;
 }
 .bucket-badge {
-  font-size: 11px; font-weight: 600; border-radius: 999px;
+  font-size: 0.75rem; font-weight: 600; border-radius: 999px;
   padding: 2px 9px; white-space: nowrap;
   background: color-mix(in srgb, var(--chip) 10%, var(--surface-1));
   color: var(--chip);
@@ -173,7 +173,7 @@ button.filter-chip.active .n {
 }
 .term-metrics {
   display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 9px;
-  font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums;
+  font-size: 0.75rem; color: var(--text-muted); font-variant-numeric: tabular-nums;
 }
 .term-metrics b { color: var(--text-secondary); font-weight: 650; }
 .term-metrics .m-strong b { color: var(--ink); }
@@ -184,7 +184,7 @@ button.filter-chip.active .n {
 }
 .rec-bar i { display: block; height: 100%; background: var(--gold); }
 .term-variants {
-  margin-top: 7px; font-size: 11.5px; color: var(--text-muted);
+  margin-top: 7px; font-size: 0.75rem; color: var(--text-muted);
   letter-spacing: -0.01em;
 }
 /* 설명 블록 — 참고기사 위에 한 겹 더 그은 흐린 선 안쪽에 들어간다 */
@@ -192,32 +192,32 @@ button.filter-chip.active .n {
   margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--gridline);
 }
 .term-def .def-one {
-  margin: 0 0 8px; font-size: 14.5px; line-height: 1.6;
+  margin: 0 0 8px; font-size: 1rem; line-height: 1.6;
   font-weight: 650; color: var(--ink); letter-spacing: -0.02em;
 }
 .term-def p.def-body {
-  margin: 0 0 7px; font-size: 13.5px; line-height: 1.72;
+  margin: 0 0 7px; font-size: 1rem; line-height: 1.72;
   color: var(--text-secondary); letter-spacing: -0.01em;
 }
 .term-def p.def-body:last-of-type { margin-bottom: 0; }
 .term-def .def-src {
-  margin: 8px 0 0; font-size: 11.5px; color: var(--text-muted);
+  margin: 8px 0 0; font-size: 0.75rem; color: var(--text-muted);
 }
 .term-def .def-src::before { content: "근거 · "; }
 .term-examples {
   margin-top: 11px; padding-top: 9px; border-top: 1px solid var(--hairline);
 }
 .term-examples .ex-label {
-  font-size: 11px; font-weight: 700; color: var(--text-muted);
+  font-size: 0.75rem; font-weight: 700; color: var(--text-muted);
   letter-spacing: -0.02em; margin: 0 0 5px;
 }
 .term-examples ol { margin: 0; padding-left: 0; list-style: none; }
 .term-examples li {
-  font-size: 13px; line-height: 1.5; margin-bottom: 3px;
+  font-size: 0.95rem; line-height: 1.5; margin-bottom: 3px;
   display: flex; gap: 7px; align-items: baseline;
 }
 .term-examples .ex-date {
-  font-variant-numeric: tabular-nums; font-size: 11px; color: var(--text-muted);
+  font-variant-numeric: tabular-nums; font-size: 0.75rem; color: var(--text-muted);
   flex: 0 0 auto; min-width: 5.2em;
 }
 .term-examples a {
@@ -225,44 +225,44 @@ button.filter-chip.active .n {
   text-decoration-thickness: 1px; text-underline-offset: 2px;
 }
 .term-examples a:hover { color: var(--accent); }
-.term-examples .ex-src { font-size: 11px; color: var(--text-muted); }
+.term-examples .ex-src { font-size: 0.75rem; color: var(--text-muted); }
 
 details.legend {
-  margin: 0 0 16px; font-size: 13px; color: var(--text-secondary);
+  margin: 0 0 16px; font-size: 0.95rem; color: var(--text-secondary);
   background: var(--surface-2); border: 1px solid var(--hairline);
   border-radius: 12px; padding: 10px 14px;
 }
 details.legend summary {
-  cursor: pointer; font-size: 12px; font-weight: 700; color: var(--text-muted);
+  cursor: pointer; font-size: 0.75rem; font-weight: 700; color: var(--text-muted);
   letter-spacing: -0.02em;
 }
 details.legend table { border-collapse: collapse; margin-top: 10px; width: 100%; }
 details.legend td { padding: 4px 8px 4px 0; vertical-align: top; line-height: 1.5; }
 details.legend td:first-child {
-  white-space: nowrap; font-weight: 700; color: var(--ink); font-size: 12px;
+  white-space: nowrap; font-weight: 700; color: var(--ink); font-size: 0.75rem;
 }
 .empty-note {
-  padding: 28px 4px; color: var(--text-muted); font-size: 14px; display: none;
+  padding: 28px 4px; color: var(--text-muted); font-size: 1rem; display: none;
 }
-.prose { font-size: 14.5px; line-height: 1.75; }
+.prose { font-size: 1rem; line-height: 1.75; }
 .prose h2 {
   font-size: 15px; margin: 26px 0 8px; letter-spacing: -0.02em;
   padding-bottom: 6px; border-bottom: 1px solid var(--gridline);
 }
-.prose h3 { font-size: 13.5px; margin: 18px 0 6px; color: var(--ink-muted); }
-.prose table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 13px; }
+.prose h3 { font-size: 0.95rem; margin: 18px 0 6px; color: var(--ink-muted); }
+.prose table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 0.95rem; }
 .prose th, .prose td {
   border-bottom: 1px solid var(--gridline); padding: 6px 8px;
   text-align: left; vertical-align: top; line-height: 1.55;
 }
-.prose th { color: var(--text-muted); font-size: 12px; font-weight: 700; }
+.prose th { color: var(--text-muted); font-size: 0.75rem; font-weight: 700; }
 .prose code {
   background: var(--surface-2); border: 1px solid var(--hairline);
   border-radius: 5px; padding: 1px 5px; font-size: 0.88em;
 }
 .prose pre {
   background: var(--surface-2); border: 1px solid var(--hairline);
-  border-radius: 10px; padding: 12px 14px; overflow-x: auto; font-size: 12.5px;
+  border-radius: 10px; padding: 12px 14px; overflow-x: auto; font-size: 0.82rem;
 }
 .prose pre code { background: none; border: 0; padding: 0; }
 .prose ul { padding-left: 20px; }
@@ -285,7 +285,7 @@ def page(title, current, body, *, head_count=None, extra_js=""):
 <title>{html.escape(title)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>{chrome['nav_css']}{GLOSSARY_CSS}</style>
 </head>
 <body>
@@ -293,13 +293,8 @@ def page(title, current, body, *, head_count=None, extra_js=""):
 {chrome['shell']}
 <main class="wrap">
 {body}
-<footer class="site-footer">
-<p>AI 안전 용어집 · 동향 코퍼스 선정·집필 정의와 PDF 원문 인용을 한자리에서 본다.
-출처는 카드의 <b>동향 / PDF / 양쪽</b> 칩으로 표시한다.</p>
-<p>같은 시리즈: <a href="{ui.LIBRARY_URL}" target="_blank" rel="noopener">AI 안전 라이브러리</a> ·
-<a href="{ui.DIGEST_URL}" target="_blank" rel="noopener">AI 안전 동향</a></p>
-</footer>
 </main>
+{ui.footer_html()}
 </div>
 {extra_js}
 </body>
@@ -699,7 +694,7 @@ def about_page(data):
 한 목록으로 보여 준다. 현재 병합 <b>{src.get('merged', len(data['entries']))}개</b>
 (양쪽 {src.get('both', 0)} · 동향만 {src.get('digest_only', 0)} ·
 PDF만 {src.get('pdf_only', 0)}).</p>
-<p>동향 코퍼스는 <a href="{ui.DIGEST_URL}" target="_blank" rel="noopener">AI 안전 동향</a>이
+<p>동향 코퍼스는 <a href="{ui.DIGEST_URL}" target="_blank" rel="noopener">AI 안전 다이제스트</a>가
 매일 모으는 뉴스·논문·정책문서
 <b>{docs:,}건</b>({c.get('from','')} ~ {c.get('to','')})이다.</p>
 
@@ -844,6 +839,8 @@ def main():
 </body></html>
 """
     with open(os.path.join(pdf_dir, "index.html"), "w", encoding="utf-8") as f:
+        f.write(redirect)
+    with open(os.path.join(pdf_dir, "about.html"), "w", encoding="utf-8") as f:
         f.write(redirect)
     with open(os.path.join(config.DOCS, ".nojekyll"), "w") as f:
         f.write("")

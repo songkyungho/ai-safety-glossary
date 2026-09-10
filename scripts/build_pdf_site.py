@@ -28,19 +28,19 @@ a:hover { color: var(--accent); }
 #listControls .filter-toolbar:last-child { border-bottom: 0; }
 .filter-label {
   flex: 0 0 auto; min-width: 3.2em; margin-right: 4px;
-  font-size: 12px; font-weight: 700; color: var(--text-muted);
+  font-size: 0.75rem; font-weight: 700; color: var(--text-muted);
   letter-spacing: -0.02em; white-space: nowrap;
 }
 button.filter-chip {
   display: inline-flex; align-items: center; gap: 5px;
   border: 1px solid var(--hairline); background: transparent;
   color: var(--text-secondary); border-radius: 999px;
-  padding: 3px 10px; font: inherit; font-size: 12px; line-height: 1.35;
+  padding: 3px 10px; font: inherit; font-size: 0.75rem; line-height: 1.35;
   cursor: pointer; white-space: nowrap;
 }
 button.filter-chip:hover { color: var(--ink); border-color: var(--text-muted); }
 button.filter-chip .n {
-  font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 11px;
+  font-variant-numeric: tabular-nums; color: var(--text-muted); font-size: 0.75rem;
 }
 button.filter-chip.active {
   background: color-mix(in srgb, var(--chip, var(--navy)) 14%, var(--surface-1));
@@ -53,11 +53,11 @@ button.filter-chip.active .n {
 }
 
 .result-line {
-  font-size: 12px; color: var(--text-muted); margin: 0 0 12px;
+  font-size: 0.75rem; color: var(--text-muted); margin: 0 0 12px;
   font-variant-numeric: tabular-nums;
 }
 .bucket-head {
-  font-size: 13px; font-weight: 700; letter-spacing: -0.02em;
+  font-size: 0.95rem; font-weight: 700; letter-spacing: -0.02em;
   color: var(--text-muted); margin: 22px 0 8px; padding-bottom: 6px;
   border-bottom: 1px solid var(--gridline);
 }
@@ -74,17 +74,17 @@ button.filter-chip.active .n {
   display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline;
 }
 .term-n {
-  font-variant-numeric: tabular-nums; font-size: 12px;
+  font-variant-numeric: tabular-nums; font-size: 0.75rem;
   color: var(--text-muted); min-width: 2.2em;
 }
 .term-name {
-  font-size: 18px; font-weight: 700; letter-spacing: -0.03em; color: var(--ink);
+  font-size: 1.05rem; font-weight: 700; letter-spacing: -0.03em; color: var(--ink);
 }
 .term-en {
-  font-size: 13px; color: var(--text-muted); letter-spacing: -0.01em;
+  font-size: 0.95rem; color: var(--text-muted); letter-spacing: -0.01em;
 }
 .badge {
-  margin-left: auto; font-size: 11px; font-weight: 600; border-radius: 999px;
+  margin-left: auto; font-size: 0.75rem; font-weight: 600; border-radius: 999px;
   padding: 2px 9px; white-space: nowrap;
   background: color-mix(in srgb, var(--chip) 14%, var(--surface-1));
   color: var(--chip);
@@ -95,11 +95,11 @@ button.filter-chip.active .n {
   border-color: var(--hairline);
 }
 .missing-note {
-  margin: 12px 0 0; font-size: 13px; color: var(--text-muted); line-height: 1.6;
+  margin: 12px 0 0; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;
 }
 .term-metrics {
   display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 9px;
-  font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums;
+  font-size: 0.75rem; color: var(--text-muted); font-variant-numeric: tabular-nums;
 }
 .term-metrics b { color: var(--text-secondary); font-weight: 650; }
 .quote-block {
@@ -109,58 +109,58 @@ button.filter-chip.active .n {
 }
 .quote-block + .quote-block { margin-top: 8px; }
 .quote-text {
-  margin: 0; font-size: 13.5px; line-height: 1.72;
+  margin: 0; font-size: 0.95rem; line-height: 1.72;
   color: var(--ink-muted); letter-spacing: -0.01em;
 }
 .quote-ko {
-  margin: 0 0 10px; font-size: 14.5px; line-height: 1.75;
+  margin: 0 0 10px; font-size: 1rem; line-height: 1.75;
   color: var(--ink); letter-spacing: -0.02em; font-weight: 500;
 }
 .quote-ko .ko-label {
   display: inline-block; margin-right: 6px;
-  font-size: 10px; font-weight: 700; letter-spacing: 0.02em;
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.02em;
   color: var(--navy);
   border: 1px solid color-mix(in srgb, var(--navy) 28%, var(--hairline));
   border-radius: 4px; padding: 1px 5px; vertical-align: 1px;
 }
-.quote-ko.muted { font-size: 12.5px; font-weight: 400; color: var(--text-muted); }
+.quote-ko.muted { font-size: 0.82rem; font-weight: 400; color: var(--text-muted); }
 .quote-cite {
-  margin: 8px 0 0; font-size: 11.5px; color: var(--text-muted);
+  margin: 8px 0 0; font-size: 0.75rem; color: var(--text-muted);
   line-height: 1.5;
 }
 .quote-cite .cite-label {
-  display: inline-block; font-size: 10px; font-weight: 700;
+  display: inline-block; font-size: 0.68rem; font-weight: 700;
   color: var(--navy); margin-right: 6px;
   border: 1px solid color-mix(in srgb, var(--navy) 28%, var(--hairline));
   border-radius: 4px; padding: 1px 5px; vertical-align: 1px;
 }
 details.legend {
-  margin: 0 0 16px; font-size: 13px; color: var(--text-secondary);
+  margin: 0 0 16px; font-size: 0.95rem; color: var(--text-secondary);
   background: var(--surface-2); border: 1px solid var(--hairline);
   border-radius: 12px; padding: 10px 14px;
 }
 details.legend summary {
-  cursor: pointer; font-size: 12px; font-weight: 700; color: var(--text-muted);
+  cursor: pointer; font-size: 0.75rem; font-weight: 700; color: var(--text-muted);
 }
 details.legend p, details.legend table { margin: 8px 0 0; line-height: 1.6; }
-details.legend table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+details.legend table { border-collapse: collapse; width: 100%; font-size: 0.82rem; }
 details.legend td { padding: 3px 8px 3px 0; vertical-align: top; }
 details.legend td:first-child { font-weight: 700; color: var(--ink); white-space: nowrap; }
 .empty-note {
-  padding: 28px 4px; color: var(--text-muted); font-size: 14px; display: none;
+  padding: 28px 4px; color: var(--text-muted); font-size: 1rem; display: none;
 }
-.prose { font-size: 14.5px; line-height: 1.75; }
+.prose { font-size: 1rem; line-height: 1.75; }
 .prose h2 {
   font-size: 15px; margin: 26px 0 8px; letter-spacing: -0.02em;
   padding-bottom: 6px; border-bottom: 1px solid var(--gridline);
 }
-.prose h3 { font-size: 13.5px; margin: 18px 0 6px; color: var(--ink-muted); }
-.prose table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 13px; }
+.prose h3 { font-size: 0.95rem; margin: 18px 0 6px; color: var(--ink-muted); }
+.prose table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 0.95rem; }
 .prose th, .prose td {
   border-bottom: 1px solid var(--gridline); padding: 6px 8px;
   text-align: left; vertical-align: top; line-height: 1.55;
 }
-.prose th { color: var(--text-muted); font-size: 12px; font-weight: 700; }
+.prose th { color: var(--text-muted); font-size: 0.75rem; font-weight: 700; }
 .prose ul, .prose ol { padding-left: 20px; }
 .prose li { margin-bottom: 4px; }
 .prose code {
@@ -168,7 +168,7 @@ details.legend td:first-child { font-weight: 700; color: var(--ink); white-space
   border-radius: 5px; padding: 1px 5px; font-size: 0.88em;
 }
 .series-link {
-  display: inline-block; margin-top: 6px; font-size: 12.5px;
+  display: inline-block; margin-top: 6px; font-size: 0.82rem;
   color: var(--on-navy-muted);
 }
 .series-link a { color: var(--gold-strong); }
@@ -179,17 +179,16 @@ details.legend td:first-child { font-weight: 700; color: var(--ink); white-space
 
 
 def nav_html(current: str) -> str:
-    items_left = [
-        ("../index.html", "동향 용어집"),
-        ("index.html", "PDF 인용"),
-        (ui.DIGEST_URL, ui.DIGEST_LABEL),
-        (ui.LIBRARY_URL, ui.LIBRARY_LABEL),
-    ]
     items_right = [("about.html", "소개")]
+    left = (
+        ui._nav_item(ui.DIGEST_URL, ui.DIGEST_LABEL, active=False, rel_prefix="")
+        + ui._nav_item(ui.LIBRARY_URL, ui.LIBRARY_LABEL, active=False, rel_prefix="")
+        + ui._nav_item("../index.html", "AI 안전 용어집", active=True, rel_prefix="")
+    )
     return (
         '<nav class="global-nav" aria-label="사이트">'
         '<div class="global-nav-inner">'
-        f'<div class="global-nav-left">{ui._nav_items(items_left, current, rel_prefix="")}</div>'
+        f'<div class="global-nav-left">{left}</div>'
         f'<div class="global-nav-right">{ui._nav_items(items_right, current, rel_prefix="")}</div>'
         "</div></nav>"
     )
@@ -251,13 +250,8 @@ def page_wrap(current: str, title: str, body: str, data: dict, *, extra_js: str 
 {shell(current, title, n=n)}
 <main class="wrap">
 {body}
-<footer class="site-footer">
-  PDF 정의 섹션에서 선정·인용 · Evidence Desk<br>
-  빌드 {html.escape(data["meta"]["built_at"])} ·
-  <a href="../index.html">통합 용어집</a> ·
-  <a href="about.html">방법론</a>
-</footer>
 </main>
+{ui.footer_html()}
 </div>
 {ui.omnibox_boot_script(ui.safe_json({"docs": search_docs}))}
 {extra_js}

@@ -10,17 +10,14 @@ from __future__ import annotations
 import html
 import json
 
-NAV_LEFT = [
-    ("index.html", "용어집"),
-]
 NAV_RIGHT = [
     ("about.html", "소개"),
 ]
 DIGEST_URL = "https://songkyungho.github.io/ai-safety-digest/"
-DIGEST_LABEL = "AI 안전 동향"
+DIGEST_LABEL = "AI 안전 다이제스트"
 LIBRARY_URL = "https://songkyungho.github.io/ai-safety-library/"
 LIBRARY_LABEL = "AI 안전 라이브러리"
-NAV_ITEMS = NAV_LEFT + NAV_RIGHT
+NAV_ITEMS = NAV_RIGHT
 
 # 세 사이트가 한 시리즈로 보이도록 지면·타이포·구조는 라이브러리와 같게 두고,
 # 헤더 계열색만 갈라 놓는다. 동향은 퍼플 네이비(#474284), 라이브러리는 슬레이트
@@ -55,23 +52,28 @@ NAV_CSS = """
   --on-dark: #f4f2eb;
 }
 * { box-sizing: border-box; }
+html { font-size: 16px; overflow-x: hidden; }
 body {
   margin: 0;
   background: var(--plane);
   color: var(--ink);
   font-family: "IBM Plex Sans KR", "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
     "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 16px;
   line-height: 1.7;
+  overflow-x: hidden;
 }
-.viz-root { min-height: 100vh; background: var(--plane); color: var(--ink); }
+.viz-root { min-height: 100vh; background: var(--plane); color: var(--ink); overflow-x: hidden; }
 .global-nav {
   position: sticky; top: 0; z-index: 40;
   background: var(--navy); color: var(--on-navy); height: 40px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
 }
 .global-nav-inner {
   max-width: 980px; margin: 0 auto; height: 40px; padding: 0 20px;
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
   font-size: 0.78rem; font-weight: 500; letter-spacing: -0.02em;
+  min-width: 0; width: 100%;
 }
 .global-nav-left, .global-nav-right {
   display: flex; align-items: center; gap: 16px; flex-shrink: 0;
@@ -87,10 +89,10 @@ header.page-head {
   color: var(--on-navy);
 }
 .page-head-inner {
-  max-width: 980px; margin: 0 auto; padding: 28px 20px 22px;
+  max-width: 980px; margin: 0 auto; padding: 30px 20px 22px;
 }
 header.page-head h1 {
-  font-size: 1.55rem; margin: 0 0 6px; font-weight: 700; letter-spacing: -0.02em;
+  font-size: 1.6rem; margin: 0 0 4px; font-weight: 700; letter-spacing: -0.01em;
   line-height: 1.35;
 }
 header.page-head .tagline {
@@ -132,12 +134,17 @@ header.page-head .tagline a:hover { color: var(--gold); }
   box-shadow: 0 8px 28px color-mix(in srgb, var(--ink) 10%, transparent);
 }
 .omni-results.hidden { display: none; }
-.wrap { max-width: 980px; margin: 0 auto; padding: 18px 20px 80px; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 18px 20px 48px; }
 .site-footer {
-  margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--hairline);
-  font-size: 0.82rem; color: var(--text-muted); line-height: 1.55;
+  background: linear-gradient(165deg, var(--navy) 0%, var(--navy-2) 100%);
+  color: var(--on-navy-muted);
 }
-.site-footer a { color: var(--sage); }
+.footer-inner {
+  max-width: 980px; margin: 0 auto; padding: 28px 20px 32px;
+  font-size: 0.78rem; text-align: center; line-height: 1.8;
+}
+.site-footer a { color: var(--on-navy-muted); }
+.site-footer a:hover { color: var(--gold); }
 .org-flag { font-style: normal; font-size: 1.05em; line-height: 1; margin-right: 4px; }
 """
 
@@ -148,6 +155,7 @@ TAGLINES = {
 
 AUTHOR_NAME = "인공지능안전연구소 송경호"
 AUTHOR_URL = "https://songkyungho.github.io"
+CONTACT_EMAIL = "songkyungho@etri.re.kr"
 
 
 def author_byline_html() -> str:
@@ -157,6 +165,37 @@ def author_byline_html() -> str:
         f'<a href="{html.escape(AUTHOR_URL)}" target="_blank" rel="noopener">송경호</a>',
     )
     return f" by {linked}"
+
+
+def footer_inner_html() -> str:
+    """다이제스트와 같은 푸터 문구."""
+    author_linked = html.escape(AUTHOR_NAME).replace(
+        "송경호",
+        f'<a href="{html.escape(AUTHOR_URL)}" target="_blank" rel="noopener">송경호</a>',
+    )
+    return (
+        f"만든 사람: {author_linked} · "
+        f'문의/오류제보: <a href="mailto:{html.escape(CONTACT_EMAIL)}">{html.escape(CONTACT_EMAIL)}</a>'
+    )
+
+
+def footer_html() -> str:
+    return (
+        '<footer class="site-footer">'
+        f'<div class="footer-inner">{footer_inner_html()}</div>'
+        "</footer>"
+    )
+
+
+def _nav_item(href: str, label: str, *, active: bool, rel_prefix: str) -> str:
+    if active:
+        return f'<span class="nav-current">{html.escape(label)}</span>'
+    external = href.startswith("http://") or href.startswith("https://")
+    resolved = href if external else f"{rel_prefix}{href}"
+    attrs = f'href="{html.escape(resolved)}"'
+    if external:
+        attrs += ' target="_blank" rel="noopener noreferrer"'
+    return f"<a {attrs}>{html.escape(label)}</a>"
 
 
 def _nav_items(items: list[tuple[str, str]], current: str, *, rel_prefix: str) -> str:
@@ -175,11 +214,16 @@ def _nav_items(items: list[tuple[str, str]], current: str, *, rel_prefix: str) -
 
 
 def nav_html(current: str = "", *, rel_prefix: str = "") -> str:
-    left = list(NAV_LEFT) + [(DIGEST_URL, DIGEST_LABEL), (LIBRARY_URL, LIBRARY_LABEL)]
+    # 세 사이트 공통 순서: 다이제스트 → 라이브러리 → 용어집
+    left = (
+        _nav_item(DIGEST_URL, "AI 안전 다이제스트", active=False, rel_prefix="")
+        + _nav_item(LIBRARY_URL, "AI 안전 라이브러리", active=False, rel_prefix="")
+        + _nav_item("index.html", "AI 안전 용어집", active=True, rel_prefix=rel_prefix)
+    )
     return (
         '<nav class="global-nav" aria-label="사이트">'
         '<div class="global-nav-inner">'
-        f'<div class="global-nav-left">{_nav_items(left, current, rel_prefix=rel_prefix)}</div>'
+        f'<div class="global-nav-left">{left}</div>'
         f'<div class="global-nav-right">{_nav_items(list(NAV_RIGHT), current, rel_prefix=rel_prefix)}</div>'
         "</div></nav>"
     )
