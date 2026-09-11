@@ -124,6 +124,12 @@ button.filter-chip.active .n {
   border-radius: 4px; padding: 1px 5px; vertical-align: 1px;
 }
 .quote-ko.muted { font-size: 0.82rem; font-weight: 400; color: var(--text-muted); }
+.quote-ko strong { font-weight: 700; color: var(--ink); }
+.quote-ko u {
+  text-decoration: underline 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in srgb, var(--ink) 55%, transparent);
+}
 .quote-cite {
   margin: 8px 0 0; font-size: 0.75rem; color: var(--text-muted);
   line-height: 1.5;
@@ -283,7 +289,7 @@ def render_card(e: dict) -> str:
         if d.get("quote_ko"):
             ko_block = (
                 f'<p class="quote-ko"><span class="ko-label">번역</span>'
-                f'{html.escape(d["quote_ko"])}</p>'
+                f'{ui.prose_with_emphasis(d["quote_ko"])}</p>'
             )
         elif d.get("quote_ko_missing") and not any(
             "\uac00" <= c <= "\ud7a3" for c in (d.get("quote") or "")

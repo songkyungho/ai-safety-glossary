@@ -311,6 +311,12 @@ button.filter-chip.active .n {
   color: var(--text-secondary); letter-spacing: -0.01em;
 }
 .term-def p.def-body:last-of-type { margin-bottom: 0; }
+.term-def strong, .quote-ko strong { font-weight: 700; color: var(--ink); }
+.term-def u, .quote-ko u {
+  text-decoration: underline 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in srgb, var(--ink) 55%, transparent);
+}
 .term-def .def-src {
   margin: 8px 0 0; font-size: 0.75rem; color: var(--text-muted);
 }
@@ -395,6 +401,9 @@ details.legend td:first-child {
 한 목록으로 보여 준다. 현재 병합 <b>173개</b>
 (양쪽 27 · 동향만 73 ·
 PDF만 73).</p>
+<p>카드 본문의 강조는 다이제스트·라이브러리와 같다. 한줄 정의가 핵심 사실이고,
+본문에서 중요한 용어·수치는 밑줄, 꼭 짚을 결론만 굵게다. 다른 표제어를
+본문에 자동으로 치지는 않는다.</p>
 <p>동향 코퍼스는 <a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener">AI 안전 다이제스트</a>가
 매일 모으는 뉴스·논문·정책문서
 <b>5,798건</b>(2009-04-13 ~ 2026-09-08)이다.</p>

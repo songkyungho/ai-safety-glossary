@@ -200,6 +200,12 @@ button.filter-chip.active .n {
   color: var(--text-secondary); letter-spacing: -0.01em;
 }
 .term-def p.def-body:last-of-type { margin-bottom: 0; }
+.term-def strong, .quote-ko strong { font-weight: 700; color: var(--ink); }
+.term-def u, .quote-ko u {
+  text-decoration: underline 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in srgb, var(--ink) 55%, transparent);
+}
 .term-def .def-src {
   margin: 8px 0 0; font-size: 0.75rem; color: var(--text-muted);
 }
@@ -307,12 +313,12 @@ def def_block(d):
     if not d or not d.get("one"):
         return ""
     paras = "".join(
-        '<p class="def-body">%s</p>' % html.escape(p) for p in d.get("body", [])
+        '<p class="def-body">%s</p>' % ui.prose_with_emphasis(p) for p in d.get("body", [])
     )
     src = ('<p class="def-src">%s</p>' % html.escape(d["src"])) if d.get("src") else ""
     return (
         '<div class="term-def"><p class="def-one">%s</p>%s%s</div>'
-        % (html.escape(d["one"]), paras, src)
+        % (ui.prose_with_emphasis(d["one"]), paras, src)
     )
 
 
@@ -337,7 +343,7 @@ def pdf_quotes_html(p):
         if d.get("quote_ko"):
             ko = (
                 f'<p class="quote-ko"><span class="ko-label">번역</span>'
-                f'{html.escape(d["quote_ko"])}</p>'
+                f'{ui.prose_with_emphasis(d["quote_ko"])}</p>'
             )
         title = d.get("title") or d.get("short") or ""
         blocks.append(
@@ -694,6 +700,9 @@ def about_page(data):
 한 목록으로 보여 준다. 현재 병합 <b>{src.get('merged', len(data['entries']))}개</b>
 (양쪽 {src.get('both', 0)} · 동향만 {src.get('digest_only', 0)} ·
 PDF만 {src.get('pdf_only', 0)}).</p>
+<p>카드 본문의 강조는 다이제스트·라이브러리와 같다. 한줄 정의가 핵심 사실이고,
+본문에서 중요한 용어·수치는 밑줄, 꼭 짚을 결론만 굵게다. 다른 표제어를
+본문에 자동으로 치지는 않는다.</p>
 <p>동향 코퍼스는 <a href="{ui.DIGEST_URL}" target="_blank" rel="noopener">AI 안전 다이제스트</a>가
 매일 모으는 뉴스·논문·정책문서
 <b>{docs:,}건</b>({c.get('from','')} ~ {c.get('to','')})이다.</p>

@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import html
 import json
+import re
 
 NAV_RIGHT = [
     ("about.html", "소개"),
@@ -156,6 +157,17 @@ TAGLINES = {
 AUTHOR_NAME = "인공지능안전연구소 송경호"
 AUTHOR_URL = "https://songkyungho.github.io"
 CONTACT_EMAIL = "songkyungho@etri.re.kr"
+
+_EMPHASIS_BOLD_RE = re.compile(r"\*\*(.+?)\*\*")
+_EMPHASIS_UNDER_RE = re.compile(r"__(.+?)__")
+
+
+def prose_with_emphasis(text: str) -> str:
+    """다이제스트와 같이 **굵게** · __밑줄__ 만 살린다. 표제어를 본문에 자동으로 치지 않는다."""
+    t = html.escape(text or "")
+    t = _EMPHASIS_BOLD_RE.sub(r"<strong>\1</strong>", t)
+    t = _EMPHASIS_UNDER_RE.sub(r"<u>\1</u>", t)
+    return t.replace("**", "").replace("__", "")
 
 
 def author_byline_html() -> str:
