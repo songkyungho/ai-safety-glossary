@@ -2,8 +2,9 @@
 
 동향 코퍼스에서 뽑은 표제어(집필 정의·참고 기사)와 PDF 리포지토리에서 뽑은
 표제어(원문 인용)를 **한 목록**으로 보여 준다. 카드의 **동향 / PDF / 양쪽**
-칩이 출처다. 독자는 비전문가, 표제어는 **개념어만** — 기관·법령·모델명 같은
-고유명사는 별도 부록 대상이다.
+칩이 출처다. 현재 병합 **173개**(양쪽 27 · 동향만 73 · PDF만 73). 동향판
+선정·집필은 100개 쿼터로 유지한다. 독자는 비전문가, 표제어는 **개념어만** —
+기관·법령·모델명 같은 고유명사는 별도 부록 대상이다.
 
 - **공개 사이트:** https://songkyungho.github.io/ai-safety-glossary/
 - **소개:** https://songkyungho.github.io/ai-safety-glossary/about.html
@@ -38,7 +39,8 @@ python3 scripts/gloss_and_hubs.py       # 3) 병기율·허브 -> data/glossary_
                                         #                 glossary_top100.md
                                         #                 glossary_watchlist.md
 python3 scripts/build_json.py           # 4) 정의문 병합 + 용례 수집 -> data/glossary.json
-python3 scripts/build_site.py           # 5) 정적 사이트 -> docs/
+python3 scripts/merge_glossary.py       # 5) 동향 ∪ PDF → data/glossary_merged.json
+python3 scripts/build_site.py           # 6) 정적 사이트 -> docs/
 python3 scripts/centrality.py           # (참고) 실패한 중심성 지표 재현용
 ```
 
@@ -178,7 +180,7 @@ python3 scripts/centrality.py           # (참고) 실패한 중심성 지표 �
 잘못 읽히는 대부분이 인접 개념의 혼동에서 생기기 때문이다 — 해석가능성과 설명가능성,
 오용과 남용, 환각과 기만, GPAI와 AGI 등.
 
-현재 100개 전부 작성됐고 길이는 한줄 정의 21~43자, 문단 178~277자(중위 232자)다.
+동향판 100개 전부 작성됐고 길이는 한줄 정의 21~43자, 문단 178~277자(중위 232자)다.
 근거를 표시한 항목은 13개이고, **나머지는 인용문이 아니라 이 용어집을 위해 쓴
 설명이다.** 확인할 수 없는 수치·날짜는 쓰지 않고, **코퍼스 통계나 이 저장소에 관한
 언급도 정의문에 넣지 않는다** — 용어 자체의 설명만 남긴다.
