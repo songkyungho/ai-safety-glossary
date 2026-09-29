@@ -48,7 +48,7 @@ python3 scripts/centrality.py           # (참고) 실패한 중심성 지표 �
 
 코퍼스(`knowledge/digest.db`)와 토픽 분류(`topic_keywords.py`)는 **동향 Digest
 저장소**가 갖고 있다. 복제하지 않고 참조한다 — 매일 갱신되는 쪽이 진본이어야
-하므로. 기본 위치는 형제 폴더 `../AI Safety` 이고,
+하므로. 기본 위치는 형제 폴더 `../ai-safety-pipeline` 이고,
 `GLOSSARY_DIGEST_REPO` 로 덮어쓸 수 있다 (`scripts/config.py`).
 
 화면: [`docs/index.html`](docs/index.html)

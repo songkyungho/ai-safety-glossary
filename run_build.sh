@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 용어집 전체 재빌드. 코퍼스(digest.db)는 형제 저장소 "AI Safety"에서 읽는다.
+# 용어집 전체 재빌드. 코퍼스(digest.db)는 형제 저장소 "ai-safety-pipeline"에서 읽는다.
 #   GLOSSARY_DIGEST_REPO=/path/to/repo ./run_build.sh  로 위치를 덮어쓸 수 있다.
 # PDF판 JSON이 있으면 병합해 통합 사이트를 만든다.
 set -euo pipefail

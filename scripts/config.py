@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""경로 해석 — 코퍼스는 형제 저장소(AI Safety)에 있다.
+"""경로 해석 — 코퍼스는 형제 저장소(ai-safety-pipeline)에 있다.
 
 용어집은 자체 저장소지만 원천 데이터(digest.db)와 토픽 분류
 (topic_keywords.py)는 동향 Digest 저장소가 갖고 있다. 복제하지 않고
@@ -17,7 +17,7 @@ ROOT = os.path.dirname(SCRIPTS)
 DATA = os.path.join(ROOT, "data")
 DOCS = os.path.join(ROOT, "docs")
 
-_DEFAULT_DIGEST = os.path.normpath(os.path.join(ROOT, os.pardir, "AI Safety"))
+_DEFAULT_DIGEST = os.path.normpath(os.path.join(ROOT, os.pardir, "ai-safety-pipeline"))
 DIGEST_REPO = os.environ.get("GLOSSARY_DIGEST_REPO", _DEFAULT_DIGEST)
 DB = os.path.join(DIGEST_REPO, "knowledge", "digest.db")
 
