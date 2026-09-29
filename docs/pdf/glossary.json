@@ -5,7 +5,7 @@
     "built_at": "2026-09-09T00:14:34+09:00",
     "method": "corpus-frequency → score → bucket-quota → verbatim definitions",
     "inspired_by": "동향 Glossary (df·지속성·쿼터·병기율≈gloss_rate)",
-    "evidence_db": "/Users/kyunghosong/Code/pdf-evidence-desk/data/desk-index/index/search.sqlite3",
+    "evidence_db": "/Users/kyunghosong/Code/pdf-evidence-desk/data/index/search.sqlite3",
     "corpus_candidates": 75401,
     "coverage": {
       "total": 100,

@@ -15,7 +15,8 @@ _DEFAULT_EVIDENCE_DB = os.path.normpath(
     os.path.join(
         ROOT,
         os.pardir,
-        "pdf-evidence-desk-index",
+        "pdf-evidence-desk",
+        "data",
         "index",
         "search.sqlite3",
     )

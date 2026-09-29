@@ -38,7 +38,7 @@ PDF Evidence Desk **코퍼스 전체**에서 자주 등장하는 AI 안전 용�
 영문만 있는 표제어에는 한글 번역어를 붙이고, 영문 정의 원문 아래에
 편집 대역(`quote_ko`)을 병기한다. 대역은 원문 인용이 아니다.
 
-Evidence DB: `../pdf-evidence-desk-index/index/search.sqlite3`
+Evidence DB: `../pdf-evidence-desk/data/index/search.sqlite3`
 (`GLOSSARY_EVIDENCE_DB` 로 덮어쓰기)
 
 ## 점수 (표제어 선정)
