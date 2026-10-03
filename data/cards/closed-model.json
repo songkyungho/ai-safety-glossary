@@ -1,0 +1,78 @@
+{
+  "id": "closed-model",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "폐쇄형 모델",
+  "en": "closed (proprietary) model",
+  "alternatives": [
+    {
+      "text": "비공개 모델",
+      "source": "editor"
+    },
+    {
+      "text": "독점 모델",
+      "source": "editor"
+    }
+  ],
+  "chapter": "01",
+  "definition": {
+    "lead": "모델 가중치를 공개하지 않고, 개발사가 통제하는 응용 프로그램이나 API를 통해서만 이용하게 하는 AI 모델을 말함.",
+    "points": [
+      "공개 방식은 완전 폐쇄부터 호스팅 접근, API 접근, API를 통한 미세조정 허용까지 단계가 있으며, 가중치 내려받기가 허용되지 않는 쪽을 넓게 폐쇄형으로 부름.",
+      "개발사가 안전장치를 유지하고 이용 정책을 적용하며 문제가 생기면 접근을 중단·회수할 수 있음. 반면 외부 연구자의 독립 검증이 어렵고 소수 기업에 대한 의존이 커진다는 지적이 있음.",
+      "가중치가 비공개여도 유출·탈취되면 통제가 사라지므로 가중치 보안이 함께 요구됨."
+    ],
+    "distinction": {
+      "text": "'폐쇄형 모델'과 '오픈 웨이트 모델'은 가중치 공개 여부로 갈림. 공개냐 비공개냐의 이분법보다 접근 수준의 스펙트럼으로 보는 것이 정확함.",
+      "terms": [
+        "open-weight-model"
+      ]
+    }
+  },
+  "related": [
+    "open-weight-model",
+    "model-weights",
+    "fine-tuning",
+    "insider-threats"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "모델 공개 방식을 완전 폐쇄부터 완전 공개까지 이어지는 스펙트럼으로 보고, 각 단계에 위험과 이점의 상충이 따른다고 설명함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "접근 수준을 완전 폐쇄(이용자가 모델과 직접 상호작용할 수 없음), 호스팅 접근, 모델 API 접근, API를 통한 미세조정 접근, 가중치 내려받기 등으로 구분함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 2.4절 모델 공개 방식 및 표 2.5.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.151–152"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 오픈 웨이트 모델 절의 접근 수준 표.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.134"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

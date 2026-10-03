@@ -1,0 +1,58 @@
+{
+  "id": "frontier-ai",
+  "kit_id": "frontier-ai",
+  "join_keys": [
+    "frontierai"
+  ],
+  "head": "프론티어 AI",
+  "en": "frontier AI",
+  "alternatives": [],
+  "chapter": "02",
+  "definition": {
+    "lead": "현존하는 가장 앞선 AI 모델의 역량에 맞먹거나 이를 넘어서는, 특히 역량이 높은 범용 AI를 가리키는 말임.",
+    "points": [
+      "기술 분류라기보다 정책 용어로, 2023년 영국 AI 안전 정상회의 전후로 국제 논의에서 널리 쓰이게 됨. 기준이 '현재 최첨단'에 묶여 있어 가리키는 대상이 시간에 따라 바뀜.",
+      "새로운 위험 역량이 처음 나타날 수 있는 지점이어서 배포 전 평가, 책임 있는 스케일링 정책, 안전 사례 같은 자율·제도적 안전 관리의 주된 대상이 됨."
+    ],
+    "distinction": {
+      "text": "'프론티어 AI'는 역량의 상대적 위치를, '파운데이션 모델'·'범용 AI'는 모델의 쓰임새와 적응 범위를 기준으로 한 말임.",
+      "terms": [
+        "foundation-model",
+        "general-purpose-ai-gpai"
+      ]
+    }
+  },
+  "related": [
+    "general-purpose-ai-gpai",
+    "capability",
+    "pre-deployment-evaluation",
+    "responsible-scaling-policy-rsp",
+    "systemic-risk"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "오늘날 가장 앞선 AI의 역량에 맞먹거나 이를 넘는 특히 역량이 높은 AI를 가리키는 말로 쓰이기도 한다고 설명하고, 보고서에서는 특히 역량이 높은 범용 AI로 이해할 수 있다고 함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.221–222"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "compute",
+  "kit_id": "compute",
+  "join_keys": [
+    "compute"
+  ],
+  "head": "연산",
+  "en": "compute",
+  "alternatives": [
+    {
+      "text": "컴퓨팅",
+      "source": "editor"
+    },
+    {
+      "text": "연산 자원",
+      "source": "editor"
+    }
+  ],
+  "chapter": "01",
+  "definition": {
+    "lead": "AI 모델을 학습·실행하는 데 필요한 계산 자원, 곧 하드웨어·소프트웨어·인프라를 통칭하는 말임.",
+    "points": [
+      "GPU 같은 연산 칩, 데이터 관리 소프트웨어, 데이터센터가 포함되며, 학습에 투입된 연산량(부동소수점 연산 횟수)으로 규모를 재기도 함.",
+      "연산은 측정·추적이 비교적 쉬워 AI 거버넌스의 지렛대로 쓰임. 학습 연산량을 규제 대상 선별 기준(연산 임계값)으로 삼거나, 첨단 칩을 수출 통제하는 방식이 대표적임.",
+      "같은 연산으로도 알고리즘 효율 향상에 따라 역량이 달라지므로, 연산량만으로 위험을 대리하는 데에는 한계가 있다는 지적이 있음."
+    ],
+    "distinction": {
+      "text": "'연산'은 자원 자체를, '연산 임계값'은 그 자원의 투입량을 규제상 기준선으로 쓰는 제도적 장치를 가리킴.",
+      "terms": [
+        "compute-threshold"
+      ]
+    }
+  },
+  "related": [
+    "compute-threshold",
+    "export-control",
+    "inference",
+    "frontier-ai"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "'계산 자원(computational resources)'의 약칭으로, AI 시스템을 학습·실행하는 데 필요한 하드웨어(예: GPU), 소프트웨어(예: 데이터 관리 소프트웨어), 인프라(예: 데이터센터)를 가리킨다고 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.30–31"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

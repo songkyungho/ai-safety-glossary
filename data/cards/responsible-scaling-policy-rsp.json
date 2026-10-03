@@ -1,0 +1,81 @@
+{
+  "id": "responsible-scaling-policy-rsp",
+  "kit_id": "responsible-scaling-policy-rsp",
+  "join_keys": [],
+  "head": "책임 있는 스케일링 정책",
+  "en": "responsible scaling policy (RSP)",
+  "alternatives": [
+    {
+      "text": "프론티어 안전 프레임워크",
+      "source": "editor"
+    }
+  ],
+  "chapter": "10",
+  "definition": {
+    "lead": "AI 개발자가 모델 역량이 미리 정한 임계값에 도달하면 그에 상응하는 안전·보안 조치를 적용하겠다고 사전에 약속해 공개하는 자율적 위험 관리 정책을 의미함.",
+    "points": [
+      "역량 평가로 화학·생물·방사능·핵 무기 개발 지원, 사이버 공격 등 위험 역량을 점검하고, 임계값에 도달하면 강화된 보안, 배포 통제, 실시간 모니터링 등을 적용하는 조건부(if-then) 약속 구조를 가짐.",
+      "Anthropic의 책임 있는 스케일링 정책, Google DeepMind의 프론티어 안전 프레임워크처럼 개발자마다 명칭이 달라, 통칭 '프론티어 AI 안전 프레임워크'로 묶여 논의됨.",
+      "임계값 설정과 도달 여부 판정을 개발자가 스스로 하고 구속력이 없어, 외부 검증과 규제 연계가 과제로 지적됨."
+    ]
+  },
+  "related": [
+    "risk-thresholds",
+    "capability-evaluation",
+    "frontier-ai",
+    "safeguard",
+    "safety-case"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "프론티어 AI 안전 프레임워크의 핵심을 모델이 사전에 정한 역량 임계값에 도달하면 특정 대응을 촉발하는 조건부 약속으로 설명하고, CBRN 무기 개발을 의미 있게 도울 수 있는 역량이 확인되면 보안 강화·배포 통제·실시간 모니터링을 적용하는 예를 듦.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "이러한 프레임워크는 통상 위험 완화 전 초기 역량 평가와, 완화 후 레드티밍 등에 기반한 잔여 위험 분석 또는 안전 사례를 요구한다고 정리함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "UK AISI",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "Anthropic의 책임 있는 스케일링 정책과 Google DeepMind의 프론티어 안전 프레임워크 등 공개된 안전 프레임워크의 실천 사례를 비교하고, 역량 평가 절차와 평가·안전조치 정보의 외부 공개, 정부 통지 같은 조항을 사례로 제시함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026).",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.116"
+      }
+    },
+    {
+      "n": 2,
+      "text": "UK AISI (2025). Emerging Practices in Frontier AI Safety Frameworks.",
+      "evidence": {
+        "document_id": "doc-85aff17d77b6",
+        "pages": "p.13, p.31"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

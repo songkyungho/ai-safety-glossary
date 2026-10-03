@@ -1,0 +1,72 @@
+{
+  "id": "safeguard",
+  "kit_id": "safeguard",
+  "join_keys": [
+    "safeguards"
+  ],
+  "head": "안전장치",
+  "en": "safeguard",
+  "alternatives": [],
+  "chapter": "09",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템이 해를 끼치지 않고 의도대로 작동하도록 개발·배포·운영 단계에 두는 기술적·절차적 보호 조치를 통칭함.",
+    "points": [
+      "안전 학습(거부 학습·적대적 학습 등), 입출력 필터와 AI 가드레일, 접근 통제·이용 정책, 모니터링, 인간 감독 등 여러 층의 조치를 포괄함.",
+      "위험 관리에서 위험 완화 수단의 핵심이며, 위험 임계값에 이른 모델의 배포 조건이나 오픈 웨이트 공개 여부를 판단할 때 그 충분성이 쟁점이 됨.",
+      "탈옥·미세조정 등으로 우회·제거될 수 있어 단일 조치가 아니라 다층 방어로 설계해야 한다는 견해가 일반적임."
+    ],
+    "distinction": {
+      "text": "'안전장치'는 피해를 막기 위한 보호 조치 전반을 가리키는 상위 개념이고, 'AI 가드레일'은 그중 모델 바깥에서 입출력과 행동을 실시간으로 검사·차단하는 기술적 통제 장치를 가리킴.",
+      "terms": [
+        "ai-guardrails"
+      ]
+    }
+  },
+  "related": [
+    "ai-guardrails",
+    "risk-mitigation",
+    "jailbreak",
+    "human-oversight",
+    "open-weight-model"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "2026년 보고서는 AI 시스템이 해를 끼치지 않도록 막기 위한 보호 조치로 정의함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "2025년 보고서는 AI 시스템이 의도대로 작동하고 해로운 결과를 피하도록 하는 내장 안전 제약으로 정의함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.154–155"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.222–223"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

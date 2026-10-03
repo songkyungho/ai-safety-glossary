@@ -1,0 +1,78 @@
+{
+  "id": "fine-tuning",
+  "kit_id": "fine-tuning",
+  "join_keys": [
+    "finetuning"
+  ],
+  "head": "미세조정",
+  "en": "fine-tuning",
+  "alternatives": [
+    {
+      "text": "파인튜닝",
+      "source": "editor"
+    }
+  ],
+  "chapter": "01",
+  "definition": {
+    "lead": "이미 학습된 모델을 추가 데이터로 다시 학습시켜 특정 과제나 용도에 맞게 조정하는 과정을 말함.",
+    "points": [
+      "모든 가중치를 조금씩 고치는 방식과, 원래 가중치는 고정한 채 작은 추가 파라미터만 학습하는 방식이 있음. 후자가 비용이 적어 널리 쓰임. 인간 피드백 기반 강화학습도 넓게 보면 미세조정 단계에 속함.",
+      "안전 학습으로 형성한 거부 성향이 소량의 추가 학습으로 쉽게 풀릴 수 있어 정렬을 되돌리는 통로가 됨. 모델 가중치가 공개되면 어떤 미세조정을 허용할지 통제할 수 없게 됨."
+    ],
+    "distinction": {
+      "text": "'미세조정'은 기존 모델을 직접 조정하는 것이고, '증류'는 다른 모델의 출력으로 새 모델을 학습시키는 것임.",
+      "terms": [
+        "distillation"
+      ]
+    }
+  },
+  "related": [
+    "rl-from-human-feedback-rlhf",
+    "open-weight-model",
+    "model-weights",
+    "safeguard",
+    "distillation"
+  ],
+  "commentary": [
+    "큰 모델을 처음부터 학습시키는 데는 막대한 자료와 계산이 들지만, 이미 만들어진 모델을 특정 용도에 맞추는 데는 훨씬 적은 자원으로 충분하다. 사내 문서의 문체를 익히게 하거나, 특정 분야의 용어를 정확히 쓰게 하거나, 정해진 형식으로만 답하게 만드는 일이 여기 해당한다. 방식은 두 갈래다. 모델의 모든 수치를 조금씩 고치는 방법과, 원래 수치는 그대로 두고 작은 보정층만 덧붙이는 방법이다. 후자가 비용이 훨씬 적어 실무에서 널리 쓰인다.",
+    "안전 관점에서 이 기법이 중요한 이유는 정렬을 되돌리는 통로가 되기 때문이다. 유해한 요청을 거절하도록 공들여 학습시킨 모델도, 소량의 자료로 추가 학습을 하면 그 거부 성향이 쉽게 풀린다는 것이 반복 확인됐다. 심지어 유해하지 않은 자료로 조정했을 때도 안전 학습이 약해지는 경우가 보고된다. 모델을 서비스로만 제공하는 쪽은 어떤 조정을 허용할지 통제할 수 있지만, 모델 가중치가 공개되면 이 통제가 사라진다. 오픈 웨이트 모델 논쟁의 핵심이 여기 있다."
+  ],
+  "review_notes": [
+    "'오픈웨이트 모델' → '오픈 웨이트 모델' (표제어 표기)"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "사전학습된 AI 모델을 추가 데이터로 학습시켜 특정 과제에 맞추거나 전반적으로 더 유용하게 적응시키는 과정으로 정의함.",
+          "refs": [
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.170, p.221–222"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.151"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

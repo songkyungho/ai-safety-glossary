@@ -1,0 +1,109 @@
+{
+  "id": "serious-incident",
+  "kit_id": "serious-incident",
+  "join_keys": [],
+  "head": "중대 AI 사고",
+  "en": "serious incident",
+  "alternatives": [
+    {
+      "text": "중대 사고",
+      "source": "kit"
+    }
+  ],
+  "chapter": "07",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 사고 가운데 사망·심각한 건강 피해, 핵심 기반시설의 심각하고 되돌릴 수 없는 교란, 기본권의 심각한 침해 등 중대한 피해를 낳은 사고를 말함.",
+    "points": [
+      "AI 사고의 하위 범주로, 피해의 심각성과 회복 불가능성을 기준으로 일반 사고와 구분됨.",
+      "규제 제도에서 의무적 신고와 짧은 보고 시한이 걸리는 대상이 되는 경우가 많아, 해당 여부 판단이 사업자의 법적 의무를 직접 좌우함.",
+      "원인이나 책임이 확정되기 전에 신고를 요구하는 제도가 많아, 초기 판단의 불확실성을 어떻게 다룰지가 실무 쟁점이 됨."
+    ],
+    "distinction": {
+      "text": "'중대 AI 사고'는 'AI 사고'의 부분집합이며, 사회·공동체의 대응 역량을 넘어서는 수준의 중대 사고는 'AI 재해'로 따로 구분하기도 함.",
+      "terms": [
+        "ai-incident",
+        "ai-disaster"
+      ]
+    }
+  },
+  "related": [
+    "ai-incident",
+    "incident-reporting",
+    "ai-disaster",
+    "high-risk-ai",
+    "systemic-risk"
+  ],
+  "frameworks": [
+    {
+      "org": "OECD",
+      "sub": "2024",
+      "points": [
+        {
+          "text": "중대 AI 사고를 사망·심각한 건강 피해, 핵심 기반시설의 심각하고 되돌릴 수 없는 교란, 인권·법적 의무의 심각한 침해, 재산·공동체·환경의 심각한 피해를 낳은 사건으로 정의하고, AI 사고의 부분집합으로 둠.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "이 작업 정의는 EU AI Act에서 제안된 중대 사고 정의와 맞춘 것이라고 밝힘.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "제3조(49)는 중대 사고를 AI 시스템의 사고 또는 오작동이 직간접으로 사망·심각한 건강 피해, 핵심 기반시설의 심각하고 되돌릴 수 없는 교란, 기본권 보호 의무 위반, 재산·환경의 심각한 피해를 낳은 경우로 규정함(유럽의회 2024.3.13 채택안 기준).",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "안정성 확보 가이드라인은 생명·신체 안전, 기본권, 공공의 안전에 중대한 영향을 미치는 안전사고를 인지 후 24시간 이내 최초 보고 대상으로 두고, 원인·책임이 확정되지 않아도 피해 가능성이 합리적으로 인지되면 포함함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "OECD (2024). Defining AI incidents and related terms. OECD Artificial Intelligence Papers.",
+      "evidence": {
+        "document_id": "doc-9c46e00f1b3f",
+        "pages": "p.12"
+      }
+    },
+    {
+      "n": 2,
+      "text": "OECD (2024). Defining AI incidents and related terms. OECD Artificial Intelligence Papers, Annex B.",
+      "evidence": {
+        "document_id": "doc-9c46e00f1b3f",
+        "pages": "p.18–19"
+      }
+    },
+    {
+      "n": 3,
+      "text": "「인공지능 안정성 확보 가이드라인」 v1.3 (2026.1.21).",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.67"
+      }
+    }
+  ],
+  "updated": "2026-10-03",
+  "head_override": "AI 접두 규칙 — 일상어 표제어에 AI를 붙임"
+}

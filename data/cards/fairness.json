@@ -1,0 +1,57 @@
+{
+  "id": "fairness",
+  "kit_id": "fairness",
+  "join_keys": [
+    "fairness"
+  ],
+  "head": "공정성",
+  "en": "fairness",
+  "alternatives": [],
+  "chapter": "10",
+  "definition": {
+    "lead": "AI 시스템의 결정이나 결과가 개인·집단을 편향이나 부당한 차별 없이 대우해야 한다는 규범적 가치와, 그 충족 정도를 의미함.",
+    "points": [
+      "집단별 선정률 동등, 집단별 오류율 동등, 실제 자격을 갖춘 사람 사이의 선정률 동등, 비슷한 개인의 비슷한 대우 등 여러 정량적 정의가 제시되며 서로 다른 결과를 냄.",
+      "집단 간 실제 분포가 다르면 이 기준들을 동시에 만족하기 어렵다는 점이 알려져 있어, 어떤 기준을 택할지는 채용·대출·의료·형사 절차 등 결정 맥락에 따른 정책적 판단이 됨.",
+      "차별로 인한 AI 피해를 예방하는 요건으로, 고위험 AI의 데이터 품질 관리와 편향 평가의 근거가 됨."
+    ],
+    "distinction": {
+      "text": "'AI 편향'이 데이터·모델·운용에서 관측되는 체계적 치우침이라는 현상이라면, '공정성'은 그 결과를 판단하는 규범적 기준임.",
+      "terms": [
+        "ai-bias"
+      ]
+    }
+  },
+  "related": [
+    "ai-bias",
+    "discrimination",
+    "trustworthy-ai",
+    "ai-ethics"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "AI 시스템이 편향이나 부당한 차별 없이, 특히 인종·성별·연령·사회경제적 지위 등 보호 속성과 관련해 모든 개인·집단을 공평하게 대우하는 결정을 내려야 한다는 사회적 가치로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.221–222"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

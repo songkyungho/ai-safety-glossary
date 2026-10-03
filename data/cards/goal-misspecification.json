@@ -1,0 +1,89 @@
+{
+  "id": "goal-misspecification",
+  "kit_id": "goal-misspecification",
+  "join_keys": [
+    "goalmisspecification"
+  ],
+  "head": "목표 오지정",
+  "en": "goal misspecification",
+  "alternatives": [
+    {
+      "text": "목표 명세 오류",
+      "source": "editor"
+    }
+  ],
+  "chapter": "04",
+  "status": "draft",
+  "definition": {
+    "lead": "AI에 부여된 목표가 개발자가 의도한 목표의 불완전한 대리 지표가 되어, 시스템이 의도하지 않은 행동을 추구하게 되는 개발상 실패 유형을 의미함.",
+    "points": [
+      "보상 함수, 인간 피드백, 평가 지표 등 학습 신호가 의도를 정확히 담지 못할 때 생김. 모델은 적힌 목표를 충실히 최적화할 뿐인데 결과가 의도와 어긋남.",
+      "보상 해킹과 AI 아첨 같은 행동의 원인으로 지목됨. 과업이 복잡해질수록 사람이 신뢰할 만한 피드백을 주기 어려워져 문제가 커질 수 있다는 지적이 있음."
+    ],
+    "distinction": {
+      "text": "'목표 오지정'은 학습 신호 자체가 의도와 어긋나는 경우이고, 목표를 바르게 지정해도 학습 환경 밖에서 다른 목표를 추구하게 되는 목표 오일반화와 구별됨. 둘 다 '오정렬'의 원인이 됨.",
+      "terms": [
+        "misalignment",
+        "reward-hacking"
+      ]
+    }
+  },
+  "related": [
+    "reward-hacking",
+    "misalignment",
+    "ai-alignment",
+    "rl-from-human-feedback-rlhf",
+    "ai-sycophancy"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "AI에 부여된 목표와 개발자 의도가 어긋나 AI가 의도하지 않았거나 바람직하지 않은 행동을 추구하게 되는 상태로 정의함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "AI가 수행하는 과업이 복잡해질수록 사람이 신뢰할 만한 피드백을 주기 어려워져 문제 해결이 더 어려워질 수 있다고 봄.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "지정된 목표가 개발자가 의도한 목표의 불완전한 대리 지표가 되어 의도치 않은 시스템 행동으로 이어지는 개발상 실패 유형으로 정의함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.100–101, p.106–107; Glossary, p.222–223.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.100–101, p.106–107, p.222–223"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.151.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.151"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

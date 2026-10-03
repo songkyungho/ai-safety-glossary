@@ -1,0 +1,38 @@
+{
+  "id": "adversarial-testing",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "적대적 시험",
+  "en": "adversarial testing",
+  "alternatives": [
+    {
+      "text": "적대적 테스트",
+      "source": "editor"
+    }
+  ],
+  "chapter": "08",
+  "status": "draft",
+  "definition": {
+    "lead": "의도적으로 조작한 입력이나 공격 시나리오를 AI 모델·시스템에 가해, 오작동이나 안전장치 우회가 일어나는지 확인하는 시험 방법을 말함.",
+    "points": [
+      "적대적 예제, 탈옥 프롬프트, 프롬프트 인젝션 등 알려진 공격 기법을 체계적으로 적용하고, 공격 성공률 같은 지표로 결과를 측정함.",
+      "정상 입력에서는 드러나지 않는 취약점을 찾아 강건성을 확인하고, 적대적 학습이나 안전장치 보강의 근거로 쓰임.",
+      "알려진 공격 기법 위주로 시험하게 되어 새로운 공격에 대한 방어력은 보장하지 못한다는 한계가 있음."
+    ],
+    "distinction": {
+      "text": "'적대적 시험'은 적대적 입력을 이용한 시험 방법을 가리키고, '레드티밍'은 공격자 관점에서 사회적·운영적 오용 경로까지 폭넓게 탐색하는 활동으로 적대적 시험을 수단으로 포함함.",
+      "terms": [
+        "red-teaming",
+        "adversarial-training"
+      ]
+    }
+  },
+  "related": [
+    "red-teaming",
+    "adversarial-training",
+    "attack-success-rate-asr",
+    "robustness",
+    "jailbreak"
+  ],
+  "updated": "2026-10-03"
+}

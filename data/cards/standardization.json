@@ -1,0 +1,33 @@
+{
+  "id": "standardization",
+  "kit_id": null,
+  "join_keys": [
+    "standardization"
+  ],
+  "head": "표준화",
+  "en": "standardization",
+  "alternatives": [
+    {
+      "text": "표준 제정",
+      "source": "public"
+    }
+  ],
+  "chapter": "11",
+  "definition": {
+    "lead": "용어, 측정·시험 방법, 기술 요건 등을 이해관계자의 합의를 거쳐 공통 규격으로 정하고 문서화하는 활동을 의미함.",
+    "points": [
+      "법이 '강건해야 한다', '정확해야 한다'고 정한 요건을 무엇을 어떤 방법으로 재야 충족되는지로 구체화해 규제와 기술을 잇는 역할을 하며, ISO/IEC 등 국제 표준화 기구와 각국 표준 기관의 작업이 이 층을 이룸.",
+      "어떤 측정 방법을 택하느냐에 따라 통과하는 제품이 갈려 표준 제정이 사실상의 규범 형성이 되며, AI 안전 평가 방법의 표준화는 평가 결과의 비교 가능성과 상호운용성의 전제가 됨.",
+      "표준 자체는 비구속 문서지만 적합성 평가의 기준으로 편입되면 사실상 구속력을 가짐."
+    ]
+  },
+  "related": [
+    "harmonised-standards",
+    "interoperability",
+    "conformity-assessment",
+    "binding-force",
+    "certification"
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

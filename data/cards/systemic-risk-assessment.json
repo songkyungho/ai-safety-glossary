@@ -1,0 +1,58 @@
+{
+  "id": "systemic-risk-assessment",
+  "kit_id": "systemic-risk-assessment",
+  "join_keys": [
+    "systemicriskassessment"
+  ],
+  "head": "시스템적 위험 평가",
+  "en": "systemic risk assessment",
+  "alternatives": [],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "범용 AI 모델이 일으킬 수 있는 시스템적 위험을 식별·분석하고 그 수용 여부를 판단하는 일련의 평가 절차를 말함.",
+    "points": [
+      "EU 범용 AI 실천강령에서는 시스템적 위험의 식별, 분석, 수용 여부 결정을 모두 포괄하는 상위 개념으로 쓰이며, 위험 시나리오와 위험 모델링을 바탕으로 함.",
+      "EU AI법상 시스템적 위험이 있는 범용 AI 모델 제공자의 평가·완화 의무를 이행하는 핵심 절차로, 모델 평가 결과를 시스템적 위험 등급 같은 수용 기준과 연결함.",
+      "국제 AI 안전 보고서처럼 '시스템적 위험'을 사회 구조 변화에서 생기는 위험으로 넓게 쓰는 문헌도 있어, 어느 정의를 전제하는지 확인할 필요가 있음."
+    ],
+    "distinction": {
+      "text": "'시스템적 위험 평가'는 시스템적 위험에 한정된 위험 평가 절차이고, '위험 평가'는 위험 종류를 가리지 않는 일반 절차임.",
+      "terms": [
+        "risk-assessment",
+        "systemic-risk"
+      ]
+    }
+  },
+  "related": [
+    "systemic-risk",
+    "risk-assessment",
+    "general-purpose-ai-gpai",
+    "threat-modelling"
+  ],
+  "frameworks": [
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "실천강령 안내서는 시스템적 위험 평가를 시스템적 위험 식별, 시스템적 위험 분석, 시스템적 위험 수용 여부 결정을 모두 포괄하는 상위 개념으로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "「유럽연합 인공지능법 범용인공지능모델 실천강령 안내서(GPAI)」 (2026). 용어 정의.",
+      "evidence": {
+        "document_id": "doc-670ed9d255e5",
+        "pages": "p.113"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

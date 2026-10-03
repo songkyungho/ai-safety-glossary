@@ -1,0 +1,35 @@
+{
+  "id": "machine-unlearning",
+  "kit_id": "machine-unlearning",
+  "join_keys": [],
+  "head": "머신 언러닝",
+  "en": "machine unlearning",
+  "alternatives": [
+    {
+      "text": "망각 학습",
+      "source": "editor"
+    },
+    {
+      "text": "기계 삭제 학습",
+      "source": "kit-variant"
+    }
+  ],
+  "chapter": "09",
+  "status": "draft",
+  "definition": {
+    "lead": "이미 학습된 모델에서 특정 데이터나 지식·역량의 영향을 처음부터 다시 학습하지 않고 제거하려는 기법을 의미함.",
+    "points": [
+      "삭제 대상 데이터에 대한 추가 학습이나 가중치 조정으로 해당 정보를 모델이 더는 재현·활용하지 못하게 하는 방식이 연구됨.",
+      "개인정보 삭제 요청·저작권 대응뿐 아니라, 화학·생물·방사능·핵 무기 관련 지식처럼 오용 위험이 큰 역량을 줄이는 안전장치로도 논의됨.",
+      "제거가 실제로 이뤄졌는지 검증하기 어렵고, 미세조정 등으로 지운 지식이 되살아날 수 있다는 한계가 지적됨."
+    ]
+  },
+  "related": [
+    "safeguard",
+    "fine-tuning",
+    "data-protection",
+    "cbrn",
+    "training-data"
+  ],
+  "updated": "2026-10-03"
+}

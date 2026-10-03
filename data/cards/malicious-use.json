@@ -1,0 +1,84 @@
+{
+  "id": "malicious-use",
+  "kit_id": "malicious-use",
+  "join_keys": [
+    "malicioususe"
+  ],
+  "head": "악의적 사용",
+  "en": "malicious use",
+  "alternatives": [
+    {
+      "text": "악용",
+      "source": "editor"
+    }
+  ],
+  "chapter": "05",
+  "status": "draft",
+  "definition": {
+    "lead": "해를 끼치려는 의도로 AI 시스템을 사용하는 행위를 말하며, 행위자의 고의를 핵심 요건으로 삼는 AI 위험 범주를 가리킴.",
+    "points": [
+      "사이버 공격, 화학·생물 무기 개발 지원, 사기·사칭, 허위 정보 유포, 비동의 성적 이미지 제작 등이 대표 유형임. 행위자는 개인부터 범죄 조직·국가까지 넓게 상정됨.",
+      "국제 AI 안전 보고서는 AI 오작동, 시스템적 위험과 함께 악의적 사용을 범용 AI 위험의 주요 범주로 다룸. 대응은 위협 모델링, 역량 평가, 접근 통제, 안전장치를 축으로 함.",
+      "같은 역량이 방어·연구에도 쓰이는 이중 용도 성격 때문에, 차단 범위를 넓힐수록 정당한 이용도 함께 제약되는 긴장이 생김."
+    ],
+    "distinction": {
+      "text": "'악의적 사용'은 해를 끼치려는 고의가 분명한 사용을, '오용'은 의도·허용된 용도를 벗어난 사용을 넓게, '남용'은 정당한 목적·권한 범위를 넘어선 과도한 사용을 가리킴.",
+      "terms": [
+        "misuse",
+        "abuse"
+      ]
+    }
+  },
+  "related": [
+    "misuse",
+    "abuse",
+    "threat-modelling",
+    "human-uplift",
+    "dual-use-risk"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "AI 시스템 등을 사용해 의도적으로 해를 끼치는 행위로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "AI를 사용해 의도적으로 해를 끼치는 행위로 정의하고, 오작동·시스템적 위험과 함께 위험 범주의 하나로 다룸.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.152.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.152"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary, p.223–224.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.223–224"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

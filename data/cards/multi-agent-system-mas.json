@@ -1,0 +1,62 @@
+{
+  "id": "multi-agent-system-mas",
+  "kit_id": "multi-agent-system-mas",
+  "join_keys": [
+    "multiagentsystem",
+    "multiagent"
+  ],
+  "head": "다중 에이전트 시스템",
+  "en": "multi-agent system (MAS)",
+  "alternatives": [
+    {
+      "text": "다중 에이전트",
+      "source": "editor"
+    },
+    {
+      "text": "멀티 에이전트",
+      "source": "public"
+    }
+  ],
+  "chapter": "02",
+  "definition": {
+    "lead": "여러 AI 에이전트가 서로의 행동과 목표에 적응하며 협력하거나 경쟁하는 상호작용 체계를 말함.",
+    "points": [
+      "계획·수행·검토처럼 역할을 나눠 맡기는 구성이 흔하며, 검토 역할을 별도로 두면 한 에이전트의 실수를 다른 에이전트가 잡아내는 장치로도 작동함.",
+      "잘못된 중간 결과가 다음 에이전트로 전달되며 증폭되고, 프롬프트 인젝션이 에이전트 간 신뢰 관계를 타고 번질 수 있음. 공모·책임 소재 불명확 같은 문제도 생김.",
+      "개별 에이전트를 따로 시험해 정상이어도 함께 놓였을 때의 문제는 드러나지 않을 수 있어, 시스템 전체를 대상으로 한 평가가 따로 필요함."
+    ]
+  },
+  "related": [
+    "ai-agent",
+    "agentic-ai",
+    "prompt-injection",
+    "ai-accountability",
+    "evaluation"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "서로의 행동과 목표에 적응할 수 있고 협력하거나 경쟁할 수도 있는, 상호작용하는 (AI) 에이전트들의 네트워크로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.152–153"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

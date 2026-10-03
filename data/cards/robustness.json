@@ -1,0 +1,61 @@
+{
+  "id": "robustness",
+  "kit_id": "robustness",
+  "join_keys": [],
+  "head": "강건성",
+  "en": "robustness",
+  "alternatives": [
+    {
+      "text": "견고성",
+      "source": "editor"
+    }
+  ],
+  "chapter": "10",
+  "definition": {
+    "lead": "AI 시스템이 학습 때와 다른 입력, 예상치 못한 환경, 의도적 공격 등 넓은 범위의 상황에서도 안전하고 의도대로 작동하는 성질을 의미함.",
+    "points": [
+      "분포 변화에 대한 일반화, 적대적 입력·탈옥·프롬프트 인젝션에 대한 저항, 잡음이나 오류가 섞인 입력에 대한 안정성 등을 포괄함.",
+      "배포 환경의 낯선 입력이 예상치 못한 실패를 일으킬 수 있어, 적대적 학습·레드티밍·적대적 시험이 강건성 확보와 검증 수단으로 쓰임.",
+      "알려진 공격에 대한 방어가 새로운 공격에는 통하지 않는 경우가 많아, 강건성을 충분히 입증하기 어렵다는 한계가 있음."
+    ],
+    "distinction": {
+      "text": "'강건성(robustness)'이 넓은 상황에서의 안전한 작동을 가리킨다면, '신뢰성(reliability)'은 의도된 기능을 일관되게 수행하는 성질을 가리킴.",
+      "terms": [
+        "reliability"
+      ]
+    }
+  },
+  "related": [
+    "adversarial-training",
+    "jailbreak",
+    "reliability",
+    "generalization",
+    "red-teaming"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "AI 시스템의 강건성을 넓은 범위의 상황에서 안전하게 행동하는 성질로 정의하고, 악의적 이용자가 의도적으로 해로운 행동을 유도하려는 시도를 견디는 것을 포함하되 이에 한정되지 않는다고 설명함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026).",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.154–155 (Glossary)"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "near-miss",
+  "kit_id": "near-miss",
+  "join_keys": [],
+  "head": "아차사고",
+  "en": "near miss",
+  "alternatives": [],
+  "chapter": "07",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템과 관련해 실제 피해로 이어질 수 있었으나 우연이나 개입으로 피해가 발생하지 않은 사건을 말함.",
+    "points": [
+      "안전장치가 뚫렸지만 결과가 실행되지 않은 경우, 위험한 출력이 사람의 검토에서 걸러진 경우 등이 해당될 수 있음.",
+      "실제 사고보다 훨씬 자주 발생하므로, 이를 기록·공유하면 피해가 나기 전에 실패 유형을 파악하고 안전장치를 보강할 수 있음.",
+      "피해가 없어 신고 의무 밖에 놓이는 경우가 많고, 조직이 공개를 꺼려 보고가 적게 이루어지는 문제가 있음."
+    ],
+    "distinction": {
+      "text": "'아차사고'는 피해 없이 끝난 구체적 사건이고, 'AI 위험원(AI hazard)'은 사고로 이어질 개연성이 있는 사건·상황 전반을 가리키는 더 넓은 범주임. OECD는 아차사고를 AI 위험원에 포함함.",
+      "terms": [
+        "ai-hazard",
+        "ai-incident"
+      ]
+    }
+  },
+  "related": [
+    "ai-hazard",
+    "ai-incident",
+    "incident-reporting",
+    "incident-monitoring"
+  ],
+  "frameworks": [
+    {
+      "org": "OECD",
+      "sub": "2024",
+      "points": [
+        {
+          "text": "아차사고를 AI 사고로 이어질 수 있었던 사건으로 보고, AI 위험원(AI hazard) 정의에 포함된다고 명시함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "안정성 확보 가이드라인은 사고 대응 개시 기준에 실제 피해뿐 아니라, 피해가 없더라도 생명·신체·기본권 침해로 이어질 수 있는 합리적 위험 징후를 포함하도록 함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "OECD (2024). Defining AI incidents and related terms. OECD Artificial Intelligence Papers.",
+      "evidence": {
+        "document_id": "doc-9c46e00f1b3f",
+        "pages": "p.13"
+      }
+    },
+    {
+      "n": 2,
+      "text": "「인공지능 안정성 확보 가이드라인」 v1.3 (2026.1.21).",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.57"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

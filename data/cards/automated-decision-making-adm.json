@@ -1,0 +1,44 @@
+{
+  "id": "automated-decision-making-adm",
+  "kit_id": "automated-decision-making-adm",
+  "join_keys": [
+    "automateddecisionmaking"
+  ],
+  "head": "자동 의사결정",
+  "en": "automated decision-making (ADM)",
+  "alternatives": [
+    {
+      "text": "자동화된 의사결정",
+      "source": "editor"
+    },
+    {
+      "text": "자동화 결정",
+      "source": "public"
+    }
+  ],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "사람의 실질적 개입 없이 알고리즘이나 AI 시스템이 개인에 관한 결정을 내리거나 그 결정을 사실상 좌우하는 것을 의미함.",
+    "points": [
+      "신용 평가, 보험 심사, 채용, 복지 수급 판단처럼 개인의 권리·의무에 영향을 주는 결정이 주된 규율 대상임.",
+      "개인정보 보호법제는 이런 결정에 대해 거부·설명 요구·이의 제기 등 정보주체의 권리를 두어 왔고, AI 규제 논의의 고위험 용도와 상당 부분 겹침.",
+      "사람이 형식적으로 승인만 하는 구조라면 실질적 개입으로 보기 어려워, 개입이 실제로 가능했는지가 판단의 핵심이 됨."
+    ],
+    "distinction": {
+      "text": "'자동 의사결정'은 결정이 사람의 실질적 개입 없이 이뤄지는 상태를 규율하는 개념이고, '인간 감독'은 시스템을 감시·개입·중단할 수 있게 하는 통제 장치를 가리킴. 형식적 감독만 있는 결정은 여전히 자동 의사결정으로 볼 수 있음.",
+      "terms": [
+        "human-oversight",
+        "human-in-the-loop"
+      ]
+    }
+  },
+  "related": [
+    "human-oversight",
+    "automation-bias",
+    "high-impact-ai",
+    "data-protection",
+    "algorithmic-transparency"
+  ],
+  "updated": "2026-10-03"
+}

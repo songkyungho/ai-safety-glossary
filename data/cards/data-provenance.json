@@ -1,0 +1,62 @@
+{
+  "id": "data-provenance",
+  "kit_id": "data-provenance",
+  "join_keys": [
+    "dataprovenance"
+  ],
+  "head": "데이터 기원",
+  "en": "data provenance",
+  "alternatives": [
+    {
+      "text": "데이터 출처",
+      "source": "editor"
+    }
+  ],
+  "chapter": "01",
+  "definition": {
+    "lead": "데이터가 어디서 왔고 어떤 과정을 거쳐 처리·변환됐는지를 기록한 이력, 또는 그 이력을 관리하는 일을 말함.",
+    "points": [
+      "수집 출처, 수집 시점, 라이선스·동의 조건, 정제·필터링·가공 단계 등을 추적 가능한 형태로 남기는 것이 포함됨.",
+      "학습 데이터의 저작권·개인정보 문제를 확인하고, 데이터 오염이나 악의적으로 심어진 자료를 찾아내며, 편향의 원인을 거슬러 올라가는 데 필요함. 규제가 학습 데이터 관련 문서화를 요구하는 근거가 됨."
+    ],
+    "distinction": {
+      "text": "'데이터 기원'은 모델 학습에 쓰인 데이터의 이력을, '출처 메타데이터'는 AI가 생성한 콘텐츠에 붙여 생성 경위를 알리는 정보를 주로 가리킴.",
+      "terms": [
+        "provenance-metadata"
+      ]
+    }
+  },
+  "related": [
+    "training-data",
+    "provenance-metadata",
+    "supply-chain",
+    "copyright",
+    "synthetic-data"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "데이터가 어디서 왔는지, 어떻게 처리됐는지에 대한 이력 기록으로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.150"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "transparency",
+  "kit_id": null,
+  "join_keys": [
+    "transparency"
+  ],
+  "head": "투명성",
+  "en": "transparency",
+  "alternatives": [],
+  "chapter": "10",
+  "definition": {
+    "lead": "AI 시스템의 존재와 성질, 작동 방식, 개발·운영 과정에 관한 정보가 이용자·영향받는 사람·규제기관·연구자 등 관계자에게 제공되는 정도를 의미함.",
+    "points": [
+      "AI와 대화 중임을 알리는 것, 결정 당사자에게 판단 근거를 설명하는 것, 규제기관에 학습 데이터와 평가 결과를 제출하는 것, 연구자에게 모델 접근을 허용하는 것이 모두 투명성으로 불리며, 앞의 둘은 개인의 권리에서, 뒤의 둘은 감독·검증의 필요에서 나옴.",
+      "AI 위험을 외부에서 평가·감시하고 책임을 묻기 위한 전제 조건이며, 모델 카드처럼 공개 항목과 형식을 미리 정한 문서가 보안·영업비밀·개인정보와의 절충 도구로 쓰임.",
+      "완전 공개와 같은 말이 아니며, 모델 가중치 공개가 시스템 문서 공개보다 반드시 더 투명한 것도 아님."
+    ],
+    "distinction": {
+      "text": "'투명성'은 정보 제공의 정도를 가리키고, '해석 가능성(interpretability)'은 모델 내부 작동을 사람이 이해할 수 있는 정도, '설명 가능한 AI(explainability)'는 개별 출력의 근거를 사람이 이해할 수 있게 설명하는 성질·기법을 가리킴.",
+      "terms": [
+        "interpretability",
+        "explainable-ai-xai"
+      ]
+    }
+  },
+  "related": [
+    "algorithmic-transparency",
+    "institutional-transparency",
+    "transparency-obligation",
+    "model-card",
+    "ai-accountability"
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

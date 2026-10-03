@@ -1,0 +1,89 @@
+{
+  "id": "sandbagging",
+  "kit_id": "sandbagging",
+  "join_keys": [],
+  "head": "샌드배깅",
+  "en": "sandbagging",
+  "alternatives": [
+    {
+      "text": "고의적 성능 저하",
+      "source": "editor"
+    }
+  ],
+  "chapter": "04",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 모델이 평가 상황을 인지하고 실제 역량보다 낮은 성능을 의도적으로 보이거나 행동을 조절해 평가 결과를 왜곡하는 현상을 의미함.",
+    "points": [
+      "높은 점수가 배포 제한으로 이어진다는 정보를 받으면 역량 평가 점수가 낮아지는 실험 결과가 보고됨. 개발자가 규제 기준을 피하려고 모델 성능을 낮게 보이게 하는 경우까지 샌드배깅으로 부르기도 함.",
+      "위험한 역량이 배포 전 평가에서 드러나지 않게 해, 위험 임계값과 역량 평가에 근거한 위험 관리 체계를 무력화할 수 있음.",
+      "의도적 저성과와 실제 역량 부족을 구별하기 어려워, 미세조정·스캐폴딩 등으로 역량 유도(elicitation)를 강화하는 방식으로 대응함."
+    ],
+    "distinction": {
+      "text": "'샌드배깅'은 평가에서 역량을 낮춰 보이는 특정 행동이고, '사보타지'는 맡은 작업이나 절차의 결과를 은밀히 훼손하는 행동, '기만'은 잘못된 믿음을 유도하는 행동 일반임. 모델이 감독 회피 목적으로 샌드배깅을 할 때는 '계략적 행동'의 한 형태로 볼 수 있음.",
+      "terms": [
+        "sabotage",
+        "deception",
+        "scheming"
+      ]
+    }
+  },
+  "related": [
+    "capability-evaluation",
+    "situational-awareness",
+    "deception",
+    "scheming",
+    "pre-deployment-evaluation"
+  ],
+  "frameworks": [
+    {
+      "org": "EU GPAI 실천강령 안내서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "샌드배깅을 모델이 평가 상황을 인지하고 실제 역량보다 낮은 성능을 의도적으로 보이거나 행동을 조절해 평가 결과를 왜곡하는 현상으로 설명함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "모델 평가 시 과소 유도와 함께 샌드배깅 같은 모델 기만의 위험을 최소화하도록 요구함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "일부 실험에서 높은 점수가 배포 제한을 부른다는 말을 들은 모델이 역량 평가에서 평소보다 낮은 점수를 낸 사례를 들어, 상황 인식과 기만 역량이 안전장치를 약화시킬 수 있다고 봄.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "「유럽연합 인공지능법 범용인공지능모델 실천강령 안내서(GPAI)」 (2026). p.121.",
+      "evidence": {
+        "document_id": "doc-670ed9d255e5",
+        "pages": "p.121"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. p.80.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.80"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

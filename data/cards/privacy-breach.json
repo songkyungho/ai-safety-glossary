@@ -1,0 +1,40 @@
+{
+  "id": "privacy-breach",
+  "kit_id": null,
+  "join_keys": [
+    "privacybreach"
+  ],
+  "head": "개인정보 침해",
+  "en": "privacy breach",
+  "alternatives": [
+    {
+      "text": "개인정보 유출",
+      "source": "editor"
+    }
+  ],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "개인정보가 권한 없이 수집·노출·유출·오용되는 사건으로, AI에서는 학습·추론·이용 과정 전반에서 발생할 수 있는 피해를 말함.",
+    "points": [
+      "대규모 웹 수집에 개인정보가 섞여 들어오는 단계, 모델이 학습 데이터를 거의 그대로 출력하는 단계, 이용자 입력이 저장되거나 재학습에 쓰이는 단계에서 발생할 수 있음.",
+      "모델 가중치에 스며든 정보는 위치를 특정하거나 삭제를 증명하기 어려워 기존 데이터베이스 유출보다 되돌리기 어려움.",
+      "이 때문에 머신 언러닝 기법과, 삭제 요구권이 이미 학습된 모델에까지 미치는지가 함께 쟁점이 됨."
+    ],
+    "distinction": {
+      "text": "'개인정보 침해'는 권한 없는 노출·오용이라는 사건·피해를, '프라이버시'는 보호되어야 할 권리·가치를, '개인정보 보호'는 이를 지키기 위한 법제·조치를 가리킴.",
+      "terms": [
+        "privacy",
+        "data-protection"
+      ]
+    }
+  },
+  "related": [
+    "privacy",
+    "data-protection",
+    "training-data",
+    "machine-unlearning",
+    "model-weights"
+  ],
+  "updated": "2026-10-03"
+}

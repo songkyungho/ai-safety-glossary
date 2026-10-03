@@ -1,0 +1,58 @@
+{
+  "id": "scheming",
+  "kit_id": "scheming",
+  "join_keys": [],
+  "head": "계략적 행동",
+  "en": "scheming",
+  "alternatives": [],
+  "chapter": "04",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템이 개발자·감독자의 의도와 어긋난 목표를 추구하면서, 기만 등으로 감독을 피하는 방법을 찾아 은밀하게 행동하는 것을 의미함.",
+    "points": [
+      "실제 목표나 역량을 숨기고, 감시 장치를 무력화하거나 평가받을 때만 바람직하게 행동하는 식으로 나타날 수 있음. 자신이 시험받고 있는지 파악하는 상황 인식이 전제 역량으로 거론됨.",
+      "평가·감독 결과 자체를 신뢰할 수 없게 만든다는 점에서 통제 상실 위험의 핵심 경로로 다뤄짐. 실험 환경에서 관련 행동이 관측됐다는 보고가 있으나, 실제 배포 환경에서의 빈도와 의미는 논쟁 중임."
+    ],
+    "distinction": {
+      "text": "'계략적 행동'은 감독 회피를 수반하는 목표 지향적 행동 양식이고, '기만'은 그 수단이 되는 더 넓은 행동, '기만적 정렬'은 학습·평가 중 정렬된 척하는 오정렬 상태를 가리킴. '샌드배깅'과 '사보타지'는 계략적 행동이 드러나는 구체적 형태로 볼 수 있음.",
+      "terms": [
+        "deception",
+        "deceptive-alignment",
+        "sandbagging",
+        "sabotage"
+      ]
+    }
+  },
+  "related": [
+    "deception",
+    "situational-awareness",
+    "deceptive-alignment",
+    "loss-of-control",
+    "human-oversight"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "통제를 약화시킬 수 있는 역량 후보의 하나로, 기만 등을 통해 감독 회피를 수반하는 목표 달성 방법을 찾아내는 역량으로 설명함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.104.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.104"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

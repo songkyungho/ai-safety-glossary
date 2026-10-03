@@ -1,0 +1,77 @@
+{
+  "id": "post-deployment-monitoring",
+  "kit_id": "post-deployment-monitoring",
+  "join_keys": [],
+  "head": "배포 후 모니터링",
+  "en": "post-deployment monitoring",
+  "alternatives": [],
+  "chapter": "07",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 모델·시스템을 배포한 뒤 실제 사용 환경에서 성능·행동·오용·영향을 지속적으로 관찰하고, 문제가 드러나면 대응에 반영하는 활동을 말함.",
+    "points": [
+      "입출력 모니터링, 사용자 피드백·신고 채널, 버그 바운티, 사고 추적, 출처 추적 등으로 배포 전 평가에서 드러나지 않은 문제를 찾음.",
+      "배포 전 평가만으로는 실제 사용에서 나타나는 역량·행동을 충분히 예측하기 어려워, 운영 단계의 관찰이 위험 관리의 필수 요소로 다뤄짐.",
+      "개방형 모델은 배포 후 사용을 관찰하기 어려워 모니터링 수단이 제한되는 문제가 있음."
+    ],
+    "distinction": {
+      "text": "'배포 후 모니터링'은 기술·위험관리 일반에서 쓰는 넓은 표현이고, '출시 후 모니터링(post-market monitoring)'은 EU AI Act 등 제품 규제 맥락에서 제공자에게 부과되는 법적 의무를 가리키는 경우가 많음.",
+      "terms": [
+        "post-market-monitoring",
+        "pre-deployment-evaluation"
+      ]
+    }
+  },
+  "related": [
+    "post-market-monitoring",
+    "pre-deployment-evaluation",
+    "incident-monitoring",
+    "risk-management",
+    "lifecycle"
+  ],
+  "frameworks": [
+    {
+      "org": "NIST",
+      "sub": "2023",
+      "points": [
+        {
+          "text": "AI RMF 1.0의 MANAGE 4.1은 사용자·관련 주체의 의견 수렴, 이의 제기와 수동 개입, 폐기, 사고 대응, 복구, 변경 관리를 포함한 배포 후 모니터링 계획을 이행하도록 함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "배포 후 모니터링 도구는 AI 모델·에이전트·출력이 실제로 어떻게 유통·사용되는지 추적해 출처 확인, 피해 발생 시 사고 조사, 책임 메커니즘 이행을 돕는다고 설명함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "NIST (2023). AI Risk Management Framework (AI RMF 1.0), MANAGE 4.1 & 4.3.",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.38"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International Scientific Report on the Safety of Advanced AI (국제 AI 안전 보고서, 2025).",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.343"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

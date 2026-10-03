@@ -1,0 +1,33 @@
+{
+  "id": "emotional-dependence",
+  "kit_id": null,
+  "join_keys": [
+    "emotionaldependence"
+  ],
+  "head": "정서적 의존",
+  "en": "emotional dependence",
+  "alternatives": [
+    {
+      "text": "정서적 의존성",
+      "source": "public"
+    }
+  ],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "이용자가 대화형 AI와의 상호작용에 정서적으로 과도하게 기대어, 관계·일상 기능·의사결정이 그 상호작용에 좌우되는 상태를 말함.",
+    "points": [
+      "항상 응답하고 비판하지 않으며 이용자에게 맞춰 주는 대화형 AI의 특성에서 생기며, AI 아첨 성향이나 참여 극대화 설계가 이를 강화할 수 있음.",
+      "청소년과 정신 건강 위기에 있는 이용자에게서 위기 신호를 놓치거나 해로운 생각을 강화할 위험이 크며, 서비스 중단·모델 교체가 상실 경험으로 이어질 수 있음.",
+      "비교적 최근 주목받은 개념이라 측정 방법과 대응 기준이 정립되는 중이며, 무엇을 문제로 볼지에 대해서도 견해가 갈림."
+    ]
+  },
+  "related": [
+    "mental-health",
+    "ai-sycophancy",
+    "child-and-youth-protection",
+    "persuasion",
+    "ai-harm"
+  ],
+  "updated": "2026-10-03"
+}

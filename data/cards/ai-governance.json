@@ -1,0 +1,33 @@
+{
+  "id": "ai-governance",
+  "kit_id": "ai-governance",
+  "join_keys": [
+    "aigovernance"
+  ],
+  "head": "AI 거버넌스",
+  "en": "AI governance",
+  "alternatives": [
+    {
+      "text": "AI 규율 체계",
+      "source": "public"
+    }
+  ],
+  "chapter": "10",
+  "definition": {
+    "lead": "AI의 개발·배포·이용을 규율하는 법령, 비구속 지침, 국제 합의, 기술 표준, 조직 내부 정책과 이를 집행하는 기구의 총체를 의미함.",
+    "points": [
+      "국제(정상회의·다자 원칙), 국가(법령·전담 기구·안전연구소), 조직(내부 위원회·위험 관리 체계) 층위가 서로 다른 속도와 구속력으로 겹쳐 작동함.",
+      "AI 안전에서는 위험 평가, 배포 전 평가, AI 사고 보고 같은 안전 조치를 누가 어떤 권한으로 요구하고 확인할지를 정하는 틀이 됨.",
+      "기술 변화가 입법보다 빨라 비구속 수단의 비중이 크며, 같은 요구라도 층위에 따라 권고·법적 의무·자율 약속으로 무게가 달라짐."
+    ]
+  },
+  "related": [
+    "binding-force",
+    "standardization",
+    "risk-management",
+    "ai-accountability",
+    "compliance"
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

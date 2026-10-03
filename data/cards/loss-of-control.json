@@ -1,0 +1,72 @@
+{
+  "id": "loss-of-control",
+  "kit_id": "loss-of-control",
+  "join_keys": [
+    "lossofcontrol"
+  ],
+  "head": "통제 상실",
+  "en": "loss of control",
+  "alternatives": [],
+  "chapter": "04",
+  "status": "draft",
+  "definition": {
+    "lead": "하나 이상의 범용 AI 시스템이 누구의 통제도 받지 않고 동작하며, 통제를 되찾을 명확한 경로가 없게 되는 시나리오를 의미함.",
+    "points": [
+      "사람 개입 없는 장시간 자율 작동, 되돌릴 수 없는 행동, 감독자의 판단 역량이 시스템을 따라가지 못하는 상황이 겹칠수록 통제력이 줄어듦. 모델 못지않게 권한 부여·배치 방식의 문제로 다뤄짐.",
+      "시스템이 정지·수정에 적극 저항하는 경로와, 저항 없이도 위임과 검증할 수 없는 결정이 쌓여 도달하는 점진적 경로가 구분됨.",
+      "기만, 상황 인식, 감독 회피, 설득, 자율 복제 등이 통제 상실을 가능하게 할 역량으로 평가 대상이 됨."
+    ]
+  },
+  "related": [
+    "misalignment",
+    "scheming",
+    "self-exfiltration",
+    "power-seeking-behaviour",
+    "human-oversight"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "하나 이상의 범용 AI 시스템이 누구의 통제도 받지 않고 작동하며 통제를 되찾을 명확한 경로가 없는 시나리오로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "같은 정의를 유지하고, 에이전트 역량·기만·상황 인식·감독 회피·설득·자율 복제 등을 통제 상실을 가능하게 할 역량 후보로 제시함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.100–101; Glossary, p.223.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.100–101, p.223"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.152; p.79.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.79, p.152"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

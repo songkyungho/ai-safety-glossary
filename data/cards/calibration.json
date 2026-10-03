@@ -1,0 +1,38 @@
+{
+  "id": "calibration",
+  "kit_id": null,
+  "join_keys": [
+    "calibration"
+  ],
+  "head": "보정",
+  "en": "calibration",
+  "alternatives": [
+    {
+      "text": "캘리브레이션",
+      "source": "editor"
+    }
+  ],
+  "chapter": "08",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 모델이 출력에 대해 나타내는 확신도가 실제 정답률과 얼마나 일치하는지를 나타내는 성질을 말함.",
+    "points": [
+      "90% 확신한 답이 실제로 약 90% 맞으면 잘 보정된 것이고, 그보다 덜 맞으면 과신으로 봄. 정확도와는 별개의 성질임.",
+      "모델이 불확실성을 신뢰성 있게 알려 주면 사람의 검토를 위험한 출력에 집중할 수 있어, 환각 대응과 인간 감독의 효율을 높이는 데 중요함.",
+      "토큰 확률, 말로 표현한 확신 등 어떤 확신도를 측정하느냐에 따라 결과가 달라질 수 있어, 측정 방식을 함께 밝혀야 함."
+    ],
+    "distinction": {
+      "text": "정확도는 얼마나 자주 맞는지를, '보정'은 자신이 맞을지를 얼마나 정확히 아는지를 봄. 정확도가 낮아도 보정은 좋을 수 있음.",
+      "terms": [
+        "reliability"
+      ]
+    }
+  },
+  "related": [
+    "hallucination",
+    "reliability",
+    "human-oversight",
+    "automation-bias"
+  ],
+  "updated": "2026-10-03"
+}

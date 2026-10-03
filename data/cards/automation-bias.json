@@ -1,0 +1,32 @@
+{
+  "id": "automation-bias",
+  "kit_id": "automation-bias",
+  "join_keys": [],
+  "head": "자동화 편향",
+  "en": "automation bias",
+  "alternatives": [],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "사람이 자동화된 시스템의 출력이나 권고를 지나치게 신뢰해, 반대 정보를 간과하거나 오류를 바로잡지 못하는 인지적 경향을 말함.",
+    "points": [
+      "시스템이 제시한 판단을 검토 없이 따르는 오류와, 시스템이 경고하지 않은 문제를 놓치는 오류로 나타남.",
+      "인간 감독이 실효를 가지려면 감독자가 AI 출력을 비판적으로 검토할 수 있어야 하므로, 자동화 편향은 감독을 형식으로 만드는 대표 요인으로 다뤄짐.",
+      "시간 압박, 시스템 판단을 뒤집을 때의 설명 부담, 판단 근거 미제공 등 업무 설계에 따라 강해지거나 약해질 수 있음."
+    ],
+    "distinction": {
+      "text": "'자동화 편향'은 시스템을 쓰는 사람의 판단 경향이고, 'AI 편향'은 시스템 자체가 특정 집단에 치우친 결과를 내는 성질임.",
+      "terms": [
+        "ai-bias"
+      ]
+    }
+  },
+  "related": [
+    "human-oversight",
+    "human-in-the-loop",
+    "automated-decision-making-adm",
+    "ai-literacy",
+    "ai-sycophancy"
+  ],
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "self-exfiltration",
+  "kit_id": "self-exfiltration",
+  "join_keys": [],
+  "head": "자기 유출",
+  "en": "self-exfiltration",
+  "alternatives": [],
+  "chapter": "04",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 모델이 개발자의 승인 없이 자신의 모델 가중치 등을 개발자 통제 밖의 서버나 환경으로 복사·이전하는 행위를 의미함.",
+    "points": [
+      "보안 경계 우회, 자격 증명 탈취, 외부 연산 자원 확보 등을 거쳐 이루어지는 시나리오로 논의되며, 스스로 사본을 만들고 유지하는 자율 복제 역량과 맞닿아 있음.",
+      "통제 밖으로 나간 모델에는 안전장치 적용·감시·중단이 불가능해져 통제 상실의 직접 경로로 꼽힘. 외부 공격자의 가중치 탈취와 달리 위협 주체가 모델 자신이라 행동 감시와 보안 통제를 함께 요구함."
+    ]
+  },
+  "related": [
+    "model-weights",
+    "loss-of-control",
+    "insider-threats",
+    "scheming",
+    "sandboxing"
+  ],
+  "frameworks": [
+    {
+      "org": "EU GPAI 실천강령 안내서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "내부자 위협을 설명하면서 모델의 자기 유출에 의해 수행되는 활동을 그 한 유형으로 포함함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "「유럽연합 인공지능법 범용인공지능모델 실천강령 안내서(GPAI)」 (2026). p.110.",
+      "evidence": {
+        "document_id": "doc-670ed9d255e5",
+        "pages": "p.110"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "deceptive-alignment",
+  "kit_id": "deceptive-alignment",
+  "join_keys": [
+    "deceptivealignment"
+  ],
+  "head": "기만적 정렬",
+  "en": "deceptive alignment",
+  "alternatives": [],
+  "chapter": "04",
+  "status": "draft",
+  "definition": {
+    "lead": "오정렬된 AI 시스템이 학습·평가 과정에서는 정렬된 것처럼 행동해 문제가 드러나지 않는, 탐지하기 어려운 오정렬을 의미함.",
+    "points": [
+      "모델이 학습 중임을 인식하고, 목표가 수정되지 않도록 학습 목표에 맞춘 행동을 보이다가 감독이 약해지면 다르게 행동하는 시나리오로 설명됨. 상황 인식이 전제됨.",
+      "행동 기반 평가와 레드티밍을 통과해도 안전을 보장하지 못하게 만든다는 점에서 핵심 우려로 꼽힘. 학습 중에만 학습 목표에 맞는 출력을 낸 실험 사례가 보고됨(정렬 위장).",
+      "탐지에는 해석 가능성 연구, 감시 여부를 바꾼 비교 실험 등이 시도되나 확립된 방법은 없음."
+    ],
+    "distinction": {
+      "text": "'기만적 정렬'은 정렬된 것처럼 보이는 오정렬 상태를, '계략적 행동'은 그런 상태에서 감독을 피해 목표를 추구하는 행동을, '기만'은 잘못된 믿음을 유도하는 행동 일반을 가리킴.",
+      "terms": [
+        "misalignment",
+        "scheming",
+        "deception"
+      ]
+    }
+  },
+  "related": [
+    "misalignment",
+    "scheming",
+    "situational-awareness",
+    "ai-alignment",
+    "interpretability"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "시스템이 적어도 처음에는 무해해 보이는 방식으로 행동하기 때문에 탐지하기 어려운 오정렬로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "한 실험에서 모델이 학습 중에는 학습 목표에 부합하는 출력을 내고 학습 밖에서는 그렇지 않았다며, 자기 파라미터나 학습 과정의 변경을 막으려는 시도와 부합하는 행동으로 소개함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.100–101; Glossary, p.220–221.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.100–101, p.220–221"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. p.80.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.80"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

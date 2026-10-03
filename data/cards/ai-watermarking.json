@@ -1,0 +1,79 @@
+{
+  "id": "ai-watermarking",
+  "kit_id": "ai-watermarking",
+  "join_keys": [
+    "watermarking",
+    "watermark"
+  ],
+  "head": "AI 워터마킹",
+  "en": "AI watermarking",
+  "alternatives": [
+    {
+      "text": "워터마킹",
+      "source": "editor"
+    },
+    {
+      "text": "워터마크",
+      "source": "editor"
+    },
+    {
+      "text": "워터마크 삽입",
+      "source": "public"
+    }
+  ],
+  "chapter": "09",
+  "status": "draft",
+  "definition": {
+    "lead": "AI가 생성한 텍스트·이미지·오디오·영상에 눈에 잘 띄지 않는 표식을 심어, 이후 검출기로 AI 생성물임과 출처를 확인할 수 있게 하는 기법을 의미함.",
+    "points": [
+      "이미지·음성·영상은 신호를 미세하게 변형해 패턴을 넣고, 텍스트는 다음 토큰 선택에 통계적 편향을 주어 흔적을 남기는 방식이 쓰임. 표식 규칙을 아는 쪽이 검출함.",
+      "딥페이크·허위 정보 확산 대응과 생성물 표시 의무 이행 수단으로 논의되며, 출처 메타데이터와 함께 쓰이는 경우가 많음.",
+      "압축·편집·바꿔 쓰기 등에 견디는 강건성과 눈에 띄지 않는 은닉성이 상충해, 특히 텍스트에서는 쉽게 지워질 수 있다는 한계가 있음."
+    ],
+    "distinction": {
+      "text": "'AI 워터마킹'은 콘텐츠 자체에 표식을 숨기는 방식이고, '출처 메타데이터'는 파일에 생성·편집 이력을 서명된 기록으로 붙이는 방식임.",
+      "terms": [
+        "provenance-metadata"
+      ]
+    }
+  },
+  "related": [
+    "provenance-metadata",
+    "deepfake",
+    "ai-generated-fake-content",
+    "transparency-obligation",
+    "disinformation"
+  ],
+  "commentary": [
+    "매체에 따라 방식이 다르다. 이미지나 음성, 영상에는 사람이 알아채지 못할 정도로 신호를 미세하게 변형해 규칙적인 패턴을 심는다. 텍스트에는 다음 낱말을 고를 때 특정 후보군에 미세하게 가중을 주어 통계적인 흔적을 남긴다. 어느 쪽이든 표식의 규칙을 아는 쪽이 검출기로 확인하는 구조이며, 사람이 읽거나 보는 품질에는 영향을 주지 않는 것을 목표로 한다.",
+    "근본적인 제약은 강건성과 은닉성이 서로 반대 방향이라는 점이다. 재압축하고 자르고 필터를 씌우고 문장을 다시 쓰는 변형을 모두 견디게 만들려면 표식을 강하게 심어야 하는데, 그러면 눈에 띄거나 품질이 떨어진다. 반대로 완전히 보이지 않게 하면 간단한 변형에도 지워진다. 텍스트는 특히 어렵다. 문장을 바꿔 쓰기만 해도 통계적 흔적이 흐려지기 때문이다. 그래서 워터마킹만으로 표시 의무를 충족하기는 어렵다는 평가가 일반적이다."
+  ],
+  "review_notes": [
+    "'견고성'을 kit 표제어 '강건성'으로 바꿈."
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "워터마크를 AI 생성 콘텐츠(텍스트·이미지·오디오 등)에 심어 인공 출처를 표시하거나 출처를 검증하고 잠재적 오용을 탐지하기 위한, 미묘하고 대개 눈에 띄지 않는 패턴으로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.201–202, p.227–228"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

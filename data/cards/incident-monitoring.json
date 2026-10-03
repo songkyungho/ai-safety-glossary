@@ -1,0 +1,86 @@
+{
+  "id": "incident-monitoring",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "AI 사고 모니터링",
+  "en": "AI incident monitoring",
+  "alternatives": [
+    {
+      "text": "사고 모니터링",
+      "source": "editor"
+    }
+  ],
+  "chapter": "07",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 사고와 그 징후를 지속적으로 찾아내고 수집·분류·분석해, 대응과 재발 방지에 쓰도록 하는 활동이나 체계를 말함.",
+    "points": [
+      "사업자 차원에서는 사용자 피드백, 사고 신고 채널, 로그 분석, 유통 플랫폼 협력 등으로 징후를 모으고, 자동 탐지와 전문가 검토를 거쳐 대응을 개시함.",
+      "정부·국제기구 차원에서는 언론 보도나 제출 사례를 모아 사고 데이터베이스를 만들고, 피해 유형과 추세를 파악해 정책 근거로 씀.",
+      "공개 보도에 의존하는 모니터링은 주목받는 사건 위주로 쌓이는 편향이 있어, 실제 발생 빈도의 지표로 쓰는 데 한계가 있음."
+    ],
+    "distinction": {
+      "text": "'AI 사고 모니터링'은 사고와 그 징후 자체를 추적하는 데 초점이 있고, '배포 후 모니터링'은 특정 시스템의 운영 중 성능·행동·영향 전반을 관찰하는 더 넓은 활동임.",
+      "terms": [
+        "post-deployment-monitoring"
+      ]
+    }
+  },
+  "related": [
+    "incident-reporting",
+    "ai-incident",
+    "post-deployment-monitoring",
+    "near-miss"
+  ],
+  "frameworks": [
+    {
+      "org": "OECD",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "OECD.AI 사고·위험원 모니터(AIM)는 언론에 보도된 AI 사고와 위험원을 실시간으로 추적하며, 현재는 언론 보도에만 의존한다고 밝힘.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "앞으로 판례, 학술 문헌, 공개 제출 사례를 더해 범위를 넓힐 수 있다고 봄.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국 AI 기본법",
+      "sub": "하위법령",
+      "points": [
+        {
+          "text": "하위법령집은 사업자가 안전사고 예방과 신속한 대응을 위해 전주기적·체계적 모니터링 체계를 운영하도록 하고, 유통 채널별 전략 수립, 정보 수집, 자동 탐지와 독립적 분석, 사고 대응의 단계를 제시함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "OECD (2026). Trends in AI incidents and hazards reported by the media.",
+      "evidence": {
+        "document_id": "doc-aab2727da192",
+        "pages": "p.12"
+      }
+    },
+    {
+      "n": 2,
+      "text": "「인공지능기본법 하위법령집」 (2025), 4.2 인공지능 안전사고 모니터링 및 대응.",
+      "evidence": {
+        "document_id": "doc-d5fde0787209",
+        "pages": "p.131–132"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

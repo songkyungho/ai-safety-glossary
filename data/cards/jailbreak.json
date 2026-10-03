@@ -1,0 +1,82 @@
+{
+  "id": "jailbreak",
+  "kit_id": "jailbreak",
+  "join_keys": [
+    "jailbreak"
+  ],
+  "head": "탈옥",
+  "en": "jailbreak",
+  "alternatives": [
+    {
+      "text": "제일브레이크",
+      "source": "editor"
+    }
+  ],
+  "chapter": "05",
+  "status": "draft",
+  "definition": {
+    "lead": "안전장치를 우회해 AI 시스템이 무기 제조 지침 같은 유해 콘텐츠를 생성하도록 고안한 프롬프트를 만들어 제출하는 행위·공격을 의미함.",
+    "points": [
+      "역할극·가상 시나리오, 교육 목적 위장, 다른 언어·암호로 바꿔 쓰기, 자동 탐색으로 찾은 무의미한 문자열 덧붙이기 등이 알려진 기법임. 거부가 요청의 뜻보다 표면 형태에 반응하는 틈을 이용함.",
+      "새 모델마다 새 우회 기법이 발견되는 양상이 반복되어, 실무 목표는 완전 차단보다 공격 성공률을 낮추고 뚫렸을 때의 피해를 제한하는 데 놓임. 레드티밍과 적대적 학습이 주요 대응임."
+    ],
+    "distinction": {
+      "text": "'탈옥'은 이용자가 자기 요청을 통과시키려 안전장치를 우회하는 공격이고, '프롬프트 인젝션'은 제3자가 데이터에 심은 지시가 이용자 의도와 무관하게 모델을 가로채는 공격임.",
+      "terms": [
+        "prompt-injection"
+      ]
+    }
+  },
+  "related": [
+    "prompt-injection",
+    "safeguard",
+    "red-teaming",
+    "attack-success-rate-asr",
+    "adversarial-training"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "안전장치를 우회해 무기 제조 지침 같은 유해 콘텐츠를 AI 시스템이 생성하도록 고안한 프롬프트를 만들어 제출하는 행위로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "같은 정의에서 우회 대상을 '가드레일'로 표현하고, 적대자가 있어도 안전한 행동을 유지하는 적대적 강건성 논의와 연결함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.152.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.152"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.170, p.182, p.192; Glossary, p.223.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.170, p.182, p.192, p.223"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

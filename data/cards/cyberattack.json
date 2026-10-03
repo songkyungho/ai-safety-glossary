@@ -1,0 +1,96 @@
+{
+  "id": "cyberattack",
+  "kit_id": "cyber-offence",
+  "join_keys": [
+    "cyberattack",
+    "hacking"
+  ],
+  "head": "사이버 공격",
+  "en": "cyberattack",
+  "alternatives": [
+    {
+      "text": "해킹",
+      "source": "editor"
+    },
+    {
+      "text": "사이버 침해",
+      "source": "public"
+    }
+  ],
+  "chapter": "05",
+  "status": "draft",
+  "definition": {
+    "lead": "컴퓨터 시스템·네트워크·디지털 기기에 무단으로 접근하거나 정보의 기밀성·무결성·가용성을 침해하려는 악의적 시도를 의미함.",
+    "points": [
+      "자료 탈취는 기밀성, 조작은 무결성, 서비스 중단은 가용성 침해에 해당함. AI는 표적 조사·사칭 문안 작성, 취약점 탐색·공격 코드 작성, 침입 후 행동 자동화 단계에 개입할 수 있음.",
+      "공격 준비 시간이 줄면 방어 측 대응 여유도 줄어드는데, 방어 자동화는 정상 업무 차단 위험 때문에 보수적으로 운용될 수밖에 없어 공격 측에 유리한 비대칭이 생긴다는 우려가 있음.",
+      "프롬프트 인젝션, 데이터 오염, 모델 가중치 탈취처럼 AI 시스템 자체를 노리는 공격도 이 범주에서 다뤄짐."
+    ],
+    "distinction": {
+      "text": "'사이버 공격'은 실행된 침해 시도를, '사이버 위협'은 그런 공격을 할 수 있는 행위자·시나리오를, '사이버 보안'은 이를 막는 보호 활동을 가리킴.",
+      "terms": [
+        "cyber-threat",
+        "cybersecurity"
+      ]
+    }
+  },
+  "related": [
+    "cyber-threat",
+    "malware",
+    "zero-day-vulnerability",
+    "cyber-defense",
+    "prompt-injection"
+  ],
+  "commentary": [
+    "무엇을 깨뜨리려 하는지에 따라 유형이 갈린다. 몰래 들어가 자료를 빼내면 기밀성을 침해하는 것이고, 자료나 시스템을 조작하면 무결성을, 서비스를 멈추게 하면 가용성을 침해하는 것이다. 랜섬웨어는 자료를 암호화해 가용성을 볼모로 잡는 방식이다. AI가 개입하는 지점은 크게 셋으로 정리된다. 표적을 조사하고 속이는 문안을 만드는 단계, 취약점을 찾고 공격 코드를 만드는 단계, 그리고 침입한 뒤의 행동을 자동으로 이어 가는 단계다.",
+    "논의의 초점이 속도에 놓이는 이유가 있다. 공격 준비에 걸리던 시간이 줄면 방어하는 쪽이 알아채고 대응할 여유도 함께 줄어든다. 문제는 방어를 같은 속도로 자동화하기가 어렵다는 점이다. 공격 자동화는 실패해도 다시 시도하면 되지만, 방어 자동화는 정상 업무를 잘못 차단하면 그 자체가 피해가 되기 때문에 보수적으로 움직여야 한다. 이 비대칭이 공격 측에 유리하게 작동한다는 우려가 국가 차원의 방어 역량 논의를 불러왔다."
+  ],
+  "review_notes": [
+    "integrity 번역 '완전성'→'무결성'(정보보호 분야 표준 용어)."
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "정보를 훔치거나 파괴하는 등의 목적으로 컴퓨터 시스템·네트워크·디지털 기기에 접근하려는 악의적 시도로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "해킹을 컴퓨터 시스템·네트워크·소프트웨어의 취약점이나 약점을 악용해 무단 접근, 기능 조작, 정보 추출을 하는 행위로 정의함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.150.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.150"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.72–73; Glossary, p.222–223.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.72–73, p.222–223"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

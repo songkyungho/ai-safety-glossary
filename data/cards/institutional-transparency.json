@@ -1,0 +1,71 @@
+{
+  "id": "institutional-transparency",
+  "kit_id": "institutional-transparency",
+  "join_keys": [
+    "institutionaltransparency"
+  ],
+  "head": "제도적 투명성",
+  "en": "institutional transparency",
+  "alternatives": [],
+  "chapter": "10",
+  "definition": {
+    "lead": "AI 기업·조직이 학습 데이터, 모델 구조, 안전·보안 조치, 의사결정 과정 등 기술·조직 정보를 공개하거나 정부의 감독에 드러내는 정도를 의미함.",
+    "points": [
+      "모델 카드·시스템 카드, 안전 프레임워크, 평가 결과 공개, 규제기관 제출 문서 등이 주요 수단이 됨.",
+      "외부 연구자와 규제기관이 개발자의 안전 주장을 검증하고 AI 위험을 독립적으로 평가하기 위한 전제이며, 공개 범위와 형식이 개발자마다 달라 비교가 어렵다는 지적이 있음.",
+      "모델 가중치나 위험 역량 정보처럼 공개 자체가 위험이 될 수 있는 정보, 영업비밀과의 균형이 쟁점이 됨."
+    ],
+    "distinction": {
+      "text": "'제도적 투명성'이 조직 차원의 정보 공개 정도라면, '알고리즘 투명성'은 개별 출력을 좌우한 요인을 알 수 있는 정도를 가리킴.",
+      "terms": [
+        "algorithmic-transparency"
+      ]
+    }
+  },
+  "related": [
+    "transparency",
+    "model-card",
+    "algorithmic-transparency",
+    "ai-accountability"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "2025년 보고서는 AI 기업이 학습 데이터, 모델 구조, 배출 데이터, 안전·보안 조치, 의사결정 과정 등 기술·조직 정보를 공개나 정부 감독에 드러내는 정도로 정의함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "2026년 보고서는 조직이 정보를 공개하는 정도로 정의하고, AI 개발자의 경우 학습 데이터·모델 구조·안전·보안 조치·의사결정 과정의 공유를 예로 듦.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.176–177, p.223"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026).",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.152"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

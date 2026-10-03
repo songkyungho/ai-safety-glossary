@@ -1,0 +1,102 @@
+{
+  "id": "ai-harm",
+  "kit_id": "harm",
+  "join_keys": [],
+  "head": "AI 피해",
+  "en": "AI harm",
+  "alternatives": [
+    {
+      "text": "위해",
+      "source": "editor"
+    },
+    {
+      "text": "피해",
+      "source": "kit"
+    }
+  ],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템의 개발·이용·오작동이 직간접적으로 개인·집단·사회·환경에 끼친 부정적 영향이나 손상을 의미함.",
+    "points": [
+      "신체·정신 건강 피해, 핵심 기반시설 교란, 인권·법적 권리 침해, 재산·공동체·환경 피해 등으로 나뉘며, 심각도·범위·지리적 규모·되돌릴 수 있는지 등의 차원으로 그 크기를 따짐.",
+      "피해가 실제로 발생했는지가 AI 사고와 AI 위험원을 가르는 기준이 되므로, 피해 정의와 분류는 사고 보고·책임 배분·구제 제도의 바탕이 됨.",
+      "차별, 정서적 의존처럼 서서히 누적되거나 측정이 어려운 피해는 포착이 늦어진다는 지적이 있음."
+    ],
+    "distinction": {
+      "text": "'AI 피해(harm)'는 실제로 나타난(또는 나타날 수 있는) 부정적 결과 자체이고, 'AI 위험(risk)'은 그 피해의 발생 가능성과 심각도를 결합한 정도, 'AI 위험원(hazard)'은 피해를 일으킬 수 있는 원천임. 실제 피해가 발생한 사건은 'AI 사고'로 기록됨.",
+      "terms": [
+        "ai-risk",
+        "ai-hazard",
+        "ai-incident"
+      ]
+    }
+  },
+  "related": [
+    "ai-incident",
+    "ai-risk",
+    "ai-hazard",
+    "serious-incident",
+    "harmful-content"
+  ],
+  "frameworks": [
+    {
+      "org": "OECD",
+      "sub": "2024",
+      "points": [
+        {
+          "text": "피해를 사고·위험원 정의의 중심 개념으로 두고, 실제 피해는 현실화된 위험, 잠재적 피해는 위험원과 연결된 개념으로 구분함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "사고·위험원 정의에서 피해 유형을 건강 피해, 핵심 기반시설 교란, 인권·법적 의무 침해, 재산·공동체·환경 피해의 네 범주로 제시함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "NIST",
+      "sub": "2023",
+      "points": [
+        {
+          "text": "AI RMF는 부정적 영향 또는 피해가 개인·집단·공동체·조직·사회·환경·지구 차원에서 경험될 수 있다고 봄.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "OECD (2024). Defining AI incidents and related terms. OECD AI Papers. 3. Actual vs. potential harm as the starting point.",
+      "evidence": {
+        "document_id": "doc-9c46e00f1b3f",
+        "pages": "p.10"
+      }
+    },
+    {
+      "n": 2,
+      "text": "OECD (2024). Defining AI incidents and related terms. OECD AI Papers. Draft definition of an AI hazard.",
+      "evidence": {
+        "document_id": "doc-9c46e00f1b3f",
+        "pages": "p.13"
+      }
+    },
+    {
+      "n": 3,
+      "text": "NIST (2023). AI Risk Management Framework (AI RMF 1.0), 1.1 Understanding and Addressing Risks, Impacts, and Harms.",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.9–10"
+      }
+    }
+  ],
+  "updated": "2026-10-03",
+  "head_override": "AI 접두 규칙 — 일상어 표제어에 AI를 붙임"
+}

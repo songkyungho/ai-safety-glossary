@@ -1,0 +1,65 @@
+{
+  "id": "ai-generated-fake-content",
+  "kit_id": "ai-generated-fake-content",
+  "join_keys": [
+    "aigeneratedfakecontent"
+  ],
+  "head": "AI 생성 가짜 콘텐츠",
+  "en": "AI-generated fake content",
+  "alternatives": [],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "생성형 AI로 만든 텍스트·오디오·이미지·영상 가운데 사람이나 사건을 악의적·기만적으로 현실과 다르게 묘사하는 콘텐츠를 말함.",
+    "points": [
+      "하지 않은 말·행동을 한 것처럼 보이게 하거나, 사건의 장소를 바꾸거나, 일어나지 않은 사건을 그리는 형태로 나타남. 딥페이크는 그 하위 유형임.",
+      "사기·갈취·명예훼손·비동의 성적 이미지·여론 조작 등 악의적 사용의 수단이 되며, 제작 비용 하락으로 표적이 일반인까지 넓어짐.",
+      "탐지만으로는 대응에 한계가 있어 AI 워터마킹, 출처 메타데이터 같은 출처 검증 수단과 투명성 의무가 함께 논의됨."
+    ],
+    "distinction": {
+      "text": "'AI 생성 가짜 콘텐츠'는 텍스트까지 포함하는 넓은 범주이고, '딥페이크'는 실제 인물을 오디오·시각 형태로 위조한 하위 유형임. 거짓 정보의 유통 의도에 따른 구분은 '허위 정보'와 '오정보'를 참조.",
+      "terms": [
+        "deepfake",
+        "disinformation"
+      ]
+    }
+  },
+  "related": [
+    "deepfake",
+    "malicious-use",
+    "ai-watermarking",
+    "provenance-metadata",
+    "generative-ai"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "생성형 AI가 만든 오디오·텍스트·시각 콘텐츠로, 사람이나 사건을 악의적·기만적으로 현실과 다르게 묘사하는 것으로 정의함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "하지 않은 행동·말을 보이게 하기, 실제 사건의 장소 바꾸기, 일어나지 않은 사건 묘사를 예로 들고, 악의적 사용 위험 항목에서 다룸.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "Bengio, Y. 외 (2025). International Scientific Report on the Safety of Advanced AI (IASR 2025). 용어 정의. p.62–63, p.67–68.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.62–63, p.67–68"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "post-market-monitoring",
+  "kit_id": "post-market-monitoring",
+  "join_keys": [],
+  "head": "출시 후 모니터링",
+  "en": "post-market monitoring",
+  "alternatives": [
+    {
+      "text": "시판 후 모니터링",
+      "source": "editor"
+    }
+  ],
+  "chapter": "07",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템이나 모델을 시장에 내놓은 뒤 제공자가 사용 경험과 위험 정보를 체계적으로 수집·검토해, 필요한 시정 조치로 이어지게 하는 규제상 활동을 말함.",
+    "points": [
+      "의료기기 등 제품 안전 규제에서 온 개념으로, 출시 후 수집한 정보로 위험 평가와 기술 문서를 갱신하고 중대 사고 보고와 연계하는 구조임.",
+      "범용 AI 모델에서는 역량·성향·영향에 관한 정보를 모아 시스템적 위험이 허용 가능한지 다시 판단하는 근거로 쓰임.",
+      "수집 방법으로 최종 사용자 피드백, 익명 신고 채널, 사고 신고 양식, 버그 바운티, 공개 평가 등이 거론됨."
+    ],
+    "distinction": {
+      "text": "'출시 후 모니터링'은 제품 규제상 제공자의 의무를 강조하는 표현이고, '배포 후 모니터링'은 운영 중 관찰 활동 일반을 가리키는 더 넓은 표현임.",
+      "terms": [
+        "post-deployment-monitoring"
+      ]
+    }
+  },
+  "related": [
+    "post-deployment-monitoring",
+    "serious-incident",
+    "conformity-assessment",
+    "high-risk-ai",
+    "general-purpose-ai-gpai"
+  ],
+  "frameworks": [
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "시스템적 위험이 있는 범용 AI 모델 제공자가 출시 후 모니터링으로 모델의 역량·성향·어포던스·영향 정보를 모아, 시스템적 위험의 허용 가능성 판단과 모델 보고서 갱신에 활용하도록 함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "예시 방법으로 최종 사용자 피드백 수집, (익명) 신고 채널, (중대) 사고 신고 양식, 버그 바운티, 공동체 주도 평가와 공개 리더보드 등을 제시함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "European Commission (2025). General-Purpose AI Code of Practice, Safety and Security chapter, Measure 3.5.",
+      "evidence": {
+        "document_id": "doc-f66baa3d99af",
+        "pages": "p.64–65"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ai-ethics",
+  "kit_id": "ai-ethics",
+  "join_keys": [
+    "ethicalprinciples"
+  ],
+  "head": "AI 윤리",
+  "en": "AI ethics",
+  "alternatives": [],
+  "chapter": "10",
+  "definition": {
+    "lead": "AI의 개발·배포·이용이 지켜야 할 가치와 규범을 다루는 원칙과 논의의 영역, 그리고 이를 정리한 원칙 체계를 의미함.",
+    "points": [
+      "인간 존엄 존중, 해악 방지, 공정성, 투명성, 책임성, 프라이버시 보호 등이 정부·기업·국제기구의 원칙 문서에 공통으로 나타나며, OECD와 유네스코의 권고가 다자 문서로 널리 인용됨.",
+      "원칙끼리 충돌할 때(예: 투명성과 보안, 유해 표현 차단과 표현의 자유) 무엇을 우선할지 답하지 않는 경우가 많아, 실행 수단으로 표준·법제·위험 관리 체계가 함께 필요하다는 지적이 있음."
+    ],
+    "distinction": {
+      "text": "'AI 안전'이 피해·사고를 막는 기술적·제도적 조치에 초점을 둔다면, 'AI 윤리'는 무엇을 피해로 보고 무엇을 지킬 가치로 볼지에 대한 규범적 기준을 제공함.",
+      "terms": [
+        "ai-safety"
+      ]
+    }
+  },
+  "related": [
+    "responsible-ai",
+    "trustworthy-ai",
+    "fairness",
+    "ai-governance",
+    "ai-accountability"
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

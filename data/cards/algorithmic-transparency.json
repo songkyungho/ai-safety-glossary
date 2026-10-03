@@ -1,0 +1,57 @@
+{
+  "id": "algorithmic-transparency",
+  "kit_id": "algorithmic-transparency",
+  "join_keys": [
+    "algorithmictransparency"
+  ],
+  "head": "알고리즘 투명성",
+  "en": "algorithmic transparency",
+  "alternatives": [],
+  "chapter": "10",
+  "definition": {
+    "lead": "AI 시스템의 출력(추천·결정 등)을 좌우하는 요인을 이용자·결정 당사자·감독기관 등 이해관계자가 알 수 있는 정도를 의미함.",
+    "points": [
+      "모델의 내부 작동, 학습 방식과 학습 데이터, 출력에 영향을 준 입력의 특징, 다른 조건에서 내렸을 결정 등이 알 수 있어야 할 대상에 포함됨.",
+      "결정의 오류·편향을 발견하고 이의를 제기하기 위한 전제가 되며, 해석 가능성·설명 가능한 AI 연구가 이를 높이는 기술적 수단으로 쓰임.",
+      "거대 언어 모델처럼 내부 작동을 사람이 이해하기 어려운 모델에서는 충분한 알고리즘 투명성을 확보하기 어렵다는 한계가 있음."
+    ],
+    "distinction": {
+      "text": "'알고리즘 투명성'이 개별 출력의 근거를 알 수 있는 정도라면, '제도적 투명성'은 기업·조직이 학습 데이터·안전 조치·의사결정 과정 등을 외부에 공개하는 정도를 가리킴.",
+      "terms": [
+        "institutional-transparency"
+      ]
+    }
+  },
+  "related": [
+    "transparency",
+    "interpretability",
+    "explainable-ai-xai",
+    "automated-decision-making-adm"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "범용 AI의 출력을 좌우하는 요인을 여러 이해관계자가 알 수 있는 정도로 정의하고, 모델 내부 작동, 학습 방식·데이터, 출력에 영향을 준 입력 특징, 다른 상황에서 내렸을 결정 등을 그 요인으로 듦.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.176–177, p.218–219"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

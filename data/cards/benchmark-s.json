@@ -1,0 +1,86 @@
+{
+  "id": "benchmark-s",
+  "kit_id": "benchmark-s",
+  "join_keys": [
+    "benchmark",
+    "벤치마크데이터셋"
+  ],
+  "head": "벤치마크",
+  "en": "benchmark",
+  "alternatives": [
+    {
+      "text": "벤치마크 데이터셋",
+      "source": "editor"
+    }
+  ],
+  "chapter": "08",
+  "status": "draft",
+  "definition": {
+    "lead": "고정된 과제 묶음과 채점 방식을 갖추어 AI 모델·시스템의 성능이나 부적절한 행동을 표준화된 방식으로 측정·비교하는 시험을 말함.",
+    "points": [
+      "문항·정답·채점 규칙을 묶어 공개함으로써 서로 다른 모델을 같은 조건에서 비교할 수 있게 하며, 지식·추론·코딩·에이전트 과제·안전성 등 영역별로 쓰임.",
+      "AI 안전에서는 위험 역량의 수준이나 유해 요청 거절 성능을 추적하는 지표로 쓰여, 위험 임계값 판단과 정책 논의의 근거가 됨.",
+      "문항이 학습 데이터에 섞이는 오염, 특정 점수를 겨냥한 과적합, 측정한다고 주장하는 역량을 실제로 재지 못하는 타당성 문제가 지적됨."
+    ],
+    "distinction": {
+      "text": "'벤치마크'는 평가에 쓰이는 표준화된 도구의 하나이고, '평가'는 벤치마크·레드티밍·감사 등을 아우르는 활동 전체임.",
+      "terms": [
+        "evaluation"
+      ]
+    }
+  },
+  "related": [
+    "evaluation",
+    "capability-evaluation",
+    "llm-as-a-judge",
+    "safety-evaluation"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "벤치마크를 실제 사용을 대표하도록 고안된 고정 과제 집합에서 AI 시스템의 성능을 평가·비교하는, 표준화되고 대개 정량적인 시험·지표로 정의함. 일부 판본은 부적절한 행동의 정량화도 포함함.",
+          "refs": [
+            1,
+            2
+          ]
+        },
+        {
+          "text": "2026년 보고서는 많은 벤치마크가 측정한다고 주장하는 역량을 정확히 재지 못하며, 객관식 형식에서는 지름길로 정답을 맞혀 점수가 부풀려질 수 있다고 지적함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International Scientific Report on the Safety of Advanced AI (국제 AI 안전 보고서, 2025).",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.319"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.149"
+      }
+    },
+    {
+      "n": 3,
+      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.100–101"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

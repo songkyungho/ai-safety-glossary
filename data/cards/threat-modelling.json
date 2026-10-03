@@ -1,0 +1,91 @@
+{
+  "id": "threat-modelling",
+  "kit_id": "threat-modelling",
+  "join_keys": [],
+  "head": "위협 모델링",
+  "en": "threat modelling",
+  "alternatives": [],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템을 둘러싼 위협 행위자, 공격 경로, 취약점을 체계적으로 정리해 위험이 실제 피해로 이어지는 경로를 구체화하는 절차를 말함.",
+    "points": [
+      "누가(행위자), 무엇을 노려(목표), 어떤 역량과 수단으로(경로) 피해를 일으킬 수 있는지 조합해 시나리오로 만들고, 각 시나리오에 필요한 모델 역량을 식별함.",
+      "프론티어 AI 개발사는 이를 바탕으로 역량 평가를 설계하고 위험 임계값을 정하며, 위험 분류 체계와 함께 대표적인 위험 식별 방법으로 꼽힘.",
+      "AI 통제 연구에서는 오정렬된 모델 자체를 가상의 공격자로 상정해 위협 모델을 세우기도 함."
+    ],
+    "distinction": {
+      "text": "'위협 모델링'은 보안 분야에서 공격자와 취약점을 중심으로 쓰이던 말로, EU 범용 AI 실천강령은 이 때문에 시스템적 위험의 실현 경로를 정리하는 작업을 '위험 모델링'이라 따로 부름. 두 용어가 혼용되기도 함.",
+      "terms": [
+        "threat",
+        "systemic-risk-assessment"
+      ]
+    }
+  },
+  "related": [
+    "threat",
+    "risk-assessment",
+    "vulnerability",
+    "capability-evaluation",
+    "red-teaming"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "위협 모델링을 AI 관련 위험이 어떻게 현실화할 수 있는지 매핑하는 구조화된 과정으로 설명하고, 위험 분류 체계와 함께 대표적인 위험 식별 방법으로 꼽음.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "여러 AI 개발사가 AI 시스템의 잠재적 오용 시나리오를 예상하기 위해 위협 모델링을 쓴다고 정리함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "시스템적 위험이 실현될 수 있는 경로를 구체화하는 구조화된 과정을 '시스템적 위험 모델링'이라 하고, 흔히 위협 모델링과 혼용되지만 위협 모델링은 사이버 보안에서 특정한 의미가 있어 '위험 모델링'이라는 용어를 쓴다고 밝힘.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Threat modelling and risk taxonomies are prominent risk identification methods.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.108–109"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Risk identification (Table).",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.108"
+      }
+    },
+    {
+      "n": 3,
+      "text": "EU General-Purpose AI Code of Practice (2025), Safety and Security Chapter, Glossary.",
+      "evidence": {
+        "document_id": "doc-f66baa3d99af",
+        "pages": "p.82"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

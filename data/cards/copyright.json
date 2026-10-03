@@ -1,0 +1,71 @@
+{
+  "id": "copyright",
+  "kit_id": "copyright",
+  "join_keys": [
+    "copyright"
+  ],
+  "head": "저작권",
+  "en": "copyright",
+  "alternatives": [],
+  "chapter": "11",
+  "definition": {
+    "lead": "창작자에게 저작물의 이용·복제·배포에 대한 배타적 권리를 주는 법적 보호로, AI에서는 학습 데이터 수집과 생성물의 권리 문제를 다루는 쟁점 영역을 의미함.",
+    "points": [
+      "대규모로 수집한 웹 데이터로 학습하는 과정에 보호 저작물이 포함될 수 있어, 학습의 적법 근거, 권리자의 이용 거부, 생성물이 원저작물을 재현하는 문제가 다투어짐.",
+      "학습 데이터의 데이터 기원 관리, 학습 콘텐츠 공개 같은 투명성 요구, 생성물 표시와 연결되며, 모델이 학습 데이터를 기억해 그대로 출력하는 현상은 개인정보 침해 위험과도 맞닿음."
+    ]
+  },
+  "related": [
+    "training-data",
+    "data-provenance",
+    "general-purpose-ai-gpai",
+    "generative-ai",
+    "provenance-metadata"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "원작 창작자에게 부여되어 저작물의 이용·복제·배포에 대한 배타적 권리를 주는 법적 보호로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "범용 AI 모델 제공자에게 EU 저작권법 준수 정책 수립(제53조제1항(c))과 학습에 사용된 콘텐츠 요약의 공개(제53조제1항(d))를 요구함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.144–145, p.220–221"
+      }
+    },
+    {
+      "n": 2,
+      "text": "European Commission (2025). Guidelines on the scope of the obligations for general-purpose AI models established by Regulation (EU) 2024/1689 (AI Act).",
+      "evidence": {
+        "document_id": "doc-f66baa3d99af",
+        "pages": "p.4–5"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

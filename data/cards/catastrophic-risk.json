@@ -1,0 +1,38 @@
+{
+  "id": "catastrophic-risk",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "파국적 위험",
+  "en": "catastrophic risk",
+  "alternatives": [
+    {
+      "text": "재앙적 위험",
+      "source": "editor"
+    }
+  ],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "AI로 인해 대규모 인명 피해나 사회 전반에 걸친 심각하고 되돌리기 어려운 피해가 발생할 위험을 의미함.",
+    "points": [
+      "화학·생물·방사능·핵 무기 개발 지원, 대규모 사이버 공격, 통제 상실 등이 주요 경로로 거론되며, 피해의 규모와 비가역성을 기준으로 일반적인 AI 위험과 구별됨.",
+      "발생 확률이 낮거나 불확실해도 심각도가 극단적이어서, 프론티어 AI 개발사의 안전 프레임워크와 위험 임계값 설정에서 우선 관리 대상으로 다뤄짐.",
+      "과거 사례가 거의 없어 발생 가능성을 실증적으로 추정하기 어렵고, 그 범위와 시급성을 두고 연구자 사이의 견해 차이가 큼."
+    ],
+    "distinction": {
+      "text": "'파국적 위험'은 피해의 규모·심각도를 기준으로 한 범주이고, '시스템적 위험'은 피해가 사회 구조 전반으로 퍼지는 방식이나(국제 AI 안전 보고서) 고영향 범용 AI 모델에 특유한 대규모 위험(EU AI법)을 가리키는 범주로, 둘은 겹칠 수 있으나 같은 개념이 아님.",
+      "terms": [
+        "systemic-risk",
+        "ai-disaster"
+      ]
+    }
+  },
+  "related": [
+    "ai-risk",
+    "systemic-risk",
+    "loss-of-control",
+    "cbrn",
+    "risk-thresholds"
+  ],
+  "updated": "2026-10-03"
+}

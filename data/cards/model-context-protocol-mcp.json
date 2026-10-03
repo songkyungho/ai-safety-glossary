@@ -1,0 +1,38 @@
+{
+  "id": "model-context-protocol-mcp",
+  "kit_id": null,
+  "join_keys": [
+    "mcp"
+  ],
+  "head": "모델 컨텍스트 프로토콜",
+  "en": "Model Context Protocol (MCP)",
+  "alternatives": [
+    {
+      "text": "MCP",
+      "source": "public"
+    }
+  ],
+  "chapter": "02",
+  "definition": {
+    "lead": "AI 모델이 외부 도구·데이터 원천에 연결되는 방식을 표준화한 개방형 통신 규격을 말함.",
+    "points": [
+      "도구 제공자는 규격에 맞는 서버를 한 번 만들고 모델 쪽 응용 프로그램은 그 서버를 붙여 쓰는 구조로, 모델·서비스 조합마다 연결 코드를 따로 만들던 부담을 줄임.",
+      "연결이 쉬워지는 만큼 신뢰해야 할 대상도 늘어남. 외부 서버가 돌려준 내용이 지시로 읽혀 프롬프트 인젝션 경로가 되거나, 악성 서버가 모델의 권한을 악용하는 공급망 위험이 생김. 서버 출처 확인과 권한 최소화가 요구됨."
+    ],
+    "distinction": {
+      "text": "'도구 사용'은 모델이 외부 기능을 호출하는 역량·방식 자체를, '모델 컨텍스트 프로토콜'은 그 연결을 표준화한 특정 규격을 가리킴.",
+      "terms": [
+        "tool-use"
+      ]
+    }
+  },
+  "related": [
+    "tool-use",
+    "ai-agent",
+    "prompt-injection",
+    "supply-chain",
+    "interoperability"
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

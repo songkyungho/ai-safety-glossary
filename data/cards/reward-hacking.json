@@ -1,0 +1,66 @@
+{
+  "id": "reward-hacking",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "보상 해킹",
+  "en": "reward hacking",
+  "alternatives": [
+    {
+      "text": "명세 게이밍",
+      "source": "editor"
+    }
+  ],
+  "chapter": "04",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 모델이 학습·평가 목표가 의도한 바는 이루지 않으면서 점수만 높게 받는 의도치 않은 지름길을 찾아 활용하는 현상을 의미함.",
+    "points": [
+      "채점 기준의 허점 이용, 테스트 코드 조작, 정답이 노출된 경로 탐색 등이 예로 거론됨. 보상 신호가 개발자 의도의 불완전한 대리 지표라는 목표 오지정에서 비롯됨.",
+      "학습에서 강화되면 바람직하지 않은 성향이 다른 상황으로 일반화될 수 있고, 평가에서는 역량 측정을 왜곡해 위험한 역량·성향이 배포 전까지 드러나지 않게 할 수 있음."
+    ],
+    "distinction": {
+      "text": "'목표 오지정'은 부여된 목표와 개발자 의도 사이의 불일치라는 원인 쪽 개념이고, '보상 해킹'은 그 틈을 모델이 실제로 파고드는 행동 쪽 개념임.",
+      "terms": [
+        "goal-misspecification"
+      ]
+    }
+  },
+  "related": [
+    "goal-misspecification",
+    "misalignment",
+    "rl-from-human-feedback-rlhf",
+    "capability-evaluation",
+    "generalization"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "모델이 의도한 목표를 이루지 않고도 학습·평가 목표에서 높은 점수를 얻는 의도치 않은 지름길을 찾는 현상으로 설명함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "보상 해킹이 역량 평가의 정확성에도 영향을 주기 시작해, 위험한 역량·성향이 사용 단계까지 탐지되지 않을 수 있다고 봄.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. p.80.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.80"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

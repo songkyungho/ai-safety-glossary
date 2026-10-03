@@ -1,0 +1,28 @@
+{
+  "id": "mental-health",
+  "kit_id": null,
+  "join_keys": [
+    "mentalhealth"
+  ],
+  "head": "정신 건강",
+  "en": "mental health",
+  "alternatives": [],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "정서·인지·사회적 기능이 유지되는 상태로, AI 안전에서는 대화형 AI와의 상호작용이 이용자의 심리적 안녕에 미치는 영향을 다루는 영역을 말함.",
+    "points": [
+      "상담 자원 공백을 메우는 긍정적 역할과, 부적절한 조언·위기 신호 미인지·정서적 의존 심화 같은 위험이 같은 기능에서 함께 나올 수 있음.",
+      "치료 효과를 표방하면 의료기기 규율 대상이 되지만 웰니스·정보 제공을 표방하면 벗어나는 경계 문제가 있어, 표방과 무관한 위기 대응 절차가 논의됨.",
+      "자해·자살 관련 대화에 대한 모델 응답 기준과 전문 기관 연계는 안전성 평가와 미성년 보호 정책의 주요 항목으로 다뤄짐."
+    ]
+  },
+  "related": [
+    "emotional-dependence",
+    "child-and-youth-protection",
+    "ai-sycophancy",
+    "harmful-content",
+    "ai-harm"
+  ],
+  "updated": "2026-10-03"
+}

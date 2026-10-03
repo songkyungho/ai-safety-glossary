@@ -1,0 +1,97 @@
+{
+  "id": "ai-hazard",
+  "kit_id": "ai-hazard",
+  "join_keys": [],
+  "head": "AI 위험원",
+  "en": "AI hazard",
+  "alternatives": [
+    {
+      "text": "위험 요인",
+      "source": "editor"
+    }
+  ],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템의 개발·이용·오작동이 피해나 AI 사고로 이어질 잠재력을 지닌 사건·상황·조건, 즉 피해의 원천을 의미함.",
+    "points": [
+      "위험한 역량, 설계·학습상의 결함, 취약점, 부적절한 배포 맥락 등이 위험원이 될 수 있으며, 아직 피해가 발생하지 않았다는 점에서 AI 사고와 구별됨.",
+      "위험원을 먼저 식별해야 그것이 피해로 이어질 경로와 가능성을 따져 AI 위험의 수준을 추정할 수 있으므로, 위험 평가와 AI 사고 모니터링의 출발점이 됨.",
+      "OECD는 실제 피해가 난 사건을 'AI 사고', 피해로 이어질 개연성이 있었던 사건을 'AI 위험원'으로 나눠, 사고 보고 체계에서 잠재적 사건까지 기록하도록 함."
+    ],
+    "distinction": {
+      "text": "'AI 위험원(hazard)'은 피해를 일으킬 수 있는 원천이고, 'AI 위험(risk)'은 그 원천이 피해로 이어질 가능성과 심각도를 결합한 정도임. 같은 위험원이라도 노출·맥락·안전장치에 따라 위험 수준은 달라짐. 'hazard'를 '위험'으로 옮기면 두 개념이 섞이므로 '위험원'으로 구별함.",
+      "terms": [
+        "ai-risk",
+        "ai-incident",
+        "near-miss"
+      ]
+    }
+  },
+  "related": [
+    "ai-risk",
+    "ai-harm",
+    "ai-incident",
+    "near-miss",
+    "incident-monitoring"
+  ],
+  "frameworks": [
+    {
+      "org": "OECD",
+      "sub": "2024",
+      "points": [
+        {
+          "text": "AI 위험원을 하나 이상의 AI 시스템의 개발·이용·오작동이 AI 사고, 즉 건강 피해, 핵심 기반시설 교란, 인권·법적 의무 침해, 재산·공동체·환경 피해로 이어질 개연성이 있는 사건·상황·일련의 사건으로 정의함(작업 정의).",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "잠재적 피해를 위험원 개념과, 실제 피해를 사고 개념과 연결해 둘을 구분함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "위험원을 인명 손실, 부상, 사회적 혼란, 환경 피해 등 피해를 일으킬 잠재력이 있는 모든 사건·활동으로 정의함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "OECD (2024). Defining AI incidents and related terms. OECD AI Papers. Draft definition of an AI hazard.",
+      "evidence": {
+        "document_id": "doc-9c46e00f1b3f",
+        "pages": "p.13"
+      }
+    },
+    {
+      "n": 2,
+      "text": "OECD (2024). Defining AI incidents and related terms. OECD AI Papers. 3. Actual vs. potential harm as the starting point.",
+      "evidence": {
+        "document_id": "doc-9c46e00f1b3f",
+        "pages": "p.10"
+      }
+    },
+    {
+      "n": 3,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Key Definitions, p.158–159.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.158–159"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

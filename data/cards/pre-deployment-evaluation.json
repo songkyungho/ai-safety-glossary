@@ -1,0 +1,56 @@
+{
+  "id": "pre-deployment-evaluation",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "배포 전 평가",
+  "en": "pre-deployment evaluation",
+  "alternatives": [],
+  "chapter": "08",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 모델·시스템을 외부에 공개하거나 서비스에 투입하기 전에 역량, 안전성, 취약점, 잠재적 영향을 시험하는 평가를 말함.",
+    "points": [
+      "역량 평가, 안전성 평가, 레드티밍 등을 조합하며, 개발사 내부뿐 아니라 정부 AI 안전 연구기관 등 외부 평가자가 참여하기도 함.",
+      "위험 임계값을 넘는 모델의 배포를 막거나 추가 안전장치를 요구하는 판단의 근거가 되어, 사전 예방적 위험 관리의 핵심 단계로 다뤄짐.",
+      "시험 환경과 실제 사용 환경의 차이 때문에 배포 전 성능이 실제를 대표하지 못하는 평가 격차가 있어, 배포 후 모니터링과 함께 운영되어야 함."
+    ],
+    "distinction": {
+      "text": "'배포 전 평가'는 출시 전에 위험을 확인하는 단계이고, '배포 후 모니터링'은 운영 중에 드러나는 문제를 추적하는 단계로, 둘은 상호 보완 관계임.",
+      "terms": [
+        "post-deployment-monitoring"
+      ]
+    }
+  },
+  "related": [
+    "evaluation",
+    "capability-evaluation",
+    "red-teaming",
+    "post-deployment-monitoring",
+    "safety-case"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "배포 전 평가의 성능과 실제 환경의 성능 사이에 평가 격차가 있으며, 현재 평가 방법이 역량과 성향을 모두 신뢰성 있게 측정하지 못한다고 지적함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.100–101"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "adversarial-training",
+  "kit_id": "adversarial-training",
+  "join_keys": [
+    "adversarialtraining"
+  ],
+  "head": "적대적 학습",
+  "en": "adversarial training",
+  "alternatives": [
+    {
+      "text": "적대적 훈련",
+      "source": "editor"
+    }
+  ],
+  "chapter": "09",
+  "status": "draft",
+  "definition": {
+    "lead": "모델을 실패시키도록 고안한 적대적 입력을 학습 데이터에 포함해, 그런 입력에도 의도대로 작동하도록 모델을 학습시키는 기법을 의미함.",
+    "points": [
+      "레드티밍·적대적 시험 등으로 모델이 오작동하거나 유해 응답을 내는 입력을 찾아낸 뒤, 이를 인식·처리하도록 추가 학습하는 순환 구조로 이뤄짐.",
+      "탈옥·프롬프트 인젝션 같은 공격에 대한 강건성을 높여 안전장치가 우회되는 위험을 줄이는 데 쓰임.",
+      "학습에 쓰인 공격 유형에는 효과가 있어도 새로운 공격으로 일반화되지 않을 수 있어, 그 자체로 충분한 방어로 보기는 어렵다는 지적이 있음."
+    ],
+    "distinction": {
+      "text": "'적대적 학습'은 적대적 입력으로 모델을 고치는 학습 기법이고, '적대적 시험'은 그런 입력으로 모델의 약점을 찾아내는 시험·평가 활동임.",
+      "terms": [
+        "adversarial-testing"
+      ]
+    }
+  },
+  "related": [
+    "adversarial-testing",
+    "red-teaming",
+    "robustness",
+    "jailbreak",
+    "safeguard"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "모델을 더 신뢰할 수 있게 만드는 기계학습 기법으로, 먼저 모델을 실패시키도록 고안한 입력을 만들고 이어서 그런 입력을 인식·처리하도록 학습시키는 두 단계로 정의함.",
+          "refs": [
+            1,
+            2
+          ]
+        },
+        {
+          "text": "2025년 보고서는 적대적 입력을 만드는 방법의 예로 레드티밍을 듦.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.148"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.192, p.218–219"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

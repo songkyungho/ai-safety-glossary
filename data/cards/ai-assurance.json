@@ -1,0 +1,41 @@
+{
+  "id": "ai-assurance",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "AI 신뢰보증",
+  "en": "AI assurance",
+  "alternatives": [
+    {
+      "text": "AI 보증",
+      "source": "editor"
+    },
+    {
+      "text": "AI 어슈어런스",
+      "source": "editor"
+    }
+  ],
+  "chapter": "10",
+  "definition": {
+    "lead": "AI 시스템이 안전성·신뢰성 등 정해진 요건이나 기대를 충족한다는 근거를 수집·평가하고, 그 결과를 이해관계자에게 전달하는 활동과 체계를 의미함.",
+    "points": [
+      "모델 평가, AI 감사, 적합성 평가, 인증, 안전 사례 작성 등 여러 기법으로 주장과 증거를 연결하며, 개발자 자체 점검부터 독립 제3자 검증까지 수준이 다양함.",
+      "개발자의 '안전하다'는 주장을 규제기관·구매자·이용자가 확인할 수 있게 해 주는 장치로, 신뢰보증 수단이 갖춰져야 AI 안전 요건도 실제로 집행·확인될 수 있음.",
+      "평가 방법이 충분히 표준화되지 않았고 모델이 계속 갱신되어 한 시점의 보증이 오래 유효하지 않다는 한계가 지적됨."
+    ],
+    "distinction": {
+      "text": "'규정 준수(compliance)'가 정해진 법령·표준의 요구를 지키고 증명하는 일이라면, 'AI 신뢰보증'은 규제 여부와 관계없이 시스템이 믿을 만하다는 근거를 만들어 전달하는 더 넓은 활동임.",
+      "terms": [
+        "compliance"
+      ]
+    }
+  },
+  "related": [
+    "ai-audit",
+    "conformity-assessment",
+    "certification",
+    "safety-case",
+    "trustworthy-ai"
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

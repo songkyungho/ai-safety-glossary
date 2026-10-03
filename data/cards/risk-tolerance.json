@@ -1,0 +1,80 @@
+{
+  "id": "risk-tolerance",
+  "kit_id": "risk-tolerance",
+  "join_keys": [
+    "risktolerance"
+  ],
+  "head": "위험 허용도",
+  "en": "risk tolerance",
+  "alternatives": [],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "개인이나 조직, 사회가 목표를 추구하면서 감수할 의향이 있는 AI 위험의 수준을 의미함.",
+    "points": [
+      "위험 평가에서 분석된 위험 수준을 비교하는 기준이 되며, 이를 구체적 수치·조건으로 옮긴 것이 위험 임계값임.",
+      "같은 위험이라도 피해가 되돌릴 수 있는지, 피해자가 이용 당사자인지 제3자인지에 따라 허용도가 달라지므로, 누가 어떤 절차로 정하는지가 거버넌스의 핵심 쟁점이 됨.",
+      "개발사가 스스로 허용도를 정하면 사회가 감수하려는 수준과 어긋날 수 있다는 지적이 있어, 공적 논의와 규제를 통한 설정이 거론됨."
+    ],
+    "distinction": {
+      "text": "'위험 허용도'는 감수할 수 있는 위험의 수준이고, '위험 임계값'은 그 수준을 넘었는지 판정해 조치를 촉발하는 구체적 기준선임.",
+      "terms": [
+        "risk-thresholds"
+      ]
+    }
+  },
+  "related": [
+    "risk-thresholds",
+    "risk-assessment",
+    "risk-management",
+    "risk-mitigation"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "위험 허용도를 개인이나 조직이 감수할 의향이 있는 위험 수준으로 정의함(두 판 모두 같은 정의).",
+          "refs": [
+            1,
+            2
+          ]
+        },
+        {
+          "text": "2026년 보고서는 위험 분석·판정을 위험 허용도에 비추어 위험 수준을 정하는 단계로 설명함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.154–155.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.154–155"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary, p.225–226.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.225–226"
+      }
+    },
+    {
+      "n": 3,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Figure 3.4.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.107"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

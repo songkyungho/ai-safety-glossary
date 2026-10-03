@@ -1,0 +1,80 @@
+{
+  "id": "incident-report",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "AI 사고 보고서",
+  "en": "AI incident report",
+  "alternatives": [
+    {
+      "text": "사고 보고서",
+      "source": "editor"
+    }
+  ],
+  "chapter": "07",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 사고 보고 과정에서 작성·제출되는 개별 문서나 기록으로, 특정 사고의 사실관계·영향·원인·대응을 담은 것을 말함.",
+    "points": [
+      "보통 사고 개요, 관련 AI 시스템과 버전, 개발·배포 주체, 발생 일시·국가, AI 시스템이 사고에 관여한 방식, 피해 유형, 대응조치 등의 항목으로 구성됨.",
+      "보고서 항목이 표준화될수록 기관·국가 간 사고 정보를 모아 비교·분석할 수 있어, 반복되는 실패 유형을 찾고 위험 관리에 반영하는 근거가 됨.",
+      "초기 보고서는 원인이 확정되지 않은 상태에서 작성되는 경우가 많아, 후속 보고로 내용을 보완·정정하는 절차가 함께 필요함."
+    ],
+    "distinction": {
+      "text": "'AI 사고 보고서(incident report)'는 개별 문서·기록물을, 'AI 사고 보고(incident reporting)'는 그 문서를 만들고 전달하는 행위·절차·체계를 뜻함.",
+      "terms": [
+        "incident-reporting"
+      ]
+    }
+  },
+  "related": [
+    "incident-reporting",
+    "ai-incident",
+    "serious-incident",
+    "incident-monitoring"
+  ],
+  "frameworks": [
+    {
+      "org": "OECD",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "공통 보고 프레임워크는 제목, 사고 설명, AI 시스템과 사고의 관계(직접 원인·기여요인·과신과 의도적 오용·인적 오류 등), 제출자 정보, 최초 발생일, 발생 국가, 관련 AI 시스템 명칭·버전, 개발·배포 조직 등을 보고 항목으로 제시함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "안정성 확보 가이드라인은 안전사고 인지 후 24시간 이내에 핵심 정보 중심의 최초 보고를 하도록 해, 초기 보고서와 후속 보완을 구분하는 구조를 둠.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "OECD (2025). Towards a common reporting framework for AI incidents. OECD AI Papers, No. 34.",
+      "evidence": {
+        "document_id": "doc-e8c1a12dd0f6",
+        "pages": "p.17"
+      }
+    },
+    {
+      "n": 2,
+      "text": "「인공지능 안정성 확보 가이드라인」 v1.3 (2026.1.21).",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.67"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "interoperability",
+  "kit_id": "interoperability",
+  "join_keys": [
+    "interoperability"
+  ],
+  "head": "상호운용성",
+  "en": "interoperability",
+  "alternatives": [],
+  "chapter": "11",
+  "definition": {
+    "lead": "서로 다른 시스템·조직·제도가 공통 표준과 형식을 공유해 정보를 주고받고 함께 작동할 수 있는 성질을 의미함.",
+    "points": [
+      "AI에서는 모델과 도구를 잇는 연결 규격, 평가 결과를 주고받는 형식, 합성 콘텐츠 출처 정보의 상호 검증 표준, AI 사고 기록·공유 양식 등 여러 층에서 요구됨.",
+      "합성 콘텐츠 표시(다른 플랫폼이 표식을 읽을 수 있는가)와 AI 사고 보고(사례를 합산해 추세를 볼 수 있는가)에서 AI 안전과 직접 연결되며, 각국 규제 요건 간 호환이라는 거버넌스 차원의 의미도 가짐."
+    ]
+  },
+  "related": [
+    "standardization",
+    "provenance-metadata",
+    "incident-reporting",
+    "model-context-protocol-mcp"
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

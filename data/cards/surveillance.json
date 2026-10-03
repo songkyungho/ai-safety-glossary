@@ -1,0 +1,33 @@
+{
+  "id": "surveillance",
+  "kit_id": null,
+  "join_keys": [
+    "surveillance"
+  ],
+  "head": "감시",
+  "en": "surveillance",
+  "alternatives": [
+    {
+      "text": "감시 활동",
+      "source": "public"
+    }
+  ],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "사람의 행동·위치·통신·생체 정보를 지속적으로 관찰·기록·분석하는 활동으로, AI가 그 규모와 비용 구조를 바꿔 놓은 위험 영역을 말함.",
+    "points": [
+      "얼굴 인식, 걸음걸이 식별, 감정 추정, 통신 패턴 분석 등 자동 분석으로 표적 감시에 들던 자원으로 다수를 상시 관찰할 수 있게 됨.",
+      "프라이버시·표현의 자유 위축과 권력 남용으로 이어질 수 있어, 규제는 기술 자체보다 용도별로 금지·통제의 선을 긋는 방향으로 정리되고 있음.",
+      "국가안보·중대 범죄 수사 등을 이유로 한 예외의 범위가 규제 실효를 좌우하는 쟁점으로 다뤄짐."
+    ]
+  },
+  "related": [
+    "privacy",
+    "freedom-of-expression",
+    "national-security",
+    "privacy-breach",
+    "abuse"
+  ],
+  "updated": "2026-10-03"
+}

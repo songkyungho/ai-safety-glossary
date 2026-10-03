@@ -1,0 +1,56 @@
+{
+  "id": "ai-literacy",
+  "kit_id": "ai-literacy",
+  "join_keys": [
+    "ailiteracy"
+  ],
+  "head": "AI 리터러시",
+  "en": "AI literacy",
+  "alternatives": [
+    {
+      "text": "AI 문해력",
+      "source": "editor"
+    }
+  ],
+  "chapter": "10",
+  "definition": {
+    "lead": "AI의 작동 방식과 한계·위험을 이해하고, AI 출력을 비판적으로 판단해 활용할 수 있는 지식과 역량을 의미함.",
+    "points": [
+      "출력이 틀릴 수 있는 이유(환각 등), 위임해도 되는 판단과 그렇지 않은 판단의 구분, 입력한 정보의 처리 경로, 저작권·개인정보 쟁점에 대한 이해를 포함하며, 도구 사용 요령과는 구별됨.",
+      "자동화 편향과 과신을 줄여 인간 감독이 실제로 작동하게 하는 기반이 되며, EU AI법은 AI 리터러시를 별도 용어로 정의함.",
+      "개인의 역량에 구조적 위험 대응을 떠넘기는 근거로 쓰이면 표시 의무나 제품 안전 요구를 대체하는 알리바이가 될 수 있어, 다른 통제를 보완하는 층으로 다뤄야 한다는 지적이 있음."
+    ]
+  },
+  "related": [
+    "automation-bias",
+    "human-oversight",
+    "hallucination",
+    "transparency-obligation"
+  ],
+  "frameworks": [
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "AI 리터러시를 제공자·운용자·영향을 받는 자가 각자의 권리와 의무를 고려해 AI 시스템을 충분한 정보에 입각해 활용하고, AI의 기회와 위험, 잠재적 위해를 인식할 수 있게 하는 기술·지식·이해로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "「유럽연합 인공지능법 범용인공지능모델 실천강령 안내서(GPAI)」(2026). 용어 정의.",
+      "evidence": {
+        "document_id": "doc-670ed9d255e5",
+        "pages": "p.16"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

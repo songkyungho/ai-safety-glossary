@@ -1,0 +1,67 @@
+{
+  "id": "risk-thresholds",
+  "kit_id": "risk-thresholds",
+  "join_keys": [
+    "riskthreshold"
+  ],
+  "head": "위험 임계값",
+  "en": "risk threshold",
+  "alternatives": [],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "허용 가능한 위험과 허용할 수 없는 위험을 가르고, 넘어서면 정해진 위험 관리 조치를 촉발하는 정량적·정성적 한계선을 의미함.",
+    "points": [
+      "역량 평가 점수, 연산량, 특정 위협 시나리오의 실현 가능성 등을 지표로 삼아 '이 수준에 이르면 이 조치를 한다'는 사전 약속 형태로 설정됨.",
+      "프론티어 AI 안전 프레임워크와 책임 있는 스케일링 정책에서 배포 중단, 보안 강화 같은 결정을 미리 정해 두는 장치로 쓰여, 사후 판단의 자의성을 줄임.",
+      "임계값을 어디에 둘지, 실제로 넘었는지를 무엇으로 판정할지가 불확실하고, 개발사가 스스로 정한 임계값의 적정성을 외부에서 검증하기 어렵다는 지적이 있음."
+    ],
+    "distinction": {
+      "text": "'위험 임계값'은 조치를 촉발하는 구체적 한계선이고, '위험 허용도'는 조직이나 사회가 감수할 의향이 있는 위험 수준 자체임. 임계값은 허용도를 운용 가능한 기준으로 옮긴 것으로 볼 수 있음. '연산 임계값'은 연산량을 기준으로 한 규제상 문턱으로 성격이 다름.",
+      "terms": [
+        "risk-tolerance",
+        "compute-threshold"
+      ]
+    }
+  },
+  "related": [
+    "risk-tolerance",
+    "responsible-scaling-policy-rsp",
+    "capability-evaluation",
+    "catastrophic-risk"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "위험 임계값을 허용 가능한 위험과 허용할 수 없는 위험을 구분하고, 초과 시 특정 위험 관리 조치를 촉발하는 정량적 또는 정성적 한도로 정의함(두 판 모두 같은 정의).",
+          "refs": [
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.154–155.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.154–155"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary, p.225–226.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.225–226"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "agentic-ai",
+  "kit_id": "agentic-ai",
+  "join_keys": [
+    "agenticai"
+  ],
+  "head": "에이전틱 AI",
+  "en": "agentic AI",
+  "alternatives": [],
+  "chapter": "02",
+  "definition": {
+    "lead": "AI 시스템이 사람의 지속적 개입 없이 목표를 향해 스스로 계획·행동하는 성질, 또는 그런 성질이 강한 AI를 통칭하는 말임.",
+    "points": [
+      "특정 제품·구조가 아니라 정도의 문제로, 감독 없이 이어지는 작업 길이, 도구·외부 환경 접근 범위, 목표를 스스로 재설정할 수 있는지 등이 그 정도를 가르는 축으로 쓰임.",
+      "출력이 글에 그치지 않고 실제 행동으로 이어지므로 되돌릴 수 없는 피해, 권한 오남용, 인간 감독의 약화 같은 위험이 커짐.",
+      "정의가 느슨해 홍보 문구로도 쓰이므로, 정책 문서에서는 '에이전틱' 여부보다 자율성·권한·자원 접근 같은 축별로 규율 대상을 정하는 편이 명확함."
+    ],
+    "distinction": {
+      "text": "'에이전틱 AI'는 성질·경향을 가리키는 통칭이고, 'AI 에이전트'는 그 성질을 갖춘 개별 시스템을 가리킴.",
+      "terms": [
+        "ai-agent"
+      ]
+    }
+  },
+  "related": [
+    "ai-agent",
+    "autonomy",
+    "tool-use",
+    "multi-agent-system-mas",
+    "human-oversight"
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

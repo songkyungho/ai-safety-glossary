@@ -1,0 +1,76 @@
+{
+  "id": "privacy",
+  "kit_id": null,
+  "join_keys": [
+    "privacy"
+  ],
+  "head": "프라이버시",
+  "en": "privacy",
+  "alternatives": [
+    {
+      "text": "사생활",
+      "source": "editor"
+    }
+  ],
+  "chapter": "11",
+  "definition": {
+    "lead": "자신에 관한 정보와 활동에 타인이 접근·처리하는 방식을 스스로 통제할 수 있는 권리, 그리고 감시나 간섭을 받지 않는 상태를 의미함.",
+    "points": [
+      "데이터 처리 규율을 넘어 감시받지 않을 상태, 방해받지 않고 홀로 있을 자유, 자기에 관한 일을 스스로 결정할 자유까지 포함함.",
+      "AI는 학습 데이터의 기억·유출뿐 아니라 위치 이력·문체·소비 기록 등에서 제공한 적 없는 민감한 사실을 추론해 내는 방식으로 프라이버시를 침해할 수 있어, 수집 단계 규율만으로는 대응이 어려움.",
+      "감시 기술과 결합하면 개별 정보 처리가 적법하더라도 사람을 상시 관찰받는 상태에 두는 침해가 성립할 수 있음."
+    ],
+    "distinction": {
+      "text": "'프라이버시'가 자기 정보와 사적 영역에 대한 통제권이라는 넓은 권리 개념이라면, '개인정보 보호'는 그중 데이터 처리의 적법성을 규율하는 법제·실무를 가리킴.",
+      "terms": [
+        "data-protection"
+      ]
+    }
+  },
+  "related": [
+    "data-protection",
+    "privacy-breach",
+    "surveillance",
+    "machine-unlearning"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "2025년 보고서는 개인이나 집단이 자신의 민감한 정보·활동에 타인이 접근·처리하는 방식을 통제할 권리로 정의함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "2026년 보고서는 자신에 관한 데이터에 타인이 접근·처리하는 방식을 통제할 권리로 정의함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.224–225 (Glossary)"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026).",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.154"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

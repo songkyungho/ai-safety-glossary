@@ -1,0 +1,62 @@
+{
+  "id": "ai-disaster",
+  "kit_id": "ai-disaster",
+  "join_keys": [],
+  "head": "AI 재해",
+  "en": "AI disaster",
+  "alternatives": [],
+  "chapter": "07",
+  "status": "draft",
+  "definition": {
+    "lead": "중대 AI 사고 가운데 공동체나 사회의 기능을 교란하고, 그 사회가 자체 자원으로 감당할 수 있는 대응 역량을 시험하거나 넘어서는 사고를 말함.",
+    "points": [
+      "재난 관리 분야의 재해 개념을 AI에 옮긴 것으로, 개별 피해의 크기보다 사회 기능의 교란과 대응 역량 초과 여부가 기준이 됨.",
+      "영향은 즉각적·국지적일 수도, 광범위하고 장기적일 수도 있음. 핵심 기반시설이나 다수 서비스가 같은 AI 시스템에 의존할 때 위험이 커질 수 있음.",
+      "아직 국제적 작업 정의 단계의 용어로, 파국적 위험 논의와 연결되지만 실제 발생한 사건을 가리킨다는 점에서 위험(가능성)과 다름."
+    ],
+    "distinction": {
+      "text": "'AI 재해'는 실제 발생한 사건의 등급을, '파국적 위험'은 앞으로 일어날 수 있는 극단적 피해의 가능성을 가리킴.",
+      "terms": [
+        "serious-incident",
+        "catastrophic-risk"
+      ]
+    }
+  },
+  "related": [
+    "serious-incident",
+    "ai-incident",
+    "catastrophic-risk",
+    "systemic-risk"
+  ],
+  "frameworks": [
+    {
+      "org": "OECD",
+      "sub": "2024",
+      "points": [
+        {
+          "text": "AI 재해를 공동체·사회의 기능을 교란하고 자체 자원으로 대처할 역량을 시험하거나 넘어설 수 있는 중대 AI 사고로 정의하고, 중대 AI 사고의 부분집합으로 둠.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "UN 재난위험경감사무국(UNDRR)과 국제적십자연맹(IFRC)의 재해 정의를 바탕으로 한 작업 정의이며, 영향은 즉각적·국지적이거나 광범위·장기적일 수 있다고 봄.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "OECD (2024). Defining AI incidents and related terms. OECD Artificial Intelligence Papers.",
+      "evidence": {
+        "document_id": "doc-9c46e00f1b3f",
+        "pages": "p.12–13"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

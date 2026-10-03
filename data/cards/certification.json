@@ -1,0 +1,37 @@
+{
+  "id": "certification",
+  "kit_id": null,
+  "join_keys": [
+    "certification"
+  ],
+  "head": "인증",
+  "en": "certification",
+  "alternatives": [
+    {
+      "text": "적합 인증",
+      "source": "public"
+    }
+  ],
+  "chapter": "11",
+  "definition": {
+    "lead": "독립된 제3자가 조직이나 제품·시스템이 정해진 요건을 충족함을 확인하고, 이를 공식적으로 증명하는 제도·절차를 의미함.",
+    "points": [
+      "조직의 위험 관리 절차를 갖추고 운영하는지를 확인하는 관리체계 인증과, 개별 제품·시스템이 요건을 충족하는지를 확인하는 제품 인증으로 나뉨.",
+      "AI 안전에서는 적합성 평가 결과를 외부에 보이는 형식으로 쓰이나, 관리체계 인증이 개별 모델 출력의 안전을 보장하지는 않으므로 무엇을 인증받았는지 명시해야 과도한 신뢰를 막을 수 있음."
+    ],
+    "distinction": {
+      "text": "'적합성 평가'는 요건 충족 여부를 확인하는 활동 전반(시험·검사·인증 포함)을, '인증'은 그중 제3자가 충족 사실을 공식 증명하는 형태를 가리킴.",
+      "terms": [
+        "conformity-assessment"
+      ]
+    }
+  },
+  "related": [
+    "conformity-assessment",
+    "ai-assurance",
+    "standardization",
+    "ai-audit"
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "freedom-of-expression",
+  "kit_id": null,
+  "join_keys": [
+    "freedomofexpression"
+  ],
+  "head": "표현의 자유",
+  "en": "freedom of expression",
+  "alternatives": [
+    {
+      "text": "표현 자유",
+      "source": "public"
+    }
+  ],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "의견과 정보를 표현하고 구하고 전달받을 자유로, AI에서는 생성물의 보호 범위와 유해 콘텐츠 통제의 한계를 정하는 기준이 되는 기본권임.",
+    "points": [
+      "AI 생성 표현물이 누구의 표현으로 보호되는지, 그리고 유해 콘텐츠 차단 조치가 정당한 표현을 위축시키는지가 두 축의 쟁점임.",
+      "국제인권규범상 제한은 법률 근거, 정당한 목적, 필요성·비례성을 함께 갖춰야 하며, 대규모 자동 판정은 오탐과 구제 절차 부족으로 마지막 요건을 충족하기 어려움.",
+      "그래서 자동 판정을 쓰더라도 사람의 재검토 경로, 이의 제기 절차, 조치 통계 공개를 함께 요구하는 방향으로 논의가 모임."
+    ]
+  },
+  "related": [
+    "censorship",
+    "harmful-content",
+    "transparency",
+    "ai-guardrails",
+    "disinformation"
+  ],
+  "updated": "2026-10-03"
+}

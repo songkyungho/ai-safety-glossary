@@ -1,0 +1,71 @@
+{
+  "id": "human-in-the-loop",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "휴먼 인 더 루프",
+  "en": "human-in-the-loop (HITL)",
+  "alternatives": [
+    {
+      "text": "인간 최종 확인",
+      "source": "editor"
+    },
+    {
+      "text": "인간 개입",
+      "source": "editor"
+    }
+  ],
+  "chapter": "09",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템의 결정·행동 과정 안에 사람이 직접 참여해, 실행 전에 검토·승인·수정할 수 있도록 설계한 운영 방식을 말함.",
+    "points": [
+      "사람이 개별 결정마다 확인하거나, 신뢰도가 낮은 출력·되돌릴 수 없는 행위 등 특정 지점에서 승인하도록 하는 방식으로 구현됨. AI 에이전트의 고위험 행위 통제에 자주 쓰임.",
+      "금융·의료·치안처럼 잘못된 결정의 피해가 큰 영역에서 직접 감독 수단이 되지만, 결정 속도·규모 때문에 비현실적인 경우가 많음.",
+      "사람이 AI 출력을 과신하는 자동화 편향, 검토 시간·정보 부족 탓에 승인만 남는 형식적 개입이 한계로 지적됨."
+    ],
+    "distinction": {
+      "text": "'인간 감독'은 사람이 AI 시스템을 이해·모니터링·개입·중단할 수 있도록 보장하는 상위 원칙·요건이고, '휴먼 인 더 루프'는 그것을 구현하는 여러 방식 가운데 사람이 결정 과정 안에서 직접 승인·개입하는 구체적 설계를 가리킴.",
+      "terms": [
+        "human-oversight"
+      ]
+    }
+  },
+  "related": [
+    "human-oversight",
+    "automation-bias",
+    "ai-agent",
+    "automated-decision-making-adm",
+    "autonomy"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "잘못된 결정이 큰 피해로 이어질 수 있는 금융·의료·치안 등에서 AI 시스템이 완전 자율이 아니라 사람과 협력해 작동하도록 설계하는 것이 AI 에이전트의 실패 가능성을 줄인다고 봄.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "다만 결정이 너무 빠르거나 대규모로 이뤄지는 경우 휴먼 인 더 루프는 비현실적인 경우가 많고, 사람의 편향·오류와 자동화 편향이 오히려 위험을 키울 수 있다고 지적함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026, 'Humans in the loop allow for direct oversight in high-stakes settings'.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.129"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

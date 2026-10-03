@@ -1,0 +1,91 @@
+{
+  "id": "risk-assessment",
+  "kit_id": null,
+  "join_keys": [
+    "riskassessment"
+  ],
+  "head": "위험 평가",
+  "en": "risk assessment",
+  "alternatives": [
+    {
+      "text": "리스크 평가",
+      "source": "editor"
+    }
+  ],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 위험을 식별하고 그 발생 가능성과 심각도를 분석해, 허용 기준과 비교함으로써 대응 우선순위와 조치 필요성을 판단하는 절차를 말함.",
+    "points": [
+      "위험 식별, 위험 분석, 위험 수준을 허용 기준에 비추어 판단하는 단계로 이루어지며, 모델 평가·레드티밍·영향 평가·감사 결과를 판단의 근거로 활용함.",
+      "배포 여부나 추가 안전장치 적용 같은 결정이 위험 평가 결과에 근거하므로, 위험 임계값과 위험 허용도를 실제 조치로 연결하는 고리가 됨.",
+      "어느 수준의 위험을 감수할지는 데이터만으로 정해지지 않아 가치 판단이 개입하며, 그 근거를 사후에 검증할 수 있도록 문서화가 요구됨."
+    ],
+    "distinction": {
+      "text": "'위험 평가(risk assessment)'는 위험의 수준을 판단하는 관리 절차이고, '평가(evaluation)'는 모델·시스템의 역량이나 안전성을 시험해 측정하는 활동임. 위험 평가 안의 '위험 판정(risk evaluation)' 단계도 모델 평가와는 다른 개념임.",
+      "terms": [
+        "evaluation",
+        "safety-evaluation",
+        "systemic-risk-assessment"
+      ]
+    }
+  },
+  "related": [
+    "risk-management",
+    "evaluation",
+    "risk-thresholds",
+    "risk-tolerance",
+    "threat-modelling"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "위험 분석·판정을 AI 모델·시스템의 위험 수준을 정하고 이를 설정된 기준과 비교해 수용 가능성이나 완화 필요성을 판단하는 과정으로 설명함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "벤치마크와 모델 평가, 레드티밍, 영향 평가, 감사 등을 그 수단으로 들고, 독립 검토와 다양한 관점을 포함할 때 위험을 더 잘 식별할 수 있다고 봄.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "싱가포르 합의",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "위험 평가의 주된 목적을 잠재적 피해의 심각도와 가능성을 이해하는 데 두고, 그 결과로 위험의 우선순위를 정하고 특정 조치가 필요한 임계값을 넘는지 판단한다고 정리함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 3. Risk analysis and evaluation.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.109"
+      }
+    },
+    {
+      "n": 2,
+      "text": "The Singapore Consensus on Global AI Safety Research Priorities (2025). 1 Risk Assessment.",
+      "evidence": {
+        "document_id": "doc-9f4db4590790",
+        "pages": "p.10–11"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

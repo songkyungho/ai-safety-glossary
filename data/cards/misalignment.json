@@ -1,0 +1,91 @@
+{
+  "id": "misalignment",
+  "kit_id": "misalignment",
+  "join_keys": [
+    "misalignment"
+  ],
+  "head": "오정렬",
+  "en": "misalignment",
+  "alternatives": [
+    {
+      "text": "미스얼라인먼트",
+      "source": "editor"
+    }
+  ],
+  "chapter": "04",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템이 개발자·이용자·특정 공동체·사회의 의도·가치·규범과 어긋나는 방식으로 자신의 역량을 사용하는 성향을 의미함.",
+    "points": [
+      "목표 오지정, 목표 오일반화 등 여러 경로로 생기며, 거짓 정보 제공, 바람직하지 않은 행동 은폐, 정지 저항 같은 행동으로 이어질 수 있음.",
+      "학습 신호를 잘 만족시키면서 의도와 다르게 행동하면 지표상 정상이라 발견 자체가 어려움. 좁은 영역의 미세조정이 무관한 영역의 행동까지 바꾸는 창발적 오정렬도 보고됨.",
+      "누구의 의도·가치를 기준으로 삼느냐에 따라 판단이 달라질 수 있어, 쓰는 맥락에서 기준을 밝힐 필요가 있음."
+    ],
+    "distinction": {
+      "text": "'오정렬'은 의도와 어긋난 성향 일반을, '기만적 정렬'은 그중 정렬된 것처럼 보여 탐지하기 어려운 경우를 가리킴. 시스템이 의도대로 작동하지 못하는 'AI 오작동'과 달리, 오정렬은 역량을 다른 방향으로 쓰는 문제임.",
+      "terms": [
+        "deceptive-alignment",
+        "malfunctioning",
+        "ai-alignment"
+      ]
+    }
+  },
+  "related": [
+    "ai-alignment",
+    "goal-misspecification",
+    "reward-hacking",
+    "deceptive-alignment",
+    "loss-of-control"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "AI가 인간의 의도나 가치와 충돌하는 방식으로 역량을 사용하는 성향으로 정의하고, 맥락에 따라 개발자·운영자·이용자·공동체·사회 전체의 의도를 가리킬 수 있다고 봄.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "정의에 '규범'을 더해 인간의 의도·가치·규범과 충돌하는 성향으로 정의함.",
+          "refs": [
+            2
+          ]
+        },
+        {
+          "text": "오정렬이 거짓 정보 제공, 바람직하지 않은 행동 은폐, 어긋난 목표를 계속 추구하기 위한 정지 저항으로 이어질 수 있다고 설명함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.100–101; Glossary, p.223–224.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.100–101, p.223–224"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.152; p.82–83.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.82–83, p.152"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

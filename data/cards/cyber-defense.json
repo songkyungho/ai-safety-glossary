@@ -1,0 +1,38 @@
+{
+  "id": "cyber-defense",
+  "kit_id": null,
+  "join_keys": [
+    "cyberdefense"
+  ],
+  "head": "사이버 방어",
+  "en": "cyber defence",
+  "alternatives": [
+    {
+      "text": "사이버 방호",
+      "source": "public"
+    }
+  ],
+  "chapter": "09",
+  "status": "draft",
+  "definition": {
+    "lead": "시스템·네트워크에 대한 침해 시도를 탐지·차단·대응·복구해 정보 자산을 지키는 활동을 말하며, AI 안전에서는 AI를 방어에 활용하는 일과 AI 시스템 자체를 지키는 일을 함께 가리킴.",
+    "points": [
+      "탐지·차단·사고 대응·복구의 순환으로 운영되며, AI는 대량의 로그에서 이상 징후를 찾고 경보의 위험도를 분류하는 단계에 주로 쓰임.",
+      "AI의 사이버 공격 역량이 높아지면서 같은 역량을 방어에 먼저 활용할 수 있는지가 논의되며, 오탐이 정상 업무를 막는 비용 때문에 방어 자동화가 더 보수적일 수밖에 없다는 비대칭이 지적됨."
+    ],
+    "distinction": {
+      "text": "'사이버 보안'은 정보 자산을 보호하는 상태·체계 전반을, '사이버 방어'는 그 안에서 실제 위협을 탐지·대응하는 활동을 가리킴.",
+      "terms": [
+        "cybersecurity"
+      ]
+    }
+  },
+  "related": [
+    "cybersecurity",
+    "cyberattack",
+    "cyber-threat",
+    "vulnerability-detection",
+    "dual-use-risk"
+  ],
+  "updated": "2026-10-03"
+}

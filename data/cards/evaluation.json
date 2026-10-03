@@ -1,0 +1,88 @@
+{
+  "id": "evaluation",
+  "kit_id": "evaluation",
+  "join_keys": [
+    "evaluation",
+    "modelevaluation"
+  ],
+  "head": "평가",
+  "en": "evaluation",
+  "alternatives": [
+    {
+      "text": "모델 평가",
+      "source": "editor"
+    }
+  ],
+  "chapter": "08",
+  "head_override": "kit 표기의 괄호 주석은 표제어에서 뺌",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 모델·시스템의 성능, 역량, 취약점, 잠재적 영향을 배포 전후에 체계적으로 측정·검토하는 활동을 말함.",
+    "points": [
+      "벤치마크, 레드티밍, 감사, 사람 평가 등 여러 방법을 포함하며, 개발 중·배포 전·배포 후 어느 단계에서나 수행될 수 있음.",
+      "위험 임계값 도달 여부, 안전장치의 효과, 배포 결정 등 AI 안전의 주요 판단이 평가 결과를 근거로 이루어짐.",
+      "평가에서의 성능과 실제 환경의 성능이 다르게 나타나는 평가 격차가 보고되어, 결과를 해석할 때 측정 범위와 한계를 함께 봐야 함."
+    ],
+    "distinction": {
+      "text": "'평가(evaluation)'는 모델·시스템의 성능·특성을 측정하는 활동을, '위험 평가(risk assessment)'의 평가(assessment)는 위험의 크기와 수용 가능성을 판단하는 절차를 가리킴. 두 말이 모두 '평가'로 옮겨지므로, 문서에서 혼동될 때는 원어를 함께 적어 구별함.",
+      "terms": [
+        "risk-assessment"
+      ]
+    }
+  },
+  "related": [
+    "benchmark-s",
+    "red-teaming",
+    "safety-evaluation",
+    "capability-evaluation",
+    "risk-assessment"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "평가를 AI 시스템의 성능·역량·취약점·잠재 영향에 대한 체계적 평가로 정의하고, 벤치마크·레드티밍·감사를 포함하며 배포 전후 모두 수행될 수 있다고 봄.",
+          "refs": [
+            1,
+            2
+          ]
+        },
+        {
+          "text": "2026년 보고서는 현재의 평가 방법이 역량과 성향을 모두 신뢰성 있게 측정하지 못하며, 배포 전 평가와 실제 성능 사이에 격차가 있다고 지적함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International Scientific Report on the Safety of Advanced AI (국제 AI 안전 보고서, 2025), Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.221–222"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.150"
+      }
+    },
+    {
+      "n": 3,
+      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.100–101"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

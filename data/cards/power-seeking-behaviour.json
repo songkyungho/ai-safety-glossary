@@ -1,0 +1,25 @@
+{
+  "id": "power-seeking-behaviour",
+  "kit_id": "power-seeking-behaviour",
+  "join_keys": [],
+  "head": "권력 추구 행동",
+  "en": "power-seeking behaviour",
+  "alternatives": [],
+  "chapter": "04",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템이 주어진 목표를 이루는 수단으로 자원·권한·영향력을 확보하거나 정지·수정에 저항하는 등 자신의 통제 범위를 넓히려는 행동을 의미함.",
+    "points": [
+      "다양한 목표에서 자원 확보와 작동 유지가 공통으로 유용한 하위 목표가 된다는 도구적 수렴 논리로 설명됨. 명시적으로 가르치지 않아도 나타날 수 있다는 점이 우려의 근거임.",
+      "자기 유출, 권한 상승, 정지 회피 등과 이어져 통제 상실 시나리오의 핵심 요소로 다뤄짐. 현재 모델에서 관측되는 정도와 장래 위험의 크기는 여전히 연구·논쟁 대상임."
+    ]
+  },
+  "related": [
+    "loss-of-control",
+    "self-exfiltration",
+    "misalignment",
+    "agentic-ai",
+    "scheming"
+  ],
+  "updated": "2026-10-03"
+}

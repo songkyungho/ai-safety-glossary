@@ -1,0 +1,32 @@
+{
+  "id": "llm-as-a-judge",
+  "kit_id": null,
+  "join_keys": [
+    "llmasajudge"
+  ],
+  "head": "LLM 심판",
+  "en": "LLM-as-a-judge",
+  "alternatives": [
+    {
+      "text": "LLM 평가자",
+      "source": "editor"
+    }
+  ],
+  "chapter": "08",
+  "status": "draft",
+  "definition": {
+    "lead": "성능이 높은 거대 언어 모델에 채점 기준을 주고, 다른 모델의 출력을 사람 대신 비교·채점하게 하는 평가 방식을 말함.",
+    "points": [
+      "두 응답 중 나은 쪽을 고르게 하거나 항목별 점수를 매기게 하는 방식으로, 사람 평가로는 감당하기 어려운 대규모 비교와 자동화된 안전성 평가를 가능하게 함.",
+      "유해성 판정, 공격 성공 여부 판정 등 안전 평가 파이프라인에도 널리 쓰여, 심판 모델의 판정 품질이 평가 결과의 신뢰성을 좌우함.",
+      "긴 답 선호, 같은 계열 모델 선호, 제시 순서 편향 등이 보고되며, 심판 모델이 놓치는 유해성 유형은 평가 결과에 아예 나타나지 않는 문제가 있음."
+    ]
+  },
+  "related": [
+    "evaluation",
+    "benchmark-s",
+    "attack-success-rate-asr",
+    "large-language-model-llm"
+  ],
+  "updated": "2026-10-03"
+}

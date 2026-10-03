@@ -1,0 +1,41 @@
+{
+  "id": "prompt-injection",
+  "kit_id": "prompt-injection",
+  "join_keys": [
+    "promptinjection"
+  ],
+  "head": "프롬프트 인젝션",
+  "en": "prompt injection",
+  "alternatives": [
+    {
+      "text": "프롬프트 주입",
+      "source": "editor"
+    }
+  ],
+  "chapter": "05",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 모델이 처리하는 문서·웹페이지·도구 출력 등 데이터 안에 지시를 숨겨, 원래 지시를 가로채 모델이 의도와 다르게 행동하게 만드는 공격을 의미함.",
+    "points": [
+      "모델이 개발자의 지시와 처리 대상 데이터를 같은 텍스트 흐름으로 받아 구조적으로 구별하지 못한다는 점을 이용함. 이용자는 숨은 지시의 존재를 모르는 경우가 많음.",
+      "파일 열람·메일 발송·코드 실행 권한을 가진 AI 에이전트가 가로채이면 정보 유출과 시스템 조작으로 이어짐. 원리적 해법이 없어 최소 권한, 실행 환경 격리, 되돌릴 수 없는 행위의 사람 승인 같은 피해 제한형 대응이 쓰임."
+    ],
+    "distinction": {
+      "text": "'프롬프트 인젝션'은 제3자가 데이터에 심은 지시가 이용자 의도와 무관하게 모델을 가로채는 공격이고, '탈옥'은 이용자 자신이 안전장치를 우회해 금지된 출력을 얻으려는 공격임.",
+      "terms": [
+        "jailbreak"
+      ]
+    }
+  },
+  "related": [
+    "jailbreak",
+    "ai-agent",
+    "tool-use",
+    "sandboxing",
+    "model-context-protocol-mcp"
+  ],
+  "review_notes": [
+    "원천 pdf_definitions('AI 핵심용어 단면' p.86)는 사용자가 직접 지시를 숨겨 넣는 공격으로 서술해 탈옥과 경계가 흐려지므로 frameworks에 쓰지 않음."
+  ],
+  "updated": "2026-10-03"
+}

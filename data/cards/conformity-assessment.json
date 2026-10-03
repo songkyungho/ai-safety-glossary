@@ -1,0 +1,72 @@
+{
+  "id": "conformity-assessment",
+  "kit_id": null,
+  "join_keys": [
+    "conformityassessment"
+  ],
+  "head": "적합성 평가",
+  "en": "conformity assessment",
+  "alternatives": [],
+  "chapter": "11",
+  "definition": {
+    "lead": "제품이나 AI 시스템이 법령·표준에 규정된 요건을 충족하는지를 시장 출시 전후에 확인·입증하는 공식 절차를 의미함.",
+    "points": [
+      "공급자가 스스로 확인·선언하는 자체 평가와, 지정된 제3자 기관이 시험·검사·인증 등으로 확인하는 방식이 있으며, 통과하면 표식을 붙여 유통을 허용하는 제품 안전 규제의 틀을 따름.",
+      "AI 안전에서는 고위험 AI의 위험 관리, 데이터 품질, 인간 감독, 강건성 등 요건이 실제로 갖춰졌는지 확인하는 관문 역할을 함.",
+      "모델이 갱신·추가 학습·용도 전용되면 앞선 평가의 근거가 흔들리므로, 실질적 변경 시 재평가와 출시 후 모니터링이 함께 요구됨."
+    ],
+    "distinction": {
+      "text": "'적합성 평가(conformity assessment)'는 규정 요건 충족 여부를 판정하는 제도적 절차로, 모델의 역량·안전성을 측정하는 '평가(evaluation)'와 구별됨. 모델 평가 결과는 적합성 평가의 증거 중 하나로 쓰일 수 있음.",
+      "terms": [
+        "evaluation"
+      ]
+    }
+  },
+  "related": [
+    "high-risk-ai",
+    "certification",
+    "harmonised-standards",
+    "compliance",
+    "post-market-monitoring"
+  ],
+  "frameworks": [
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "적합성 평가를 고위험 AI 시스템에 관해 제3장 제2절에 규정된 요건이 충족되었는지를 입증하는 절차로 정의하고, 시험·인증·검사를 포함한 제3자 적합성 평가 활동을 수행하는 기관을 따로 정의함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "고위험 AI 시스템 제공자는 시장 출시나 사용 전에 적합성 평가를 거쳐야 하며, 대부분은 제공자의 자체 평가가 허용되고 생체인식 시스템 등 제한된 경우에 인증기관(notified body)의 제3자 평가가 요구된다는 분석이 있음.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "「유럽연합 인공지능법 범용인공지능모델 실천강령 안내서(GPAI)」(2026). 용어 정의.",
+      "evidence": {
+        "document_id": "doc-670ed9d255e5",
+        "pages": "p.12"
+      }
+    },
+    {
+      "n": 2,
+      "text": "Regulating Under Uncertainty: Governance Options for Generative AI (2024). Chapter 5, EU AI Act.",
+      "evidence": {
+        "document_id": "doc-0de6e16e0acb",
+        "pages": "p.209–210"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

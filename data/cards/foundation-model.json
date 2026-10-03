@@ -1,0 +1,70 @@
+{
+  "id": "foundation-model",
+  "kit_id": "foundation-model",
+  "join_keys": [
+    "foundationmodel"
+  ],
+  "head": "파운데이션 모델",
+  "en": "foundation model",
+  "alternatives": [
+    {
+      "text": "기반 모델",
+      "source": "public"
+    }
+  ],
+  "chapter": "01",
+  "definition": {
+    "lead": "대규모 데이터로 사전학습해 다양한 하류 과제에 맞춰 쓸 수 있도록 만든 범용 AI 모델을 말함.",
+    "points": [
+      "과제마다 모델을 따로 만들던 방식과 달리, 큰 모델을 한 번 학습한 뒤 미세조정이나 프롬프트로 여러 과제에 적응시킴. 언어뿐 아니라 이미지·음성 등 여러 형태의 데이터를 다루는 모델을 포함함.",
+      "하나의 모델이 수많은 서비스의 토대가 되므로 결함·편향·취약점이 하류 전체로 전파됨. 이 때문에 규제가 개별 용도와 별도로 모델 계층을 규율하게 됐음."
+    ],
+    "distinction": {
+      "text": "'파운데이션 모델'은 하류 적응을 전제로 한 모델이라는 기술적 성격을, '범용 AI'는 EU AI Act 등에서 쓰는 규제상 범주를 강조함. '거대 언어 모델'은 그 하위 계열임.",
+      "terms": [
+        "general-purpose-ai-gpai",
+        "large-language-model-llm"
+      ]
+    }
+  },
+  "related": [
+    "general-purpose-ai-gpai",
+    "large-language-model-llm",
+    "fine-tuning",
+    "frontier-ai",
+    "supply-chain"
+  ],
+  "commentary": [
+    "예전에는 과제마다 모델을 따로 만들었다. 번역 모델, 감정 분석 모델, 요약 모델을 각각 학습시키는 방식이었다. 파운데이션 모델은 그 순서를 뒤집는다. 큰 모델을 한 번 학습해 두고, 미세조정이나 프롬프트로 여러 과제에 맞춰 쓰는 것이다. 언어에 한정되지 않아 이미지, 음성, 여러 형태를 함께 다루는 모델을 포함하며, 거대 언어 모델은 그 하위 계열에 해당한다.",
+    "정책적으로 중요한 이유는 위험이 상류에 집중된다는 점이다. 하나의 모델이 수백 개 서비스의 토대가 되면, 그 모델의 결함이나 편향이 하류 전체로 함께 전파된다. 개별 서비스를 각각 규율하는 방식으로는 이 구조를 다룰 수 없다. 그래서 규제가 용도별 접근에 더해 모델 계층을 따로 규정하게 됐고, EU AI법의 범용 AI 모델 규정이 그 결과다. 반대로 상류에서 문제를 잡으면 하류 전체가 함께 개선되는 장점도 같은 구조에서 나온다."
+  ],
+  "review_notes": [
+    "'파인튜닝' → '미세조정', '대규모 언어모델' → '거대 언어 모델' (kit 번역어)"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "폭넓은 하류 과제에 적응할 수 있도록 설계된 범용 AI 모델로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.221–222"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ai-agent",
+  "kit_id": "ai-agent",
+  "join_keys": [
+    "aiagent",
+    "agent",
+    "autonomousagent"
+  ],
+  "head": "AI 에이전트",
+  "en": "AI agent",
+  "alternatives": [
+    {
+      "text": "에이전트",
+      "source": "editor"
+    },
+    {
+      "text": "자율 에이전트",
+      "source": "editor"
+    },
+    {
+      "text": "지능 에이전트",
+      "source": "public"
+    }
+  ],
+  "chapter": "02",
+  "definition": {
+    "lead": "목표를 받아 여러 단계를 스스로 계획하고 도구를 호출하며 환경과 상호작용해 과제를 수행하는 AI 시스템을 말함.",
+    "points": [
+      "보통 언어 모델이 판단을 맡고, 도구 호출 장치·작업 경과를 담는 기억 저장소·코드 실행 환경이 결합된 형태로 구성되며, 결과를 보고 다음 행동을 다시 정하는 순환을 반복함.",
+      "위험의 중심이 잘못된 말에서 잘못된 행동으로 옮겨 감. 파일 삭제·결제·발송처럼 되돌릴 수 없는 행위가 가능해지므로 성능보다 권한 범위와 승인 지점 설계가 먼저 결정돼야 함.",
+      "자율성을 높일수록 처리량은 늘지만 사람이 오류를 걸러낼 기회는 줄어듦. 실무에서는 되돌릴 수 있는 행위는 넓게 허용하고 되돌릴 수 없는 행위에 사람 승인을 남기는 방식이 쓰임."
+    ],
+    "distinction": {
+      "text": "'AI 에이전트'는 개별 시스템을, '에이전틱 AI'는 그런 시스템이 지닌 성질 또는 그런 AI 전반을 가리킴. 생물·화학 분야의 'agent(유해 물질)'와도 구별해야 함.",
+      "terms": [
+        "agentic-ai"
+      ]
+    }
+  },
+  "related": [
+    "agentic-ai",
+    "tool-use",
+    "autonomy",
+    "multi-agent-system-mas",
+    "prompt-injection"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "목표 달성을 위해 계획을 세우고, 여러 단계와 불확실한 결과를 포함하는 과제를 적응적으로 수행하며, 파일 생성·웹 행동·다른 에이전트에 대한 위임 등으로 환경과 상호작용하는 범용 AI로 정의함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "2026년 보고서는 도구 사용을 명시하고, 이 모든 과정이 인간 감독이 거의 또는 전혀 없이 이뤄질 수 있다는 점을 정의의 핵심 요소로 둠.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.38, p.47–48, p.80, p.111, p.170"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.148"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

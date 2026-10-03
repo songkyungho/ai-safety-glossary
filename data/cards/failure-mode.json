@@ -1,0 +1,40 @@
+{
+  "id": "failure-mode",
+  "kit_id": null,
+  "join_keys": [
+    "failuremode"
+  ],
+  "head": "실패 모드",
+  "en": "failure mode",
+  "alternatives": [
+    {
+      "text": "고장 유형",
+      "source": "public"
+    }
+  ],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템이 의도한 대로 작동하지 않는 구체적 방식을 원인·양상에 따라 유형화한 것을 말함.",
+    "points": [
+      "환각, 분포 밖 입력에서의 성능 저하, 탈옥에 의한 안전장치 우회, 도구 호출 오류 등은 발생 조건과 대응책이 서로 달라 유형별로 나눠 다룸.",
+      "유형이 정해지면 유형별 탐지 지표와 완화책을 설계하고 새 사고를 기존 유형과 대조할 수 있어, 위험 평가와 AI 사고 보고의 분류 체계로 쓰임.",
+      "공학의 고장 유형 분석(FMEA)에서 온 개념이나, AI에서는 오정렬·보상 해킹처럼 설계 의도와 행동이 어긋나는 실패도 포함한다는 점이 다름."
+    ],
+    "distinction": {
+      "text": "'실패 모드'는 시스템이 어긋나는 방식의 유형이고, 'AI 오작동'은 실제로 발생한 개별 기능 장애, 'AI 사고'는 그로 인해 피해가 발생한 사건을 가리킴.",
+      "terms": [
+        "malfunctioning",
+        "ai-incident"
+      ]
+    }
+  },
+  "related": [
+    "malfunctioning",
+    "hallucination",
+    "robustness",
+    "reward-hacking",
+    "ai-incident"
+  ],
+  "updated": "2026-10-03"
+}

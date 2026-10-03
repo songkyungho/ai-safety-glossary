@@ -1,0 +1,51 @@
+{
+  "id": "insider-threats",
+  "kit_id": "insider-threats",
+  "join_keys": [
+    "insiderthreats"
+  ],
+  "head": "내부자 위협",
+  "en": "insider threat",
+  "alternatives": [],
+  "chapter": "05",
+  "status": "draft",
+  "definition": {
+    "lead": "조직의 민감한 자원에 접근할 수 있는 사람 또는 AI 모델·시스템이 수행하는 적대적 활동이나 우발적 유출로 생기는 위협을 의미함.",
+    "points": [
+      "불만을 가진 직원, 고위 연구자, 조직에 침투한 산업 스파이 같은 사람 행위자뿐 아니라, 모델의 자기 유출처럼 AI 자신이 주체가 되는 경우까지 포함해 논의됨.",
+      "프론티어 AI에서는 모델 가중치·학습 기법 유출이 안전장치 무력화와 무분별한 확산으로 이어질 수 있어, 최소 권한·다중 승인·활동 기록 같은 보안 통제의 대상이 됨."
+    ]
+  },
+  "related": [
+    "self-exfiltration",
+    "model-weights",
+    "cybersecurity",
+    "cyber-threat",
+    "sabotage"
+  ],
+  "frameworks": [
+    {
+      "org": "EU GPAI 실천강령 안내서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "민감한 조직 자원에 접근할 수 있는 사람 또는 AI 모델·시스템(고위 경영진, 연구팀 고위 구성원, 불만을 가진 직원, 산업 스파이 등)의 적대적 활동, 모델의 자기 유출, 우발적 모델 유출을 내부자 위협으로 설명함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "「유럽연합 인공지능법 범용인공지능모델 실천강령 안내서(GPAI)」 (2026). p.110.",
+      "evidence": {
+        "document_id": "doc-670ed9d255e5",
+        "pages": "p.110"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

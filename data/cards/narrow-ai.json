@@ -1,0 +1,71 @@
+{
+  "id": "narrow-ai",
+  "kit_id": null,
+  "join_keys": [
+    "narrowai"
+  ],
+  "head": "협소 AI",
+  "en": "narrow AI",
+  "alternatives": [
+    {
+      "text": "특화 AI",
+      "source": "editor"
+    }
+  ],
+  "chapter": "02",
+  "definition": {
+    "lead": "검색 결과 순위 매기기, 동물 종 분류, 체스처럼 특정 과제 하나 또는 매우 유사한 몇 가지 과제만 수행하도록 설계된 AI를 말함.",
+    "points": [
+      "적용 범위가 좁아 시험 조건과 사용 조건이 비교적 일치하므로, 성능·위험을 해당 용도 안에서 평가하고 관리하기 쉬움.",
+      "범용성이 낮다고 위험이 없는 것은 아님. 채용·신용평가·감시처럼 사람에게 중대한 영향을 주는 용도에서는 편향·차별·자동화 편향 같은 문제가 그대로 나타남."
+    ],
+    "distinction": {
+      "text": "'협소 AI'는 한정된 과제에 특화된 AI이고, '범용 AI'는 폭넓은 과제를 수행할 수 있는 모델·시스템임. '인공일반지능'은 사람 수준의 일반 지능이라는 가정적 개념임.",
+      "terms": [
+        "general-purpose-ai-gpai",
+        "artificial-general-intellegence-agi"
+      ]
+    }
+  },
+  "related": [
+    "general-purpose-ai-gpai",
+    "artificial-general-intellegence-agi",
+    "high-risk-ai",
+    "ai-bias"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "웹 검색 결과 순위, 동물 종 분류, 체스처럼 특정 과제 하나 또는 매우 유사한 몇 가지 과제만 수행하도록 설계된 AI 모델·시스템으로 정의하고, 범용 AI와 대비함.",
+          "refs": [
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.223–224"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.152–153"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

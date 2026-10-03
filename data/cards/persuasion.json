@@ -1,0 +1,69 @@
+{
+  "id": "persuasion",
+  "kit_id": null,
+  "join_keys": [
+    "persuasion"
+  ],
+  "head": "설득",
+  "en": "persuasion",
+  "alternatives": [],
+  "chapter": "05",
+  "status": "draft",
+  "definition": {
+    "lead": "강제나 강압이 아니라 합리적 논증·감정적 호소·권위에 대한 호소 등 소통을 통해 상대의 믿음이나 행동을 바꾸는 영향력을 의미함.",
+    "points": [
+      "AI 안전에서는 모델이 사람의 견해·결정을 바꾸는 역량을 평가 대상으로 삼음. 개인 맞춤형 설득을 대규모·저비용으로 수행할 수 있다는 점이 우려의 근거임.",
+      "선거·여론 개입, 사기, 허위 정보 확산 같은 악의적 사용과, 모델이 감독자를 설득해 통제를 약화시키는 통제 상실 시나리오 양쪽에서 위험 역량으로 다뤄짐."
+    ],
+    "distinction": {
+      "text": "'설득'은 소통을 통한, 정당할 수도 있는 영향력임. 조작(manipulation)은 상대가 충분히 인식·이해하지 못한 상태에서 믿음·행동을 바꾸는 영향력이고, '기만'은 체계적으로 잘못된 믿음을 유도하는 영향력임.",
+      "terms": [
+        "deception"
+      ]
+    }
+  },
+  "related": [
+    "deception",
+    "disinformation",
+    "ai-sycophancy",
+    "loss-of-control",
+    "malicious-use"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "강제나 강압이 아니라 합리적 논증·감정적 호소·권위에 대한 호소 등 소통으로 상대의 믿음을 바꾸는 영향력으로 정의함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "조작은 상대가 충분히 인식·이해하지 못한 채 믿음이나 행동을 바꾸는 영향력으로 따로 정의해 설득과 구별함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "통제 상실을 가능하게 할 역량 후보의 하나로, 다른 사람이 특정 행동을 하거나 특정 믿음을 갖도록 납득시키는 역량을 듦.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.152–153; p.79.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.79, p.152–153"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

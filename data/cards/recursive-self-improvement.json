@@ -1,0 +1,31 @@
+{
+  "id": "recursive-self-improvement",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "재귀적 자기 개선",
+  "en": "recursive self-improvement",
+  "alternatives": [
+    {
+      "text": "재귀적 자기 향상",
+      "source": "editor"
+    }
+  ],
+  "chapter": "02",
+  "definition": {
+    "lead": "AI 시스템이 자기 자신이나 후속 AI 시스템의 개발·개선을 스스로 수행하고, 그 결과 향상된 역량으로 다시 개선을 이어 가는 되먹임 과정을 말함.",
+    "points": [
+      "AI가 AI 연구·개발 업무(코드 작성, 실험 설계, 학습 수행 등)를 상당 부분 자동화하는 단계에서 나타날 수 있는 현상으로 논의됨.",
+      "개선 주기가 사람의 검토 속도보다 빨라지면 역량이 짧은 기간에 급격히 높아지고 인간 감독이 따라가지 못할 수 있어, 통제 상실과 초지능 시나리오의 핵심 경로로 꼽힘.",
+      "실제로 어느 정도 속도로 일어날지, 연산·데이터 같은 물리적 제약이 이를 얼마나 늦출지에 대해서는 견해가 갈림."
+    ]
+  },
+  "related": [
+    "superintelligence",
+    "loss-of-control",
+    "autonomy",
+    "capability-evaluation",
+    "artificial-general-intellegence-agi"
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

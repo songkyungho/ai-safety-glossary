@@ -1,0 +1,32 @@
+{
+  "id": "binding-force",
+  "kit_id": null,
+  "join_keys": [
+    "bindingforce"
+  ],
+  "head": "구속력",
+  "en": "binding force",
+  "alternatives": [
+    {
+      "text": "법적 구속력",
+      "source": "editor"
+    }
+  ],
+  "chapter": "11",
+  "definition": {
+    "lead": "규범을 위반했을 때 제재나 강제가 따르는지, 즉 그 규범이 지켜야 하는 의무로 작동하는지를 가리키는 법적 성질을 의미함.",
+    "points": [
+      "법령·시행령은 위반 시 과태료·과징금·시정명령 같은 제재가 따르지만, 가이드라인·권고·행동규약·국제 선언은 원칙적으로 그런 효력이 없음.",
+      "AI 안전 거버넌스 문서를 읽을 때 어떤 요구가 의무인지 권고인지를 먼저 가려야 실제 효과를 판단할 수 있음.",
+      "비구속 문서도 적합성 평가 기준 편입, 조달·계약 요건, 각국 입법의 참조점 등을 통해 사실상의 강제력을 얻을 수 있어, 유무보다 어떤 경로로 강제되는지를 보는 편이 정확함."
+    ]
+  },
+  "related": [
+    "ai-governance",
+    "compliance",
+    "standardization",
+    "harmonised-standards"
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

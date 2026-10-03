@@ -1,0 +1,33 @@
+{
+  "id": "non-consensual-intimate-imagery-ncii",
+  "kit_id": "non-consensual-intimate-imagery-ncii",
+  "join_keys": [
+    "ncii"
+  ],
+  "head": "비동의 성적 이미지",
+  "en": "non-consensual intimate imagery (NCII)",
+  "alternatives": [
+    {
+      "text": "비동의 성적 합성물",
+      "source": "editor"
+    }
+  ],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "당사자 동의 없이 제작·유포되는 성적 이미지·영상으로, 실제 촬영물과 AI로 합성한 이미지를 모두 포함하는 피해 유형을 말함.",
+    "points": [
+      "얼굴 사진 몇 장만으로 합성물을 만들 수 있게 되면서 제작 장벽이 낮아졌고, 학교·직장 같은 일상 관계 안에서 피해가 발생한다는 점이 문제로 지적됨.",
+      "제작·유포 처벌, 플랫폼의 신속 삭제 의무, 생성 단계에서 실존 인물의 성적 이미지 생성을 막는 안전장치, 여러 플랫폼에 걸친 해시 공유 체계가 함께 작동해야 실효가 생김.",
+      "한 곳에서 지워도 다른 곳에 남으면 피해가 계속되므로, 피해자 중심의 일괄 삭제 요청 경로가 중요하게 다뤄짐."
+    ]
+  },
+  "related": [
+    "deepfake",
+    "child-sexual-abuse-material-csam",
+    "ai-generated-fake-content",
+    "safeguard",
+    "ai-harm"
+  ],
+  "updated": "2026-10-03"
+}

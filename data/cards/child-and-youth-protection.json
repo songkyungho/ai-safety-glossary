@@ -1,0 +1,33 @@
+{
+  "id": "child-and-youth-protection",
+  "kit_id": null,
+  "join_keys": [
+    "childandyouthprotection"
+  ],
+  "head": "아동·청소년 보호",
+  "en": "child and youth protection",
+  "alternatives": [
+    {
+      "text": "미성년자 보호",
+      "source": "editor"
+    }
+  ],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "미성년 이용자를 연령에 맞지 않는 콘텐츠·상호작용·데이터 처리의 위험으로부터 보호하기 위한 제도적·기술적 조치 전반을 말함.",
+    "points": [
+      "유해 콘텐츠 차단, 연령 확인, 개인정보 수집 제한, 가장 안전한 기본 설정, 이용 시간 관리 등이 포함되며, 아동 이용을 전제로 처음부터 설계하는 방식이 강조됨.",
+      "대화형 AI에서는 노출 통제만으로 부족함. 정서적 의존, 부적절한 조언, 위기 신호 대응 실패 같은 상호작용 위험이 새 축으로 부각됨.",
+      "미성년 이용자 대상 별도 모델 정책과 위기 대응 절차를 요구하는 방향으로 논의가 이어지고 있으나, 연령 확인에 따른 프라이버시 부담과의 조율이 과제임."
+    ]
+  },
+  "related": [
+    "age-verification",
+    "child-sexual-abuse-material-csam",
+    "emotional-dependence",
+    "mental-health",
+    "harmful-content"
+  ],
+  "updated": "2026-10-03"
+}

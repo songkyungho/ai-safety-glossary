@@ -1,0 +1,91 @@
+{
+  "id": "ai-alignment",
+  "kit_id": "ai-alignment",
+  "join_keys": [
+    "alignment",
+    "pluralisticalignment"
+  ],
+  "head": "AI 정렬",
+  "en": "AI alignment",
+  "alternatives": [
+    {
+      "text": "정렬",
+      "source": "editor"
+    },
+    {
+      "text": "얼라인먼트",
+      "source": "editor"
+    }
+  ],
+  "chapter": "09",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템이 자신의 역량을 개발자·이용자·사회 등 인간의 의도와 가치에 맞게 쓰도록 만드는 과제 또는 그런 성향을 의미함.",
+    "points": [
+      "학습 목표·보상 신호는 사람이 실제로 바라는 것의 근사치이므로, 이 신호를 충실히 만족한 모델도 의도와 다르게 행동할 수 있음. 인간 피드백 기반 강화학습 등이 대표적 정렬 기법임.",
+      "역량 부족으로 인한 오류와 달리 정렬 실패는 역량이 높아질수록 피해가 커질 수 있어, 오정렬·기만적 정렬·통제 상실 논의의 출발점이 됨.",
+      "누구의 의도·가치에 맞출지가 맥락에 따라 달라지며, 서로 다른 집단의 선호를 반영·조정하려는 다원적 정렬 접근도 제기됨."
+    ],
+    "distinction": {
+      "text": "'AI 정렬'은 의도·가치에 맞게 행동하도록 만드는 과제·상태를, '오정렬'은 그것이 실패해 의도와 어긋난 목표·행동이 나타난 상태를 가리킴.",
+      "terms": [
+        "misalignment"
+      ]
+    }
+  },
+  "related": [
+    "misalignment",
+    "goal-misspecification",
+    "rl-from-human-feedback-rlhf",
+    "deceptive-alignment",
+    "human-oversight"
+  ],
+  "commentary": [
+    "사람은 AI에게 목표를 직접 심어 줄 수 없다. 할 수 있는 일은 원하는 방향을 가리키는 신호를 주는 것뿐이다 — 좋은 답에 높은 점수를 주거나, 모범 답안을 예시로 보여 주는 식이다. 모델은 그 신호를 최대한 만족시키도록 학습하는데, 신호는 언제나 진짜 의도의 근사치일 뿐이다. 그래서 신호를 완벽하게 만족시킨 모델이 정작 사람이 바란 것과 **다르게 행동**하는 일이 생긴다. 청소 로봇에게 먼지가 센서에 잡히지 않게 하라고 점수를 주면, 청소하는 대신 센서를 가리는 쪽을 배우는 것과 같은 구조다.",
+    "이 문제가 성능 문제와 구별된다는 점이 중요하다. 역량이 부족해 틀리는 것은 더 학습시키면 나아지지만, 정렬 실패는 역량이 올라갈수록 오히려 심각해질 수 있다. 목표를 더 잘 달성하는 모델일수록 잘못 지정된 목표도 더 철저하게 달성할 수 있기 때문이다. 그래서 안전 연구는 모델을 더 똑똑하게 만드는 일과 의도를 더 정확하게 전달하는 일을 서로 다른 과제로 놓고 다룬다. 국문에서는 정렬이 번역어로 자리 잡았지만 뜻이 곧바로 전달되지 않아 원어를 함께 적는 경우가 많다."
+  ],
+  "review_notes": [
+    "'능력'을 kit 번역어 '역량'으로 바꿈.",
+    "'정렬 실패는 능력이 올라갈수록 오히려 심각해진다'는 단정을 '심각해질 수 있다'로 완화함.",
+    "대체어 '다원적 정렬'은 하위 접근(pluralistic alignment)이라 대체어에서 빼고 points에서 언급함."
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "AI가 인간의 의도나 가치에 맞게 자신의 역량을 쓰는 성향으로 정의하고, 맥락에 따라 개발자·운영자·사용자·특정 공동체·사회 전체의 의도·가치를 가리킬 수 있다고 봄.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "2026년 보고서는 서로 다르고 때로 충돌하는 집단 간 선호를 반영·균형 맞추려는 개발 접근을 '다원적 정렬(pluralistic alignment)'로 별도 정의함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.218–219"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.153"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

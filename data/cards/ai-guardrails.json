@@ -1,0 +1,41 @@
+{
+  "id": "ai-guardrails",
+  "kit_id": "ai-guardrails",
+  "join_keys": [
+    "guardrail"
+  ],
+  "head": "AI 가드레일",
+  "en": "AI guardrails",
+  "alternatives": [
+    {
+      "text": "가드레일",
+      "source": "editor"
+    }
+  ],
+  "chapter": "09",
+  "status": "draft",
+  "definition": {
+    "lead": "모델 바깥에서 입력·출력·도구 사용을 검사하고 차단·수정·제한해 유해하거나 정책에 어긋난 동작을 막는 외부 통제 장치를 말함.",
+    "points": [
+      "입력 필터, 출력 분류기, 금지 규칙, 도구·권한 제한, 승인이 필요한 행위를 정한 정책 엔진 등으로 구성되며, 모델을 다시 학습시키지 않고도 정책을 바꾸거나 즉시 차단할 수 있음.",
+      "탈옥·프롬프트 인젝션으로 우회될 수 있어, 학습된 거부·샌드박싱·권한 최소화 등과 겹쳐 쓰는 다층 방어의 한 층으로 다뤄짐."
+    ],
+    "distinction": {
+      "text": "'안전장치(safeguard)'는 학습 단계의 안전 조정, 접근 통제, 모니터링, 인간 감독까지 포괄하는 보호 조치 전반을 가리키는 상위 개념이고, 'AI 가드레일'은 그중 모델 바깥에서 입출력과 행동을 실시간으로 통제하는 기술적 장치를 가리킴.",
+      "terms": [
+        "safeguard"
+      ]
+    }
+  },
+  "related": [
+    "safeguard",
+    "jailbreak",
+    "prompt-injection",
+    "sandboxing",
+    "harmful-content"
+  ],
+  "review_notes": [
+    "대체어 '안전장치'(public)는 kit의 safeguard 번역어와 겹쳐 safeguard/guardrail 구별을 흐리므로 지움."
+  ],
+  "updated": "2026-10-03"
+}

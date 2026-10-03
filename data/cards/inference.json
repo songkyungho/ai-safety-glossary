@@ -1,0 +1,56 @@
+{
+  "id": "inference",
+  "kit_id": "inference",
+  "join_keys": [
+    "inference"
+  ],
+  "head": "추론",
+  "en": "inference",
+  "alternatives": [],
+  "chapter": "01",
+  "definition": {
+    "lead": "학습을 마친 AI 모델이 주어진 입력에 대해 출력을 생성하는 실행 과정을 의미함.",
+    "points": [
+      "학습 단계에서 익힌 가중치를 고정한 채 입력을 처리해 답을 내는 단계로, 서비스 이용 시 매번 일어나며 그때마다 연산이 소요됨.",
+      "추론 단계에 연산을 더 들여 성능을 높이는 방식이 확산되면서, 학습 연산량만으로 역량과 위험을 가늠하기 어려워졌다는 지적이 있음. 오용 차단·출력 필터 같은 안전장치도 주로 이 단계에서 작동함."
+    ],
+    "distinction": {
+      "text": "여기서 '추론(inference)'은 모델을 실행해 출력을 얻는 과정이고, 모델이 단계적으로 생각하는 '추론(reasoning)'과는 다름. 후자는 '사고 사슬'과 관련됨.",
+      "terms": [
+        "chain-of-thought-cot"
+      ]
+    }
+  },
+  "related": [
+    "compute",
+    "chain-of-thought-cot",
+    "safeguard",
+    "post-deployment-monitoring"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "AI가 주어진 입력을 바탕으로 출력을 생성하며, 그 과정에서 학습 때 익힌 지식을 적용하는 과정으로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.38, p.47–48, p.222–223, p.319"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

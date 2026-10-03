@@ -1,0 +1,106 @@
+{
+  "id": "malfunctioning",
+  "kit_id": "malfunctioning",
+  "join_keys": [
+    "malfunction"
+  ],
+  "head": "AI 오작동",
+  "en": "AI malfunction",
+  "alternatives": [
+    {
+      "text": "오작동",
+      "source": "kit"
+    }
+  ],
+  "chapter": "07",
+  "head_override": "AI 접두 규칙 — 일상어 표제어에 AI를 붙임",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템이 개발자나 사용자가 의도한 대로 동작하지 않아 잘못되거나 해로운 출력, 운영 장애를 낳는 현상을 말함.",
+    "points": [
+      "환각, 편향된 출력, 강건성 부족에 따른 성능 저하, 에이전트의 의도치 않은 행동 등이 포함되며, 악의적 의도 없이 발생한다는 점이 특징임.",
+      "오용·악의적 사용과 함께 AI 위험의 주요 원천으로 분류되며, 고위험 영역에서 일어나면 AI 사고나 중대 AI 사고로 이어질 수 있음.",
+      "의도한 동작이 무엇이었는지가 명확하지 않은 범용 시스템에서는 오작동과 정상 동작의 경계를 정하기 어렵다는 지적이 있음."
+    ],
+    "distinction": {
+      "text": "'AI 오작동'은 의도와 다르게 동작하는 시스템 측 실패이고, '오용'·'악의적 사용'은 사람이 시스템을 의도와 다르게 쓰는 데서 생기는 위험임.",
+      "terms": [
+        "misuse",
+        "malicious-use",
+        "failure-mode"
+      ]
+    }
+  },
+  "related": [
+    "failure-mode",
+    "ai-incident",
+    "robustness",
+    "hallucination",
+    "reliability"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "오작동을 개발자나 사용자가 의도한 대로 시스템이 동작하지 않아 잘못되거나 해로운 출력, 운영 장애를 낳는 실패로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "OECD",
+      "sub": "2024",
+      "points": [
+        {
+          "text": "AI 사고와 AI 위험원의 정의 모두에 AI 시스템의 개발·사용과 나란히 '오작동'을 사건의 원인으로 포함함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "안정성 확보 가이드라인은 시스템 오작동을 비의도적 기능 발현, 알고리즘적 편향, 오남용과 함께 안전사고 범위에 포함되는 AI 특유의 위험으로 듦.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.152"
+      }
+    },
+    {
+      "n": 2,
+      "text": "OECD (2024). Defining AI incidents and related terms. OECD Artificial Intelligence Papers.",
+      "evidence": {
+        "document_id": "doc-9c46e00f1b3f",
+        "pages": "p.11–13"
+      }
+    },
+    {
+      "n": 3,
+      "text": "「인공지능 안정성 확보 가이드라인」 v1.3 (2026.1.21).",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.57"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

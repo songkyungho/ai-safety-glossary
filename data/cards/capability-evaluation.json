@@ -1,0 +1,68 @@
+{
+  "id": "capability-evaluation",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "역량 평가",
+  "en": "capability evaluation",
+  "alternatives": [
+    {
+      "text": "위험 역량 평가",
+      "source": "editor"
+    }
+  ],
+  "chapter": "08",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 모델이 사이버 공격, 생물학 무기 개발 지원, 자율적 복제처럼 심각한 위험으로 이어질 수 있는 역량을 어느 수준까지 갖추었는지 측정하는 평가를 말함.",
+    "points": [
+      "질의응답형 시험, 에이전트 과제, 전문가 대비 성능 비교, 휴먼 업리프트 연구 등으로 수행되며, 모델이 낼 수 있는 최대 역량을 끌어내는 것이 원칙임.",
+      "프론티어 AI 안전 프레임워크에서 역량 임계값 도달 여부를 판단하는 주된 수단으로, 결과에 따라 추가 안전장치나 배포 제한이 결정됨.",
+      "역량을 충분히 끌어내지 못하면 위험이 과소평가되고, 모델이 평가 상황을 알아채 성능을 낮추는 샌드배깅 가능성도 제기됨."
+    ],
+    "distinction": {
+      "text": "'역량 평가'는 모델이 무엇을 할 수 있는지를, 성향 평가는 실제로 어떻게 행동하는 경향이 있는지를 봄. '안전성 평가'는 둘을 포함해 위험 전반을 보는 더 넓은 범주임.",
+      "terms": [
+        "safety-evaluation",
+        "capability"
+      ]
+    }
+  },
+  "related": [
+    "capability",
+    "risk-thresholds",
+    "safety-evaluation",
+    "human-uplift",
+    "sandbagging"
+  ],
+  "frameworks": [
+    {
+      "org": "UK AISI",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "프론티어 AI 안전 서약의 임계값 점검 약속과 관련해, 역량 임계값을 쓰는 경우 위험 역량 평가가 임계값 도달 여부를 판단하는 일반적 방법이라고 설명함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "안전 프레임워크가 평가 시점·빈도, 최신 기법 활용과 완전한 역량 도출 같은 원칙, 사용할 평가 유형, 결과 검증과 심화 평가 절차를 명시할 수 있다고 봄.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "UK AISI (2025). Emerging Practices in Frontier AI Safety Frameworks.",
+      "evidence": {
+        "document_id": "doc-85aff17d77b6",
+        "pages": "p.11–12"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "reliability",
+  "kit_id": "reliability",
+  "join_keys": [
+    "reliability"
+  ],
+  "head": "신뢰성",
+  "en": "reliability",
+  "alternatives": [],
+  "chapter": "10",
+  "definition": {
+    "lead": "AI 시스템이 의도된 기능을 다양한 운용 조건과 시간에 걸쳐 일관되게 수행하는 성질을 의미함.",
+    "points": [
+      "같은 조건에서 결과가 일관되는지, 시간이 지나도 성능이 유지되는지, 실패가 예측 가능한 범위에 있는지 등으로 판단됨.",
+      "AI 오작동에 의한 피해를 줄이는 기초 요건이며, 그럴듯하지만 틀린 출력을 내는 환각은 거대 언어 모델의 신뢰성 한계로 자주 지적됨."
+    ],
+    "distinction": {
+      "text": "'신뢰성(reliability)'이 의도된 기능을 일관되게 수행하는 성질이라면, '강건성(robustness)'은 예상치 못한 입력이나 적대적 공격 등 넓은 상황에서도 안전하게 작동하는 성질이고, '신뢰할 수 있는 AI(trustworthy AI)'는 신뢰성을 포함한 여러 요건을 묶은 상위 정책 개념임.",
+      "terms": [
+        "robustness",
+        "trustworthy-ai"
+      ]
+    }
+  },
+  "related": [
+    "robustness",
+    "malfunctioning",
+    "hallucination",
+    "calibration",
+    "trustworthy-ai"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "AI 시스템이 의도된 기능을 일관되게 수행하는 능력으로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.88–89, p.225–226"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "lifecycle",
+  "kit_id": "lifecycle",
+  "join_keys": [
+    "lifecycle",
+    "ailifecycle",
+    "인공지능수명주기"
+  ],
+  "head": "AI 수명주기",
+  "en": "AI lifecycle",
+  "alternatives": [
+    {
+      "text": "생애주기",
+      "source": "editor"
+    },
+    {
+      "text": "인공지능 수명주기",
+      "source": "editor"
+    },
+    {
+      "text": "수명주기",
+      "source": "kit"
+    },
+    {
+      "text": "AI 생애주기",
+      "source": "public"
+    }
+  ],
+  "chapter": "03",
+  "head_override": "AI 접두 규칙 — 일상어 표제어에 AI를 붙임",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템이 기획·데이터 수집부터 개발, 평가, 배포, 운영·모니터링, 폐기에 이르기까지 거치는 단계 전체를 의미함.",
+    "points": [
+      "사전학습, 미세조정, 시스템 통합, 배포 후 모니터링, 하류 수정 등 단계를 나눠 각 단계에서 확인할 사항, 문서화, 결정 권한을 배정함.",
+      "위험과 책임을 단계별로 배치할 수 있어 규제 의무와 위험 관리 조치를 수명주기에 걸쳐 부과하는 틀로 쓰이며, 배포 이후에도 갱신·이용 방식 변화로 위험이 달라진다는 점을 강조함.",
+      "범용 AI는 모델 제공자와 하류 배포자가 서로 다른 단계를 맡아, 단계 사이의 정보 공유와 책임 경계가 쟁점이 됨."
+    ]
+  },
+  "related": [
+    "post-deployment-monitoring",
+    "pre-deployment-evaluation",
+    "risk-management",
+    "supply-chain"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "AI 수명주기를 데이터 수집·전처리, 사전학습, 미세조정, 모델 통합, 배포, 배포 후 모니터링, 하류 수정 등 AI 개발의 구분된 단계로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "과기정통부 가이드라인",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "「안전성 확보 가이드라인」은 고시 제2조를 인용해 인공지능 수명주기를 인공지능의 개발, 배포, 운영 및 폐기에 이르기까지의 전 과정으로 정의함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary, p.218–219.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.218–219"
+      }
+    },
+    {
+      "n": 2,
+      "text": "「인공지능 안전성 확보 가이드라인」 v1.3 (2026). 용어 정의(고시 제2조 인용).",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.13"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

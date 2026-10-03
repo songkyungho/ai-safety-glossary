@@ -1,0 +1,114 @@
+{
+  "id": "systemic-risk",
+  "kit_id": "systemic-risk",
+  "join_keys": [
+    "systemicrisk",
+    "systemicrisktiers"
+  ],
+  "head": "시스템적 위험",
+  "en": "systemic risk",
+  "alternatives": [],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "개별 모델의 결함을 넘어 사회·경제·제도 전반으로 퍼지거나, 고영향 범용 AI 모델의 역량에서 비롯되어 대규모로 확산될 수 있는 위험을 의미함.",
+    "points": [
+      "EU AI법은 고영향 역량을 지닌 범용 AI 모델에 특유한 위험으로서, 공중보건·안전·기본권·사회 전체에 중대한 영향을 미치고 가치사슬을 따라 대규모로 확산될 수 있는 위험으로 규정함.",
+      "국제 AI 안전 보고서는 AI 개발·배포가 인간 행동, 조직 관행, 사회 구조를 바꾸는 데서 생기는 위험(노동시장, 프라이버시, 환경 등)이라는 더 넓은 뜻으로 씀.",
+      "어느 정의를 쓰느냐에 따라 평가 대상과 의무 범위가 크게 달라지므로, 문헌을 읽거나 인용할 때 출처의 정의를 확인해야 함."
+    ],
+    "distinction": {
+      "text": "'시스템적 위험'은 피해의 확산 방식이나 모델 역량에 초점을 둔 범주이고, '파국적 위험'은 피해의 규모·심각도에 초점을 둔 범주임. EU AI법의 '시스템적 위험'과 국제 AI 안전 보고서의 'systemic risks'는 뜻이 다름.",
+      "terms": [
+        "catastrophic-risk",
+        "systemic-risk-assessment"
+      ]
+    }
+  },
+  "related": [
+    "systemic-risk-assessment",
+    "general-purpose-ai-gpai",
+    "catastrophic-risk",
+    "high-impact-ai",
+    "compute-threshold"
+  ],
+  "frameworks": [
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "제3조제65호는 시스템적 위험을 범용 AI 모델의 고영향 역량에 특유한 위험으로서, 그 도달 범위나 공중보건·안전·공공안보·기본권·사회 전체에 대한 실제 또는 합리적으로 예견 가능한 부정적 영향 때문에 EU 시장에 중대한 영향을 미치고 가치사슬 전반에 대규모로 확산될 수 있는 위험으로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "시스템적 위험 등급을 모델에서 비롯되는 일정 수준의 시스템적 위험에 대응해 프레임워크에서 정의하는 단계로, 시스템적 위험 수용 기준의 한 유형으로 규정함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "2025년 보고서는 개별 모델·시스템의 역량을 넘어 범용 AI 개발·배포와 관련된 더 넓은 사회적 위험(노동시장 영향, 프라이버시 침해, 환경 피해 등)으로 설명함.",
+          "refs": [
+            3
+          ]
+        },
+        {
+          "text": "2026년 보고서는 AI 역량에서 직접 생기기보다 AI가 인간 행동·조직 관행·사회 구조를 바꾸는 데서 생기는 위험으로 정의하고, EU AI법의 정의와 다르다고 명시함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "Regulation (EU) 2024/1689 (EU AI Act), Article 3(65). 집행위원회 범용 AI 지침 수록 법문 인용.",
+      "evidence": {
+        "document_id": "doc-f66baa3d99af",
+        "pages": "p.83"
+      }
+    },
+    {
+      "n": 2,
+      "text": "EU General-Purpose AI Code of Practice (2025), Safety and Security Chapter, Glossary.",
+      "evidence": {
+        "document_id": "doc-f66baa3d99af",
+        "pages": "p.82"
+      }
+    },
+    {
+      "n": 3,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary, p.227–228.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.227–228"
+      }
+    },
+    {
+      "n": 4,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.155–156.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.155–156"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

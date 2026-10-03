@@ -1,0 +1,58 @@
+{
+  "id": "discrimination",
+  "kit_id": "discrimination",
+  "join_keys": [
+    "discrimination"
+  ],
+  "head": "차별",
+  "en": "discrimination",
+  "alternatives": [],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "인종·성별·연령·종교 등 보호 특성을 포함한 속성을 이유로 개인이나 집단을 불공정하게 대우하는 것으로, AI 시스템의 결과로도 발생할 수 있는 피해를 말함.",
+    "points": [
+      "AI에서는 의도적 차별보다, 편향된 데이터·대리 변수·설계 선택을 통해 특정 집단에 불리한 결과가 체계적으로 나타나는 간접적 형태가 주로 문제가 됨.",
+      "채용·신용·공공 서비스 등 고위험 용도에서 대규모로 반복될 수 있고 결정 근거가 불투명해 당사자가 알아채거나 다투기 어렵다는 점이 위험을 키움.",
+      "차별금지법제와 AI 규제가 만나는 지점으로, 영향 평가·편향 감사·설명 및 이의 제기 절차가 대응 수단으로 다뤄짐."
+    ],
+    "distinction": {
+      "text": "'차별'은 개인·집단에 대한 불공정한 대우라는 결과·피해를, 'AI 편향'은 그런 결과를 낳는 시스템의 체계적 치우침을 가리킴.",
+      "terms": [
+        "ai-bias"
+      ]
+    }
+  },
+  "related": [
+    "ai-bias",
+    "fairness",
+    "ai-harm",
+    "automated-decision-making-adm",
+    "high-risk-ai"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "인종·성별·연령·종교 또는 기타 보호 특성 등 속성에 근거해 개인이나 집단을 불공정하게 대우하는 것으로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "Bengio, Y. 외 (2025). International Scientific Report on the Safety of Advanced AI (IASR 2025). 용어 정의. p.92–93, p.220–221.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.92–93, p.220–221"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

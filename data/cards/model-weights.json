@@ -1,0 +1,61 @@
+{
+  "id": "model-weights",
+  "kit_id": null,
+  "join_keys": [
+    "modelweights",
+    "weights"
+  ],
+  "head": "모델 가중치",
+  "en": "model weights",
+  "alternatives": [
+    {
+      "text": "파라미터",
+      "source": "public"
+    },
+    {
+      "text": "가중치",
+      "source": "public"
+    }
+  ],
+  "chapter": "01",
+  "definition": {
+    "lead": "학습을 통해 값이 정해진 신경망의 수치 파라미터로, 모델이 학습한 내용이 저장된 핵심 산출물을 말함.",
+    "points": [
+      "신경망 노드 간 연결 강도를 나타내며 학습 과정에서 반복 갱신됨. 구조와 학습 방법이 공개돼도 가중치가 없으면 같은 모델을 재현하려면 처음부터 학습해야 하고, 가중치만 있으면 누구나 같은 모델을 실행할 수 있음.",
+      "가중치를 통제하는 쪽이 안전장치 유지·이용 정책 적용·서비스 중단을 할 수 있으므로 안전 통제의 분기점이 됨. 공개하면 회수할 수 없고, 유출은 보안 사고로 다뤄지며 수출 통제 논의의 대상이 되기도 함."
+    ]
+  },
+  "related": [
+    "open-weight-model",
+    "closed-model",
+    "fine-tuning",
+    "insider-threats",
+    "self-exfiltration"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "신경망 노드 간 연결 강도를 나타내는 모델 파라미터로, 주어진 입력에 대한 출력을 결정하는 데 중요한 역할을 하며 성능을 높이도록 학습 과정에서 반복 갱신된다고 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.150, p.227–228"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

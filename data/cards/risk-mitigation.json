@@ -1,0 +1,82 @@
+{
+  "id": "risk-mitigation",
+  "kit_id": null,
+  "join_keys": [
+    "riskmitigation"
+  ],
+  "head": "위험 완화",
+  "en": "risk mitigation",
+  "alternatives": [
+    {
+      "text": "완화",
+      "source": "editor"
+    },
+    {
+      "text": "위험 저감",
+      "source": "editor"
+    }
+  ],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "식별·평가된 AI 위험의 발생 가능성이나 피해의 심각도를 허용 가능한 수준까지 낮추기 위해 취하는 조치를 말함.",
+    "points": [
+      "학습 단계의 거절 학습, 배포 단계의 필터·접근 제한·공개 방식 조정, 운영 단계의 모니터링·중단 절차 등을 여러 층으로 쌓는 심층 방어 방식이 일반적임.",
+      "위험을 없애는 것이 아니라 줄이는 조치이므로, 무엇을 얼마나 줄였고 잔여 위험이 위험 허용도 안에 드는지를 함께 문서화해야 함.",
+      "조치를 도입했다는 사실이 효과의 증거는 아니며, 도입 전후를 같은 방법으로 측정해 효과를 입증해야 한다는 점이 강조됨."
+    ],
+    "distinction": {
+      "text": "'위험 완화'는 위험을 줄이는 조치 전반이고, '안전장치(safeguard)'는 그 수단으로 쓰이는 개별 기술적·절차적 장치를 가리킴.",
+      "terms": [
+        "safeguard",
+        "ai-guardrails"
+      ]
+    }
+  },
+  "related": [
+    "risk-management",
+    "safeguard",
+    "risk-tolerance",
+    "ai-guardrails",
+    "risk-assessment"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "위험 완화를 위험을 줄이는 통제 수단의 우선순위를 정하고 평가·이행하는 단계로 위험 관리의 네 구성 요소 중 하나로 둠.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "심층 방어를 개발·배포 여러 단계에 걸친 기술적·조직적·사회적 조치의 결합으로 설명하고, 한 층이 실패해도 다른 층이 피해를 막도록 독립적 안전장치를 겹쳐 두는 방식이라 함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Figure 3.4.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.107"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Defence-in-depth and release strategies are important mitigation tools.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.113"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

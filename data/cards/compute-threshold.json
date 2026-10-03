@@ -1,0 +1,105 @@
+{
+  "id": "compute-threshold",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "연산 임계값",
+  "en": "compute threshold",
+  "alternatives": [
+    {
+      "text": "FLOP 기준",
+      "source": "editor"
+    },
+    {
+      "text": "학습 연산량 기준",
+      "source": "editor"
+    }
+  ],
+  "chapter": "11",
+  "definition": {
+    "lead": "AI 모델 학습에 사용된 누적 연산량(부동소수점연산, FLOP)을 기준으로 규제 의무의 적용 대상을 가르는 정량적 기준을 의미함.",
+    "points": [
+      "모델 크기와 학습 데이터 양을 하나의 수치로 묶을 수 있고 개발자가 비교적 쉽게 산정할 수 있어, 역량을 직접 측정하기 어려운 상황에서 대리 지표로 쓰임.",
+      "위험이 큰 프론티어 AI 모델을 사전에 선별해 평가·위험 관리·보고 의무를 집중시키는 진입 장치 역할을 함.",
+      "연산량은 역량의 불완전한 대리 지표이고 알고리즘 효율이 높아지면 같은 역량을 더 적은 연산으로 얻을 수 있어, 다른 기준과 함께 쓰거나 주기적으로 조정해야 한다는 논의가 있음."
+    ],
+    "distinction": {
+      "text": "'위험 임계값'이 허용 가능한 위험과 그렇지 않은 위험을 가르는 한계라면, '연산 임계값'은 위험 자체가 아니라 학습 연산량으로 규제 대상을 1차 선별하는 기준임.",
+      "terms": [
+        "risk-thresholds"
+      ]
+    }
+  },
+  "related": [
+    "compute",
+    "general-purpose-ai-gpai",
+    "systemic-risk",
+    "frontier-ai",
+    "risk-thresholds"
+  ],
+  "frameworks": [
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "누적 학습 연산량이 10^25 FLOP를 넘는 범용 AI 모델을 시스템적 위험을 가진 범용 AI 모델로 추정하며(제51조제2항), 집행위원회가 부속서 XIII 기준에 따라 따로 지정할 수도 있음.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "집행위원회 지침은 학습 연산량 10^23 FLOP 초과와 언어(텍스트·음성) 또는 텍스트-이미지·텍스트-비디오 생성 가능성을 범용 AI 모델 여부의 지표 기준으로 제시하면서, 학습 연산량은 일반성과 역량의 불완전한 대리 지표라고 밝힘.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국 AI 기본법",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "제32조는 학습에 사용된 누적 연산량이 대통령령으로 정하는 기준 이상인 AI 시스템에 대해 수명주기 전반의 위험 식별·평가·완화, 안전사고 모니터링·대응 위험관리체계 구축, 이행 결과 제출을 요구함.",
+          "refs": [
+            2
+          ]
+        },
+        {
+          "text": "시행령은 누적 연산량 10^26 FLOP 이상, 최첨단 AI 기술 적용, 생명·신체의 안전과 기본권에 광범위하고 중대한 영향을 미칠 우려라는 세 기준을 모두 충족하는 시스템을 대상으로 정함. 연산량만으로 추정하는 EU 방식과 달리 복수 요건을 함께 요구함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "European Commission (2025). Guidelines on the scope of the obligations for general-purpose AI models established by Regulation (EU) 2024/1689 (AI Act).",
+      "evidence": {
+        "document_id": "doc-f66baa3d99af",
+        "pages": "p.4–5, p.7, p.9"
+      }
+    },
+    {
+      "n": 2,
+      "text": "「인공지능 발전과 신뢰 기반 조성 등에 관한 기본법」(법률 제20676호, 2026.1.22 시행) 제32조.",
+      "evidence": {
+        "document_id": "doc-6311a32b59e6",
+        "pages": "p.12–13"
+      }
+    },
+    {
+      "n": 3,
+      "text": "「인공지능 안전성 확보 가이드라인」 v1.3 (2026). 시행령 인용 부분.",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.8"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

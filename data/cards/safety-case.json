@@ -1,0 +1,67 @@
+{
+  "id": "safety-case",
+  "kit_id": "safety-case",
+  "join_keys": [],
+  "head": "안전 사례",
+  "en": "safety case",
+  "alternatives": [
+    {
+      "text": "안전성 논증",
+      "source": "editor"
+    }
+  ],
+  "chapter": "08",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 모델·시스템이 특정 운영 맥락에서 수용 가능한 수준으로 안전하다는 주장을 증거로 뒷받침해 구조화한 논증을 말함.",
+    "points": [
+      "최상위 안전 주장을 하위 주장으로 나누고 평가 결과·안전장치·통제 수단 등의 증거로 각각 뒷받침하는 방식으로 작성되며, 원자력·항공 등 안전 공학에서 유래함.",
+      "개발자나 규제기관이 배포 여부 같은 중요한 결정의 근거로 쓸 수 있어, 위험 판단의 논리와 증거를 외부에서 검토할 수 있게 함.",
+      "AI 역량이 커질수록 '위험한 일을 할 수 없다'는 주장만으로는 부족해, 통제 수단이나 신뢰성에 근거한 논증을 보완해야 한다는 논의가 있음."
+    ],
+    "distinction": {
+      "text": "'안전 사례'는 안전하다는 결론을 증거로 논증하는 문서이고, '위험 평가'는 위험의 크기와 수용 가능성을 판단하는 절차로, 안전 사례의 증거가 되는 경우가 많음.",
+      "terms": [
+        "risk-assessment",
+        "ai-assurance"
+      ]
+    }
+  },
+  "related": [
+    "risk-assessment",
+    "ai-assurance",
+    "pre-deployment-evaluation",
+    "risk-thresholds"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "안전 사례를 대개 개발자가 작성하고 증거로 뒷받침하는, AI 모델·시스템이 주어진 운영 맥락에서 수용 가능하게 안전하다는 구조화된 논증으로 정의함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "개발자나 규제기관이 배포 여부 같은 중요한 결정의 근거로 활용할 수 있다고 봄.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International Scientific Report on the Safety of Advanced AI (국제 AI 안전 보고서, 2025), Glossary.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.226–227"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

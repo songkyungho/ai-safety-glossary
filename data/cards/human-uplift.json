@@ -1,0 +1,59 @@
+{
+  "id": "human-uplift",
+  "kit_id": "human-uplift",
+  "join_keys": [],
+  "head": "휴먼 업리프트",
+  "en": "human uplift",
+  "alternatives": [
+    {
+      "text": "역량 증강",
+      "source": "editor"
+    },
+    {
+      "text": "업리프트",
+      "source": "editor"
+    }
+  ],
+  "chapter": "05",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템을 사용할 때 사람이 특정 과업을 수행하는 역량이 AI 없이 수행할 때보다 얼마나 향상되는지를 가리키는 개념임.",
+    "points": [
+      "인터넷 검색 등 기존 수단만 쓴 대조군과 AI를 쓴 집단의 과업 성공률·소요 시간·오류를 비교하는 업리프트 연구로 측정함.",
+      "AI 안전에서는 화학·생물 무기나 사이버 공격처럼 위험한 과업에서 비전문가의 역량을 끌어올리는지가 핵심 평가 질문이며, 위험 임계값 판단의 근거로 쓰임.",
+      "실험실 대리 과업과 실제 위협 사이의 간극, 표본 크기 같은 측정 한계가 있어 결과 해석에 주의가 필요함."
+    ]
+  },
+  "related": [
+    "capability-evaluation",
+    "cbrn",
+    "dual-use-risk",
+    "risk-thresholds",
+    "malicious-use"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "생물무기 획득 대리 과업에서 안전장치 없는 범용 AI가 인터넷만 쓴 기준선에 비해 상당한 도움을 줬다는 최근 실제 세계 업리프트 연구를 소개하면서, 이전 연구들은 업리프트가 없거나 작았다며 근거가 엇갈린다고 평가함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. p.68.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.68"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

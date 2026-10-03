@@ -1,0 +1,55 @@
+{
+  "id": "harmonised-standards",
+  "kit_id": "harmonised-standards",
+  "join_keys": [
+    "harmonisedstandard"
+  ],
+  "head": "조화 표준",
+  "en": "harmonised standard",
+  "alternatives": [
+    {
+      "text": "조화 규격",
+      "source": "editor"
+    }
+  ],
+  "chapter": "11",
+  "definition": {
+    "lead": "EU 법령이 정한 필수 요건을 구체화하기 위해 EU 표준화 체계에서 마련한 유럽 표준으로, 이를 따르면 해당 요건을 충족한 것으로 추정받을 수 있는 표준을 의미함.",
+    "points": [
+      "EU AI법은 정확성·강건성 같은 요건을 원칙 수준으로 정하고, 이를 무엇을 어떻게 재서 충족할지는 조화 표준이 구체화하는 구조임.",
+      "적용 자체는 자발적이지만 적합성 평가에서 요건 충족을 입증하는 가장 손쉬운 경로가 되어 사실상의 구속력을 가지며, AI 안전 요건의 실제 수준이 표준 제정 과정에서 정해진다는 점에서 표준화 참여가 중요하게 다뤄짐."
+    ]
+  },
+  "related": [
+    "standardization",
+    "conformity-assessment",
+    "binding-force",
+    "interoperability"
+  ],
+  "frameworks": [
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "조화 표준을 Regulation (EU) 1025/2012 제2조제1항(c)에 정의된 조화된 표준으로 정의해, 기존 EU 표준화 규정의 개념을 그대로 따름.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "「유럽연합 인공지능법 범용인공지능모델 실천강령 안내서(GPAI)」(2026). 용어 정의.",
+      "evidence": {
+        "document_id": "doc-670ed9d255e5",
+        "pages": "p.13"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

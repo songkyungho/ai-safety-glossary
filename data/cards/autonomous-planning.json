@@ -1,0 +1,57 @@
+{
+  "id": "autonomous-planning",
+  "kit_id": null,
+  "join_keys": [
+    "autonomousplanning"
+  ],
+  "head": "자율 계획",
+  "en": "autonomous planning",
+  "alternatives": [],
+  "chapter": "02",
+  "definition": {
+    "lead": "AI 시스템이 사람의 안내가 거의 없이 다단계 전략을 세우고 실행하는 역량을 말함.",
+    "points": [
+      "목표를 하위 과제로 나누고 순서를 정하며, 중간 결과에 따라 계획을 수정하는 과정이 포함됨. AI 에이전트가 긴 작업을 맡을 수 있게 하는 핵심 역량임.",
+      "계획 역량이 높아질수록 위임할 수 있는 업무가 넓어지지만, 사람이 개별 단계를 검토하기 어려워져 목표 오지정이나 의도하지 않은 우회 행동이 늦게 드러날 수 있음."
+    ],
+    "distinction": {
+      "text": "'자율 계획'은 계획을 세우고 실행하는 역량을, '자율성'은 실제 배치에서 사람 개입 없이 행동하도록 허용된 정도를 가리킴.",
+      "terms": [
+        "autonomy"
+      ]
+    }
+  },
+  "related": [
+    "ai-agent",
+    "autonomy",
+    "task-time-horizon",
+    "capability",
+    "goal-misspecification"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "인간의 안내가 거의 없거나 전혀 없이도 다단계 전략을 세우고 실행하는 AI 시스템의 역량으로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 용어 정의.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.149"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

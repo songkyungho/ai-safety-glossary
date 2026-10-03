@@ -1,0 +1,35 @@
+{
+  "id": "censorship",
+  "kit_id": null,
+  "join_keys": [
+    "censorship"
+  ],
+  "head": "검열",
+  "en": "censorship",
+  "alternatives": [],
+  "chapter": "06",
+  "status": "draft",
+  "definition": {
+    "lead": "국가나 사업자가 특정 내용의 표현·유통을 차단하거나 제한하는 것으로, AI에서는 모델 응답 범위의 통제를 둘러싸고 쓰이는 개념임.",
+    "points": [
+      "국가가 모델이 답할 수 있는 주제를 규정하는 경우와, 사업자가 안전을 이유로 응답을 거부·제한하는 경우가 함께 논쟁 대상이 됨.",
+      "무엇이 유해한지에 대한 판단 자체가 관점을 담기 때문에, 정치·사회적으로 민감한 주제에서는 안전장치와 검열의 경계가 흐려진다는 지적이 있음.",
+      "안전성 평가에서 유해 요청 거부율과 함께 정당한 요청을 잘못 거부하는 비율을 재는 것은 과도한 제한을 드러내기 위한 것임."
+    ],
+    "distinction": {
+      "text": "'안전장치'는 피해를 막기 위해 설계된 기술·절차적 통제를 말하지만, 그 기준이 불투명하거나 정당한 표현까지 막으면 '검열'이라는 비판을 받음. 둘의 구별은 목적, 근거의 공개, 비례성에 달려 있음.",
+      "terms": [
+        "safeguard",
+        "ai-guardrails"
+      ]
+    }
+  },
+  "related": [
+    "freedom-of-expression",
+    "safeguard",
+    "harmful-content",
+    "safety-evaluation",
+    "transparency"
+  ],
+  "updated": "2026-10-03"
+}

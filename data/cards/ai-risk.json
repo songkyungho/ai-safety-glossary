@@ -1,0 +1,103 @@
+{
+  "id": "ai-risk",
+  "kit_id": null,
+  "join_keys": [],
+  "head": "AI 위험",
+  "en": "AI risk",
+  "alternatives": [
+    {
+      "text": "위험",
+      "source": "editor"
+    }
+  ],
+  "chapter": "03",
+  "status": "draft",
+  "definition": {
+    "lead": "AI의 개발·배포·이용에서 비롯되는 피해가 발생할 가능성과 그 피해의 심각도를 결합해 나타낸 개념을 의미함.",
+    "points": [
+      "피해를 일으킬 수 있는 원천(위험원), 그것이 실제 피해로 이어질 가능성, 피해의 크기·범위·되돌릴 수 있는지를 함께 따져 수준을 매김.",
+      "아직 일어나지 않은 피해를 다루는 개념이므로 위험 평가·위험 임계값·위험 완화 같은 사전적 관리 절차의 기준이 되며, 규제 의무의 강도를 정하는 근거로도 쓰임.",
+      "범용 AI는 용도가 열려 있고 역량이 빠르게 변해 발생 가능성과 심각도를 추정할 자료가 부족하다는 점이 측정의 한계로 지적됨."
+    ],
+    "distinction": {
+      "text": "'AI 위험원(hazard)'은 피해를 일으킬 잠재력이 있는 사건·활동·조건 자체를, 'AI 위험(risk)'은 그 피해의 발생 가능성과 심각도를 결합한 정도를, 'AI 피해(harm)'는 실제로 나타난 부정적 결과를 가리킴. 'AI 위험'은 정도를 따질 수 있는 개념이라는 점이 핵심임.",
+      "terms": [
+        "ai-hazard",
+        "ai-harm",
+        "threat"
+      ]
+    }
+  },
+  "related": [
+    "risk-assessment",
+    "risk-management",
+    "catastrophic-risk",
+    "systemic-risk",
+    "ai-incident"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "위험을 AI의 개발·배포·이용에서 생기는 피해의 발생 확률과 심각도의 결합으로 정의하고, 위험원(hazard)은 피해를 일으킬 잠재력이 있는 사건·활동으로 따로 정의함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "NIST",
+      "sub": "2023",
+      "points": [
+        {
+          "text": "AI RMF는 위험을 사건의 발생 확률과 그 결과의 크기·정도를 합친 복합 척도로 보며(ISO 31000:2018 준용), 부정적 영향에 대해서는 피해의 크기와 발생 가능성의 함수로 설명함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "OECD",
+      "sub": "2024",
+      "points": [
+        {
+          "text": "잠재적 피해를 피해가 발생할 위험 또는 가능성으로 표현하고, 위험을 사건 발생 확률과 결과의 심각도의 함수로 설명함. 실제 피해는 '현실화된 위험'으로 구분함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Key Definitions, p.158–159.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.158–159"
+      }
+    },
+    {
+      "n": 2,
+      "text": "NIST (2023). AI Risk Management Framework (AI RMF 1.0), 1.1 Understanding and Addressing Risks, Impacts, and Harms.",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.9–10"
+      }
+    },
+    {
+      "n": 3,
+      "text": "OECD (2024). Defining AI incidents and related terms. OECD AI Papers. 3. Actual vs. potential harm as the starting point.",
+      "evidence": {
+        "document_id": "doc-9c46e00f1b3f",
+        "pages": "p.10"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}

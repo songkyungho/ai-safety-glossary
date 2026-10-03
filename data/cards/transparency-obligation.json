@@ -1,0 +1,95 @@
+{
+  "id": "transparency-obligation",
+  "kit_id": null,
+  "join_keys": [
+    "transparencyobligation"
+  ],
+  "head": "투명성 의무",
+  "en": "transparency obligation",
+  "alternatives": [
+    {
+      "text": "표시 의무",
+      "source": "public"
+    }
+  ],
+  "chapter": "11",
+  "definition": {
+    "lead": "AI를 사용한다는 사실이나 결과물이 AI로 생성되었다는 사실을 이용자·대상자에게 고지하거나 표시하도록 법이 부과하는 의무를 의미함.",
+    "points": [
+      "AI 기반으로 운용된다는 사실의 사전 고지, 생성물에 대한 AI 생성 표시, 실제와 구별하기 어려운 합성 음향·이미지·영상(딥페이크)의 명확한 고지·표시가 주요 유형임.",
+      "상대가 AI의 개입을 알고 스스로 판단하게 해 기만·허위 정보·조작 피해를 줄이려는 취지이며, 위험 등급과 별도로 부과되는 경우가 많음.",
+      "눈에 보이는 표시는 편집·재저장으로 쉽게 사라지므로, 기계 판독 가능한 표시(AI 워터마킹, 출처 메타데이터)와 플랫폼 간 상호운용 표준이 함께 요구됨."
+    ],
+    "distinction": {
+      "text": "'투명성'이 시스템에 관한 정보가 관계자에게 제공되는 정도라는 넓은 원칙이라면, '투명성 의무'는 그중 고지·표시처럼 법으로 구체화된 의무를 가리킴.",
+      "terms": [
+        "transparency"
+      ]
+    }
+  },
+  "related": [
+    "transparency",
+    "ai-watermarking",
+    "provenance-metadata",
+    "deepfake",
+    "ai-generated-fake-content"
+  ],
+  "frameworks": [
+    {
+      "org": "한국 AI 기본법",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "제31조는 고영향 AI나 생성형 AI를 이용한 제품·서비스를 제공하려는 경우 해당 AI에 기반해 운용된다는 사실을 이용자에게 사전에 고지하고, 생성형 AI 결과물에는 생성형 AI로 생성되었다는 사실을 표시하도록 함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "실제와 구분하기 어려운 가상의 음향·이미지·영상 등을 제공하는 경우에는 AI 시스템으로 생성되었다는 사실을 이용자가 명확하게 인식할 수 있는 방식으로 고지 또는 표시하도록 함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "제50조제2항은 합성 음성·이미지·영상·텍스트를 생성하는 AI 시스템 제공자에게 출력이 인위적으로 생성·조작되었음을 기계 판독 가능한 형식으로 표시해 탐지할 수 있게 하고, 기술적 해법이 가능한 범위에서 효과적·상호운용적·강건·신뢰할 수 있도록 요구함.",
+          "refs": [
+            2
+          ]
+        },
+        {
+          "text": "제50조제4항은 공공의 이익에 관한 사안을 알리려고 게시하는 텍스트를 생성·조작하는 AI 시스템의 배포자에게 인위적 생성·조작 사실을 공개하도록 함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "「인공지능기본법 지원데스크 사례집」(2026).",
+      "evidence": {
+        "document_id": "doc-db293b2c15ea",
+        "pages": "p.19"
+      }
+    },
+    {
+      "n": 2,
+      "text": "Regulating Under Uncertainty: Governance Options for Generative AI (2024). Chapter 5, EU AI Act.",
+      "evidence": {
+        "document_id": "doc-0de6e16e0acb",
+        "pages": "p.213"
+      }
+    }
+  ],
+  "status": "draft",
+  "updated": "2026-10-03"
+}

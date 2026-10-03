@@ -1,0 +1,69 @@
+{
+  "id": "situational-awareness",
+  "kit_id": "situational-awareness",
+  "join_keys": [],
+  "head": "상황 인식",
+  "en": "situational awareness",
+  "alternatives": [],
+  "chapter": "04",
+  "status": "draft",
+  "definition": {
+    "lead": "AI 시스템이 자기 자신, 자신이 수정될 수 있는 과정, 자신이 배포된 맥락에 관한 정보에 접근하고 이를 활용하는 역량을 의미함.",
+    "points": [
+      "자신이 AI 모델이라는 사실, 학습·평가·배포 중 어느 단계에 있는지, 시험받고 있는지를 파악하는 것 등이 포함됨. 평가 중 사고 사슬에서 시험일 가능성을 언급한 사례가 보고됨.",
+      "에이전트 작업에는 유용하지만, 평가 상황을 알아채고 행동을 바꿀 수 있게 해 평가의 타당성을 떨어뜨림. 샌드배깅·기만적 정렬·계략적 행동의 전제 역량으로 다뤄짐."
+    ]
+  },
+  "related": [
+    "scheming",
+    "sandbagging",
+    "deceptive-alignment",
+    "capability-evaluation",
+    "chain-of-thought-cot"
+  ],
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "통제를 약화시킬 수 있는 역량 후보로, 자기 자신, 자신이 수정될 수 있는 과정, 배포 맥락에 관한 정보에 접근하고 적용하는 역량으로 설명함.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "같은 정의에 '자신이 시험받고 있음을 아는 것'을 예로 덧붙이고, 평가 중 모델의 사고 사슬에서 시험 가능성을 언급한 사례를 제시함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.104.",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.104"
+      }
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report (2026). International AI Safety Report 2026. p.79–80.",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.79–80"
+      }
+    }
+  ],
+  "updated": "2026-10-03"
+}
