@@ -523,6 +523,23 @@ details.term-more { margin: 10px 16px 0; }
   .fw-row { grid-template-columns: 1fr; }
   .fw-row .fw-org { flex-direction: row; gap: 6px; justify-content: flex-start; text-align: left; }
 }
+
+/* 전체 개념 지도 v2 */
+.ov-wrap { border-radius: 10px; border: 1px solid var(--gridline); margin-top: 6px; }
+svg.ov-map { display: block; width: 100%; min-width: 760px; height: auto; }
+svg.ov-map .rel-n, svg.ov-map .rel-e, svg.ov-map .ov-hull { transition: opacity .25s; }
+svg.ov-map .dim { opacity: .1; }
+svg.ov-map .rel-e { opacity: .5; }
+svg.ov-map .rel-e.x-reg, svg.ov-map .rel-e.k-contrasts { opacity: 0; }   /* 기본 화면은 구역 안 흐름만 */
+svg.ov-map.focused .rel-e:not(.dim), svg.ov-map.hovering .rel-e:not(.hdim) { opacity: 1; }
+svg.ov-map .ov-region { transition: opacity .25s; }
+svg.ov-map .ov-region.dim { opacity: .35; }
+svg.ov-map .ov-spine, svg.ov-map .ov-label { transition: opacity .25s; }
+svg.ov-map .ov-label:hover { text-decoration: underline; }
+svg.ov-map .ov-label.dim { opacity: .3; }
+svg.ov-map.hovering .hdim { opacity: .12; }
+svg.ov-map a.rel-n:hover rect, svg.rel-ego a.rel-n:hover rect { stroke-width: 2; }
+svg .rel-n text { pointer-events: none; }
 """
 
 
@@ -837,25 +854,141 @@ LEGEND = """<details class="legend">
 </details>"""
 
 
+OVERVIEW_JS = """<script>
+(function () {
+  var svg = document.getElementById('ovMap');
+  if (!svg) return;
+  var themes = JSON.parse(document.getElementById('mapThemes').textContent);
+  var desc = document.getElementById('mapDesc');
+  var nodes = Array.prototype.slice.call(svg.querySelectorAll('.rel-n[data-id]'));
+  var edges = Array.prototype.slice.call(svg.querySelectorAll('.rel-e'));
+  var hulls = Array.prototype.slice.call(svg.querySelectorAll('.ov-hull'));
+  var regions = Array.prototype.slice.call(svg.querySelectorAll('.ov-region'));
+  var spines = Array.prototype.slice.call(svg.querySelectorAll('.ov-spine'));
+  var labels = Array.prototype.slice.call(svg.querySelectorAll('.ov-label'));
+  var centers = Array.prototype.slice.call(svg.querySelectorAll('.ov-center')).map(function (n) { return n.getAttribute('data-id'); });
+  labels.forEach(function (lb) {
+    lb.addEventListener('click', function () {
+      var b = document.querySelector('button.map-tab[data-theme="' + lb.getAttribute('data-theme') + '"]');
+      if (b) b.click();
+    });
+  });
+  function fit(b) {                       // 구역을 지도 비율에 맞춰 여백과 함께 확대
+    var pad = 12, w = b[2] + pad * 2, h = b[3] + pad * 2, ratio = full[2] / full[3];
+    if (w / h > ratio) h = w / ratio; else w = h * ratio;
+    return [b[0] + b[2] / 2 - w / 2, b[1] + b[3] / 2 - h / 2, w, h];
+  }
+  var full = svg.getAttribute('data-full').split(' ').map(Number);
+  var cur = full.slice(), anim = null, focus = null;
+  var nb = {};
+  edges.forEach(function (e) {
+    var a = e.getAttribute('data-a'), b = e.getAttribute('data-b');
+    (nb[a] = nb[a] || []).push(b); (nb[b] = nb[b] || []).push(a);
+  });
+  function paint(set, cls) {
+    nodes.forEach(function (n) { n.classList.toggle(cls, !!set && !set[n.getAttribute('data-id')]); });
+    edges.forEach(function (e) {
+      var on = set && set[e.getAttribute('data-a')] && set[e.getAttribute('data-b')];
+      e.classList.toggle(cls, !!set && !on);
+    });
+    spines.forEach(function (sp) {
+      var on = set && set[sp.getAttribute('data-a')] && set[sp.getAttribute('data-b')];
+      sp.classList.toggle(cls, !!set && !on);
+    });
+    labels.forEach(function (lb) {
+      if (cls === 'dim') lb.classList.toggle(cls, !!set && lb.getAttribute('data-theme') !== curTheme);
+    });
+    hulls.forEach(function (h) {
+      var ids = h.getAttribute('data-ids').split(' ');
+      var any = set && ids.some(function (i) { return set[i]; });
+      h.classList.toggle(cls, !!set && !any);
+    });
+  }
+  var curTheme = '';
+  function zoom(to) {
+    if (anim) cancelAnimationFrame(anim);
+    var from = cur.slice(), t0 = performance.now(), dur = 420;
+    (function step(t) {
+      var k = Math.min(1, (t - t0) / dur); k = 1 - Math.pow(1 - k, 3);
+      cur = from.map(function (v, i) { return v + (to[i] - v) * k; });
+      svg.setAttribute('viewBox', cur.map(function (v) { return v.toFixed(1); }).join(' '));
+      if (k < 1) anim = requestAnimationFrame(step);
+    })(t0);
+  }
+  function bbox(set) {
+    var x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+    nodes.forEach(function (n) {
+      if (!set[n.getAttribute('data-id')]) return;
+      var b = n.getBBox();
+      x0 = Math.min(x0, b.x); y0 = Math.min(y0, b.y); x1 = Math.max(x1, b.x + b.width); y1 = Math.max(y1, b.y + b.height);
+    });
+    var pad = 46, w = x1 - x0 + pad * 2, h = y1 - y0 + pad * 2;
+    var ratio = full[2] / full[3];               // 지도 비율을 지켜 확대
+    if (w / h > ratio) h = w / ratio; else w = h * ratio;
+    var cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+    return [cx - w / 2, cy - h / 2, w, h];
+  }
+  document.querySelectorAll('button.map-tab').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('button.map-tab').forEach(function (o) { o.classList.toggle('active', o === b); });
+      var t = themes[b.dataset.theme];
+      curTheme = b.dataset.theme;
+      if (!t) {
+        focus = null; paint(null, 'dim'); svg.classList.remove('focused'); zoom(full); desc.textContent = desc.dataset.default;
+        regions.forEach(function (r) { r.classList.remove('dim'); }); return;
+      }
+      focus = {}; t.terms.forEach(function (i) { focus[i] = 1; });
+      centers.forEach(function (c) { focus[c] = 1; });
+      paint(focus, 'dim'); svg.classList.add('focused');
+      var rg = svg.querySelector('.ov-region[data-theme="' + b.dataset.theme + '"]');
+      zoom(rg ? fit(rg.getAttribute('data-box').split(' ').map(Number)) : bbox(focus));
+      regions.forEach(function (r) { r.classList.toggle('dim', r !== rg); });
+      desc.textContent = t.desc;
+    });
+  });
+  nodes.forEach(function (n) {
+    n.addEventListener('mouseenter', function () {
+      var id = n.getAttribute('data-id'), set = {}; set[id] = 1;
+      (nb[id] || []).forEach(function (j) { set[j] = 1; });
+      svg.classList.add('hovering'); paint(set, 'hdim');
+    });
+    n.addEventListener('mouseleave', function () { svg.classList.remove('hovering'); paint(null, 'hdim'); });
+  });
+})();
+</script>"""
+
+
 def concept_maps_html(data):
-    path = os.path.join(config.DATA, "concept_maps.json")
-    if not os.path.exists(path):
+    """맨 위 전체 개념 지도 + 주제 버튼(누르면 그 주제만 강조하고 확대)."""
+    tpath = os.path.join(config.DATA, "concept_maps.json")
+    lpath = os.path.join(config.DATA, "overview_layout.json")
+    if not (os.path.exists(tpath) and os.path.exists(lpath)):
         return ""
-    maps = json.load(open(path, encoding="utf-8"))["maps"]
+    themes = json.load(open(tpath, encoding="utf-8"))["themes"]
+    layout = json.load(open(lpath, encoding="utf-8"))
     edges = [tuple(x) for x in data.get("relations") or []]
+    deg = {}
+    for a, _, b in edges:
+        deg[a] = deg.get(a, 0) + 1
+        deg[b] = deg.get(b, 0) + 1
+    cat_color = {c["code"]: c["color"] for c in data["categories"]}
+    cat_label = {c["code"]: c["label"] for c in data["categories"]}
     color = lambda i: REL_CTX["color"].get(i, "var(--navy)")
-    tabs, panels = [], []
-    for i, m in enumerate(maps):
-        act = " active" if i == 0 else ""
-        tabs.append(f'<button class="filter-chip map-tab{act}" data-map="{m["id"]}">{html.escape(m["title"])}</button>')
-        panels.append(
-            f'<div class="map-panel" data-map="{m["id"]}"{"" if i == 0 else " hidden"}>'
-            f'<p class="map-desc">{html.escape(m.get("desc", ""))}</p>'
-            f'<div class="rel-scroll">{relmap.concept_map_svg(m, REL_CTX["nodes"], edges, color)}</div></div>')
-    tabbar = f'<div class="map-tabs">{"".join(tabs)}</div>' if len(maps) > 1 else ""
+    svg = relmap.overview_svg(layout, REL_CTX["nodes"], edges, color, deg)
+    tabs = ['<button class="filter-chip map-tab active" data-theme="">전체</button>'] + [
+        f'<button class="filter-chip map-tab" data-theme="{t["id"]}">{html.escape(t["title"])}</button>'
+        for t in themes]
+    tdata = {t["id"]: {"terms": t["terms"], "desc": t.get("desc", "")} for t in themes}
+    n_nodes = sum(1 for k in layout["nodes"] if k in REL_CTX["nodes"])
+    intro = (f"핵심 용어 {n_nodes}개를 한 장에 펼친 지도입니다. 가운데에 AI 위험과 AI 안전이 있고, "
+             "왼쪽은 위험이 생기는 곳(모델 행동·오용·사고), 오른쪽은 위험을 다루는 방법(위험 관리·평가·신뢰할 수 있는 AI), "
+             "위쪽은 그 바탕인 기술과 역량입니다. 주제를 고르면 그 부분이 확대되고 강조됩니다.")
     return (f'<section class="concept-maps" aria-label="개념 지도">'
-            f'<div class="map-head"><h2>개념 지도</h2>{tabbar}</div>{"".join(panels)}'
-            f'<div class="rel-legend-wrap">{relmap.LEGEND_SVG}<span class="map-hint">상자를 누르면 그 용어 카드로 갑니다.</span></div>'
+            f'<div class="map-head"><h2>개념 지도</h2><div class="map-tabs">{"".join(tabs)}</div></div>'
+            f'<p class="map-desc" id="mapDesc" data-default="{html.escape(intro)}">{html.escape(intro)}</p>'
+            f'<div class="rel-scroll ov-wrap">{svg}</div>'
+            f'<div class="rel-legend-wrap">{relmap.LEGEND_SVG}<span class="map-hint">용어에 마우스를 올리면 연결이 보이고, 누르면 카드로 갑니다.</span></div>'
+            f'<script id="mapThemes" type="application/json">{ui.safe_json(tdata)}</script>'
             f'</section>')
 
 
@@ -1041,12 +1174,6 @@ def index_page(data):
     var a = ev.target.closest && ev.target.closest('a[href^="http"]');
     if (a) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
   }, true);
-  document.querySelectorAll('button.map-tab').forEach(function (b) {
-    b.addEventListener('click', function () {
-      document.querySelectorAll('button.map-tab').forEach(function (o) { o.classList.toggle('active', o === b); });
-      document.querySelectorAll('.map-panel').forEach(function (pn) { pn.hidden = pn.dataset.map !== b.dataset.map; });
-    });
-  });
   window.addEventListener('hashchange', onHash);
   if ('scrollRestoration' in history && location.hash) history.scrollRestoration = 'manual';
   apply();
@@ -1055,6 +1182,7 @@ def index_page(data):
   window.addEventListener('load', function () { setTimeout(onHash, 0); });
 })();
 </script>"""
+    js = js + OVERVIEW_JS
     js = (js.replace("__CH__", ui.safe_json(ch_meta))
             .replace("__CAT__", ui.safe_json(cat_label))
             .replace("__LEGACY__", ui.safe_json(legacy)))
@@ -1109,8 +1237,11 @@ def about_page(data):
 <h2>개념 지도와 용어 관계</h2>
 <p>용어 사이의 관계를 네 가지로 나눠 기록했습니다 — <b>상위·하위</b>(포함: AI 사고 ⊃ 중대 AI 사고),
 <b>이어짐</b>(인과·단계: AI 위험원 → AI 사고), <b>먼저 알 개념</b>(정의에 다른 개념이 필요한 경우:
-기만·오정렬 → 계략적 행동), <b>혼동 주의</b>(허위 정보 ↔ 오정보). 맨 위 개념 지도는 이 관계로
-주제별 핵심 용어를 한 장씩 배치한 것이고, 카드마다 있는 <b>용어 관계</b> 그림은 그 용어 주변만 보여 줍니다.
+기만·오정렬 → 계략적 행동), <b>혼동 주의</b>(허위 정보 ↔ 오정보). 맨 위 개념 지도는 핵심 용어를
+한 장에 펼친 것입니다. 가운데에 AI 위험과 AI 안전을 두고, 왼쪽에는 위험이 생기는 곳(모델 행동·오용·사고),
+오른쪽에는 위험을 다루는 방법(위험 관리·평가·신뢰할 수 있는 AI), 위쪽에는 그 바탕인 기술과 역량을 놓았습니다.
+가운데에서 뻗는 굵은 가지는 지도의 뼈대일 뿐 관계 데이터가 아닙니다. 카드마다 있는 <b>용어 관계</b> 그림은
+그 용어 주변만 보여 줍니다.
 관계는 현재 {data.get('meta', {}).get('counts', {}).get('relations', 0)}개입니다.</p>
 
 <h2>근거 자료와 다른 사이트</h2>
