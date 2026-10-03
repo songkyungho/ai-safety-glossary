@@ -37,7 +37,7 @@ START = -58                       # 01장이 시작하는 각도(12시 기준 �
 HUB = {"01": "foundation-model", "02": "capability", "03": "risk-management", "04": "misalignment",
        "05": "misuse", "07": "ai-incident", "08": "evaluation", "09": "safeguard", "10": "trustworthy-ai"}
 R0 = 150                          # 대표 용어 반지름
-KX, KY = 1.3, 0.9                 # 가로로 조금 넓은 타원
+KX, KY = 1.55, 0.82                # 가로로 긴 타원 — 지도가 화면처럼 가로로 퍼지게
 GAP_DEG = 2.5                     # 장 사이 여백(도)
 
 
@@ -101,7 +101,7 @@ def main():
             root = max(sorted(rest), key=lambda v: len(adj.get(v, set()) & mem))
             seen.add(root); q.append(root)
         # 블록: 한 줄 최대 폭 안에서 왼쪽→오른쪽으로 채운다
-        maxw = 250 if len(order) <= 10 else 330 if len(order) <= 15 else 380
+        maxw = 320 if len(order) <= 10 else 400 if len(order) <= 15 else 450   # 섬을 가로로 넓게
         rows, cur, cw = [], [], 0
         for v in order:
             if cur and cw + w[v] + GAP_X > maxw:
@@ -114,9 +114,9 @@ def main():
 
     # 블록 중심을 가운데 둘레에 하나씩 — 겹치지 않는 가장 안쪽 자리 (장 각도는 용어 수에 비례)
     cen, placed = {}, []
-    core = (CX - 175, CY - 34, CX + 175, CY + 34)        # 가운데 두 용어 자리
+    core = (CX - 185, CY - 30, CX + 185, CY + 30)        # 가운데 두 용어 자리
     def hits(x, y, bw, bh):
-        r0 = (x - bw / 2 - 16, y - bh / 2 - 14, x + bw / 2 + 16, y + bh / 2 + 14)
+        r0 = (x - bw / 2 - 22, y - bh / 2 - 16, x + bw / 2 + 22, y + bh / 2 + 16)   # 섬 배경 여백 포함
         for q in [core] + placed:
             if not (r0[2] < q[0] or r0[0] > q[2] or r0[3] < q[1] or r0[1] > q[3]):
                 return True

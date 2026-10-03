@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI 안전 용어집",
-    "built_at": "2026-10-03T16:27:01+09:00",
+    "built_at": "2026-10-03T16:40:55+09:00",
     "method": "glossary_merged.json + data/cards 편집 계층",
     "counts": {
       "entries": 170,
@@ -5103,7 +5103,7 @@
         },
         {
           "id": "capability",
-          "head": "역량"
+          "head": "AI 역량"
         },
         {
           "id": "goal-misspecification",
@@ -5708,10 +5708,14 @@
     },
     {
       "id": "capability",
-      "head": "역량",
-      "en": "capability",
+      "head": "AI 역량",
+      "en": "AI capability",
       "kit_id": "capability",
       "alternatives": [
+        {
+          "text": "역량",
+          "source": "kit"
+        },
         {
           "text": "능력",
           "source": "editor"
@@ -6008,7 +6012,7 @@
       "related": [
         {
           "id": "capability",
-          "head": "역량"
+          "head": "AI 역량"
         },
         {
           "id": "benchmark-s",
@@ -6123,7 +6127,7 @@
         },
         {
           "id": "capability",
-          "head": "역량"
+          "head": "AI 역량"
         },
         {
           "id": "pre-deployment-evaluation",
@@ -21977,7 +21981,7 @@
       "related": [
         {
           "id": "capability",
-          "head": "역량"
+          "head": "AI 역량"
         },
         {
           "id": "risk-thresholds",

@@ -1,7 +1,7 @@
 {
  "_note": "scripts/layout_overview.py 산출(장별 방사형). 손으로 고친 노드는 pinned에 넣으면 다시 계산해도 유지된다.",
- "w": 1627,
- "h": 1170,
+ "w": 1801,
+ "h": 924,
  "center": [
   "ai-risk",
   "ai-safety"
@@ -68,68 +68,68 @@
   {
    "theme": "01",
    "title": "01. 기반 기술·모델 공개",
-   "x": 587,
-   "y": 274
+   "x": 716,
+   "y": 239
   },
   {
    "theme": "02",
    "title": "02. 에이전트·프론티어 역량",
-   "x": 693,
+   "x": 750,
    "y": 31
   },
   {
    "theme": "08",
    "title": "08. 평가·시험",
-   "x": 1023,
-   "y": 70
+   "x": 1140,
+   "y": 131
   },
   {
    "theme": "09",
    "title": "09. 정렬·안전장치·감독",
-   "x": 1079,
-   "y": 249
+   "x": 1526,
+   "y": 127
   },
   {
    "theme": "10",
    "title": "10. 원칙·책임",
-   "x": 1384,
-   "y": 365
+   "x": 1291,
+   "y": 345
   },
   {
    "theme": "11",
    "title": "11. 법·규제·표준",
-   "x": 1040,
-   "y": 773
+   "x": 1300,
+   "y": 686
   },
   {
    "theme": "07",
    "title": "07. 사고·보고 및 모니터링",
-   "x": 975,
-   "y": 978
+   "x": 1185,
+   "y": 893
   },
   {
    "theme": "06",
    "title": "06. 정보생태계·사회적 피해",
-   "x": 661,
-   "y": 1139
+   "x": 837,
+   "y": 789
   },
   {
    "theme": "05",
    "title": "05. 오용·보안 위협",
-   "x": 616,
-   "y": 811
+   "x": 423,
+   "y": 778
   },
   {
    "theme": "04",
    "title": "04. 모델 행동 위험",
-   "x": 276,
-   "y": 659
+   "x": 346,
+   "y": 561
   },
   {
    "theme": "03",
    "title": "03. 위험 개념과 위험관리",
-   "x": 239,
-   "y": 244
+   "x": 284,
+   "y": 183
   }
  ],
  "sectors": {
@@ -181,854 +181,854 @@
  "pinned": [],
  "nodes": {
   "abuse": [
-   546,
-   592
+   317,
+   597
   ],
   "adversarial-testing": [
-   971,
-   213
+   1165,
+   236
   ],
   "adversarial-training": [
-   1164,
-   468
+   1560,
+   308
   ],
   "age-verification": [
-   667,
-   1034
+   962,
+   684
   ],
   "agentic-ai": [
-   736,
+   793,
    174
   ],
   "ai-accountability": [
-   1314,
-   546
+   1138,
+   450
   ],
   "ai-agent": [
-   715,
-   212
+   691,
+   174
   ],
   "ai-alignment": [
-   1188,
-   354
+   1427,
+   194
   ],
   "ai-assurance": [
-   1477,
-   470
+   1332,
+   412
   ],
   "ai-audit": [
-   1059,
-   213
+   1076,
+   236
   ],
   "ai-bias": [
-   582,
-   920
+   684,
+   608
   ],
   "ai-disaster": [
-   911,
-   949
+   1245,
+   826
   ],
   "ai-ethics": [
-   1386,
-   470
+   1241,
+   412
   ],
   "ai-generated-fake-content": [
-   576,
-   958
+   955,
+   608
   ],
   "ai-governance": [
-   1290,
-   432
+   1434,
+   412
   ],
   "ai-guardrails": [
-   977,
-   430
+   1661,
+   308
   ],
   "ai-harm": [
-   338,
-   311
+   239,
+   250
   ],
   "ai-hazard": [
-   245,
-   349
+   314,
+   288
   ],
   "ai-incident": [
-   921,
-   797
+   1087,
+   712
   ],
   "ai-literacy": [
-   1392,
-   432
+   1163,
+   374
   ],
   "ai-sycophancy": [
-   377,
-   592
+   490,
+   494
   ],
   "ai-watermarking": [
-   1017,
-   392
+   1627,
+   270
   ],
   "algorithmic-transparency": [
-   1440,
-   508
+   1427,
+   450
   ],
   "artificial-general-intellegence-agi": [
-   618,
+   612,
    98
   ],
   "artificial-intelligence": [
-   1168,
-   630
+   1354,
+   581
   ],
   "attack-success-rate-asr": [
-   1079,
-   137
+   1110,
+   160
   ],
   "automated-decision-making-adm": [
-   533,
-   1072
+   822,
+   722
   ],
   "automation-bias": [
-   729,
-   920
+   773,
+   608
   ],
   "autonomous-planning": [
-   671,
-   250
-  ],
-  "autonomous-weapons": [
-   481,
-   744
-  ],
-  "autonomy": [
-   802,
+   680,
    212
   ],
+  "autonomous-weapons": [
+   385,
+   711
+  ],
+  "autonomy": [
+   604,
+   174
+  ],
   "benchmark-s": [
-   901,
-   137
+   1282,
+   198
   ],
   "binding-force": [
-   1182,
-   668
+   1360,
+   619
   ],
   "calibration": [
-   1158,
-   137
+   1189,
+   160
   ],
   "capability": [
    598,
-   250
+   212
   ],
   "capability-evaluation": [
-   986,
-   137
+   1017,
+   160
   ],
   "catastrophic-risk": [
-   340,
-   349
+   219,
+   288
   ],
   "cbrn": [
-   502,
-   668
+   534,
+   635
   ],
   "censorship": [
-   618,
-   1072
+   907,
+   722
   ],
   "certification": [
-   1001,
-   592
+   1226,
+   543
   ],
   "chain-of-thought-cot": [
-   508,
-   379
+   587,
+   306
   ],
   "child-and-youth-protection": [
-   775,
-   1034
+   702,
+   722
   ],
   "child-sexual-abuse-material-csam": [
-   746,
-   996
+   723,
+   684
   ],
   "closed-model": [
-   474,
-   417
+   602,
+   344
   ],
   "compliance": [
-   911,
-   706
+   1439,
+   619
   ],
   "compute": [
-   707,
-   341
+   737,
+   268
   ],
   "compute-threshold": [
-   1004,
-   706
+   1133,
+   657
   ],
   "conformity-assessment": [
-   922,
-   592
+   1147,
+   543
   ],
   "copyright": [
-   1089,
-   706
+   1218,
+   657
   ],
   "cyber-defense": [
-   1029,
-   316
+   1515,
+   194
   ],
   "cyber-threat": [
-   724,
-   592
+   496,
+   597
   ],
   "cyberattack": [
-   589,
-   630
+   289,
+   635
   ],
   "cybersecurity": [
-   572,
-   744
+   477,
+   711
   ],
   "data-protection": [
-   996,
-   668
+   1174,
+   619
   ],
   "data-provenance": [
-   660,
-   379
+   739,
+   306
   ],
   "deception": [
-   375,
-   516
+   312,
+   456
   ],
   "deceptive-alignment": [
-   197,
-   516
+   474,
+   418
   ],
   "deepfake": [
-   778,
-   958
+   795,
+   646
   ],
   "discrimination": [
-   651,
-   920
+   852,
+   608
   ],
   "disinformation": [
-   693,
-   958
+   710,
+   646
   ],
   "distillation": [
-   566,
-   341
+   595,
+   268
   ],
   "dual-use-risk": [
-   744,
-   668
+   392,
+   673
   ],
   "dual-use-science": [
-   525,
-   706
+   507,
+   673
   ],
   "emotional-dependence": [
-   697,
-   1072
+   986,
+   722
   ],
   "evaluation": [
-   892,
-   213
+   1008,
+   236
   ],
   "explainable-ai-xai": [
-   990,
-   354
+   1538,
+   232
   ],
   "export-control": [
-   1168,
-   706
+   1297,
+   657
   ],
   "failure-mode": [
-   144,
-   273
-  ],
-  "fairness": [
-   1465,
-   546
-  ],
-  "fine-tuning": [
-   637,
-   341
-  ],
-  "foundation-model": [
-   484,
-   455
-  ],
-  "freedom-of-expression": [
-   796,
-   1072
-  ],
-  "frontier-ai": [
-   766,
+   322,
    250
   ],
+  "fairness": [
+   1218,
+   450
+  ],
+  "fine-tuning": [
+   666,
+   268
+  ],
+  "foundation-model": [
+   613,
+   382
+  ],
+  "freedom-of-expression": [
+   708,
+   760
+  ],
+  "frontier-ai": [
+   775,
+   212
+  ],
   "general-purpose-ai-gpai": [
-   901,
-   668
+   1435,
+   581
   ],
   "generalization": [
-   348,
-   630
+   418,
+   532
   ],
   "generative-ai": [
-   707,
-   455
+   835,
+   382
   ],
   "goal-misspecification": [
-   296,
-   516
+   233,
+   456
   ],
   "hallucination": [
-   197,
-   630
+   267,
+   532
   ],
   "harmful-content": [
-   641,
-   996
+   957,
+   646
   ],
   "harmonised-standards": [
-   1073,
-   592
+   1299,
+   543
   ],
   "high-impact-ai": [
-   986,
-   630
+   1172,
+   581
   ],
   "high-risk-ai": [
-   1162,
-   592
+   1387,
+   543
   ],
   "human-in-the-loop": [
-   1171,
-   430
+   1516,
+   270
   ],
   "human-oversight": [
-   1071,
-   468
+   1467,
+   308
   ],
   "human-uplift": [
-   630,
-   668
+   278,
+   673
   ],
   "incident-monitoring": [
-   1020,
-   835
+   1132,
+   750
   ],
   "incident-report": [
-   1039,
-   911
+   1146,
+   826
   ],
   "incident-reporting": [
-   1014,
-   797
+   1269,
+   712
   ],
   "inference": [
-   581,
-   379
+   660,
+   306
   ],
   "insider-threats": [
-   672,
-   744
+   576,
+   711
   ],
   "institutional-transparency": [
-   1323,
-   508
+   1309,
+   450
   ],
   "interoperability": [
-   1079,
-   630
+   1265,
+   581
   ],
   "interpretability": [
-   1099,
-   354
+   1647,
+   232
   ],
   "jailbreak": [
-   612,
-   706
+   594,
+   673
   ],
   "large-language-model-llm": [
-   604,
-   455
+   732,
+   382
   ],
   "lifecycle": [
-   239,
-   273
+   416,
+   250
   ],
   "llm-as-a-judge": [
-   1141,
-   213
+   1257,
+   236
   ],
   "loss-of-control": [
-   361,
-   478
+   381,
+   418
   ],
   "machine-unlearning": [
-   1128,
-   316
+   1615,
+   194
   ],
   "malfunctioning": [
-   909,
-   835
+   1171,
+   712
   ],
   "malicious-use": [
-   625,
-   592
+   396,
+   597
   ],
   "malware": [
-   757,
-   744
+   317,
+   749
   ],
   "marginal-risk": [
-   334,
-   273
+   284,
+   212
   ],
   "mental-health": [
-   576,
-   1110
+   801,
+   760
   ],
   "misalignment": [
-   182,
-   478
+   203,
+   418
   ],
   "misinformation": [
-   556,
-   996
+   872,
+   646
   ],
   "misuse": [
-   487,
-   592
+   259,
+   597
   ],
   "model-card": [
-   1487,
-   432
+   1258,
+   374
   ],
   "model-context-protocol-mcp": [
-   769,
+   826,
    136
   ],
   "model-weights": [
-   573,
-   417
+   701,
+   344
   ],
   "multi-agent-system-mas": [
-   611,
+   668,
    136
   ],
   "narrow-ai": [
-   711,
+   775,
    98
   ],
   "national-security": [
-   551,
-   782
+   394,
+   749
   ],
   "near-miss": [
-   921,
-   873
+   1121,
+   788
   ],
   "non-consensual-intimate-imagery-ncii": [
-   554,
-   1034
+   849,
+   684
   ],
   "open-weight-model": [
-   686,
-   417
+   815,
+   344
   ],
   "persuasion": [
-   622,
-   782
+   464,
+   749
   ],
   "physical-ai": [
-   757,
+   750,
    60
   ],
   "post-deployment-monitoring": [
-   915,
-   911
+   1227,
+   788
   ],
   "post-market-monitoring": [
-   1014,
-   949
+   1185,
+   864
   ],
   "power-seeking-behaviour": [
-   193,
-   592
+   307,
+   494
   ],
   "pre-deployment-evaluation": [
-   1015,
-   175
+   1090,
+   198
   ],
   "privacy": [
-   1099,
-   668
+   1277,
+   619
   ],
   "privacy-breach": [
-   675,
-   1110
+   901,
+   760
   ],
   "prompt-injection": [
-   703,
-   706
+   282,
+   711
   ],
   "provenance-metadata": [
-   1130,
-   392
+   1417,
+   232
   ],
   "recursive-self-improvement": [
-   648,
-   60
+   878,
+   98
   ],
   "red-teaming": [
-   922,
-   175
+   997,
+   198
   ],
   "reliability": [
-   1394,
-   546
+   1429,
+   488
   ],
   "responsible-ai": [
-   1294,
-   470
+   1149,
+   412
   ],
   "responsible-scaling-policy-rsp": [
-   1384,
-   394
+   1385,
+   374
   ],
   "reward-hacking": [
-   294,
-   592
+   408,
+   494
   ],
   "risk-assessment": [
-   239,
-   425
+   284,
+   364
   ],
   "risk-management": [
-   152,
-   425
+   197,
+   364
   ],
   "risk-mitigation": [
-   326,
-   425
+   371,
+   364
   ],
   "risk-thresholds": [
-   151,
-   311
+   408,
+   288
   ],
   "risk-tolerance": [
-   250,
-   311
+   151,
+   250
   ],
   "rl-from-human-feedback-rlhf": [
-   1029,
-   278
+   1476,
+   156
   ],
   "robustness": [
-   1487,
-   584
+   1358,
+   488
   ],
   "sabotage": [
-   274,
-   554
+   466,
+   456
   ],
   "safeguard": [
-   986,
-   468
+   1382,
+   308
   ],
   "safety-case": [
-   1023,
-   99
+   1262,
+   160
   ],
   "safety-evaluation": [
-   1116,
-   175
+   1191,
+   198
   ],
   "sandbagging": [
-   191,
-   554
+   383,
+   456
   ],
   "sandboxing": [
-   1070,
-   430
+   1415,
+   270
   ],
   "scheming": [
-   267,
-   478
+   288,
+   418
   ],
   "self-exfiltration": [
-   359,
-   554
+   205,
+   494
   ],
   "serious-incident": [
-   1016,
-   873
+   1251,
+   750
   ],
   "situational-awareness": [
-   269,
-   630
+   339,
+   532
   ],
   "sovereign-ai": [
-   990,
-   744
+   1379,
+   657
   ],
   "standardization": [
-   905,
-   630
+   1468,
+   543
   ],
   "superintelligence": [
-   786,
+   701,
    98
   ],
   "supply-chain": [
-   687,
-   782
+   529,
+   749
   ],
   "surveillance": [
-   760,
-   1110
+   986,
+   760
   ],
   "synthetic-data": [
-   587,
-   303
+   816,
+   268
   ],
   "systemic-risk": [
-   144,
-   349
+   404,
+   326
   ],
   "systemic-risk-assessment": [
-   260,
-   387
+   179,
+   326
   ],
   "task-time-horizon": [
-   606,
+   884,
    212
   ],
   "threat": [
-   359,
-   387
+   140,
+   288
   ],
   "threat-modelling": [
-   140,
-   387
+   299,
+   326
   ],
   "tool-use": [
-   642,
+   888,
    174
   ],
   "training-data": [
-   487,
-   341
+   838,
+   306
   ],
   "transparency": [
-   1417,
-   584
+   1287,
+   488
   ],
   "transparency-obligation": [
-   1079,
-   744
+   1468,
+   657
   ],
   "trustworthy-ai": [
-   1314,
-   584
+   1184,
+   488
   ],
   "vulnerability": [
-   504,
-   630
+   581,
+   597
   ],
   "vulnerability-detection": [
-   1169,
-   278
+   1616,
+   156
   ],
   "zero-day-vulnerability": [
-   701,
-   630
+   400,
+   635
   ],
   "ai-risk": [
-   644,
-   523
+   791,
+   448
   ],
   "ai-safety": [
-   834,
-   523
+   981,
+   448
   ]
  },
  "home": {
-  "model-weights": "01",
-  "compute": "01",
-  "training-data": "01",
-  "closed-model": "01",
-  "data-provenance": "01",
-  "inference": "01",
-  "generative-ai": "01",
-  "large-language-model-llm": "01",
-  "open-weight-model": "01",
-  "synthetic-data": "01",
   "foundation-model": "01",
-  "chain-of-thought-cot": "01",
   "fine-tuning": "01",
   "distillation": "01",
-  "recursive-self-improvement": "02",
-  "artificial-general-intellegence-agi": "02",
-  "capability": "02",
-  "autonomy": "02",
-  "multi-agent-system-mas": "02",
+  "closed-model": "01",
+  "model-weights": "01",
+  "chain-of-thought-cot": "01",
+  "generative-ai": "01",
+  "open-weight-model": "01",
+  "compute": "01",
+  "data-provenance": "01",
+  "synthetic-data": "01",
+  "inference": "01",
+  "training-data": "01",
+  "large-language-model-llm": "01",
   "autonomous-planning": "02",
-  "model-context-protocol-mcp": "02",
-  "physical-ai": "02",
-  "superintelligence": "02",
-  "tool-use": "02",
-  "frontier-ai": "02",
-  "ai-agent": "02",
+  "capability": "02",
+  "multi-agent-system-mas": "02",
   "narrow-ai": "02",
+  "tool-use": "02",
+  "physical-ai": "02",
+  "artificial-general-intellegence-agi": "02",
+  "superintelligence": "02",
+  "model-context-protocol-mcp": "02",
+  "ai-agent": "02",
+  "recursive-self-improvement": "02",
   "task-time-horizon": "02",
+  "autonomy": "02",
   "agentic-ai": "02",
+  "frontier-ai": "02",
   "llm-as-a-judge": "08",
   "benchmark-s": "08",
-  "safety-case": "08",
+  "ai-audit": "08",
+  "calibration": "08",
+  "red-teaming": "08",
   "attack-success-rate-asr": "08",
   "adversarial-testing": "08",
-  "red-teaming": "08",
-  "evaluation": "08",
-  "calibration": "08",
-  "ai-audit": "08",
+  "safety-case": "08",
   "pre-deployment-evaluation": "08",
   "capability-evaluation": "08",
+  "evaluation": "08",
   "safety-evaluation": "08",
+  "provenance-metadata": "09",
+  "ai-guardrails": "09",
+  "machine-unlearning": "09",
   "safeguard": "09",
   "sandboxing": "09",
-  "rl-from-human-feedback-rlhf": "09",
-  "ai-alignment": "09",
-  "adversarial-training": "09",
-  "vulnerability-detection": "09",
-  "human-oversight": "09",
-  "ai-watermarking": "09",
-  "human-in-the-loop": "09",
-  "interpretability": "09",
   "cyber-defense": "09",
-  "ai-guardrails": "09",
+  "interpretability": "09",
+  "rl-from-human-feedback-rlhf": "09",
+  "ai-watermarking": "09",
+  "adversarial-training": "09",
   "explainable-ai-xai": "09",
-  "machine-unlearning": "09",
-  "provenance-metadata": "09",
-  "institutional-transparency": "10",
-  "trustworthy-ai": "10",
-  "ai-ethics": "10",
-  "transparency": "10",
-  "ai-assurance": "10",
-  "ai-accountability": "10",
-  "algorithmic-transparency": "10",
-  "responsible-scaling-policy-rsp": "10",
-  "ai-governance": "10",
+  "human-oversight": "09",
+  "human-in-the-loop": "09",
+  "vulnerability-detection": "09",
+  "ai-alignment": "09",
   "reliability": "10",
-  "fairness": "10",
-  "model-card": "10",
-  "robustness": "10",
-  "ai-literacy": "10",
+  "institutional-transparency": "10",
+  "algorithmic-transparency": "10",
   "responsible-ai": "10",
-  "artificial-intelligence": "11",
-  "sovereign-ai": "11",
-  "certification": "11",
+  "transparency": "10",
+  "model-card": "10",
+  "ai-governance": "10",
+  "responsible-scaling-policy-rsp": "10",
+  "ai-literacy": "10",
+  "robustness": "10",
+  "ai-accountability": "10",
+  "ai-ethics": "10",
+  "trustworthy-ai": "10",
+  "fairness": "10",
+  "ai-assurance": "10",
   "binding-force": "11",
-  "conformity-assessment": "11",
-  "compute-threshold": "11",
-  "privacy": "11",
-  "standardization": "11",
-  "transparency-obligation": "11",
-  "interoperability": "11",
-  "data-protection": "11",
-  "high-impact-ai": "11",
-  "compliance": "11",
-  "general-purpose-ai-gpai": "11",
   "copyright": "11",
+  "high-impact-ai": "11",
+  "privacy": "11",
+  "certification": "11",
+  "conformity-assessment": "11",
+  "transparency-obligation": "11",
+  "data-protection": "11",
   "harmonised-standards": "11",
-  "export-control": "11",
+  "compliance": "11",
+  "artificial-intelligence": "11",
   "high-risk-ai": "11",
-  "incident-reporting": "07",
-  "malfunctioning": "07",
+  "sovereign-ai": "11",
+  "interoperability": "11",
+  "export-control": "11",
+  "general-purpose-ai-gpai": "11",
+  "standardization": "11",
+  "compute-threshold": "11",
   "incident-monitoring": "07",
   "ai-disaster": "07",
-  "near-miss": "07",
-  "incident-report": "07",
   "post-market-monitoring": "07",
-  "ai-incident": "07",
   "post-deployment-monitoring": "07",
   "serious-incident": "07",
-  "age-verification": "06",
-  "disinformation": "06",
-  "harmful-content": "06",
-  "privacy-breach": "06",
-  "mental-health": "06",
-  "censorship": "06",
-  "discrimination": "06",
+  "malfunctioning": "07",
+  "incident-report": "07",
+  "ai-incident": "07",
+  "near-miss": "07",
+  "incident-reporting": "07",
+  "automation-bias": "06",
   "freedom-of-expression": "06",
+  "child-sexual-abuse-material-csam": "06",
+  "misinformation": "06",
+  "disinformation": "06",
+  "mental-health": "06",
   "deepfake": "06",
   "child-and-youth-protection": "06",
   "emotional-dependence": "06",
   "automated-decision-making-adm": "06",
-  "ai-generated-fake-content": "06",
-  "ai-bias": "06",
+  "censorship": "06",
   "surveillance": "06",
-  "misinformation": "06",
-  "child-sexual-abuse-material-csam": "06",
+  "privacy-breach": "06",
+  "age-verification": "06",
+  "discrimination": "06",
+  "ai-generated-fake-content": "06",
+  "harmful-content": "06",
+  "ai-bias": "06",
   "non-consensual-intimate-imagery-ncii": "06",
-  "automation-bias": "06",
-  "vulnerability": "05",
-  "supply-chain": "05",
-  "malware": "05",
-  "autonomous-weapons": "05",
-  "misuse": "05",
+  "prompt-injection": "05",
+  "human-uplift": "05",
   "national-security": "05",
   "dual-use-science": "05",
-  "cybersecurity": "05",
+  "supply-chain": "05",
+  "persuasion": "05",
   "dual-use-risk": "05",
-  "human-uplift": "05",
+  "cybersecurity": "05",
   "insider-threats": "05",
-  "malicious-use": "05",
-  "jailbreak": "05",
+  "misuse": "05",
   "abuse": "05",
-  "prompt-injection": "05",
-  "cbrn": "05",
+  "vulnerability": "05",
   "zero-day-vulnerability": "05",
+  "jailbreak": "05",
+  "malware": "05",
+  "malicious-use": "05",
+  "autonomous-weapons": "05",
   "cyber-threat": "05",
   "cyberattack": "05",
-  "persuasion": "05",
-  "ai-sycophancy": "04",
-  "hallucination": "04",
-  "reward-hacking": "04",
-  "sabotage": "04",
-  "sandbagging": "04",
-  "scheming": "04",
+  "cbrn": "05",
+  "deceptive-alignment": "04",
   "loss-of-control": "04",
   "self-exfiltration": "04",
-  "situational-awareness": "04",
-  "deceptive-alignment": "04",
-  "generalization": "04",
-  "deception": "04",
   "power-seeking-behaviour": "04",
-  "goal-misspecification": "04",
+  "reward-hacking": "04",
   "misalignment": "04",
-  "risk-tolerance": "03",
-  "lifecycle": "03",
-  "risk-thresholds": "03",
+  "sandbagging": "04",
+  "deception": "04",
+  "generalization": "04",
+  "goal-misspecification": "04",
+  "ai-sycophancy": "04",
+  "sabotage": "04",
+  "hallucination": "04",
+  "scheming": "04",
+  "situational-awareness": "04",
   "risk-assessment": "03",
   "systemic-risk": "03",
-  "threat": "03",
-  "ai-harm": "03",
-  "threat-modelling": "03",
-  "marginal-risk": "03",
+  "ai-hazard": "03",
   "catastrophic-risk": "03",
+  "risk-thresholds": "03",
+  "ai-harm": "03",
+  "lifecycle": "03",
+  "systemic-risk-assessment": "03",
+  "threat": "03",
   "risk-management": "03",
   "risk-mitigation": "03",
+  "threat-modelling": "03",
   "failure-mode": "03",
-  "ai-hazard": "03",
-  "systemic-risk-assessment": "03"
+  "risk-tolerance": "03",
+  "marginal-risk": "03"
  }
 }

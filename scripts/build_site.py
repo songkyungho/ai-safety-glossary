@@ -540,7 +540,8 @@ svg.ov-map .rel-e.x-reg, svg.ov-map .rel-e.k-contrasts { opacity: 0; }   /* ê¸°ë
 svg.ov-map.focused .rel-e:not(.dim), svg.ov-map.hovering .rel-e:not(.hdim) { opacity: 1; }
 svg.ov-map .ov-region { transition: opacity .25s; }
 svg.ov-map .ov-region.dim { opacity: .35; }
-svg.ov-map .ov-spine, svg.ov-map .ov-label { transition: opacity .25s; }
+svg.ov-map .ov-spine, svg.ov-map .ov-label, svg.ov-map .ov-island { transition: opacity .25s; }
+svg.ov-map .ov-island.dim { opacity: .35; }
 svg.ov-map .ov-label:hover { text-decoration: underline; }
 svg.ov-map .ov-label.dim { opacity: .3; }
 svg.ov-map.hovering .hdim { opacity: .12; }
@@ -972,6 +973,7 @@ OVERVIEW_JS = """<script>
   var regions = Array.prototype.slice.call(svg.querySelectorAll('.ov-region'));
   var spines = Array.prototype.slice.call(svg.querySelectorAll('.ov-spine'));
   var labels = Array.prototype.slice.call(svg.querySelectorAll('.ov-label'));
+  var islands = Array.prototype.slice.call(svg.querySelectorAll('.ov-island'));
   var centers = Array.prototype.slice.call(svg.querySelectorAll('.ov-center')).map(function (n) { return n.getAttribute('data-id'); });
   labels.forEach(function (lb) {
     lb.addEventListener('click', function () {
@@ -1003,6 +1005,9 @@ OVERVIEW_JS = """<script>
     });
     labels.forEach(function (lb) {
       if (cls === 'dim') lb.classList.toggle(cls, !!set && lb.getAttribute('data-theme') !== curTheme);
+    });
+    islands.forEach(function (il) {
+      if (cls === 'dim') il.classList.toggle(cls, !!set && il.getAttribute('data-theme') !== curTheme);
     });
     hulls.forEach(function (h) {
       var ids = h.getAttribute('data-ids').split(' ');

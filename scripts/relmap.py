@@ -237,10 +237,11 @@ def overview_svg(layout, nodes, edges, color_of, degree):
     for c in center:
         home[c] = "center"
     # 보이는 범위는 내용(용어·주제 이름)에 맞춰 잘라 빈 여백을 없앤다
-    xs = [x for x, _ in pos.values()] + [lb["x"] for lb in layout.get("labels") or []]
-    ys = [y for _, y in pos.values()] + [lb["y"] for lb in layout.get("labels") or []]
-    vx0, vx1 = max(0, min(xs) - 90), min(W, max(xs) + 90)
-    vy0, vy1 = max(0, min(ys) - 26), min(H, max(ys) + 26)
+    xs0 = [x - box_w(nodes[k]["head"]) / 2 for k, (x, _) in pos.items()]
+    xs1 = [x + box_w(nodes[k]["head"]) / 2 for k, (x, _) in pos.items()]
+    ys = [y for _, y in pos.values()]
+    vx0, vx1 = max(0, min(xs0) - 24), min(W, max(xs1) + 24)
+    vy0, vy1 = max(0, min(ys) - 34), min(H, max(ys) + 34)
     vb = f"{vx0:.0f} {vy0:.0f} {vx1 - vx0:.0f} {vy1 - vy0:.0f}"
     out = [f'<svg id="ovMap" class="ov-map" viewBox="{vb}" role="img" aria-label="AI 안전 개념 지도" '
            f'data-full="{vb}">', defs(p)]
@@ -252,6 +253,19 @@ def overview_svg(layout, nodes, edges, color_of, degree):
             col = color_of(b) if b not in center else "var(--navy)"
             out.append(f'<path class="ov-spine" data-a="{a}" data-b="{b}" d="{d}" '
                        f'style="fill:none;stroke:{col};stroke-width:16;stroke-linecap:round;stroke-opacity:.09"/>')
+    # 장 섬 배경 — 장 버튼과 같은 색을 연하게 (장 이름은 버튼이 대신한다)
+    for ch in sorted({h for h in home.values() if h != "center"}):
+        mem = [i for i in pos if home.get(i) == ch]
+        if not mem:
+            continue
+        x0 = min(pos[i][0] - box_w(nodes[i]["head"]) / 2 for i in mem) - 14
+        x1 = max(pos[i][0] + box_w(nodes[i]["head"]) / 2 for i in mem) + 14
+        y0 = min(pos[i][1] for i in mem) - BOX_H / 2 - 11
+        y1 = max(pos[i][1] for i in mem) + BOX_H / 2 + 11
+        col = color_of(mem[0])
+        out.append(f'<rect class="ov-island" data-theme="{ch}" x="{x0:.1f}" y="{y0:.1f}" width="{x1 - x0:.1f}" '
+                   f'height="{y1 - y0:.1f}" rx="18" style="fill:color-mix(in srgb, {col} 9%, var(--surface-1));'
+                   f'stroke:color-mix(in srgb, {col} 28%, transparent);stroke-width:1"/>')
     kids = {}
     for a, k, b in edges:
         if k == "broader" and a in pos and b in pos and home.get(a) == home.get(b):
@@ -296,13 +310,6 @@ def overview_svg(layout, nodes, edges, color_of, degree):
     for c in center:
         if c in pos:
             out.append(big_node_svg(nodes[c], pos[c][0], pos[c][1], color_of(c)))
-    for lb in layout.get("labels") or []:
-        tw = text_w(lb["title"], 12) + 20
-        out.append(f'<g class="ov-label" data-theme="{lb["theme"]}" style="cursor:pointer">'
-                   f'<rect x="{lb["x"] - tw / 2:.1f}" y="{lb["y"] - 11}" width="{tw:.1f}" height="22" rx="11" '
-                   f'style="fill:var(--surface-1);stroke:var(--navy);stroke-width:1;stroke-opacity:.35"/>'
-                   f'<text x="{lb["x"]}" y="{lb["y"] + 4}" text-anchor="middle" font-size="12" '
-                   f'style="fill:var(--navy);font-weight:700;letter-spacing:-.01em">{html.escape(lb["title"])}</text></g>')
     out.append("</svg>")
     return "".join(out)
 
