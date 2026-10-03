@@ -2,6 +2,7 @@
 """정적 사이트 생성 — docs/index.html · docs/about.html.
 
 지면 토큰·내비게이션은 ui_common(= AI 안전 라이브러리와 동일)에서 온다.
+입력은 apply_editorial.py가 만든 data/glossary_site.json (병합본 + 카드 편집 계층).
 카드·필터 칩 스타일도 라이브러리 EXTRA_CSS 어휘를 따른다.
 """
 from __future__ import annotations
@@ -278,6 +279,124 @@ details.legend td:first-child {
   .bucket-badge { margin-left: 0; }
   .term-examples li { flex-wrap: wrap; }
 }
+
+/* 2026-10 카드 개편 — 인쇄 카드 구성(장·표제어·구분·대체어·용어 설명·관련 용어·기관별·출처) */
+.bucket-head .ch-en { font-weight: 500; font-size: 0.8rem; margin-left: 4px; }
+.bucket-head .ch-cat {
+  float: right; font-size: 0.72rem; font-weight: 600; color: var(--chip);
+}
+.term-card { padding: 16px 18px 12px; scroll-margin-top: 52px; }
+.term-card.flash { animation: flash 1.6s ease-out; }
+@keyframes flash {
+  0% { box-shadow: 0 0 0 3px color-mix(in srgb, var(--chip) 45%, transparent); }
+  100% { box-shadow: 0 0 0 3px transparent; }
+}
+.card-top {
+  display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;
+  font-size: 0.75rem; color: var(--text-muted);
+}
+.card-top .term-n { color: var(--chip); font-weight: 700; text-decoration: none; min-width: 0; }
+.card-top .term-n:hover { text-decoration: underline; }
+.card-chapter { font-weight: 600; letter-spacing: -0.02em; }
+.card-chapter .ch-en { font-weight: 400; }
+h2.term-title {
+  margin: 4px 0 8px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline;
+  font-size: inherit; font-weight: inherit;
+}
+h2.term-title .term-name { font-size: 1.2rem; }
+dl.term-meta {
+  display: flex; flex-wrap: wrap; gap: 4px 22px; margin: 0 0 10px;
+  font-size: 0.88rem; line-height: 1.5;
+}
+dl.term-meta div { display: flex; gap: 8px; min-width: 0; }
+dl.term-meta dt {
+  font-size: 0.72rem; font-weight: 700; color: var(--chip); padding-top: 2px; flex: 0 0 auto;
+}
+dl.term-meta dd { margin: 0; color: var(--text-secondary); }
+h3.sec {
+  margin: 0 0 6px; font-size: 0.75rem; font-weight: 700; letter-spacing: -0.02em;
+  color: var(--chip);
+}
+.term-explain, .term-fw, .term-refs {
+  border-top: 1px solid var(--gridline); padding-top: 10px; margin-top: 10px;
+}
+.def-lead {
+  margin: 0 0 6px; font-size: 1rem; line-height: 1.6; font-weight: 650;
+  color: var(--ink); letter-spacing: -0.02em;
+}
+ul.def-points, .term-fw ul { margin: 0; padding-left: 1.1em; }
+ul.def-points li, .term-fw li {
+  font-size: 0.95rem; line-height: 1.68; color: var(--text-secondary);
+  letter-spacing: -0.01em; margin-bottom: 3px;
+}
+.def-distinction {
+  margin: 8px 0 0; padding: 8px 12px; background: var(--surface-2);
+  border: 1px solid var(--gridline); border-radius: 8px;
+  font-size: 0.92rem; line-height: 1.62; color: var(--text-secondary);
+}
+.term-related {
+  margin: 10px 0 0; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline;
+  font-size: 0.9rem;
+}
+.term-related .sec-inline {
+  font-size: 0.75rem; font-weight: 700; color: var(--chip); margin-right: 2px;
+}
+.term-related a { color: var(--navy); text-decoration: none; }
+.term-related a:hover { text-decoration: underline; color: var(--accent); }
+.term-related span:not(.sec-inline) { color: var(--text-muted); }
+.fw-row {
+  display: grid; grid-template-columns: 7.5em 1fr; gap: 10px;
+  padding: 7px 0; border-bottom: 1px dashed var(--gridline);
+}
+.fw-row:last-child { border-bottom: 0; }
+.fw-org { font-size: 0.85rem; font-weight: 700; color: var(--ink); line-height: 1.4; }
+.fw-org span { display: block; font-weight: 500; font-size: 0.75rem; color: var(--text-muted); }
+a.ref-sup {
+  font-size: 0.72rem; color: var(--text-muted); text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+a.ref-sup:hover { color: var(--accent); }
+.term-refs ol { margin: 0; padding: 0; list-style: none; }
+.term-refs li {
+  display: flex; gap: 8px; font-size: 0.82rem; line-height: 1.55;
+  color: var(--text-secondary); margin-bottom: 3px; scroll-margin-top: 60px;
+}
+.term-refs li:target { background: color-mix(in srgb, var(--gold) 18%, transparent); }
+.ref-n {
+  flex: 0 0 auto; min-width: 1.4em; height: 1.4em; border-radius: 50%;
+  background: color-mix(in srgb, var(--chip) 14%, var(--surface-1)); color: var(--chip);
+  font-size: 0.7rem; font-weight: 700; display: inline-flex; align-items: center;
+  justify-content: center; margin-top: 1px;
+}
+details.term-more {
+  margin-top: 10px; border-top: 1px solid var(--gridline); padding-top: 8px;
+}
+details.term-more summary {
+  cursor: pointer; font-size: 0.75rem; font-weight: 700; color: var(--text-muted);
+  letter-spacing: -0.02em;
+}
+details.term-more summary:hover { color: var(--ink); }
+.term-commentary p {
+  margin: 0 0 7px; font-size: 0.95rem; line-height: 1.72; color: var(--text-secondary);
+}
+.term-commentary strong { color: var(--ink); }
+.ex-tag {
+  font-size: 0.68rem; font-weight: 700; color: var(--navy);
+  border: 1px solid color-mix(in srgb, var(--navy) 28%, var(--hairline));
+  border-radius: 4px; padding: 0 4px; margin-left: 2px;
+}
+.term-examples a.ex-digest, a.lib-link {
+  font-size: 0.75rem; color: var(--text-muted); text-decoration: underline;
+  text-decoration-thickness: 1px; text-underline-offset: 2px; margin-left: 4px;
+}
+a.lib-link { margin-left: 0; }
+.prose .muted { color: var(--text-muted); font-size: 0.85em; }
+.prose td.num, .prose th.num { text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 620px) {
+  .fw-row { grid-template-columns: 1fr; gap: 2px; }
+  .fw-org span { display: inline; margin-left: 6px; }
+  .bucket-head .ch-cat { float: none; display: block; }
+}
 """
 
 
@@ -308,259 +427,267 @@ def page(title, current, body, *, head_count=None, extra_js=""):
 """
 
 
-def def_block(d):
-    """동향 편집 정의 블록."""
-    if not d or not d.get("one"):
-        return ""
-    paras = "".join(
-        '<p class="def-body">%s</p>' % ui.prose_with_emphasis(p) for p in d.get("body", [])
-    )
-    src = ('<p class="def-src">%s</p>' % html.escape(d["src"])) if d.get("src") else ""
-    return (
-        '<div class="term-def"><p class="def-one">%s</p>%s%s</div>'
-        % (ui.prose_with_emphasis(d["one"]), paras, src)
-    )
+LIBRARY_DOC_URL = ui.LIBRARY_URL + "#{}"
+DIGEST_DAY_URL = ui.DIGEST_URL + "daily/{}.html"
+SOURCE_LABEL = {"kit": "번역 용어 정본", "kit-variant": "정본 변형", "public": "이전 표기",
+                "observed": "코퍼스 관찰", "card": "인쇄 카드", "editor": "편집"}
 
 
-def pdf_quotes_html(p):
-    if not p:
+def nospace(s):
+    return "".join((s or "").split())
+
+
+def pages_label(d):
+    page_s = d.get("pages_label") or ""
+    if not page_s:
+        page, page_end = d.get("pdf_page_start"), d.get("pdf_page_end")
+        if page and page_end and page != page_end:
+            page_s = f"p.{page}–{page_end}"
+        elif page:
+            page_s = f"p.{page}"
+    return page_s
+
+
+def library_link(lib_id, label="라이브러리에서 보기"):
+    if not lib_id:
         return ""
-    defs = p.get("definitions") or []
-    if not defs:
-        return '<p class="missing-note">PDF 원문 정의를 아직 확보하지 못했습니다.</p>'
+    return (f' · <a class="lib-link" href="{html.escape(LIBRARY_DOC_URL.format(lib_id))}" '
+            f'target="_blank" rel="noopener">{label}</a>')
+
+
+def pdf_quotes_html(defs):
     blocks = []
     for d in defs:
-        page_s = d.get("pages_label") or ""
-        if not page_s:
-            page = d.get("pdf_page_start")
-            page_end = d.get("pdf_page_end")
-            if page and page_end and page != page_end:
-                page_s = f"p.{page}–{page_end}"
-            elif page:
-                page_s = f"p.{page}"
+        page_s = pages_label(d)
         kind = "정의섹션" if d.get("source_kind") == "definition_section" else "본문"
         ko = ""
         if d.get("quote_ko"):
-            ko = (
-                f'<p class="quote-ko"><span class="ko-label">번역</span>'
-                f'{ui.prose_with_emphasis(d["quote_ko"])}</p>'
-            )
+            ko = (f'<p class="quote-ko"><span class="ko-label">번역</span>'
+                  f'{ui.prose_with_emphasis(d["quote_ko"])}</p>')
         title = d.get("title") or d.get("short") or ""
         blocks.append(
             f'<div class="quote-block">{ko}'
             f'<p class="quote-text">{html.escape(d.get("quote") or "")}</p>'
-            f'<p class="quote-cite">'
-            f'<span class="cite-label">출처</span> '
-            f'{html.escape(title)}'
+            f'<p class="quote-cite"><span class="cite-label">출처</span> {html.escape(title)}'
             f'{(" · " + html.escape(page_s)) if page_s else ""}'
-            f' · {html.escape(d.get("language") or "")}'
-            f" · {kind} · 원문</p></div>"
+            f' · {html.escape(d.get("language") or "")} · {kind}'
+            f'{library_link(d.get("library_id"))}</p></div>'
         )
     return "".join(blocks)
 
 
-def source_chips_html(source):
-    if source == "both":
-        return (
-            '<span class="source-chips">'
-            '<span class="source-chip both">양쪽</span>'
-            '<span class="source-chip digest">동향</span>'
-            '<span class="source-chip pdf">PDF</span>'
-            "</span>"
-        )
-    if source == "pdf":
-        return '<span class="source-chips"><span class="source-chip pdf">PDF</span></span>'
-    return (
-        '<span class="source-chips"><span class="source-chip digest">동향</span></span>'
-    )
-
-
-def examples_html(d):
-    if not d or not d.get("examples"):
+def examples_html(examples):
+    if not examples:
         return ""
-    ex = "".join(
-        '<li><span class="ex-date">{d}</span>'
-        '<span><a href="{u}" target="_blank" rel="noopener">{t}</a>'
-        ' <span class="ex-src">{s}</span></span></li>'.format(
-            d=html.escape((x["date"] or "")[:10]),
-            u=html.escape(x["url"]),
-            t=html.escape(x["title"]),
-            s=html.escape(x["source"].split("·")[-1].strip()[:22]),
-        )
-        for x in d["examples"]
-    )
-    return (
-        '<div class="term-examples"><p class="ex-label">참고 기사</p>'
-        f"<ol>{ex}</ol></div>"
-    )
+    lis = []
+    for x in examples:
+        dd = x.get("digest_date")
+        day = (f' <a class="ex-digest" href="{html.escape(DIGEST_DAY_URL.format(dd))}" '
+               f'target="_blank" rel="noopener">다이제스트 {html.escape(dd)}</a>') if dd else ""
+        tag = ' <span class="ex-tag">연구</span>' if x.get("research") else ""
+        lis.append(
+            '<li><span class="ex-date">{d}</span><span><a href="{u}" target="_blank" rel="noopener">{t}</a>'
+            ' <span class="ex-src">{s}</span>{tag}{day}</span></li>'.format(
+                d=html.escape((x.get("date") or "")[:10]), u=html.escape(x.get("url") or ""),
+                t=html.escape(x.get("title") or ""),
+                s=html.escape((x.get("source") or "").split("·")[-1].strip()[:22]), tag=tag, day=day))
+    return ('<div class="term-examples"><p class="ex-label">참고 기사·연구</p>'
+            f'<ol>{"".join(lis)}</ol></div>')
+
+
+def metrics_html(e):
+    m = e["metrics"]
+    out = []
+    if e["source"] in ("digest", "both"):
+        rec_pct = round((m.get("recency") or 0) * 100)
+        out.append(
+            f'<span title="동향 코퍼스 문서 수">동향 문서 <b>{m.get("df", 0)}</b></span>'
+            f'<span title="등장한 서로 다른 달 수">기간 <b>{m.get("months", 0)}</b>개월</span>'
+            f'<span title="최근 12개월 비중">최근 <b>{rec_pct}%</b>'
+            f'<span class="rec-bar"><i style="width:{rec_pct}%"></i></span></span>'
+            f'<span title="원문이 괄호로 뜻을 풀어 쓴 문서 수">병기 <b>{m.get("gloss", 0)}</b></span>')
+    if e["source"] in ("pdf", "both"):
+        out.append(
+            f'<span title="PDF 코퍼스 문서 수">PDF 문서 <b>{m.get("pdf_df", 0)}</b></span>'
+            f'<span title="정의 섹션 등장 문서 수">정의섹션 <b>{m.get("pdf_gloss_df", 0)}</b></span>')
+    return f'<div class="term-metrics">{"".join(out)}</div>' if out else ""
+
+
+def ref_sup(cid, ns):
+    return "".join(f' <a class="ref-sup" href="#{html.escape(cid)}-ref-{n}">[{n}]</a>' for n in ns or [])
 
 
 def card_html(e):
-    source = e.get("source") or "digest"
-    d = e.get("digest")
-    p = e.get("pdf")
+    cid = e["id"]
+    d = e.get("definition") or {}
+    alts = e.get("alternatives") or []
 
-    metrics = []
-    if d:
-        rec_pct = round((d.get("recency") or 0) * 100)
-        gcls = "m-strong" if (d.get("gloss") or 0) >= 5 else ""
-        metrics.append(
-            f'<span title="동향 코퍼스 문서 수">동향 문서 <b>{d.get("df", 0)}</b></span>'
-            f'<span title="등장한 서로 다른 달 수">기간 <b>{d.get("months", 0)}</b>개월</span>'
-            f'<span title="최근 12개월 비중">최근 <b>{rec_pct}%</b>'
-            f'<span class="rec-bar"><i style="width:{rec_pct}%"></i></span></span>'
-            f'<span class="{gcls}" title="병기 문서 수">병기 <b>{d.get("gloss", 0)}</b></span>'
-            f'<span title="허브 중심성">허브 <b>{(d.get("hub_norm") or 0):.2f}</b></span>'
-        )
-    if p:
-        metrics.append(
-            f'<span title="PDF 코퍼스 문서 수">PDF 문서 <b>{p.get("df", 0)}</b></span>'
-            f'<span title="정의 섹션 등장">정의섹션 <b>{p.get("gloss_df", 0)}</b></span>'
-            f'<span title="선정 점수">점수 <b>{p.get("score", 0)}</b></span>'
-        )
+    meta = [f'<div><dt>구분</dt><dd>{html.escape(e["category_label"])}</dd></div>']
+    if alts:
+        alt_s = " · ".join(
+            f'<span title="{html.escape(SOURCE_LABEL.get(a.get("source"), ""))}">{html.escape(a["text"])}</span>'
+            for a in alts)
+        meta.append(f'<div><dt>대체어</dt><dd>{alt_s}</dd></div>')
 
-    variants = ""
-    if d and d.get("variants"):
-        variants = (
-            f'<div class="term-variants">동향 표기 · {html.escape(str(d["variants"]))}</div>'
-        )
-    elif p and p.get("variants"):
-        vv = p["variants"]
-        if isinstance(vv, list):
-            vv = " · ".join(vv[:8])
-        variants = f'<div class="term-variants">PDF 표기 · {html.escape(str(vv))}</div>'
+    explain = []
+    if d.get("lead"):
+        explain.append(f'<p class="def-lead">{ui.prose_with_emphasis(d["lead"])}</p>')
+    if d.get("points"):
+        explain.append('<ul class="def-points">' + "".join(
+            f"<li>{ui.prose_with_emphasis(p)}</li>" for p in d["points"]) + "</ul>")
+    dist = d.get("distinction")
+    if dist and dist.get("text"):
+        explain.append(f'<p class="def-distinction">{ui.prose_with_emphasis(dist["text"])}</p>')
 
-    body_parts = []
-    if d and d.get("one"):
-        body_parts.append('<p class="section-label">이 용어집 · 집필 정의</p>')
-        body_parts.append(def_block(d))
-    if p:
-        body_parts.append('<p class="section-label">PDF 원문 인용</p>')
-        body_parts.append(pdf_quotes_html(p))
-    body_parts.append(examples_html(d))
+    related = ""
+    if e.get("related"):
+        tags = []
+        for r in e["related"]:
+            if r.get("id"):
+                tags.append(f'<a href="#{html.escape(r["id"])}">#{html.escape(nospace(r["head"]))}</a>')
+            else:
+                tags.append(f'<span>#{html.escape(nospace(r["label"]))}</span>')
+        related = f'<p class="term-related"><span class="sec-inline">관련 용어</span>{"".join(tags)}</p>'
 
-    alt = (
-        ('<span class="term-alt">(%s)</span>' % html.escape(e["alt"]))
-        if e.get("alt")
-        else ""
-    )
-    q_bits = [
-        e["head"],
-        e.get("alt") or "",
-        e["en"],
-        e["bucket"],
-        source,
-        "동향" if source in ("digest", "both") else "",
-        "pdf" if source in ("pdf", "both") else "",
-    ]
-    if d:
-        q_bits += [d.get("one") or "", str(d.get("variants") or "")]
-        q_bits += list(d.get("body") or [])
-        q_bits += [x.get("title") or "" for x in d.get("examples") or []]
-    if p:
-        for dd in p.get("definitions") or []:
-            q_bits.append(dd.get("quote") or "")
-            q_bits.append(dd.get("quote_ko") or "")
+    fw = ""
+    if e.get("frameworks"):
+        rows = []
+        for f in e["frameworks"]:
+            pts = "".join(
+                f'<li>{ui.prose_with_emphasis(p["text"] if isinstance(p, dict) else p)}'
+                f'{ref_sup(cid, p.get("refs") if isinstance(p, dict) else None)}</li>'
+                for p in f.get("points") or [])
+            rows.append(
+                f'<div class="fw-row"><div class="fw-org">{html.escape(f.get("org", ""))}'
+                f'{("<span>" + html.escape(str(f["sub"])) + "</span>") if f.get("sub") else ""}</div>'
+                f'<ul>{pts}</ul></div>')
+        fw = f'<section class="term-fw"><h3 class="sec">주요 기관·문서별 개념 및 적용</h3>{"".join(rows)}</section>'
+
+    refs = ""
+    if e.get("refs"):
+        lis = "".join(
+            f'<li id="{html.escape(cid)}-ref-{r.get("n")}"><span class="ref-n">{r.get("n")}</span>'
+            f'<span>{html.escape(r.get("text", ""))}'
+            f'{(" · " + html.escape(r["evidence"]["pages"])) if (r.get("evidence") or {}).get("pages") and r["evidence"]["pages"] not in r.get("text", "") else ""}'
+            f'{(" · <a href=" + chr(34) + html.escape(r["url"]) + chr(34) + " target=_blank rel=noopener>원문</a>") if r.get("url") else ""}'
+            f'{library_link(r.get("library_id"))}</span></li>'
+            for r in e["refs"])
+        refs = f'<section class="term-refs"><h3 class="sec">출처</h3><ol>{lis}</ol></section>'
+
+    more = []
+    if e.get("commentary"):
+        more.append('<p class="section-label">해설</p><div class="term-commentary">' + "".join(
+            f'<p>{ui.prose_with_emphasis(p)}</p>' for p in e["commentary"]) + "</div>")
+    if e.get("pdf_definitions"):
+        more.append('<p class="section-label">PDF 원문 인용</p>' + pdf_quotes_html(e["pdf_definitions"]))
+    more.append(examples_html(e.get("examples")))
+    if e.get("variants"):
+        more.append("".join(
+            f'<div class="term-variants">{k} 표기 · {html.escape(v)}</div>' for k, v in e["variants"]))
+    more.append(metrics_html(e))
+    more_s = "".join(x for x in more if x)
+    n_more = len(e.get("pdf_definitions") or []) + len(e.get("examples") or [])
+    more_label = []
+    if e.get("commentary"):
+        more_label.append("해설")
+    if e.get("pdf_definitions"):
+        more_label.append(f"원문 인용 {len(e['pdf_definitions'])}")
+    if e.get("examples"):
+        more_label.append(f"참고 기사 {len(e['examples'])}")
+    more_html = (f'<details class="term-more"><summary>{" · ".join(more_label) or "지표"}</summary>{more_s}</details>'
+                 if more_s.strip() else "")
+
+    q_bits = [e["head"], e["en"], e["chapter_label"], e["category_label"]]
+    q_bits += [a["text"] for a in alts]
+    q_bits += [d.get("lead") or ""] + list(d.get("points") or []) + [(dist or {}).get("text") or ""]
+    q_bits += [r.get("head") or r.get("label") or "" for r in e.get("related") or []]
+    q_bits += list(e.get("commentary") or [])
+    q_bits += [f.get("org", "") for f in e.get("frameworks") or []]
+    q_bits += [x.get("title") or "" for x in e.get("examples") or []]
+    for dd in e.get("pdf_definitions") or []:
+        q_bits += [dd.get("quote") or "", dd.get("quote_ko") or ""]
 
     return (
-        f'<article class="term-card" id="t{e["n"]}" '
-        f'data-bucket="{html.escape(e["bucket_code"])}" '
-        f'data-source="{html.escape(source)}" '
-        f'data-n="{e["n"]}" data-df="{e.get("df", 0)}" '
-        f'data-rec="{e.get("recency", 0)}" data-gloss="{e.get("gloss", 0)}" '
-        f'data-hub="{e.get("hub_norm", 0)}" data-pdfdf="{e.get("pdf_df", 0)}" '
+        f'<article class="term-card" id="{html.escape(cid)}" data-cat="{e["category"]}" '
+        f'data-ch="{e["chapter"]}" data-n="{e["n"]}" data-df="{e["metrics"].get("df", 0)}" '
+        f'data-pdfdf="{e["metrics"].get("pdf_df", 0)}" data-head="{html.escape(e["head"])}" '
         f'data-q="{html.escape(" ".join(q_bits).lower())}" '
-        f'style="--chip:{html.escape(e["color"])}">'
-        f'<div class="term-head">'
-        f'<span class="term-n">{e["n"]:03d}</span>'
-        f'<span class="term-name">{html.escape(e["head"])}{alt}</span>'
-        f'<span class="term-en">{html.escape(e["en"])}</span>'
-        f'{source_chips_html(source)}'
-        f'<span class="bucket-badge">{html.escape(e["bucket"])}</span>'
-        f"</div>"
-        f'<div class="term-metrics">{"".join(metrics)}</div>'
-        f"{variants}"
-        f'{"".join(body_parts)}'
+        f'data-qn="{html.escape(nospace(" ".join([e["head"], e["en"]] + [a["text"] for a in alts])).lower())}" style="--chip:{html.escape(e["color"])}">'
+        f'<div class="card-top"><a class="term-n" href="#{html.escape(cid)}" title="이 용어 링크">{e["n"]:03d}</a>'
+        f'<span class="card-chapter">{e["chapter"]}. {html.escape(e["chapter_label"])}'
+        f' <span class="ch-en">({html.escape(e["chapter_en"])})</span></span></div>'
+        f'<h2 class="term-title"><span class="term-name">{html.escape(e["head"])}</span>'
+        f'<span class="term-en">{html.escape(e["en"])}</span></h2>'
+        f'<dl class="term-meta">{"".join(meta)}</dl>'
+        f'<section class="term-explain"><h3 class="sec">용어 설명</h3>{"".join(explain)}</section>'
+        f"{related}{fw}{refs}{more_html}"
         f"</article>"
     )
 
 
-
-LEGEND = """<details class="legend" open>
-<summary>출처·지표 요지</summary>
-<p>표제어는 <b>동향 코퍼스</b>와 <b>PDF 리포지토리</b>에서 각각 뽑은 뒤,
-영문 표기로 합쳤다. 카드 오른쪽 칩이 출처다 — <b>동향</b> · <b>PDF</b> · <b>양쪽</b>.</p>
+LEGEND = """<details class="legend">
+<summary>카드 읽는 법</summary>
 <table>
-<tr><td>동향</td><td>집필 정의 + 동향 참고 기사. 문서·기간·최근·병기·허브는 동향 코퍼스 지표.</td></tr>
-<tr><td>PDF</td><td>PDF 원문 인용(+한글 대역). PDF 문서·정의섹션·점수는 Evidence Desk 지표.</td></tr>
-<tr><td>양쪽</td><td>같은 개념이 두 코퍼스에 모두 오른 항. 집필 정의와 원문 인용을 병치한다.</td></tr>
+<tr><td>표제어</td><td>번역 용어 정본(ai-safety-translation-kit)의 번역어를 기본으로 한다. 일상어라서 그 자체로는 개념어로 읽기 어려운 말에는 AI를 붙였다(AI 안전·AI 위험·AI 사고 보고).</td></tr>
+<tr><td>대체어</td><td>함께 쓰이는 다른 표기. 마우스를 올리면 출처(정본 변형·이전 표기·편집)가 보인다.</td></tr>
+<tr><td>용어 설명</td><td>굵은 한 줄이 정의, 아래 항목이 AI 안전 관점의 부연, 회색 상자가 헷갈리기 쉬운 용어와의 구별이다.</td></tr>
+<tr><td>기관·문서별</td><td>국제기구·표준·법령이 그 개념을 어떻게 정의하고 적용하는지. 번호는 출처 목록을 가리킨다.</td></tr>
+<tr><td>펼치기</td><td>해설, PDF 원문 인용(쪽수), 다이제스트 참고 기사, 코퍼스 지표.</td></tr>
 </table>
 </details>"""
 
 
 def index_page(data):
     ents = data["entries"]
-    bks = data["buckets"]
-    src_meta = (data.get("meta") or {}).get("sources") or {}
-    chips = "".join(
-        '<button class="filter-chip" data-bucket="{c}" style="--chip:{col}">'
-        '{lb} <span class="n">{n}</span></button>'.format(
-            c=html.escape(b["code"]), col=html.escape(b["color"]),
-            lb=html.escape(b["label"]), n=b["n"])
-        for b in bks if b.get("n", 0) > 0
-    )
-    src_chips = "".join(
-        '<button class="filter-chip" data-source="{k}">{lb} '
-        '<span class="n">{n}</span></button>'.format(
-            k=k, lb=html.escape(lb), n=n)
-        for k, lb, n in (
-            ("digest", "동향", src_meta.get("digest_only", 0) + src_meta.get("both", 0)),
-            ("pdf", "PDF", src_meta.get("pdf_only", 0) + src_meta.get("both", 0)),
-            ("both", "양쪽", src_meta.get("both", 0)),
-            ("digest_only", "동향만", src_meta.get("digest_only", 0)),
-            ("pdf_only", "PDF만", src_meta.get("pdf_only", 0)),
-        )
-    )
-    sorts = [("bucket", "분류순"), ("df", "동향 문서"), ("pdfdf", "PDF 문서"),
-             ("rec", "최근성"), ("gloss", "병기"), ("hub", "허브")]
+    cats = data["categories"]
+    chs = data["chapters"]
+    cat_color = {c["code"]: c["color"] for c in cats}
+    cat_chips = "".join(
+        f'<button class="filter-chip" data-cat="{c["code"]}" style="--chip:{c["color"]}">'
+        f'{html.escape(c["label"])} <span class="n">{c["n"]}</span></button>'
+        for c in cats if c["n"])
+    ch_chips = "".join(
+        f'<button class="filter-chip" data-ch="{c["no"]}" data-chcat="{c["category"]}" '
+        f'style="--chip:{cat_color[c["category"]]}">{c["no"]}. {html.escape(c["label"])} '
+        f'<span class="n">{c["n"]}</span></button>'
+        for c in chs if c["n"])
+    sorts = [("ch", "장순"), ("ko", "가나다"), ("df", "동향 문서"), ("pdfdf", "PDF 문서")]
     sort_chips = "".join(
-        '<button class="filter-chip{act}" data-sort="{k}">{lb}</button>'.format(
-            k=k, lb=html.escape(lb), act=" active" if k == "bucket" else "")
-        for k, lb in sorts
-    )
+        f'<button class="filter-chip{" active" if k == "ch" else ""}" data-sort="{k}">{html.escape(lb)}</button>'
+        for k, lb in sorts)
+    ch_meta = {c["no"]: {"label": c["label"], "en": c["en"], "cat": c["category"],
+                         "color": cat_color[c["category"]]} for c in chs}
+    cat_label = {c["code"]: c["label"] for c in cats}
+    legacy_path = os.path.join(config.DATA, "legacy_anchors.json")
+    legacy = json.load(open(legacy_path, encoding="utf-8"))["map"] if os.path.exists(legacy_path) else {}
     cards = "".join(card_html(e) for e in ents)
     c = data.get("corpus") or {}
-    if c.get("docs"):
-        corpus_note = html.escape(
-            "동향 코퍼스 {:,}건 ({} ~ {}) · 병합 {}개".format(
-                c["docs"], c.get("from", ""), c.get("to", ""), len(ents)))
-    else:
-        corpus_note = html.escape("병합 %d개" % len(ents))
-    both_n = src_meta.get("both", 0)
+    corpus_note = html.escape("동향 코퍼스 {:,}건 기준".format(c["docs"])) if c.get("docs") else ""
     body = f"""{ui.omnibox_html()}
 {LEGEND}
 <div id="listControls">
   <div class="filter-toolbar">
-    <span class="filter-label">출처</span>
-    <button class="filter-chip active" data-source="">전체 <span class="n">{len(ents)}</span></button>
-    {src_chips}
+    <span class="filter-label">구분</span>
+    <button class="filter-chip active" data-cat="">전체 <span class="n">{len(ents)}</span></button>
+    {cat_chips}
   </div>
   <div class="filter-toolbar">
-    <span class="filter-label">분류</span>
-    <button class="filter-chip active" data-bucket="">전체 <span class="n">{len(ents)}</span></button>
-    {chips}
+    <span class="filter-label">장</span>
+    <button class="filter-chip active" data-ch="">전체</button>
+    {ch_chips}
   </div>
   <div class="filter-toolbar">
     <span class="filter-label">정렬</span>
     {sort_chips}
   </div>
 </div>
-<p class="result-line" id="resultLine" data-corpus="{corpus_note}">{len(ents)}개 표제어 · 양쪽 {both_n} · {corpus_note}</p>
+<p class="result-line" id="resultLine" data-corpus="{corpus_note}">{len(ents)}개 표제어</p>
 <div id="termList">{cards}</div>
-<p class="empty-note" id="emptyNote">검색 결과가 없다.</p>
+<p class="empty-note" id="emptyNote">검색 결과가 없습니다.</p>
 """
     js = """<script>
 (function () {
+  var CH = __CH__, CAT = __CAT__, LEGACY = __LEGACY__;
   var list = document.getElementById('termList');
   var cards = Array.prototype.slice.call(list.querySelectorAll('.term-card'));
   var box = document.getElementById('omniBox');
@@ -568,113 +695,121 @@ def index_page(data):
   var note = document.getElementById('emptyNote');
   var panel = document.getElementById('omniResults');
   if (panel) panel.remove();
-  var state = { bucket: '', source: '', sort: 'bucket', q: '' };
+  var state = { cat: '', ch: '', sort: 'ch', q: '' };
   var total = cards.length;
-
   var params = new URLSearchParams(location.search);
-  if (params.get('src')) state.source = params.get('src');
-
-  var heads = {};
-  cards.forEach(function (c) {
-    var bc = c.dataset.bucket;
-    if (!heads[bc]) {
-      var badge = c.querySelector('.bucket-badge');
-      heads[bc] = { label: badge ? badge.textContent : bc,
-                    color: c.style.getPropertyValue('--chip') };
-    }
-  });
+  state.q = params.get('q') || '';
+  state.cat = CAT[params.get('cat')] ? params.get('cat') : '';
+  state.ch = CH[params.get('ch')] ? params.get('ch') : '';
+  if (state.ch) state.cat = CH[state.ch].cat;
+  if (box && state.q) box.value = state.q;
 
   function num(c, k) { return parseFloat(c.dataset[k]) || 0; }
-
-  function sourceOk(c) {
-    var s = c.dataset.source || '';
-    if (!state.source) return true;
-    if (state.source === 'digest') return s === 'digest' || s === 'both';
-    if (state.source === 'pdf') return s === 'pdf' || s === 'both';
-    if (state.source === 'digest_only') return s === 'digest';
-    if (state.source === 'pdf_only') return s === 'pdf';
-    return s === state.source;
+  function syncUrl() {
+    var p = new URLSearchParams();
+    if (state.q.trim()) p.set('q', state.q.trim());
+    if (state.ch) p.set('ch', state.ch); else if (state.cat) p.set('cat', state.cat);
+    var s = p.toString();
+    history.replaceState(null, '', location.pathname + (s ? '?' + s : '') + location.hash);
   }
-
+  function syncChips() {
+    document.querySelectorAll('button[data-cat]').forEach(function (o) {
+      o.classList.toggle('active', o.dataset.cat === state.cat);
+    });
+    document.querySelectorAll('button[data-ch]').forEach(function (o) {
+      o.classList.toggle('active', o.dataset.ch === state.ch);
+      o.hidden = !!(o.dataset.chcat && state.cat && o.dataset.chcat !== state.cat);
+    });
+    document.querySelectorAll('button[data-sort]').forEach(function (o) {
+      o.classList.toggle('active', o.dataset.sort === state.sort);
+    });
+  }
   function apply() {
     var q = state.q.trim().toLowerCase();
+    var qn = q.replace(/\\s+/g, '');  // 붙여 쓴 표기로도 표제어·대체어를 찾는다
     var shown = 0;
     cards.forEach(function (c) {
-      var ok = (!state.bucket || c.dataset.bucket === state.bucket) &&
-               sourceOk(c) &&
-               (!q || c.dataset.q.indexOf(q) !== -1);
+      var ok = (!state.cat || c.dataset.cat === state.cat) &&
+               (!state.ch || c.dataset.ch === state.ch) &&
+               (!q || c.dataset.q.indexOf(q) !== -1 || c.dataset.qn.indexOf(qn) !== -1);
       c.classList.toggle('hidden', !ok);
       if (ok) shown++;
     });
-
     var vis = cards.filter(function (c) { return !c.classList.contains('hidden'); });
-    if (state.sort === 'bucket') {
+    if (state.sort === 'ch') {
       vis.sort(function (a, b) { return num(a, 'n') - num(b, 'n'); });
+    } else if (state.sort === 'ko') {
+      vis.sort(function (a, b) { return a.dataset.head.localeCompare(b.dataset.head, 'ko'); });
     } else {
-      var key = state.sort === 'rec' ? 'rec' : state.sort;
       vis.sort(function (a, b) {
-        var d = num(b, key) - num(a, key);
+        var d = num(b, state.sort) - num(a, state.sort);
         return d !== 0 ? d : num(a, 'n') - num(b, 'n');
       });
     }
-
     list.querySelectorAll('.bucket-head').forEach(function (h) { h.remove(); });
     var frag = document.createDocumentFragment();
-    var lastBucket = null;
+    var last = null;
     vis.forEach(function (c) {
-      if (state.sort === 'bucket' && !state.bucket && c.dataset.bucket !== lastBucket) {
-        lastBucket = c.dataset.bucket;
+      if (state.sort === 'ch' && c.dataset.ch !== last) {
+        last = c.dataset.ch;
+        var m = CH[last];
         var h = document.createElement('div');
         h.className = 'bucket-head';
-        h.style.setProperty('--chip', heads[lastBucket].color);
-        h.innerHTML = '<span class="bk">' + lastBucket + '.</span> ' +
-                      heads[lastBucket].label;
+        h.style.setProperty('--chip', m.color);
+        h.innerHTML = '<span class="bk">' + last + '.</span> ' + m.label +
+          ' <span class="ch-en">' + m.en + '</span><span class="ch-cat">' + CAT[m.cat] + '</span>';
         frag.appendChild(h);
       }
       frag.appendChild(c);
     });
     list.appendChild(frag);
-
     note.style.display = shown ? 'none' : 'block';
-    line.textContent = shown === total
-      ? total + '개 표제어 · ' + line.dataset.corpus
-      : shown + ' / ' + total + '개 표시 · ' + line.dataset.corpus;
-
-    document.querySelectorAll('button[data-source]').forEach(function (o) {
-      o.classList.toggle('active', (o.dataset.source || '') === state.source);
-    });
+    var corpus = line.dataset.corpus ? ' · ' + line.dataset.corpus : '';
+    line.textContent = (shown === total ? total + '개 표제어' : shown + ' / ' + total + '개 표시') + corpus;
+    syncChips();
+    syncUrl();
   }
-
-  document.querySelectorAll('button[data-bucket]').forEach(function (b) {
+  function reveal(id) {
+    var el = document.getElementById(id);
+    if (!el || !el.classList.contains('term-card')) return;
+    if (el.classList.contains('hidden')) {
+      state.cat = ''; state.ch = ''; state.q = ''; if (box) box.value = ''; apply();
+    }
+    el.scrollIntoView({ block: 'start' });
+    el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash');
+  }
+  function onHash() {
+    var h = decodeURIComponent(location.hash.slice(1));
+    if (!h) return;
+    var m = /^t(\\d+)$/.exec(h);
+    if (m && LEGACY[m[1]]) { history.replaceState(null, '', '#' + LEGACY[m[1]]); h = LEGACY[m[1]]; }
+    var card = document.getElementById(h);
+    if (!card) { var r = /^(.*)-ref-\\d+$/.exec(h); if (r) card = document.getElementById(r[1]); }
+    if (card) reveal(card.id);
+    var target = document.getElementById(h);
+    if (target && target !== card) target.scrollIntoView({ block: 'center' });
+  }
+  document.querySelectorAll('button[data-cat]').forEach(function (b) {
     b.addEventListener('click', function () {
-      state.bucket = b.dataset.bucket;
-      document.querySelectorAll('button[data-bucket]').forEach(function (o) {
-        o.classList.toggle('active', o === b);
-      });
+      state.cat = b.dataset.cat;
+      if (state.ch && CH[state.ch].cat !== state.cat) state.ch = '';
       apply();
     });
   });
-  document.querySelectorAll('button[data-source]').forEach(function (b) {
+  document.querySelectorAll('button[data-ch]').forEach(function (b) {
     b.addEventListener('click', function () {
-      state.source = b.dataset.source || '';
+      state.ch = b.dataset.ch;
+      if (state.ch) state.cat = CH[state.ch].cat;
       apply();
     });
   });
   document.querySelectorAll('button[data-sort]').forEach(function (b) {
-    b.addEventListener('click', function () {
-      state.sort = b.dataset.sort;
-      document.querySelectorAll('button[data-sort]').forEach(function (o) {
-        o.classList.toggle('active', o === b);
-      });
-      apply();
-    });
+    b.addEventListener('click', function () { state.sort = b.dataset.sort; apply(); });
   });
   if (box) {
     box.addEventListener('input', function () { state.q = box.value; apply(); });
     document.addEventListener('keydown', function (ev) {
-      if (ev.key === '/' && ev.target.tagName !== 'INPUT') {
-        ev.preventDefault(); box.focus();
-      }
+      if (ev.key === '/' && ev.target.tagName !== 'INPUT') { ev.preventDefault(); box.focus(); }
       if (ev.key === 'Escape') { box.value = ''; state.q = ''; apply(); box.blur(); }
     });
   }
@@ -682,134 +817,101 @@ def index_page(data):
     var a = ev.target.closest && ev.target.closest('a[href^="http"]');
     if (a) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
   }, true);
+  window.addEventListener('hashchange', onHash);
+  if ('scrollRestoration' in history && location.hash) history.scrollRestoration = 'manual';
   apply();
+  onHash();
+  // 카드 재배치·웹폰트 적용 뒤에 위치가 밀리므로 load 뒤 한 번 더 맞춘다
+  window.addEventListener('load', function () { setTimeout(onHash, 0); });
 })();
 </script>"""
-    return page("AI 안전 용어집", "index.html", body,
-                head_count=len(ents), extra_js=js)
-
+    js = (js.replace("__CH__", ui.safe_json(ch_meta))
+            .replace("__CAT__", ui.safe_json(cat_label))
+            .replace("__LEGACY__", ui.safe_json(legacy)))
+    return page("AI 안전 용어집", "index.html", body, head_count=len(ents), extra_js=js)
 
 
 def about_page(data):
     c = data.get("corpus") or {}
-    src = (data.get("meta") or {}).get("sources") or {}
+    cnt = (data.get("meta") or {}).get("counts") or {}
     docs = c.get("docs", 0)
+    cat_label = {x["code"]: x["label"] for x in data["categories"]}
+    ch_rows = "".join(
+        f'<tr><td>{html.escape(cat_label[x["category"]])}</td><td>{x["no"]}. {html.escape(x["label"])}'
+        f' <span class="muted">{html.escape(x["en"])}</span></td><td class="num">{x["n"]}</td></tr>'
+        for x in data["chapters"])
+    excl_path = os.path.join(config.DATA, "excluded.json")
+    excl = json.load(open(excl_path, encoding="utf-8")) if os.path.exists(excl_path) else []
+    excl_s = ", ".join(html.escape(x["head"]) for x in excl)
+    pdf_docs = sorted({(d.get("short") or d.get("title") or "") for e in data["entries"]
+                       for d in e.get("pdf_definitions") or []} - {""})
     body = f"""<div class="prose">
-<p>AI 안전 용어집이다. <b>동향 코퍼스</b>에서 뽑은 표제어(집필 정의·참고 기사)와
-<b>PDF 리포지토리</b>에서 뽑은 표제어(원문 인용)를 영문 표기로 합쳐
-한 목록으로 보여 준다. 현재 병합 <b>{src.get('merged', len(data['entries']))}개</b>
-(양쪽 {src.get('both', 0)} · 동향만 {src.get('digest_only', 0)} ·
-PDF만 {src.get('pdf_only', 0)}).</p>
-<p>카드 본문의 강조는 다이제스트·라이브러리와 같다. 한줄 정의가 핵심 사실이고,
-본문에서 중요한 용어·수치는 밑줄, 꼭 짚을 결론만 굵게다. 다른 표제어를
-본문에 자동으로 치지는 않는다.</p>
-<p>동향 코퍼스는 <a href="{ui.DIGEST_URL}" target="_blank" rel="noopener">AI 안전 다이제스트</a>가
-매일 모으는 뉴스·논문·정책문서다. 이 용어집을 빌드한 시점 기준
-<b>{docs:,}건</b>({c.get('from','')} ~ {c.get('to','')}). 이후 Digest 코퍼스는 더 늘어난다.</p>
+<p>AI 안전 연구·정책에서 자주 쓰는 용어를 <b>AI 안전 관점</b>에서 풀어 쓴 용어집입니다.
+현재 표제어 <b>{len(data['entries'])}개</b>를 4개 구분, 11개 장으로 묶었습니다.
+인쇄용 용어 카드(50선)도 이 온라인판에서 골라 만듭니다.</p>
 
-<h2>두 출처를 어떻게 합쳤나</h2>
+<h2>구성 — 구분과 장</h2>
+<p>기술이 무엇인지에서 시작해 무엇이 잘못될 수 있는지, 어떻게 확인하고 막는지,
+누가 어떤 규칙으로 다스리는지의 순서로 장을 놓았습니다. 용어는 장 하나에만 속하고,
+장을 넘는 연결은 카드의 <b>관련 용어</b>로 잇습니다.</p>
+<table><tr><th>구분</th><th>장</th><th class="num">표제어</th></tr>{ch_rows}</table>
+
+<h2>표제어 원칙</h2>
 <ul>
-<li>동향판·PDF판을 <b>각각</b> 기존 파이프라인으로 빌드한다.</li>
-<li>영문 표기를 정규화해 조인한다. 같은 개념이면 <b>양쪽</b> 칩.</li>
-<li>카드에서 집필 정의와 PDF 원문 인용은 <b>구역을 나눠</b> 병치한다.
-대역(<code>quote_ko</code>)은 편집 번역이며 원문 인용이 아니다.</li>
-<li>분류(버킷)는 동향판을 우선하고, PDF-only는 가까운 동향 버킷에 매핑한다.</li>
+<li><b>번역어는 번역 용어 정본(ai-safety-translation-kit)을 따릅니다.</b> 연구소 번역 작업에 쓰는
+승인 용어집입니다. 정본에 없는 용어는 편집 판단으로 정하고, 정본에 반영할 후보로 올립니다.</li>
+<li><b>띄어쓰기는 정본에 맞춰 통일했습니다</b>(해석 가능성, 허위 정보, 사이버 보안, 오픈 웨이트 모델).
+붙여 쓴 표기로 검색해도 찾을 수 있습니다.</li>
+<li><b>일상어 표제어에는 AI를 붙였습니다.</b> 업계에서는 그냥 '안전', '위험', '사고 보고'로 쓰더라도,
+일상어 그대로는 개념어로 읽기 어려워서입니다(AI 안전, AI 위험, AI 피해, AI 사고, AI 사고 보고).
+일반 위험관리·보안 분야에서 빌려 온 절차 용어(위험 평가, 위험 허용도, 위협 모델링)에는 붙이지 않았습니다.</li>
+<li><b>다른 표기는 대체어로 함께 적습니다.</b> 이전 판의 표기, 정본의 변형 표기, 현장에서 쓰는 음차어 등입니다.</li>
 </ul>
-<pre><code>run_build.sh / run_pdf_build.sh
-merge_glossary.py   동향 ∪ PDF → data/glossary_merged.json
-build_site.py       이 사이트</code></pre>
 
-<h2>동향판 — 어떻게 골랐나</h2>
-<p>MCP 검색만으로 뽑으면 <i>이미 아는 용어를 검색해 확인하는</i> 순환이 된다.
-그래서 코퍼스에서 기계적으로 긁어 올린 뒤 사람이 선별하는 순서로 갔다.</p>
-<pre><code>extract_candidates.py   제목+요약에서 한글 1~2gram·영문 1~3gram
-select_top100.py        표제어 확정 + 지표 자동 결합
-gloss_and_hubs.py       병기율·허브 중심성
-build_json.py           표제어별 실제 용례 수집</code></pre>
+<h2>카드 구성</h2>
+<p>각 카드는 인쇄용 카드와 같은 순서입니다 — 장 · 표제어/영문 · 구분 · 대체어 · 용어 설명
+(굵은 한 줄 정의, 부연, 혼동 용어와의 구별) · 관련 용어 · 주요 기관·문서별 개념 및 적용 · 출처.
+펼치기 아래에는 온라인판에만 있는 해설, PDF 원문 인용, 참고 기사, 코퍼스 지표가 있습니다.</p>
+<p>용어 설명은 이 용어집을 위해 쓴 글이며 인용문이 아닙니다. 기관·문서별 항목은 원문과
+쪽수를 확인한 것만 실었고(현재 {cnt.get('with_frameworks', 0)}개 표제어), 확인하지 못한 수치나 조문 번호는 쓰지 않았습니다.
+인용이 필요한 자리에서는 출처의 원 문헌을 확인해 주세요.</p>
 
-<h3>분류 쿼터를 둔다</h3>
-<p>점수 순으로 그냥 100개를 자르면 보도량이 많은 법제·정치 용어가 과반을
-먹고 평가·정렬 기술 용어가 밀린다. 13개 분류에 쿼터를 배분했다.</p>
-
-<h3>변이 표기의 빈도를 합산하지 않는다</h3>
-<p><code>정렬</code>(260)과 <code>alignment</code>(198)를 더하면 같은 문서를 두 번
-센다. 대표 표기 하나의 문서 수만 헤드라인 숫자로 쓴다.</p>
-
-<h3>광의어를 대표로 쓰지 않는다</h3>
-<p><code>안전성 평가</code>의 근거는 <code>안전성</code>(340)이 아니라
-<code>안전성 평가</code>(50)다. 전자를 쓰면 표제어의 근거를 오해하게 된다.</p>
-
-<h2>정의문을 어떻게 썼나</h2>
-<p>표제어마다 <b>번역어(대안적 번역어) 원어</b> · <b>한줄 정의</b> · <b>설명 두 문단</b>을
-같은 틀로 붙였다. 예컨대 <code>파인튜닝(미세조정) fine-tuning</code>처럼, 국문 표기가
-둘 이상 통용되는 경우 대안역을 괄호에 넣었다 — 100개 가운데 95개가 여기 해당한다.</p>
-<p>설명의 목적은 <b>한줄 정의만으로 이해가 안 되는 사람에게 개념을 풀어 주는</b>
-것이다. 사전 항목처럼 깔끔하게 쓰되 친절하게 — 왜 이런 개념이 필요한지, 어떤
-구조에서 그런 일이 생기는지, 무엇과 혼동되는지를 구체적인 예와 함께 짚는다.
-청소 로봇이 센서를 가리는 쪽을 배우는 이야기(정렬), 존재하지 않는 인용을 형식만
-완벽하게 지어내는 이야기(환각)처럼, 개념이 손에 잡히는 장면을 하나씩 붙였다.</p>
-<p>두 문단은 역할을 나눈다. 첫 문단은 <b>개념의 속을 풀어 준다</b> — 왜 이런 일이
-생기고 어떤 구조에서 비롯되는지. 둘째 문단은 <b>한 발 더 들어간다</b> — 인접 개념과의
-구별, 실제로 어떤 모습으로 나타나는지, 왜 다루기 어려운지. 뒤쪽에 구별을 두는 이유는
-이 분야에서 잘못 읽히는 대부분이 인접 개념의 혼동에서 생기기 때문이다. 해석가능성과
-설명가능성, 오용과 남용, 환각과 기만, 프라이버시와 개인정보 보호, 오정보와 허위정보,
-그리고 특히 <b>범용 AI 모델(GPAI)과 범용인공지능(AGI)</b>이 그렇다.</p>
-<p><b>조문·표준을 특정할 수 있는 항목에는 근거를 달았다</b>(13개). EU AI법의 인간
-감독·금지 관행·고위험·투명성 의무·범용 AI 모델·AI 리터러시·중대 사고 보고 조항,
-GDPR과 국내 개인정보 보호법의 자동화된 결정 조항, NIST AI RMF와 ISO/IEC 42001,
-성폭력처벌법과 아동·청소년성보호법, 그리고 자유권규약 제19조다. 나머지 항목의
-정의문은 이 용어집을 위해 쓴 것이며 인용문이 아니다. 확인할 수 없는 수치나 날짜는
-쓰지 않고 개념 설명에 머물렀다.</p>
-<p>한 문단은 250자 안팎이다. 정의문은 검색 대상에 포함된다. 그래서 표제어에 없는 말로도 찾을 수 있다 —
-<code>보상 해킹</code>, <code>과도 거부</code>, <code>C2PA</code>, <code>LAWS</code>,
-<code>머신 언러닝</code>처럼 본문에서만 언급한 개념들이다.</p>
-
-<h2>중심성 실험 — 무엇이 작동했나</h2>
-<p>"최근성만 보지 말고 중심성도 따지자"에서 네 가지를 계산했다. 결과가 갈렸다.</p>
-
-<h3>작동하지 않은 것 — 전부 일반어 탐지기였다</h3>
+<h2>근거 자료와 다른 사이트</h2>
 <table>
-<tr><th>지표</th><th>최상위에 나온 것</th></tr>
-<tr><td>degree (동시출현 이웃 수)</td><td>AI, 문제, 가능성, 있으, 에서, 등을</td></tr>
-<tr><td>topic_entropy (17개 토픽 분산)</td><td>의사결정, 자원, 생태계, 등에, 있고, 통한</td></tr>
-<tr><td>pagerank_pmi (PMI 가중 PageRank)</td><td>문제의식, 기여, 동기, 점이, 측면, 주로</td></tr>
+<tr><th>자료</th><th>용어집에서 쓰는 곳</th></tr>
+<tr><td><a href="{ui.DIGEST_URL}" target="_blank" rel="noopener">AI 안전 다이제스트</a></td>
+<td>매일 모으는 뉴스·정책 동향. 표제어 후보 추출과 <b>참고 기사</b>의 출처입니다
+(빌드 시점 {docs:,}건, {html.escape(str(c.get('from', '')))} ~ {html.escape(str(c.get('to', '')))}).
+기사마다 원문 링크와 함께 그 기사가 실린 다이제스트 날짜 페이지를 잇습니다.</td></tr>
+<tr><td><a href="{ui.RESEARCH_URL}" target="_blank" rel="noopener">AI 안전 연구</a></td>
+<td>논문·연구 보고서 카탈로그. 참고 기사 가운데 <span class="ex-tag">연구</span> 표시가 붙은 항목이 연구 문헌입니다.</td></tr>
+<tr><td>PDF 근거 색인</td>
+<td>국제 보고서·법령·가이드라인 PDF를 쪽 단위로 색인한 연구소 내부 자료(PDF Evidence Desk)입니다.
+<b>PDF 원문 인용</b>과 쪽수가 여기서 옵니다. 현재 문서 {len(pdf_docs)}종: {html.escape(', '.join(pdf_docs))}.</td></tr>
+<tr><td><a href="{ui.LIBRARY_URL}" target="_blank" rel="noopener">AI 안전 라이브러리</a></td>
+<td>정책·보고서 문서 목록. 인용 문서가 라이브러리에 있으면 출처 옆에 <b>라이브러리에서 보기</b>를 붙입니다.</td></tr>
 </table>
-<p>이유: <b>코퍼스 전체가 이미 AI 안전 문서다.</b> 그래서 그래프 중심성이 개념
-위계가 아니라 국문 논문·기사의 상투적 연결어를 재발견한다. 중심성이 쓸모
-있으려면 여러 도메인이 섞인 코퍼스에서 AI 안전 용어가 구별되는 군집을
-이뤄야 하는데, 여기서는 그 군집이 곧 전체다.</p>
-<p><code>topic_entropy</code>에 걸었던 가설("여러 영역을 관통하면 기초 개념")도
-틀렸다. 코퍼스가 알려주는 건 <b>관통 = 모호함</b>이다.</p>
-<p>세 지표는 <b>음의 신호로만</b> 값어치가 있다. degree가 높은데 병기율이 0에
-가까우면 일반어이고(<code>위협</code> 0.79/0.03), 둘 다 높으면 핵심
-기술어다(<code>정렬</code> 0.74/0.26).</p>
+<p>용어마다 고정 주소가 있습니다. 카드 왼쪽 위 번호를 누르면 그 용어의 주소가 됩니다
+(예: <code>#incident-reporting</code>). 검색어와 장도 주소로 넘길 수 있습니다
+(<code>?q=탈옥</code>, <code>?ch=07</code>).</p>
 
-<h3>작동한 것 — 병기율</h3>
-<p>원문이 <code>표제어(뜻풀이)</code> 형태로 쓴 비율. <b>필자가 "이건 설명이
-필요하다"고 이미 판단한 흔적</b>이라, 용어집 적격성의 가장 직접적인 증거다.
-이 지표가 누락 표제어 4개를 찾아냈다 — <b>사고연쇄(CoT)</b>,
-<b>보정(calibration)</b>, <b>LLM 심판(LLM-as-a-Judge)</b>,
-<b>작업 시간 지평</b>. <code>GPAI</code>·<code>ASR</code>·<code>XAI</code>는
-기존 표제어의 원어로 확인돼 영문 표기를 보강했다.</p>
-<p>괄호 내용이 실제 뜻풀이인지 검사한다. <code>첨부파일(hwp)</code>·
-<code>모집(~5.30)</code> 같은 서식 괄호는 걸러낸다 — 정교화 전에는
-<code>첨부파일</code>이 병기율 0.96으로 1위였다.</p>
+<h2>표제어 후보를 어떻게 모았나</h2>
+<p>후보는 두 갈래로 기계적으로 모은 뒤 사람이 골랐습니다. 동향 코퍼스에서는 제목·요약의
+한글·영문 n-gram을 긁어 분류 쿼터를 두고 100개를 골랐고, PDF 색인에서는 정의 섹션과 본문
+빈도로 100개를 골랐습니다. 영문 표기로 합치면 173개였습니다. 2026년 10월 개편에서 중복을 합치고
+AI 안전 관점의 설명이 어려운 일반 용어 {len(excl)}개({excl_s})를 뺐으며, 장마다 빠진 핵심 개념을 더했습니다.</p>
+<p>후보를 고를 때 가장 쓸모 있었던 지표는 <b>병기율</b>입니다. 원문이 <code>표제어(뜻풀이)</code>처럼
+괄호로 풀어 쓴 비율로, 필자가 "설명이 필요하다"고 판단한 흔적입니다. 이 지표로 사고 사슬(CoT),
+보정, LLM 심판, 작업 시간 지평을 찾았습니다. 반대로 동시출현 그래프의 중심성(degree, 토픽 엔트로피,
+PMI 가중 PageRank)은 '문제', '가능성' 같은 일반어만 끌어올렸습니다 — 코퍼스 전체가 이미 AI 안전
+문서라서 그래프 중심성이 개념 위계가 아니라 상투적 연결어를 찾아낸 것입니다.</p>
 
 <h2>알려진 한계</h2>
 <ul>
-<li><b>형태소 분석기를 쓰지 않는다.</b> 조사 제거가 휴리스틱이라 오절단이 남는다
-(<code>비동의 성적</code> → <code>비동 성적</code>, 표제어에서 교정).</li>
-<li><b>광의어 용례에 잡음이 있다.</b> <code>AI 감사</code>는 대표 표기가
-<code>감사</code>라서 감사원 맥락까지 걸린다. 용례를 고를 때 구체적 변이를
-우선하지만 완전히 걸러지지는 않는다.</li>
-<li><b>정의문은 인용이 아니다.</b> 근거를 표시한 13개 항목을 뺀 나머지는 이
-용어집을 위해 작성한 설명이다. 사실관계를 틀리지 않게 쓰는 데 무게를 뒀지만,
-권위 있는 출처의 문구를 옮긴 것이 아니므로 인용이 필요한 자리에는 원 문헌을
-확인해야 한다.</li>
-<li><b>고유명사는 표제어에서 제외했다</b> (EU AI Act·NIST AI RMF·K-AISI 등).
-별도 부록 대상이다.</li>
-<li><b>코퍼스 요약 품질.</b> {c['docs']:,}건 중 829건은 요약이 placeholder
-(<code>요약불가</code> 등)다. 용례에서는 제외한다.</li>
+<li><b>용어 설명은 편집 초안이 섞여 있습니다.</b> 검토를 거친 카드부터 차례로 보강합니다.
+오류를 보시면 아래 메일로 알려 주세요.</li>
+<li><b>참고 기사에 잡음이 있습니다.</b> 표기로만 찾아서, 광의어(예: 감사)는 다른 맥락의 기사가 걸릴 수 있습니다.</li>
+<li><b>고유명사는 표제어에서 뺐습니다</b>(EU AI Act, NIST AI RMF, AISI 등).</li>
 </ul>
 
 <h2>소스</h2>
@@ -820,13 +922,9 @@ rel="noopener">github.com/songkyungho/ai-safety-glossary</a></p>
 
 
 def main():
-    path = config.MERGED_JSON
+    path = os.path.join(config.DATA, "glossary_site.json")
     if not os.path.exists(path):
-        sys.exit(
-            "병합 JSON이 없다: %s\n"
-            "  python3 scripts/merge_glossary.py 를 먼저 실행하라."
-            % path
-        )
+        sys.exit("사이트 JSON이 없다: %s\n  python3 scripts/apply_editorial.py 를 먼저 실행하라." % path)
     data = json.load(open(path, encoding="utf-8"))
     os.makedirs(config.DOCS, exist_ok=True)
     for name, fn in (("index.html", index_page), ("about.html", about_page)):
@@ -834,37 +932,26 @@ def main():
         with open(p, "w", encoding="utf-8") as f:
             f.write(fn(data))
         print("-> %s (%.1f KB)" % (p, os.path.getsize(p) / 1024))
-    # PDF 하위 경로는 통합본으로 안내
+    # 옛 PDF판 경로는 통합본으로 안내
     pdf_dir = os.path.join(config.DOCS, "pdf")
     os.makedirs(pdf_dir, exist_ok=True)
     redirect = """<!DOCTYPE html>
 <html lang="ko"><head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=../index.html?src=pdf">
-<link rel="canonical" href="../index.html?src=pdf">
-<title>PDF 용어집 → 통합 용어집</title>
+<meta http-equiv="refresh" content="0; url=../index.html">
+<link rel="canonical" href="../index.html">
+<title>AI 안전 용어집</title>
 </head><body>
-<p><a href="../index.html?src=pdf">통합 용어집 (PDF 출처 보기)</a>로 이동합니다.</p>
+<p><a href="../index.html">AI 안전 용어집</a>으로 이동합니다.</p>
 </body></html>
 """
-    with open(os.path.join(pdf_dir, "index.html"), "w", encoding="utf-8") as f:
-        f.write(redirect)
-    with open(os.path.join(pdf_dir, "about.html"), "w", encoding="utf-8") as f:
-        f.write(redirect)
+    for name in ("index.html", "about.html"):
+        with open(os.path.join(pdf_dir, name), "w", encoding="utf-8") as f:
+            f.write(redirect)
     with open(os.path.join(config.DOCS, ".nojekyll"), "w") as f:
         f.write("")
     stamp = datetime.now(KST).strftime("%Y-%m-%d %H:%M KST")
-    src = (data.get("meta") or {}).get("sources") or {}
-    print(
-        "빌드 %s · 병합 %d (양쪽 %s · 동향만 %s · PDF만 %s)"
-        % (
-            stamp,
-            len(data["entries"]),
-            src.get("both", "?"),
-            src.get("digest_only", "?"),
-            src.get("pdf_only", "?"),
-        )
-    )
+    print("빌드 %s · 표제어 %d" % (stamp, len(data["entries"])))
 
 
 if __name__ == "__main__":

@@ -2,10 +2,17 @@
 # 용어집 전체 재빌드. 코퍼스(digest.db)는 형제 저장소 "ai-safety-pipeline"에서 읽는다.
 #   GLOSSARY_DIGEST_REPO=/path/to/repo ./run_build.sh  로 위치를 덮어쓸 수 있다.
 # PDF판 JSON이 있으면 병합해 통합 사이트를 만든다.
+# 카드(data/cards)만 고쳤으면 6·7단계만 돌리면 된다:  ./run_build.sh --site
 set -euo pipefail
 cd "$(dirname "$0")"
 
 step() { printf '\n[%s] %s\n' "$1" "$2"; }
+
+if [[ "${1:-}" == "--site" ]]; then
+  python3 scripts/apply_editorial.py
+  python3 scripts/build_site.py
+  exit 0
+fi
 
 step 1 "후보 추출"
 python3 scripts/extract_candidates.py
@@ -17,7 +24,9 @@ step 4 "용례 수집 + JSON"
 python3 scripts/build_json.py
 step 5 "동향∪PDF 병합"
 python3 scripts/merge_glossary.py
-step 6 "정적 사이트"
+step 6 "카드 편집 계층 + kit 대조"
+python3 scripts/apply_editorial.py
+step 7 "정적 사이트"
 python3 scripts/build_site.py
 
 echo

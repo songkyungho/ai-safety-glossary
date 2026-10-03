@@ -1,0 +1,289 @@
+{
+  "_note": "구분(category) ⊃ 장(chapter). 장 소속은 카드의 chapter 필드가 정하고, order는 장 안에서의 표시 순서만 정한다(없는 id는 뒤에 가나다순).",
+  "categories": [
+    {
+      "code": "T",
+      "label": "AI 기술·역량",
+      "en": "Technology & Capabilities",
+      "color": "#475569"
+    },
+    {
+      "code": "R",
+      "label": "AI 위험·사고",
+      "en": "Risks & Incidents",
+      "color": "#b4413a"
+    },
+    {
+      "code": "E",
+      "label": "AI 평가·안전 대책",
+      "en": "Evaluation & Safeguards",
+      "color": "#1d5fa8"
+    },
+    {
+      "code": "G",
+      "label": "AI 거버넌스·제도",
+      "en": "Governance & Institutions",
+      "color": "#3f6b4a"
+    }
+  ],
+  "chapters": [
+    {
+      "no": "01",
+      "category": "T",
+      "label": "기반 기술·모델 공개",
+      "en": "Foundations & Model Release",
+      "order": [
+        "generative-ai",
+        "foundation-model",
+        "large-language-model-llm",
+        "open-weight-model",
+        "closed-model",
+        "model-weights",
+        "compute",
+        "training-data",
+        "synthetic-data",
+        "data-provenance",
+        "fine-tuning",
+        "distillation",
+        "inference",
+        "chain-of-thought-cot"
+      ]
+    },
+    {
+      "no": "02",
+      "category": "T",
+      "label": "에이전트·프론티어 역량",
+      "en": "Agents & Frontier Capabilities",
+      "order": [
+        "ai-agent",
+        "agentic-ai",
+        "autonomy",
+        "autonomous-planning",
+        "tool-use",
+        "multi-agent-system-mas",
+        "model-context-protocol-mcp",
+        "capability",
+        "task-time-horizon",
+        "frontier-ai",
+        "artificial-general-intellegence-agi",
+        "narrow-ai",
+        "superintelligence",
+        "recursive-self-improvement",
+        "physical-ai"
+      ]
+    },
+    {
+      "no": "03",
+      "category": "R",
+      "label": "위험 개념과 위험관리",
+      "en": "Risk Concepts & Management",
+      "order": [
+        "ai-risk",
+        "ai-hazard",
+        "ai-harm",
+        "threat",
+        "catastrophic-risk",
+        "systemic-risk",
+        "systemic-risk-assessment",
+        "marginal-risk",
+        "failure-mode",
+        "risk-assessment",
+        "risk-management",
+        "risk-mitigation",
+        "risk-tolerance",
+        "risk-thresholds",
+        "threat-modelling",
+        "lifecycle"
+      ]
+    },
+    {
+      "no": "04",
+      "category": "R",
+      "label": "모델 행동 위험",
+      "en": "Model Behaviour Risks",
+      "order": [
+        "misalignment",
+        "goal-misspecification",
+        "generalization",
+        "reward-hacking",
+        "deception",
+        "deceptive-alignment",
+        "scheming",
+        "sandbagging",
+        "situational-awareness",
+        "power-seeking-behaviour",
+        "self-exfiltration",
+        "ai-sycophancy",
+        "hallucination",
+        "sabotage",
+        "loss-of-control"
+      ]
+    },
+    {
+      "no": "05",
+      "category": "R",
+      "label": "오용·보안 위협",
+      "en": "Misuse & Security Threats",
+      "order": [
+        "misuse",
+        "malicious-use",
+        "abuse",
+        "dual-use-risk",
+        "dual-use-science",
+        "human-uplift",
+        "cbrn",
+        "persuasion",
+        "cyberattack",
+        "cyber-threat",
+        "cybersecurity",
+        "vulnerability",
+        "zero-day-vulnerability",
+        "malware",
+        "insider-threats",
+        "jailbreak",
+        "prompt-injection",
+        "supply-chain",
+        "autonomous-weapons",
+        "national-security"
+      ]
+    },
+    {
+      "no": "06",
+      "category": "R",
+      "label": "정보생태계·사회적 피해",
+      "en": "Information & Societal Harms",
+      "order": [
+        "ai-bias",
+        "discrimination",
+        "automation-bias",
+        "automated-decision-making-adm",
+        "harmful-content",
+        "deepfake",
+        "ai-generated-fake-content",
+        "disinformation",
+        "misinformation",
+        "non-consensual-intimate-imagery-ncii",
+        "child-sexual-abuse-material-csam",
+        "surveillance",
+        "censorship",
+        "privacy-breach",
+        "freedom-of-expression",
+        "mental-health",
+        "emotional-dependence",
+        "child-and-youth-protection",
+        "age-verification"
+      ]
+    },
+    {
+      "no": "07",
+      "category": "R",
+      "label": "사고·보고 및 모니터링",
+      "en": "Incidents & Monitoring",
+      "order": [
+        "ai-incident",
+        "serious-incident",
+        "ai-disaster",
+        "near-miss",
+        "incident-reporting",
+        "incident-report",
+        "incident-monitoring",
+        "post-deployment-monitoring",
+        "post-market-monitoring",
+        "malfunctioning"
+      ]
+    },
+    {
+      "no": "08",
+      "category": "E",
+      "label": "평가·시험",
+      "en": "Evaluation & Testing",
+      "order": [
+        "evaluation",
+        "safety-evaluation",
+        "capability-evaluation",
+        "pre-deployment-evaluation",
+        "benchmark-s",
+        "red-teaming",
+        "adversarial-testing",
+        "attack-success-rate-asr",
+        "llm-as-a-judge",
+        "calibration",
+        "ai-audit",
+        "safety-case"
+      ]
+    },
+    {
+      "no": "09",
+      "category": "E",
+      "label": "정렬·안전장치·감독",
+      "en": "Alignment, Safeguards & Oversight",
+      "order": [
+        "ai-alignment",
+        "rl-from-human-feedback-rlhf",
+        "interpretability",
+        "explainable-ai-xai",
+        "safeguard",
+        "ai-guardrails",
+        "sandboxing",
+        "human-oversight",
+        "human-in-the-loop",
+        "adversarial-training",
+        "machine-unlearning",
+        "cyber-defense",
+        "vulnerability-detection",
+        "ai-watermarking",
+        "provenance-metadata"
+      ]
+    },
+    {
+      "no": "10",
+      "category": "G",
+      "label": "원칙·책임",
+      "en": "Principles & Accountability",
+      "order": [
+        "ai-safety",
+        "ai-governance",
+        "ai-ethics",
+        "responsible-ai",
+        "trustworthy-ai",
+        "ai-accountability",
+        "transparency",
+        "algorithmic-transparency",
+        "institutional-transparency",
+        "fairness",
+        "reliability",
+        "robustness",
+        "ai-assurance",
+        "model-card",
+        "responsible-scaling-policy-rsp",
+        "ai-literacy"
+      ]
+    },
+    {
+      "no": "11",
+      "category": "G",
+      "label": "법·규제·표준",
+      "en": "Law, Regulation & Standards",
+      "order": [
+        "artificial-intelligence",
+        "high-risk-ai",
+        "high-impact-ai",
+        "general-purpose-ai-gpai",
+        "compute-threshold",
+        "conformity-assessment",
+        "certification",
+        "standardization",
+        "harmonised-standards",
+        "interoperability",
+        "compliance",
+        "transparency-obligation",
+        "binding-force",
+        "export-control",
+        "privacy",
+        "data-protection",
+        "copyright",
+        "sovereign-ai"
+      ]
+    }
+  ]
+}

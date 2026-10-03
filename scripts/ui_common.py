@@ -2,7 +2,7 @@
 """용어집 페이지 크롬 — AI 안전 라이브러리와 같은 토큰·헤더 구조를 쓴다.
 
 팔레트·타이포는 라이브러리(scripts/ui_common.py)에서 그대로 가져왔다.
-세 사이트(동향·라이브러리·용어집)가 한 시리즈로 보여야 하므로 값을
+네 사이트(다이제스트·라이브러리·연구·용어집)가 한 시리즈로 보여야 하므로 값을
 바꾸지 않는다. 바뀐 것은 내비게이션 항목과 헤더 문구뿐이다.
 """
 from __future__ import annotations
@@ -19,9 +19,10 @@ DIGEST_LABEL = "AI 안전 다이제스트"
 LIBRARY_URL = "https://songkyungho.github.io/ai-safety-library/"
 LIBRARY_LABEL = "AI 안전 라이브러리"
 RESEARCH_URL = "https://songkyungho.github.io/ai-safety-research/"
+RESEARCH_LABEL = "AI 안전 연구"
 NAV_ITEMS = NAV_RIGHT
 
-# 세 사이트가 한 시리즈로 보이도록 지면·타이포·구조는 라이브러리와 같게 두고,
+# 네 사이트가 한 시리즈로 보이도록 지면·타이포·구조는 라이브러리와 같게 두고,
 # 헤더 계열색만 갈라 놓는다. 동향은 퍼플 네이비(#474284), 라이브러리는 슬레이트
 # 네이비(#3a5270)를 쓰므로 용어집은 색상환에서 확실히 떨어진 딥 파인 그린을
 # 쓴다. 하이라이트도 두 사이트의 골드(#f3b84f)·브라스(#d4a45a)와 겹치지 않게
@@ -151,7 +152,7 @@ header.page-head .tagline a:hover { color: var(--gold); }
 """
 
 TAGLINES = {
-    "about.html": "표제어를 어떻게 골랐고, 어떤 지표가 쓸모 없었나",
+    "about.html": "구성과 표제어 원칙, 근거 자료",
 }
 
 
@@ -229,9 +230,9 @@ def _nav_items(items: list[tuple[str, str]], current: str, *, rel_prefix: str) -
 def nav_html(current: str = "", *, rel_prefix: str = "") -> str:
     # 네 사이트 공통 순서: 다이제스트 → 라이브러리 → 연구 → 용어집
     left = (
-        _nav_item(DIGEST_URL, "AI 안전 다이제스트", active=False, rel_prefix="")
-        + _nav_item(LIBRARY_URL, "AI 안전 라이브러리", active=False, rel_prefix="")
-        + _nav_item(RESEARCH_URL, "AI 안전 연구", active=False, rel_prefix="")
+        _nav_item(DIGEST_URL, DIGEST_LABEL, active=False, rel_prefix="")
+        + _nav_item(LIBRARY_URL, LIBRARY_LABEL, active=False, rel_prefix="")
+        + _nav_item(RESEARCH_URL, RESEARCH_LABEL, active=False, rel_prefix="")
         + _nav_item("index.html", "AI 안전 용어집", active=True, rel_prefix=rel_prefix)
     )
     return (
@@ -258,7 +259,7 @@ def shell_html(
         n = head_count if head_count is not None else 0
         parts.append("<h1>AI 안전 용어집</h1>")
         parts.append(
-            '<p class="tagline">동향 코퍼스와 PDF 원문에서 모은 핵심 용어 '
+            '<p class="tagline">AI 안전 관점으로 풀어 쓴 핵심 용어 '
             f'<span id="headCount">{n}</span>개.'
             f"{author_byline_html()}</p>"
         )
@@ -273,7 +274,7 @@ def shell_html(
 
 def omnibox_html() -> str:
     return """<div class="list-search omni-wrap">
-    <input id="omniBox" type="search" placeholder="표제어 · 영문 · 분류 · 용례  ( / )" autocomplete="off">
+    <input id="omniBox" type="search" placeholder="표제어 · 대체어 · 영문 · 설명  ( / )" autocomplete="off">
   <div id="omniResults" class="omni-results hidden"></div>
 </div>"""
 

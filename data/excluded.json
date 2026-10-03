@@ -1,0 +1,98 @@
+[
+  {
+    "join_key": "developer",
+    "head": "개발자",
+    "en": "Developer",
+    "reason": "AI 안전 고유 개념이 아님 (역할 구분은 법·규제 장 용어에서 다룸)"
+  },
+  {
+    "join_key": "algorithm",
+    "head": "알고리즘",
+    "en": "Algorithm",
+    "reason": "일반 컴퓨팅 용어"
+  },
+  {
+    "join_key": "encryption",
+    "head": "암호화",
+    "en": "Encryption",
+    "reason": "일반 보안 용어"
+  },
+  {
+    "join_key": "labourmarket",
+    "head": "노동시장",
+    "en": "Labour Market",
+    "reason": "AI 안전 관점의 정의가 어려움 (사회경제 영향)"
+  },
+  {
+    "join_key": "인공지능산업",
+    "head": "인공지능산업",
+    "en": "인공지능산업",
+    "reason": "산업 진흥 개념"
+  },
+  {
+    "join_key": "neuralnetwork",
+    "head": "신경망",
+    "en": "neural network",
+    "reason": "일반 기술 용어"
+  },
+  {
+    "join_key": "deeplearning",
+    "head": "딥러닝",
+    "en": "deep-learning",
+    "reason": "일반 기술 용어"
+  },
+  {
+    "join_key": "parameters",
+    "head": "파라미터",
+    "en": "Parameters",
+    "reason": "일반 기술 용어 (모델 가중치에서 다룸)"
+  },
+  {
+    "join_key": "modalities",
+    "head": "모달리티",
+    "en": "Modalities",
+    "reason": "일반 기술 용어"
+  },
+  {
+    "join_key": "automation",
+    "head": "자동화",
+    "en": "Automation",
+    "reason": "일반 용어"
+  },
+  {
+    "join_key": "stateoftheart",
+    "head": "최신(최고 수준)",
+    "en": "State-of-the-art",
+    "reason": "일반 용어"
+  },
+  {
+    "join_key": "intellectualproperty",
+    "head": "지식재산",
+    "en": "Intellectual property",
+    "reason": "AI 안전보다 지식재산 정책 개념"
+  },
+  {
+    "join_key": "lawenforcement",
+    "head": "법 집행",
+    "en": "Law Enforcement",
+    "reason": "일반 행정 용어"
+  },
+  {
+    "join_key": "datacollection",
+    "head": "데이터 수집",
+    "en": "Data collection",
+    "reason": "일반 용어"
+  },
+  {
+    "join_key": "digitalinfrastructure",
+    "head": "디지털 인프라",
+    "en": "Digital infrastructure",
+    "reason": "일반 정책 용어"
+  },
+  {
+    "join_key": "toxin",
+    "head": "독소",
+    "en": "Toxin",
+    "reason": "CBRN 항목에서 다룸"
+  }
+]
