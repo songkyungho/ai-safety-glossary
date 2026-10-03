@@ -535,10 +535,21 @@ details.term-more { margin: 10px 16px 0; }
 .ov-wrap { border-radius: 10px; border: 1px solid var(--gridline); margin-top: 6px; }
 svg.ov-map { display: block; width: 100%; min-width: 760px; height: auto; }
 .ov-mob { display: none; }
+.ov-toggle { display: none; }
 @media (max-width: 700px) {
   .ov-desk { display: none; }
-  .ov-mob { display: block; }
   .ov-mob svg.ov-map { min-width: 0; }
+  /* 모바일: 지도는 접어 두고 버튼으로 연다 */
+  .concept-maps .map-hint, .concept-maps .ov-wrap { display: none; }
+  .concept-maps.mob-open .map-hint, .concept-maps.mob-open .ov-wrap { display: block; }
+  .concept-maps .map-hint { order: 3; width: 100%; }
+  .ov-toggle { order: 2; }
+  .concept-maps.mob-open .ov-mob { display: block; }
+  .ov-toggle {
+    display: inline-block; margin-left: auto; border: 1px solid var(--hairline); background: var(--surface-2);
+    color: var(--navy); border-radius: 999px; padding: 4px 12px; font: inherit; font-size: 0.8rem; font-weight: 650;
+    cursor: pointer;
+  }
 }
 svg.ov-map .rel-n, svg.ov-map .rel-e, svg.ov-map .ov-hull { transition: opacity .25s; }
 svg.ov-map .dim { opacity: .1; }
@@ -1129,7 +1140,7 @@ def concept_maps_html(data):
             continue
         tdata[c["no"]] = {"terms": terms}
     return (f'<section class="concept-maps" aria-label="개념 지도">'
-            f'<div class="map-head"><h2>개념 지도</h2><span class="map-hint">장 이름표를 누르면 그 장이 확대되고, 다시 누르거나 빈 곳을 누르면 돌아옵니다.</span></div>'
+            f'<div class="map-head"><h2>개념 지도</h2><span class="map-hint">장 이름표를 누르면 그 장이 확대되고, 다시 누르거나 빈 곳을 누르면 돌아옵니다.</span><button type="button" class="ov-toggle" id="ovToggle" aria-expanded="false">개념 지도 펼치기</button></div>'
             f'<div class="rel-scroll ov-wrap">{svg}</div>'
             f'<script id="mapThemes" type="application/json">{ui.safe_json(tdata)}</script>'
             f'</section>')
@@ -1383,6 +1394,13 @@ def index_page(data):
     cards.forEach(function (c) { if (!c.classList.contains('hidden')) c.open = open; });
     tAll.dataset.open = open ? '1' : '';
     tAll.textContent = open ? '모두 접기' : '모두 펼치기';
+  });
+  var ovT = document.getElementById('ovToggle');
+  if (ovT) ovT.addEventListener('click', function () {
+    var sec = ovT.closest('.concept-maps');
+    var open = sec.classList.toggle('mob-open');
+    ovT.setAttribute('aria-expanded', open ? 'true' : 'false');
+    ovT.textContent = open ? '접기' : '개념 지도 펼치기';
   });
   // 새로 고침은 늘 맨 위(개념 지도)에서 시작한다. 공유 링크(#용어)로 처음 들어올 때만 그 카드로 간다
   var navType = (performance.getEntriesByType && performance.getEntriesByType('navigation')[0] || {}).type;

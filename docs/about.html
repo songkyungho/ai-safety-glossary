@@ -644,10 +644,21 @@ details.term-more { margin: 10px 16px 0; }
 .ov-wrap { border-radius: 10px; border: 1px solid var(--gridline); margin-top: 6px; }
 svg.ov-map { display: block; width: 100%; min-width: 760px; height: auto; }
 .ov-mob { display: none; }
+.ov-toggle { display: none; }
 @media (max-width: 700px) {
   .ov-desk { display: none; }
-  .ov-mob { display: block; }
   .ov-mob svg.ov-map { min-width: 0; }
+  /* 모바일: 지도는 접어 두고 버튼으로 연다 */
+  .concept-maps .map-hint, .concept-maps .ov-wrap { display: none; }
+  .concept-maps.mob-open .map-hint, .concept-maps.mob-open .ov-wrap { display: block; }
+  .concept-maps .map-hint { order: 3; width: 100%; }
+  .ov-toggle { order: 2; }
+  .concept-maps.mob-open .ov-mob { display: block; }
+  .ov-toggle {
+    display: inline-block; margin-left: auto; border: 1px solid var(--hairline); background: var(--surface-2);
+    color: var(--navy); border-radius: 999px; padding: 4px 12px; font: inherit; font-size: 0.8rem; font-weight: 650;
+    cursor: pointer;
+  }
 }
 svg.ov-map .rel-n, svg.ov-map .rel-e, svg.ov-map .ov-hull { transition: opacity .25s; }
 svg.ov-map .dim { opacity: .1; }
