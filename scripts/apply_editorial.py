@@ -7,6 +7,7 @@
   data/chapters.json          구분 ⊃ 장 체계와 장 안 표시 순서
   data/excluded.json          온라인에서 뺀 병합 항목
   data/library_map.json       PDF 근거 문서 → AI 안전 라이브러리 문서 id
+  data/doc_titles.json        PDF 근거 문서 제목 표기 바로잡기
 산출
   data/glossary_site.json
 
@@ -34,6 +35,7 @@ CARDS_DIR = os.path.join(config.DATA, "cards")
 CHAPTERS = os.path.join(config.DATA, "chapters.json")
 EXCLUDED = os.path.join(config.DATA, "excluded.json")
 LIBRARY_MAP = os.path.join(config.DATA, "library_map.json")
+DOC_TITLES = os.path.join(config.DATA, "doc_titles.json")
 SITE_JSON = os.path.join(config.DATA, "glossary_site.json")
 KIT_TERMS = os.environ.get(
     "GLOSSARY_KIT_TERMS",
@@ -101,6 +103,9 @@ def main() -> None:
     chapters = {c["no"]: c for c in chap["chapters"]}
     excluded = {x["join_key"] for x in json.load(open(EXCLUDED, encoding="utf-8"))}
     libmap = {k: v for k, v in json.load(open(LIBRARY_MAP, encoding="utf-8")).items() if not k.startswith("_")}
+    doc_titles = {}
+    if os.path.exists(DOC_TITLES):
+        doc_titles = {k: v for k, v in json.load(open(DOC_TITLES, encoding="utf-8")).items() if not k.startswith("_")}
     kit = load_kit()
     ddates = digest_dates()
 
@@ -168,6 +173,7 @@ def main() -> None:
                     continue
                 seen.add(k)
                 d = dict(d)
+                d.update(doc_titles.get(d.get("document_id"), {}))
                 lm = libmap.get(d.get("document_id"))
                 if lm:
                     d["library_id"] = lm["library_id"]

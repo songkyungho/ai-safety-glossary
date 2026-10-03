@@ -75,7 +75,7 @@ BUCKETS = [
  ("도구 사용","tool use",["도구 사용"]),
  ("모델 컨텍스트 프로토콜","MCP",["MCP"]),
  ("초지능","superintelligence",["초지능"]),
- ("범용인공지능","AGI",["AGI"]),
+ ("인공일반지능","AGI",["AGI"]),  # "범용"은 GPAI 번역어 — AGI에 쓰지 않는다
 ]),
 ("E. 거버넌스·책임 원칙", [
  ("AI 거버넌스","AI governance",["거버넌스","Governance"]),
