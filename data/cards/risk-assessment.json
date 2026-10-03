@@ -37,6 +37,20 @@
     "risk-tolerance",
     "threat-modelling"
   ],
+  "relations": {
+    "broader": [
+      "risk-management"
+    ],
+    "requires": [
+      "ai-risk"
+    ],
+    "leads_to": [
+      "risk-mitigation"
+    ],
+    "contrasts": [
+      "evaluation"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

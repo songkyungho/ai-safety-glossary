@@ -28,5 +28,13 @@
     "attack-success-rate-asr",
     "large-language-model-llm"
   ],
+  "relations": {
+    "broader": [
+      "evaluation"
+    ],
+    "requires": [
+      "large-language-model-llm"
+    ]
+  },
   "updated": "2026-10-03"
 }

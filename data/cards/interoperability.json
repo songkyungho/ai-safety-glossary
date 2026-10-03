@@ -21,6 +21,11 @@
     "incident-reporting",
     "model-context-protocol-mcp"
   ],
+  "relations": {
+    "requires": [
+      "standardization"
+    ]
+  },
   "status": "draft",
   "updated": "2026-10-03"
 }

@@ -37,6 +37,15 @@
     "deceptive-alignment",
     "loss-of-control"
   ],
+  "relations": {
+    "leads_to": [
+      "loss-of-control"
+    ],
+    "contrasts": [
+      "ai-alignment",
+      "malfunctioning"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

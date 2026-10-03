@@ -39,6 +39,7 @@
     "serious-incident",
     "harmful-content"
   ],
+  "relations": {},
   "frameworks": [
     {
       "org": "OECD",

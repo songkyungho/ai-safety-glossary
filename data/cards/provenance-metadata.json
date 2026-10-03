@@ -31,6 +31,11 @@
     "transparency-obligation",
     "ai-generated-fake-content"
   ],
+  "relations": {
+    "contrasts": [
+      "data-provenance"
+    ]
+  },
   "review_notes": [
     "대체어 '콘텐츠 자격증명'은 C2PA 구현의 명칭(Content Credentials)이라 상위 개념의 대체어로 보기 어려워 지움 — 확인 필요."
   ],

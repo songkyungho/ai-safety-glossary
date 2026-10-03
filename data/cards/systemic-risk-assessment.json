@@ -30,6 +30,14 @@
     "general-purpose-ai-gpai",
     "threat-modelling"
   ],
+  "relations": {
+    "broader": [
+      "risk-assessment"
+    ],
+    "requires": [
+      "systemic-risk"
+    ]
+  },
   "frameworks": [
     {
       "org": "EU GPAI 실천강령",

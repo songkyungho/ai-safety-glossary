@@ -36,5 +36,10 @@
     "reward-hacking",
     "ai-incident"
   ],
+  "relations": {
+    "leads_to": [
+      "malfunctioning"
+    ]
+  },
   "updated": "2026-10-03"
 }

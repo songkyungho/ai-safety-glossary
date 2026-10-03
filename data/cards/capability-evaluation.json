@@ -34,6 +34,14 @@
     "human-uplift",
     "sandbagging"
   ],
+  "relations": {
+    "broader": [
+      "safety-evaluation"
+    ],
+    "requires": [
+      "capability"
+    ]
+  },
   "frameworks": [
     {
       "org": "UK AISI",

@@ -32,6 +32,14 @@
     "standardization",
     "ai-audit"
   ],
+  "relations": {
+    "broader": [
+      "ai-assurance"
+    ],
+    "contrasts": [
+      "conformity-assessment"
+    ]
+  },
   "status": "draft",
   "updated": "2026-10-03"
 }

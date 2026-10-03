@@ -30,6 +30,11 @@
     "human-oversight",
     "open-weight-model"
   ],
+  "relations": {
+    "broader": [
+      "risk-mitigation"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

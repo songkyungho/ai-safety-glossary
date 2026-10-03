@@ -33,6 +33,14 @@
     "pre-deployment-evaluation",
     "risk-thresholds"
   ],
+  "relations": {
+    "broader": [
+      "ai-assurance"
+    ],
+    "contrasts": [
+      "risk-assessment"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

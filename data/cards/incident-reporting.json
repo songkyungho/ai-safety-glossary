@@ -37,6 +37,17 @@
     "incident-report",
     "incident-monitoring"
   ],
+  "relations": {
+    "requires": [
+      "ai-incident"
+    ],
+    "leads_to": [
+      "incident-monitoring"
+    ],
+    "contrasts": [
+      "incident-report"
+    ]
+  },
   "frameworks": [
     {
       "org": "OECD",

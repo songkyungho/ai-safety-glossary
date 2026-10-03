@@ -34,5 +34,10 @@
     "cbrn",
     "risk-thresholds"
   ],
+  "relations": {
+    "broader": [
+      "ai-risk"
+    ]
+  },
   "updated": "2026-10-03"
 }

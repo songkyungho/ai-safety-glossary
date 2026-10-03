@@ -34,6 +34,7 @@
     "sandboxing",
     "model-context-protocol-mcp"
   ],
+  "relations": {},
   "review_notes": [
     "원천 pdf_definitions('AI 핵심용어 단면' p.86)는 사용자가 직접 지시를 숨겨 넣는 공격으로 서술해 탈옥과 경계가 흐려지므로 frameworks에 쓰지 않음."
   ],

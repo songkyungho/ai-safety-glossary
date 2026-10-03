@@ -34,6 +34,17 @@
     "attack-success-rate-asr",
     "adversarial-training"
   ],
+  "relations": {
+    "requires": [
+      "safeguard"
+    ],
+    "leads_to": [
+      "harmful-content"
+    ],
+    "contrasts": [
+      "prompt-injection"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

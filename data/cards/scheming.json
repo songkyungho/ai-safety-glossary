@@ -30,6 +30,15 @@
     "loss-of-control",
     "human-oversight"
   ],
+  "relations": {
+    "requires": [
+      "misalignment",
+      "deception"
+    ],
+    "leads_to": [
+      "loss-of-control"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

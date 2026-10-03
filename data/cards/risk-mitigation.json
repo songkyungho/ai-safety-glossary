@@ -40,6 +40,11 @@
     "ai-guardrails",
     "risk-assessment"
   ],
+  "relations": {
+    "broader": [
+      "risk-management"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

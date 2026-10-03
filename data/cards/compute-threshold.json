@@ -36,6 +36,14 @@
     "frontier-ai",
     "risk-thresholds"
   ],
+  "relations": {
+    "requires": [
+      "compute"
+    ],
+    "contrasts": [
+      "risk-thresholds"
+    ]
+  },
   "frameworks": [
     {
       "org": "EU AI Act",

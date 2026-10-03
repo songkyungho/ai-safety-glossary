@@ -28,6 +28,14 @@
     "incident-reporting",
     "incident-monitoring"
   ],
+  "relations": {
+    "broader": [
+      "ai-hazard"
+    ],
+    "contrasts": [
+      "ai-incident"
+    ]
+  },
   "frameworks": [
     {
       "org": "OECD",

@@ -27,6 +27,7 @@
     "hallucination",
     "transparency-obligation"
   ],
+  "relations": {},
   "frameworks": [
     {
       "org": "EU AI Act",

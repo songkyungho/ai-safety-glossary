@@ -29,5 +29,10 @@
     "safeguard",
     "ai-harm"
   ],
+  "relations": {
+    "broader": [
+      "harmful-content"
+    ]
+  },
   "updated": "2026-10-03"
 }

@@ -40,5 +40,10 @@
     "data-protection",
     "algorithmic-transparency"
   ],
+  "relations": {
+    "contrasts": [
+      "human-oversight"
+    ]
+  },
   "updated": "2026-10-03"
 }

@@ -24,5 +24,10 @@
     "malicious-use",
     "risk-thresholds"
   ],
+  "relations": {
+    "requires": [
+      "human-uplift"
+    ]
+  },
   "updated": "2026-10-03"
 }

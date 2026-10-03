@@ -35,6 +35,11 @@
     "loss-of-control",
     "ai-accountability"
   ],
+  "relations": {
+    "broader": [
+      "safeguard"
+    ]
+  },
   "frameworks": [
     {
       "org": "EU AI HLEG",

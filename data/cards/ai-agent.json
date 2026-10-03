@@ -44,6 +44,12 @@
     "multi-agent-system-mas",
     "prompt-injection"
   ],
+  "relations": {
+    "requires": [
+      "tool-use",
+      "autonomous-planning"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

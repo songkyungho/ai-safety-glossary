@@ -21,6 +21,14 @@
     "scheming",
     "sandboxing"
   ],
+  "relations": {
+    "requires": [
+      "model-weights"
+    ],
+    "leads_to": [
+      "loss-of-control"
+    ]
+  },
   "frameworks": [
     {
       "org": "EU GPAI 실천강령 안내서",

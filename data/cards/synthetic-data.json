@@ -30,6 +30,11 @@
     "privacy",
     "ai-bias"
   ],
+  "relations": {
+    "contrasts": [
+      "deepfake"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

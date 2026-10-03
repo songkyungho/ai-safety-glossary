@@ -35,6 +35,17 @@
     "jailbreak",
     "safeguard"
   ],
+  "relations": {
+    "broader": [
+      "safeguard"
+    ],
+    "leads_to": [
+      "robustness"
+    ],
+    "contrasts": [
+      "adversarial-testing"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

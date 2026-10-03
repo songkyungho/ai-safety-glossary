@@ -34,6 +34,14 @@
     "ai-audit",
     "responsible-scaling-policy-rsp"
   ],
+  "relations": {
+    "requires": [
+      "ai-ethics"
+    ],
+    "contrasts": [
+      "ai-accountability"
+    ]
+  },
   "status": "draft",
   "updated": "2026-10-03"
 }

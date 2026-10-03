@@ -23,6 +23,11 @@
     "cyber-threat",
     "sabotage"
   ],
+  "relations": {
+    "broader": [
+      "threat"
+    ]
+  },
   "frameworks": [
     {
       "org": "EU GPAI 실천강령 안내서",

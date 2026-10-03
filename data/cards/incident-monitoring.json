@@ -32,6 +32,11 @@
     "post-deployment-monitoring",
     "near-miss"
   ],
+  "relations": {
+    "requires": [
+      "ai-incident"
+    ]
+  },
   "frameworks": [
     {
       "org": "OECD",

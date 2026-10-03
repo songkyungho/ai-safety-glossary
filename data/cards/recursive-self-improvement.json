@@ -26,6 +26,12 @@
     "capability-evaluation",
     "artificial-general-intellegence-agi"
   ],
+  "relations": {
+    "leads_to": [
+      "superintelligence",
+      "loss-of-control"
+    ]
+  },
   "status": "draft",
   "updated": "2026-10-03"
 }

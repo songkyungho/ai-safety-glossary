@@ -28,5 +28,10 @@
     "ai-literacy",
     "ai-sycophancy"
   ],
+  "relations": {
+    "contrasts": [
+      "ai-bias"
+    ]
+  },
   "updated": "2026-10-03"
 }

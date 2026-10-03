@@ -507,6 +507,30 @@ a.lib-link { margin-left: 0; }
   .fw-org span { display: inline; margin-left: 6px; }
   .bucket-head .ch-cat { float: none; display: block; }
 }
+
+/* 용어 관계 — 맨 위 개념 지도와 카드 안 관계도 (relmap.py) */
+.concept-maps {
+  background: var(--surface-1); border: 1px solid var(--hairline); border-radius: 14px;
+  padding: 14px 16px 10px; margin: 0 0 6px;
+}
+.map-head { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.map-head h2 { margin: 0; font-size: 0.95rem; letter-spacing: -0.02em; }
+.map-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.map-desc { margin: 6px 0 4px; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
+.rel-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+svg.rel-map { display: block; width: 100%; min-width: 640px; height: auto; }
+svg.rel-ego { display: block; width: 100%; max-width: 620px; min-width: 500px; height: auto; margin: 0 auto; }
+svg .rel-n rect { transition: stroke-width .12s; }
+svg a.rel-n:hover rect { stroke-width: 2.6; }
+svg a.rel-n:hover text { text-decoration: underline; }
+svg a.rel-n:focus-visible rect { stroke-width: 3; }
+.rel-legend-wrap {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px;
+  border-top: 1px solid var(--gridline); margin-top: 6px; padding-top: 6px;
+}
+svg.rel-legend { width: 560px; max-width: 100%; height: auto; }
+.map-hint { font-size: 0.72rem; color: var(--text-muted); }
+.term-rel { border-top: 1px solid var(--gridline); padding-top: 10px; margin-top: 10px; }
 </style>
 </head>
 <body>
@@ -543,6 +567,13 @@ a.lib-link { margin-left: 0; }
 <p>용어 설명은 이 용어집을 위해 쓴 글이며 인용문이 아닙니다. 기관·문서별 항목은 원문과
 쪽수를 확인한 것만 실었고(현재 104개 표제어), 확인하지 못한 수치나 조문 번호는 쓰지 않았습니다.
 인용이 필요한 자리에서는 출처의 원 문헌을 확인해 주세요.</p>
+
+<h2>개념 지도와 용어 관계</h2>
+<p>용어 사이의 관계를 네 가지로 나눠 기록했습니다 — <b>상위·하위</b>(포함: AI 사고 ⊃ 중대 AI 사고),
+<b>이어짐</b>(인과·단계: AI 위험원 → AI 사고), <b>먼저 알 개념</b>(정의에 다른 개념이 필요한 경우:
+기만·오정렬 → 계략적 행동), <b>혼동 주의</b>(허위 정보 ↔ 오정보). 맨 위 개념 지도는 이 관계로
+주제별 핵심 용어를 한 장씩 배치한 것이고, 카드마다 있는 <b>용어 관계</b> 그림은 그 용어 주변만 보여 줍니다.
+관계는 현재 195개입니다.</p>
 
 <h2>근거 자료와 다른 사이트</h2>
 <table>

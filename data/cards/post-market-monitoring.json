@@ -33,6 +33,7 @@
     "high-risk-ai",
     "general-purpose-ai-gpai"
   ],
+  "relations": {},
   "frameworks": [
     {
       "org": "EU GPAI 실천강령",

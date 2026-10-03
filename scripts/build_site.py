@@ -16,6 +16,7 @@ from datetime import datetime, timezone, timedelta
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config  # noqa: E402
 import ui_common as ui  # noqa: E402
+import relmap  # noqa: E402
 
 KST = timezone(timedelta(hours=9))
 
@@ -397,6 +398,30 @@ a.lib-link { margin-left: 0; }
   .fw-org span { display: inline; margin-left: 6px; }
   .bucket-head .ch-cat { float: none; display: block; }
 }
+
+/* 용어 관계 — 맨 위 개념 지도와 카드 안 관계도 (relmap.py) */
+.concept-maps {
+  background: var(--surface-1); border: 1px solid var(--hairline); border-radius: 14px;
+  padding: 14px 16px 10px; margin: 0 0 6px;
+}
+.map-head { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.map-head h2 { margin: 0; font-size: 0.95rem; letter-spacing: -0.02em; }
+.map-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.map-desc { margin: 6px 0 4px; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
+.rel-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+svg.rel-map { display: block; width: 100%; min-width: 640px; height: auto; }
+svg.rel-ego { display: block; width: 100%; max-width: 620px; min-width: 500px; height: auto; margin: 0 auto; }
+svg .rel-n rect { transition: stroke-width .12s; }
+svg a.rel-n:hover rect { stroke-width: 2.6; }
+svg a.rel-n:hover text { text-decoration: underline; }
+svg a.rel-n:focus-visible rect { stroke-width: 3; }
+.rel-legend-wrap {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px;
+  border-top: 1px solid var(--gridline); margin-top: 6px; padding-top: 6px;
+}
+svg.rel-legend { width: 560px; max-width: 100%; height: auto; }
+.map-hint { font-size: 0.72rem; color: var(--text-muted); }
+.term-rel { border-top: 1px solid var(--gridline); padding-top: 10px; margin-top: 10px; }
 """
 
 
@@ -517,6 +542,16 @@ def ref_sup(cid, ns):
     return "".join(f' <a class="ref-sup" href="#{html.escape(cid)}-ref-{n}">[{n}]</a>' for n in ns or [])
 
 
+REL_CTX = {"nodes": {}, "color": {}}
+
+
+def rel_section(e):
+    svg = relmap.ego_svg(e, REL_CTX["nodes"], lambda i: REL_CTX["color"].get(i, "var(--navy)"))
+    if not svg:
+        return ""
+    return f'<section class="term-rel"><h3 class="sec">용어 관계</h3><div class="rel-scroll">{svg}</div></section>'
+
+
 def card_html(e):
     cid = e["id"]
     d = e.get("definition") or {}
@@ -609,8 +644,7 @@ def card_html(e):
 
     return (
         f'<article class="term-card" id="{html.escape(cid)}" data-cat="{e["category"]}" '
-        f'data-ch="{e["chapter"]}" data-n="{e["n"]}" data-df="{e["metrics"].get("df", 0)}" '
-        f'data-pdfdf="{e["metrics"].get("pdf_df", 0)}" data-head="{html.escape(e["head"])}" '
+        f'data-ch="{e["chapter"]}" data-n="{e["n"]}" data-head="{html.escape(e["head"])}" '
         f'data-q="{html.escape(" ".join(q_bits).lower())}" '
         f'data-qn="{html.escape(nospace(" ".join([e["head"], e["en"]] + [a["text"] for a in alts])).lower())}" style="--chip:{html.escape(e["color"])}">'
         f'<div class="card-top"><a class="term-n" href="#{html.escape(cid)}" title="이 용어 링크">{e["n"]:03d}</a>'
@@ -620,7 +654,7 @@ def card_html(e):
         f'<span class="term-en">{html.escape(e["en"])}</span></h2>'
         f'<dl class="term-meta">{"".join(meta)}</dl>'
         f'<section class="term-explain"><h3 class="sec">용어 설명</h3>{"".join(explain)}</section>'
-        f"{related}{fw}{refs}{more_html}"
+        f"{rel_section(e)}{related}{fw}{refs}{more_html}"
         f"</article>"
     )
 
@@ -632,9 +666,32 @@ LEGEND = """<details class="legend">
 <tr><td>대체어</td><td>함께 쓰이는 다른 표기. 마우스를 올리면 출처(정본 변형·이전 표기·편집)가 보인다.</td></tr>
 <tr><td>용어 설명</td><td>굵은 한 줄이 정의, 아래 항목이 AI 안전 관점의 부연, 회색 상자가 헷갈리기 쉬운 용어와의 구별이다.</td></tr>
 <tr><td>기관·문서별</td><td>국제기구·표준·법령이 그 개념을 어떻게 정의하고 적용하는지. 번호는 출처 목록을 가리킨다.</td></tr>
+<tr><td>용어 관계</td><td>가운데가 이 용어. 위는 상위어, 아래는 하위어, 왼쪽은 먼저 알 개념·앞 단계, 오른쪽은 다음 단계·혼동 주의 용어다. 상자를 누르면 그 카드로 간다.</td></tr>
 <tr><td>펼치기</td><td>해설, PDF 원문 인용(쪽수), 다이제스트 참고 기사, 코퍼스 지표.</td></tr>
 </table>
 </details>"""
+
+
+def concept_maps_html(data):
+    path = os.path.join(config.DATA, "concept_maps.json")
+    if not os.path.exists(path):
+        return ""
+    maps = json.load(open(path, encoding="utf-8"))["maps"]
+    edges = [tuple(x) for x in data.get("relations") or []]
+    color = lambda i: REL_CTX["color"].get(i, "var(--navy)")
+    tabs, panels = [], []
+    for i, m in enumerate(maps):
+        act = " active" if i == 0 else ""
+        tabs.append(f'<button class="filter-chip map-tab{act}" data-map="{m["id"]}">{html.escape(m["title"])}</button>')
+        panels.append(
+            f'<div class="map-panel" data-map="{m["id"]}"{"" if i == 0 else " hidden"}>'
+            f'<p class="map-desc">{html.escape(m.get("desc", ""))}</p>'
+            f'<div class="rel-scroll">{relmap.concept_map_svg(m, REL_CTX["nodes"], edges, color)}</div></div>')
+    tabbar = f'<div class="map-tabs">{"".join(tabs)}</div>' if len(maps) > 1 else ""
+    return (f'<section class="concept-maps" aria-label="개념 지도">'
+            f'<div class="map-head"><h2>개념 지도</h2>{tabbar}</div>{"".join(panels)}'
+            f'<div class="rel-legend-wrap">{relmap.LEGEND_SVG}<span class="map-hint">상자를 누르면 그 용어 카드로 갑니다.</span></div>'
+            f'</section>')
 
 
 def index_page(data):
@@ -651,7 +708,7 @@ def index_page(data):
         f'style="--chip:{cat_color[c["category"]]}">{c["no"]}. {html.escape(c["label"])} '
         f'<span class="n">{c["n"]}</span></button>'
         for c in chs if c["n"])
-    sorts = [("ch", "장순"), ("ko", "가나다"), ("df", "동향 문서"), ("pdfdf", "PDF 문서")]
+    sorts = [("ch", "장순"), ("ko", "가나다")]
     sort_chips = "".join(
         f'<button class="filter-chip{" active" if k == "ch" else ""}" data-sort="{k}">{html.escape(lb)}</button>'
         for k, lb in sorts)
@@ -660,10 +717,14 @@ def index_page(data):
     cat_label = {c["code"]: c["label"] for c in cats}
     legacy_path = os.path.join(config.DATA, "legacy_anchors.json")
     legacy = json.load(open(legacy_path, encoding="utf-8"))["map"] if os.path.exists(legacy_path) else {}
+    REL_CTX["nodes"] = {e["id"]: {"id": e["id"], "head": e["head"], "en": e["en"]} for e in ents}
+    REL_CTX["color"] = {e["id"]: e["color"] for e in ents}
     cards = "".join(card_html(e) for e in ents)
+    maps_html = concept_maps_html(data)
     c = data.get("corpus") or {}
     corpus_note = html.escape("동향 코퍼스 {:,}건 기준".format(c["docs"])) if c.get("docs") else ""
-    body = f"""{ui.omnibox_html()}
+    body = f"""{maps_html}
+{ui.omnibox_html()}
 {LEGEND}
 <div id="listControls">
   <div class="filter-toolbar">
@@ -738,13 +799,8 @@ def index_page(data):
     var vis = cards.filter(function (c) { return !c.classList.contains('hidden'); });
     if (state.sort === 'ch') {
       vis.sort(function (a, b) { return num(a, 'n') - num(b, 'n'); });
-    } else if (state.sort === 'ko') {
-      vis.sort(function (a, b) { return a.dataset.head.localeCompare(b.dataset.head, 'ko'); });
     } else {
-      vis.sort(function (a, b) {
-        var d = num(b, state.sort) - num(a, state.sort);
-        return d !== 0 ? d : num(a, 'n') - num(b, 'n');
-      });
+      vis.sort(function (a, b) { return a.dataset.head.localeCompare(b.dataset.head, 'ko'); });
     }
     list.querySelectorAll('.bucket-head').forEach(function (h) { h.remove(); });
     var frag = document.createDocumentFragment();
@@ -817,6 +873,12 @@ def index_page(data):
     var a = ev.target.closest && ev.target.closest('a[href^="http"]');
     if (a) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
   }, true);
+  document.querySelectorAll('button.map-tab').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('button.map-tab').forEach(function (o) { o.classList.toggle('active', o === b); });
+      document.querySelectorAll('.map-panel').forEach(function (pn) { pn.hidden = pn.dataset.map !== b.dataset.map; });
+    });
+  });
   window.addEventListener('hashchange', onHash);
   if ('scrollRestoration' in history && location.hash) history.scrollRestoration = 'manual';
   apply();
@@ -875,6 +937,13 @@ def about_page(data):
 <p>용어 설명은 이 용어집을 위해 쓴 글이며 인용문이 아닙니다. 기관·문서별 항목은 원문과
 쪽수를 확인한 것만 실었고(현재 {cnt.get('with_frameworks', 0)}개 표제어), 확인하지 못한 수치나 조문 번호는 쓰지 않았습니다.
 인용이 필요한 자리에서는 출처의 원 문헌을 확인해 주세요.</p>
+
+<h2>개념 지도와 용어 관계</h2>
+<p>용어 사이의 관계를 네 가지로 나눠 기록했습니다 — <b>상위·하위</b>(포함: AI 사고 ⊃ 중대 AI 사고),
+<b>이어짐</b>(인과·단계: AI 위험원 → AI 사고), <b>먼저 알 개념</b>(정의에 다른 개념이 필요한 경우:
+기만·오정렬 → 계략적 행동), <b>혼동 주의</b>(허위 정보 ↔ 오정보). 맨 위 개념 지도는 이 관계로
+주제별 핵심 용어를 한 장씩 배치한 것이고, 카드마다 있는 <b>용어 관계</b> 그림은 그 용어 주변만 보여 줍니다.
+관계는 현재 {data.get('meta', {}).get('counts', {}).get('relations', 0)}개입니다.</p>
 
 <h2>근거 자료와 다른 사이트</h2>
 <table>

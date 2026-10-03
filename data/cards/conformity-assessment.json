@@ -29,6 +29,14 @@
     "compliance",
     "post-market-monitoring"
   ],
+  "relations": {
+    "broader": [
+      "ai-assurance"
+    ],
+    "contrasts": [
+      "evaluation"
+    ]
+  },
   "frameworks": [
     {
       "org": "EU AI Act",

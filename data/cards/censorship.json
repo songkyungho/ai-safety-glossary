@@ -31,5 +31,11 @@
     "safety-evaluation",
     "transparency"
   ],
+  "relations": {
+    "contrasts": [
+      "safeguard",
+      "ai-guardrails"
+    ]
+  },
   "updated": "2026-10-03"
 }

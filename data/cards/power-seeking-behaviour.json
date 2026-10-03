@@ -21,5 +21,10 @@
     "agentic-ai",
     "scheming"
   ],
+  "relations": {
+    "leads_to": [
+      "loss-of-control"
+    ]
+  },
   "updated": "2026-10-03"
 }

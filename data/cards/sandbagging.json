@@ -35,6 +35,14 @@
     "scheming",
     "pre-deployment-evaluation"
   ],
+  "relations": {
+    "broader": [
+      "scheming"
+    ],
+    "requires": [
+      "situational-awareness"
+    ]
+  },
   "frameworks": [
     {
       "org": "EU GPAI 실천강령 안내서",

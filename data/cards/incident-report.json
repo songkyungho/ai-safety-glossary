@@ -32,6 +32,7 @@
     "serious-incident",
     "incident-monitoring"
   ],
+  "relations": {},
   "frameworks": [
     {
       "org": "OECD",

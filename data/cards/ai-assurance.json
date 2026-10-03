@@ -36,6 +36,11 @@
     "safety-case",
     "trustworthy-ai"
   ],
+  "relations": {
+    "contrasts": [
+      "compliance"
+    ]
+  },
   "status": "draft",
   "updated": "2026-10-03"
 }

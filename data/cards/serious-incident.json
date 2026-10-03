@@ -34,6 +34,11 @@
     "high-risk-ai",
     "systemic-risk"
   ],
+  "relations": {
+    "broader": [
+      "ai-incident"
+    ]
+  },
   "frameworks": [
     {
       "org": "OECD",

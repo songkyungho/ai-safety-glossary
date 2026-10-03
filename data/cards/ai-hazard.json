@@ -35,6 +35,11 @@
     "near-miss",
     "incident-monitoring"
   ],
+  "relations": {
+    "leads_to": [
+      "ai-incident"
+    ]
+  },
   "frameworks": [
     {
       "org": "OECD",

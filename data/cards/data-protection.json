@@ -36,6 +36,11 @@
     "machine-unlearning",
     "training-data"
   ],
+  "relations": {
+    "contrasts": [
+      "privacy"
+    ]
+  },
   "status": "draft",
   "updated": "2026-10-03"
 }

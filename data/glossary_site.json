@@ -1,12 +1,13 @@
 {
   "meta": {
     "title": "AI 안전 용어집",
-    "built_at": "2026-10-03T14:01:47+09:00",
+    "built_at": "2026-10-03T14:14:18+09:00",
     "method": "glossary_merged.json + data/cards 편집 계층",
     "counts": {
       "entries": 170,
       "cards_with_definition": 170,
       "with_frameworks": 104,
+      "relations": 195,
       "merged_used": 157,
       "excluded": 16,
       "sources": {
@@ -140,6 +141,983 @@
       "en": "Law, Regulation & Standards",
       "n": 18
     }
+  ],
+  "relations": [
+    [
+      "abuse",
+      "broader",
+      "misuse"
+    ],
+    [
+      "abuse",
+      "contrasts",
+      "malicious-use"
+    ],
+    [
+      "adversarial-testing",
+      "broader",
+      "evaluation"
+    ],
+    [
+      "adversarial-testing",
+      "contrasts",
+      "adversarial-training"
+    ],
+    [
+      "adversarial-testing",
+      "contrasts",
+      "red-teaming"
+    ],
+    [
+      "adversarial-training",
+      "broader",
+      "safeguard"
+    ],
+    [
+      "adversarial-training",
+      "leads_to",
+      "robustness"
+    ],
+    [
+      "age-verification",
+      "broader",
+      "child-and-youth-protection"
+    ],
+    [
+      "agentic-ai",
+      "contrasts",
+      "ai-agent"
+    ],
+    [
+      "agentic-ai",
+      "requires",
+      "autonomy"
+    ],
+    [
+      "ai-accountability",
+      "broader",
+      "trustworthy-ai"
+    ],
+    [
+      "ai-accountability",
+      "contrasts",
+      "responsible-ai"
+    ],
+    [
+      "ai-agent",
+      "requires",
+      "autonomous-planning"
+    ],
+    [
+      "ai-agent",
+      "requires",
+      "tool-use"
+    ],
+    [
+      "ai-alignment",
+      "contrasts",
+      "misalignment"
+    ],
+    [
+      "ai-assurance",
+      "contrasts",
+      "compliance"
+    ],
+    [
+      "ai-audit",
+      "broader",
+      "ai-assurance"
+    ],
+    [
+      "ai-audit",
+      "contrasts",
+      "conformity-assessment"
+    ],
+    [
+      "ai-audit",
+      "contrasts",
+      "evaluation"
+    ],
+    [
+      "ai-bias",
+      "contrasts",
+      "automation-bias"
+    ],
+    [
+      "ai-bias",
+      "contrasts",
+      "fairness"
+    ],
+    [
+      "ai-bias",
+      "leads_to",
+      "discrimination"
+    ],
+    [
+      "ai-disaster",
+      "broader",
+      "serious-incident"
+    ],
+    [
+      "ai-disaster",
+      "contrasts",
+      "catastrophic-risk"
+    ],
+    [
+      "ai-ethics",
+      "contrasts",
+      "ai-safety"
+    ],
+    [
+      "ai-generated-fake-content",
+      "contrasts",
+      "disinformation"
+    ],
+    [
+      "ai-generated-fake-content",
+      "requires",
+      "generative-ai"
+    ],
+    [
+      "ai-guardrails",
+      "broader",
+      "safeguard"
+    ],
+    [
+      "ai-guardrails",
+      "contrasts",
+      "censorship"
+    ],
+    [
+      "ai-hazard",
+      "contrasts",
+      "threat"
+    ],
+    [
+      "ai-hazard",
+      "leads_to",
+      "ai-incident"
+    ],
+    [
+      "ai-incident",
+      "contrasts",
+      "near-miss"
+    ],
+    [
+      "ai-incident",
+      "requires",
+      "ai-harm"
+    ],
+    [
+      "ai-risk",
+      "contrasts",
+      "threat"
+    ],
+    [
+      "ai-risk",
+      "requires",
+      "ai-harm"
+    ],
+    [
+      "ai-risk",
+      "requires",
+      "ai-hazard"
+    ],
+    [
+      "ai-safety",
+      "contrasts",
+      "cybersecurity"
+    ],
+    [
+      "ai-sycophancy",
+      "contrasts",
+      "deception"
+    ],
+    [
+      "ai-sycophancy",
+      "contrasts",
+      "hallucination"
+    ],
+    [
+      "ai-sycophancy",
+      "leads_to",
+      "emotional-dependence"
+    ],
+    [
+      "ai-watermarking",
+      "contrasts",
+      "provenance-metadata"
+    ],
+    [
+      "algorithmic-transparency",
+      "broader",
+      "transparency"
+    ],
+    [
+      "algorithmic-transparency",
+      "contrasts",
+      "institutional-transparency"
+    ],
+    [
+      "artificial-general-intellegence-agi",
+      "contrasts",
+      "artificial-intelligence"
+    ],
+    [
+      "artificial-general-intellegence-agi",
+      "contrasts",
+      "general-purpose-ai-gpai"
+    ],
+    [
+      "artificial-general-intellegence-agi",
+      "contrasts",
+      "narrow-ai"
+    ],
+    [
+      "artificial-general-intellegence-agi",
+      "leads_to",
+      "superintelligence"
+    ],
+    [
+      "attack-success-rate-asr",
+      "requires",
+      "jailbreak"
+    ],
+    [
+      "attack-success-rate-asr",
+      "requires",
+      "prompt-injection"
+    ],
+    [
+      "automated-decision-making-adm",
+      "contrasts",
+      "human-oversight"
+    ],
+    [
+      "autonomous-planning",
+      "broader",
+      "capability"
+    ],
+    [
+      "autonomous-planning",
+      "contrasts",
+      "autonomy"
+    ],
+    [
+      "autonomous-weapons",
+      "requires",
+      "autonomy"
+    ],
+    [
+      "autonomy",
+      "contrasts",
+      "human-oversight"
+    ],
+    [
+      "benchmark-s",
+      "broader",
+      "evaluation"
+    ],
+    [
+      "capability-evaluation",
+      "broader",
+      "safety-evaluation"
+    ],
+    [
+      "capability-evaluation",
+      "requires",
+      "capability"
+    ],
+    [
+      "catastrophic-risk",
+      "broader",
+      "ai-risk"
+    ],
+    [
+      "catastrophic-risk",
+      "contrasts",
+      "systemic-risk"
+    ],
+    [
+      "cbrn",
+      "requires",
+      "human-uplift"
+    ],
+    [
+      "censorship",
+      "contrasts",
+      "safeguard"
+    ],
+    [
+      "certification",
+      "broader",
+      "ai-assurance"
+    ],
+    [
+      "certification",
+      "contrasts",
+      "conformity-assessment"
+    ],
+    [
+      "chain-of-thought-cot",
+      "contrasts",
+      "inference"
+    ],
+    [
+      "chain-of-thought-cot",
+      "contrasts",
+      "interpretability"
+    ],
+    [
+      "child-sexual-abuse-material-csam",
+      "broader",
+      "harmful-content"
+    ],
+    [
+      "closed-model",
+      "contrasts",
+      "open-weight-model"
+    ],
+    [
+      "closed-model",
+      "requires",
+      "model-weights"
+    ],
+    [
+      "compute-threshold",
+      "contrasts",
+      "risk-thresholds"
+    ],
+    [
+      "compute-threshold",
+      "requires",
+      "compute"
+    ],
+    [
+      "conformity-assessment",
+      "broader",
+      "ai-assurance"
+    ],
+    [
+      "conformity-assessment",
+      "contrasts",
+      "evaluation"
+    ],
+    [
+      "cyber-defense",
+      "broader",
+      "cybersecurity"
+    ],
+    [
+      "cyber-threat",
+      "broader",
+      "threat"
+    ],
+    [
+      "cyber-threat",
+      "contrasts",
+      "vulnerability"
+    ],
+    [
+      "cyber-threat",
+      "leads_to",
+      "cyberattack"
+    ],
+    [
+      "data-protection",
+      "contrasts",
+      "privacy"
+    ],
+    [
+      "data-protection",
+      "contrasts",
+      "privacy-breach"
+    ],
+    [
+      "data-provenance",
+      "contrasts",
+      "provenance-metadata"
+    ],
+    [
+      "data-provenance",
+      "requires",
+      "training-data"
+    ],
+    [
+      "deception",
+      "contrasts",
+      "deceptive-alignment"
+    ],
+    [
+      "deception",
+      "contrasts",
+      "hallucination"
+    ],
+    [
+      "deception",
+      "contrasts",
+      "persuasion"
+    ],
+    [
+      "deceptive-alignment",
+      "broader",
+      "misalignment"
+    ],
+    [
+      "deceptive-alignment",
+      "contrasts",
+      "scheming"
+    ],
+    [
+      "deepfake",
+      "broader",
+      "ai-generated-fake-content"
+    ],
+    [
+      "deepfake",
+      "contrasts",
+      "synthetic-data"
+    ],
+    [
+      "disinformation",
+      "contrasts",
+      "misinformation"
+    ],
+    [
+      "distillation",
+      "contrasts",
+      "fine-tuning"
+    ],
+    [
+      "dual-use-risk",
+      "broader",
+      "ai-risk"
+    ],
+    [
+      "dual-use-risk",
+      "contrasts",
+      "dual-use-science"
+    ],
+    [
+      "evaluation",
+      "contrasts",
+      "risk-assessment"
+    ],
+    [
+      "explainable-ai-xai",
+      "contrasts",
+      "interpretability"
+    ],
+    [
+      "explainable-ai-xai",
+      "contrasts",
+      "transparency"
+    ],
+    [
+      "export-control",
+      "requires",
+      "national-security"
+    ],
+    [
+      "failure-mode",
+      "leads_to",
+      "malfunctioning"
+    ],
+    [
+      "fairness",
+      "broader",
+      "trustworthy-ai"
+    ],
+    [
+      "foundation-model",
+      "contrasts",
+      "frontier-ai"
+    ],
+    [
+      "foundation-model",
+      "contrasts",
+      "general-purpose-ai-gpai"
+    ],
+    [
+      "frontier-ai",
+      "broader",
+      "general-purpose-ai-gpai"
+    ],
+    [
+      "frontier-ai",
+      "requires",
+      "capability"
+    ],
+    [
+      "general-purpose-ai-gpai",
+      "broader",
+      "artificial-intelligence"
+    ],
+    [
+      "general-purpose-ai-gpai",
+      "contrasts",
+      "narrow-ai"
+    ],
+    [
+      "generative-ai",
+      "broader",
+      "artificial-intelligence"
+    ],
+    [
+      "goal-misspecification",
+      "leads_to",
+      "misalignment"
+    ],
+    [
+      "goal-misspecification",
+      "leads_to",
+      "reward-hacking"
+    ],
+    [
+      "hallucination",
+      "contrasts",
+      "misinformation"
+    ],
+    [
+      "harmonised-standards",
+      "leads_to",
+      "conformity-assessment"
+    ],
+    [
+      "high-impact-ai",
+      "contrasts",
+      "high-risk-ai"
+    ],
+    [
+      "high-risk-ai",
+      "leads_to",
+      "conformity-assessment"
+    ],
+    [
+      "human-in-the-loop",
+      "broader",
+      "human-oversight"
+    ],
+    [
+      "human-oversight",
+      "broader",
+      "safeguard"
+    ],
+    [
+      "incident-monitoring",
+      "requires",
+      "ai-incident"
+    ],
+    [
+      "incident-report",
+      "contrasts",
+      "incident-reporting"
+    ],
+    [
+      "incident-reporting",
+      "leads_to",
+      "incident-monitoring"
+    ],
+    [
+      "incident-reporting",
+      "requires",
+      "ai-incident"
+    ],
+    [
+      "insider-threats",
+      "broader",
+      "threat"
+    ],
+    [
+      "institutional-transparency",
+      "broader",
+      "transparency"
+    ],
+    [
+      "interoperability",
+      "requires",
+      "standardization"
+    ],
+    [
+      "interpretability",
+      "contrasts",
+      "transparency"
+    ],
+    [
+      "jailbreak",
+      "contrasts",
+      "prompt-injection"
+    ],
+    [
+      "jailbreak",
+      "leads_to",
+      "harmful-content"
+    ],
+    [
+      "jailbreak",
+      "requires",
+      "safeguard"
+    ],
+    [
+      "large-language-model-llm",
+      "broader",
+      "foundation-model"
+    ],
+    [
+      "large-language-model-llm",
+      "broader",
+      "generative-ai"
+    ],
+    [
+      "llm-as-a-judge",
+      "broader",
+      "evaluation"
+    ],
+    [
+      "llm-as-a-judge",
+      "requires",
+      "large-language-model-llm"
+    ],
+    [
+      "malfunctioning",
+      "contrasts",
+      "misalignment"
+    ],
+    [
+      "malfunctioning",
+      "contrasts",
+      "misuse"
+    ],
+    [
+      "malfunctioning",
+      "leads_to",
+      "ai-incident"
+    ],
+    [
+      "malicious-use",
+      "broader",
+      "misuse"
+    ],
+    [
+      "marginal-risk",
+      "requires",
+      "ai-risk"
+    ],
+    [
+      "misalignment",
+      "leads_to",
+      "loss-of-control"
+    ],
+    [
+      "model-context-protocol-mcp",
+      "requires",
+      "tool-use"
+    ],
+    [
+      "multi-agent-system-mas",
+      "requires",
+      "ai-agent"
+    ],
+    [
+      "narrow-ai",
+      "broader",
+      "artificial-intelligence"
+    ],
+    [
+      "near-miss",
+      "broader",
+      "ai-hazard"
+    ],
+    [
+      "non-consensual-intimate-imagery-ncii",
+      "broader",
+      "harmful-content"
+    ],
+    [
+      "open-weight-model",
+      "requires",
+      "model-weights"
+    ],
+    [
+      "physical-ai",
+      "broader",
+      "artificial-intelligence"
+    ],
+    [
+      "post-deployment-monitoring",
+      "contrasts",
+      "post-market-monitoring"
+    ],
+    [
+      "post-deployment-monitoring",
+      "leads_to",
+      "incident-reporting"
+    ],
+    [
+      "power-seeking-behaviour",
+      "leads_to",
+      "loss-of-control"
+    ],
+    [
+      "pre-deployment-evaluation",
+      "broader",
+      "evaluation"
+    ],
+    [
+      "pre-deployment-evaluation",
+      "leads_to",
+      "post-deployment-monitoring"
+    ],
+    [
+      "privacy",
+      "contrasts",
+      "privacy-breach"
+    ],
+    [
+      "recursive-self-improvement",
+      "leads_to",
+      "loss-of-control"
+    ],
+    [
+      "recursive-self-improvement",
+      "leads_to",
+      "superintelligence"
+    ],
+    [
+      "red-teaming",
+      "broader",
+      "evaluation"
+    ],
+    [
+      "reliability",
+      "broader",
+      "trustworthy-ai"
+    ],
+    [
+      "reliability",
+      "contrasts",
+      "robustness"
+    ],
+    [
+      "responsible-ai",
+      "requires",
+      "ai-ethics"
+    ],
+    [
+      "responsible-scaling-policy-rsp",
+      "broader",
+      "risk-management"
+    ],
+    [
+      "responsible-scaling-policy-rsp",
+      "requires",
+      "capability-evaluation"
+    ],
+    [
+      "responsible-scaling-policy-rsp",
+      "requires",
+      "risk-thresholds"
+    ],
+    [
+      "risk-assessment",
+      "broader",
+      "risk-management"
+    ],
+    [
+      "risk-assessment",
+      "contrasts",
+      "safety-case"
+    ],
+    [
+      "risk-assessment",
+      "leads_to",
+      "risk-mitigation"
+    ],
+    [
+      "risk-assessment",
+      "requires",
+      "ai-risk"
+    ],
+    [
+      "risk-management",
+      "requires",
+      "ai-risk"
+    ],
+    [
+      "risk-mitigation",
+      "broader",
+      "risk-management"
+    ],
+    [
+      "risk-tolerance",
+      "leads_to",
+      "risk-thresholds"
+    ],
+    [
+      "risk-tolerance",
+      "requires",
+      "ai-risk"
+    ],
+    [
+      "rl-from-human-feedback-rlhf",
+      "broader",
+      "fine-tuning"
+    ],
+    [
+      "rl-from-human-feedback-rlhf",
+      "leads_to",
+      "ai-sycophancy"
+    ],
+    [
+      "rl-from-human-feedback-rlhf",
+      "leads_to",
+      "reward-hacking"
+    ],
+    [
+      "robustness",
+      "broader",
+      "trustworthy-ai"
+    ],
+    [
+      "sabotage",
+      "broader",
+      "scheming"
+    ],
+    [
+      "sabotage",
+      "contrasts",
+      "sandbagging"
+    ],
+    [
+      "safeguard",
+      "broader",
+      "risk-mitigation"
+    ],
+    [
+      "safety-case",
+      "broader",
+      "ai-assurance"
+    ],
+    [
+      "safety-evaluation",
+      "broader",
+      "evaluation"
+    ],
+    [
+      "sandbagging",
+      "broader",
+      "scheming"
+    ],
+    [
+      "sandbagging",
+      "requires",
+      "situational-awareness"
+    ],
+    [
+      "sandboxing",
+      "broader",
+      "safeguard"
+    ],
+    [
+      "scheming",
+      "leads_to",
+      "loss-of-control"
+    ],
+    [
+      "scheming",
+      "requires",
+      "deception"
+    ],
+    [
+      "scheming",
+      "requires",
+      "misalignment"
+    ],
+    [
+      "self-exfiltration",
+      "leads_to",
+      "loss-of-control"
+    ],
+    [
+      "self-exfiltration",
+      "requires",
+      "model-weights"
+    ],
+    [
+      "serious-incident",
+      "broader",
+      "ai-incident"
+    ],
+    [
+      "situational-awareness",
+      "broader",
+      "capability"
+    ],
+    [
+      "standardization",
+      "leads_to",
+      "harmonised-standards"
+    ],
+    [
+      "superintelligence",
+      "leads_to",
+      "loss-of-control"
+    ],
+    [
+      "systemic-risk",
+      "broader",
+      "ai-risk"
+    ],
+    [
+      "systemic-risk-assessment",
+      "broader",
+      "risk-assessment"
+    ],
+    [
+      "systemic-risk-assessment",
+      "requires",
+      "systemic-risk"
+    ],
+    [
+      "task-time-horizon",
+      "requires",
+      "capability"
+    ],
+    [
+      "threat",
+      "contrasts",
+      "vulnerability"
+    ],
+    [
+      "threat-modelling",
+      "broader",
+      "risk-assessment"
+    ],
+    [
+      "threat-modelling",
+      "requires",
+      "threat"
+    ],
+    [
+      "transparency",
+      "broader",
+      "trustworthy-ai"
+    ],
+    [
+      "transparency",
+      "contrasts",
+      "transparency-obligation"
+    ],
+    [
+      "vulnerability-detection",
+      "requires",
+      "vulnerability"
+    ],
+    [
+      "zero-day-vulnerability",
+      "broader",
+      "vulnerability"
+    ]
   ],
   "entries": [
     {
@@ -413,6 +1391,17 @@
         "pdf_df": 23,
         "pdf_gloss_df": 3
       },
+      "rel": {
+        "up": [
+          "artificial-intelligence"
+        ],
+        "down": [
+          "large-language-model-llm"
+        ],
+        "req_by": [
+          "ai-generated-fake-content"
+        ]
+      },
       "n": 1
     },
     {
@@ -608,6 +1597,15 @@
         "pdf_df": 17,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "down": [
+          "large-language-model-llm"
+        ],
+        "vs": [
+          "frontier-ai",
+          "general-purpose-ai-gpai"
+        ]
+      },
       "n": 2
     },
     {
@@ -744,6 +1742,15 @@
         "hub_norm": 0.559,
         "pdf_df": 27,
         "pdf_gloss_df": 3
+      },
+      "rel": {
+        "up": [
+          "foundation-model",
+          "generative-ai"
+        ],
+        "req_by": [
+          "llm-as-a-judge"
+        ]
       },
       "n": 3
     },
@@ -890,6 +1897,14 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "pre": [
+          "model-weights"
+        ],
+        "vs": [
+          "closed-model"
+        ]
+      },
       "n": 4
     },
     {
@@ -999,6 +2014,14 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "model-weights"
+        ],
+        "vs": [
+          "open-weight-model"
+        ]
       },
       "n": 5
     },
@@ -1233,6 +2256,13 @@
         "pdf_df": 21,
         "pdf_gloss_df": 6
       },
+      "rel": {
+        "req_by": [
+          "closed-model",
+          "open-weight-model",
+          "self-exfiltration"
+        ]
+      },
       "n": 6
     },
     {
@@ -1409,6 +2439,11 @@
         "hub_norm": 0,
         "pdf_df": 30,
         "pdf_gloss_df": 3
+      },
+      "rel": {
+        "req_by": [
+          "compute-threshold"
+        ]
       },
       "n": 7
     },
@@ -1655,6 +2690,11 @@
         "pdf_df": 32,
         "pdf_gloss_df": 6
       },
+      "rel": {
+        "req_by": [
+          "data-provenance"
+        ]
+      },
       "n": 8
     },
     {
@@ -1870,6 +2910,11 @@
         "pdf_df": 12,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "vs": [
+          "deepfake"
+        ]
+      },
       "n": 9
     },
     {
@@ -2005,6 +3050,14 @@
         "hub_norm": 0,
         "pdf_df": 11,
         "pdf_gloss_df": 2
+      },
+      "rel": {
+        "pre": [
+          "training-data"
+        ],
+        "vs": [
+          "provenance-metadata"
+        ]
       },
       "n": 10
     },
@@ -2245,6 +3298,14 @@
         "pdf_df": 22,
         "pdf_gloss_df": 4
       },
+      "rel": {
+        "down": [
+          "rl-from-human-feedback-rlhf"
+        ],
+        "vs": [
+          "distillation"
+        ]
+      },
       "n": 11
     },
     {
@@ -2350,6 +3411,11 @@
         "hub_norm": 0.56,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "vs": [
+          "fine-tuning"
+        ]
       },
       "n": 12
     },
@@ -2491,6 +3557,11 @@
         "pdf_df": 22,
         "pdf_gloss_df": 3
       },
+      "rel": {
+        "vs": [
+          "chain-of-thought-cot"
+        ]
+      },
       "n": 13
     },
     {
@@ -2599,6 +3670,12 @@
         "hub_norm": 0.562,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "vs": [
+          "inference",
+          "interpretability"
+        ]
       },
       "n": 14
     },
@@ -2999,6 +4076,18 @@
         "pdf_df": 27,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "pre": [
+          "autonomous-planning",
+          "tool-use"
+        ],
+        "req_by": [
+          "multi-agent-system-mas"
+        ],
+        "vs": [
+          "agentic-ai"
+        ]
+      },
       "n": 15
     },
     {
@@ -3101,6 +4190,14 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "pre": [
+          "autonomy"
+        ],
+        "vs": [
+          "ai-agent"
+        ]
+      },
       "n": 16
     },
     {
@@ -3202,6 +4299,16 @@
         "hub_norm": 0.687,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "req_by": [
+          "agentic-ai",
+          "autonomous-weapons"
+        ],
+        "vs": [
+          "autonomous-planning",
+          "human-oversight"
+        ]
       },
       "n": 17
     },
@@ -3334,6 +4441,17 @@
         "pdf_df": 2,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "up": [
+          "capability"
+        ],
+        "req_by": [
+          "ai-agent"
+        ],
+        "vs": [
+          "autonomy"
+        ]
+      },
       "n": 18
     },
     {
@@ -3440,6 +4558,12 @@
         "hub_norm": 0.701,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "req_by": [
+          "ai-agent",
+          "model-context-protocol-mcp"
+        ]
       },
       "n": 19
     },
@@ -3608,6 +4732,11 @@
         "pdf_df": 5,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "pre": [
+          "ai-agent"
+        ]
+      },
       "n": 20
     },
     {
@@ -3714,6 +4843,11 @@
         "hub_norm": 0.541,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "tool-use"
+        ]
       },
       "n": 21
     },
@@ -3913,6 +5047,17 @@
         "pdf_df": 36,
         "pdf_gloss_df": 7
       },
+      "rel": {
+        "down": [
+          "autonomous-planning",
+          "situational-awareness"
+        ],
+        "req_by": [
+          "capability-evaluation",
+          "frontier-ai",
+          "task-time-horizon"
+        ]
+      },
       "n": 22
     },
     {
@@ -4009,6 +5154,11 @@
         "hub_norm": 0.388,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "capability"
+        ]
       },
       "n": 23
     },
@@ -4172,6 +5322,17 @@
         "pdf_df": 24,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "up": [
+          "general-purpose-ai-gpai"
+        ],
+        "pre": [
+          "capability"
+        ],
+        "vs": [
+          "foundation-model"
+        ]
+      },
       "n": 24
     },
     {
@@ -4279,6 +5440,16 @@
         "hub_norm": 0.435,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "next": [
+          "superintelligence"
+        ],
+        "vs": [
+          "artificial-intelligence",
+          "general-purpose-ai-gpai",
+          "narrow-ai"
+        ]
       },
       "n": 25
     },
@@ -4454,6 +5625,15 @@
         "pdf_df": 8,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "up": [
+          "artificial-intelligence"
+        ],
+        "vs": [
+          "artificial-general-intellegence-agi",
+          "general-purpose-ai-gpai"
+        ]
+      },
       "n": 26
     },
     {
@@ -4561,6 +5741,15 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "prev": [
+          "artificial-general-intellegence-agi",
+          "recursive-self-improvement"
+        ],
+        "next": [
+          "loss-of-control"
+        ]
+      },
       "n": 27
     },
     {
@@ -4627,6 +5816,12 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "next": [
+          "loss-of-control",
+          "superintelligence"
+        ]
       },
       "n": 28
     },
@@ -4729,6 +5924,11 @@
         "hub_norm": 0.345,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "artificial-intelligence"
+        ]
       },
       "n": 29
     },
@@ -4867,6 +6067,26 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "down": [
+          "catastrophic-risk",
+          "dual-use-risk",
+          "systemic-risk"
+        ],
+        "pre": [
+          "ai-harm",
+          "ai-hazard"
+        ],
+        "req_by": [
+          "marginal-risk",
+          "risk-assessment",
+          "risk-management",
+          "risk-tolerance"
+        ],
+        "vs": [
+          "threat"
+        ]
+      },
       "n": 30
     },
     {
@@ -4997,6 +6217,20 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "down": [
+          "near-miss"
+        ],
+        "req_by": [
+          "ai-risk"
+        ],
+        "next": [
+          "ai-incident"
+        ],
+        "vs": [
+          "threat"
+        ]
       },
       "n": 31
     },
@@ -5133,6 +6367,12 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "req_by": [
+          "ai-incident",
+          "ai-risk"
+        ]
+      },
       "n": 32
     },
     {
@@ -5243,6 +6483,20 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "down": [
+          "cyber-threat",
+          "insider-threats"
+        ],
+        "req_by": [
+          "threat-modelling"
+        ],
+        "vs": [
+          "ai-hazard",
+          "ai-risk",
+          "vulnerability"
+        ]
+      },
       "n": 33
     },
     {
@@ -5316,6 +6570,15 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "ai-risk"
+        ],
+        "vs": [
+          "ai-disaster",
+          "systemic-risk"
+        ]
       },
       "n": 34
     },
@@ -5669,6 +6932,17 @@
         "pdf_df": 16,
         "pdf_gloss_df": 3
       },
+      "rel": {
+        "up": [
+          "ai-risk"
+        ],
+        "req_by": [
+          "systemic-risk-assessment"
+        ],
+        "vs": [
+          "catastrophic-risk"
+        ]
+      },
       "n": 35
     },
     {
@@ -5861,6 +7135,14 @@
         "pdf_df": 4,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "up": [
+          "risk-assessment"
+        ],
+        "pre": [
+          "systemic-risk"
+        ]
+      },
       "n": 36
     },
     {
@@ -5953,6 +7235,11 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "ai-risk"
+        ]
       },
       "n": 37
     },
@@ -6060,6 +7347,11 @@
         "hub_norm": 0.675,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "next": [
+          "malfunctioning"
+        ]
       },
       "n": 38
     },
@@ -6218,6 +7510,25 @@
         "hub_norm": 0.768,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "risk-management"
+        ],
+        "down": [
+          "systemic-risk-assessment",
+          "threat-modelling"
+        ],
+        "pre": [
+          "ai-risk"
+        ],
+        "next": [
+          "risk-mitigation"
+        ],
+        "vs": [
+          "evaluation",
+          "safety-case"
+        ]
       },
       "n": 39
     },
@@ -6479,6 +7790,16 @@
         "pdf_df": 30,
         "pdf_gloss_df": 8
       },
+      "rel": {
+        "down": [
+          "responsible-scaling-policy-rsp",
+          "risk-assessment",
+          "risk-mitigation"
+        ],
+        "pre": [
+          "ai-risk"
+        ]
+      },
       "n": 40
     },
     {
@@ -6628,6 +7949,17 @@
         "hub_norm": 0.634,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "risk-management"
+        ],
+        "down": [
+          "safeguard"
+        ],
+        "prev": [
+          "risk-assessment"
+        ]
       },
       "n": 41
     },
@@ -6813,6 +8145,14 @@
         "pdf_df": 8,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "pre": [
+          "ai-risk"
+        ],
+        "next": [
+          "risk-thresholds"
+        ]
+      },
       "n": 42
     },
     {
@@ -6983,6 +8323,17 @@
         "pdf_df": 6,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "req_by": [
+          "responsible-scaling-policy-rsp"
+        ],
+        "prev": [
+          "risk-tolerance"
+        ],
+        "vs": [
+          "compute-threshold"
+        ]
+      },
       "n": 43
     },
     {
@@ -7109,6 +8460,14 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "risk-assessment"
+        ],
+        "pre": [
+          "threat"
+        ]
       },
       "n": 44
     },
@@ -7335,6 +8694,7 @@
         "pdf_df": 15,
         "pdf_gloss_df": 2
       },
+      "rel": {},
       "n": 45
     },
     {
@@ -7563,6 +8923,24 @@
         "pdf_df": 15,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "down": [
+          "deceptive-alignment"
+        ],
+        "req_by": [
+          "scheming"
+        ],
+        "prev": [
+          "goal-misspecification"
+        ],
+        "next": [
+          "loss-of-control"
+        ],
+        "vs": [
+          "ai-alignment",
+          "malfunctioning"
+        ]
+      },
       "n": 46
     },
     {
@@ -7763,6 +9141,12 @@
         "pdf_df": 3,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "next": [
+          "misalignment",
+          "reward-hacking"
+        ]
+      },
       "n": 47
     },
     {
@@ -7858,6 +9242,7 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {},
       "n": 48
     },
     {
@@ -7958,6 +9343,12 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "prev": [
+          "goal-misspecification",
+          "rl-from-human-feedback-rlhf"
+        ]
       },
       "n": 49
     },
@@ -8183,6 +9574,17 @@
         "pdf_df": 18,
         "pdf_gloss_df": 3
       },
+      "rel": {
+        "req_by": [
+          "scheming"
+        ],
+        "vs": [
+          "ai-sycophancy",
+          "deceptive-alignment",
+          "hallucination",
+          "persuasion"
+        ]
+      },
       "n": 50
     },
     {
@@ -8368,6 +9770,15 @@
         "pdf_df": 3,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "up": [
+          "misalignment"
+        ],
+        "vs": [
+          "deception",
+          "scheming"
+        ]
+      },
       "n": 51
     },
     {
@@ -8459,6 +9870,22 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "down": [
+          "sabotage",
+          "sandbagging"
+        ],
+        "pre": [
+          "deception",
+          "misalignment"
+        ],
+        "next": [
+          "loss-of-control"
+        ],
+        "vs": [
+          "deceptive-alignment"
+        ]
       },
       "n": 52
     },
@@ -8584,6 +10011,17 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "scheming"
+        ],
+        "pre": [
+          "situational-awareness"
+        ],
+        "vs": [
+          "sabotage"
+        ]
+      },
       "n": 53
     },
     {
@@ -8688,6 +10126,14 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "capability"
+        ],
+        "req_by": [
+          "sandbagging"
+        ]
+      },
       "n": 54
     },
     {
@@ -8748,6 +10194,11 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "next": [
+          "loss-of-control"
+        ]
       },
       "n": 55
     },
@@ -8831,6 +10282,14 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "model-weights"
+        ],
+        "next": [
+          "loss-of-control"
+        ]
       },
       "n": 56
     },
@@ -9005,6 +10464,18 @@
         "pdf_df": 7,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "prev": [
+          "rl-from-human-feedback-rlhf"
+        ],
+        "next": [
+          "emotional-dependence"
+        ],
+        "vs": [
+          "deception",
+          "hallucination"
+        ]
+      },
       "n": 57
     },
     {
@@ -9168,6 +10639,13 @@
         "pdf_df": 10,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "vs": [
+          "ai-sycophancy",
+          "deception",
+          "misinformation"
+        ]
+      },
       "n": 58
     },
     {
@@ -9308,6 +10786,14 @@
         "hub_norm": 0.702,
         "pdf_df": 13,
         "pdf_gloss_df": 1
+      },
+      "rel": {
+        "up": [
+          "scheming"
+        ],
+        "vs": [
+          "sandbagging"
+        ]
       },
       "n": 59
     },
@@ -9519,6 +11005,16 @@
         "pdf_df": 13,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "prev": [
+          "misalignment",
+          "power-seeking-behaviour",
+          "recursive-self-improvement",
+          "scheming",
+          "self-exfiltration",
+          "superintelligence"
+        ]
+      },
       "n": 60
     },
     {
@@ -9651,6 +11147,15 @@
         "hub_norm": 1.0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "down": [
+          "abuse",
+          "malicious-use"
+        ],
+        "vs": [
+          "malfunctioning"
+        ]
       },
       "n": 61
     },
@@ -9842,6 +11347,14 @@
         "pdf_df": 23,
         "pdf_gloss_df": 3
       },
+      "rel": {
+        "up": [
+          "misuse"
+        ],
+        "vs": [
+          "abuse"
+        ]
+      },
       "n": 62
     },
     {
@@ -9946,6 +11459,14 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "misuse"
+        ],
+        "vs": [
+          "malicious-use"
+        ]
+      },
       "n": 63
     },
     {
@@ -10041,6 +11562,14 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "ai-risk"
+        ],
+        "vs": [
+          "dual-use-science"
+        ]
       },
       "n": 64
     },
@@ -10230,6 +11759,11 @@
         "pdf_df": 3,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "vs": [
+          "dual-use-risk"
+        ]
+      },
       "n": 65
     },
     {
@@ -10323,6 +11857,11 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "req_by": [
+          "cbrn"
+        ]
       },
       "n": 66
     },
@@ -10420,6 +11959,11 @@
         "hub_norm": 0.871,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "human-uplift"
+        ]
       },
       "n": 67
     },
@@ -10563,6 +12107,11 @@
         "hub_norm": 0,
         "pdf_df": 13,
         "pdf_gloss_df": 2
+      },
+      "rel": {
+        "vs": [
+          "deception"
+        ]
       },
       "n": 68
     },
@@ -10796,6 +12345,11 @@
         "pdf_df": 16,
         "pdf_gloss_df": 3
       },
+      "rel": {
+        "prev": [
+          "cyber-threat"
+        ]
+      },
       "n": 69
     },
     {
@@ -10899,6 +12453,17 @@
         "hub_norm": 0.532,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "threat"
+        ],
+        "next": [
+          "cyberattack"
+        ],
+        "vs": [
+          "vulnerability"
+        ]
       },
       "n": 70
     },
@@ -11008,6 +12573,14 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "down": [
+          "cyber-defense"
+        ],
+        "vs": [
+          "ai-safety"
+        ]
+      },
       "n": 71
     },
     {
@@ -11115,6 +12688,18 @@
         "hub_norm": 0.546,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "down": [
+          "zero-day-vulnerability"
+        ],
+        "req_by": [
+          "vulnerability-detection"
+        ],
+        "vs": [
+          "cyber-threat",
+          "threat"
+        ]
       },
       "n": 72
     },
@@ -11270,6 +12855,11 @@
         "hub_norm": 0,
         "pdf_df": 4,
         "pdf_gloss_df": 1
+      },
+      "rel": {
+        "up": [
+          "vulnerability"
+        ]
       },
       "n": 73
     },
@@ -11485,6 +13075,7 @@
         "pdf_df": 12,
         "pdf_gloss_df": 2
       },
+      "rel": {},
       "n": 74
     },
     {
@@ -11607,6 +13198,11 @@
         "hub_norm": 0,
         "pdf_df": 10,
         "pdf_gloss_df": 1
+      },
+      "rel": {
+        "up": [
+          "threat"
+        ]
       },
       "n": 75
     },
@@ -11895,6 +13491,20 @@
         "pdf_df": 14,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "pre": [
+          "safeguard"
+        ],
+        "req_by": [
+          "attack-success-rate-asr"
+        ],
+        "next": [
+          "harmful-content"
+        ],
+        "vs": [
+          "prompt-injection"
+        ]
+      },
       "n": 76
     },
     {
@@ -12035,6 +13645,14 @@
         "pdf_df": 8,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "req_by": [
+          "attack-success-rate-asr"
+        ],
+        "vs": [
+          "jailbreak"
+        ]
+      },
       "n": 77
     },
     {
@@ -12137,6 +13755,7 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {},
       "n": 78
     },
     {
@@ -12236,6 +13855,11 @@
         "hub_norm": 0.532,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "autonomy"
+        ]
       },
       "n": 79
     },
@@ -12337,6 +13961,11 @@
         "hub_norm": 0.542,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "req_by": [
+          "export-control"
+        ]
       },
       "n": 80
     },
@@ -12515,6 +14144,15 @@
         "pdf_df": 30,
         "pdf_gloss_df": 6
       },
+      "rel": {
+        "next": [
+          "discrimination"
+        ],
+        "vs": [
+          "automation-bias",
+          "fairness"
+        ]
+      },
       "n": 81
     },
     {
@@ -12650,6 +14288,11 @@
         "pdf_df": 17,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "prev": [
+          "ai-bias"
+        ]
+      },
       "n": 82
     },
     {
@@ -12717,6 +14360,11 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "vs": [
+          "ai-bias"
+        ]
       },
       "n": 83
     },
@@ -12831,6 +14479,11 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "vs": [
+          "human-oversight"
+        ]
+      },
       "n": 84
     },
     {
@@ -12930,6 +14583,15 @@
         "hub_norm": 0.605,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "down": [
+          "child-sexual-abuse-material-csam",
+          "non-consensual-intimate-imagery-ncii"
+        ],
+        "prev": [
+          "jailbreak"
+        ]
       },
       "n": 85
     },
@@ -13254,6 +14916,14 @@
         "pdf_df": 12,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "up": [
+          "ai-generated-fake-content"
+        ],
+        "vs": [
+          "synthetic-data"
+        ]
+      },
       "n": 86
     },
     {
@@ -13433,6 +15103,17 @@
         "pdf_df": 2,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "down": [
+          "deepfake"
+        ],
+        "pre": [
+          "generative-ai"
+        ],
+        "vs": [
+          "disinformation"
+        ]
+      },
       "n": 87
     },
     {
@@ -13601,6 +15282,12 @@
         "pdf_df": 13,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "vs": [
+          "ai-generated-fake-content",
+          "misinformation"
+        ]
+      },
       "n": 88
     },
     {
@@ -13732,6 +15419,12 @@
         "pdf_df": 15,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "vs": [
+          "disinformation",
+          "hallucination"
+        ]
+      },
       "n": 89
     },
     {
@@ -13833,6 +15526,11 @@
         "hub_norm": 0.719,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "harmful-content"
+        ]
       },
       "n": 90
     },
@@ -13936,6 +15634,11 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "harmful-content"
+        ]
+      },
       "n": 91
     },
     {
@@ -14038,6 +15741,7 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {},
       "n": 92
     },
     {
@@ -14140,6 +15844,12 @@
         "hub_norm": 0.668,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "vs": [
+          "ai-guardrails",
+          "safeguard"
+        ]
       },
       "n": 93
     },
@@ -14250,6 +15960,12 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "vs": [
+          "data-protection",
+          "privacy"
+        ]
+      },
       "n": 94
     },
     {
@@ -14352,6 +16068,7 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {},
       "n": 95
     },
     {
@@ -14449,6 +16166,7 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {},
       "n": 96
     },
     {
@@ -14549,6 +16267,11 @@
         "hub_norm": 0.485,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "prev": [
+          "ai-sycophancy"
+        ]
       },
       "n": 97
     },
@@ -14652,6 +16375,11 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "down": [
+          "age-verification"
+        ]
+      },
       "n": 98
     },
     {
@@ -14749,6 +16477,11 @@
         "hub_norm": 0.73,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "child-and-youth-protection"
+        ]
       },
       "n": 99
     },
@@ -14886,6 +16619,25 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "down": [
+          "serious-incident"
+        ],
+        "pre": [
+          "ai-harm"
+        ],
+        "req_by": [
+          "incident-monitoring",
+          "incident-reporting"
+        ],
+        "prev": [
+          "ai-hazard",
+          "malfunctioning"
+        ],
+        "vs": [
+          "near-miss"
+        ]
       },
       "n": 100
     },
@@ -15029,6 +16781,14 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "ai-incident"
+        ],
+        "down": [
+          "ai-disaster"
+        ]
+      },
       "n": 101
     },
     {
@@ -15121,6 +16881,14 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "serious-incident"
+        ],
+        "vs": [
+          "catastrophic-risk"
+        ]
       },
       "n": 102
     },
@@ -15228,6 +16996,14 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "ai-hazard"
+        ],
+        "vs": [
+          "ai-incident"
+        ]
       },
       "n": 103
     },
@@ -15426,6 +17202,20 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "pre": [
+          "ai-incident"
+        ],
+        "prev": [
+          "post-deployment-monitoring"
+        ],
+        "next": [
+          "incident-monitoring"
+        ],
+        "vs": [
+          "incident-report"
+        ]
+      },
       "n": 104
     },
     {
@@ -15536,6 +17326,11 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "vs": [
+          "incident-reporting"
+        ]
       },
       "n": 105
     },
@@ -15654,6 +17449,14 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "pre": [
+          "ai-incident"
+        ],
+        "prev": [
+          "incident-reporting"
+        ]
+      },
       "n": 106
     },
     {
@@ -15765,6 +17568,17 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "prev": [
+          "pre-deployment-evaluation"
+        ],
+        "next": [
+          "incident-reporting"
+        ],
+        "vs": [
+          "post-market-monitoring"
+        ]
+      },
       "n": 107
     },
     {
@@ -15865,6 +17679,11 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "vs": [
+          "post-deployment-monitoring"
+        ]
       },
       "n": 108
     },
@@ -16044,6 +17863,18 @@
         "hub_norm": 0,
         "pdf_df": 13,
         "pdf_gloss_df": 5
+      },
+      "rel": {
+        "prev": [
+          "failure-mode"
+        ],
+        "next": [
+          "ai-incident"
+        ],
+        "vs": [
+          "misalignment",
+          "misuse"
+        ]
       },
       "n": 109
     },
@@ -16295,6 +18126,21 @@
         "pdf_df": 38,
         "pdf_gloss_df": 7
       },
+      "rel": {
+        "down": [
+          "adversarial-testing",
+          "benchmark-s",
+          "llm-as-a-judge",
+          "pre-deployment-evaluation",
+          "red-teaming",
+          "safety-evaluation"
+        ],
+        "vs": [
+          "ai-audit",
+          "conformity-assessment",
+          "risk-assessment"
+        ]
+      },
       "n": 110
     },
     {
@@ -16427,6 +18273,14 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "evaluation"
+        ],
+        "down": [
+          "capability-evaluation"
+        ]
+      },
       "n": 111
     },
     {
@@ -16529,6 +18383,17 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "safety-evaluation"
+        ],
+        "pre": [
+          "capability"
+        ],
+        "req_by": [
+          "responsible-scaling-policy-rsp"
+        ]
+      },
       "n": 112
     },
     {
@@ -16619,6 +18484,14 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "evaluation"
+        ],
+        "next": [
+          "post-deployment-monitoring"
+        ]
       },
       "n": 113
     },
@@ -16972,6 +18845,11 @@
         "pdf_df": 27,
         "pdf_gloss_df": 3
       },
+      "rel": {
+        "up": [
+          "evaluation"
+        ]
+      },
       "n": 114
     },
     {
@@ -17145,6 +19023,14 @@
         "pdf_df": 22,
         "pdf_gloss_df": 4
       },
+      "rel": {
+        "up": [
+          "evaluation"
+        ],
+        "vs": [
+          "adversarial-testing"
+        ]
+      },
       "n": 115
     },
     {
@@ -17218,6 +19104,15 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "evaluation"
+        ],
+        "vs": [
+          "adversarial-training",
+          "red-teaming"
+        ]
       },
       "n": 116
     },
@@ -17319,6 +19214,12 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "pre": [
+          "jailbreak",
+          "prompt-injection"
+        ]
+      },
       "n": 117
     },
     {
@@ -17415,6 +19316,14 @@
         "hub_norm": 0.679,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "evaluation"
+        ],
+        "pre": [
+          "large-language-model-llm"
+        ]
       },
       "n": 118
     },
@@ -17518,6 +19427,7 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {},
       "n": 119
     },
     {
@@ -17696,6 +19606,15 @@
         "pdf_df": 23,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "up": [
+          "ai-assurance"
+        ],
+        "vs": [
+          "conformity-assessment",
+          "evaluation"
+        ]
+      },
       "n": 120
     },
     {
@@ -17793,6 +19712,14 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "ai-assurance"
+        ],
+        "vs": [
+          "risk-assessment"
+        ]
       },
       "n": 121
     },
@@ -18013,6 +19940,11 @@
         "pdf_df": 29,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "vs": [
+          "misalignment"
+        ]
+      },
       "n": 122
     },
     {
@@ -18111,6 +20043,15 @@
         "hub_norm": 0.669,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "fine-tuning"
+        ],
+        "next": [
+          "ai-sycophancy",
+          "reward-hacking"
+        ]
       },
       "n": 123
     },
@@ -18393,6 +20334,13 @@
         "pdf_df": 20,
         "pdf_gloss_df": 3
       },
+      "rel": {
+        "vs": [
+          "chain-of-thought-cot",
+          "explainable-ai-xai",
+          "transparency"
+        ]
+      },
       "n": 124
     },
     {
@@ -18498,6 +20446,12 @@
         "hub_norm": 0.641,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "vs": [
+          "interpretability",
+          "transparency"
+        ]
       },
       "n": 125
     },
@@ -18677,6 +20631,23 @@
         "pdf_df": 28,
         "pdf_gloss_df": 4
       },
+      "rel": {
+        "up": [
+          "risk-mitigation"
+        ],
+        "down": [
+          "adversarial-training",
+          "ai-guardrails",
+          "human-oversight",
+          "sandboxing"
+        ],
+        "req_by": [
+          "jailbreak"
+        ],
+        "vs": [
+          "censorship"
+        ]
+      },
       "n": 126
     },
     {
@@ -18784,6 +20755,14 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "safeguard"
+        ],
+        "vs": [
+          "censorship"
+        ]
+      },
       "n": 127
     },
     {
@@ -18889,6 +20868,11 @@
         "hub_norm": 0.624,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "safeguard"
+        ]
       },
       "n": 128
     },
@@ -19019,6 +21003,18 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "safeguard"
+        ],
+        "down": [
+          "human-in-the-loop"
+        ],
+        "vs": [
+          "automated-decision-making-adm",
+          "autonomy"
+        ]
+      },
       "n": 129
     },
     {
@@ -19124,6 +21120,11 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "human-oversight"
+        ]
       },
       "n": 130
     },
@@ -19314,6 +21315,17 @@
         "pdf_df": 7,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "up": [
+          "safeguard"
+        ],
+        "next": [
+          "robustness"
+        ],
+        "vs": [
+          "adversarial-testing"
+        ]
+      },
       "n": 131
     },
     {
@@ -19385,6 +21397,7 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {},
       "n": 132
     },
     {
@@ -19489,6 +21502,11 @@
         "hub_norm": 0.622,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "cybersecurity"
+        ]
       },
       "n": 133
     },
@@ -19596,6 +21614,11 @@
         "hub_norm": 0.517,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "vulnerability"
+        ]
       },
       "n": 134
     },
@@ -19778,6 +21801,11 @@
         "pdf_df": 10,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "vs": [
+          "provenance-metadata"
+        ]
+      },
       "n": 135
     },
     {
@@ -19882,6 +21910,12 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "vs": [
+          "ai-watermarking",
+          "data-provenance"
+        ]
+      },
       "n": 136
     },
     {
@@ -19980,6 +22014,12 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "vs": [
+          "ai-ethics",
+          "cybersecurity"
+        ]
       },
       "n": 137
     },
@@ -20081,6 +22121,7 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {},
       "n": 138
     },
     {
@@ -20180,6 +22221,14 @@
         "hub_norm": 0.545,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "req_by": [
+          "responsible-ai"
+        ],
+        "vs": [
+          "ai-safety"
+        ]
       },
       "n": 139
     },
@@ -20286,6 +22335,14 @@
         "hub_norm": 0.561,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "ai-ethics"
+        ],
+        "vs": [
+          "ai-accountability"
+        ]
       },
       "n": 140
     },
@@ -20447,6 +22504,15 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "down": [
+          "ai-accountability",
+          "fairness",
+          "reliability",
+          "robustness",
+          "transparency"
+        ]
+      },
       "n": 141
     },
     {
@@ -20558,6 +22624,14 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "trustworthy-ai"
+        ],
+        "vs": [
+          "responsible-ai"
+        ]
+      },
       "n": 142
     },
     {
@@ -20660,6 +22734,20 @@
         "hub_norm": 0.774,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "trustworthy-ai"
+        ],
+        "down": [
+          "algorithmic-transparency",
+          "institutional-transparency"
+        ],
+        "vs": [
+          "explainable-ai-xai",
+          "interpretability",
+          "transparency-obligation"
+        ]
       },
       "n": 143
     },
@@ -20791,6 +22879,14 @@
         "hub_norm": 0,
         "pdf_df": 6,
         "pdf_gloss_df": 1
+      },
+      "rel": {
+        "up": [
+          "transparency"
+        ],
+        "vs": [
+          "institutional-transparency"
+        ]
       },
       "n": 144
     },
@@ -21003,6 +23099,14 @@
         "pdf_df": 3,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "up": [
+          "transparency"
+        ],
+        "vs": [
+          "algorithmic-transparency"
+        ]
+      },
       "n": 145
     },
     {
@@ -21157,6 +23261,14 @@
         "pdf_df": 23,
         "pdf_gloss_df": 3
       },
+      "rel": {
+        "up": [
+          "trustworthy-ai"
+        ],
+        "vs": [
+          "ai-bias"
+        ]
+      },
       "n": 146
     },
     {
@@ -21292,6 +23404,14 @@
         "pdf_df": 33,
         "pdf_gloss_df": 4
       },
+      "rel": {
+        "up": [
+          "trustworthy-ai"
+        ],
+        "vs": [
+          "robustness"
+        ]
+      },
       "n": 147
     },
     {
@@ -21388,6 +23508,17 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "trustworthy-ai"
+        ],
+        "prev": [
+          "adversarial-training"
+        ],
+        "vs": [
+          "reliability"
+        ]
+      },
       "n": 148
     },
     {
@@ -21464,6 +23595,17 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "down": [
+          "ai-audit",
+          "certification",
+          "conformity-assessment",
+          "safety-case"
+        ],
+        "vs": [
+          "compliance"
+        ]
       },
       "n": 149
     },
@@ -21546,6 +23688,7 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {},
       "n": 150
     },
     {
@@ -21661,6 +23804,15 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "up": [
+          "risk-management"
+        ],
+        "pre": [
+          "capability-evaluation",
+          "risk-thresholds"
+        ]
       },
       "n": 151
     },
@@ -21815,6 +23967,7 @@
         "pdf_df": 9,
         "pdf_gloss_df": 2
       },
+      "rel": {},
       "n": 152
     },
     {
@@ -22407,6 +24560,17 @@
         "pdf_df": 43,
         "pdf_gloss_df": 7
       },
+      "rel": {
+        "down": [
+          "general-purpose-ai-gpai",
+          "generative-ai",
+          "narrow-ai",
+          "physical-ai"
+        ],
+        "vs": [
+          "artificial-general-intellegence-agi"
+        ]
+      },
       "n": 153
     },
     {
@@ -22561,6 +24725,14 @@
         "hub_norm": 0.759,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "next": [
+          "conformity-assessment"
+        ],
+        "vs": [
+          "high-impact-ai"
+        ]
       },
       "n": 154
     },
@@ -22831,6 +25003,11 @@
         "pdf_df": 6,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "vs": [
+          "high-risk-ai"
+        ]
+      },
       "n": 155
     },
     {
@@ -23082,6 +25259,19 @@
         "pdf_df": 21,
         "pdf_gloss_df": 4
       },
+      "rel": {
+        "up": [
+          "artificial-intelligence"
+        ],
+        "down": [
+          "frontier-ai"
+        ],
+        "vs": [
+          "artificial-general-intellegence-agi",
+          "foundation-model",
+          "narrow-ai"
+        ]
+      },
       "n": 156
     },
     {
@@ -23220,6 +25410,14 @@
         "hub_norm": 0,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "compute"
+        ],
+        "vs": [
+          "risk-thresholds"
+        ]
       },
       "n": 157
     },
@@ -23423,6 +25621,20 @@
         "pdf_df": 7,
         "pdf_gloss_df": 2
       },
+      "rel": {
+        "up": [
+          "ai-assurance"
+        ],
+        "prev": [
+          "harmonised-standards",
+          "high-risk-ai"
+        ],
+        "vs": [
+          "ai-audit",
+          "certification",
+          "evaluation"
+        ]
+      },
       "n": 158
     },
     {
@@ -23526,6 +25738,14 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "up": [
+          "ai-assurance"
+        ],
+        "vs": [
+          "conformity-assessment"
+        ]
+      },
       "n": 159
     },
     {
@@ -23624,6 +25844,14 @@
         "hub_norm": 0.741,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "req_by": [
+          "interoperability"
+        ],
+        "next": [
+          "harmonised-standards"
+        ]
       },
       "n": 160
     },
@@ -23749,6 +25977,14 @@
         "pdf_df": 2,
         "pdf_gloss_df": 1
       },
+      "rel": {
+        "prev": [
+          "standardization"
+        ],
+        "next": [
+          "conformity-assessment"
+        ]
+      },
       "n": 161
     },
     {
@@ -23840,6 +26076,11 @@
         "hub_norm": 0.541,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "standardization"
+        ]
       },
       "n": 162
     },
@@ -23941,6 +26182,11 @@
         "hub_norm": 0.587,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "vs": [
+          "ai-assurance"
+        ]
       },
       "n": 163
     },
@@ -24105,6 +26351,11 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {
+        "vs": [
+          "transparency"
+        ]
+      },
       "n": 164
     },
     {
@@ -24202,6 +26453,7 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {},
       "n": 165
     },
     {
@@ -24303,6 +26555,11 @@
         "hub_norm": 0.534,
         "pdf_df": 0,
         "pdf_gloss_df": 0
+      },
+      "rel": {
+        "pre": [
+          "national-security"
+        ]
       },
       "n": 166
     },
@@ -24519,6 +26776,12 @@
         "pdf_df": 38,
         "pdf_gloss_df": 3
       },
+      "rel": {
+        "vs": [
+          "data-protection",
+          "privacy-breach"
+        ]
+      },
       "n": 167
     },
     {
@@ -24711,6 +26974,12 @@
         "pdf_df": 19,
         "pdf_gloss_df": 3
       },
+      "rel": {
+        "vs": [
+          "privacy",
+          "privacy-breach"
+        ]
+      },
       "n": 168
     },
     {
@@ -24859,6 +27128,7 @@
         "pdf_df": 26,
         "pdf_gloss_df": 3
       },
+      "rel": {},
       "n": 169
     },
     {
@@ -24957,6 +27227,7 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
+      "rel": {},
       "n": 170
     }
   ]

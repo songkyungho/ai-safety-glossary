@@ -26,6 +26,11 @@
     "binding-force",
     "interoperability"
   ],
+  "relations": {
+    "leads_to": [
+      "conformity-assessment"
+    ]
+  },
   "frameworks": [
     {
       "org": "EU AI Act",

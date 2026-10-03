@@ -29,6 +29,14 @@
     "risk-management",
     "lifecycle"
   ],
+  "relations": {
+    "leads_to": [
+      "incident-reporting"
+    ],
+    "contrasts": [
+      "post-market-monitoring"
+    ]
+  },
   "frameworks": [
     {
       "org": "NIST",

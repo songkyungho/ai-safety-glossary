@@ -29,6 +29,14 @@
     "multi-agent-system-mas",
     "human-oversight"
   ],
+  "relations": {
+    "requires": [
+      "autonomy"
+    ],
+    "contrasts": [
+      "ai-agent"
+    ]
+  },
   "status": "draft",
   "updated": "2026-10-03"
 }

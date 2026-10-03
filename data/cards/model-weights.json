@@ -32,6 +32,7 @@
     "insider-threats",
     "self-exfiltration"
   ],
+  "relations": {},
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

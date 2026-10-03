@@ -36,5 +36,11 @@
     "machine-unlearning",
     "model-weights"
   ],
+  "relations": {
+    "contrasts": [
+      "privacy",
+      "data-protection"
+    ]
+  },
   "updated": "2026-10-03"
 }

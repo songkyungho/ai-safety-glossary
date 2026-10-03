@@ -95,6 +95,65 @@ def digest_dates() -> dict:
         con.close()
 
 
+REL_KINDS = ("broader", "requires", "leads_to", "contrasts")
+REL_RANK = {k: i for i, k in enumerate(REL_KINDS)}  # 같은 쌍에 여러 종류면 앞쪽(강한 쪽)을 남긴다
+
+
+def build_relations(cards: list, ids: set) -> tuple[list, dict]:
+    """카드의 relations → 정규화한 간선 목록과 용어별 이웃(역방향 포함).
+
+    간선은 (a, kind, b): broader는 a가 b의 하위, requires는 a가 b를 전제, leads_to는 a 다음 b.
+    contrasts는 대칭이라 (작은 id, 큰 id)로 한 번만 둔다.
+    """
+    best: dict = {}
+    for c in cards:
+        for kind in REL_KINDS:
+            for t in (c.get("relations") or {}).get(kind) or []:
+                if t not in ids:
+                    warn(f"{c['id']}: relations.{kind}의 id {t} 없음")
+                    continue
+                if t == c["id"]:
+                    continue
+                a, b = (c["id"], t)
+                if kind == "contrasts":
+                    a, b = sorted((a, b))
+                pair = tuple(sorted((a, b)))
+                old = best.get(pair)
+                if old and old[1] != kind:
+                    keep = old if REL_RANK[old[1]] <= REL_RANK[kind] else (a, kind, b)
+                    warn(f"{pair[0]}–{pair[1]}: 관계 종류가 겹침 ({old[1]}, {kind}) → {keep[1]}만 남김")
+                    best[pair] = keep
+                elif old and old[1] == kind and (old[0], old[2]) != (a, b) and kind != "contrasts":
+                    warn(f"{a}–{b}: {kind}가 양방향으로 적힘 — {old[0]}→{old[2]}만 남김")
+                else:
+                    best[pair] = (a, kind, b)
+    edges = sorted(best.values())
+    # broader 순환 점검
+    up = {}
+    for a, k, b in edges:
+        if k == "broader":
+            up.setdefault(a, []).append(b)
+    def has_cycle(n, seen):
+        for m in up.get(n, []):
+            if m in seen or has_cycle(m, seen | {m}):
+                return True
+        return False
+    for n in up:
+        if has_cycle(n, {n}):
+            warn(f"{n}: 상위 관계(broader)에 순환이 있음")
+    nb = {i: {k: [] for k in ("up", "down", "pre", "req_by", "prev", "next", "vs")} for i in ids}
+    for a, k, b in edges:
+        if k == "broader":
+            nb[a]["up"].append(b); nb[b]["down"].append(a)
+        elif k == "requires":
+            nb[a]["pre"].append(b); nb[b]["req_by"].append(a)
+        elif k == "leads_to":
+            nb[a]["next"].append(b); nb[b]["prev"].append(a)
+        else:
+            nb[a]["vs"].append(b); nb[b]["vs"].append(a)
+    return edges, nb
+
+
 def main() -> None:
     merged = json.load(open(config.MERGED_JSON, encoding="utf-8"))
     by_jk = {e["join_key"]: e for e in merged["entries"]}
@@ -262,6 +321,10 @@ def main() -> None:
             },
         })
 
+    rel_edges, rel_nb = build_relations(cards, ids)
+    for e in entries:
+        e["rel"] = {k: v for k, v in rel_nb.get(e["id"], {}).items() if v}
+
     # 장 순 → 장 안 지정 순서 → 가나다
     ch_rank = {c["no"]: i for i, c in enumerate(chap["chapters"])}
     pos = {cid: i for c in chap["chapters"] for i, cid in enumerate(c.get("order") or [])}
@@ -281,6 +344,7 @@ def main() -> None:
                 "entries": len(entries),
                 "cards_with_definition": sum(1 for c in cards if (c.get("definition") or {}).get("lead")),
                 "with_frameworks": sum(1 for e in entries if e["frameworks"]),
+                "relations": len(rel_edges),
                 "merged_used": len(owner),
                 "excluded": len(excluded),
                 "sources": dict(src_counts),
@@ -290,6 +354,7 @@ def main() -> None:
         "pdf_meta": merged.get("pdf_meta") or {},
         "categories": [{**c, "n": n_cat.get(c["code"], 0)} for c in chap["categories"]],
         "chapters": [{k: v for k, v in c.items() if k != "order"} | {"n": n_ch.get(c["no"], 0)} for c in chap["chapters"]],
+        "relations": [list(x) for x in rel_edges],
         "entries": entries,
     }
     with open(SITE_JSON, "w", encoding="utf-8") as f:

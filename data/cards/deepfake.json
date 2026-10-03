@@ -35,6 +35,11 @@
     "ai-watermarking",
     "provenance-metadata"
   ],
+  "relations": {
+    "broader": [
+      "ai-generated-fake-content"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

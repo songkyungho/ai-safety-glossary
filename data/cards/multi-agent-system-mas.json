@@ -33,6 +33,11 @@
     "ai-accountability",
     "evaluation"
   ],
+  "relations": {
+    "requires": [
+      "ai-agent"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

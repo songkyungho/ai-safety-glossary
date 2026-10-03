@@ -41,6 +41,15 @@
     "evaluation",
     "compliance"
   ],
+  "relations": {
+    "broader": [
+      "ai-assurance"
+    ],
+    "contrasts": [
+      "evaluation",
+      "conformity-assessment"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

@@ -29,6 +29,11 @@
     "ai-hazard",
     "malfunctioning"
   ],
+  "relations": {
+    "requires": [
+      "ai-harm"
+    ]
+  },
   "frameworks": [
     {
       "org": "OECD",

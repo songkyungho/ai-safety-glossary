@@ -35,6 +35,11 @@
     "persuasion",
     "provenance-metadata"
   ],
+  "relations": {
+    "contrasts": [
+      "misinformation"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

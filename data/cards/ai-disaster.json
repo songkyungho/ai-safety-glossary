@@ -28,6 +28,14 @@
     "catastrophic-risk",
     "systemic-risk"
   ],
+  "relations": {
+    "broader": [
+      "serious-incident"
+    ],
+    "contrasts": [
+      "catastrophic-risk"
+    ]
+  },
   "frameworks": [
     {
       "org": "OECD",

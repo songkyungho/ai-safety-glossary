@@ -32,6 +32,14 @@
     "high-impact-ai",
     "compute-threshold"
   ],
+  "relations": {
+    "broader": [
+      "ai-risk"
+    ],
+    "contrasts": [
+      "catastrophic-risk"
+    ]
+  },
   "frameworks": [
     {
       "org": "EU AI Act",

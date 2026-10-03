@@ -29,6 +29,17 @@
     "responsible-scaling-policy-rsp",
     "systemic-risk"
   ],
+  "relations": {
+    "broader": [
+      "general-purpose-ai-gpai"
+    ],
+    "requires": [
+      "capability"
+    ],
+    "contrasts": [
+      "foundation-model"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

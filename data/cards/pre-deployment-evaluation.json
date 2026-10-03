@@ -28,6 +28,14 @@
     "post-deployment-monitoring",
     "safety-case"
   ],
+  "relations": {
+    "broader": [
+      "evaluation"
+    ],
+    "leads_to": [
+      "post-deployment-monitoring"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

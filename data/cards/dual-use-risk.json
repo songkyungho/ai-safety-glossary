@@ -28,6 +28,14 @@
     "human-uplift",
     "export-control"
   ],
+  "relations": {
+    "broader": [
+      "ai-risk"
+    ],
+    "contrasts": [
+      "dual-use-science"
+    ]
+  },
   "frameworks": [
     {
       "org": "NIST",

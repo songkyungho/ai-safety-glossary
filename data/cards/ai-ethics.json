@@ -28,6 +28,11 @@
     "ai-governance",
     "ai-accountability"
   ],
+  "relations": {
+    "contrasts": [
+      "ai-safety"
+    ]
+  },
   "status": "draft",
   "updated": "2026-10-03"
 }

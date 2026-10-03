@@ -34,5 +34,10 @@
     "vulnerability-detection",
     "dual-use-risk"
   ],
+  "relations": {
+    "broader": [
+      "cybersecurity"
+    ]
+  },
   "updated": "2026-10-03"
 }

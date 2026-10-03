@@ -34,6 +34,11 @@
     "sandboxing",
     "harmful-content"
   ],
+  "relations": {
+    "broader": [
+      "safeguard"
+    ]
+  },
   "review_notes": [
     "대체어 '안전장치'(public)는 kit의 safeguard 번역어와 겹쳐 safeguard/guardrail 구별을 흐리므로 지움."
   ],

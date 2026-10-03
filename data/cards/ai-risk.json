@@ -35,6 +35,15 @@
     "systemic-risk",
     "ai-incident"
   ],
+  "relations": {
+    "requires": [
+      "ai-hazard",
+      "ai-harm"
+    ],
+    "contrasts": [
+      "threat"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

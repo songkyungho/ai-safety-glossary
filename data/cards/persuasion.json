@@ -29,6 +29,11 @@
     "loss-of-control",
     "malicious-use"
   ],
+  "relations": {
+    "contrasts": [
+      "deception"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

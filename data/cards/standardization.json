@@ -28,6 +28,11 @@
     "binding-force",
     "certification"
   ],
+  "relations": {
+    "leads_to": [
+      "harmonised-standards"
+    ]
+  },
   "status": "draft",
   "updated": "2026-10-03"
 }

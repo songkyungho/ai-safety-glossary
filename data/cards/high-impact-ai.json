@@ -34,6 +34,11 @@
     "transparency-obligation",
     "ai-risk"
   ],
+  "relations": {
+    "contrasts": [
+      "high-risk-ai"
+    ]
+  },
   "frameworks": [
     {
       "org": "한국 AI 기본법",

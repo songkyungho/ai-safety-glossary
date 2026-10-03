@@ -34,6 +34,11 @@
     "deepfake",
     "ai-generated-fake-content"
   ],
+  "relations": {
+    "contrasts": [
+      "transparency"
+    ]
+  },
   "frameworks": [
     {
       "org": "한국 AI 기본법",

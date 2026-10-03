@@ -30,6 +30,15 @@
     "model-card",
     "ai-accountability"
   ],
+  "relations": {
+    "broader": [
+      "trustworthy-ai"
+    ],
+    "contrasts": [
+      "interpretability",
+      "explainable-ai-xai"
+    ]
+  },
   "status": "draft",
   "updated": "2026-10-03"
 }

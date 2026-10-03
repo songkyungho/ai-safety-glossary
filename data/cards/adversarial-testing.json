@@ -34,5 +34,13 @@
     "robustness",
     "jailbreak"
   ],
+  "relations": {
+    "broader": [
+      "evaluation"
+    ],
+    "contrasts": [
+      "red-teaming"
+    ]
+  },
   "updated": "2026-10-03"
 }

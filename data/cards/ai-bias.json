@@ -39,6 +39,11 @@
     "automated-decision-making-adm",
     "ai-audit"
   ],
+  "relations": {
+    "leads_to": [
+      "discrimination"
+    ]
+  },
   "frameworks": [
     {
       "org": "국제 AI 안전 보고서",

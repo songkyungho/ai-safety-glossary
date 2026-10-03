@@ -37,6 +37,14 @@
     "incident-reporting",
     "human-oversight"
   ],
+  "relations": {
+    "broader": [
+      "trustworthy-ai"
+    ],
+    "contrasts": [
+      "responsible-ai"
+    ]
+  },
   "status": "draft",
   "updated": "2026-10-03"
 }
