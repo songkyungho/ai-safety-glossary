@@ -422,6 +422,107 @@ svg a.rel-n:focus-visible rect { stroke-width: 3; }
 svg.rel-legend { width: 560px; max-width: 100%; height: auto; }
 .map-hint { font-size: 0.72rem; color: var(--text-muted); }
 .term-rel { border-top: 1px solid var(--gridline); padding-top: 10px; margin-top: 10px; }
+
+/* 2026-10 카드 디자인 v2 — 인쇄 카드 장치(번호 알약·장 띠·리본·라벨 알약·아이콘·기관별 색) */
+.term-card {
+  position: relative; padding: 0 0 12px; overflow: visible;
+  border-left: 4px solid var(--ch, var(--chip));
+}
+.card-band {
+  display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+  padding: 10px 150px 8px 16px;
+  background: color-mix(in srgb, var(--ch) 7%, var(--surface-1));
+  border-bottom: 1px solid color-mix(in srgb, var(--ch) 18%, var(--hairline));
+  border-radius: 12px 12px 0 0;
+}
+.card-band .term-n {
+  background: var(--navy); color: var(--on-navy); font-weight: 700; font-size: 0.78rem;
+  padding: 2px 10px; border-radius: 6px; text-decoration: none; letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.card-band .term-n:hover { background: var(--accent); }
+.card-band .card-chapter { font-size: 0.78rem; font-weight: 650; color: var(--ch); letter-spacing: -0.02em; }
+.card-band .ch-en { font-weight: 400; color: var(--text-muted); }
+.ribbon {
+  position: absolute; top: -4px; right: 18px; z-index: 1;
+  background: var(--chip); color: #fff; font-size: 0.72rem; font-weight: 700;
+  letter-spacing: -0.01em; padding: 6px 12px 12px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 6px), 0 100%);
+  box-shadow: 0 1px 0 rgba(0,0,0,.08);
+}
+.ribbon::before {
+  content: ""; position: absolute; top: 0; left: -4px; width: 4px; height: 4px;
+  background: color-mix(in srgb, var(--chip) 60%, #000);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+.card-body { padding: 0 16px; }
+h2.term-title {
+  margin: 12px 0 8px; padding-left: 10px; border-left: 4px solid var(--navy);
+}
+h2.term-title .term-name { font-size: 1.25rem; color: var(--navy); }
+h2.term-title .term-en { font-weight: 600; color: var(--navy-2); }
+.term-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0 0 4px; }
+.pill-k {
+  background: var(--navy); color: var(--on-navy); font-size: 0.72rem; font-weight: 700;
+  padding: 3px 10px; border-radius: 6px;
+}
+.pill-v {
+  background: color-mix(in srgb, var(--navy) 9%, var(--surface-1)); color: var(--ink-muted);
+  font-size: 0.82rem; padding: 2px 10px; border-radius: 6px;
+}
+h3.sec { color: var(--navy); display: flex; align-items: center; gap: 6px; font-size: 0.8rem; }
+.ico { width: 16px; height: 16px; flex: 0 0 auto; color: var(--navy); }
+.def-distinction { position: relative; border-left: 3px solid var(--gold); }
+.dist-k {
+  display: inline-block; margin-right: 6px; font-size: 0.68rem; font-weight: 700;
+  color: #8b4518; border: 1px solid color-mix(in srgb, var(--gold) 50%, var(--hairline));
+  border-radius: 4px; padding: 0 5px; vertical-align: 1px;
+}
+.term-related {
+  margin: 12px 0 0; padding: 8px 10px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  background: var(--surface-2); border-radius: 10px;
+}
+.term-related .sec-inline { display: inline-flex; align-items: center; gap: 4px; color: var(--navy); font-size: 0.75rem; }
+.term-related .sec-inline .ico { width: 14px; height: 14px; }
+.rel-chip {
+  display: inline-flex; align-items: center; gap: 5px; font-size: 0.82rem;
+  padding: 1px 9px 1px 7px; border-radius: 999px; background: var(--surface-1);
+  border: 1px solid var(--hairline); color: var(--ink-muted); text-decoration: none;
+}
+.rel-chip::before {
+  content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--dot, var(--text-muted));
+}
+.rel-chip.plain::before { background: transparent; border: 1px solid var(--text-muted); }
+a.rel-chip:hover { border-color: var(--dot); color: var(--ink); }
+.term-related a { color: var(--ink-muted); }
+.fw-row {
+  grid-template-columns: 7.8em 1fr; border: 0; border-radius: 10px;
+  padding: 0; margin-bottom: 6px; overflow: hidden; gap: 0;
+  background: color-mix(in srgb, var(--org) 6%, var(--surface-1));
+}
+.fw-row .fw-org {
+  background: color-mix(in srgb, var(--org) 16%, var(--surface-1));
+  padding: 8px 8px; text-align: center; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 1px;
+}
+.fw-row .fw-org b { font-size: 0.8rem; color: var(--ink); line-height: 1.3; }
+.fw-flag { font-size: 1.15rem; line-height: 1; }
+.fw-row ul { padding: 8px 12px 6px 1.6em; }
+.org-intl { --org: #2f6fbf; } .org-eu { --org: #c2416b; } .org-us { --org: #2f8a52; }
+.org-kr { --org: #c9932a; } .org-uk { --org: #6b4fa8; } .org-std { --org: #2c8a80; } .org-etc { --org: #7a8494; }
+.term-fw, .term-refs, .term-explain { border-top: 0; }
+.term-refs ol { background: var(--surface-2); border-radius: 10px; padding: 8px 10px; }
+.ref-n { background: var(--navy); color: var(--on-navy); }
+.term-rel { margin: 12px 0 0; padding-top: 0; border-top: 0; }
+details.term-more { margin: 10px 16px 0; }
+.bucket-head { border-bottom: 2px solid color-mix(in srgb, var(--chip) 35%, var(--gridline)); }
+@media (max-width: 620px) {
+  .card-band { padding-right: 108px; }
+  .card-band .ch-en { display: none; }
+  .ribbon { right: 10px; font-size: 0.68rem; padding: 5px 9px 11px; }
+  .fw-row { grid-template-columns: 1fr; }
+  .fw-row .fw-org { flex-direction: row; gap: 6px; justify-content: flex-start; text-align: left; }
+}
 """
 
 
@@ -545,11 +646,62 @@ def ref_sup(cid, ns):
 REL_CTX = {"nodes": {}, "color": {}}
 
 
+def shade(hex_color, t):
+    """t<0 어둡게, t>0 밝게 (0~1). 같은 구분 안에서 장마다 명도를 달리하는 데 쓴다."""
+    h = hex_color.lstrip("#")
+    r, g, b = (int(h[i:i + 2], 16) for i in (0, 2, 4))
+    if t >= 0:
+        r, g, b = (round(c + (255 - c) * t) for c in (r, g, b))
+    else:
+        r, g, b = (round(c * (1 + t)) for c in (r, g, b))
+    return f"#{r:02x}{g:02x}{b:02x}"
+
+
+def chapter_colors(data):
+    cat_color = {c["code"]: c["color"] for c in data["categories"]}
+    out = {}
+    for code in cat_color:
+        chs = [c["no"] for c in data["chapters"] if c["category"] == code]
+        n = len(chs)
+        for i, no in enumerate(chs):
+            t = 0 if n == 1 else (-0.22 + 0.44 * i / (n - 1))  # 첫 장이 가장 진하다
+            out[no] = shade(cat_color[code], t * 0.8)
+    return out
+
+
 def rel_section(e):
     svg = relmap.ego_svg(e, REL_CTX["nodes"], lambda i: REL_CTX["color"].get(i, "var(--navy)"))
     if not svg:
         return ""
-    return f'<section class="term-rel"><h3 class="sec">용어 관계</h3><div class="rel-scroll">{svg}</div></section>'
+    return f'<section class="term-rel"><h3 class="sec">{icon("rel")}용어 관계</h3><div class="rel-scroll">{svg}</div></section>'
+
+
+ORG_TYPES = [  # (판별어, 유형) — 앞에서부터 맞춘다
+    (("EU",), "eu"), (("NIST", "미국"), "us"), (("한국", "과기정통부", "인공지능기본법"), "kr"),
+    (("UK", "영국"), "uk"), (("ISO", "IEC", "IEEE"), "std"),
+    (("OECD", "국제", "UN", "싱가포르", "G7"), "intl"),
+]
+ORG_FLAG = {"intl": "🌐", "eu": "🇪🇺", "us": "🇺🇸", "kr": "🇰🇷", "uk": "🇬🇧", "std": "📐", "etc": "📄"}
+
+
+def org_type(org):
+    for keys, t in ORG_TYPES:
+        if any(k in org for k in keys):
+            return t
+    return "etc"
+
+
+def icon(name):
+    """소제목 아이콘 — 인쇄 카드의 문서·기관·책 아이콘에 맞춘 단순 선 그림."""
+    paths = {
+        "doc": '<path d="M6 2h7l5 5v15H6z"/><path d="M13 2v5h5M9 12h6M9 16h6"/>',
+        "rel": '<circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M11 7.3 6.2 16.8M13 7.3l4.8 9.5M7.5 19h9"/>',
+        "inst": '<path d="M3 9 12 4l9 5M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/>',
+        "book": '<path d="M12 6c-2-1.5-5-2-8-1.5V19c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V4.5c-3-.5-6 0-8 1.5zM12 6v14.5"/>',
+        "hash": '<path d="M9 3 7 21M17 3l-2 18M4 9h17M3 15h17"/>',
+    }
+    return (f'<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" '
+            f'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{paths[name]}</svg>')
 
 
 def card_html(e):
@@ -557,12 +709,12 @@ def card_html(e):
     d = e.get("definition") or {}
     alts = e.get("alternatives") or []
 
-    meta = [f'<div><dt>구분</dt><dd>{html.escape(e["category_label"])}</dd></div>']
+    meta = ""
     if alts:
-        alt_s = " · ".join(
-            f'<span title="{html.escape(SOURCE_LABEL.get(a.get("source"), ""))}">{html.escape(a["text"])}</span>'
+        alt_s = "".join(
+            f'<span class="pill-v" title="{html.escape(SOURCE_LABEL.get(a.get("source"), ""))}">{html.escape(a["text"])}</span>'
             for a in alts)
-        meta.append(f'<div><dt>대체어</dt><dd>{alt_s}</dd></div>')
+        meta = f'<div class="term-meta"><span class="pill-k">대체어</span>{alt_s}</div>'
 
     explain = []
     if d.get("lead"):
@@ -572,31 +724,38 @@ def card_html(e):
             f"<li>{ui.prose_with_emphasis(p)}</li>" for p in d["points"]) + "</ul>")
     dist = d.get("distinction")
     if dist and dist.get("text"):
-        explain.append(f'<p class="def-distinction">{ui.prose_with_emphasis(dist["text"])}</p>')
+        explain.append(f'<p class="def-distinction"><span class="dist-k">구별</span>'
+                       f'{ui.prose_with_emphasis(dist["text"])}</p>')
 
     related = ""
     if e.get("related"):
         tags = []
         for r in e["related"]:
             if r.get("id"):
-                tags.append(f'<a href="#{html.escape(r["id"])}">#{html.escape(nospace(r["head"]))}</a>')
+                col = REL_CTX["color"].get(r["id"], "var(--text-muted)")
+                tags.append(f'<a class="rel-chip" href="#{html.escape(r["id"])}" style="--dot:{col}">'
+                            f'{html.escape(nospace(r["head"]))}</a>')
             else:
-                tags.append(f'<span>#{html.escape(nospace(r["label"]))}</span>')
-        related = f'<p class="term-related"><span class="sec-inline">관련 용어</span>{"".join(tags)}</p>'
+                tags.append(f'<span class="rel-chip plain">{html.escape(nospace(r["label"]))}</span>')
+        related = (f'<div class="term-related"><span class="sec-inline">{icon("hash")}관련 용어</span>'
+                   f'{"".join(tags)}</div>')
 
     fw = ""
     if e.get("frameworks"):
         rows = []
         for f in e["frameworks"]:
+            t = org_type(f.get("org", ""))
             pts = "".join(
                 f'<li>{ui.prose_with_emphasis(p["text"] if isinstance(p, dict) else p)}'
                 f'{ref_sup(cid, p.get("refs") if isinstance(p, dict) else None)}</li>'
                 for p in f.get("points") or [])
             rows.append(
-                f'<div class="fw-row"><div class="fw-org">{html.escape(f.get("org", ""))}'
+                f'<div class="fw-row org-{t}"><div class="fw-org"><span class="fw-flag">{ORG_FLAG[t]}</span>'
+                f'<b>{html.escape(f.get("org", ""))}</b>'
                 f'{("<span>" + html.escape(str(f["sub"])) + "</span>") if f.get("sub") else ""}</div>'
                 f'<ul>{pts}</ul></div>')
-        fw = f'<section class="term-fw"><h3 class="sec">주요 기관·문서별 개념 및 적용</h3>{"".join(rows)}</section>'
+        fw = (f'<section class="term-fw"><h3 class="sec">{icon("inst")}주요 기관·문서별 개념 및 적용</h3>'
+              f'{"".join(rows)}</section>')
 
     refs = ""
     if e.get("refs"):
@@ -607,7 +766,9 @@ def card_html(e):
             f'{(" · <a href=" + chr(34) + html.escape(r["url"]) + chr(34) + " target=_blank rel=noopener>원문</a>") if r.get("url") else ""}'
             f'{library_link(r.get("library_id"))}</span></li>'
             for r in e["refs"])
-        refs = f'<section class="term-refs"><h3 class="sec">출처</h3><ol>{lis}</ol></section>'
+        refs = f'<section class="term-refs"><h3 class="sec">{icon("book")}출처</h3><ol>{lis}</ol></section>'
+
+    rel = rel_section(e)
 
     more = []
     if e.get("commentary"):
@@ -621,7 +782,6 @@ def card_html(e):
             f'<div class="term-variants">{k} 표기 · {html.escape(v)}</div>' for k, v in e["variants"]))
     more.append(metrics_html(e))
     more_s = "".join(x for x in more if x)
-    n_more = len(e.get("pdf_definitions") or []) + len(e.get("examples") or [])
     more_label = []
     if e.get("commentary"):
         more_label.append("해설")
@@ -642,21 +802,26 @@ def card_html(e):
     for dd in e.get("pdf_definitions") or []:
         q_bits += [dd.get("quote") or "", dd.get("quote_ko") or ""]
 
+    side = fw + refs
+    main = (f'<h2 class="term-title"><span class="term-name">{html.escape(e["head"])}</span>'
+            f'<span class="term-en">{html.escape(e["en"])}</span></h2>{meta}'
+            f'<section class="term-explain"><h3 class="sec">{icon("doc")}용어 설명</h3>{"".join(explain)}</section>'
+            f'{related}{rel}')
     return (
         f'<article class="term-card" id="{html.escape(cid)}" data-cat="{e["category"]}" '
         f'data-ch="{e["chapter"]}" data-n="{e["n"]}" data-head="{html.escape(e["head"])}" '
         f'data-q="{html.escape(" ".join(q_bits).lower())}" '
-        f'data-qn="{html.escape(nospace(" ".join([e["head"], e["en"]] + [a["text"] for a in alts])).lower())}" style="--chip:{html.escape(e["color"])}">'
-        f'<div class="card-top"><a class="term-n" href="#{html.escape(cid)}" title="이 용어 링크">{e["n"]:03d}</a>'
+        f'data-qn="{html.escape(nospace(" ".join([e["head"], e["en"]] + [a["text"] for a in alts])).lower())}" '
+        f'style="--chip:{html.escape(e["color"])};--ch:{html.escape(e.get("chapter_color") or e["color"])}">'
+        f'<div class="card-band"><a class="term-n" href="#{html.escape(cid)}" title="이 용어 링크">{e["n"]:03d}</a>'
         f'<span class="card-chapter">{e["chapter"]}. {html.escape(e["chapter_label"])}'
-        f' <span class="ch-en">({html.escape(e["chapter_en"])})</span></span></div>'
-        f'<h2 class="term-title"><span class="term-name">{html.escape(e["head"])}</span>'
-        f'<span class="term-en">{html.escape(e["en"])}</span></h2>'
-        f'<dl class="term-meta">{"".join(meta)}</dl>'
-        f'<section class="term-explain"><h3 class="sec">용어 설명</h3>{"".join(explain)}</section>'
-        f"{rel_section(e)}{related}{fw}{refs}{more_html}"
+        f' <span class="ch-en">{html.escape(e["chapter_en"])}</span></span></div>'
+        f'<span class="ribbon">{html.escape(e["category_label"])}</span>'
+        f'<div class="card-body">{main}{side}</div>'
+        f"{more_html}"
         f"</article>"
     )
+
 
 
 LEGEND = """<details class="legend">
@@ -719,6 +884,9 @@ def index_page(data):
     legacy = json.load(open(legacy_path, encoding="utf-8"))["map"] if os.path.exists(legacy_path) else {}
     REL_CTX["nodes"] = {e["id"]: {"id": e["id"], "head": e["head"], "en": e["en"]} for e in ents}
     REL_CTX["color"] = {e["id"]: e["color"] for e in ents}
+    chc = chapter_colors(data)
+    for e in ents:
+        e["chapter_color"] = chc.get(e["chapter"], e["color"])
     cards = "".join(card_html(e) for e in ents)
     maps_html = concept_maps_html(data)
     c = data.get("corpus") or {}
