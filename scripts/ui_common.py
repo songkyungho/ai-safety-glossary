@@ -18,6 +18,7 @@ DIGEST_URL = "https://songkyungho.github.io/ai-safety-digest/"
 DIGEST_LABEL = "AI 안전 다이제스트"
 LIBRARY_URL = "https://songkyungho.github.io/ai-safety-library/"
 LIBRARY_LABEL = "AI 안전 라이브러리"
+RESEARCH_URL = "https://songkyungho.github.io/ai-safety-research/"
 NAV_ITEMS = NAV_RIGHT
 
 # 세 사이트가 한 시리즈로 보이도록 지면·타이포·구조는 라이브러리와 같게 두고,
@@ -226,10 +227,11 @@ def _nav_items(items: list[tuple[str, str]], current: str, *, rel_prefix: str) -
 
 
 def nav_html(current: str = "", *, rel_prefix: str = "") -> str:
-    # 세 사이트 공통 순서: 다이제스트 → 라이브러리 → 용어집
+    # 네 사이트 공통 순서: 다이제스트 → 라이브러리 → 연구 → 용어집
     left = (
         _nav_item(DIGEST_URL, "AI 안전 다이제스트", active=False, rel_prefix="")
         + _nav_item(LIBRARY_URL, "AI 안전 라이브러리", active=False, rel_prefix="")
+        + _nav_item(RESEARCH_URL, "AI 안전 연구", active=False, rel_prefix="")
         + _nav_item("index.html", "AI 안전 용어집", active=True, rel_prefix=rel_prefix)
     )
     return (
