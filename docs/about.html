@@ -642,6 +642,12 @@ details.term-more { margin: 10px 16px 0; }
 /* 전체 개념 지도 v2 */
 .ov-wrap { border-radius: 10px; border: 1px solid var(--gridline); margin-top: 6px; }
 svg.ov-map { display: block; width: 100%; min-width: 760px; height: auto; }
+.ov-mob { display: none; }
+@media (max-width: 700px) {
+  .ov-desk { display: none; }
+  .ov-mob { display: block; }
+  .ov-mob svg.ov-map { min-width: 0; }
+}
 svg.ov-map .rel-n, svg.ov-map .rel-e, svg.ov-map .ov-hull { transition: opacity .25s; }
 svg.ov-map .dim { opacity: .1; }
 svg.ov-map .rel-e { opacity: .5; }

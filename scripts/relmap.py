@@ -231,9 +231,9 @@ def big_node_svg(n, cx, cy, color, cls="ov-hub"):
             f'style="fill:#fff;font-weight:700">{html.escape(n["head"])}</text></a>')
 
 
-def overview_svg(layout, nodes, edges, color_of, degree, chap_label=None):
-    """layout = data/overview_layout.json (방사형). 노드·간선·묶음·주제 이름에 data-* 를 달아 JS가 강조한다."""
-    p = "ov"
+def overview_svg(layout, nodes, edges, color_of, degree, chap_label=None, svg_id="ovMap", prefix="ov"):
+    """layout = data/overview_layout.json(또는 그 mobile 배치를 덮어쓴 것). 노드·간선·섬·이름표에 data-*를 달아 JS가 강조한다."""
+    p = prefix
     W, H = layout["w"], layout["h"]
     pos = {k: tuple(v) for k, v in layout["nodes"].items() if k in nodes}
     center = set(layout.get("center") or [])
@@ -252,7 +252,7 @@ def overview_svg(layout, nodes, edges, color_of, degree, chap_label=None):
     vx0, vx1 = max(0, min(xs0) - 24), min(W, max(xs1) + 24)
     vy0, vy1 = max(0, min(ys) - 48), min(H, max(ys) + 34)
     vb = f"{vx0:.0f} {vy0:.0f} {vx1 - vx0:.0f} {vy1 - vy0:.0f}"
-    out = [f'<svg id="ovMap" class="ov-map" viewBox="{vb}" role="img" aria-label="AI 안전 개념 지도" '
+    out = [f'<svg id="{svg_id}" class="ov-map" viewBox="{vb}" role="img" aria-label="AI 안전 개념 지도" '
            f'data-full="{vb}">', defs(p)]
     # 가운데에서 주제로 뻗는 가지 (뼈대)
     for a, b in layout.get("spine") or []:
@@ -330,21 +330,21 @@ def overview_svg(layout, nodes, edges, color_of, degree, chap_label=None):
                                     "ov-center" if c in center else "ov-hub"))
     out += chips
     if lg:
-        out.append(legend_box_svg(lg))
+        out.append(legend_box_svg(lg, p))
     out.append("</svg>")
     return "".join(out)
 
 
-def legend_box_svg(lg):
+def legend_box_svg(lg, p="ov"):
     """지도 안 범례 상자 — 비어 있는 칸을 채운다."""
     x, y, w, h = lg["x"], lg["y"], lg["w"], lg["h"]
     rows = []
     tx = x + 62
     def row(k, yy, label):
         if k == "lead":
-            g = f'<path d="M{x+18},{yy} Q{x+33},{yy-7} {x+48},{yy}" style="fill:none;stroke:var(--ink-muted);stroke-width:1.5;stroke-opacity:.8" marker-end="url(#lgb-a1)"/>'
+            g = f'<path d="M{x+18},{yy} Q{x+33},{yy-7} {x+48},{yy}" style="fill:none;stroke:var(--ink-muted);stroke-width:1.5;stroke-opacity:.8" marker-end="url(#{p}-lg1)"/>'
         elif k == "req":
-            g = f'<path d="M{x+18},{yy} Q{x+33},{yy-7} {x+48},{yy}" style="fill:none;stroke:var(--text-muted);stroke-width:1.2;stroke-opacity:.6" marker-end="url(#lgb-a2)"/>'
+            g = f'<path d="M{x+18},{yy} Q{x+33},{yy-7} {x+48},{yy}" style="fill:none;stroke:var(--text-muted);stroke-width:1.2;stroke-opacity:.6" marker-end="url(#{p}-lg2)"/>'
         elif k == "hull":
             g = (f'<rect x="{x+16}" y="{yy-9}" width="34" height="18" rx="9" style="fill:color-mix(in srgb, var(--navy) 7%, transparent);'
                  f'stroke:color-mix(in srgb, var(--navy) 30%, transparent);stroke-dasharray:4 3"/>')
@@ -360,8 +360,8 @@ def legend_box_svg(lg):
     hint = (f'<text x="{x+18}" y="{y0+108}" font-size="11.5" style="fill:var(--text-muted)">'
             f'용어에 마우스를 올리면 연결이 보이고, 누르면 카드로 갑니다.</text>')
     return (f'<g class="ov-legend"><defs>'
-            f'<marker id="lgb-a1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0.6 L7.4,4 L0,7.4 z" style="fill:var(--ink-muted)"/></marker>'
-            f'<marker id="lgb-a2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0.6 L7.4,4 L0,7.4 z" style="fill:var(--text-muted);opacity:.75"/></marker>'
+            f'<marker id="{p}-lg1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0.6 L7.4,4 L0,7.4 z" style="fill:var(--ink-muted)"/></marker>'
+            f'<marker id="{p}-lg2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0.6 L7.4,4 L0,7.4 z" style="fill:var(--text-muted);opacity:.75"/></marker>'
             f'</defs><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" '
             f'style="fill:var(--surface-2);stroke:var(--gridline);stroke-width:1"/>'
             + "".join(rows) + hint + '</g>')

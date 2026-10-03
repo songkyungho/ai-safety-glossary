@@ -54,102 +54,103 @@ def main():
     members = {ch: sorted(i for i, e in ents.items() if e["chapter"] == ch) for ch in chapters}
     w = {i: relmap.box_w(ents[i]["head"]) for i in ents}
 
-    # 섬 만들기: 대표 용어는 맨 위 줄에 홀로, 나머지는 관계 순서대로 줄지어
-    blocks, home = {}, {}
-    for ch in chapters:
-        mem = set(members[ch])
-        hub = HUB.get(ch) if HUB.get(ch) in mem else max(sorted(mem), key=lambda v: len(adj.get(v, set()) & mem))
-        for v in mem:
-            home[v] = ch
-        order, seen = [], {hub}
-        q = deque([hub])
-        while True:
-            while q:
-                u = q.popleft()
-                order.append(u)
-                for v in sorted(adj.get(u, ()), key=lambda x: -len(adj.get(x, ()))):
-                    if v in mem and v not in seen:
-                        seen.add(v); q.append(v)
-            rest = mem - seen
-            if not rest:
-                break
-            root = max(sorted(rest), key=lambda v: len(adj.get(v, set()) & mem))
-            seen.add(root); q.append(root)
-        maxw = 300 if len(order) <= 10 else 360 if len(order) <= 15 else 400
-        rows, cur, cw = [], [], 0
-        for v in order[1:]:
-            if cur and cw + w[v] + GAP_X > maxw:
-                rows.append(cur); cur, cw = [], 0
-            cur.append(v); cw += w[v] + GAP_X
-        if cur:
-            rows.append(cur)
-        # 대표 용어 줄을 가운데에: 관계가 가까운 줄부터 아래·위로 번갈아 붙인다
-        below, above = rows[0::2], rows[1::2]
-        layout_rows = [("row", r) for r in above[::-1]] + [("hub", [hub])] + [("row", r) for r in below]
-        bw = max([hub_w(ents[hub]["head"])] + [sum(w[v] + GAP_X for v in r) - GAP_X for r in rows])
-        bh = sum(HUB_H + 10 if k == "hub" else ROW_H for k, _ in layout_rows)
-        blocks[ch] = {"hub": hub, "rows": layout_rows, "w": bw, "h": bh}
+    def make_blocks(maxw_of):
+        blocks = {}
+        for ch in chapters:
+            mem = set(members[ch])
+            hub = HUB.get(ch) if HUB.get(ch) in mem else max(sorted(mem), key=lambda v: len(adj.get(v, set()) & mem))
+            for v in mem:
+                home[v] = ch
+            order, seen = [], {hub}
+            q = deque([hub])
+            while True:
+                while q:
+                    u = q.popleft()
+                    order.append(u)
+                    for v in sorted(adj.get(u, ()), key=lambda x: -len(adj.get(x, ()))):
+                        if v in mem and v not in seen:
+                            seen.add(v); q.append(v)
+                rest = mem - seen
+                if not rest:
+                    break
+                root = max(sorted(rest), key=lambda v: len(adj.get(v, set()) & mem))
+                seen.add(root); q.append(root)
+            maxw = maxw_of(len(order))
+            rows, cur, cw = [], [], 0
+            for v in order[1:]:
+                if cur and cw + w[v] + GAP_X > maxw:
+                    rows.append(cur); cur, cw = [], 0
+                cur.append(v); cw += w[v] + GAP_X
+            if cur:
+                rows.append(cur)
+            # 대표 용어 줄을 가운데에: 관계가 가까운 줄부터 아래·위로 번갈아 붙인다
+            below, above = rows[0::2], rows[1::2]
+            layout_rows = [("row", r) for r in above[::-1]] + [("hub", [hub])] + [("row", r) for r in below]
+            bw = max([hub_w(ents[hub]["head"])] + [sum(w[v] + GAP_X for v in r) - GAP_X for r in rows])
+            bh = sum(HUB_H + 10 if k == "hub" else ROW_H for k, _ in layout_rows)
+            blocks[ch] = {"hub": hub, "rows": layout_rows, "w": bw, "h": bh}
+        return blocks
 
-    # 섬 위치: 4개 열에 위에서 아래로 쌓는다(masonry) — 열은 큰 흐름을 따른다
-    cen, x = {}, 0.0
-    col_box = []
-    for col in COLUMNS:
-        cw = max(blocks[ch]["w"] for ch in col)
-        y = 0.0
-        for ch in col:
-            cen[ch] = [x + cw / 2, y + blocks[ch]["h"] / 2]
-            y += blocks[ch]["h"] + GAP_ISLAND_Y
-        col_box.append((x, cw, y))
-        x += cw + GAP_ISLAND_X
-    # 범례는 섬이 가장 적게 쌓인 열의 맨 아래 칸에 — 4·4·4 칸처럼 보이게
-    lx, lw, ly = min(col_box, key=lambda c: c[2])
-    legend = {"x": lx, "y": ly, "w": lw, "h": LEGEND_H}
-    pos = {}
-    for ch in chapters:
-        cx_, cy_ = cen[ch]
-        B = blocks[ch]
-        y = cy_ - B["h"] / 2
-        for kind, row in B["rows"]:
-            rh = HUB_H + 10 if kind == "hub" else ROW_H
-            if kind == "hub":
-                pos[row[0]] = [cx_, y + rh / 2]
-            else:
-                rw = sum(w[v] + GAP_X for v in row) - GAP_X
-                xx = cx_ - rw / 2
-                for v in row:
-                    pos[v] = [xx + w[v] / 2, y + rh / 2]
-                    xx += w[v] + GAP_X
-            y += rh
-    pos["__legend_tl"] = [legend["x"], legend["y"]]
-    pos["__legend_br"] = [legend["x"] + legend["w"], legend["y"] + legend["h"]]
-    for v in pinned:
-        if v in pos and v in (old.get("nodes") or {}):
-            pos[v] = list(old["nodes"][v])
+    home = {}
 
-    ids = sorted(pos)
-    hubs = [blocks[ch]["hub"] for ch in chapters]
-    bw = lambda i: 0 if i.startswith("__") else hub_w(ents[i]["head"]) if i in hubs else w[i]
-    x0 = min(pos[i][0] - bw(i) / 2 for i in ids) - 40
-    y0 = min(pos[i][1] for i in ids) - 50
-    for i in ids:
-        pos[i][0] -= x0; pos[i][1] -= y0
-    Wc = round(max(pos[i][0] + bw(i) / 2 for i in ids) + 40)
-    Hc = round(max(pos[i][1] for i in ids) + 50)
+    def place(blocks, columns, keep):
+        """섬을 열에 쌓고(masonry) 범례를 가장 짧은 열 맨 아래에 둔다 → (좌표, 범례, 폭, 높이)."""
+        cen, x, col_box = {}, 0.0, []
+        for col in columns:
+            cw = max(blocks[ch]["w"] for ch in col)
+            y = 0.0
+            for ch in col:
+                cen[ch] = [x + cw / 2, y + blocks[ch]["h"] / 2]
+                y += blocks[ch]["h"] + GAP_ISLAND_Y
+            col_box.append((x, cw, y))
+            x += cw + GAP_ISLAND_X
+        lx, lw, ly = min(col_box, key=lambda c: c[2])
+        pos = {}
+        for ch in chapters:
+            cx_, cy_ = cen[ch]
+            B = blocks[ch]
+            y = cy_ - B["h"] / 2
+            for kind, row in B["rows"]:
+                rh = HUB_H + 10 if kind == "hub" else ROW_H
+                if kind == "hub":
+                    pos[row[0]] = [cx_, y + rh / 2]
+                else:
+                    rw = sum(w[v] + GAP_X for v in row) - GAP_X
+                    xx = cx_ - rw / 2
+                    for v in row:
+                        pos[v] = [xx + w[v] / 2, y + rh / 2]
+                        xx += w[v] + GAP_X
+                y += rh
+        for v in keep:
+            if v in pos:
+                pos[v] = list(keep[v])
+        hubs_ = {blocks[ch]["hub"] for ch in chapters}
+        bw = lambda i: hub_w(ents[i]["head"]) if i in hubs_ else w[i]
+        x0 = min([pos[i][0] - bw(i) / 2 for i in pos] + [lx]) - 40
+        y0 = min(pos[i][1] for i in pos) - 50
+        for i in pos:
+            pos[i][0] -= x0; pos[i][1] -= y0
+        legend = {"x": round(lx - x0), "y": round(ly - y0), "w": round(lw), "h": LEGEND_H}
+        Wc = round(max([pos[i][0] + bw(i) / 2 for i in pos] + [legend["x"] + legend["w"]]) + 40)
+        Hc = round(max(max(pos[i][1] for i in pos) + 50, legend["y"] + LEGEND_H + 20))
+        return {i: [round(v[0]), round(v[1])] for i, v in pos.items()}, legend, Wc, Hc
 
-    tl, br = pos.pop("__legend_tl"), pos.pop("__legend_br")
-    ids = sorted(pos)
-    legend = {"x": round(tl[0]), "y": round(tl[1]), "w": round(br[0] - tl[0]), "h": round(br[1] - tl[1])}
-    Hc = max(Hc, round(br[1] + 20))
+    desk_blocks = make_blocks(lambda n: 300 if n <= 10 else 360 if n <= 15 else 400)
+    keep = {v: old["nodes"][v] for v in pinned if v in (old.get("nodes") or {})}
+    nodes, legend, Wc, Hc = place(desk_blocks, COLUMNS, keep)
+    # 모바일: 섬을 한 줄로 세로로 쌓는다 (장 번호 순)
+    mob_blocks = make_blocks(lambda n: 330)
+    m_nodes, m_legend, mW, mH = place(mob_blocks, [chapters], {})
+    hubs = [desk_blocks[ch]["hub"] for ch in chapters]
     out = {
-        "_note": "scripts/layout_overview.py 산출(장 섬, 관계 기반 배치). 손으로 고친 노드는 pinned에 넣으면 유지된다.",
+        "_note": "scripts/layout_overview.py 산출(장 섬). 손으로 고친 노드는 pinned에 넣으면 유지된다(넓은 화면 배치만).",
         "w": Wc, "h": Hc, "hubs": hubs, "center": [], "spine": [], "labels": [], "legend": legend,
-        "pinned": sorted(pinned),
-        "nodes": {i: [round(pos[i][0]), round(pos[i][1])] for i in ids},
-        "home": home,
+        "pinned": sorted(pinned), "nodes": nodes, "home": home,
+        "mobile": {"w": mW, "h": mH, "legend": m_legend, "nodes": m_nodes},
     }
     with open(OUT, "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
-    print(f"nodes={len(ids)} canvas={Wc}x{Hc} → {OUT}")
+    print(f"nodes={len(nodes)} canvas={Wc}x{Hc} mobile={mW}x{mH} → {OUT}")
 
 
 if __name__ == "__main__":

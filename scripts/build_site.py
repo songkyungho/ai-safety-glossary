@@ -533,6 +533,12 @@ details.term-more { margin: 10px 16px 0; }
 /* 전체 개념 지도 v2 */
 .ov-wrap { border-radius: 10px; border: 1px solid var(--gridline); margin-top: 6px; }
 svg.ov-map { display: block; width: 100%; min-width: 760px; height: auto; }
+.ov-mob { display: none; }
+@media (max-width: 700px) {
+  .ov-desk { display: none; }
+  .ov-mob { display: block; }
+  .ov-mob svg.ov-map { min-width: 0; }
+}
 svg.ov-map .rel-n, svg.ov-map .rel-e, svg.ov-map .ov-hull { transition: opacity .25s; }
 svg.ov-map .dim { opacity: .1; }
 svg.ov-map .rel-e { opacity: .5; }
@@ -977,9 +983,7 @@ LEGEND = """<details class="legend">
 
 
 OVERVIEW_JS = """<script>
-(function () {
-  var svg = document.getElementById('ovMap');
-  if (!svg) return;
+Array.prototype.forEach.call(document.querySelectorAll('svg.ov-map'), function (svg) {
   var themes = JSON.parse(document.getElementById('mapThemes').textContent);
   var nodes = Array.prototype.slice.call(svg.querySelectorAll('.rel-n[data-id]'));
   var edges = Array.prototype.slice.call(svg.querySelectorAll('.rel-e'));
@@ -1088,7 +1092,7 @@ OVERVIEW_JS = """<script>
     });
     n.addEventListener('mouseleave', function () { svg.classList.remove('hovering'); paint(null, 'hdim'); });
   });
-})();
+});
 </script>"""
 
 
@@ -1106,6 +1110,11 @@ def concept_maps_html(data):
     color = lambda i: REL_CTX["color"].get(i, "var(--navy)")
     chap_label = {c["no"]: c["label"] for c in data["chapters"]}
     svg = relmap.overview_svg(layout, REL_CTX["nodes"], edges, color, deg, chap_label)
+    if layout.get("mobile"):   # 모바일: 섬을 한 줄로 쌓은 배치를 따로 그린다
+        mob = {**layout, **layout["mobile"]}
+        svg = (f'<div class="ov-desk">{svg}</div><div class="ov-mob">'
+               + relmap.overview_svg(mob, REL_CTX["nodes"], edges, color, deg, chap_label, "ovMapM", "ovm")
+               + '</div>')
     home = layout.get("home") or {}
     tabs = ['<button class="filter-chip map-tab active" data-theme="">전체</button>']
     tdata = {}
