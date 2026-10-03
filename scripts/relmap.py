@@ -215,11 +215,15 @@ def ego_svg(e, nodes, color_of, max_side=4):
 
 # ── 맨 위 전체 개념 지도 ─────────────────────────────────────────
 
-def big_node_svg(n, cx, cy, color):
-    """지도 가운데 용어 — 크게 채운 알약."""
+def big_w(label):
+    return text_w(label, 16) + 36
+
+
+def big_node_svg(n, cx, cy, color, cls="ov-hub"):
+    """장 대표 용어 — 장 색으로 크게 채운 알약."""
     fs, hh = 16, 36
     w = text_w(n["head"], fs) + 36
-    return (f'<a class="rel-n ov-center" data-id="{html.escape(n["id"])}" href="#{html.escape(n["id"])}">'
+    return (f'<a class="rel-n {cls}" data-id="{html.escape(n["id"])}" href="#{html.escape(n["id"])}">'
             f'<title>{html.escape(n["head"] + " · " + n.get("en", ""))}</title>'
             f'<rect x="{cx - w / 2:.1f}" y="{cy - hh / 2:.1f}" width="{w:.1f}" height="{hh}" rx="{hh / 2}" '
             f'style="fill:{color};stroke:color-mix(in srgb, {color} 60%, #000);stroke-width:1"/>'
@@ -233,12 +237,14 @@ def overview_svg(layout, nodes, edges, color_of, degree):
     W, H = layout["w"], layout["h"]
     pos = {k: tuple(v) for k, v in layout["nodes"].items() if k in nodes}
     center = set(layout.get("center") or [])
+    hubs = set(layout.get("hubs") or [])
     home = dict(layout.get("home") or {})
+    bwid = lambda i: big_w(nodes[i]["head"]) if (i in hubs or i in center) else box_w(nodes[i]["head"])
     for c in center:
         home[c] = "center"
     # 보이는 범위는 내용(용어·주제 이름)에 맞춰 잘라 빈 여백을 없앤다
-    xs0 = [x - box_w(nodes[k]["head"]) / 2 for k, (x, _) in pos.items()]
-    xs1 = [x + box_w(nodes[k]["head"]) / 2 for k, (x, _) in pos.items()]
+    xs0 = [x - bwid(k) / 2 for k, (x, _) in pos.items()]
+    xs1 = [x + bwid(k) / 2 for k, (x, _) in pos.items()]
     ys = [y for _, y in pos.values()]
     vx0, vx1 = max(0, min(xs0) - 24), min(W, max(xs1) + 24)
     vy0, vy1 = max(0, min(ys) - 34), min(H, max(ys) + 34)
@@ -258,9 +264,9 @@ def overview_svg(layout, nodes, edges, color_of, degree):
         mem = [i for i in pos if home.get(i) == ch]
         if not mem:
             continue
-        x0 = min(pos[i][0] - box_w(nodes[i]["head"]) / 2 for i in mem) - 14
-        x1 = max(pos[i][0] + box_w(nodes[i]["head"]) / 2 for i in mem) + 14
-        y0 = min(pos[i][1] for i in mem) - BOX_H / 2 - 11
+        x0 = min(pos[i][0] - bwid(i) / 2 for i in mem) - 14
+        x1 = max(pos[i][0] + bwid(i) / 2 for i in mem) + 14
+        y0 = min(pos[i][1] - (18 if i in hubs else BOX_H / 2) for i in mem) - 11
         y1 = max(pos[i][1] for i in mem) + BOX_H / 2 + 11
         col = color_of(mem[0])
         out.append(f'<rect class="ov-island" data-theme="{ch}" x="{x0:.1f}" y="{y0:.1f}" width="{x1 - x0:.1f}" '
@@ -297,19 +303,19 @@ def overview_svg(layout, nodes, edges, color_of, degree):
         cross = home.get(a) != home.get(b)
         if k == "requires":
             a, b = b, a
-        wa = box_w(nodes[a]["head"]) + (40 if a in center else 0)
-        wb = box_w(nodes[b]["head"]) + (40 if b in center else 0)
+        wa, wb = bwid(a), bwid(b)
         svg = _link(k, pos[a], wa, pos[b], wb, p, a, b)
         if cross:
             svg = svg.replace('class="rel-e ', 'class="rel-e x-reg ', 1)
         out.append(svg)
     for i, xy in pos.items():
-        if i in center:
+        if i in center or i in hubs:
             continue
-        out.append(node_svg(nodes[i], xy[0], xy[1], color=color_of(i), hub=degree.get(i, 0) >= 6))
-    for c in center:
+        out.append(node_svg(nodes[i], xy[0], xy[1], color=color_of(i)))
+    for c in [*center, *hubs]:
         if c in pos:
-            out.append(big_node_svg(nodes[c], pos[c][0], pos[c][1], color_of(c)))
+            out.append(big_node_svg(nodes[c], pos[c][0], pos[c][1], color_of(c),
+                                    "ov-center" if c in center else "ov-hub"))
     out.append("</svg>")
     return "".join(out)
 
