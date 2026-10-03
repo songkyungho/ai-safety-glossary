@@ -1,5 +1,5 @@
 {
-  "_note": "구분(category) ⊃ 장(chapter). 장 소속은 카드의 chapter 필드가 정하고, order는 장 안에서의 표시 순서만 정한다(없는 id는 뒤에 가나다순).",
+  "_note": "구분(category) ⊃ 장(chapter). 장 소속은 카드의 chapter 필드가 정하고, order는 장 안에서의 표시 순서만 정한다(없는 id는 뒤에 가나다순). 장 색(color)은 라이브러리 주제 색 계열에서 골랐고 지도·리본·칩·목차에 공통으로 쓴다.",
   "categories": [
     {
       "code": "T",
@@ -47,7 +47,8 @@
         "distillation",
         "inference",
         "chain-of-thought-cot"
-      ]
+      ],
+      "color": "#0d9488"
     },
     {
       "no": "02",
@@ -70,7 +71,8 @@
         "superintelligence",
         "recursive-self-improvement",
         "physical-ai"
-      ]
+      ],
+      "color": "#ea580c"
     },
     {
       "no": "03",
@@ -94,7 +96,8 @@
         "risk-thresholds",
         "threat-modelling",
         "lifecycle"
-      ]
+      ],
+      "color": "#a16207"
     },
     {
       "no": "04",
@@ -117,7 +120,8 @@
         "hallucination",
         "sabotage",
         "loss-of-control"
-      ]
+      ],
+      "color": "#be123c"
     },
     {
       "no": "05",
@@ -145,7 +149,8 @@
         "supply-chain",
         "autonomous-weapons",
         "national-security"
-      ]
+      ],
+      "color": "#db2777"
     },
     {
       "no": "06",
@@ -172,7 +177,8 @@
         "emotional-dependence",
         "child-and-youth-protection",
         "age-verification"
-      ]
+      ],
+      "color": "#7c3aed"
     },
     {
       "no": "07",
@@ -190,7 +196,8 @@
         "post-deployment-monitoring",
         "post-market-monitoring",
         "malfunctioning"
-      ]
+      ],
+      "color": "#334155"
     },
     {
       "no": "08",
@@ -210,7 +217,8 @@
         "calibration",
         "ai-audit",
         "safety-case"
-      ]
+      ],
+      "color": "#1d4ed8"
     },
     {
       "no": "09",
@@ -233,7 +241,8 @@
         "vulnerability-detection",
         "ai-watermarking",
         "provenance-metadata"
-      ]
+      ],
+      "color": "#0369a1"
     },
     {
       "no": "10",
@@ -257,7 +266,8 @@
         "model-card",
         "responsible-scaling-policy-rsp",
         "ai-literacy"
-      ]
+      ],
+      "color": "#16a34a"
     },
     {
       "no": "11",
@@ -283,7 +293,8 @@
         "data-protection",
         "copyright",
         "sovereign-ai"
-      ]
+      ],
+      "color": "#4338ca"
     }
   ]
 }

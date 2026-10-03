@@ -97,8 +97,8 @@ def node_svg(n, cx, cy, *, center=False, color="var(--navy)", hub=False):
         txt = 'style="fill:#fff;font-weight:700"'
     else:
         rect = (f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{BOX_H}" rx="{r}" '
-                f'style="fill:color-mix(in srgb, {color} 13%, var(--surface-1));'
-                f'stroke:color-mix(in srgb, {color} 38%, transparent);stroke-width:1"/>')
+                f'style="fill:color-mix(in srgb, {color} 20%, var(--surface-1));'
+                f'stroke:color-mix(in srgb, {color} 60%, transparent);stroke-width:1.1"/>')
         txt = f'style="fill:var(--ink);font-weight:{650 if hub else 500}"'
     t = (f'<text x="{cx:.1f}" y="{cy + 4.3:.1f}" text-anchor="middle" font-size="{FONT}" {txt}>'
          f'{html.escape(n["head"])}</text>')

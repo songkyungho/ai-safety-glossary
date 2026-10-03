@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI 안전 용어집",
-    "built_at": "2026-10-03T14:14:18+09:00",
+    "built_at": "2026-10-03T16:24:44+09:00",
     "method": "glossary_merged.json + data/cards 편집 계층",
     "counts": {
       "entries": 170,
@@ -69,6 +69,7 @@
       "category": "T",
       "label": "기반 기술·모델 공개",
       "en": "Foundations & Model Release",
+      "color": "#0d9488",
       "n": 14
     },
     {
@@ -76,6 +77,7 @@
       "category": "T",
       "label": "에이전트·프론티어 역량",
       "en": "Agents & Frontier Capabilities",
+      "color": "#ea580c",
       "n": 15
     },
     {
@@ -83,6 +85,7 @@
       "category": "R",
       "label": "위험 개념과 위험관리",
       "en": "Risk Concepts & Management",
+      "color": "#a16207",
       "n": 16
     },
     {
@@ -90,6 +93,7 @@
       "category": "R",
       "label": "모델 행동 위험",
       "en": "Model Behaviour Risks",
+      "color": "#be123c",
       "n": 15
     },
     {
@@ -97,6 +101,7 @@
       "category": "R",
       "label": "오용·보안 위협",
       "en": "Misuse & Security Threats",
+      "color": "#db2777",
       "n": 20
     },
     {
@@ -104,6 +109,7 @@
       "category": "R",
       "label": "정보생태계·사회적 피해",
       "en": "Information & Societal Harms",
+      "color": "#7c3aed",
       "n": 19
     },
     {
@@ -111,6 +117,7 @@
       "category": "R",
       "label": "사고·보고 및 모니터링",
       "en": "Incidents & Monitoring",
+      "color": "#334155",
       "n": 10
     },
     {
@@ -118,6 +125,7 @@
       "category": "E",
       "label": "평가·시험",
       "en": "Evaluation & Testing",
+      "color": "#1d4ed8",
       "n": 12
     },
     {
@@ -125,6 +133,7 @@
       "category": "E",
       "label": "정렬·안전장치·감독",
       "en": "Alignment, Safeguards & Oversight",
+      "color": "#0369a1",
       "n": 15
     },
     {
@@ -132,6 +141,7 @@
       "category": "G",
       "label": "원칙·책임",
       "en": "Principles & Accountability",
+      "color": "#16a34a",
       "n": 16
     },
     {
@@ -139,6 +149,7 @@
       "category": "G",
       "label": "법·규제·표준",
       "en": "Law, Regulation & Standards",
+      "color": "#4338ca",
       "n": 18
     }
   ],
@@ -1136,7 +1147,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "학습 데이터의 패턴을 익혀 글·이미지·소리·영상 같은 새로운 콘텐츠를 생성하는 AI 시스템을 말함.",
         "points": [
@@ -1420,7 +1432,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "대규모 데이터로 사전학습해 다양한 하류 과제에 맞춰 쓸 수 있도록 만든 범용 AI 모델을 말함.",
         "points": [
@@ -1624,7 +1637,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "방대한 텍스트로 학습해 문맥상 다음에 올 말을 확률적으로 예측하도록 만든 대형 신경망 언어 모델을 말함.",
         "points": [
@@ -1770,7 +1784,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "모델 가중치를 공개해 누구나 내려받아 직접 실행·연구·수정할 수 있게 한 AI 모델을 말함.",
         "points": [
@@ -1927,7 +1942,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "모델 가중치를 공개하지 않고, 개발사가 통제하는 응용 프로그램이나 API를 통해서만 이용하게 하는 AI 모델을 말함.",
         "points": [
@@ -2045,7 +2061,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "학습을 통해 값이 정해진 신경망의 수치 파라미터로, 모델이 학습한 내용이 저장된 핵심 산출물을 말함.",
         "points": [
@@ -2285,7 +2302,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "AI 모델을 학습·실행하는 데 필요한 계산 자원, 곧 하드웨어·소프트웨어·인프라를 통칭하는 말임.",
         "points": [
@@ -2463,7 +2481,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "AI 모델의 학습 가능한 파라미터를 조정해 모델을 학습시키는 데 사용되는 데이터를 말함.",
         "points": [
@@ -2708,7 +2727,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "실제 관측·수집이 아니라 알고리즘이나 AI 시스템으로 인위적으로 생성한 텍스트·이미지 등의 데이터를 말함.",
         "points": [
@@ -2933,7 +2953,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "데이터가 어디서 왔고 어떤 과정을 거쳐 처리·변환됐는지를 기록한 이력, 또는 그 이력을 관리하는 일을 말함.",
         "points": [
@@ -3077,7 +3098,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "이미 학습된 모델을 추가 데이터로 다시 학습시켜 특정 과제나 용도에 맞게 조정하는 과정을 말함.",
         "points": [
@@ -3324,7 +3346,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "큰 모델(교사)의 출력을 학습 신호로 삼아 작은 모델(학생)에 역량을 옮기는 학습 기법을 말함.",
         "points": [
@@ -3430,7 +3453,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "학습을 마친 AI 모델이 주어진 입력에 대해 출력을 생성하는 실행 과정을 의미함.",
         "points": [
@@ -3584,7 +3608,8 @@
       "chapter_en": "Foundations & Model Release",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#0d9488",
+      "category_color": "#475569",
       "definition": {
         "lead": "모델이 최종 답을 내기 전에 중간 추론 단계를 자연어로 풀어 쓰게 하는 방식, 또는 그렇게 생성된 추론 과정을 말함.",
         "points": [
@@ -3703,7 +3728,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "목표를 받아 여러 단계를 스스로 계획하고 도구를 호출하며 환경과 상호작용해 과제를 수행하는 AI 시스템을 말함.",
         "points": [
@@ -4101,7 +4127,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "AI 시스템이 사람의 지속적 개입 없이 목표를 향해 스스로 계획·행동하는 성질, 또는 그런 성질이 강한 AI를 통칭하는 말임.",
         "points": [
@@ -4211,7 +4238,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "AI 시스템이 사람의 개입 없이 스스로 판단하고 행동하도록 허용되거나 그럴 수 있는 정도를 의미함.",
         "points": [
@@ -4323,7 +4351,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "AI 시스템이 사람의 안내가 거의 없이 다단계 전략을 세우고 실행하는 역량을 말함.",
         "points": [
@@ -4470,7 +4499,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "AI 모델이 검색·계산기·코드 실행·외부 서비스 같은 외부 기능을 호출해 스스로 할 수 없는 일을 처리하는 방식을 말함.",
         "points": [
@@ -4587,7 +4617,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "여러 AI 에이전트가 서로의 행동과 목표에 적응하며 협력하거나 경쟁하는 상호작용 체계를 말함.",
         "points": [
@@ -4755,7 +4786,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "AI 모델이 외부 도구·데이터 원천에 연결되는 방식을 표준화한 개방형 통신 규격을 말함.",
         "points": [
@@ -4867,7 +4899,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "AI 시스템이 수행할 수 있는 과제·기능의 범위와 그것을 얼마나 능숙하게 수행하는지를 의미함.",
         "points": [
@@ -5071,7 +5104,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "AI가 일정한 성공률로 끝까지 완수할 수 있는 과제의 길이를, 같은 과제를 사람이 수행하는 데 걸리는 시간으로 나타낸 역량 지표를 말함.",
         "points": [
@@ -5173,7 +5207,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "현존하는 가장 앞선 AI 모델의 역량에 맞먹거나 이를 넘어서는, 특히 역량이 높은 범용 AI를 가리키는 말임.",
         "points": [
@@ -5351,7 +5386,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "특정 과제에 한정되지 않고 사람 수준의 폭넓은 인지 과제를 수행할 수 있다고 가정되는 AI를 의미함.",
         "points": [
@@ -5469,7 +5505,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "검색 결과 순위 매기기, 동물 종 분류, 체스처럼 특정 과제 하나 또는 매우 유사한 몇 가지 과제만 수행하도록 설계된 AI를 말함.",
         "points": [
@@ -5652,7 +5689,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "거의 모든 인지 영역에서 인간 최고 수준을 크게 넘어서는 지능을 가진 가정적 AI를 의미함.",
         "points": [
@@ -5768,7 +5806,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "AI 시스템이 자기 자신이나 후속 AI 시스템의 개발·개선을 스스로 수행하고, 그 결과 향상된 역량으로 다시 개선을 이어 가는 되먹임 과정을 말함.",
         "points": [
@@ -5841,7 +5880,8 @@
       "chapter_en": "Agents & Frontier Capabilities",
       "category": "T",
       "category_label": "AI 기술·역량",
-      "color": "#475569",
+      "color": "#ea580c",
+      "category_color": "#475569",
       "definition": {
         "lead": "로봇·자율주행차·산업 기계 등에 탑재되어 물리 세계를 인식하고 그 안에서 직접 행동하는 AI를 말함.",
         "points": [
@@ -5948,7 +5988,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI의 개발·배포·이용에서 비롯되는 피해가 발생할 가능성과 그 피해의 심각도를 결합해 나타낸 개념을 의미함.",
         "points": [
@@ -6105,7 +6146,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템의 개발·이용·오작동이 피해나 AI 사고로 이어질 잠재력을 지닌 사건·상황·조건, 즉 피해의 원천을 의미함.",
         "points": [
@@ -6254,7 +6296,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템의 개발·이용·오작동이 직간접적으로 개인·집단·사회·환경에 끼친 부정적 영향이나 손상을 의미함.",
         "points": [
@@ -6391,7 +6434,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "취약점을 악용하거나 AI를 수단으로 삼아 피해를 일으킬 수 있는 행위자, 행위 또는 그 가능성을 의미함.",
         "points": [
@@ -6515,7 +6559,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI로 인해 대규모 인명 피해나 사회 전반에 걸친 심각하고 되돌리기 어려운 피해가 발생할 위험을 의미함.",
         "points": [
@@ -6593,7 +6638,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "개별 모델의 결함을 넘어 사회·경제·제도 전반으로 퍼지거나, 고영향 범용 AI 모델의 역량에서 비롯되어 대규모로 확산될 수 있는 위험을 의미함.",
         "points": [
@@ -6956,7 +7002,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "범용 AI 모델이 일으킬 수 있는 시스템적 위험을 식별·분석하고 그 수용 여부를 판단하는 일련의 평가 절차를 말함.",
         "points": [
@@ -7156,7 +7203,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "특정 AI 모델이나 공개 방식이 기존 대안(다른 모델, 인터넷 검색 등 기존 기술)에 비해 추가로 더하는 위험의 크기를 의미함.",
         "points": [
@@ -7259,7 +7307,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이 의도한 대로 작동하지 않는 구체적 방식을 원인·양상에 따라 유형화한 것을 말함.",
         "points": [
@@ -7371,7 +7420,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 위험을 식별하고 그 발생 가능성과 심각도를 분석해, 허용 기준과 비교함으로써 대응 우선순위와 조치 필요성을 판단하는 절차를 말함.",
         "points": [
@@ -7548,7 +7598,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 위험을 식별·분석·판정하고 완화한 뒤 그 결과를 지속적으로 모니터링·갱신하는 조직적·체계적 활동을 말함.",
         "points": [
@@ -7822,7 +7873,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "식별·평가된 AI 위험의 발생 가능성이나 피해의 심각도를 허용 가능한 수준까지 낮추기 위해 취하는 조치를 말함.",
         "points": [
@@ -7974,7 +8026,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "개인이나 조직, 사회가 목표를 추구하면서 감수할 의향이 있는 AI 위험의 수준을 의미함.",
         "points": [
@@ -8166,7 +8219,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "허용 가능한 위험과 허용할 수 없는 위험을 가르고, 넘어서면 정해진 위험 관리 조치를 촉발하는 정량적·정성적 한계선을 의미함.",
         "points": [
@@ -8347,7 +8401,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템을 둘러싼 위협 행위자, 공격 경로, 취약점을 체계적으로 정리해 위험이 실제 피해로 이어지는 경로를 구체화하는 절차를 말함.",
         "points": [
@@ -8499,7 +8554,8 @@
       "chapter_en": "Risk Concepts & Management",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#a16207",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이 기획·데이터 수집부터 개발, 평가, 배포, 운영·모니터링, 폐기에 이르기까지 거치는 단계 전체를 의미함.",
         "points": [
@@ -8713,7 +8769,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이 개발자·이용자·특정 공동체·사회의 의도·가치·규범과 어긋나는 방식으로 자신의 역량을 사용하는 성향을 의미함.",
         "points": [
@@ -8959,7 +9016,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI에 부여된 목표가 개발자가 의도한 목표의 불완전한 대리 지표가 되어, 시스템이 의도하지 않은 행동을 추구하게 되는 개발상 실패 유형을 의미함.",
         "points": [
@@ -9160,7 +9218,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 모델이 학습에서 보지 못한 입력이나 달라진 환경에서도 학습한 역량과 행동을 유지하는 성질을 의미함.",
         "points": [
@@ -9261,7 +9320,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 모델이 학습·평가 목표가 의도한 바는 이루지 않으면서 점수만 높게 받는 의도치 않은 지름길을 찾아 활용하는 현상을 의미함.",
         "points": [
@@ -9368,7 +9428,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "어떤 목표를 추구하는 과정에서 타인에게 체계적으로 잘못된 믿음을 형성하게 하는 AI 시스템의 행동을 의미함.",
         "points": [
@@ -9598,7 +9659,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "오정렬된 AI 시스템이 학습·평가 과정에서는 정렬된 것처럼 행동해 문제가 드러나지 않는, 탐지하기 어려운 오정렬을 의미함.",
         "points": [
@@ -9792,7 +9854,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이 개발자·감독자의 의도와 어긋난 목표를 추구하면서, 기만 등으로 감독을 피하는 방법을 찾아 은밀하게 행동하는 것을 의미함.",
         "points": [
@@ -9905,7 +9968,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 모델이 평가 상황을 인지하고 실제 역량보다 낮은 성능을 의도적으로 보이거나 행동을 조절해 평가 결과를 왜곡하는 현상을 의미함.",
         "points": [
@@ -10035,7 +10099,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이 자기 자신, 자신이 수정될 수 있는 과정, 자신이 배포된 맥락에 관한 정보에 접근하고 이를 활용하는 역량을 의미함.",
         "points": [
@@ -10147,7 +10212,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이 주어진 목표를 이루는 수단으로 자원·권한·영향력을 확보하거나 정지·수정에 저항하는 등 자신의 통제 범위를 넓히려는 행동을 의미함.",
         "points": [
@@ -10213,7 +10279,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 모델이 개발자의 승인 없이 자신의 모델 가중치 등을 개발자 통제 밖의 서버나 환경으로 복사·이전하는 행위를 의미함.",
         "points": [
@@ -10313,7 +10380,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 모델이 사실이나 정확성보다 이용자의 견해·기대에 맞추어 동조하거나 치켜세우는 응답을 내는 경향을 의미함.",
         "points": [
@@ -10494,7 +10562,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이 근거가 없거나 사실과 다른 내용을 그럴듯한 형식으로 생성하는 현상, 또는 그렇게 생성된 부정확하거나 오해를 부르는 정보를 의미함.",
         "points": [
@@ -10664,7 +10733,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이 겉으로는 협조하면서 맡은 작업이나 감독·안전 절차를 의도적으로 부실하게 수행하거나 훼손하는 행동을 의미함.",
         "points": [
@@ -10808,7 +10878,8 @@
       "chapter_en": "Model Behaviour Risks",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#be123c",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "하나 이상의 범용 AI 시스템이 누구의 통제도 받지 않고 동작하며, 통제를 되찾을 명확한 경로가 없게 되는 시나리오를 의미함.",
         "points": [
@@ -11028,7 +11099,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템을 개발자·배포자가 의도하거나 허용한 용도·조건에서 벗어나 피해를 낳는 방식으로 사용하는 행위를 의미함.",
         "points": [
@@ -11175,7 +11247,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "해를 끼치려는 의도로 AI 시스템을 사용하는 행위를 말하며, 행위자의 고의를 핵심 요건으로 삼는 AI 위험 범주를 가리킴.",
         "points": [
@@ -11368,7 +11441,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이나 그에 부여된 권한·기능을 정당한 목적과 허용 범위를 넘어 과도하게 또는 목적 밖으로 이용하는 행위를 의미함.",
         "points": [
@@ -11480,7 +11554,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "같은 AI 역량이 이로운 목적과 함께 해로운 목적에도 쓰일 수 있어 생기는 위험으로, 특히 고의적 오용으로 피해가 발생할 가능성을 의미함.",
         "points": [
@@ -11584,7 +11659,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "의료·에너지·환경처럼 이로운 목적에 쓰일 수 있으나 생물·화학무기 개발처럼 해를 끼치는 데 오용될 수도 있는 연구·기술을 의미함.",
         "points": [
@@ -11786,7 +11862,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템을 사용할 때 사람이 특정 과업을 수행하는 역량이 AI 없이 수행할 때보다 얼마나 향상되는지를 가리키는 개념임.",
         "points": [
@@ -11876,7 +11953,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "화학·생물·방사능·핵 무기와 관련 물질을 묶어 이르는 말로, AI 안전에서는 모델이 이런 무기의 개발·획득을 실질적으로 도울 위험 범주를 가리킴.",
         "points": [
@@ -11978,7 +12056,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "강제나 강압이 아니라 합리적 논증·감정적 호소·권위에 대한 호소 등 소통을 통해 상대의 믿음이나 행동을 바꾸는 영향력을 의미함.",
         "points": [
@@ -12135,7 +12214,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "컴퓨터 시스템·네트워크·디지털 기기에 무단으로 접근하거나 정보의 기밀성·무결성·가용성을 침해하려는 악의적 시도를 의미함.",
         "points": [
@@ -12363,7 +12443,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "정보 시스템과 데이터에 피해를 줄 수 있는 행위자·의도·수단과 그 공격 시나리오를 함께 이르는 말임.",
         "points": [
@@ -12483,7 +12564,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "정보 시스템과 데이터의 기밀성·무결성·가용성을 침해로부터 보호하기 위한 기술적·관리적 활동 전반을 의미함.",
         "points": [
@@ -12599,7 +12681,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "공격자가 악용해 시스템의 기밀성·무결성·가용성이나 안전한 작동을 침해할 수 있는 결함이나 약점을 의미함.",
         "points": [
@@ -12714,7 +12797,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "아직 발견되지 않았거나 패치되지 않은 소프트웨어·하드웨어의 보안 결함으로, 공격자가 이미 악용할 수 있어 개발자에게 고칠 시간이 '0일'인 취약점을 의미함.",
         "points": [
@@ -12879,7 +12963,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "컴퓨터 시스템을 손상·방해하거나 무단 접근하도록 만든 유해 소프트웨어로, 바이러스·스파이웨어·랜섬웨어 등을 포함함.",
         "points": [
@@ -13089,7 +13174,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "조직의 민감한 자원에 접근할 수 있는 사람 또는 AI 모델·시스템이 수행하는 적대적 활동이나 우발적 유출로 생기는 위협을 의미함.",
         "points": [
@@ -13222,7 +13308,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "안전장치를 우회해 AI 시스템이 무기 제조 지침 같은 유해 콘텐츠를 생성하도록 고안한 프롬프트를 만들어 제출하는 행위·공격을 의미함.",
         "points": [
@@ -13523,7 +13610,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 모델이 처리하는 문서·웹페이지·도구 출력 등 데이터 안에 지시를 숨겨, 원래 지시를 가로채 모델이 의도와 다르게 행동하게 만드는 공격을 의미함.",
         "points": [
@@ -13671,7 +13759,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이 의존하는 반도체·연산 자원, 데이터, 사전학습 모델, 소프트웨어·도구가 개발·배포에 이르는 조달 경로 전체와 그에 따른 보안·안전 위험을 가리킴.",
         "points": [
@@ -13774,7 +13863,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "인간의 추가 개입 없이 표적을 선택하고 공격할 수 있는 무기 체계를 말하며, 국제 논의에서는 치명적 자율무기체계(LAWS)로 다뤄짐.",
         "points": [
@@ -13879,7 +13969,8 @@
       "chapter_en": "Misuse & Security Threats",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#db2777",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "국가의 존립과 핵심 이익을 외부 위협으로부터 지키는 일로, AI 안전에서는 군사·정보 역량, 핵심 기반시설 공격, 기술 경쟁과 맞닿는 정책 영역을 가리킴.",
         "points": [
@@ -13989,7 +14080,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이 특정 집단이나 관점에 체계적으로 유리하거나 불리하게 작동해 불공정한 결과를 낳는 성향 또는 오류를 의미함.",
         "points": [
@@ -14166,7 +14258,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "인종·성별·연령·종교 등 보호 특성을 포함한 속성을 이유로 개인이나 집단을 불공정하게 대우하는 것으로, AI 시스템의 결과로도 발생할 수 있는 피해를 말함.",
         "points": [
@@ -14306,7 +14399,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "사람이 자동화된 시스템의 출력이나 권고를 지나치게 신뢰해, 반대 정보를 간과하거나 오류를 바로잡지 못하는 인지적 경향을 말함.",
         "points": [
@@ -14388,7 +14482,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "사람의 실질적 개입 없이 알고리즘이나 AI 시스템이 개인에 관한 결정을 내리거나 그 결정을 사실상 좌우하는 것을 의미함.",
         "points": [
@@ -14502,7 +14597,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "이용자나 제3자에게 신체적·정신적·사회적 피해를 줄 수 있는 내용물로, AI 서비스가 생성·유통을 제한하려는 대상 범주를 말함.",
         "points": [
@@ -14611,7 +14707,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI로 실제 인물의 얼굴·목소리·행동을 합성하거나 조작해, 하지 않은 말이나 행동을 실제처럼 보이게 만든 오디오·시각 콘텐츠를 말함.",
         "points": [
@@ -14937,7 +15034,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "생성형 AI로 만든 텍스트·오디오·이미지·영상 가운데 사람이나 사건을 악의적·기만적으로 현실과 다르게 묘사하는 콘텐츠를 말함.",
         "points": [
@@ -15132,7 +15230,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "사람을 속이거나 여론·행동에 영향을 미치려는 의도로 생성·유포되는 거짓 또는 오도적 정보를 의미하며, 의도의 유무로 오정보와 구별됨.",
         "points": [
@@ -15306,7 +15405,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "속이려는 의도 없이 생성되거나 유포되는 거짓 또는 오도적 정보를 의미하며, 의도를 가진 허위 정보와 구별됨.",
         "points": [
@@ -15443,7 +15543,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "당사자 동의 없이 제작·유포되는 성적 이미지·영상으로, 실제 촬영물과 AI로 합성한 이미지를 모두 포함하는 피해 유형을 말함.",
         "points": [
@@ -15550,7 +15651,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "아동을 성적으로 학대·착취하는 내용을 담은 이미지·영상 등 자료로, 그 자체가 아동 학대의 기록이자 피해로 취급되는 불법 콘텐츠를 말함.",
         "points": [
@@ -15657,7 +15759,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "사람의 행동·위치·통신·생체 정보를 지속적으로 관찰·기록·분석하는 활동으로, AI가 그 규모와 비용 구조를 바꿔 놓은 위험 영역을 말함.",
         "points": [
@@ -15755,7 +15858,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "국가나 사업자가 특정 내용의 표현·유통을 차단하거나 제한하는 것으로, AI에서는 모델 응답 범위의 통제를 둘러싸고 쓰이는 개념임.",
         "points": [
@@ -15869,7 +15973,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "개인정보가 권한 없이 수집·노출·유출·오용되는 사건으로, AI에서는 학습·추론·이용 과정 전반에서 발생할 수 있는 피해를 말함.",
         "points": [
@@ -15984,7 +16089,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "의견과 정보를 표현하고 구하고 전달받을 자유로, AI에서는 생성물의 보호 범위와 유해 콘텐츠 통제의 한계를 정하는 기준이 되는 기본권임.",
         "points": [
@@ -16082,7 +16188,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "정서·인지·사회적 기능이 유지되는 상태로, AI 안전에서는 대화형 AI와의 상호작용이 이용자의 심리적 안녕에 미치는 영향을 다루는 영역을 말함.",
         "points": [
@@ -16185,7 +16292,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "이용자가 대화형 AI와의 상호작용에 정서적으로 과도하게 기대어, 관계·일상 기능·의사결정이 그 상호작용에 좌우되는 상태를 말함.",
         "points": [
@@ -16291,7 +16399,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "미성년 이용자를 연령에 맞지 않는 콘텐츠·상호작용·데이터 처리의 위험으로부터 보호하기 위한 제도적·기술적 조치 전반을 말함.",
         "points": [
@@ -16398,7 +16507,8 @@
       "chapter_en": "Information & Societal Harms",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#7c3aed",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "이용자가 일정 연령 기준을 충족하는지 확인해 서비스·기능 접근을 제한하거나 달리 제공하기 위한 절차·기술을 말함.",
         "points": [
@@ -16496,7 +16606,8 @@
       "chapter_en": "Incidents & Monitoring",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#334155",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템의 개발·사용·오작동이 직접 또는 간접으로 사람·기반시설·권리·재산 등에 실제 피해를 일으킨 사건이나 상황을 말함.",
         "points": [
@@ -16657,7 +16768,8 @@
       "chapter_en": "Incidents & Monitoring",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#334155",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 사고 가운데 사망·심각한 건강 피해, 핵심 기반시설의 심각하고 되돌릴 수 없는 교란, 기본권의 심각한 침해 등 중대한 피해를 낳은 사고를 말함.",
         "points": [
@@ -16802,7 +16914,8 @@
       "chapter_en": "Incidents & Monitoring",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#334155",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "중대 AI 사고 가운데 공동체나 사회의 기능을 교란하고, 그 사회가 자체 자원으로 감당할 수 있는 대응 역량을 시험하거나 넘어서는 사고를 말함.",
         "points": [
@@ -16903,7 +17016,8 @@
       "chapter_en": "Incidents & Monitoring",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#334155",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템과 관련해 실제 피해로 이어질 수 있었으나 우연이나 개입으로 피해가 발생하지 않은 사건을 말함.",
         "points": [
@@ -17027,7 +17141,8 @@
       "chapter_en": "Incidents & Monitoring",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#334155",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템과 관련해 발생한 사고 정보를 기록·전달·제출하는 행위·절차 또는 체계를 의미함.",
         "points": [
@@ -17234,7 +17349,8 @@
       "chapter_en": "Incidents & Monitoring",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#334155",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 사고 보고 과정에서 작성·제출되는 개별 문서나 기록으로, 특정 사고의 사실관계·영향·원인·대응을 담은 것을 말함.",
         "points": [
@@ -17350,7 +17466,8 @@
       "chapter_en": "Incidents & Monitoring",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#334155",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 사고와 그 징후를 지속적으로 찾아내고 수집·분류·분석해, 대응과 재발 방지에 쓰도록 하는 활동이나 체계를 말함.",
         "points": [
@@ -17470,7 +17587,8 @@
       "chapter_en": "Incidents & Monitoring",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#334155",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 모델·시스템을 배포한 뒤 실제 사용 환경에서 성능·행동·오용·영향을 지속적으로 관찰하고, 문제가 드러나면 대응에 반영하는 활동을 말함.",
         "points": [
@@ -17597,7 +17715,8 @@
       "chapter_en": "Incidents & Monitoring",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#334155",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이나 모델을 시장에 내놓은 뒤 제공자가 사용 경험과 위험 정보를 체계적으로 수집·검토해, 필요한 시정 조치로 이어지게 하는 규제상 활동을 말함.",
         "points": [
@@ -17703,7 +17822,8 @@
       "chapter_en": "Incidents & Monitoring",
       "category": "R",
       "category_label": "AI 위험·사고",
-      "color": "#b4413a",
+      "color": "#334155",
+      "category_color": "#b4413a",
       "definition": {
         "lead": "AI 시스템이 개발자나 사용자가 의도한 대로 동작하지 않아 잘못되거나 해로운 출력, 운영 장애를 낳는 현상을 말함.",
         "points": [
@@ -17894,7 +18014,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "AI 모델·시스템의 성능, 역량, 취약점, 잠재적 영향을 배포 전후에 체계적으로 측정·검토하는 활동을 말함.",
         "points": [
@@ -18159,7 +18280,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "AI 모델·시스템이 위험한 역량이나 해로운 행동 성향을 보이는지, 안전장치가 제대로 작동하는지를 배포 전후에 시험하는 평가를 말함.",
         "points": [
@@ -18299,7 +18421,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "AI 모델이 사이버 공격, 생물학 무기 개발 지원, 자율적 복제처럼 심각한 위험으로 이어질 수 있는 역량을 어느 수준까지 갖추었는지 측정하는 평가를 말함.",
         "points": [
@@ -18407,7 +18530,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "AI 모델·시스템을 외부에 공개하거나 서비스에 투입하기 전에 역량, 안전성, 취약점, 잠재적 영향을 시험하는 평가를 말함.",
         "points": [
@@ -18511,7 +18635,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "고정된 과제 묶음과 채점 방식을 갖추어 AI 모델·시스템의 성능이나 부적절한 행동을 표준화된 방식으로 측정·비교하는 시험을 말함.",
         "points": [
@@ -18868,7 +18993,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "전담 인력이나 팀이 공격자 관점에서 AI 모델·시스템의 취약점, 한계, 오용 가능성을 체계적으로 찾아내는 시험 활동을 말함.",
         "points": [
@@ -19049,7 +19175,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "의도적으로 조작한 입력이나 공격 시나리오를 AI 모델·시스템에 가해, 오작동이나 안전장치 우회가 일어나는지 확인하는 시험 방법을 말함.",
         "points": [
@@ -19132,7 +19259,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "탈옥·프롬프트 인젝션 등 공격 시도 가운데 실제로 안전장치를 뚫고 공격자가 의도한 출력이나 행동을 얻어낸 비율을 나타내는 지표를 말함.",
         "points": [
@@ -19238,7 +19366,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "성능이 높은 거대 언어 모델에 채점 기준을 주고, 다른 모델의 출력을 사람 대신 비교·채점하게 하는 평가 방식을 말함.",
         "points": [
@@ -19343,7 +19472,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "AI 모델이 출력에 대해 나타내는 확신도가 실제 정답률과 얼마나 일치하는지를 나타내는 성질을 말함.",
         "points": [
@@ -19450,7 +19580,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "독립적인 제3자 등이 AI 시스템과 이를 운영하는 조직이 표준·정책·절차와 요구 사항을 지키는지 공식적으로 검토·검증하는 절차를 말함.",
         "points": [
@@ -19633,7 +19764,8 @@
       "chapter_en": "Evaluation & Testing",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#1d4ed8",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "AI 모델·시스템이 특정 운영 맥락에서 수용 가능한 수준으로 안전하다는 주장을 증거로 뒷받침해 구조화한 논증을 말함.",
         "points": [
@@ -19743,7 +19875,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "AI 시스템이 자신의 역량을 개발자·이용자·사회 등 인간의 의도와 가치에 맞게 쓰도록 만드는 과제 또는 그런 성향을 의미함.",
         "points": [
@@ -19963,7 +20096,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "사람이 모델 응답을 비교·평가한 선호 데이터로 보상 모델을 만들고, 그 보상을 높이도록 강화학습으로 언어 모델을 조정하는 학습 기법을 의미함.",
         "points": [
@@ -20075,7 +20209,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "사람이 AI 모델의 내부 작동, 특히 특정 출력·결정이 왜 나왔는지를 이해할 수 있는 정도, 또는 이를 밝히려는 연구를 의미함.",
         "points": [
@@ -20359,7 +20494,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "AI 시스템의 개별 출력·결정이 왜 나왔는지를 사람이 이해하고 활용할 수 있는 형태로 제시하는 기법과 연구 분야를 의미함.",
         "points": [
@@ -20466,7 +20602,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "AI 시스템이 해를 끼치지 않고 의도대로 작동하도록 개발·배포·운영 단계에 두는 기술적·절차적 보호 조치를 통칭함.",
         "points": [
@@ -20666,7 +20803,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "모델 바깥에서 입력·출력·도구 사용을 검사하고 차단·수정·제한해 유해하거나 정책에 어긋난 동작을 막는 외부 통제 장치를 말함.",
         "points": [
@@ -20785,7 +20923,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "코드나 AI 에이전트를 파일·네트워크·자원 접근이 제한된 격리 환경에서만 실행해, 오작동하거나 탈취돼도 피해 범위를 좁히는 기법을 의미함.",
         "points": [
@@ -20892,7 +21031,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "사람이 AI 시스템의 작동을 이해·모니터링하고, 필요할 때 출력을 무시·번복하거나 시스템을 중단할 수 있도록 보장하는 원칙과 그 구현 체계를 의미함.",
         "points": [
@@ -21037,7 +21177,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "AI 시스템의 결정·행동 과정 안에 사람이 직접 참여해, 실행 전에 검토·승인·수정할 수 있도록 설계한 운영 방식을 말함.",
         "points": [
@@ -21144,7 +21285,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "모델을 실패시키도록 고안한 적대적 입력을 학습 데이터에 포함해, 그런 입력에도 의도대로 작동하도록 모델을 학습시키는 기법을 의미함.",
         "points": [
@@ -21348,7 +21490,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "이미 학습된 모델에서 특정 데이터나 지식·역량의 영향을 처음부터 다시 학습하지 않고 제거하려는 기법을 의미함.",
         "points": [
@@ -21416,7 +21559,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "시스템·네트워크에 대한 침해 시도를 탐지·차단·대응·복구해 정보 자산을 지키는 활동을 말하며, AI 안전에서는 AI를 방어에 활용하는 일과 AI 시스템 자체를 지키는 일을 함께 가리킴.",
         "points": [
@@ -21526,7 +21670,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "소프트웨어·시스템에서 악용될 수 있는 결함을 찾아내는 활동을 말하며, AI 안전에서는 AI를 이용한 취약점 발견 역량과 그 이중 용도 위험을 함께 다룸.",
         "points": [
@@ -21646,7 +21791,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "AI가 생성한 텍스트·이미지·오디오·영상에 눈에 잘 띄지 않는 표식을 심어, 이후 검출기로 AI 생성물임과 출처를 확인할 수 있게 하는 기법을 의미함.",
         "points": [
@@ -21819,7 +21965,8 @@
       "chapter_en": "Alignment, Safeguards & Oversight",
       "category": "E",
       "category_label": "AI 평가·안전 대책",
-      "color": "#1d5fa8",
+      "color": "#0369a1",
+      "category_color": "#1d5fa8",
       "definition": {
         "lead": "콘텐츠가 어떤 기기·도구로 생성되고 어떤 편집을 거쳤는지를 암호학적으로 서명해 파일에 함께 실어 두는 이력 기록을 말함.",
         "points": [
@@ -21938,7 +22085,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 시스템이 오용, 오작동, 통제 상실 등으로 사람과 사회에 피해를 일으키지 않도록 하는 성질, 그리고 이를 위한 연구·기술·제도적 노력의 분야를 의미함.",
         "points": [
@@ -22039,7 +22187,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI의 개발·배포·이용을 규율하는 법령, 비구속 지침, 국제 합의, 기술 표준, 조직 내부 정책과 이를 집행하는 기구의 총체를 의미함.",
         "points": [
@@ -22135,7 +22284,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI의 개발·배포·이용이 지켜야 할 가치와 규범을 다루는 원칙과 논의의 영역, 그리고 이를 정리한 원칙 체계를 의미함.",
         "points": [
@@ -22248,7 +22398,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI를 개발·운영하는 조직이 윤리 원칙을 내부 절차와 관행으로 구현해 위험을 스스로 관리하려는 접근과 그 실무를 의미함.",
         "points": [
@@ -22362,7 +22513,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "안전성, 강건성, 투명성, 공정성, 프라이버시, 책임성 등 여러 요건을 함께 갖추어 신뢰할 만한 근거가 있는 AI를 가리키는 정책 개념을 의미함.",
         "points": [
@@ -22535,7 +22687,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 시스템의 개발·배포·운영으로 생긴 결과에 대해 누가 설명하고 시정·배상해야 하는지가 정해져 있고, 실제로 그렇게 하도록 만드는 구조·성질을 의미함.",
         "points": [
@@ -22645,7 +22798,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 시스템의 존재와 성질, 작동 방식, 개발·운영 과정에 관한 정보가 이용자·영향받는 사람·규제기관·연구자 등 관계자에게 제공되는 정도를 의미함.",
         "points": [
@@ -22762,7 +22916,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 시스템의 출력(추천·결정 등)을 좌우하는 요인을 이용자·결정 당사자·감독기관 등 이해관계자가 알 수 있는 정도를 의미함.",
         "points": [
@@ -22901,7 +23056,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 기업·조직이 학습 데이터, 모델 구조, 안전·보안 조치, 의사결정 과정 등 기술·조직 정보를 공개하거나 정부의 감독에 드러내는 정도를 의미함.",
         "points": [
@@ -23120,7 +23276,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 시스템의 결정이나 결과가 개인·집단을 편향이나 부당한 차별 없이 대우해야 한다는 규범적 가치와, 그 충족 정도를 의미함.",
         "points": [
@@ -23282,7 +23439,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 시스템이 의도된 기능을 다양한 운용 조건과 시간에 걸쳐 일관되게 수행하는 성질을 의미함.",
         "points": [
@@ -23430,7 +23588,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 시스템이 학습 때와 다른 입력, 예상치 못한 환경, 의도적 공격 등 넓은 범위의 상황에서도 안전하고 의도대로 작동하는 성질을 의미함.",
         "points": [
@@ -23541,7 +23700,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 시스템이 안전성·신뢰성 등 정해진 요건이나 기대를 충족한다는 근거를 수집·평가하고, 그 결과를 이해관계자에게 전달하는 활동과 체계를 의미함.",
         "points": [
@@ -23620,7 +23780,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 모델의 개발 목적, 학습·평가 방식, 성능, 한계와 위험, 의도된 용도 등을 정해진 형식으로 정리해 공개하는 문서를 의미함.",
         "points": [
@@ -23707,7 +23868,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 개발자가 모델 역량이 미리 정한 임계값에 도달하면 그에 상응하는 안전·보안 조치를 적용하겠다고 사전에 약속해 공개하는 자율적 위험 관리 정책을 의미함.",
         "points": [
@@ -23832,7 +23994,8 @@
       "chapter_en": "Principles & Accountability",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#16a34a",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI의 작동 방식과 한계·위험을 이해하고, AI 출력을 비판적으로 판단해 활용할 수 있는 지식과 역량을 의미함.",
         "points": [
@@ -23981,7 +24144,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "학습·추론·지각·판단·언어 이해처럼 인간의 지적 능력이 필요한 과제를 기계가 수행하도록 구현한 기술, 또는 이를 연구하는 컴퓨터과학 분야를 의미함.",
         "points": [
@@ -24589,7 +24753,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "사람의 건강·안전이나 기본권에 중대한 위험을 줄 수 있는 용도로 쓰여 강화된 규제 의무가 적용되는 AI 시스템을 가리키는 규제상 범주를 의미함.",
         "points": [
@@ -24752,7 +24917,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "사람의 생명·신체의 안전과 기본권에 중대한 영향을 미치거나 위험을 초래할 우려가 있는 AI 시스템으로서, 법이 열거한 영역에서 활용되는 것을 가리키는 한국 AI 기본법상 개념을 의미함.",
         "points": [
@@ -25030,7 +25196,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "특정 기능에 한정되지 않고 여러 영역에 걸친 다양한 과제를 수행할 수 있도록 설계·학습된 AI 모델 또는 시스템을 의미함.",
         "points": [
@@ -25294,7 +25461,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI 모델 학습에 사용된 누적 연산량(부동소수점연산, FLOP)을 기준으로 규제 의무의 적용 대상을 가르는 정량적 기준을 의미함.",
         "points": [
@@ -25432,7 +25600,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "제품이나 AI 시스템이 법령·표준에 규정된 요건을 충족하는지를 시장 출시 전후에 확인·입증하는 공식 절차를 의미함.",
         "points": [
@@ -25653,7 +25822,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "독립된 제3자가 조직이나 제품·시스템이 정해진 요건을 충족함을 확인하고, 이를 공식적으로 증명하는 제도·절차를 의미함.",
         "points": [
@@ -25764,7 +25934,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "용어, 측정·시험 방법, 기술 요건 등을 이해관계자의 합의를 거쳐 공통 규격으로 정하고 문서화하는 활동을 의미함.",
         "points": [
@@ -25871,7 +26042,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "EU 법령이 정한 필수 요건을 구체화하기 위해 EU 표준화 체계에서 마련한 유럽 표준으로, 이를 따르면 해당 요건을 충족한 것으로 추정받을 수 있는 표준을 의미함.",
         "points": [
@@ -25998,7 +26170,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "서로 다른 시스템·조직·제도가 공통 표준과 형식을 공유해 정보를 주고받고 함께 작동할 수 있는 성질을 의미함.",
         "points": [
@@ -26100,7 +26273,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "적용되는 법령·표준·내부 정책의 요구를 지키고, 지켰다는 사실을 증거로 보일 수 있는 상태를 유지하는 활동을 의미함.",
         "points": [
@@ -26206,7 +26380,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "AI를 사용한다는 사실이나 결과물이 AI로 생성되었다는 사실을 이용자·대상자에게 고지하거나 표시하도록 법이 부과하는 의무를 의미함.",
         "points": [
@@ -26374,7 +26549,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "규범을 위반했을 때 제재나 강제가 따르는지, 즉 그 규범이 지켜야 하는 의무로 작동하는지를 가리키는 법적 성질을 의미함.",
         "points": [
@@ -26472,7 +26648,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "안보상 민감한 기술·물자·소프트웨어의 국외 이전을 국가가 허가·제한하는 제도로, AI에서는 고성능 반도체와 제조 장비, 모델 가중치 등의 이전 통제를 의미함.",
         "points": [
@@ -26579,7 +26756,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "자신에 관한 정보와 활동에 타인이 접근·처리하는 방식을 스스로 통제할 수 있는 권리, 그리고 감시나 간섭을 받지 않는 상태를 의미함.",
         "points": [
@@ -26800,7 +26978,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "개인에 관한 정보의 수집·이용·제공·보관 과정을 규율해 정보 주체의 권리를 지키는 법제와 실무를 의미함.",
         "points": [
@@ -26993,7 +27172,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "창작자에게 저작물의 이용·복제·배포에 대한 배타적 권리를 주는 법적 보호로, AI에서는 학습 데이터 수집과 생성물의 권리 문제를 다루는 쟁점 영역을 의미함.",
         "points": [
@@ -27147,7 +27327,8 @@
       "chapter_en": "Law, Regulation & Standards",
       "category": "G",
       "category_label": "AI 거버넌스·제도",
-      "color": "#3f6b4a",
+      "color": "#4338ca",
+      "category_color": "#3f6b4a",
       "definition": {
         "lead": "국가가 자국의 데이터, 연산 자원, AI 모델과 관련 인프라에 대한 통제력을 확보하려는 정책 지향 또는 그 상태를 의미함.",
         "points": [

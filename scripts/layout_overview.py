@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """맨 위 전체 개념 지도의 배치를 계산한다 → data/overview_layout.json
 
-하나의 큰 지도. 가운데에 'AI 위험'과 'AI 안전'을 두고, 주제마다 부채꼴 하나를 준다.
-  위쪽            기술과 역량 (양쪽의 바탕)
-  왼쪽 반원       위험이 생기는 곳 — 모델 행동 · 오용 · 사고   (AI 위험에서 뻗는다)
-  오른쪽 반원     어떻게 다루나   — 위험 관리 · 평가 · 신뢰할 수 있는 AI (AI 안전에서 뻗는다)
-주제의 대표 용어(HUB)가 가운데와 가깝고, 관계를 한 단계 건널 때마다 바깥 고리로 나간다.
-가운데와 대표 용어를 잇는 '가지'(SPINE)는 지도의 뼈대일 뿐 관계 데이터가 아니다.
+용어 전체를 한 장에. 가운데에 'AI 위험'과 'AI 안전'을 두고, 장(data/chapters.json)마다 부채꼴 하나.
+  위쪽            01·02 기술과 역량 (양쪽의 바탕)
+  오른쪽          08~11 평가·안전 대책, 거버넌스·제도   (AI 안전에서 뻗는다)
+  왼쪽            03~07 위험·사고                       (AI 위험에서 뻗는다)
+장 대표 용어(HUB)가 가운데와 가깝고, 관계를 따라 바깥 고리로 퍼진다. 고리 하나에 들어갈 개수는
+호의 길이로 정하고 넘치면 다음 고리로 보낸다. 가운데와 대표 용어를 잇는 '가지'(spine)는 지도의
+뼈대일 뿐 관계 데이터가 아니다.
 
-여러 주제에 걸친 용어는 PRIORITY 순서로 한 주제에만 둔다.
-손으로 고친 좌표를 지키려면 "pinned"에 id를 넣는다.
-  python3 scripts/layout_overview.py
+손으로 고친 좌표를 지키려면 "pinned"에 id를 넣는다(다시 돌려도 움직이지 않는다).
+  python3 scripts/layout_overview.py [--reset]   # --reset: pinned를 비우고 새로 계산
 """
 from __future__ import annotations
 
@@ -25,43 +25,20 @@ import config  # noqa: E402
 import relmap  # noqa: E402
 
 SITE = os.path.join(config.DATA, "glossary_site.json")
-THEMES = os.path.join(config.DATA, "concept_maps.json")
 OUT = os.path.join(config.DATA, "overview_layout.json")
 
-W, H = 1400, 940
-CX, CY = W / 2, H / 2
-CENTER = {"ai-risk": (CX - 90, CY), "ai-safety": (CX + 90, CY)}
-# 주제: (대표 용어, 시작 각, 끝 각) — 각도는 12시 방향에서 시계 방향(도)
-SECTORS = {
-    "tech":         ("capability",       -46,  46),
-    "risk-process": ("risk-management",   48,  92),
-    "evaluation":   ("evaluation",        94, 136),
-    "trustworthy":  ("trustworthy-ai",   138, 182),
-    "incidents":    ("ai-incident",      184, 228),
-    "misuse":       ("misuse",           230, 270),
-    "behaviour":    ("misalignment",     272, 312),
-}
-SPINE = [  # (가운데 쪽, 대표 용어)
-    ("ai-risk", "ai-safety"),
-    ("ai-risk", "capability"), ("ai-safety", "capability"),
-    ("ai-risk", "misalignment"), ("ai-risk", "misuse"), ("ai-risk", "ai-incident"),
-    ("ai-safety", "risk-management"), ("ai-safety", "evaluation"), ("ai-safety", "trustworthy-ai"),
-]
-PRIORITY = ["incidents", "behaviour", "misuse", "evaluation", "risk-process", "trustworthy", "tech"]
-R0, DR = 130, 92          # 대표 용어 반지름, 고리 간격(최대)
-KX, KY = 1.45, 0.84       # 가로로 넓은 타원
-
-
-def edge_radius(deg, margin=30):
-    """그 방향으로 캔버스 가장자리까지 갈 수 있는 반지름(타원 좌표)."""
-    a = math.radians(deg)
-    sx, sy = math.sin(a) * KX, -math.cos(a) * KY
-    rs = []
-    if sx > 1e-6: rs.append((W - margin - 60 - CX) / sx)
-    if sx < -1e-6: rs.append((CX - margin - 60) / -sx)
-    if sy > 1e-6: rs.append((H - margin - CY) / sy)
-    if sy < -1e-6: rs.append((CY - margin) / -sy)
-    return min(rs)
+W, H = 1640, 1180
+CX, CY = W / 2, H / 2 + 10
+CENTER = {"ai-risk": (CX - 95, CY), "ai-safety": (CX + 95, CY)}
+SIDE = {"01": "both", "02": "both", "08": "safety", "09": "safety", "10": "safety", "11": "safety",
+        "07": "risk", "06": "risk", "05": "risk", "04": "risk", "03": "risk"}
+ORDER = ["01", "02", "08", "09", "10", "11", "07", "06", "05", "04", "03"]  # 12시 왼쪽에서 시계 방향
+START = -58                       # 01장이 시작하는 각도(12시 기준 시계 방향, 도)
+HUB = {"01": "foundation-model", "02": "capability", "03": "risk-management", "04": "misalignment",
+       "05": "misuse", "07": "ai-incident", "08": "evaluation", "09": "safeguard", "10": "trustworthy-ai"}
+R0 = 150                          # 대표 용어 반지름
+KX, KY = 1.3, 0.9                 # 가로로 조금 넓은 타원
+GAP_DEG = 2.5                     # 장 사이 여백(도)
 
 
 def polar(r, deg):
@@ -69,134 +46,147 @@ def polar(r, deg):
     return CX + r * math.sin(a) * KX, CY - r * math.cos(a) * KY
 
 
+def arc_len(r, deg_span):
+    """타원 고리 위 호 길이의 근사 (가로·세로 반지름 평균)."""
+    return r * math.radians(deg_span) * (KX + KY) / 2
+
+
 def main():
+    global W, H, CX, CY
+    reset = "--reset" in sys.argv
     site = json.load(open(SITE, encoding="utf-8"))
-    themes = {t["id"]: t for t in json.load(open(THEMES, encoding="utf-8"))["themes"]}
     ents = {e["id"]: e for e in site["entries"]}
     old = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
-    pinned = set(old.get("pinned") or [])
-
-    home = {}
-    for tid in PRIORITY:
-        for i in themes[tid]["terms"]:
-            if i in ents and i not in home and i not in CENTER:
-                home[i] = tid
-    for tid, (hub, _, _) in SECTORS.items():
-        home[hub] = tid
-    ids = sorted(home) + list(CENTER)
+    pinned = set() if reset else set(old.get("pinned") or [])
     adj = {}
     for a, _, b in site["relations"]:
         adj.setdefault(a, set()).add(b)
         adj.setdefault(b, set()).add(a)
 
-    pos, init = {}, {}
+    members = {ch: sorted(i for i, e in ents.items() if e["chapter"] == ch and i not in CENTER) for ch in ORDER}
+    total = sum(len(m) for m in members.values())
+    span_all = 360 - GAP_DEG * len(ORDER)
+    sectors, a = {}, START
+    for ch in ORDER:
+        span = span_all * len(members[ch]) / total
+        sectors[ch] = (a, a + span)
+        a += span + GAP_DEG
+
+    w = {i: relmap.box_w(ents[i]["head"]) for i in ents}
+    hh = relmap.BOX_H
+    pos, home, hubs = {}, {}, {}
     for c, xy in CENTER.items():
         pos[c] = list(xy)
-    for tid, (hub, a0, a1) in SECTORS.items():
-        mem = {i for i, t in home.items() if t == tid}
-        depth, parent = {hub: 0}, {hub: None}
+    ROW_H, GAP_X = hh + 12, 10
+    blocks = {}
+    for ch in ORDER:
+        mem = set(members[ch])
+        hub = HUB.get(ch) if HUB.get(ch) in mem else max(sorted(mem), key=lambda v: len(adj.get(v, set()) & mem))
+        hubs[ch] = hub
+        for v in mem:
+            home[v] = ch
+        # 관계 순서(BFS)로 줄 세우기 — 이웃끼리 가까이 앉도록
+        order, seen = [], {hub}
         q = deque([hub])
-        while q:
-            u = q.popleft()
-            for v in sorted(adj.get(u, ())):
-                if v in mem and v not in depth:
-                    depth[v] = depth[u] + 1
-                    parent[v] = u
-                    q.append(v)
-        while mem - set(depth):  # 대표 용어와 끊긴 묶음은 연결이 가장 많은 용어를 1단계에 두고 펼친다
-            rest = mem - set(depth)
-            root = max(sorted(rest), key=lambda v: len(adj.get(v, set()) & mem))
-            depth[root], parent[root] = 1, hub
-            q = deque([root])
+        while True:
             while q:
                 u = q.popleft()
-                for v in sorted(adj.get(u, ())):
-                    if v in rest and v not in depth:
-                        depth[v] = depth[u] + 1
-                        parent[v] = u
-                        q.append(v)
-        maxd = max(depth.values()) or 1
-        rb = min(edge_radius(a0 + (a1 - a0) * f) for f in (0.15, 0.5, 0.85))
-        dr = max(46, min(DR, (rb - R0) / maxd))   # 공간이 좁은 갈래(위·아래)는 고리를 촘촘히
-        ang = {hub: (a0 + a1) / 2}
-        for d in range(1, max(depth.values()) + 1):
-            ring = [v for v in mem if depth[v] == d]
-            ring.sort(key=lambda v: (ang.get(parent[v], (a0 + a1) / 2), v))
-            n = len(ring)
-            for k, v in enumerate(ring):
-                ang[v] = a0 + (a1 - a0) * (k + 0.5) / n
-        for v in mem:
-            r = R0 + depth[v] * dr + (14 if depth[v] and len([u for u in mem if depth[u] == depth[v]]) > 4 and
-                                         sorted(u for u in mem if depth[u] == depth[v]).index(v) % 2 else 0)
-            init[v] = polar(r, ang[v])
-            pos[v] = list(old["nodes"][v]) if v in pinned and v in (old.get("nodes") or {}) else list(init[v])
+                order.append(u)
+                for v in sorted(adj.get(u, ()), key=lambda x: -len(adj.get(x, ()))):
+                    if v in mem and v not in seen:
+                        seen.add(v); q.append(v)
+            rest = mem - seen
+            if not rest:
+                break
+            root = max(sorted(rest), key=lambda v: len(adj.get(v, set()) & mem))
+            seen.add(root); q.append(root)
+        # 블록: 한 줄 최대 폭 안에서 왼쪽→오른쪽으로 채운다
+        maxw = 250 if len(order) <= 10 else 330 if len(order) <= 15 else 380
+        rows, cur, cw = [], [], 0
+        for v in order:
+            if cur and cw + w[v] + GAP_X > maxw:
+                rows.append(cur); cur, cw = [], 0
+            cur.append(v); cw += w[v] + GAP_X
+        rows.append(cur)
+        bw = max(sum(w[v] + GAP_X for v in r) - GAP_X for r in rows)
+        bh = len(rows) * ROW_H
+        blocks[ch] = {"rows": rows, "w": bw, "h": bh}
 
-    w = {i: relmap.box_w(ents[i]["head"]) for i in ids}
-    hh = relmap.BOX_H
+    # 블록 중심을 가운데 둘레에 하나씩 — 겹치지 않는 가장 안쪽 자리 (장 각도는 용어 수에 비례)
+    cen, placed = {}, []
+    core = (CX - 175, CY - 34, CX + 175, CY + 34)        # 가운데 두 용어 자리
+    def hits(x, y, bw, bh):
+        r0 = (x - bw / 2 - 16, y - bh / 2 - 14, x + bw / 2 + 16, y + bh / 2 + 14)
+        for q in [core] + placed:
+            if not (r0[2] < q[0] or r0[0] > q[2] or r0[3] < q[1] or r0[1] > q[3]):
+                return True
+        return False
+    for ch in ORDER:
+        a0, a1 = sectors[ch]
+        mid = (a0 + a1) / 2
+        bw, bh = blocks[ch]["w"], blocks[ch]["h"]
+        best = None
+        for da in (0, -4, 4, -8, 8, -12, 12):
+            r = 90
+            while r < 900:
+                x, y = polar(r, mid + da)
+                if not hits(x, y, bw, bh):
+                    break
+                r += 4
+            if best is None or r < best[3] - 8:
+                best = (x, y, mid + da, r)
+        x, y, ang, r = best
+        cen[ch] = [x, y, ang, r]
+        placed.append((x - bw / 2, y - bh / 2, x + bw / 2, y + bh / 2))
+    for ch in ORDER:
+        x, y, mid, _ = cen[ch]
+        rows = blocks[ch]["rows"]
+        # 대표 용어 줄이 가운데 쪽을 보게: 가운데보다 위에 있는 블록은 줄 순서를 뒤집는다
+        if y < CY:
+            rows = rows[::-1]
+        top = y - blocks[ch]["h"] / 2
+        for k, row in enumerate(rows):
+            rw = sum(w[v] + GAP_X for v in row) - GAP_X
+            xx = x - rw / 2
+            for v in row:
+                p_ = [xx + w[v] / 2, top + k * ROW_H + ROW_H / 2]
+                pos[v] = list(old["nodes"][v]) if v in pinned and v in (old.get("nodes") or {}) else p_
+                xx += w[v] + GAP_X
 
-    def clamp(i):
-        pos[i][0] = min(max(pos[i][0], w[i] / 2 + 8), W - w[i] / 2 - 8)
-        pos[i][1] = min(max(pos[i][1], hh / 2 + 8), H - hh / 2 - 8)
+    ids = sorted(home) + list(CENTER)
+    xs = [pos[i][0] for i in ids]; ys = [pos[i][1] for i in ids]
+    sx0, sy0 = min(xs) - 140, min(ys) - 60
+    for i in ids:  # 캔버스 안으로 평행이동
+        pos[i][0] -= sx0; pos[i][1] -= sy0
+    W = round(max(pos[i][0] for i in ids) + 140)
+    H = round(max(pos[i][1] for i in ids) + 60)
+    CX, CY = CX - sx0, CY - sy0
 
-    for it in range(300):
-        for i in ids:  # 처음 자리로 약하게 당긴다 — 부채꼴 모양 유지 (마지막 80회는 겹침만 푼다)
-            if i in CENTER or i in pinned or it >= 220:
-                continue
-            pos[i][0] += 0.04 * (init[i][0] - pos[i][0])
-            pos[i][1] += 0.04 * (init[i][1] - pos[i][1])
-        for x in range(len(ids)):
-            i = ids[x]
-            for y in range(x + 1, len(ids)):
-                j = ids[y]
-                ox = (w[i] + w[j]) / 2 + 12 - abs(pos[i][0] - pos[j][0])
-                oy = hh + 12 - abs(pos[i][1] - pos[j][1])
-                if ox > 0 and oy > 0:
-                    fi = 0 if (i in CENTER or i in pinned) else 1
-                    fj = 0 if (j in CENTER or j in pinned) else 1
-                    if fi + fj == 0:
-                        continue
-                    if ox < oy:
-                        sgn = 1 if pos[i][0] <= pos[j][0] else -1
-                        mv = (ox + 0.5) / (fi + fj)
-                        pos[i][0] -= sgn * mv * fi; pos[j][0] += sgn * mv * fj
-                    else:
-                        sgn = 1 if pos[i][1] <= pos[j][1] else -1
-                        mv = (oy + 0.5) / (fi + fj)
-                        pos[i][1] -= sgn * mv * fi; pos[j][1] += sgn * mv * fj
-        for i in ids:
-            clamp(i)
+    spine = [("ai-risk", "ai-safety")]
+    for ch, hub in hubs.items():
+        side = SIDE[ch]
+        if side in ("risk", "both"):
+            spine.append(("ai-risk", hub))
+        if side in ("safety", "both"):
+            spine.append(("ai-safety", hub))
 
-    labels = []   # 주제 이름은 갈래의 가장 바깥 용어 바로 바깥에. 용어와 겹치면 안쪽으로 비켜 간다
+    chap = {c["no"]: c for c in site["chapters"]}
     boxes = [(pos[i][0] - w[i] / 2 - 4, pos[i][1] - hh / 2 - 4, pos[i][0] + w[i] / 2 + 4, pos[i][1] + hh / 2 + 4)
              for i in ids]
-    for tid, (hub, a0, a1) in SECTORS.items():
-        mid = (a0 + a1) / 2
-        mem = [i for i, t in home.items() if t == tid]
-        rmax = max(math.hypot((pos[i][0] - CX) / KX, (pos[i][1] - CY) / KY) for i in mem)
-        lw = relmap.text_w(themes[tid]["title"], 12) + 20
-        def free(x, y):
-            return not any(not (x + lw / 2 < b0 or x - lw / 2 > b2 or y + 11 < b1 or y - 11 > b3)
-                           for b0, b1, b2, b3 in boxes)
-        best = None
-        for da in (0, -6, 6, -12, 12, -18, 18):        # 바깥으로만 비켜 가고, 막히면 각도를 바꾼다
-            ang = mid + da
-            r = rmax + 30
-            while r < edge_radius(ang, margin=-60):
-                x, y = polar(r, ang)
-                x = min(max(x, lw / 2 + 6), W - lw / 2 - 6)
-                y = min(max(y, 14), H - 14)
-                if free(x, y):
-                    best = (x, y)
-                    break
-                r += 6
-            if best:
-                break
-        x, y = best or polar(rmax + 30, mid)
-        labels.append({"theme": tid, "title": themes[tid]["title"], "x": round(x), "y": round(y)})
+    labels = []   # 장 이름은 섬(블록)의 바깥쪽 가장자리 위에
+    for ch in ORDER:
+        mem = members[ch]
+        x0 = min(pos[i][0] - w[i] / 2 for i in mem); x1 = max(pos[i][0] + w[i] / 2 for i in mem)
+        y0 = min(pos[i][1] for i in mem) - hh / 2; y1 = max(pos[i][1] for i in mem) + hh / 2
+        cx_ = (x0 + x1) / 2
+        outer_top = (y0 + y1) / 2 < CY
+        y = y0 - 16 if outer_top else y1 + 16
+        labels.append({"theme": ch, "title": f'{ch}. {chap[ch]["label"]}', "x": round(cx_), "y": round(y)})
 
     out = {
-        "_note": "scripts/layout_overview.py 산출(방사형). 손으로 고친 노드는 pinned에 넣으면 다시 계산해도 유지된다.",
-        "w": W, "h": H, "center": list(CENTER), "spine": SPINE, "labels": labels,
+        "_note": "scripts/layout_overview.py 산출(장별 방사형). 손으로 고친 노드는 pinned에 넣으면 다시 계산해도 유지된다.",
+        "w": W, "h": H, "center": list(CENTER), "spine": spine, "labels": labels,
+        "sectors": {ch: [round(a0, 1), round(a1, 1)] for ch, (a0, a1) in sectors.items()},
         "pinned": sorted(pinned),
         "nodes": {i: [round(pos[i][0]), round(pos[i][1])] for i in ids},
         "home": home,

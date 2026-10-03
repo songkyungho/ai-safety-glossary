@@ -409,6 +409,9 @@ a.lib-link { margin-left: 0; }
 .map-head { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
 .map-head h2 { margin: 0; font-size: 0.95rem; letter-spacing: -0.02em; }
 .map-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+button.filter-chip .dot {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--chip, var(--navy)); display: inline-block;
+}
 .map-desc { margin: 6px 0 4px; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
 .rel-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 svg.rel-map { display: block; width: 100%; min-width: 640px; height: auto; }
@@ -542,6 +545,93 @@ svg.ov-map .ov-label.dim { opacity: .3; }
 svg.ov-map.hovering .hdim { opacity: .12; }
 svg.ov-map a.rel-n:hover rect, svg.rel-ego a.rel-n:hover rect { stroke-width: 2; }
 svg .rel-n text { pointer-events: none; }
+
+/* 아코디언 카드 — 접힌 한 줄(번호·표제어·영문·정의 한 줄), 펼치면 전체 카드 */
+details.term-card { padding: 0; margin-bottom: 6px; }
+details.term-card > summary { list-style: none; }
+details.term-card > summary::-webkit-details-marker { display: none; }
+.card-sum {
+  display: flex; align-items: baseline; gap: 10px; cursor: pointer;
+  padding: 10px 16px; border-radius: 12px; min-width: 0;
+}
+.card-sum:hover { background: color-mix(in srgb, var(--ch) 5%, var(--surface-1)); }
+.card-sum .term-n {
+  flex: 0 0 auto; background: var(--navy); color: var(--on-navy); font-weight: 700; font-size: 0.74rem;
+  padding: 1px 8px; border-radius: 6px; font-variant-numeric: tabular-nums; align-self: center;
+}
+.sum-head { flex: 0 0 auto; font-weight: 700; font-size: 1.02rem; color: var(--ink); letter-spacing: -0.02em; }
+.sum-en { flex: 0 0 auto; color: var(--text-muted); font-size: 0.9rem; }
+.sum-lead {
+  flex: 1 1 auto; min-width: 0; color: var(--text-secondary); font-size: 0.88rem;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.sum-chev {
+  flex: 0 0 auto; width: 8px; height: 8px; margin-left: auto; align-self: center;
+  border-right: 2px solid var(--text-muted); border-bottom: 2px solid var(--text-muted);
+  transform: rotate(45deg); transition: transform .15s;
+}
+details[open] > .card-sum { padding: 14px 150px 6px 16px; border-radius: 12px 12px 0 0; }
+details[open] > .card-sum .sum-head { font-size: 1.28rem; color: var(--navy); }
+details[open] > .card-sum .sum-en { font-weight: 600; color: var(--navy-2); font-size: 0.98rem; }
+details[open] > .card-sum .sum-lead { display: none; }
+details[open] > .card-sum .sum-chev { display: none; }
+details.term-card .card-band {
+  background: none; border: 0; padding: 0 16px 6px; border-radius: 0;
+}
+.card-band .term-link { color: var(--text-muted); text-decoration: none; font-weight: 700; }
+.card-band .term-link:hover { color: var(--accent); }
+details.term-card .ribbon { top: -4px; }
+details:not([open]).term-card .ribbon { display: none; }
+.toolbar-gap { flex: 1 1 auto; }
+@media (max-width: 620px) {
+  .sum-lead { display: none; }
+  .card-sum { flex-wrap: wrap; row-gap: 2px; }
+  details[open] > .card-sum { padding-right: 108px; }
+}
+
+/* 오른쪽 용어 목차 — 라이브러리의 오른쪽 연도 목록에 착안 */
+.term-rail {
+  position: fixed; top: 56px; right: 16px; bottom: 16px; width: 214px; z-index: 30;
+  overflow-y: auto; background: var(--surface-1); border: 1px solid var(--hairline);
+  border-radius: 14px; padding: 8px 8px 10px; font-size: 0.8rem;
+  box-shadow: 0 4px 18px color-mix(in srgb, var(--ink) 8%, transparent);
+  opacity: 0; visibility: hidden; transition: opacity .2s, visibility .2s;
+}
+.term-rail.in-list, .term-rail.show { opacity: 1; visibility: visible; }
+.rail-head {
+  display: flex; align-items: center; justify-content: space-between;
+  font-weight: 700; color: var(--navy); padding: 2px 6px 6px; border-bottom: 1px solid var(--gridline);
+  margin-bottom: 4px;
+}
+.rail-close { display: none; border: 0; background: none; font-size: 1.2rem; color: var(--text-muted); cursor: pointer; }
+.rail-ch > summary {
+  list-style: none; display: flex; align-items: center; gap: 6px; cursor: pointer;
+  padding: 4px 6px; border-radius: 8px; color: var(--ink-muted); line-height: 1.35;
+}
+.rail-ch > summary::-webkit-details-marker { display: none; }
+.rail-ch > summary:hover { background: var(--surface-2); }
+.rail-ch > summary span { flex: 1 1 auto; min-width: 0; }
+.rail-ch > summary b { font-weight: 500; color: var(--text-muted); font-size: 0.72rem; }
+.rail-ch .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--chip); flex: 0 0 auto; }
+.rail-ch.cur > summary { background: color-mix(in srgb, var(--chip) 12%, var(--surface-1)); color: var(--ink); font-weight: 650; }
+.rail-ch ul { list-style: none; margin: 2px 0 6px; padding: 0 0 0 20px; border-left: 2px solid color-mix(in srgb, var(--chip) 35%, transparent); margin-left: 9px; }
+.rail-ch li a {
+  display: block; padding: 2px 6px; color: var(--text-secondary); text-decoration: none;
+  border-radius: 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.rail-ch li a:hover { background: var(--surface-2); color: var(--ink); }
+.rail-fab { display: none; }
+@media (max-width: 1459px) {
+  .term-rail { display: none; top: auto; bottom: 70px; height: min(70vh, 560px); width: min(280px, calc(100vw - 32px)); }
+  .term-rail.show { display: block; }
+  .rail-close { display: block; }
+  .rail-fab {
+    display: block; position: fixed; right: 16px; bottom: 16px; z-index: 31;
+    background: var(--navy); color: var(--on-navy); border: 0; border-radius: 999px;
+    padding: 10px 16px; font: inherit; font-size: 0.85rem; font-weight: 700; cursor: pointer;
+    box-shadow: 0 4px 14px color-mix(in srgb, var(--ink) 25%, transparent);
+  }
+}
 """
 
 
@@ -663,29 +753,6 @@ def ref_sup(cid, ns):
 
 
 REL_CTX = {"nodes": {}, "color": {}}
-
-
-def shade(hex_color, t):
-    """t<0 어둡게, t>0 밝게 (0~1). 같은 구분 안에서 장마다 명도를 달리하는 데 쓴다."""
-    h = hex_color.lstrip("#")
-    r, g, b = (int(h[i:i + 2], 16) for i in (0, 2, 4))
-    if t >= 0:
-        r, g, b = (round(c + (255 - c) * t) for c in (r, g, b))
-    else:
-        r, g, b = (round(c * (1 + t)) for c in (r, g, b))
-    return f"#{r:02x}{g:02x}{b:02x}"
-
-
-def chapter_colors(data):
-    cat_color = {c["code"]: c["color"] for c in data["categories"]}
-    out = {}
-    for code in cat_color:
-        chs = [c["no"] for c in data["chapters"] if c["category"] == code]
-        n = len(chs)
-        for i, no in enumerate(chs):
-            t = 0 if n == 1 else (-0.22 + 0.44 * i / (n - 1))  # 첫 장이 가장 진하다
-            out[no] = shade(cat_color[code], t * 0.8)
-    return out
 
 
 def rel_section(e):
@@ -822,26 +889,30 @@ def card_html(e):
         q_bits += [dd.get("quote") or "", dd.get("quote_ko") or ""]
 
     side = fw + refs
-    main = (f'<h2 class="term-title"><span class="term-name">{html.escape(e["head"])}</span>'
-            f'<span class="term-en">{html.escape(e["en"])}</span></h2>{meta}'
+    main = (f'{meta}'
             f'<section class="term-explain"><h3 class="sec">{icon("doc")}용어 설명</h3>{"".join(explain)}</section>'
             f'{related}{rel}')
+    lead_short = d.get("lead") or ""
     return (
-        f'<article class="term-card" id="{html.escape(cid)}" data-cat="{e["category"]}" '
+        f'<details class="term-card" id="{html.escape(cid)}" data-cat="{e["category"]}" '
         f'data-ch="{e["chapter"]}" data-n="{e["n"]}" data-head="{html.escape(e["head"])}" '
         f'data-q="{html.escape(" ".join(q_bits).lower())}" '
         f'data-qn="{html.escape(nospace(" ".join([e["head"], e["en"]] + [a["text"] for a in alts])).lower())}" '
         f'style="--chip:{html.escape(e["color"])};--ch:{html.escape(e.get("chapter_color") or e["color"])}">'
-        f'<div class="card-band"><a class="term-n" href="#{html.escape(cid)}" title="이 용어 링크">{e["n"]:03d}</a>'
+        f'<summary class="card-sum"><span class="term-n">{e["n"]:03d}</span>'
+        f'<span class="sum-head">{html.escape(e["head"])}</span>'
+        f'<span class="sum-en">{html.escape(e["en"])}</span>'
+        f'<span class="sum-lead">{ui.prose_with_emphasis(lead_short)}</span>'
+        f'<span class="sum-chev" aria-hidden="true"></span></summary>'
+        f'<div class="card-open">'
+        f'<div class="card-band"><a class="term-link" href="#{html.escape(cid)}" title="이 용어 링크">#</a>'
         f'<span class="card-chapter">{e["chapter"]}. {html.escape(e["chapter_label"])}'
         f' <span class="ch-en">{html.escape(e["chapter_en"])}</span></span></div>'
         f'<span class="ribbon">{html.escape(e["category_label"])}</span>'
         f'<div class="card-body">{main}{side}</div>'
         f"{more_html}"
-        f"</article>"
+        f"</div></details>"
     )
-
-
 
 LEGEND = """<details class="legend">
 <summary>카드 읽는 법</summary>
@@ -961,30 +1032,33 @@ OVERVIEW_JS = """<script>
 
 
 def concept_maps_html(data):
-    """맨 위 전체 개념 지도 + 주제 버튼(누르면 그 주제만 강조하고 확대)."""
-    tpath = os.path.join(config.DATA, "concept_maps.json")
+    """맨 위 전체 개념 지도 + 장 버튼(누르면 그 장만 강조하고 확대)."""
     lpath = os.path.join(config.DATA, "overview_layout.json")
-    if not (os.path.exists(tpath) and os.path.exists(lpath)):
+    if not os.path.exists(lpath):
         return ""
-    themes = json.load(open(tpath, encoding="utf-8"))["themes"]
     layout = json.load(open(lpath, encoding="utf-8"))
     edges = [tuple(x) for x in data.get("relations") or []]
     deg = {}
     for a, _, b in edges:
         deg[a] = deg.get(a, 0) + 1
         deg[b] = deg.get(b, 0) + 1
-    cat_color = {c["code"]: c["color"] for c in data["categories"]}
-    cat_label = {c["code"]: c["label"] for c in data["categories"]}
     color = lambda i: REL_CTX["color"].get(i, "var(--navy)")
     svg = relmap.overview_svg(layout, REL_CTX["nodes"], edges, color, deg)
-    tabs = ['<button class="filter-chip map-tab active" data-theme="">전체</button>'] + [
-        f'<button class="filter-chip map-tab" data-theme="{t["id"]}">{html.escape(t["title"])}</button>'
-        for t in themes]
-    tdata = {t["id"]: {"terms": t["terms"], "desc": t.get("desc", "")} for t in themes}
+    home = layout.get("home") or {}
+    tabs = ['<button class="filter-chip map-tab active" data-theme="">전체</button>']
+    tdata = {}
+    for c in data["chapters"]:
+        terms = [i for i, h in home.items() if h == c["no"]]
+        if not terms:
+            continue
+        tabs.append(f'<button class="filter-chip map-tab" data-theme="{c["no"]}" style="--chip:{c["color"]}">'
+                    f'<i class="dot"></i>{c["no"]}. {html.escape(c["label"])}</button>')
+        tdata[c["no"]] = {"terms": terms,
+                          "desc": f'{c["no"]}. {c["label"]} ({c["en"]}) — 용어 {len(terms)}개. 상자를 누르면 그 카드로 갑니다.'}
     n_nodes = sum(1 for k in layout["nodes"] if k in REL_CTX["nodes"])
-    intro = (f"핵심 용어 {n_nodes}개를 한 장에 펼친 지도입니다. 가운데에 AI 위험과 AI 안전이 있고, "
-             "왼쪽은 위험이 생기는 곳(모델 행동·오용·사고), 오른쪽은 위험을 다루는 방법(위험 관리·평가·신뢰할 수 있는 AI), "
-             "위쪽은 그 바탕인 기술과 역량입니다. 주제를 고르면 그 부분이 확대되고 강조됩니다.")
+    intro = (f"용어 {n_nodes}개 전체를 한 장에 펼친 지도입니다. 가운데에 AI 위험과 AI 안전이 있고, "
+             "왼쪽은 위험·사고(03~07장), 오른쪽은 평가·안전 대책과 거버넌스·제도(08~11장), "
+             "위쪽은 그 바탕인 기술과 역량(01·02장)입니다. 색은 장을 뜻합니다. 장을 고르면 그 부분이 확대됩니다.")
     return (f'<section class="concept-maps" aria-label="개념 지도">'
             f'<div class="map-head"><h2>개념 지도</h2><div class="map-tabs">{"".join(tabs)}</div></div>'
             f'<p class="map-desc" id="mapDesc" data-default="{html.escape(intro)}">{html.escape(intro)}</p>'
@@ -994,18 +1068,37 @@ def concept_maps_html(data):
             f'</section>')
 
 
+def rail_html(data):
+    """오른쪽 목차 — 장(색 점) ⊃ 용어. 누르면 그 카드를 펼치며 이동."""
+    groups = []
+    for c in data["chapters"]:
+        items = [e for e in data["entries"] if e["chapter"] == c["no"]]
+        if not items:
+            continue
+        lis = "".join(f'<li><a href="#{html.escape(e["id"])}">{html.escape(e["head"])}</a></li>' for e in items)
+        groups.append(
+            f'<details class="rail-ch" data-ch="{c["no"]}" style="--chip:{c["color"]}">'
+            f'<summary><i class="dot"></i><span>{c["no"]}. {html.escape(c["label"])}</span>'
+            f'<b>{len(items)}</b></summary><ul>{lis}</ul></details>')
+    return (f'<nav class="term-rail" id="termRail" aria-label="용어 목차">'
+            f'<div class="rail-head"><span>용어 목차</span>'
+            f'<button type="button" class="rail-close" id="railClose" aria-label="목차 닫기">×</button></div>'
+            f'{"".join(groups)}</nav>'
+            f'<button type="button" class="rail-fab" id="railFab" aria-controls="termRail">목차</button>')
+
+
 def index_page(data):
     ents = data["entries"]
     cats = data["categories"]
     chs = data["chapters"]
     cat_color = {c["code"]: c["color"] for c in cats}
     cat_chips = "".join(
-        f'<button class="filter-chip" data-cat="{c["code"]}" style="--chip:{c["color"]}">'
+        f'<button class="filter-chip" data-cat="{c["code"]}">'
         f'{html.escape(c["label"])} <span class="n">{c["n"]}</span></button>'
         for c in cats if c["n"])
     ch_chips = "".join(
         f'<button class="filter-chip" data-ch="{c["no"]}" data-chcat="{c["category"]}" '
-        f'style="--chip:{cat_color[c["category"]]}">{c["no"]}. {html.escape(c["label"])} '
+        f'style="--chip:{c["color"]}"><i class="dot"></i>{c["no"]}. {html.escape(c["label"])} '
         f'<span class="n">{c["n"]}</span></button>'
         for c in chs if c["n"])
     sorts = [("ch", "장순"), ("ko", "가나다")]
@@ -1013,15 +1106,14 @@ def index_page(data):
         f'<button class="filter-chip{" active" if k == "ch" else ""}" data-sort="{k}">{html.escape(lb)}</button>'
         for k, lb in sorts)
     ch_meta = {c["no"]: {"label": c["label"], "en": c["en"], "cat": c["category"],
-                         "color": cat_color[c["category"]]} for c in chs}
+                         "color": c["color"]} for c in chs}
     cat_label = {c["code"]: c["label"] for c in cats}
     legacy_path = os.path.join(config.DATA, "legacy_anchors.json")
     legacy = json.load(open(legacy_path, encoding="utf-8"))["map"] if os.path.exists(legacy_path) else {}
     REL_CTX["nodes"] = {e["id"]: {"id": e["id"], "head": e["head"], "en": e["en"]} for e in ents}
     REL_CTX["color"] = {e["id"]: e["color"] for e in ents}
-    chc = chapter_colors(data)
     for e in ents:
-        e["chapter_color"] = chc.get(e["chapter"], e["color"])
+        e["chapter_color"] = e["color"]
     cards = "".join(card_html(e) for e in ents)
     maps_html = concept_maps_html(data)
     c = data.get("corpus") or {}
@@ -1043,10 +1135,13 @@ def index_page(data):
   <div class="filter-toolbar">
     <span class="filter-label">정렬</span>
     {sort_chips}
+    <span class="toolbar-gap"></span>
+    <button class="filter-chip" id="toggleAll" type="button">모두 펼치기</button>
   </div>
 </div>
 <p class="result-line" id="resultLine" data-corpus="{corpus_note}">{len(ents)}개 표제어</p>
 <div id="termList">{cards}</div>
+{rail_html(data)}
 <p class="empty-note" id="emptyNote">검색 결과가 없습니다.</p>
 """
     js = """<script>
@@ -1134,6 +1229,7 @@ def index_page(data):
     if (el.classList.contains('hidden')) {
       state.cat = ''; state.ch = ''; state.q = ''; if (box) box.value = ''; apply();
     }
+    el.open = true;
     el.scrollIntoView({ block: 'start' });
     el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash');
   }
@@ -1176,6 +1272,44 @@ def index_page(data):
     var a = ev.target.closest && ev.target.closest('a[href^="http"]');
     if (a) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
   }, true);
+  // 오른쪽 목차: 넓은 화면은 고정, 좁은 화면은 버튼으로 연다. 지금 보는 장을 표시한다.
+  var rail = document.getElementById('termRail');
+  var fab = document.getElementById('railFab');
+  if (rail) {
+    fab.addEventListener('click', function () { rail.classList.toggle('show'); });
+    document.getElementById('railClose').addEventListener('click', function () { rail.classList.remove('show'); });
+    rail.addEventListener('click', function (ev) {
+      var a = ev.target.closest('a[href^="#"]');
+      if (a && window.matchMedia('(max-width: 1459px)').matches) rail.classList.remove('show');
+    });
+    var groups = Array.prototype.slice.call(rail.querySelectorAll('.rail-ch'));
+    var curCh = null;
+    var io = new IntersectionObserver(function (ents) {
+      ents.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var ch = en.target.dataset.ch;
+        if (ch === curCh) return;
+        curCh = ch;
+        groups.forEach(function (g) { g.classList.toggle('cur', g.dataset.ch === ch); });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    cards.forEach(function (c) { io.observe(c); });
+    // 넓은 화면에서도 목차는 용어 목록에 도달한 뒤에만 보인다 (넓은 개념 지도와 겹치지 않게)
+    var ctl = document.getElementById('listControls');
+    var io2 = new IntersectionObserver(function (ents) {
+      ents.forEach(function (en) { rail.classList.toggle('in-list', en.boundingClientRect.top < window.innerHeight * 0.6); });
+    }, { threshold: [0, 1] });
+    io2.observe(ctl);
+    function railVis() { rail.classList.toggle('in-list', ctl.getBoundingClientRect().top < window.innerHeight * 0.6); }
+    window.addEventListener('scroll', railVis, { passive: true }); railVis();
+  }
+  var tAll = document.getElementById('toggleAll');
+  if (tAll) tAll.addEventListener('click', function () {
+    var open = tAll.dataset.open !== '1';
+    cards.forEach(function (c) { if (!c.classList.contains('hidden')) c.open = open; });
+    tAll.dataset.open = open ? '1' : '';
+    tAll.textContent = open ? '모두 접기' : '모두 펼치기';
+  });
   window.addEventListener('hashchange', onHash);
   if ('scrollRestoration' in history && location.hash) history.scrollRestoration = 'manual';
   apply();
@@ -1240,8 +1374,9 @@ def about_page(data):
 <p>용어 사이의 관계를 네 가지로 나눠 기록했습니다 — <b>상위·하위</b>(포함: AI 사고 ⊃ 중대 AI 사고),
 <b>이어짐</b>(인과·단계: AI 위험원 → AI 사고), <b>먼저 알 개념</b>(정의에 다른 개념이 필요한 경우:
 기만·오정렬 → 계략적 행동), <b>혼동 주의</b>(허위 정보 ↔ 오정보). 맨 위 개념 지도는 핵심 용어를
-한 장에 펼친 것입니다. 가운데에 AI 위험과 AI 안전을 두고, 왼쪽에는 위험이 생기는 곳(모델 행동·오용·사고),
-오른쪽에는 위험을 다루는 방법(위험 관리·평가·신뢰할 수 있는 AI), 위쪽에는 그 바탕인 기술과 역량을 놓았습니다.
+한 장에 펼친 것입니다. 가운데에 AI 위험과 AI 안전을 두고, 장마다 부채꼴 하나를 주었습니다. 왼쪽은
+위험·사고(03~07장), 오른쪽은 평가·안전 대책과 거버넌스·제도(08~11장), 위쪽은 그 바탕인 기술과 역량(01·02장)입니다.
+색은 장을 뜻하며, 카드 리본·필터·오른쪽 목차에도 같은 색을 씁니다.
 가운데에서 뻗는 굵은 가지는 지도의 뼈대일 뿐 관계 데이터가 아닙니다. 카드마다 있는 <b>용어 관계</b> 그림은
 그 용어 주변만 보여 줍니다.
 관계는 현재 {data.get('meta', {}).get('counts', {}).get('relations', 0)}개입니다.</p>
