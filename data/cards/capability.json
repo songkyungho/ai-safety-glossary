@@ -4,12 +4,12 @@
   "join_keys": [
     "capability"
   ],
-  "head": "AI 역량",
-  "en": "AI capability",
+  "head": "역량",
+  "en": "capability",
   "alternatives": [
     {
-      "text": "역량",
-      "source": "kit"
+      "text": "AI 역량",
+      "source": "editor"
     },
     {
       "text": "능력",
@@ -58,6 +58,5 @@
     }
   ],
   "status": "draft",
-  "updated": "2026-10-03",
-  "head_override": "AI 접두 규칙 — 일상어 표제어에 AI를 붙임"
+  "updated": "2026-10-03"
 }

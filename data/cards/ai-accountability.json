@@ -4,12 +4,12 @@
   "join_keys": [
     "accountability"
   ],
-  "head": "AI 책임성",
+  "head": "책임성",
   "en": "AI accountability",
   "alternatives": [
     {
-      "text": "책임성",
-      "source": "editor"
+      "text": "AI 책임성",
+      "source": "kit"
     },
     {
       "text": "어카운터빌리티",
@@ -24,7 +24,7 @@
       "파운데이션 모델 개발자, 미세조정·통합 사업자, 배포자, 운영 조직으로 이어지는 가치사슬이 길어 책임이 분산·소실되기 쉬우므로, 단계별 의무 배분과 기록 의무가 AI 거버넌스의 핵심 과제가 됨."
     ],
     "distinction": {
-      "text": "'책임 있는 AI(responsible AI)'가 조직이 자율적으로 갖추는 실무 관행을 가리킨다면, 'AI 책임성(accountability)'은 결과에 대해 답하고 시정하게 만드는 구조 자체를 가리킴.",
+      "text": "'책임 있는 AI(responsible AI)'가 조직이 자율적으로 갖추는 실무 관행을 가리킨다면, '책임성(accountability)'은 결과에 대해 답하고 시정하게 만드는 구조 자체를 가리킴.",
       "terms": [
         "responsible-ai"
       ]
@@ -46,5 +46,6 @@
     ]
   },
   "status": "draft",
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "head_override": "AI를 떼는 원칙(2026-10-03) — 'AI ○○' 표기는 대체어로 둠"
 }

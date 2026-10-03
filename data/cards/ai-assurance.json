@@ -2,9 +2,13 @@
   "id": "ai-assurance",
   "kit_id": null,
   "join_keys": [],
-  "head": "AI 신뢰보증",
+  "head": "신뢰보증",
   "en": "AI assurance",
   "alternatives": [
+    {
+      "text": "AI 신뢰보증",
+      "source": "editor"
+    },
     {
       "text": "AI 보증",
       "source": "editor"
@@ -23,7 +27,7 @@
       "평가 방법이 충분히 표준화되지 않았고 모델이 계속 갱신되어 한 시점의 보증이 오래 유효하지 않다는 한계가 지적됨."
     ],
     "distinction": {
-      "text": "'규정 준수(compliance)'가 정해진 법령·표준의 요구를 지키고 증명하는 일이라면, 'AI 신뢰보증'은 규제 여부와 관계없이 시스템이 믿을 만하다는 근거를 만들어 전달하는 더 넓은 활동임.",
+      "text": "'규정 준수(compliance)'가 정해진 법령·표준의 요구를 지키고 증명하는 일이라면, '신뢰보증'은 규제 여부와 관계없이 시스템이 믿을 만하다는 근거를 만들어 전달하는 더 넓은 활동임.",
       "terms": [
         "compliance"
       ]

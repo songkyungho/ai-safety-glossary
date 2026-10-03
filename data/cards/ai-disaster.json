@@ -2,9 +2,14 @@
   "id": "ai-disaster",
   "kit_id": "ai-disaster",
   "join_keys": [],
-  "head": "AI 재해",
+  "head": "재해",
   "en": "AI disaster",
-  "alternatives": [],
+  "alternatives": [
+    {
+      "text": "AI 재해",
+      "source": "kit"
+    }
+  ],
   "chapter": "07",
   "status": "draft",
   "definition": {
@@ -15,7 +20,7 @@
       "아직 국제적 작업 정의 단계의 용어로, 파국적 위험 논의와 연결되지만 실제 발생한 사건을 가리킨다는 점에서 위험(가능성)과 다름."
     ],
     "distinction": {
-      "text": "'AI 재해'는 실제 발생한 사건의 등급을, '파국적 위험'은 앞으로 일어날 수 있는 극단적 피해의 가능성을 가리킴.",
+      "text": "'재해'는 실제 발생한 사건의 등급을, '파국적 위험'은 앞으로 일어날 수 있는 극단적 피해의 가능성을 가리킴.",
       "terms": [
         "serious-incident",
         "catastrophic-risk"
@@ -66,5 +71,6 @@
       }
     }
   ],
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "head_override": "AI를 떼는 원칙(2026-10-03) — 'AI ○○' 표기는 대체어로 둠"
 }

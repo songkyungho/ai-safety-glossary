@@ -2,16 +2,16 @@
   "id": "ai-harm",
   "kit_id": "harm",
   "join_keys": [],
-  "head": "AI 피해",
-  "en": "AI harm",
+  "head": "피해",
+  "en": "harm",
   "alternatives": [
     {
-      "text": "위해",
+      "text": "AI 피해",
       "source": "editor"
     },
     {
-      "text": "피해",
-      "source": "kit"
+      "text": "위해",
+      "source": "editor"
     }
   ],
   "chapter": "03",
@@ -24,7 +24,7 @@
       "차별, 정서적 의존처럼 서서히 누적되거나 측정이 어려운 피해는 포착이 늦어진다는 지적이 있음."
     ],
     "distinction": {
-      "text": "'AI 피해(harm)'는 실제로 나타난(또는 나타날 수 있는) 부정적 결과 자체이고, 'AI 위험(risk)'은 그 피해의 발생 가능성과 심각도를 결합한 정도, 'AI 위험원(hazard)'은 피해를 일으킬 수 있는 원천임. 실제 피해가 발생한 사건은 'AI 사고'로 기록됨.",
+      "text": "'피해(harm)'는 실제로 나타난(또는 나타날 수 있는) 부정적 결과 자체이고, '위험(risk)'은 그 피해의 발생 가능성과 심각도를 결합한 정도, '위험원(hazard)'은 피해를 일으킬 수 있는 원천임. 실제 피해가 발생한 사건은 '사고'로 기록됨.",
       "terms": [
         "ai-risk",
         "ai-hazard",
@@ -98,6 +98,5 @@
       }
     }
   ],
-  "updated": "2026-10-03",
-  "head_override": "AI 접두 규칙 — 일상어 표제어에 AI를 붙임"
+  "updated": "2026-10-03"
 }

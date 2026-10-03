@@ -2,11 +2,11 @@
   "id": "incident-report",
   "kit_id": null,
   "join_keys": [],
-  "head": "AI 사고 보고서",
-  "en": "AI incident report",
+  "head": "사고 보고서",
+  "en": "incident report",
   "alternatives": [
     {
-      "text": "사고 보고서",
+      "text": "AI 사고 보고서",
       "source": "editor"
     }
   ],
@@ -20,7 +20,7 @@
       "초기 보고서는 원인이 확정되지 않은 상태에서 작성되는 경우가 많아, 후속 보고로 내용을 보완·정정하는 절차가 함께 필요함."
     ],
     "distinction": {
-      "text": "'AI 사고 보고서(incident report)'는 개별 문서·기록물을, 'AI 사고 보고(incident reporting)'는 그 문서를 만들고 전달하는 행위·절차·체계를 뜻함.",
+      "text": "'사고 보고서(incident report)'는 개별 문서·기록물을, '사고 보고(incident reporting)'는 그 문서를 만들고 전달하는 행위·절차·체계를 뜻함.",
       "terms": [
         "incident-reporting"
       ]

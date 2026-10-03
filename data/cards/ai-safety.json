@@ -2,15 +2,15 @@
   "id": "ai-safety",
   "kit_id": "ai-safety",
   "join_keys": [],
-  "head": "AI 안전",
+  "head": "안전",
   "en": "AI safety",
   "alternatives": [
     {
-      "text": "AI 안전성",
-      "source": "editor"
+      "text": "AI 안전",
+      "source": "kit"
     },
     {
-      "text": "안전",
+      "text": "AI 안전성",
       "source": "editor"
     }
   ],
@@ -22,7 +22,7 @@
       "범용 AI의 역량이 빠르게 늘면서 개별 제품 결함을 넘어 악의적 사용, 시스템적 위험, 통제 상실까지 다루는 분야로 범위가 넓어짐."
     ],
     "distinction": {
-      "text": "'AI 안전(safety)'이 오작동·오용을 포함해 피해를 일으키지 않는 성질 전반을 가리킨다면, '사이버 보안(security)'은 의도적 공격으로부터 시스템·데이터·모델 가중치를 보호하는 데 초점을 둠.",
+      "text": "'안전(safety)'이 오작동·오용을 포함해 피해를 일으키지 않는 성질 전반을 가리킨다면, '사이버 보안(security)'은 의도적 공격으로부터 시스템·데이터·모델 가중치를 보호하는 데 초점을 둠.",
       "terms": [
         "cybersecurity"
       ]
@@ -65,5 +65,6 @@
     }
   ],
   "status": "draft",
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "head_override": "AI를 떼는 원칙(2026-10-03) — 'AI ○○' 표기는 대체어로 둠"
 }

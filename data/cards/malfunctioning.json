@@ -4,16 +4,15 @@
   "join_keys": [
     "malfunction"
   ],
-  "head": "AI 오작동",
-  "en": "AI malfunction",
+  "head": "오작동",
+  "en": "malfunction",
   "alternatives": [
     {
-      "text": "오작동",
-      "source": "kit"
+      "text": "AI 오작동",
+      "source": "editor"
     }
   ],
   "chapter": "07",
-  "head_override": "AI 접두 규칙 — 일상어 표제어에 AI를 붙임",
   "status": "draft",
   "definition": {
     "lead": "AI 시스템이 개발자나 사용자가 의도한 대로 동작하지 않아 잘못되거나 해로운 출력, 운영 장애를 낳는 현상을 말함.",
@@ -23,7 +22,7 @@
       "의도한 동작이 무엇이었는지가 명확하지 않은 범용 시스템에서는 오작동과 정상 동작의 경계를 정하기 어렵다는 지적이 있음."
     ],
     "distinction": {
-      "text": "'AI 오작동'은 의도와 다르게 동작하는 시스템 측 실패이고, '오용'·'악의적 사용'은 사람이 시스템을 의도와 다르게 쓰는 데서 생기는 위험임.",
+      "text": "'오작동'은 의도와 다르게 동작하는 시스템 측 실패이고, '오용'·'악의적 사용'은 사람이 시스템을 의도와 다르게 쓰는 데서 생기는 위험임.",
       "terms": [
         "misuse",
         "malicious-use",

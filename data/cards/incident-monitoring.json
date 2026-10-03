@@ -2,11 +2,11 @@
   "id": "incident-monitoring",
   "kit_id": null,
   "join_keys": [],
-  "head": "AI 사고 모니터링",
-  "en": "AI incident monitoring",
+  "head": "사고 모니터링",
+  "en": "incident monitoring",
   "alternatives": [
     {
-      "text": "사고 모니터링",
+      "text": "AI 사고 모니터링",
       "source": "editor"
     }
   ],
@@ -20,7 +20,7 @@
       "공개 보도에 의존하는 모니터링은 주목받는 사건 위주로 쌓이는 편향이 있어, 실제 발생 빈도의 지표로 쓰는 데 한계가 있음."
     ],
     "distinction": {
-      "text": "'AI 사고 모니터링'은 사고와 그 징후 자체를 추적하는 데 초점이 있고, '배포 후 모니터링'은 특정 시스템의 운영 중 성능·행동·영향 전반을 관찰하는 더 넓은 활동임.",
+      "text": "'사고 모니터링'은 사고와 그 징후 자체를 추적하는 데 초점이 있고, '배포 후 모니터링'은 특정 시스템의 운영 중 성능·행동·영향 전반을 관찰하는 더 넓은 활동임.",
       "terms": [
         "post-deployment-monitoring"
       ]

@@ -2,12 +2,12 @@
   "id": "serious-incident",
   "kit_id": "serious-incident",
   "join_keys": [],
-  "head": "중대 AI 사고",
+  "head": "중대 사고",
   "en": "serious incident",
   "alternatives": [
     {
-      "text": "중대 사고",
-      "source": "kit"
+      "text": "중대 AI 사고",
+      "source": "editor"
     }
   ],
   "chapter": "07",
@@ -20,7 +20,7 @@
       "원인이나 책임이 확정되기 전에 신고를 요구하는 제도가 많아, 초기 판단의 불확실성을 어떻게 다룰지가 실무 쟁점이 됨."
     ],
     "distinction": {
-      "text": "'중대 AI 사고'는 'AI 사고'의 부분집합이며, 사회·공동체의 대응 역량을 넘어서는 수준의 중대 사고는 'AI 재해'로 따로 구분하기도 함.",
+      "text": "'중대 사고'는 '사고'의 부분집합이며, 사회·공동체의 대응 역량을 넘어서는 수준의 중대 사고는 '재해'로 따로 구분하기도 함.",
       "terms": [
         "ai-incident",
         "ai-disaster"
@@ -109,6 +109,5 @@
       }
     }
   ],
-  "updated": "2026-10-03",
-  "head_override": "AI 접두 규칙 — 일상어 표제어에 AI를 붙임"
+  "updated": "2026-10-03"
 }

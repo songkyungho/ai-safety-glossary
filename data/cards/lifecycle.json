@@ -6,9 +6,13 @@
     "ailifecycle",
     "인공지능수명주기"
   ],
-  "head": "AI 수명주기",
-  "en": "AI lifecycle",
+  "head": "수명주기",
+  "en": "lifecycle",
   "alternatives": [
+    {
+      "text": "AI 수명주기",
+      "source": "editor"
+    },
     {
       "text": "생애주기",
       "source": "editor"
@@ -18,16 +22,11 @@
       "source": "editor"
     },
     {
-      "text": "수명주기",
-      "source": "kit"
-    },
-    {
       "text": "AI 생애주기",
       "source": "public"
     }
   ],
   "chapter": "03",
-  "head_override": "AI 접두 규칙 — 일상어 표제어에 AI를 붙임",
   "status": "draft",
   "definition": {
     "lead": "AI 시스템이 기획·데이터 수집부터 개발, 평가, 배포, 운영·모니터링, 폐기에 이르기까지 거치는 단계 전체를 의미함.",
