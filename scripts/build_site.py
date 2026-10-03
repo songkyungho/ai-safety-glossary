@@ -593,7 +593,8 @@ details:not([open]).term-card .ribbon { display: none; }
 
 /* 오른쪽 용어 목차 — 라이브러리의 오른쪽 연도 목록에 착안 */
 .term-rail {
-  position: fixed; top: 56px; right: 16px; bottom: 16px; width: 214px; z-index: 30;
+  position: fixed; top: 56px; right: 16px; z-index: 30;
+  width: max-content; min-width: 168px; max-width: 230px; max-height: calc(100vh - 72px);
   overflow-y: auto; background: var(--surface-1); border: 1px solid var(--hairline);
   border-radius: 14px; padding: 8px 8px 10px; font-size: 0.8rem;
   box-shadow: 0 4px 18px color-mix(in srgb, var(--ink) 8%, transparent);
@@ -604,6 +605,16 @@ details:not([open]).term-card .ribbon { display: none; }
   display: flex; align-items: center; justify-content: space-between;
   font-weight: 700; color: var(--navy); padding: 2px 6px 6px; border-bottom: 1px solid var(--gridline);
   margin-bottom: 4px;
+}
+.rail-top {
+  display: flex; align-items: center; gap: 7px; padding: 5px 6px; margin-bottom: 4px;
+  border-radius: 8px; color: var(--navy); font-weight: 650; text-decoration: none;
+  border-bottom: 1px solid var(--gridline);
+}
+.rail-top:hover { background: var(--surface-2); }
+.rail-top-ico {
+  width: 8px; height: 8px; margin: 3px 1px 0; border-left: 2px solid var(--navy); border-top: 2px solid var(--navy);
+  transform: rotate(45deg);
 }
 .rail-close { display: none; border: 0; background: none; font-size: 1.2rem; color: var(--text-muted); cursor: pointer; }
 .rail-ch > summary {
@@ -624,7 +635,7 @@ details:not([open]).term-card .ribbon { display: none; }
 .rail-ch li a:hover { background: var(--surface-2); color: var(--ink); }
 .rail-fab { display: none; }
 @media (max-width: 1459px) {
-  .term-rail { display: none; top: auto; bottom: 70px; height: min(70vh, 560px); width: min(280px, calc(100vw - 32px)); }
+  .term-rail { display: none; top: auto; bottom: 70px; max-height: min(70vh, 560px); max-width: min(280px, calc(100vw - 32px)); }
   .term-rail.show { display: block; }
   .rail-close { display: block; }
   .rail-fab {
@@ -966,7 +977,6 @@ OVERVIEW_JS = """<script>
   var svg = document.getElementById('ovMap');
   if (!svg) return;
   var themes = JSON.parse(document.getElementById('mapThemes').textContent);
-  var desc = document.getElementById('mapDesc');
   var nodes = Array.prototype.slice.call(svg.querySelectorAll('.rel-n[data-id]'));
   var edges = Array.prototype.slice.call(svg.querySelectorAll('.rel-e'));
   var hulls = Array.prototype.slice.call(svg.querySelectorAll('.ov-hull'));
@@ -1045,7 +1055,7 @@ OVERVIEW_JS = """<script>
       var t = themes[b.dataset.theme];
       curTheme = b.dataset.theme;
       if (!t) {
-        focus = null; paint(null, 'dim'); svg.classList.remove('focused'); zoom(full); desc.textContent = desc.dataset.default;
+        focus = null; paint(null, 'dim'); svg.classList.remove('focused'); zoom(full);
         regions.forEach(function (r) { r.classList.remove('dim'); }); return;
       }
       focus = {}; t.terms.forEach(function (i) { focus[i] = 1; });
@@ -1054,7 +1064,7 @@ OVERVIEW_JS = """<script>
       var rg = svg.querySelector('.ov-region[data-theme="' + b.dataset.theme + '"]');
       zoom(rg ? fit(rg.getAttribute('data-box').split(' ').map(Number)) : bbox(focus));
       regions.forEach(function (r) { r.classList.toggle('dim', r !== rg); });
-      desc.textContent = t.desc;
+     
     });
   });
   nodes.forEach(function (n) {
@@ -1091,15 +1101,9 @@ def concept_maps_html(data):
             continue
         tabs.append(f'<button class="filter-chip map-tab" data-theme="{c["no"]}" style="--chip:{c["color"]}">'
                     f'<i class="dot"></i>{c["no"]}. {html.escape(c["label"])}</button>')
-        tdata[c["no"]] = {"terms": terms,
-                          "desc": f'{c["no"]}. {c["label"]} ({c["en"]}) — 용어 {len(terms)}개. 상자를 누르면 그 카드로 갑니다.'}
-    n_nodes = sum(1 for k in layout["nodes"] if k in REL_CTX["nodes"])
-    intro = (f"용어 {n_nodes}개 전체를 한 장에 펼친 지도입니다. 가운데에 AI 위험과 AI 안전이 있고, "
-             "왼쪽은 위험·사고(03~07장), 오른쪽은 평가·안전 대책과 거버넌스·제도(08~11장), "
-             "위쪽은 그 바탕인 기술과 역량(01·02장)입니다. 색은 장을 뜻합니다. 장을 고르면 그 부분이 확대됩니다.")
+        tdata[c["no"]] = {"terms": terms}
     return (f'<section class="concept-maps" aria-label="개념 지도">'
             f'<div class="map-head"><h2>개념 지도</h2><div class="map-tabs">{"".join(tabs)}</div></div>'
-            f'<p class="map-desc" id="mapDesc" data-default="{html.escape(intro)}">{html.escape(intro)}</p>'
             f'<div class="rel-scroll ov-wrap">{svg}</div>'
             f'<div class="rel-legend-wrap">{relmap.LEGEND_SVG}<span class="map-hint">용어에 마우스를 올리면 연결이 보이고, 누르면 카드로 갑니다.</span></div>'
             f'<script id="mapThemes" type="application/json">{ui.safe_json(tdata)}</script>'
@@ -1121,6 +1125,7 @@ def rail_html(data):
     return (f'<nav class="term-rail" id="termRail" aria-label="용어 목차">'
             f'<div class="rail-head"><span>용어 목차</span>'
             f'<button type="button" class="rail-close" id="railClose" aria-label="목차 닫기">×</button></div>'
+            f'<a class="rail-top" href="#" id="railTop"><span class="rail-top-ico" aria-hidden="true"></span>맨 위로</a>'
             f'{"".join(groups)}</nav>'
             f'<button type="button" class="rail-fab" id="railFab" aria-controls="termRail">목차</button>')
 
@@ -1316,6 +1321,12 @@ def index_page(data):
   if (rail) {
     fab.addEventListener('click', function () { rail.classList.toggle('show'); });
     document.getElementById('railClose').addEventListener('click', function () { rail.classList.remove('show'); });
+    document.getElementById('railTop').addEventListener('click', function (ev) {
+      ev.preventDefault();
+      history.replaceState(null, '', location.pathname + location.search);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      rail.classList.remove('show');
+    });
     rail.addEventListener('click', function (ev) {
       var a = ev.target.closest('a[href^="#"]');
       if (a && window.matchMedia('(max-width: 1459px)').matches) rail.classList.remove('show');

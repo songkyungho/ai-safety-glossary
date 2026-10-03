@@ -702,7 +702,8 @@ details:not([open]).term-card .ribbon { display: none; }
 
 /* 오른쪽 용어 목차 — 라이브러리의 오른쪽 연도 목록에 착안 */
 .term-rail {
-  position: fixed; top: 56px; right: 16px; bottom: 16px; width: 214px; z-index: 30;
+  position: fixed; top: 56px; right: 16px; z-index: 30;
+  width: max-content; min-width: 168px; max-width: 230px; max-height: calc(100vh - 72px);
   overflow-y: auto; background: var(--surface-1); border: 1px solid var(--hairline);
   border-radius: 14px; padding: 8px 8px 10px; font-size: 0.8rem;
   box-shadow: 0 4px 18px color-mix(in srgb, var(--ink) 8%, transparent);
@@ -713,6 +714,16 @@ details:not([open]).term-card .ribbon { display: none; }
   display: flex; align-items: center; justify-content: space-between;
   font-weight: 700; color: var(--navy); padding: 2px 6px 6px; border-bottom: 1px solid var(--gridline);
   margin-bottom: 4px;
+}
+.rail-top {
+  display: flex; align-items: center; gap: 7px; padding: 5px 6px; margin-bottom: 4px;
+  border-radius: 8px; color: var(--navy); font-weight: 650; text-decoration: none;
+  border-bottom: 1px solid var(--gridline);
+}
+.rail-top:hover { background: var(--surface-2); }
+.rail-top-ico {
+  width: 8px; height: 8px; margin: 3px 1px 0; border-left: 2px solid var(--navy); border-top: 2px solid var(--navy);
+  transform: rotate(45deg);
 }
 .rail-close { display: none; border: 0; background: none; font-size: 1.2rem; color: var(--text-muted); cursor: pointer; }
 .rail-ch > summary {
@@ -733,7 +744,7 @@ details:not([open]).term-card .ribbon { display: none; }
 .rail-ch li a:hover { background: var(--surface-2); color: var(--ink); }
 .rail-fab { display: none; }
 @media (max-width: 1459px) {
-  .term-rail { display: none; top: auto; bottom: 70px; height: min(70vh, 560px); width: min(280px, calc(100vw - 32px)); }
+  .term-rail { display: none; top: auto; bottom: 70px; max-height: min(70vh, 560px); max-width: min(280px, calc(100vw - 32px)); }
   .term-rail.show { display: block; }
   .rail-close { display: block; }
   .rail-fab {
