@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 logs/
 data/_top100_plain.md
+
+.claude/launch.json
