@@ -409,6 +409,7 @@ a.lib-link { margin-left: 0; }
 }
 .map-head { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
 .map-head h2 { margin: 0; font-size: 0.95rem; letter-spacing: -0.02em; }
+.map-head .map-hint { font-size: 0.75rem; color: var(--text-muted); }
 .map-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
 button.filter-chip .dot {
   width: 8px; height: 8px; border-radius: 50%; background: var(--chip, var(--navy)); display: inline-block;
@@ -1079,6 +1080,11 @@ Array.prototype.forEach.call(document.querySelectorAll('svg.ov-map'), function (
   document.querySelectorAll('button.map-tab').forEach(function (b) {
     b.addEventListener('click', function () { focusTheme(b.dataset.theme || ''); });
   });
+  svg.addEventListener('click', function (ev) {   // 확대된 상태에서 빈 곳을 누르면 전체로
+    if (!curTheme) return;
+    if (ev.target.closest('.ov-chip, .rel-n')) return;
+    focusTheme('');
+  });
   svg.querySelectorAll('.ov-chip').forEach(function (c) {
     function go() { var th = c.getAttribute('data-theme'); focusTheme(curTheme === th ? '' : th); }
     c.addEventListener('click', go);
@@ -1116,7 +1122,6 @@ def concept_maps_html(data):
                + relmap.overview_svg(mob, REL_CTX["nodes"], edges, color, deg, chap_label, "ovMapM", "ovm")
                + '</div>')
     home = layout.get("home") or {}
-    tabs = ['<button class="filter-chip map-tab active" data-theme="">전체</button>']
     tdata = {}
     for c in data["chapters"]:
         terms = [i for i, h in home.items() if h == c["no"]]
@@ -1124,7 +1129,7 @@ def concept_maps_html(data):
             continue
         tdata[c["no"]] = {"terms": terms}
     return (f'<section class="concept-maps" aria-label="개념 지도">'
-            f'<div class="map-head"><h2>개념 지도</h2><div class="map-tabs">{"".join(tabs)}</div></div>'
+            f'<div class="map-head"><h2>개념 지도</h2><span class="map-hint">장 이름표를 누르면 그 장이 확대되고, 다시 누르거나 빈 곳을 누르면 돌아옵니다.</span></div>'
             f'<div class="rel-scroll ov-wrap">{svg}</div>'
             f'<script id="mapThemes" type="application/json">{ui.safe_json(tdata)}</script>'
             f'</section>')
@@ -1379,8 +1384,11 @@ def index_page(data):
     tAll.dataset.open = open ? '1' : '';
     tAll.textContent = open ? '모두 접기' : '모두 펼치기';
   });
+  // 새로 고침은 늘 맨 위(개념 지도)에서 시작한다. 공유 링크(#용어)로 처음 들어올 때만 그 카드로 간다
+  var navType = (performance.getEntriesByType && performance.getEntriesByType('navigation')[0] || {}).type;
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  if (navType === 'reload' && location.hash) history.replaceState(null, '', location.pathname + location.search);
   window.addEventListener('hashchange', onHash);
-  if ('scrollRestoration' in history && location.hash) history.scrollRestoration = 'manual';
   apply();
   onHash();
   // 카드 재배치·웹폰트 적용 뒤에 위치가 밀리므로 load 뒤 한 번 더 맞춘다
