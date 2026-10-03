@@ -4,9 +4,14 @@
   "join_keys": [
     "autonomy"
   ],
-  "head": "자율성",
-  "en": "autonomy",
-  "alternatives": [],
+  "head": "AI 자율성",
+  "en": "AI autonomy",
+  "alternatives": [
+    {
+      "text": "자율성",
+      "source": "editor"
+    }
+  ],
   "chapter": "02",
   "definition": {
     "lead": "AI 시스템이 사람의 개입 없이 스스로 판단하고 행동하도록 허용되거나 그럴 수 있는 정도를 의미함.",
@@ -42,5 +47,6 @@
     "'능력' → '역량' (kit 번역어)"
   ],
   "status": "draft",
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "head_override": "AI 접두 규칙 — 일상어 표제어에 AI를 붙임"
 }

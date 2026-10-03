@@ -4,9 +4,13 @@
   "join_keys": [
     "compute"
   ],
-  "head": "연산",
-  "en": "compute",
+  "head": "AI 연산",
+  "en": "AI compute",
   "alternatives": [
+    {
+      "text": "연산",
+      "source": "kit"
+    },
     {
       "text": "컴퓨팅",
       "source": "editor"
@@ -63,5 +67,6 @@
     }
   ],
   "status": "draft",
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "head_override": "AI 접두 규칙 — 일상어 표제어에 AI를 붙임"
 }

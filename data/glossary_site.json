@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI 안전 용어집",
-    "built_at": "2026-10-03T16:40:55+09:00",
+    "built_at": "2026-10-03T16:44:13+09:00",
     "method": "glossary_merged.json + data/cards 편집 계층",
     "counts": {
       "entries": 170,
@@ -12,7 +12,7 @@
         "research_pool": 1513,
         "library_pool": 2150,
         "with_research": 139,
-        "with_library": 82
+        "with_library": 81
       },
       "merged_used": 157,
       "excluded": 16,
@@ -2519,10 +2519,14 @@
     },
     {
       "id": "compute",
-      "head": "연산",
-      "en": "compute",
+      "head": "AI 연산",
+      "en": "AI compute",
       "kit_id": "compute",
       "alternatives": [
+        {
+          "text": "연산",
+          "source": "kit"
+        },
         {
           "text": "컴퓨팅",
           "source": "editor"
@@ -3935,7 +3939,7 @@
       "related": [
         {
           "id": "compute",
-          "head": "연산"
+          "head": "AI 연산"
         },
         {
           "id": "chain-of-thought-cot",
@@ -4289,7 +4293,7 @@
         },
         {
           "id": "autonomy",
-          "head": "자율성"
+          "head": "AI 자율성"
         },
         {
           "id": "multi-agent-system-mas",
@@ -4752,7 +4756,7 @@
         },
         {
           "id": "autonomy",
-          "head": "자율성"
+          "head": "AI 자율성"
         },
         {
           "id": "tool-use",
@@ -4899,10 +4903,15 @@
     },
     {
       "id": "autonomy",
-      "head": "자율성",
-      "en": "autonomy",
+      "head": "AI 자율성",
+      "en": "AI autonomy",
       "kit_id": null,
-      "alternatives": [],
+      "alternatives": [
+        {
+          "text": "자율성",
+          "source": "editor"
+        }
+      ],
       "chapter": "02",
       "chapter_label": "에이전트·프론티어 역량",
       "chapter_en": "Agents & Frontier Capabilities",
@@ -5016,40 +5025,23 @@
           "source": "OpenAlex"
         },
         {
-          "title": "에이전트 AI의 신뢰 보정과 인간 통제 가능성",
-          "orig": "Between autonomy and oversight: Trust calibration and human controllability in agentic AI systems",
-          "summary": "34개 문헌을 검토해 위험·가역성·자율 범위에 따라 감독 수준을 정하는 4단계 통제 프레임워크(TCF)를 제안하고 EU AI Act·NIST AI RMF와의 규제 격차를 분석했으며, 신뢰 오보정이 가장 흔한 실패 유형임을 보였다.",
-          "url": "https://gjeta.com/sites/default/files/fulltext_pdf/GJETA-2026-0137.pdf",
-          "date": "2026-06-06",
-          "source": "Global Journal of Engineering and Technology Advances"
-        },
-        {
           "title": "보장된 자율성: 운영연구 기반 생성형 AI 설계",
           "orig": "EXPRESS: Assured Autonomy: How Operations Research Powers and Orchestrates Generative AI Systems",
           "summary": "에이전트형 생성 AI의 자율성이 커질수록 형식적 제약과 꼬리 위험 관리가 필요하다는 점을 들어, 흐름 기반 생성 모델과 적대적 강건성 관점을 결합한 운영연구 기반의 개념적 프레임워크와 연구 의제를 제시했다.",
           "url": "https://doi.org/10.1177/10591478261455127",
           "date": "2026-05-18",
           "source": "Production and Operations Management"
-        }
-      ],
-      "library_docs": [
-        {
-          "id": "doc-62f5fd2f411a",
-          "title": "책임 있는 군사 AI 정치 선언",
-          "date": "2023-11-09",
-          "flag": "",
-          "org": "Other multinational",
-          "kind": "선언·성명"
         },
         {
-          "id": "doc-22bfa581f285",
-          "title": "미 국방부 지침 3000.09(자율 무기체계)",
-          "date": "2023-01-25",
-          "flag": "🇺🇸",
-          "org": "Department of Defense",
-          "kind": "행정규칙"
+          "title": "본능 방정식 기반 약한 자율성 AI 행동 아키텍처",
+          "orig": "AI Behavioral Architecture Model: A Weak-Autonomy Reasoning Framework from the Instinct Equation to the CAST Emotion Module",
+          "summary": "원리 방정식(M=i×e 등)을 LoRA로 모델에 내재화해 장기 대화 중 행동 드리프트를 줄이는 프레임워크를 제안하고, Qwen 2.5-3B로 중국어·영어 200건 OOD 평가에서 의미 안전율 99%를 보고했다.",
+          "url": "https://doi.org/10.5281/zenodo.17928863",
+          "date": "2025-12-14",
+          "source": "Zenodo (CERN European Organization for Nuclear Research)"
         }
       ],
+      "library_docs": [],
       "rel": {
         "req_by": [
           "agentic-ai",
@@ -5095,7 +5087,7 @@
         },
         {
           "id": "autonomy",
-          "head": "자율성"
+          "head": "AI 자율성"
         },
         {
           "id": "task-time-horizon",
@@ -6024,7 +6016,7 @@
         },
         {
           "id": "autonomy",
-          "head": "자율성"
+          "head": "AI 자율성"
         },
         {
           "id": "capability-evaluation",
@@ -6898,7 +6890,7 @@
         },
         {
           "id": "autonomy",
-          "head": "자율성"
+          "head": "AI 자율성"
         },
         {
           "id": "capability-evaluation",
@@ -7003,7 +6995,7 @@
         },
         {
           "id": "autonomy",
-          "head": "자율성"
+          "head": "AI 자율성"
         },
         {
           "id": "human-oversight",
@@ -16308,7 +16300,7 @@
         },
         {
           "id": "compute",
-          "head": "연산"
+          "head": "AI 연산"
         },
         {
           "id": "export-control",
@@ -25405,7 +25397,7 @@
         },
         {
           "id": "autonomy",
-          "head": "자율성"
+          "head": "AI 자율성"
         }
       ],
       "frameworks": [
@@ -29277,7 +29269,7 @@
         },
         {
           "id": "autonomy",
-          "head": "자율성"
+          "head": "AI 자율성"
         }
       ],
       "frameworks": [
@@ -30785,7 +30777,7 @@
       "related": [
         {
           "id": "compute",
-          "head": "연산"
+          "head": "AI 연산"
         },
         {
           "id": "general-purpose-ai-gpai",
@@ -32252,7 +32244,7 @@
       "related": [
         {
           "id": "compute",
-          "head": "연산"
+          "head": "AI 연산"
         },
         {
           "id": "national-security",
@@ -33119,7 +33111,7 @@
         },
         {
           "id": "compute",
-          "head": "연산"
+          "head": "AI 연산"
         },
         {
           "id": "supply-chain",
