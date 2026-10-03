@@ -8,6 +8,7 @@
   data/excluded.json          온라인에서 뺀 병합 항목
   data/library_map.json       PDF 근거 문서 → AI 안전 라이브러리 문서 id
   data/doc_titles.json        PDF 근거 문서 제목 표기 바로잡기
+  ../ai-safety-research-publish, ../ai-safety-library   관련 연구·정책 문서 (scripts/related.py)
 산출
   data/glossary_site.json
 
@@ -29,6 +30,7 @@ from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config  # noqa: E402
+import related as sibling_links  # noqa: E402
 
 KST = timezone(timedelta(hours=9))
 CARDS_DIR = os.path.join(config.DATA, "cards")
@@ -322,6 +324,7 @@ def main() -> None:
             },
         })
 
+    rel_stats = sibling_links.attach(entries, warn)   # AI 안전 연구 카탈로그·라이브러리 연결
     rel_edges, rel_nb = build_relations(cards, ids)
     for e in entries:
         e["rel"] = {k: v for k, v in rel_nb.get(e["id"], {}).items() if v}
@@ -346,6 +349,7 @@ def main() -> None:
                 "cards_with_definition": sum(1 for c in cards if (c.get("definition") or {}).get("lead")),
                 "with_frameworks": sum(1 for e in entries if e["frameworks"]),
                 "relations": len(rel_edges),
+                "linked": rel_stats,
                 "merged_used": len(owner),
                 "excluded": len(excluded),
                 "sources": dict(src_counts),

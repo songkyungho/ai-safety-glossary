@@ -234,6 +234,7 @@ button.filter-chip.active .n {
 }
 .term-examples a:hover { color: var(--accent); }
 .term-examples .ex-src { font-size: 0.75rem; color: var(--text-muted); }
+.term-examples .ex-label a { color: var(--navy); text-decoration: underline; text-underline-offset: 2px; }
 
 details.legend {
   margin: 0 0 16px; font-size: 0.95rem; color: var(--text-secondary);
@@ -730,6 +731,33 @@ def examples_html(examples):
             f'<ol>{"".join(lis)}</ol></div>')
 
 
+def sibling_html(e):
+    """형제 사이트 연결 — AI 안전 연구 카탈로그의 연구, AI 안전 라이브러리의 정책 문서."""
+    out = []
+    if e.get("research"):
+        lis = "".join(
+            '<li><span class="ex-date">{d}</span><span><a href="{u}" target="_blank" rel="noopener">{t}</a>'
+            ' <span class="ex-src">{s}</span></span></li>'.format(
+                d=html.escape((x.get("date") or "")[:10]), u=html.escape(x["url"]),
+                t=html.escape(x["title"]), s=html.escape((x.get("source") or "")[:24]))
+            for x in e["research"])
+        out.append(f'<div class="term-examples"><p class="ex-label">관련 연구 · '
+                   f'<a href="{html.escape(ui.RESEARCH_URL)}" target="_blank" rel="noopener">AI 안전 연구</a></p>'
+                   f'<ol>{lis}</ol></div>')
+    if e.get("library_docs"):
+        lis = "".join(
+            '<li><span class="ex-date">{d}</span><span>{f}<a href="{u}" target="_blank" rel="noopener">{t}</a>'
+            ' <span class="ex-src">{o}</span></span></li>'.format(
+                d=html.escape((x.get("date") or "")[:10]), f=(html.escape(x["flag"]) + " ") if x.get("flag") else "",
+                u=html.escape(LIBRARY_DOC_URL.format(x["id"])), t=html.escape(x["title"]),
+                o=html.escape(" · ".join(v for v in (x.get("org"), x.get("kind")) if v)[:30]))
+            for x in e["library_docs"])
+        out.append(f'<div class="term-examples"><p class="ex-label">관련 정책 문서 · '
+                   f'<a href="{html.escape(ui.LIBRARY_URL)}" target="_blank" rel="noopener">AI 안전 라이브러리</a></p>'
+                   f'<ol>{lis}</ol></div>')
+    return "".join(out)
+
+
 def metrics_html(e):
     m = e["metrics"]
     out = []
@@ -863,6 +891,7 @@ def card_html(e):
     if e.get("pdf_definitions"):
         more.append('<p class="section-label">PDF 원문 인용</p>' + pdf_quotes_html(e["pdf_definitions"]))
     more.append(examples_html(e.get("examples")))
+    more.append(sibling_html(e))
     if e.get("variants"):
         more.append("".join(
             f'<div class="term-variants">{k} 표기 · {html.escape(v)}</div>' for k, v in e["variants"]))
@@ -875,6 +904,10 @@ def card_html(e):
         more_label.append(f"원문 인용 {len(e['pdf_definitions'])}")
     if e.get("examples"):
         more_label.append(f"참고 기사 {len(e['examples'])}")
+    if e.get("research"):
+        more_label.append(f"관련 연구 {len(e['research'])}")
+    if e.get("library_docs"):
+        more_label.append(f"정책 문서 {len(e['library_docs'])}")
     more_html = (f'<details class="term-more"><summary>{" · ".join(more_label) or "지표"}</summary>{more_s}</details>'
                  if more_s.strip() else "")
 
@@ -1389,12 +1422,14 @@ def about_page(data):
 (빌드 시점 {docs:,}건, {html.escape(str(c.get('from', '')))} ~ {html.escape(str(c.get('to', '')))}).
 기사마다 원문 링크와 함께 그 기사가 실린 다이제스트 날짜 페이지를 잇습니다.</td></tr>
 <tr><td><a href="{ui.RESEARCH_URL}" target="_blank" rel="noopener">AI 안전 연구</a></td>
-<td>논문·연구 보고서 카탈로그. 참고 기사 가운데 <span class="ex-tag">연구</span> 표시가 붙은 항목이 연구 문헌입니다.</td></tr>
+<td>AI 안전 연구 카탈로그. 용어 표기로 연구 제목(없으면 요약)을 찾아 카드의 <b>관련 연구</b>에 최근 것부터 4건까지 잇습니다
+(현재 {cnt.get('linked', {}).get('with_research', 0)}개 표제어). 참고 기사 가운데 <span class="ex-tag">연구</span> 표시는 다이제스트가 모은 연구 문헌입니다.</td></tr>
 <tr><td>PDF 근거 색인</td>
 <td>국제 보고서·법령·가이드라인 PDF를 쪽 단위로 색인한 연구소 내부 자료(PDF Evidence Desk)입니다.
 <b>PDF 원문 인용</b>과 쪽수가 여기서 옵니다. 현재 문서 {len(pdf_docs)}종: {html.escape(', '.join(pdf_docs))}.</td></tr>
 <tr><td><a href="{ui.LIBRARY_URL}" target="_blank" rel="noopener">AI 안전 라이브러리</a></td>
-<td>정책·보고서 문서 목록. 인용 문서가 라이브러리에 있으면 출처 옆에 <b>라이브러리에서 보기</b>를 붙입니다.</td></tr>
+<td>법·가이드라인·정책 문서 목록. 용어 표기가 문서명에 들어간 AI 안전 문서를 카드의 <b>관련 정책 문서</b>에 4건까지 잇고
+(현재 {cnt.get('linked', {}).get('with_library', 0)}개 표제어), PDF 인용 문서가 라이브러리에 있으면 출처 옆에 <b>라이브러리에서 보기</b>를 붙입니다.</td></tr>
 </table>
 <p>용어마다 고정 주소가 있습니다. 카드 왼쪽 위 번호를 누르면 그 용어의 주소가 됩니다
 (예: <code>#incident-reporting</code>). 검색어와 장도 주소로 넘길 수 있습니다
