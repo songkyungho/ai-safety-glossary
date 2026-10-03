@@ -220,15 +220,15 @@ def big_w(label):
 
 
 def big_node_svg(n, cx, cy, color, cls="ov-hub"):
-    """장 대표 용어 — 장 색으로 크게 채운 알약."""
+    """장 대표 용어 — 채우지 않고 장 색 글자·테두리로 크게 (장 이름표의 채운 리본과 구별)."""
     fs, hh = 16, 36
     w = text_w(n["head"], fs) + 36
     return (f'<a class="rel-n {cls}" data-id="{html.escape(n["id"])}" href="#{html.escape(n["id"])}">'
             f'<title>{html.escape(n["head"] + " · " + n.get("en", ""))}</title>'
             f'<rect x="{cx - w / 2:.1f}" y="{cy - hh / 2:.1f}" width="{w:.1f}" height="{hh}" rx="{hh / 2}" '
-            f'style="fill:{color};stroke:color-mix(in srgb, {color} 60%, #000);stroke-width:1"/>'
+            f'style="fill:var(--surface-1);stroke:{color};stroke-width:1.6"/>'
             f'<text x="{cx:.1f}" y="{cy + 5.5:.1f}" text-anchor="middle" font-size="{fs}" '
-            f'style="fill:#fff;font-weight:700">{html.escape(n["head"])}</text></a>')
+            f'style="fill:{color};font-weight:800">{html.escape(n["head"])}</text></a>')
 
 
 def overview_svg(layout, nodes, edges, color_of, degree, chap_label=None, svg_id="ovMap", prefix="ov"):
