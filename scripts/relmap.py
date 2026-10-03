@@ -231,7 +231,7 @@ def big_node_svg(n, cx, cy, color, cls="ov-hub"):
             f'style="fill:#fff;font-weight:700">{html.escape(n["head"])}</text></a>')
 
 
-def overview_svg(layout, nodes, edges, color_of, degree):
+def overview_svg(layout, nodes, edges, color_of, degree, chap_label=None):
     """layout = data/overview_layout.json (방사형). 노드·간선·묶음·주제 이름에 data-* 를 달아 JS가 강조한다."""
     p = "ov"
     W, H = layout["w"], layout["h"]
@@ -246,8 +246,11 @@ def overview_svg(layout, nodes, edges, color_of, degree):
     xs0 = [x - bwid(k) / 2 for k, (x, _) in pos.items()]
     xs1 = [x + bwid(k) / 2 for k, (x, _) in pos.items()]
     ys = [y for _, y in pos.values()]
+    lg = layout.get("legend")
+    if lg:
+        xs0.append(lg["x"]); xs1.append(lg["x"] + lg["w"]); ys += [lg["y"], lg["y"] + lg["h"] - 20]
     vx0, vx1 = max(0, min(xs0) - 24), min(W, max(xs1) + 24)
-    vy0, vy1 = max(0, min(ys) - 34), min(H, max(ys) + 34)
+    vy0, vy1 = max(0, min(ys) - 48), min(H, max(ys) + 34)
     vb = f"{vx0:.0f} {vy0:.0f} {vx1 - vx0:.0f} {vy1 - vy0:.0f}"
     out = [f'<svg id="ovMap" class="ov-map" viewBox="{vb}" role="img" aria-label="AI 안전 개념 지도" '
            f'data-full="{vb}">', defs(p)]
@@ -259,7 +262,8 @@ def overview_svg(layout, nodes, edges, color_of, degree):
             col = color_of(b) if b not in center else "var(--navy)"
             out.append(f'<path class="ov-spine" data-a="{a}" data-b="{b}" d="{d}" '
                        f'style="fill:none;stroke:{col};stroke-width:16;stroke-linecap:round;stroke-opacity:.09"/>')
-    # 장 섬 배경 — 장 버튼과 같은 색을 연하게 (장 이름은 버튼이 대신한다)
+    # 장 섬 배경 — 장 색을 연하게. 섬 위쪽 가장자리에 장 이름표(누르면 그 섬을 확대)
+    chips = []
     for ch in sorted({h for h in home.values() if h != "center"}):
         mem = [i for i in pos if home.get(i) == ch]
         if not mem:
@@ -272,6 +276,14 @@ def overview_svg(layout, nodes, edges, color_of, degree):
         out.append(f'<rect class="ov-island" data-theme="{ch}" x="{x0:.1f}" y="{y0:.1f}" width="{x1 - x0:.1f}" '
                    f'height="{y1 - y0:.1f}" rx="18" style="fill:color-mix(in srgb, {col} 9%, var(--surface-1));'
                    f'stroke:color-mix(in srgb, {col} 28%, transparent);stroke-width:1"/>')
+        if chap_label:
+            label = f"{ch}. {chap_label.get(ch, '')}"
+            tw = text_w(label, 12) + 22
+            cx_ = x0 + 16 + tw / 2
+            chips.append(f'<g class="ov-chip" data-theme="{ch}" role="button" tabindex="0" aria-label="{html.escape(label)} 확대">'
+                         f'<rect x="{x0 + 16:.1f}" y="{y0 - 11:.1f}" width="{tw:.1f}" height="22" rx="11" style="fill:{col}"/>'
+                         f'<text x="{cx_:.1f}" y="{y0 + 4:.1f}" text-anchor="middle" font-size="12" '
+                         f'style="fill:#fff;font-weight:700;letter-spacing:-.01em">{html.escape(label)}</text></g>')
     kids = {}
     for a, k, b in edges:
         if k == "broader" and a in pos and b in pos and home.get(a) == home.get(b):
@@ -316,8 +328,43 @@ def overview_svg(layout, nodes, edges, color_of, degree):
         if c in pos:
             out.append(big_node_svg(nodes[c], pos[c][0], pos[c][1], color_of(c),
                                     "ov-center" if c in center else "ov-hub"))
+    out += chips
+    if lg:
+        out.append(legend_box_svg(lg))
     out.append("</svg>")
     return "".join(out)
+
+
+def legend_box_svg(lg):
+    """지도 안 범례 상자 — 비어 있는 칸을 채운다."""
+    x, y, w, h = lg["x"], lg["y"], lg["w"], lg["h"]
+    rows = []
+    tx = x + 62
+    def row(k, yy, label):
+        if k == "lead":
+            g = f'<path d="M{x+18},{yy} Q{x+33},{yy-7} {x+48},{yy}" style="fill:none;stroke:var(--ink-muted);stroke-width:1.5;stroke-opacity:.8" marker-end="url(#lgb-a1)"/>'
+        elif k == "req":
+            g = f'<path d="M{x+18},{yy} Q{x+33},{yy-7} {x+48},{yy}" style="fill:none;stroke:var(--text-muted);stroke-width:1.2;stroke-opacity:.6" marker-end="url(#lgb-a2)"/>'
+        elif k == "hull":
+            g = (f'<rect x="{x+16}" y="{yy-9}" width="34" height="18" rx="9" style="fill:color-mix(in srgb, var(--navy) 7%, transparent);'
+                 f'stroke:color-mix(in srgb, var(--navy) 30%, transparent);stroke-dasharray:4 3"/>')
+        else:
+            g = (f'<circle cx="{x+33}" cy="{yy}" r="7.5" style="fill:var(--surface-1);stroke:var(--accent)"/>'
+                 f'<text x="{x+33}" y="{yy+3.6}" text-anchor="middle" font-size="10.5" style="fill:var(--accent);font-weight:700">≠</text>')
+        return g + f'<text x="{tx}" y="{yy+4.5}" font-size="13" style="fill:var(--text-secondary)">{label}</text>'
+    y0 = y + 26
+    rows.append(row("lead", y0, "이어짐"))
+    rows.append(row("req", y0 + 26, "먼저 알 개념 → 다음"))
+    rows.append(row("hull", y0 + 52, "상위·하위 개념 묶음"))
+    rows.append(row("vs", y0 + 78, "혼동 주의"))
+    hint = (f'<text x="{x+18}" y="{y0+108}" font-size="11.5" style="fill:var(--text-muted)">'
+            f'용어에 마우스를 올리면 연결이 보이고, 누르면 카드로 갑니다.</text>')
+    return (f'<g class="ov-legend"><defs>'
+            f'<marker id="lgb-a1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0.6 L7.4,4 L0,7.4 z" style="fill:var(--ink-muted)"/></marker>'
+            f'<marker id="lgb-a2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0.6 L7.4,4 L0,7.4 z" style="fill:var(--text-muted);opacity:.75"/></marker>'
+            f'</defs><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" '
+            f'style="fill:var(--surface-2);stroke:var(--gridline);stroke-width:1"/>'
+            + "".join(rows) + hint + '</g>')
 
 
 LEGEND_SVG = """<svg class="rel-legend" viewBox="0 0 600 24" aria-hidden="true">

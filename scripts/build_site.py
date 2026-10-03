@@ -542,6 +542,10 @@ svg.ov-map .ov-region { transition: opacity .25s; }
 svg.ov-map .ov-region.dim { opacity: .35; }
 svg.ov-map .ov-spine, svg.ov-map .ov-label, svg.ov-map .ov-island { transition: opacity .25s; }
 svg.ov-map .ov-island.dim { opacity: .35; }
+svg.ov-map .ov-chip { cursor: pointer; transition: opacity .25s; }
+svg.ov-map .ov-chip:hover rect, svg.ov-map .ov-chip:focus-visible rect { filter: brightness(1.12); }
+svg.ov-map .ov-chip.on rect { stroke: var(--ink); stroke-width: 1.5; }
+svg.ov-map.focused .ov-chip:not(.on) { opacity: .35; }
 svg.ov-map .ov-label:hover { text-decoration: underline; }
 svg.ov-map .ov-label.dim { opacity: .3; }
 svg.ov-map.hovering .hdim { opacity: .12; }
@@ -1049,9 +1053,11 @@ OVERVIEW_JS = """<script>
     var cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
     return [cx - w / 2, cy - h / 2, w, h];
   }
-  document.querySelectorAll('button.map-tab').forEach(function (b) {
-    b.addEventListener('click', function () {
-      document.querySelectorAll('button.map-tab').forEach(function (o) { o.classList.toggle('active', o === b); });
+  function focusTheme(theme) {
+    document.querySelectorAll('button.map-tab').forEach(function (o) { o.classList.toggle('active', (o.dataset.theme || '') === (theme || '')); });
+    svg.querySelectorAll('.ov-chip').forEach(function (c) { c.classList.toggle('on', c.getAttribute('data-theme') === theme); });
+    var b = { dataset: { theme: theme || '' } };
+    (function () {
       var t = themes[b.dataset.theme];
       curTheme = b.dataset.theme;
       if (!t) {
@@ -1064,8 +1070,15 @@ OVERVIEW_JS = """<script>
       var rg = svg.querySelector('.ov-region[data-theme="' + b.dataset.theme + '"]');
       zoom(rg ? fit(rg.getAttribute('data-box').split(' ').map(Number)) : bbox(focus));
       regions.forEach(function (r) { r.classList.toggle('dim', r !== rg); });
-     
-    });
+    })();
+  }
+  document.querySelectorAll('button.map-tab').forEach(function (b) {
+    b.addEventListener('click', function () { focusTheme(b.dataset.theme || ''); });
+  });
+  svg.querySelectorAll('.ov-chip').forEach(function (c) {
+    function go() { var th = c.getAttribute('data-theme'); focusTheme(curTheme === th ? '' : th); }
+    c.addEventListener('click', go);
+    c.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); go(); } });
   });
   nodes.forEach(function (n) {
     n.addEventListener('mouseenter', function () {
@@ -1091,7 +1104,8 @@ def concept_maps_html(data):
         deg[a] = deg.get(a, 0) + 1
         deg[b] = deg.get(b, 0) + 1
     color = lambda i: REL_CTX["color"].get(i, "var(--navy)")
-    svg = relmap.overview_svg(layout, REL_CTX["nodes"], edges, color, deg)
+    chap_label = {c["no"]: c["label"] for c in data["chapters"]}
+    svg = relmap.overview_svg(layout, REL_CTX["nodes"], edges, color, deg, chap_label)
     home = layout.get("home") or {}
     tabs = ['<button class="filter-chip map-tab active" data-theme="">전체</button>']
     tdata = {}
@@ -1099,13 +1113,10 @@ def concept_maps_html(data):
         terms = [i for i, h in home.items() if h == c["no"]]
         if not terms:
             continue
-        tabs.append(f'<button class="filter-chip map-tab" data-theme="{c["no"]}" style="--chip:{c["color"]}">'
-                    f'<i class="dot"></i>{c["no"]}. {html.escape(c["label"])}</button>')
         tdata[c["no"]] = {"terms": terms}
     return (f'<section class="concept-maps" aria-label="개념 지도">'
             f'<div class="map-head"><h2>개념 지도</h2><div class="map-tabs">{"".join(tabs)}</div></div>'
             f'<div class="rel-scroll ov-wrap">{svg}</div>'
-            f'<div class="rel-legend-wrap">{relmap.LEGEND_SVG}<span class="map-hint">용어에 마우스를 올리면 연결이 보이고, 누르면 카드로 갑니다.</span></div>'
             f'<script id="mapThemes" type="application/json">{ui.safe_json(tdata)}</script>'
             f'</section>')
 

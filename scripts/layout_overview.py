@@ -31,6 +31,7 @@ HUB = {"01": "foundation-model", "02": "capability", "03": "ai-risk", "04": "mis
 # 섬을 쌓을 열 — 왼쪽은 위험, 가운데는 기술·사고·평가, 오른쪽은 대책·원칙
 COLUMNS = [["04", "03", "05"], ["01", "07", "06"], ["02", "08", "11"], ["09", "10"]]
 GAP_ISLAND_X, GAP_ISLAND_Y = 40, 34
+LEGEND_H = 150
 ROW_H, GAP_X = relmap.BOX_H + 12, 10
 HUB_H = 36
 
@@ -91,13 +92,18 @@ def main():
 
     # 섬 위치: 4개 열에 위에서 아래로 쌓는다(masonry) — 열은 큰 흐름을 따른다
     cen, x = {}, 0.0
+    col_box = []
     for col in COLUMNS:
         cw = max(blocks[ch]["w"] for ch in col)
         y = 0.0
         for ch in col:
             cen[ch] = [x + cw / 2, y + blocks[ch]["h"] / 2]
             y += blocks[ch]["h"] + GAP_ISLAND_Y
+        col_box.append((x, cw, y))
         x += cw + GAP_ISLAND_X
+    # 범례는 섬이 가장 적게 쌓인 열의 맨 아래 칸에 — 4·4·4 칸처럼 보이게
+    lx, lw, ly = min(col_box, key=lambda c: c[2])
+    legend = {"x": lx, "y": ly, "w": lw, "h": LEGEND_H}
     pos = {}
     for ch in chapters:
         cx_, cy_ = cen[ch]
@@ -114,13 +120,15 @@ def main():
                     pos[v] = [xx + w[v] / 2, y + rh / 2]
                     xx += w[v] + GAP_X
             y += rh
+    pos["__legend_tl"] = [legend["x"], legend["y"]]
+    pos["__legend_br"] = [legend["x"] + legend["w"], legend["y"] + legend["h"]]
     for v in pinned:
         if v in pos and v in (old.get("nodes") or {}):
             pos[v] = list(old["nodes"][v])
 
     ids = sorted(pos)
     hubs = [blocks[ch]["hub"] for ch in chapters]
-    bw = lambda i: hub_w(ents[i]["head"]) if i in hubs else w[i]
+    bw = lambda i: 0 if i.startswith("__") else hub_w(ents[i]["head"]) if i in hubs else w[i]
     x0 = min(pos[i][0] - bw(i) / 2 for i in ids) - 40
     y0 = min(pos[i][1] for i in ids) - 50
     for i in ids:
@@ -128,9 +136,13 @@ def main():
     Wc = round(max(pos[i][0] + bw(i) / 2 for i in ids) + 40)
     Hc = round(max(pos[i][1] for i in ids) + 50)
 
+    tl, br = pos.pop("__legend_tl"), pos.pop("__legend_br")
+    ids = sorted(pos)
+    legend = {"x": round(tl[0]), "y": round(tl[1]), "w": round(br[0] - tl[0]), "h": round(br[1] - tl[1])}
+    Hc = max(Hc, round(br[1] + 20))
     out = {
         "_note": "scripts/layout_overview.py 산출(장 섬, 관계 기반 배치). 손으로 고친 노드는 pinned에 넣으면 유지된다.",
-        "w": Wc, "h": Hc, "hubs": hubs, "center": [], "spine": [], "labels": [],
+        "w": Wc, "h": Hc, "hubs": hubs, "center": [], "spine": [], "labels": [], "legend": legend,
         "pinned": sorted(pinned),
         "nodes": {i: [round(pos[i][0]), round(pos[i][1])] for i in ids},
         "home": home,
