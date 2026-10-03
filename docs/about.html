@@ -389,128 +389,197 @@ details.legend td:first-child {
   .bucket-badge { margin-left: 0; }
   .term-examples li { flex-wrap: wrap; }
 }
+
+/* 2026-10 카드 개편 — 인쇄 카드 구성(장·표제어·구분·대체어·용어 설명·관련 용어·기관별·출처) */
+.bucket-head .ch-en { font-weight: 500; font-size: 0.8rem; margin-left: 4px; }
+.bucket-head .ch-cat {
+  float: right; font-size: 0.72rem; font-weight: 600; color: var(--chip);
+}
+.term-card { padding: 16px 18px 12px; scroll-margin-top: 52px; }
+.term-card.flash { animation: flash 1.6s ease-out; }
+@keyframes flash {
+  0% { box-shadow: 0 0 0 3px color-mix(in srgb, var(--chip) 45%, transparent); }
+  100% { box-shadow: 0 0 0 3px transparent; }
+}
+.card-top {
+  display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;
+  font-size: 0.75rem; color: var(--text-muted);
+}
+.card-top .term-n { color: var(--chip); font-weight: 700; text-decoration: none; min-width: 0; }
+.card-top .term-n:hover { text-decoration: underline; }
+.card-chapter { font-weight: 600; letter-spacing: -0.02em; }
+.card-chapter .ch-en { font-weight: 400; }
+h2.term-title {
+  margin: 4px 0 8px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline;
+  font-size: inherit; font-weight: inherit;
+}
+h2.term-title .term-name { font-size: 1.2rem; }
+dl.term-meta {
+  display: flex; flex-wrap: wrap; gap: 4px 22px; margin: 0 0 10px;
+  font-size: 0.88rem; line-height: 1.5;
+}
+dl.term-meta div { display: flex; gap: 8px; min-width: 0; }
+dl.term-meta dt {
+  font-size: 0.72rem; font-weight: 700; color: var(--chip); padding-top: 2px; flex: 0 0 auto;
+}
+dl.term-meta dd { margin: 0; color: var(--text-secondary); }
+h3.sec {
+  margin: 0 0 6px; font-size: 0.75rem; font-weight: 700; letter-spacing: -0.02em;
+  color: var(--chip);
+}
+.term-explain, .term-fw, .term-refs {
+  border-top: 1px solid var(--gridline); padding-top: 10px; margin-top: 10px;
+}
+.def-lead {
+  margin: 0 0 6px; font-size: 1rem; line-height: 1.6; font-weight: 650;
+  color: var(--ink); letter-spacing: -0.02em;
+}
+ul.def-points, .term-fw ul { margin: 0; padding-left: 1.1em; }
+ul.def-points li, .term-fw li {
+  font-size: 0.95rem; line-height: 1.68; color: var(--text-secondary);
+  letter-spacing: -0.01em; margin-bottom: 3px;
+}
+.def-distinction {
+  margin: 8px 0 0; padding: 8px 12px; background: var(--surface-2);
+  border: 1px solid var(--gridline); border-radius: 8px;
+  font-size: 0.92rem; line-height: 1.62; color: var(--text-secondary);
+}
+.term-related {
+  margin: 10px 0 0; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline;
+  font-size: 0.9rem;
+}
+.term-related .sec-inline {
+  font-size: 0.75rem; font-weight: 700; color: var(--chip); margin-right: 2px;
+}
+.term-related a { color: var(--navy); text-decoration: none; }
+.term-related a:hover { text-decoration: underline; color: var(--accent); }
+.term-related span:not(.sec-inline) { color: var(--text-muted); }
+.fw-row {
+  display: grid; grid-template-columns: 7.5em 1fr; gap: 10px;
+  padding: 7px 0; border-bottom: 1px dashed var(--gridline);
+}
+.fw-row:last-child { border-bottom: 0; }
+.fw-org { font-size: 0.85rem; font-weight: 700; color: var(--ink); line-height: 1.4; }
+.fw-org span { display: block; font-weight: 500; font-size: 0.75rem; color: var(--text-muted); }
+a.ref-sup {
+  font-size: 0.72rem; color: var(--text-muted); text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+a.ref-sup:hover { color: var(--accent); }
+.term-refs ol { margin: 0; padding: 0; list-style: none; }
+.term-refs li {
+  display: flex; gap: 8px; font-size: 0.82rem; line-height: 1.55;
+  color: var(--text-secondary); margin-bottom: 3px; scroll-margin-top: 60px;
+}
+.term-refs li:target { background: color-mix(in srgb, var(--gold) 18%, transparent); }
+.ref-n {
+  flex: 0 0 auto; min-width: 1.4em; height: 1.4em; border-radius: 50%;
+  background: color-mix(in srgb, var(--chip) 14%, var(--surface-1)); color: var(--chip);
+  font-size: 0.7rem; font-weight: 700; display: inline-flex; align-items: center;
+  justify-content: center; margin-top: 1px;
+}
+details.term-more {
+  margin-top: 10px; border-top: 1px solid var(--gridline); padding-top: 8px;
+}
+details.term-more summary {
+  cursor: pointer; font-size: 0.75rem; font-weight: 700; color: var(--text-muted);
+  letter-spacing: -0.02em;
+}
+details.term-more summary:hover { color: var(--ink); }
+.term-commentary p {
+  margin: 0 0 7px; font-size: 0.95rem; line-height: 1.72; color: var(--text-secondary);
+}
+.term-commentary strong { color: var(--ink); }
+.ex-tag {
+  font-size: 0.68rem; font-weight: 700; color: var(--navy);
+  border: 1px solid color-mix(in srgb, var(--navy) 28%, var(--hairline));
+  border-radius: 4px; padding: 0 4px; margin-left: 2px;
+}
+.term-examples a.ex-digest, a.lib-link {
+  font-size: 0.75rem; color: var(--text-muted); text-decoration: underline;
+  text-decoration-thickness: 1px; text-underline-offset: 2px; margin-left: 4px;
+}
+a.lib-link { margin-left: 0; }
+.prose .muted { color: var(--text-muted); font-size: 0.85em; }
+.prose td.num, .prose th.num { text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 620px) {
+  .fw-row { grid-template-columns: 1fr; gap: 2px; }
+  .fw-org span { display: inline; margin-left: 6px; }
+  .bucket-head .ch-cat { float: none; display: block; }
+}
 </style>
 </head>
 <body>
 <div class="viz-root">
-<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 다이제스트</a><a href="https://songkyungho.github.io/ai-safety-library/" target="_blank" rel="noopener noreferrer">AI 안전 라이브러리</a><a href="https://songkyungho.github.io/ai-safety-research/" target="_blank" rel="noopener noreferrer">AI 안전 연구</a><span class="nav-current">AI 안전 용어집</span></div><div class="global-nav-right"><span class="nav-current">소개</span></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>소개</h1><p class="tagline">표제어를 어떻게 골랐고, 어떤 지표가 쓸모 없었나</p></div></header>
+<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 다이제스트</a><a href="https://songkyungho.github.io/ai-safety-library/" target="_blank" rel="noopener noreferrer">AI 안전 라이브러리</a><a href="https://songkyungho.github.io/ai-safety-research/" target="_blank" rel="noopener noreferrer">AI 안전 연구</a><span class="nav-current">AI 안전 용어집</span></div><div class="global-nav-right"><span class="nav-current">소개</span></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>소개</h1><p class="tagline">구성과 표제어 원칙, 근거 자료</p></div></header>
 <main class="wrap">
 <div class="prose">
-<p>AI 안전 용어집이다. <b>동향 코퍼스</b>에서 뽑은 표제어(집필 정의·참고 기사)와
-<b>PDF 리포지토리</b>에서 뽑은 표제어(원문 인용)를 영문 표기로 합쳐
-한 목록으로 보여 준다. 현재 병합 <b>173개</b>
-(양쪽 27 · 동향만 73 ·
-PDF만 73).</p>
-<p>카드 본문의 강조는 다이제스트·라이브러리와 같다. 한줄 정의가 핵심 사실이고,
-본문에서 중요한 용어·수치는 밑줄, 꼭 짚을 결론만 굵게다. 다른 표제어를
-본문에 자동으로 치지는 않는다.</p>
-<p>동향 코퍼스는 <a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener">AI 안전 다이제스트</a>가
-매일 모으는 뉴스·논문·정책문서다. 이 용어집을 빌드한 시점 기준
-<b>5,798건</b>(2009-04-13 ~ 2026-09-08). 이후 Digest 코퍼스는 더 늘어난다.</p>
+<p>AI 안전 연구·정책에서 자주 쓰는 용어를 <b>AI 안전 관점</b>에서 풀어 쓴 용어집입니다.
+현재 표제어 <b>170개</b>를 4개 구분, 11개 장으로 묶었습니다.
+인쇄용 용어 카드(50선)도 이 온라인판에서 골라 만듭니다.</p>
 
-<h2>두 출처를 어떻게 합쳤나</h2>
+<h2>구성 — 구분과 장</h2>
+<p>기술이 무엇인지에서 시작해 무엇이 잘못될 수 있는지, 어떻게 확인하고 막는지,
+누가 어떤 규칙으로 다스리는지의 순서로 장을 놓았습니다. 용어는 장 하나에만 속하고,
+장을 넘는 연결은 카드의 <b>관련 용어</b>로 잇습니다.</p>
+<table><tr><th>구분</th><th>장</th><th class="num">표제어</th></tr><tr><td>AI 기술·역량</td><td>01. 기반 기술·모델 공개 <span class="muted">Foundations &amp; Model Release</span></td><td class="num">14</td></tr><tr><td>AI 기술·역량</td><td>02. 에이전트·프론티어 역량 <span class="muted">Agents &amp; Frontier Capabilities</span></td><td class="num">15</td></tr><tr><td>AI 위험·사고</td><td>03. 위험 개념과 위험관리 <span class="muted">Risk Concepts &amp; Management</span></td><td class="num">16</td></tr><tr><td>AI 위험·사고</td><td>04. 모델 행동 위험 <span class="muted">Model Behaviour Risks</span></td><td class="num">15</td></tr><tr><td>AI 위험·사고</td><td>05. 오용·보안 위협 <span class="muted">Misuse &amp; Security Threats</span></td><td class="num">20</td></tr><tr><td>AI 위험·사고</td><td>06. 정보생태계·사회적 피해 <span class="muted">Information &amp; Societal Harms</span></td><td class="num">19</td></tr><tr><td>AI 위험·사고</td><td>07. 사고·보고 및 모니터링 <span class="muted">Incidents &amp; Monitoring</span></td><td class="num">10</td></tr><tr><td>AI 평가·안전 대책</td><td>08. 평가·시험 <span class="muted">Evaluation &amp; Testing</span></td><td class="num">12</td></tr><tr><td>AI 평가·안전 대책</td><td>09. 정렬·안전장치·감독 <span class="muted">Alignment, Safeguards &amp; Oversight</span></td><td class="num">15</td></tr><tr><td>AI 거버넌스·제도</td><td>10. 원칙·책임 <span class="muted">Principles &amp; Accountability</span></td><td class="num">16</td></tr><tr><td>AI 거버넌스·제도</td><td>11. 법·규제·표준 <span class="muted">Law, Regulation &amp; Standards</span></td><td class="num">18</td></tr></table>
+
+<h2>표제어 원칙</h2>
 <ul>
-<li>동향판·PDF판을 <b>각각</b> 기존 파이프라인으로 빌드한다.</li>
-<li>영문 표기를 정규화해 조인한다. 같은 개념이면 <b>양쪽</b> 칩.</li>
-<li>카드에서 집필 정의와 PDF 원문 인용은 <b>구역을 나눠</b> 병치한다.
-대역(<code>quote_ko</code>)은 편집 번역이며 원문 인용이 아니다.</li>
-<li>분류(버킷)는 동향판을 우선하고, PDF-only는 가까운 동향 버킷에 매핑한다.</li>
+<li><b>번역어는 번역 용어 정본(ai-safety-translation-kit)을 따릅니다.</b> 연구소 번역 작업에 쓰는
+승인 용어집입니다. 정본에 없는 용어는 편집 판단으로 정하고, 정본에 반영할 후보로 올립니다.</li>
+<li><b>띄어쓰기는 정본에 맞춰 통일했습니다</b>(해석 가능성, 허위 정보, 사이버 보안, 오픈 웨이트 모델).
+붙여 쓴 표기로 검색해도 찾을 수 있습니다.</li>
+<li><b>일상어 표제어에는 AI를 붙였습니다.</b> 업계에서는 그냥 '안전', '위험', '사고 보고'로 쓰더라도,
+일상어 그대로는 개념어로 읽기 어려워서입니다(AI 안전, AI 위험, AI 피해, AI 사고, AI 사고 보고).
+일반 위험관리·보안 분야에서 빌려 온 절차 용어(위험 평가, 위험 허용도, 위협 모델링)에는 붙이지 않았습니다.</li>
+<li><b>다른 표기는 대체어로 함께 적습니다.</b> 이전 판의 표기, 정본의 변형 표기, 현장에서 쓰는 음차어 등입니다.</li>
 </ul>
-<pre><code>run_build.sh / run_pdf_build.sh
-merge_glossary.py   동향 ∪ PDF → data/glossary_merged.json
-build_site.py       이 사이트</code></pre>
 
-<h2>동향판 — 어떻게 골랐나</h2>
-<p>MCP 검색만으로 뽑으면 <i>이미 아는 용어를 검색해 확인하는</i> 순환이 된다.
-그래서 코퍼스에서 기계적으로 긁어 올린 뒤 사람이 선별하는 순서로 갔다.</p>
-<pre><code>extract_candidates.py   제목+요약에서 한글 1~2gram·영문 1~3gram
-select_top100.py        표제어 확정 + 지표 자동 결합
-gloss_and_hubs.py       병기율·허브 중심성
-build_json.py           표제어별 실제 용례 수집</code></pre>
+<h2>카드 구성</h2>
+<p>각 카드는 인쇄용 카드와 같은 순서입니다 — 장 · 표제어/영문 · 구분 · 대체어 · 용어 설명
+(굵은 한 줄 정의, 부연, 혼동 용어와의 구별) · 관련 용어 · 주요 기관·문서별 개념 및 적용 · 출처.
+펼치기 아래에는 온라인판에만 있는 해설, PDF 원문 인용, 참고 기사, 코퍼스 지표가 있습니다.</p>
+<p>용어 설명은 이 용어집을 위해 쓴 글이며 인용문이 아닙니다. 기관·문서별 항목은 원문과
+쪽수를 확인한 것만 실었고(현재 104개 표제어), 확인하지 못한 수치나 조문 번호는 쓰지 않았습니다.
+인용이 필요한 자리에서는 출처의 원 문헌을 확인해 주세요.</p>
 
-<h3>분류 쿼터를 둔다</h3>
-<p>점수 순으로 그냥 100개를 자르면 보도량이 많은 법제·정치 용어가 과반을
-먹고 평가·정렬 기술 용어가 밀린다. 13개 분류에 쿼터를 배분했다.</p>
-
-<h3>변이 표기의 빈도를 합산하지 않는다</h3>
-<p><code>정렬</code>(260)과 <code>alignment</code>(198)를 더하면 같은 문서를 두 번
-센다. 대표 표기 하나의 문서 수만 헤드라인 숫자로 쓴다.</p>
-
-<h3>광의어를 대표로 쓰지 않는다</h3>
-<p><code>안전성 평가</code>의 근거는 <code>안전성</code>(340)이 아니라
-<code>안전성 평가</code>(50)다. 전자를 쓰면 표제어의 근거를 오해하게 된다.</p>
-
-<h2>정의문을 어떻게 썼나</h2>
-<p>표제어마다 <b>번역어(대안적 번역어) 원어</b> · <b>한줄 정의</b> · <b>설명 두 문단</b>을
-같은 틀로 붙였다. 예컨대 <code>파인튜닝(미세조정) fine-tuning</code>처럼, 국문 표기가
-둘 이상 통용되는 경우 대안역을 괄호에 넣었다 — 100개 가운데 95개가 여기 해당한다.</p>
-<p>설명의 목적은 <b>한줄 정의만으로 이해가 안 되는 사람에게 개념을 풀어 주는</b>
-것이다. 사전 항목처럼 깔끔하게 쓰되 친절하게 — 왜 이런 개념이 필요한지, 어떤
-구조에서 그런 일이 생기는지, 무엇과 혼동되는지를 구체적인 예와 함께 짚는다.
-청소 로봇이 센서를 가리는 쪽을 배우는 이야기(정렬), 존재하지 않는 인용을 형식만
-완벽하게 지어내는 이야기(환각)처럼, 개념이 손에 잡히는 장면을 하나씩 붙였다.</p>
-<p>두 문단은 역할을 나눈다. 첫 문단은 <b>개념의 속을 풀어 준다</b> — 왜 이런 일이
-생기고 어떤 구조에서 비롯되는지. 둘째 문단은 <b>한 발 더 들어간다</b> — 인접 개념과의
-구별, 실제로 어떤 모습으로 나타나는지, 왜 다루기 어려운지. 뒤쪽에 구별을 두는 이유는
-이 분야에서 잘못 읽히는 대부분이 인접 개념의 혼동에서 생기기 때문이다. 해석가능성과
-설명가능성, 오용과 남용, 환각과 기만, 프라이버시와 개인정보 보호, 오정보와 허위정보,
-그리고 특히 <b>범용 AI 모델(GPAI)과 범용인공지능(AGI)</b>이 그렇다.</p>
-<p><b>조문·표준을 특정할 수 있는 항목에는 근거를 달았다</b>(13개). EU AI법의 인간
-감독·금지 관행·고위험·투명성 의무·범용 AI 모델·AI 리터러시·중대 사고 보고 조항,
-GDPR과 국내 개인정보 보호법의 자동화된 결정 조항, NIST AI RMF와 ISO/IEC 42001,
-성폭력처벌법과 아동·청소년성보호법, 그리고 자유권규약 제19조다. 나머지 항목의
-정의문은 이 용어집을 위해 쓴 것이며 인용문이 아니다. 확인할 수 없는 수치나 날짜는
-쓰지 않고 개념 설명에 머물렀다.</p>
-<p>한 문단은 250자 안팎이다. 정의문은 검색 대상에 포함된다. 그래서 표제어에 없는 말로도 찾을 수 있다 —
-<code>보상 해킹</code>, <code>과도 거부</code>, <code>C2PA</code>, <code>LAWS</code>,
-<code>머신 언러닝</code>처럼 본문에서만 언급한 개념들이다.</p>
-
-<h2>중심성 실험 — 무엇이 작동했나</h2>
-<p>"최근성만 보지 말고 중심성도 따지자"에서 네 가지를 계산했다. 결과가 갈렸다.</p>
-
-<h3>작동하지 않은 것 — 전부 일반어 탐지기였다</h3>
+<h2>근거 자료와 다른 사이트</h2>
 <table>
-<tr><th>지표</th><th>최상위에 나온 것</th></tr>
-<tr><td>degree (동시출현 이웃 수)</td><td>AI, 문제, 가능성, 있으, 에서, 등을</td></tr>
-<tr><td>topic_entropy (17개 토픽 분산)</td><td>의사결정, 자원, 생태계, 등에, 있고, 통한</td></tr>
-<tr><td>pagerank_pmi (PMI 가중 PageRank)</td><td>문제의식, 기여, 동기, 점이, 측면, 주로</td></tr>
+<tr><th>자료</th><th>용어집에서 쓰는 곳</th></tr>
+<tr><td><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener">AI 안전 다이제스트</a></td>
+<td>매일 모으는 뉴스·정책 동향. 표제어 후보 추출과 <b>참고 기사</b>의 출처입니다
+(빌드 시점 5,798건, 2009-04-13 ~ 2026-09-08).
+기사마다 원문 링크와 함께 그 기사가 실린 다이제스트 날짜 페이지를 잇습니다.</td></tr>
+<tr><td><a href="https://songkyungho.github.io/ai-safety-research/" target="_blank" rel="noopener">AI 안전 연구</a></td>
+<td>논문·연구 보고서 카탈로그. 참고 기사 가운데 <span class="ex-tag">연구</span> 표시가 붙은 항목이 연구 문헌입니다.</td></tr>
+<tr><td>PDF 근거 색인</td>
+<td>국제 보고서·법령·가이드라인 PDF를 쪽 단위로 색인한 연구소 내부 자료(PDF Evidence Desk)입니다.
+<b>PDF 원문 인용</b>과 쪽수가 여기서 옵니다. 현재 문서 7종: AI 핵심용어 단면, EU GPAI CoP 안내서 (KO), IASR 2025, IASR 2026, 기본법 지원데스크 사례집, 안정성 확보 가이드라인, 인공지능기본법.</td></tr>
+<tr><td><a href="https://songkyungho.github.io/ai-safety-library/" target="_blank" rel="noopener">AI 안전 라이브러리</a></td>
+<td>정책·보고서 문서 목록. 인용 문서가 라이브러리에 있으면 출처 옆에 <b>라이브러리에서 보기</b>를 붙입니다.</td></tr>
 </table>
-<p>이유: <b>코퍼스 전체가 이미 AI 안전 문서다.</b> 그래서 그래프 중심성이 개념
-위계가 아니라 국문 논문·기사의 상투적 연결어를 재발견한다. 중심성이 쓸모
-있으려면 여러 도메인이 섞인 코퍼스에서 AI 안전 용어가 구별되는 군집을
-이뤄야 하는데, 여기서는 그 군집이 곧 전체다.</p>
-<p><code>topic_entropy</code>에 걸었던 가설("여러 영역을 관통하면 기초 개념")도
-틀렸다. 코퍼스가 알려주는 건 <b>관통 = 모호함</b>이다.</p>
-<p>세 지표는 <b>음의 신호로만</b> 값어치가 있다. degree가 높은데 병기율이 0에
-가까우면 일반어이고(<code>위협</code> 0.79/0.03), 둘 다 높으면 핵심
-기술어다(<code>정렬</code> 0.74/0.26).</p>
+<p>용어마다 고정 주소가 있습니다. 카드 왼쪽 위 번호를 누르면 그 용어의 주소가 됩니다
+(예: <code>#incident-reporting</code>). 검색어와 장도 주소로 넘길 수 있습니다
+(<code>?q=탈옥</code>, <code>?ch=07</code>).</p>
 
-<h3>작동한 것 — 병기율</h3>
-<p>원문이 <code>표제어(뜻풀이)</code> 형태로 쓴 비율. <b>필자가 "이건 설명이
-필요하다"고 이미 판단한 흔적</b>이라, 용어집 적격성의 가장 직접적인 증거다.
-이 지표가 누락 표제어 4개를 찾아냈다 — <b>사고연쇄(CoT)</b>,
-<b>보정(calibration)</b>, <b>LLM 심판(LLM-as-a-Judge)</b>,
-<b>작업 시간 지평</b>. <code>GPAI</code>·<code>ASR</code>·<code>XAI</code>는
-기존 표제어의 원어로 확인돼 영문 표기를 보강했다.</p>
-<p>괄호 내용이 실제 뜻풀이인지 검사한다. <code>첨부파일(hwp)</code>·
-<code>모집(~5.30)</code> 같은 서식 괄호는 걸러낸다 — 정교화 전에는
-<code>첨부파일</code>이 병기율 0.96으로 1위였다.</p>
+<h2>표제어 후보를 어떻게 모았나</h2>
+<p>후보는 두 갈래로 기계적으로 모은 뒤 사람이 골랐습니다. 동향 코퍼스에서는 제목·요약의
+한글·영문 n-gram을 긁어 분류 쿼터를 두고 100개를 골랐고, PDF 색인에서는 정의 섹션과 본문
+빈도로 100개를 골랐습니다. 영문 표기로 합치면 173개였습니다. 2026년 10월 개편에서 중복을 합치고
+AI 안전 관점의 설명이 어려운 일반 용어 16개(개발자, 알고리즘, 암호화, 노동시장, 인공지능산업, 신경망, 딥러닝, 파라미터, 모달리티, 자동화, 최신(최고 수준), 지식재산, 법 집행, 데이터 수집, 디지털 인프라, 독소)를 뺐으며, 장마다 빠진 핵심 개념을 더했습니다.</p>
+<p>후보를 고를 때 가장 쓸모 있었던 지표는 <b>병기율</b>입니다. 원문이 <code>표제어(뜻풀이)</code>처럼
+괄호로 풀어 쓴 비율로, 필자가 "설명이 필요하다"고 판단한 흔적입니다. 이 지표로 사고 사슬(CoT),
+보정, LLM 심판, 작업 시간 지평을 찾았습니다. 반대로 동시출현 그래프의 중심성(degree, 토픽 엔트로피,
+PMI 가중 PageRank)은 '문제', '가능성' 같은 일반어만 끌어올렸습니다 — 코퍼스 전체가 이미 AI 안전
+문서라서 그래프 중심성이 개념 위계가 아니라 상투적 연결어를 찾아낸 것입니다.</p>
 
 <h2>알려진 한계</h2>
 <ul>
-<li><b>형태소 분석기를 쓰지 않는다.</b> 조사 제거가 휴리스틱이라 오절단이 남는다
-(<code>비동의 성적</code> → <code>비동 성적</code>, 표제어에서 교정).</li>
-<li><b>광의어 용례에 잡음이 있다.</b> <code>AI 감사</code>는 대표 표기가
-<code>감사</code>라서 감사원 맥락까지 걸린다. 용례를 고를 때 구체적 변이를
-우선하지만 완전히 걸러지지는 않는다.</li>
-<li><b>정의문은 인용이 아니다.</b> 근거를 표시한 13개 항목을 뺀 나머지는 이
-용어집을 위해 작성한 설명이다. 사실관계를 틀리지 않게 쓰는 데 무게를 뒀지만,
-권위 있는 출처의 문구를 옮긴 것이 아니므로 인용이 필요한 자리에는 원 문헌을
-확인해야 한다.</li>
-<li><b>고유명사는 표제어에서 제외했다</b> (EU AI Act·NIST AI RMF·K-AISI 등).
-별도 부록 대상이다.</li>
-<li><b>코퍼스 요약 품질.</b> 5,798건 중 829건은 요약이 placeholder
-(<code>요약불가</code> 등)다. 용례에서는 제외한다.</li>
+<li><b>용어 설명은 편집 초안이 섞여 있습니다.</b> 검토를 거친 카드부터 차례로 보강합니다.
+오류를 보시면 아래 메일로 알려 주세요.</li>
+<li><b>참고 기사에 잡음이 있습니다.</b> 표기로만 찾아서, 광의어(예: 감사)는 다른 맥락의 기사가 걸릴 수 있습니다.</li>
+<li><b>고유명사는 표제어에서 뺐습니다</b>(EU AI Act, NIST AI RMF, AISI 등).</li>
 </ul>
 
 <h2>소스</h2>
