@@ -510,6 +510,8 @@ a.lib-link { margin-left: 0; }
 
 /* 용어 관계 — 맨 위 개념 지도와 카드 안 관계도 (relmap.py) */
 .concept-maps {
+  /* 연구 사이트 지도와 같은 넓은 배치 — 본문 폭을 넘어 화면 가운데에 */
+  width: min(1220px, calc(100vw - 32px)); position: relative; left: 50%; transform: translateX(-50%);
   background: var(--surface-1); border: 1px solid var(--hairline); border-radius: 14px;
   padding: 14px 16px 10px; margin: 0 0 6px;
 }
