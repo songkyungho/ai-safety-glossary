@@ -1,6 +1,6 @@
 {
   "id": "binding-force",
-  "kit_id": null,
+  "kit_id": "binding-force",
   "join_keys": [
     "bindingforce"
   ],

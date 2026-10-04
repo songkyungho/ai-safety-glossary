@@ -1,6 +1,6 @@
 {
   "id": "autonomous-weapons",
-  "kit_id": null,
+  "kit_id": "autonomous-weapons",
   "join_keys": [
     "autonomousweapons"
   ],

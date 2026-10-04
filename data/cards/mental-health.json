@@ -1,6 +1,6 @@
 {
   "id": "mental-health",
-  "kit_id": null,
+  "kit_id": "mental-health",
   "join_keys": [
     "mentalhealth"
   ],

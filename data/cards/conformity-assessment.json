@@ -1,6 +1,6 @@
 {
   "id": "conformity-assessment",
-  "kit_id": null,
+  "kit_id": "conformity-assessment",
   "join_keys": [
     "conformityassessment"
   ],

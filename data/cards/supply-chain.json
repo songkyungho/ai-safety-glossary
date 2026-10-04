@@ -1,6 +1,6 @@
 {
   "id": "supply-chain",
-  "kit_id": null,
+  "kit_id": "supply-chain",
   "join_keys": [
     "supplychain"
   ],

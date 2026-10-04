@@ -1,6 +1,6 @@
 {
   "id": "provenance-metadata",
-  "kit_id": null,
+  "kit_id": "provenance-metadata",
   "join_keys": [
     "provenancemetadata"
   ],

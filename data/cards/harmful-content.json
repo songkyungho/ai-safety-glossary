@@ -1,6 +1,6 @@
 {
   "id": "harmful-content",
-  "kit_id": null,
+  "kit_id": "harmful-content",
   "join_keys": [
     "harmfulcontent"
   ],

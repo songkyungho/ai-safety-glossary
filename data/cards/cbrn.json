@@ -1,6 +1,6 @@
 {
   "id": "cbrn",
-  "kit_id": null,
+  "kit_id": "cbrn",
   "join_keys": [
     "cbrn"
   ],

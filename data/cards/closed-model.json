@@ -1,6 +1,6 @@
 {
   "id": "closed-model",
-  "kit_id": null,
+  "kit_id": "closed-model",
   "join_keys": [],
   "head": "폐쇄형 모델",
   "en": "closed (proprietary) model",

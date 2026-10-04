@@ -1,6 +1,6 @@
 {
   "id": "incident-report",
-  "kit_id": null,
+  "kit_id": "incident-report",
   "join_keys": [],
   "head": "사고 보고서",
   "en": "incident report",

@@ -1,6 +1,6 @@
 {
   "id": "attack-success-rate-asr",
-  "kit_id": null,
+  "kit_id": "attack-success-rate-asr",
   "join_keys": [
     "attacksuccessrateasr"
   ],

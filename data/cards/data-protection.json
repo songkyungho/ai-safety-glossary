@@ -1,6 +1,6 @@
 {
   "id": "data-protection",
-  "kit_id": null,
+  "kit_id": "data-protection",
   "join_keys": [
     "dataprotection",
     "personaldata",

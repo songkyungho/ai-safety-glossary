@@ -1,6 +1,6 @@
 {
   "id": "risk-management",
-  "kit_id": null,
+  "kit_id": "risk-management",
   "join_keys": [
     "riskmanagement",
     "위험관리체계"

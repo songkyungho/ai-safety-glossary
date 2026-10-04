@@ -1,6 +1,6 @@
 {
   "id": "persuasion",
-  "kit_id": null,
+  "kit_id": "persuasion",
   "join_keys": [
     "persuasion"
   ],

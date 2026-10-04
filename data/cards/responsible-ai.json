@@ -1,6 +1,6 @@
 {
   "id": "responsible-ai",
-  "kit_id": null,
+  "kit_id": "responsible-ai",
   "join_keys": [
     "responsibleai"
   ],

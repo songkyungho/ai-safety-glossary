@@ -1,6 +1,6 @@
 {
   "id": "ai-assurance",
-  "kit_id": null,
+  "kit_id": "ai-assurance",
   "join_keys": [],
   "head": "신뢰보증",
   "en": "AI assurance",
@@ -46,5 +46,6 @@
     ]
   },
   "status": "draft",
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "head_override": "AI를 떼는 원칙(2026-10-03) — 'AI ○○' 표기는 대체어로 둠"
 }

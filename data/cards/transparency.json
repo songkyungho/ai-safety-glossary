@@ -1,6 +1,6 @@
 {
   "id": "transparency",
-  "kit_id": null,
+  "kit_id": "transparency",
   "join_keys": [
     "transparency"
   ],

@@ -1,6 +1,6 @@
 {
   "id": "abuse",
-  "kit_id": null,
+  "kit_id": "abuse",
   "join_keys": [
     "abuse"
   ],

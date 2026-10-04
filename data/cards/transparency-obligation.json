@@ -1,6 +1,6 @@
 {
   "id": "transparency-obligation",
-  "kit_id": null,
+  "kit_id": "transparency-obligation",
   "join_keys": [
     "transparencyobligation"
   ],

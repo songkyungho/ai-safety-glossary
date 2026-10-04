@@ -1,6 +1,6 @@
 {
   "id": "model-weights",
-  "kit_id": null,
+  "kit_id": "model-weights",
   "join_keys": [
     "modelweights",
     "weights"

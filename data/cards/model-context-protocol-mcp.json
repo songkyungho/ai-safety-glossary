@@ -1,6 +1,6 @@
 {
   "id": "model-context-protocol-mcp",
-  "kit_id": null,
+  "kit_id": "model-context-protocol-mcp",
   "join_keys": [
     "mcp"
   ],
@@ -39,5 +39,6 @@
     ]
   },
   "status": "draft",
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "head_override": "kit 표기의 괄호 주석은 표제어에서 뺌"
 }

@@ -1,6 +1,6 @@
 {
   "id": "cyber-defense",
-  "kit_id": null,
+  "kit_id": "cyber-defense",
   "join_keys": [
     "cyberdefense"
   ],

@@ -1,6 +1,6 @@
 {
   "id": "ai-audit",
-  "kit_id": null,
+  "kit_id": "ai-audit",
   "join_keys": [
     "aiaudit",
     "audit"
@@ -74,5 +74,6 @@
       }
     }
   ],
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "head_override": "AI를 떼는 원칙(2026-10-03) — 'AI ○○' 표기는 대체어로 둠"
 }

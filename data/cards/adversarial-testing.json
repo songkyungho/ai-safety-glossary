@@ -1,6 +1,6 @@
 {
   "id": "adversarial-testing",
-  "kit_id": null,
+  "kit_id": "adversarial-testing",
   "join_keys": [],
   "head": "적대적 시험",
   "en": "adversarial testing",

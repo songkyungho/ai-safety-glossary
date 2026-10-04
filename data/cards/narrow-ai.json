@@ -1,6 +1,6 @@
 {
   "id": "narrow-ai",
-  "kit_id": null,
+  "kit_id": "narrow-ai",
   "join_keys": [
     "narrowai"
   ],

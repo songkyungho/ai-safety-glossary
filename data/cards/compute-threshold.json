@@ -1,6 +1,6 @@
 {
   "id": "compute-threshold",
-  "kit_id": null,
+  "kit_id": "compute-threshold",
   "join_keys": [],
   "head": "연산 임계값",
   "en": "compute threshold",

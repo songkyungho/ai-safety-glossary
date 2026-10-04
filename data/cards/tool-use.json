@@ -1,6 +1,6 @@
 {
   "id": "tool-use",
-  "kit_id": null,
+  "kit_id": "tool-use",
   "join_keys": [
     "tooluse"
   ],

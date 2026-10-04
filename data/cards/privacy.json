@@ -1,6 +1,6 @@
 {
   "id": "privacy",
-  "kit_id": null,
+  "kit_id": "privacy",
   "join_keys": [
     "privacy"
   ],

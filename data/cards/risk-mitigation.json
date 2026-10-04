@@ -1,6 +1,6 @@
 {
   "id": "risk-mitigation",
-  "kit_id": null,
+  "kit_id": "risk-mitigation",
   "join_keys": [
     "riskmitigation"
   ],

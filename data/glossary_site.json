@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI 안전 용어집",
-    "built_at": "2026-10-04T22:27:09+09:00",
+    "built_at": "2026-10-04T22:56:56+09:00",
     "method": "glossary_merged.json + data/cards 편집 계층",
     "counts": {
       "entries": 170,
@@ -2115,7 +2115,7 @@
       "id": "closed-model",
       "head": "폐쇄형 모델",
       "en": "closed (proprietary) model",
-      "kit_id": null,
+      "kit_id": "closed-model",
       "alternatives": [
         {
           "text": "비공개 모델",
@@ -2253,7 +2253,7 @@
       "id": "model-weights",
       "head": "모델 가중치",
       "en": "model weights",
-      "kit_id": null,
+      "kit_id": "model-weights",
       "alternatives": [
         {
           "text": "파라미터",
@@ -4913,7 +4913,7 @@
       "id": "autonomy",
       "head": "자율성",
       "en": "autonomy",
-      "kit_id": null,
+      "kit_id": "autonomy",
       "alternatives": [
         {
           "text": "AI 자율성",
@@ -5083,7 +5083,7 @@
       "id": "autonomous-planning",
       "head": "자율 계획",
       "en": "autonomous planning",
-      "kit_id": null,
+      "kit_id": "autonomous-planning",
       "alternatives": [],
       "chapter": "02",
       "chapter_label": "에이전트·프론티어 역량",
@@ -5228,7 +5228,7 @@
       "id": "tool-use",
       "head": "도구 사용",
       "en": "tool use",
-      "kit_id": null,
+      "kit_id": "tool-use",
       "alternatives": [
         {
           "text": "툴 사용",
@@ -5603,7 +5603,7 @@
       "id": "model-context-protocol-mcp",
       "head": "모델 컨텍스트 프로토콜",
       "en": "Model Context Protocol (MCP)",
-      "kit_id": null,
+      "kit_id": "model-context-protocol-mcp",
       "alternatives": [
         {
           "text": "MCP",
@@ -6009,7 +6009,7 @@
       "id": "task-time-horizon",
       "head": "작업 시간 지평",
       "en": "task time horizon",
-      "kit_id": null,
+      "kit_id": "task-time-horizon",
       "alternatives": [],
       "chapter": "02",
       "chapter_label": "에이전트·프론티어 역량",
@@ -6527,7 +6527,7 @@
       "id": "narrow-ai",
       "head": "협소 AI",
       "en": "narrow AI",
-      "kit_id": null,
+      "kit_id": "narrow-ai",
       "alternatives": [
         {
           "text": "특화 AI",
@@ -6713,7 +6713,7 @@
       "id": "superintelligence",
       "head": "초지능",
       "en": "superintelligence",
-      "kit_id": null,
+      "kit_id": "superintelligence",
       "alternatives": [
         {
           "text": "슈퍼인텔리전스",
@@ -6882,7 +6882,7 @@
       "id": "recursive-self-improvement",
       "head": "재귀적 자기 개선",
       "en": "recursive self-improvement",
-      "kit_id": null,
+      "kit_id": "recursive-self-improvement",
       "alternatives": [
         {
           "text": "재귀적 자기 향상",
@@ -7101,7 +7101,7 @@
       "id": "ai-risk",
       "head": "위험",
       "en": "risk",
-      "kit_id": null,
+      "kit_id": "risk",
       "alternatives": [
         {
           "text": "AI 위험",
@@ -7698,7 +7698,7 @@
       "id": "threat",
       "head": "위협",
       "en": "threat",
-      "kit_id": null,
+      "kit_id": "threat",
       "alternatives": [
         {
           "text": "위협 요인",
@@ -7891,7 +7891,7 @@
       "id": "catastrophic-risk",
       "head": "파국적 위험",
       "en": "catastrophic risk",
-      "kit_id": null,
+      "kit_id": "catastrophic-risk",
       "alternatives": [
         {
           "text": "재앙적 위험",
@@ -8673,7 +8673,7 @@
       "id": "failure-mode",
       "head": "실패 모드",
       "en": "failure mode",
-      "kit_id": null,
+      "kit_id": "failure-mode",
       "alternatives": [
         {
           "text": "고장 유형",
@@ -8797,7 +8797,7 @@
       "id": "risk-assessment",
       "head": "위험 평가",
       "en": "risk assessment",
-      "kit_id": null,
+      "kit_id": "risk-assessment",
       "alternatives": [
         {
           "text": "리스크 평가",
@@ -9043,7 +9043,7 @@
       "id": "risk-management",
       "head": "위험 관리",
       "en": "risk management",
-      "kit_id": null,
+      "kit_id": "risk-management",
       "alternatives": [
         {
           "text": "리스크 관리",
@@ -9382,7 +9382,7 @@
       "id": "risk-mitigation",
       "head": "위험 완화",
       "en": "risk mitigation",
-      "kit_id": null,
+      "kit_id": "risk-mitigation",
       "alternatives": [
         {
           "text": "완화",
@@ -10900,7 +10900,7 @@
       "id": "generalization",
       "head": "일반화",
       "en": "generalization",
-      "kit_id": null,
+      "kit_id": "generalization",
       "alternatives": [],
       "chapter": "04",
       "chapter_label": "모델 행동 위험",
@@ -11032,7 +11032,7 @@
       "id": "reward-hacking",
       "head": "보상 해킹",
       "en": "reward hacking",
-      "kit_id": null,
+      "kit_id": "reward-hacking",
       "alternatives": [
         {
           "text": "명세 게이밍",
@@ -13148,7 +13148,7 @@
       "id": "misuse",
       "head": "오용",
       "en": "misuse",
-      "kit_id": null,
+      "kit_id": "misuse",
       "alternatives": [],
       "chapter": "05",
       "chapter_label": "오용·보안 위협",
@@ -13577,7 +13577,7 @@
       "id": "abuse",
       "head": "남용",
       "en": "abuse",
-      "kit_id": null,
+      "kit_id": "abuse",
       "alternatives": [],
       "chapter": "05",
       "chapter_label": "오용·보안 위협",
@@ -14164,7 +14164,7 @@
       "id": "cbrn",
       "head": "화학·생물·방사능·핵",
       "en": "CBRN",
-      "kit_id": null,
+      "kit_id": "cbrn",
       "alternatives": [],
       "chapter": "05",
       "chapter_label": "오용·보안 위협",
@@ -14286,7 +14286,7 @@
       "id": "persuasion",
       "head": "설득",
       "en": "persuasion",
-      "kit_id": null,
+      "kit_id": "persuasion",
       "alternatives": [],
       "chapter": "05",
       "chapter_label": "오용·보안 위협",
@@ -14743,7 +14743,7 @@
       "id": "cyber-threat",
       "head": "사이버 위협",
       "en": "cyber threat",
-      "kit_id": null,
+      "kit_id": "cyber-threat",
       "alternatives": [],
       "chapter": "05",
       "chapter_label": "오용·보안 위협",
@@ -15080,7 +15080,7 @@
       "id": "vulnerability",
       "head": "취약점",
       "en": "vulnerability",
-      "kit_id": null,
+      "kit_id": "vulnerability",
       "alternatives": [
         {
           "text": "보안 취약점",
@@ -16329,7 +16329,7 @@
       "id": "supply-chain",
       "head": "공급망",
       "en": "supply chain",
-      "kit_id": null,
+      "kit_id": "supply-chain",
       "alternatives": [
         {
           "text": "공급 사슬",
@@ -16485,7 +16485,7 @@
       "id": "autonomous-weapons",
       "head": "자율무기",
       "en": "autonomous weapons",
-      "kit_id": null,
+      "kit_id": "autonomous-weapons",
       "alternatives": [
         {
           "text": "자율살상무기",
@@ -16619,7 +16619,7 @@
       "id": "national-security",
       "head": "국가안보",
       "en": "national security",
-      "kit_id": null,
+      "kit_id": "national-security",
       "alternatives": [
         {
           "text": "안보",
@@ -17497,7 +17497,7 @@
       "id": "harmful-content",
       "head": "유해 콘텐츠",
       "en": "harmful content",
-      "kit_id": null,
+      "kit_id": "harmful-content",
       "alternatives": [
         {
           "text": "위해 콘텐츠",
@@ -18848,7 +18848,7 @@
       "id": "surveillance",
       "head": "감시",
       "en": "surveillance",
-      "kit_id": null,
+      "kit_id": "surveillance",
       "alternatives": [
         {
           "text": "감시 활동",
@@ -19020,7 +19020,7 @@
       "id": "censorship",
       "head": "검열",
       "en": "censorship",
-      "kit_id": null,
+      "kit_id": "censorship",
       "alternatives": [],
       "chapter": "06",
       "chapter_label": "정보생태계·사회적 피해",
@@ -19165,7 +19165,7 @@
       "id": "privacy-breach",
       "head": "개인정보 침해",
       "en": "privacy breach",
-      "kit_id": null,
+      "kit_id": "privacy-breach",
       "alternatives": [
         {
           "text": "개인정보 유출",
@@ -19292,7 +19292,7 @@
       "id": "freedom-of-expression",
       "head": "표현의 자유",
       "en": "freedom of expression",
-      "kit_id": null,
+      "kit_id": "freedom-of-expression",
       "alternatives": [
         {
           "text": "표현 자유",
@@ -19407,7 +19407,7 @@
       "id": "mental-health",
       "head": "정신 건강",
       "en": "mental health",
-      "kit_id": null,
+      "kit_id": "mental-health",
       "alternatives": [],
       "chapter": "06",
       "chapter_label": "정보생태계·사회적 피해",
@@ -19542,7 +19542,7 @@
       "id": "emotional-dependence",
       "head": "정서적 의존",
       "en": "emotional dependence",
-      "kit_id": null,
+      "kit_id": "emotional-dependence",
       "alternatives": [
         {
           "text": "정서적 의존성",
@@ -19651,7 +19651,7 @@
       "id": "child-and-youth-protection",
       "head": "아동·청소년 보호",
       "en": "child and youth protection",
-      "kit_id": null,
+      "kit_id": "child-and-youth-protection",
       "alternatives": [
         {
           "text": "미성년자 보호",
@@ -19761,7 +19761,7 @@
       "id": "age-verification",
       "head": "연령 확인",
       "en": "age verification",
-      "kit_id": null,
+      "kit_id": "age-verification",
       "alternatives": [
         {
           "text": "연령 인증",
@@ -20775,7 +20775,7 @@
       "id": "incident-report",
       "head": "사고 보고서",
       "en": "incident report",
-      "kit_id": null,
+      "kit_id": "incident-report",
       "alternatives": [
         {
           "text": "AI 사고 보고서",
@@ -20903,7 +20903,7 @@
       "id": "incident-monitoring",
       "head": "사고 모니터링",
       "en": "incident monitoring",
-      "kit_id": null,
+      "kit_id": "incident-monitoring",
       "alternatives": [
         {
           "text": "AI 사고 모니터링",
@@ -21828,7 +21828,7 @@
       "id": "safety-evaluation",
       "head": "안전성 평가",
       "en": "safety evaluation",
-      "kit_id": null,
+      "kit_id": "safety-evaluation",
       "alternatives": [
         {
           "text": "안전 평가",
@@ -22013,7 +22013,7 @@
       "id": "capability-evaluation",
       "head": "역량 평가",
       "en": "capability evaluation",
-      "kit_id": null,
+      "kit_id": "capability-evaluation",
       "alternatives": [
         {
           "text": "위험 역량 평가",
@@ -22171,7 +22171,7 @@
       "id": "pre-deployment-evaluation",
       "head": "배포 전 평가",
       "en": "pre-deployment evaluation",
-      "kit_id": null,
+      "kit_id": "pre-deployment-evaluation",
       "alternatives": [],
       "chapter": "08",
       "chapter_label": "평가·시험",
@@ -22917,7 +22917,7 @@
       "id": "adversarial-testing",
       "head": "적대적 시험",
       "en": "adversarial testing",
-      "kit_id": null,
+      "kit_id": "adversarial-testing",
       "alternatives": [
         {
           "text": "적대적 테스트",
@@ -23012,7 +23012,7 @@
       "id": "attack-success-rate-asr",
       "head": "공격 성공률",
       "en": "attack success rate (ASR)",
-      "kit_id": null,
+      "kit_id": "attack-success-rate-asr",
       "alternatives": [
         {
           "text": "ASR",
@@ -23146,7 +23146,7 @@
       "id": "llm-as-a-judge",
       "head": "LLM 심판",
       "en": "LLM-as-a-judge",
-      "kit_id": null,
+      "kit_id": "llm-as-a-judge",
       "alternatives": [
         {
           "text": "LLM 평가자",
@@ -23287,7 +23287,7 @@
       "id": "calibration",
       "head": "보정",
       "en": "calibration",
-      "kit_id": null,
+      "kit_id": "calibration",
       "alternatives": [
         {
           "text": "캘리브레이션",
@@ -23435,7 +23435,7 @@
       "id": "ai-audit",
       "head": "감사",
       "en": "AI audit",
-      "kit_id": null,
+      "kit_id": "ai-audit",
       "alternatives": [
         {
           "text": "AI 감사",
@@ -25133,7 +25133,7 @@
       "id": "sandboxing",
       "head": "샌드박싱",
       "en": "sandboxing",
-      "kit_id": null,
+      "kit_id": "sandboxing",
       "alternatives": [
         {
           "text": "격리",
@@ -25418,7 +25418,7 @@
       "id": "human-in-the-loop",
       "head": "휴먼 인 더 루프",
       "en": "human-in-the-loop (HITL)",
-      "kit_id": null,
+      "kit_id": "human-in-the-loop-hitl",
       "alternatives": [
         {
           "text": "인간 최종 확인",
@@ -25853,7 +25853,7 @@
       "id": "cyber-defense",
       "head": "사이버 방어",
       "en": "cyber defence",
-      "kit_id": null,
+      "kit_id": "cyber-defense",
       "alternatives": [
         {
           "text": "사이버 방호",
@@ -25999,7 +25999,7 @@
       "id": "vulnerability-detection",
       "head": "취약점 탐지",
       "en": "vulnerability detection",
-      "kit_id": null,
+      "kit_id": "vulnerability-detection",
       "alternatives": [
         {
           "text": "취약점 발견",
@@ -26378,7 +26378,7 @@
       "id": "provenance-metadata",
       "head": "출처 메타데이터",
       "en": "provenance metadata",
-      "kit_id": null,
+      "kit_id": "provenance-metadata",
       "alternatives": [],
       "chapter": "09",
       "chapter_label": "정렬·안전장치·감독",
@@ -26988,7 +26988,7 @@
       "id": "responsible-ai",
       "head": "책임 있는 AI",
       "en": "responsible AI",
-      "kit_id": null,
+      "kit_id": "responsible-ai",
       "alternatives": [
         {
           "text": "책임성 있는 AI",
@@ -27525,7 +27525,7 @@
       "id": "transparency",
       "head": "투명성",
       "en": "transparency",
-      "kit_id": null,
+      "kit_id": "transparency",
       "alternatives": [],
       "chapter": "10",
       "chapter_label": "원칙·책임",
@@ -28679,7 +28679,7 @@
       "id": "ai-assurance",
       "head": "신뢰보증",
       "en": "AI assurance",
-      "kit_id": null,
+      "kit_id": "ai-assurance",
       "alternatives": [
         {
           "text": "AI 신뢰보증",
@@ -29303,7 +29303,7 @@
       "id": "artificial-intelligence",
       "head": "인공지능",
       "en": "artificial intelligence (AI)",
-      "kit_id": null,
+      "kit_id": "artificial-intelligence",
       "alternatives": [],
       "chapter": "11",
       "chapter_label": "법·규제·표준",
@@ -29975,7 +29975,7 @@
       "id": "high-risk-ai",
       "head": "고위험 AI",
       "en": "high-risk AI",
-      "kit_id": null,
+      "kit_id": "high-risk-ai",
       "alternatives": [
         {
           "text": "고위험 AI 시스템",
@@ -30191,7 +30191,7 @@
       "id": "high-impact-ai",
       "head": "고영향 AI",
       "en": "high-impact AI",
-      "kit_id": null,
+      "kit_id": "high-impact-ai",
       "alternatives": [
         {
           "text": "고영향 인공지능",
@@ -30826,7 +30826,7 @@
       "id": "compute-threshold",
       "head": "연산 임계값",
       "en": "compute threshold",
-      "kit_id": null,
+      "kit_id": "compute-threshold",
       "alternatives": [
         {
           "text": "FLOP 기준",
@@ -30976,7 +30976,7 @@
       "id": "conformity-assessment",
       "head": "적합성 평가",
       "en": "conformity assessment",
-      "kit_id": null,
+      "kit_id": "conformity-assessment",
       "alternatives": [],
       "chapter": "11",
       "chapter_label": "법·규제·표준",
@@ -31204,7 +31204,7 @@
       "id": "certification",
       "head": "인증",
       "en": "certification",
-      "kit_id": null,
+      "kit_id": "certification",
       "alternatives": [
         {
           "text": "적합 인증",
@@ -31376,7 +31376,7 @@
       "id": "standardization",
       "head": "표준화",
       "en": "standardization",
-      "kit_id": null,
+      "kit_id": "standardization",
       "alternatives": [
         {
           "text": "표준 제정",
@@ -31813,7 +31813,7 @@
       "id": "compliance",
       "head": "규정 준수",
       "en": "compliance",
-      "kit_id": null,
+      "kit_id": "compliance",
       "alternatives": [
         {
           "text": "컴플라이언스",
@@ -31980,7 +31980,7 @@
       "id": "transparency-obligation",
       "head": "투명성 의무",
       "en": "transparency obligation",
-      "kit_id": null,
+      "kit_id": "transparency-obligation",
       "alternatives": [
         {
           "text": "표시 의무",
@@ -32185,7 +32185,7 @@
       "id": "binding-force",
       "head": "구속력",
       "en": "binding force",
-      "kit_id": null,
+      "kit_id": "binding-force",
       "alternatives": [
         {
           "text": "법적 구속력",
@@ -32303,7 +32303,7 @@
       "id": "export-control",
       "head": "수출 통제",
       "en": "export control",
-      "kit_id": null,
+      "kit_id": "export-control",
       "alternatives": [
         {
           "text": "수출 규제",
@@ -32439,7 +32439,7 @@
       "id": "privacy",
       "head": "프라이버시",
       "en": "privacy",
-      "kit_id": null,
+      "kit_id": "privacy",
       "alternatives": [
         {
           "text": "사생활",
@@ -32729,7 +32729,7 @@
       "id": "data-protection",
       "head": "개인정보 보호",
       "en": "data protection",
-      "kit_id": null,
+      "kit_id": "data-protection",
       "alternatives": [
         {
           "text": "데이터 보호",

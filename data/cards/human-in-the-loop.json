@@ -1,6 +1,6 @@
 {
   "id": "human-in-the-loop",
-  "kit_id": null,
+  "kit_id": "human-in-the-loop-hitl",
   "join_keys": [],
   "head": "휴먼 인 더 루프",
   "en": "human-in-the-loop (HITL)",

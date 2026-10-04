@@ -1,6 +1,6 @@
 {
   "id": "certification",
-  "kit_id": null,
+  "kit_id": "certification",
   "join_keys": [
     "certification"
   ],

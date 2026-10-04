@@ -1,6 +1,6 @@
 {
   "id": "pre-deployment-evaluation",
-  "kit_id": null,
+  "kit_id": "pre-deployment-evaluation",
   "join_keys": [],
   "head": "배포 전 평가",
   "en": "pre-deployment evaluation",
