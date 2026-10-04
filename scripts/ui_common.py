@@ -20,7 +20,7 @@ LIBRARY_URL = "https://songkyungho.github.io/ai-safety-library/"
 LIBRARY_LABEL = "AI 안전 라이브러리"
 RESEARCH_URL = "https://songkyungho.github.io/ai-safety-research/"
 RESEARCH_LABEL = "AI 안전 연구"
-OPPORTUNITY_URL = "https://songkyungho.github.io/ai-safety-opportunities/"
+OPPORTUNITY_URL = "https://songkyungho.github.io/ai-safety-board/"
 OPPORTUNITY_LABEL = "AI 안전 알림판"
 NAV_ITEMS = NAV_RIGHT
 
