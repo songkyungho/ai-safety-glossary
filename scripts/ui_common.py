@@ -10,18 +10,22 @@ from __future__ import annotations
 import html
 import json
 import re
+import os
+import sys
+from pathlib import Path
+
+# 시리즈 사이트 이름·주소·순서는 ai-safety-common/series.json이 정본이다.
+sys.path.insert(0, os.environ.get("AI_SAFETY_COMMON") or str(Path.home() / "Code" / "ai-safety-common"))
+from aisafety_common import series  # noqa: E402
 
 NAV_RIGHT = [
     ("about.html", "소개"),
 ]
-DIGEST_URL = "https://songkyungho.github.io/ai-safety-digest/"
-DIGEST_LABEL = "AI 안전 다이제스트"
-LIBRARY_URL = "https://songkyungho.github.io/ai-safety-library/"
-LIBRARY_LABEL = "AI 안전 라이브러리"
-RESEARCH_URL = "https://songkyungho.github.io/ai-safety-research/"
-RESEARCH_LABEL = "AI 안전 연구"
-OPPORTUNITY_URL = "https://songkyungho.github.io/ai-safety-board/"
-OPPORTUNITY_LABEL = "AI 안전 알림판"
+SITE_KEY = "glossary"
+DIGEST_URL, DIGEST_LABEL = series.url("digest"), series.label("digest")
+LIBRARY_URL, LIBRARY_LABEL = series.url("library"), series.label("library")
+RESEARCH_URL, RESEARCH_LABEL = series.url("research"), series.label("research")
+OPPORTUNITY_URL, OPPORTUNITY_LABEL = series.url("board"), series.label("board")
 NAV_ITEMS = NAV_RIGHT
 
 # 네 사이트가 한 시리즈로 보이도록 지면·타이포·구조는 라이브러리와 같게 두고,
@@ -231,12 +235,11 @@ def _nav_items(items: list[tuple[str, str]], current: str, *, rel_prefix: str) -
 
 def nav_html(current: str = "", *, rel_prefix: str = "") -> str:
     # 다섯 사이트 공통 순서: 다이제스트 → 라이브러리 → 연구 → 용어집 → 알림판
-    left = (
-        _nav_item(DIGEST_URL, DIGEST_LABEL, active=False, rel_prefix="")
-        + _nav_item(LIBRARY_URL, LIBRARY_LABEL, active=False, rel_prefix="")
-        + _nav_item(RESEARCH_URL, RESEARCH_LABEL, active=False, rel_prefix="")
-        + _nav_item("index.html", "AI 안전 용어집", active=True, rel_prefix=rel_prefix)
-        + _nav_item(OPPORTUNITY_URL, OPPORTUNITY_LABEL, active=False, rel_prefix="")
+    left = "".join(
+        _nav_item("index.html", s["label"], active=True, rel_prefix=rel_prefix)
+        if s["key"] == SITE_KEY
+        else _nav_item(s["url"], s["label"], active=False, rel_prefix="")
+        for s in series.sites()
     )
     return (
         '<nav class="global-nav" aria-label="사이트">'
