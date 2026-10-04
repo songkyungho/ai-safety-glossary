@@ -20,6 +20,8 @@ LIBRARY_URL = "https://songkyungho.github.io/ai-safety-library/"
 LIBRARY_LABEL = "AI 안전 라이브러리"
 RESEARCH_URL = "https://songkyungho.github.io/ai-safety-research/"
 RESEARCH_LABEL = "AI 안전 연구"
+OPPORTUNITY_URL = "https://songkyungho.github.io/ai-safety-opportunities/"
+OPPORTUNITY_LABEL = "AI 안전 기회"
 NAV_ITEMS = NAV_RIGHT
 
 # 네 사이트가 한 시리즈로 보이도록 지면·타이포·구조는 라이브러리와 같게 두고,
@@ -228,12 +230,13 @@ def _nav_items(items: list[tuple[str, str]], current: str, *, rel_prefix: str) -
 
 
 def nav_html(current: str = "", *, rel_prefix: str = "") -> str:
-    # 네 사이트 공통 순서: 다이제스트 → 라이브러리 → 연구 → 용어집
+    # 다섯 사이트 공통 순서: 다이제스트 → 라이브러리 → 연구 → 용어집 → 기회
     left = (
         _nav_item(DIGEST_URL, DIGEST_LABEL, active=False, rel_prefix="")
         + _nav_item(LIBRARY_URL, LIBRARY_LABEL, active=False, rel_prefix="")
         + _nav_item(RESEARCH_URL, RESEARCH_LABEL, active=False, rel_prefix="")
         + _nav_item("index.html", "AI 안전 용어집", active=True, rel_prefix=rel_prefix)
+        + _nav_item(OPPORTUNITY_URL, OPPORTUNITY_LABEL, active=False, rel_prefix="")
     )
     return (
         '<nav class="global-nav" aria-label="사이트">'
