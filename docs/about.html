@@ -35,7 +35,7 @@
   --on-dark: #f4f2eb;
 }
 * { box-sizing: border-box; }
-html { font-size: 16px; overflow-x: hidden; }
+html { font-size: 16px; overflow-x: clip; }
 body {
   margin: 0;
   background: var(--plane);
@@ -44,9 +44,9 @@ body {
     "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
-.viz-root { min-height: 100vh; background: var(--plane); color: var(--ink); overflow-x: hidden; }
+.viz-root { min-height: 100vh; background: var(--plane); color: var(--ink); overflow-x: clip; }
 .global-nav {
   position: sticky; top: 0; z-index: 40;
   background: var(--navy); color: var(--on-navy); height: 40px;
