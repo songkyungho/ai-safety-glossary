@@ -235,12 +235,9 @@ def _nav_items(items: list[tuple[str, str]], current: str, *, rel_prefix: str) -
 
 def nav_html(current: str = "", *, rel_prefix: str = "") -> str:
     # 다섯 사이트 공통 순서: 다이제스트 → 라이브러리 → 연구 → 용어집 → 알림판
-    left = "".join(
-        _nav_item("index.html", s["label"], active=True, rel_prefix=rel_prefix)
-        if s["key"] == SITE_KEY
-        else _nav_item(s["url"], s["label"], active=False, rel_prefix="")
-        for s in series.sites()
-    )
+    # 시리즈 메뉴는 다섯 사이트가 같은 함수로 그린다. 하위 페이지에서는 사이트 이름이 첫 화면으로 가는 링크가 된다.
+    home = None if current in ("", "index.html") else f"{rel_prefix}index.html"
+    left = series.nav_left_html(SITE_KEY, home)
     return (
         '<nav class="global-nav" aria-label="사이트">'
         '<div class="global-nav-inner">'
