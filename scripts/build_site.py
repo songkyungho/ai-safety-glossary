@@ -16,6 +16,7 @@ from datetime import datetime, timezone, timedelta
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config  # noqa: E402
 import ui_common as ui  # noqa: E402
+from aisafety_common import favicon  # noqa: E402 — ui_common이 ai-safety-common 경로를 잡아 준다
 import relmap  # noqa: E402
 
 KST = timezone(timedelta(hours=9))
@@ -678,6 +679,7 @@ def page(title, current, body, *, head_count=None, extra_js=""):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)}</title>
+{favicon.head_html("glossary")}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1528,6 +1530,7 @@ def main():
         sys.exit("사이트 JSON이 없다: %s\n  python3 scripts/apply_editorial.py 를 먼저 실행하라." % path)
     data = json.load(open(path, encoding="utf-8"))
     os.makedirs(config.DOCS, exist_ok=True)
+    favicon.write_files("glossary", config.DOCS)  # 탭 아이콘(PNG는 Safari용)
     for name, fn in (("index.html", index_page), ("about.html", about_page)):
         p = os.path.join(config.DOCS, name)
         with open(p, "w", encoding="utf-8") as f:
