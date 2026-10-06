@@ -7,9 +7,9 @@
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
-if [[ "${GLOSSARY_SKIP:-0}" =~ ^(1|true|yes|on)$ ]]; then echo "용어집: GLOSSARY_SKIP — 건너뜀"; exit 0; fi
+if [[ "${GLOSSARY_SKIP:-0}" =~ ^(1|true|yes|on)$ ]]; then echo "용어집: GLOSSARY_SKIP — 건너뜀"; echo "[skip] GLOSSARY_SKIP"; exit 0; fi
 if [[ -n "$(git status --porcelain -- data/cards scripts)" ]]; then
-  echo "용어집: 카드·스크립트에 커밋 안 된 변경이 있어 건너뜀"; exit 0
+  echo "용어집: 카드·스크립트에 커밋 안 된 변경이 있어 건너뜀"; echo "[skip] 커밋 안 된 변경"; exit 0
 fi
 COMMON="${AI_SAFETY_COMMON:-$HOME/Code/ai-safety-common}"
 KIT="${GLOSSARY_KIT:-$HOME/Code/ai-safety-translation-kit}"
@@ -17,7 +17,7 @@ built=docs/index.html
 newer=""
 if [[ -f "$built" ]]; then
   newer=$(find data/cards scripts "$KIT/data/terms.json" "$COMMON/series.json" -type f \( -name '*.py' -o -name '*.json' \) -newer "$built" 2>/dev/null | head -1)
-  if [[ -z "$newer" ]]; then echo "용어집: 재료 변동 없음 — 건너뜀"; exit 0; fi
+  if [[ -z "$newer" ]]; then echo "용어집: 재료 변동 없음 — 건너뜀"; echo "[skip] 재료 변동 없음"; exit 0; fi
 fi
 ./run_build.sh --site >/dev/null || { echo "용어집: 빌드 실패" >&2; exit 1; }
 n=$(ls data/cards/*.json | wc -l | tr -d ' ')
