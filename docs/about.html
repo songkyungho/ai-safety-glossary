@@ -1,42 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>소개 · AI 안전 용어집</title>
+<meta name="description" content="AI 안전 연구·정책에서 자주 쓰는 용어를 AI 안전 관점에서 풀어 쓴 용어집">
+<meta property="og:title" content="소개 · AI 안전 용어집">
+<meta property="og:description" content="AI 안전 연구·정책에서 자주 쓰는 용어를 AI 안전 관점에서 풀어 쓴 용어집">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://songkyungho.github.io/ai-safety-glossary/about.html">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23f4f2eb'/><path d='M8 20 L8 8 L17 8' stroke='%23a16207' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M24 12 L24 24 L15 24' stroke='%23a16207' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 :root {
   color-scheme: light;
-  --ink: #243044;
-  --ink-muted: #3a4658;
-  --text-muted: #5c6670;
-  --text-primary: #243044;
-  --text-secondary: #3a4658;
-  --plane: #f4f2eb;
-  --surface-1: #fffcf6;
-  --surface-2: #f7f4ec;
-  --surface-pearl: #fffcf6;
-  --hairline: #ddd6c8;
-  --border: #ddd6c8;
-  --gridline: #ebe6da;
-  --baseline: #ddd6c8;
-  --accent: #c45c48;
-  --accent-focus: #2f5951;
-  --navy: #2f5951;
-  --navy-2: #3e6f64;
-  --gold: #cf8b5e;
-  --gold-strong: #dda078;
-  --on-navy: #f4f2eb;
-  --on-navy-muted: #c5ced8;
-  --sage: #3f5340;
-  --on-dark: #f4f2eb;
+  --ink: #243044; --ink-muted: #3a4658; --text-muted: #5c6670;
+  --text-primary: #243044; --text-secondary: #3a4658;
+  --plane: #f4f2eb; --surface-1: #fffcf6; --surface-2: #f7f4ec; --surface-pearl: #fffcf6;
+  --hairline: #ddd6c8; --border: #ddd6c8; --gridline: #ebe6da; --baseline: #ddd6c8;
+  --accent: #c45c48; --accent-focus: #2f5951;
+  --navy: #2f5951; --navy-2: #3e6f64; --gold: #cf8b5e; --gold-strong: #dda078;
+  --on-navy: #f4f2eb; --on-navy-muted: #c5ced8; --sage: #3f5340; --on-dark: #f4f2eb;
 }
+
 * { box-sizing: border-box; }
 html { font-size: 16px; overflow-x: clip; }
 body {
@@ -49,6 +40,8 @@ body {
   line-height: 1.7;
   overflow-x: clip;
 }
+a { color: var(--sage); }
+a:hover { color: var(--accent); }
 .viz-root { min-height: 100vh; background: var(--plane); color: var(--ink); overflow-x: clip; }
 .global-nav {
   position: sticky; top: 0; z-index: 40;
@@ -81,6 +74,11 @@ header.page-head h1 {
   font-size: 1.6rem; margin: 0 0 4px; font-weight: 700; letter-spacing: -0.01em;
   line-height: 1.35;
 }
+header.page-head .title-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 0 0 4px; }
+header.page-head .title-row h1 { margin: 0; }
+a.cta-btn { display: inline-block; background: var(--gold); color: var(--navy); text-decoration: none;
+  padding: 2px 10px; border-radius: 999px; font-size: 0.82rem; font-weight: 600; }
+a.cta-btn:hover { background: var(--gold-strong); color: var(--navy); }
 header.page-head .tagline {
   margin: 0; font-size: 0.95rem; color: var(--on-navy-muted); line-height: 1.55;
   max-width: 48em;
@@ -133,11 +131,7 @@ header.page-head .tagline a:hover { color: var(--gold); }
 .site-footer a:hover { color: var(--gold); }
 .org-flag { font-style: normal; font-size: 1.05em; line-height: 1; margin-right: 4px; }
 
-/* 지면 토큰은 ui_common.NAV_CSS(:root) — 라이브러리와 같은 팔레트 */
-a { color: var(--sage); }
-a:hover { color: var(--accent); }
-.wrap { max-width: 980px; }
-
+/* 지면 토큰·전역 메뉴·머리띠·바닥글은 chrome(ai-safety-common) — 여기는 용어집만의 규칙 */
 #listControls { margin: 0 0 18px; }
 .filter-toolbar {
   display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
@@ -779,11 +773,13 @@ details:not([open]).term-card .ribbon { display: none; }
     box-shadow: 0 4px 14px color-mix(in srgb, var(--ink) 25%, transparent);
   }
 }
+
 </style>
 </head>
 <body>
 <div class="viz-root">
-<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 다이제스트</a><a href="https://songkyungho.github.io/ai-safety-library/" target="_blank" rel="noopener noreferrer">AI 안전 라이브러리</a><a href="https://songkyungho.github.io/ai-safety-research/" target="_blank" rel="noopener noreferrer">AI 안전 연구</a><a class="nav-current" href="index.html">AI 안전 용어집</a><a href="https://songkyungho.github.io/ai-safety-board/" target="_blank" rel="noopener noreferrer">AI 안전 알림판</a></div><div class="global-nav-right"><span class="nav-current">소개</span></div></div></nav><header class="page-head"><div class="page-head-inner"><h1>소개</h1><p class="tagline">구성과 표제어 원칙, 근거 자료</p></div></header>
+<nav class="global-nav" aria-label="사이트"><div class="global-nav-inner"><div class="global-nav-left"><a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 다이제스트</a><a href="https://songkyungho.github.io/ai-safety-library/" target="_blank" rel="noopener noreferrer">AI 안전 라이브러리</a><a href="https://songkyungho.github.io/ai-safety-research/" target="_blank" rel="noopener noreferrer">AI 안전 연구</a><a class="nav-current" href="index.html">AI 안전 용어집</a><a href="https://songkyungho.github.io/ai-safety-board/" target="_blank" rel="noopener noreferrer">AI 안전 알림판</a></div><div class="global-nav-right"><span class="nav-current">소개</span></div></div></nav>
+<header class="page-head"><div class="page-head-inner"><h1>소개</h1><p class="tagline">구성과 표제어 원칙, 근거 자료</p></div></header>
 <main class="wrap">
 <div class="prose">
 <p>AI 안전 연구·정책에서 자주 쓰는 용어를 <b>AI 안전 관점</b>에서 풀어 쓴 용어집입니다.

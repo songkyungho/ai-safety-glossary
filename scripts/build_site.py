@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """정적 사이트 생성 — docs/index.html · docs/about.html.
 
-지면 토큰·내비게이션은 ui_common(= AI 안전 라이브러리와 동일)에서 온다.
+페이지 틀(지면 토큰·전역 메뉴·머리띠·바닥글)은 ai-safety-common의 chrome에서 온다.
 입력은 apply_editorial.py가 만든 data/glossary_site.json (병합본 + 카드 편집 계층).
 카드·필터 칩 스타일도 라이브러리 EXTRA_CSS 어휘를 따른다.
 """
@@ -16,17 +16,13 @@ from datetime import datetime, timezone, timedelta
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config  # noqa: E402
 import ui_common as ui  # noqa: E402
-from aisafety_common import favicon  # noqa: E402 — ui_common이 ai-safety-common 경로를 잡아 준다
+from aisafety_common import chrome, favicon, series  # noqa: E402 — ui_common이 ai-safety-common 경로를 잡아 준다
 import relmap  # noqa: E402
 
 KST = timezone(timedelta(hours=9))
 
 GLOSSARY_CSS = """
-/* 지면 토큰은 ui_common.NAV_CSS(:root) — 라이브러리와 같은 팔레트 */
-a { color: var(--sage); }
-a:hover { color: var(--accent); }
-.wrap { max-width: 980px; }
-
+/* 지면 토큰·전역 메뉴·머리띠·바닥글은 chrome(ai-safety-common) — 여기는 용어집만의 규칙 */
 #listControls { margin: 0 0 18px; }
 .filter-toolbar {
   display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
@@ -672,35 +668,11 @@ details:not([open]).term-card .ribbon { display: none; }
 
 
 def page(title, current, body, *, head_count=None, extra_js=""):
-    chrome = ui.page_chrome(current, {"docs": []}, head_count=head_count)
-    return f"""<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(title)}</title>
-{favicon.head_html("glossary")}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>{chrome['nav_css']}{GLOSSARY_CSS}</style>
-</head>
-<body>
-<div class="viz-root">
-{chrome['shell']}
-<main class="wrap">
-{body}
-</main>
-{ui.footer_html()}
-</div>
-{extra_js}
-</body>
-</html>
-"""
+    return ui.page(title, current, body, css=GLOSSARY_CSS, head_count=head_count, extra_js=extra_js)
 
 
-LIBRARY_DOC_URL = ui.LIBRARY_URL + "#{}"
-DIGEST_DAY_URL = ui.DIGEST_URL + "daily/{}.html"
+LIBRARY_DOC_URL = series.url("library") + "#{}"
+DIGEST_DAY_URL = series.url("digest") + "daily/{}.html"
 SOURCE_LABEL = {"kit": "번역 용어 정본", "kit-variant": "정본 변형", "public": "이전 표기",
                 "observed": "코퍼스 관찰", "card": "인쇄 카드", "editor": "편집"}
 
@@ -778,7 +750,7 @@ def sibling_html(e):
                 t=html.escape(x["title"]), s=html.escape((x.get("source") or "")[:24]))
             for x in e["research"])
         out.append(f'<div class="term-examples"><p class="ex-label">관련 연구 · '
-                   f'<a href="{html.escape(ui.RESEARCH_URL)}" target="_blank" rel="noopener">AI 안전 연구</a></p>'
+                   f'<a href="{html.escape(series.url("research"))}" target="_blank" rel="noopener">AI 안전 연구</a></p>'
                    f'<ol>{lis}</ol></div>')
     if e.get("library_docs"):
         lis = "".join(
@@ -789,7 +761,7 @@ def sibling_html(e):
                 o=html.escape(" · ".join(v for v in (x.get("org"), x.get("kind")) if v)[:30]))
             for x in e["library_docs"])
         out.append(f'<div class="term-examples"><p class="ex-label">관련 정책 문서 · '
-                   f'<a href="{html.escape(ui.LIBRARY_URL)}" target="_blank" rel="noopener">AI 안전 라이브러리</a></p>'
+                   f'<a href="{html.escape(series.url("library"))}" target="_blank" rel="noopener">AI 안전 라이브러리</a></p>'
                    f'<ol>{lis}</ol></div>')
     return "".join(out)
 
@@ -1144,7 +1116,7 @@ def concept_maps_html(data):
     return (f'<section class="concept-maps" aria-label="개념 지도">'
             f'<div class="map-head"><h2>개념 지도</h2><span class="map-hint">장 이름표를 누르면 그 장이 확대되고, 다시 누르거나 빈 곳을 누르면 돌아옵니다.</span><button type="button" class="ov-toggle" id="ovToggle" aria-expanded="false">개념 지도 펼치기</button></div>'
             f'<div class="rel-scroll ov-wrap">{svg}</div>'
-            f'<script id="mapThemes" type="application/json">{ui.safe_json(tdata)}</script>'
+            f'<script id="mapThemes" type="application/json">{chrome.safe_json(tdata)}</script>'
             f'</section>')
 
 
@@ -1416,9 +1388,9 @@ def index_page(data):
 })();
 </script>"""
     js = js + OVERVIEW_JS
-    js = (js.replace("__CH__", ui.safe_json(ch_meta))
-            .replace("__CAT__", ui.safe_json(cat_label))
-            .replace("__LEGACY__", ui.safe_json(legacy)))
+    js = (js.replace("__CH__", chrome.safe_json(ch_meta))
+            .replace("__CAT__", chrome.safe_json(cat_label))
+            .replace("__LEGACY__", chrome.safe_json(legacy)))
     return page("AI 안전 용어집", "index.html", body, head_count=len(ents), extra_js=js)
 
 
@@ -1480,17 +1452,17 @@ def about_page(data):
 <h2>근거 자료와 다른 사이트</h2>
 <table>
 <tr><th>자료</th><th>용어집에서 쓰는 곳</th></tr>
-<tr><td><a href="{ui.DIGEST_URL}" target="_blank" rel="noopener">AI 안전 다이제스트</a></td>
+<tr><td><a href="{series.url("digest")}" target="_blank" rel="noopener">AI 안전 다이제스트</a></td>
 <td>매일 모으는 뉴스·정책 동향. 표제어 후보 추출과 <b>참고 기사</b>의 출처입니다
 (빌드 시점 {docs:,}건, {html.escape(str(c.get('from', '')))} ~ {html.escape(str(c.get('to', '')))}).
 기사마다 원문 링크와 함께 그 기사가 실린 다이제스트 날짜 페이지를 잇습니다.</td></tr>
-<tr><td><a href="{ui.RESEARCH_URL}" target="_blank" rel="noopener">AI 안전 연구</a></td>
+<tr><td><a href="{series.url("research")}" target="_blank" rel="noopener">AI 안전 연구</a></td>
 <td>AI 안전 연구 카탈로그. 용어 표기로 연구 제목(없으면 요약)을 찾아 카드의 <b>관련 연구</b>에 최근 것부터 4건까지 잇습니다
 (현재 {cnt.get('linked', {}).get('with_research', 0)}개 표제어). 참고 기사 가운데 <span class="ex-tag">연구</span> 표시는 다이제스트가 모은 연구 문헌입니다.</td></tr>
 <tr><td>PDF 근거 색인</td>
 <td>국제 보고서·법령·가이드라인 PDF를 쪽 단위로 색인한 연구소 내부 자료(PDF Evidence Desk)입니다.
 <b>PDF 원문 인용</b>과 쪽수가 여기서 옵니다. 현재 문서 {len(pdf_docs)}종: {html.escape(', '.join(pdf_docs))}.</td></tr>
-<tr><td><a href="{ui.LIBRARY_URL}" target="_blank" rel="noopener">AI 안전 라이브러리</a></td>
+<tr><td><a href="{series.url("library")}" target="_blank" rel="noopener">AI 안전 라이브러리</a></td>
 <td>법·가이드라인·정책 문서 목록. 용어 표기가 문서명에 들어간 AI 안전 문서를 카드의 <b>관련 정책 문서</b>에 4건까지 잇고
 (현재 {cnt.get('linked', {}).get('with_library', 0)}개 표제어), PDF 인용 문서가 라이브러리에 있으면 출처 옆에 <b>라이브러리에서 보기</b>를 붙입니다.</td></tr>
 </table>
@@ -1521,7 +1493,7 @@ PMI 가중 PageRank)은 '문제', '가능성' 같은 일반어만 끌어올렸�
 <p><a href="https://github.com/songkyungho/ai-safety-glossary" target="_blank"
 rel="noopener">github.com/songkyungho/ai-safety-glossary</a></p>
 </div>"""
-    return page("소개 · AI 안전 용어집", "about.html", body)
+    return page("소개", "about.html", body)
 
 
 def main():
@@ -1539,16 +1511,7 @@ def main():
     # 옛 PDF판 경로는 통합본으로 안내
     pdf_dir = os.path.join(config.DOCS, "pdf")
     os.makedirs(pdf_dir, exist_ok=True)
-    redirect = """<!DOCTYPE html>
-<html lang="ko"><head>
-<meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=../index.html">
-<link rel="canonical" href="../index.html">
-<title>AI 안전 용어집</title>
-</head><body>
-<p><a href="../index.html">AI 안전 용어집</a>으로 이동합니다.</p>
-</body></html>
-"""
+    redirect = chrome.redirect_html("../index.html", series.label("glossary"))
     for name in ("index.html", "about.html"):
         with open(os.path.join(pdf_dir, name), "w", encoding="utf-8") as f:
             f.write(redirect)
