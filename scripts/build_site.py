@@ -415,6 +415,9 @@ button.filter-chip .dot {
 .rel-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 svg.rel-map { display: block; width: 100%; min-width: 640px; height: auto; }
 svg.rel-ego { display: block; width: 100%; max-width: 620px; min-width: 500px; height: auto; margin: 0 auto; }
+.rel-list { margin: 4px 0; font-size: 0.86rem; line-height: 1.7; color: var(--text-secondary); }
+.rel-list b { font-weight: 600; color: var(--text-muted); margin-right: 2px; }
+.rel-list a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--gridline); }
 svg .rel-n rect { transition: stroke-width .12s; }
 svg a.rel-n:hover rect { stroke-width: 2.6; }
 svg a.rel-n:hover text { text-decoration: underline; }
@@ -788,14 +791,28 @@ def ref_sup(cid, ns):
     return "".join(f' <a class="ref-sup" href="#{html.escape(cid)}-ref-{n}">[{n}]</a>' for n in ns or [])
 
 
-REL_CTX = {"nodes": {}, "color": {}}
+REL_CTX = {"nodes": {}, "color": {}, "layouts": {}}
+REL_DIRS = (("up", "상위"), ("down", "하위"), ("pre", "먼저 알 개념"), ("prev", "앞 단계"),
+            ("next", "다음 단계"), ("vs", "혼동 주의"))
 
 
 def rel_section(e):
-    svg = relmap.ego_svg(e, REL_CTX["nodes"], lambda i: REL_CTX["color"].get(i, "var(--navy)"))
-    if not svg:
+    """카드 안 관계도 자리. 배치는 REL_CTX["layouts"]에 모아 docs/rel.js 로 내보내고,
+    카드를 펼칠 때 JS(drawEgo)가 그린다. JS가 없으면 이웃 용어 목록(글)이 그대로 보인다."""
+    lay = relmap.ego_layout(e, REL_CTX["nodes"])
+    if not lay:
         return ""
-    return f'<section class="term-rel"><h3 class="sec">{icon("rel")}용어 관계</h3><div class="rel-scroll">{svg}</div></section>'
+    REL_CTX["layouts"][e["id"]] = relmap.ego_layout_compact(lay)
+    nodes = REL_CTX["nodes"]
+    parts = []
+    for k, label in REL_DIRS:
+        ids = [i for i in (e.get("rel") or {}).get(k) or [] if i in nodes]
+        if ids:
+            parts.append(f'<span><b>{label}</b> ' + ", ".join(
+                f'<a href="#{html.escape(i)}">{html.escape(nodes[i]["head"])}</a>' for i in ids) + '</span>')
+    fallback = f'<p class="rel-list">{" · ".join(parts)}</p>'
+    return (f'<section class="term-rel"><h3 class="sec">{icon("rel")}용어 관계</h3>'
+            f'<div class="rel-scroll rel-mount" data-rel="{html.escape(e["id"])}">{fallback}</div></section>')
 
 
 ORG_TYPES = [  # (판별어, 유형) — 앞에서부터 맞춘다
@@ -967,6 +984,75 @@ LEGEND = """<details class="legend">
 </table>
 </details>"""
 
+
+EGO_JS = """<script>
+/* 카드 안 관계도 — docs/rel.js(window.__REL__)의 배치를 relmap.ego_draw 와 같은 마크업으로 그린다.
+   window.drawEgo(termId, container) → 그렸으면 true. 데이터가 아직 없으면 false. */
+(function () {
+  function f1(v) { return Number(v).toFixed(1); }
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  var KIND = { b: 'broader', l: 'leads_to', r: 'requires', c: 'contrasts' };
+  function defs(p) {
+    return '<defs>' +
+      '<marker id="' + p + '-a1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0.6 L7.4,4 L0,7.4 z" style="fill:var(--ink-muted)"/></marker>' +
+      '<marker id="' + p + '-a2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0.6 L7.4,4 L0,7.4 z" style="fill:var(--text-muted);opacity:.75"/></marker>' +
+      '</defs>';
+  }
+  function curve(x1, y1, x2, y2, bend) {
+    var mx = (x1 + x2) / 2, my = (y1 + y2) / 2, dx = x2 - x1, dy = y2 - y1;
+    var L = Math.hypot(dx, dy) || 1, k = bend * Math.min(L, 260);
+    var cx = mx - dy / L * k, cy = my + dx / L * k;
+    return 'M' + f1(x1) + ',' + f1(y1) + ' Q' + f1(cx) + ',' + f1(cy) + ' ' + f1(x2) + ',' + f1(y2);
+  }
+  function edge(kind, x1, y1, x2, y2, p) {
+    var attrs = 'class="rel-e k-' + kind + '" data-a="" data-b=""';
+    if (kind === 'contrasts') {
+      var mx = x1 + (x2 - x1) * 0.62, my = y1 + (y2 - y1) * 0.62;
+      return '<g ' + attrs + '><path d="' + curve(x1, y1, x2, y2, 0) + '" style="fill:none;stroke:var(--accent);stroke-width:1;stroke-opacity:.45;stroke-dasharray:1 3"/>' +
+        '<circle cx="' + f1(mx) + '" cy="' + f1(my) + '" r="7.5" style="fill:var(--surface-1);stroke:var(--accent);stroke-width:1"/>' +
+        '<text x="' + f1(mx) + '" y="' + f1(my + 3.6) + '" text-anchor="middle" font-size="10.5" style="fill:var(--accent);font-weight:700">\\u2260</text></g>';
+    }
+    if (kind === 'broader') {
+      return '<path ' + attrs + ' d="' + curve(x1, y1, x2, y2, 0) + '" style="fill:none;stroke:var(--text-muted);stroke-width:1;stroke-opacity:.45"/>';
+    }
+    var st = kind === 'leads_to' ? 'stroke:var(--ink-muted);stroke-width:1.5;stroke-opacity:.8' : 'stroke:var(--text-muted);stroke-width:1.2;stroke-opacity:.6';
+    var mk = kind === 'leads_to' ? p + '-a1' : p + '-a2';
+    return '<path ' + attrs + ' d="' + curve(x1, y1, x2, y2, 0.14) + '" style="fill:none;' + st + '" marker-end="url(#' + mk + ')"/>';
+  }
+  function node(id, meta, cx, cy, w, center) {
+    var head = meta[0], en = meta[1], color = meta[2] || 'var(--navy)';
+    var x = cx - w / 2, y = cy - 13, rect, txt;
+    if (center) {
+      rect = '<rect x="' + f1(x) + '" y="' + f1(y) + '" width="' + f1(w) + '" height="26" rx="13.0" style="fill:' + color + '"/>';
+      txt = 'style="fill:#fff;font-weight:700"';
+    } else {
+      rect = '<rect x="' + f1(x) + '" y="' + f1(y) + '" width="' + f1(w) + '" height="26" rx="13.0" ' +
+        'style="fill:color-mix(in srgb, ' + color + ' 20%, var(--surface-1));stroke:color-mix(in srgb, ' + color + ' 60%, transparent);stroke-width:1.1"/>';
+      txt = 'style="fill:var(--ink);font-weight:500"';
+    }
+    var t = '<text x="' + f1(cx) + '" y="' + f1(cy + 4.3) + '" text-anchor="middle" font-size="12.5" ' + txt + '>' + esc(head) + '</text>';
+    if (center) return '<g class="rel-n rel-center">' + rect + t + '</g>';
+    return '<a class="rel-n" data-id="' + esc(id) + '" href="#' + esc(id) + '"><title>' + esc(head + ' \\u00b7 ' + en) + '</title>' + rect + t + '</a>';
+  }
+  function label(x, y, s, anchor) {
+    return '<text x="' + f1(x) + '" y="' + f1(y) + '" text-anchor="' + anchor + '" font-size="10.5" style="fill:var(--text-muted);font-weight:600;letter-spacing:.02em">' + esc(s) + '</text>';
+  }
+  window.drawEgo = function (id, el) {
+    var R = window.__REL__;
+    if (!R || !R.t || !R.t[id]) return false;
+    var lay = R.t[id], N = R.n, p = 'e-' + id, cm = N[id] || [id, '', ''];
+    var out = ['<svg class="rel-ego" viewBox="0 0 ' + lay.w + ' ' + lay.h + '" role="img" aria-label="' + esc(cm[0]) + ' \\uad00\\uacc4\\ub3c4">', defs(p)];
+    lay.l.forEach(function (l) { out.push(label(l[0], l[1], l[2], l[3])); });
+    lay.e.forEach(function (e) { out.push(edge(KIND[e[0]], e[1], e[2], e[3], e[4], p)); });
+    lay.n.forEach(function (n) { out.push(node(n[0], N[n[0]] || [n[0], '', ''], n[1], n[2], n[3], false)); });
+    out.push(node(id, cm, lay.c[1], lay.c[2], lay.c[3], true), '</svg>');
+    el.innerHTML = out.join('');
+    return true;
+  };
+})();
+</script>"""
 
 OVERVIEW_JS = """<script>
 Array.prototype.forEach.call(document.querySelectorAll('svg.ov-map'), function (svg) {
@@ -1362,6 +1448,15 @@ def index_page(data):
     function railVis() { rail.classList.toggle('in-list', ctl.getBoundingClientRect().top < window.innerHeight * 0.6); }
     window.addEventListener('scroll', railVis, { passive: true }); railVis();
   }
+  // 카드 안 관계도: 펼칠 때 한 번만 그린다 (reveal·모두 펼치기·사용자 클릭 모두 toggle 이벤트로 온다)
+  function drawRel(card) {
+    var m = card.querySelector('.rel-mount[data-rel]');
+    if (!m || m.dataset.done) return;
+    if (window.drawEgo && window.drawEgo(m.dataset.rel, m)) m.dataset.done = '1';
+  }
+  cards.forEach(function (c) { c.addEventListener('toggle', function () { if (c.open) drawRel(c); }); });
+  window.__onRel__ = function () { cards.forEach(function (c) { if (c.open) drawRel(c); }); };  // rel.js 가 늦게 오면
+  if (window.__REL__) window.__onRel__();
   var tAll = document.getElementById('toggleAll');
   if (tAll) tAll.addEventListener('click', function () {
     var open = tAll.dataset.open !== '1';
@@ -1387,7 +1482,7 @@ def index_page(data):
   window.addEventListener('load', function () { setTimeout(onHash, 0); });
 })();
 </script>"""
-    js = js + OVERVIEW_JS
+    js = js + EGO_JS + OVERVIEW_JS + '<script defer src="rel.js"></script>'
     js = (js.replace("__CH__", chrome.safe_json(ch_meta))
             .replace("__CAT__", chrome.safe_json(cat_label))
             .replace("__LEGACY__", chrome.safe_json(legacy)))
@@ -1496,6 +1591,17 @@ rel="noopener">github.com/songkyungho/ai-safety-glossary</a></p>
     return page("소개", "about.html", body)
 
 
+def rel_js():
+    """docs/rel.js — 카드 안 관계도 배치(index_page 가 REL_CTX["layouts"]에 모은 것).
+    window.__REL__ = {n: {id: [표제어, 영어, 색]}, t: {id: relmap.ego_layout_compact(...)}}
+    마지막 줄이 페이지의 __onRel__ 을 불러, 이미 펼쳐진 카드(공유 링크로 들어온 경우)를 그린다."""
+    used = {i for lay in REL_CTX["layouts"].values() for i in [lay["c"][0]] + [b[0] for b in lay["n"]]}
+    names = {i: [REL_CTX["nodes"][i]["head"], REL_CTX["nodes"][i]["en"], REL_CTX["color"].get(i, "")]
+             for i in sorted(used)}
+    payload = json.dumps({"n": names, "t": REL_CTX["layouts"]}, ensure_ascii=False, separators=(",", ":"))
+    return "window.__REL__=" + payload + ";\nif(window.__onRel__)window.__onRel__();\n"
+
+
 def main():
     path = os.path.join(config.DATA, "glossary_site.json")
     if not os.path.exists(path):
@@ -1508,6 +1614,10 @@ def main():
         with open(p, "w", encoding="utf-8") as f:
             f.write(fn(data))
         print("-> %s (%.1f KB)" % (p, os.path.getsize(p) / 1024))
+    p = os.path.join(config.DOCS, "rel.js")
+    with open(p, "w", encoding="utf-8") as f:
+        f.write(rel_js())
+    print("-> %s (%.1f KB, 관계도 %d)" % (p, os.path.getsize(p) / 1024, len(REL_CTX["layouts"])))
     # 옛 PDF판 경로는 통합본으로 안내
     pdf_dir = os.path.join(config.DOCS, "pdf")
     os.makedirs(pdf_dir, exist_ok=True)

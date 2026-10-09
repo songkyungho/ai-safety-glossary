@@ -125,9 +125,23 @@ def _link(kind, a_xy, a_w, b_xy, b_w, p, a="", b=""):
 
 
 # ── 카드 안 관계도 ────────────────────────────────────────────────
+# 배치(ego_layout)와 그리기(ego_draw)를 나눈다. 사이트는 배치만 docs/rel.js 로 내보내고,
+# 카드를 펼칠 때 브라우저가 같은 규칙(build_site.py의 EGO_JS)으로 그린다.
+# ego_svg = ego_draw(ego_layout(...)) 이므로 파이썬 쪽 그림과 JS 그림이 같다.
 
-def ego_svg(e, nodes, color_of, max_side=4):
-    """위=상위, 아래=하위, 왼쪽=먼저 알 개념·앞 단계, 오른쪽=다음 단계·혼동 주의."""
+EDGE_CODE = {"broader": "b", "leads_to": "l", "requires": "r", "contrasts": "c"}
+EDGE_KIND = {v: k for k, v in EDGE_CODE.items()}
+
+
+def ego_layout(e, nodes, max_side=4):
+    """위=상위, 아래=하위, 왼쪽=먼저 알 개념·앞 단계, 오른쪽=다음 단계·혼동 주의.
+
+    반환: None(이웃 없음) 또는
+      {"w": 620, "h": H, "c": [id, x, y, 폭],          # 가운데(이 용어)
+       "n": [[id, x, y, 폭], ...],                     # 이웃 (그리는 순서)
+       "e": [[종류코드, x1, y1, x2, y2], ...],          # 간선 — 알약 테두리에서 잘라낸 양 끝점
+       "l": [[x, y, 글, anchor], ...]}                 # 구역 이름표
+    """
     r = e.get("rel") or {}
     get = lambda k, cap=max_side: [nodes[i] for i in (r.get(k) or [])[:cap] if i in nodes]
     up, down = get("up", 3), get("down", 5)
@@ -136,8 +150,7 @@ def ego_svg(e, nodes, color_of, max_side=4):
     right = [("leads_to", n) for n in get("next")] + [("contrasts", n) for n in get("vs")]
     left, right = left[:max_side], right[:max_side]
     if not (up or down or left or right):
-        return ""
-    p = "e-" + e["id"]
+        return None
     W = 620
     xl, xc, xr = 104, W / 2, W - 104
     gap = 38
@@ -149,11 +162,18 @@ def ego_svg(e, nodes, color_of, max_side=4):
     bottom_y = yc + max(side_h, gap) / 2 + (BOX_H + 8)
     H = (bottom_y + BOX_H / 2 + 8) if down else (yc + max(side_h, gap) / 2 + 4)
 
-    out = [f'<svg class="rel-ego" viewBox="0 0 {W} {H:.0f}" role="img" '
-           f'aria-label="{html.escape(e["head"])} 관계도">', defs(p)]
     cw = box_w(e["head"])
     C = (xc, yc)
-    edges, boxes = [], []
+    edges, boxes, labels = [], [], []
+
+    def link(kind, a_xy, a_w, b_xy, b_w):
+        x1, y1 = clip(a_xy[0], a_xy[1], a_w, BOX_H, *b_xy)
+        x2, y2 = clip(b_xy[0], b_xy[1], b_w, BOX_H, *a_xy)
+        if kind in ("leads_to", "requires"):  # 화살촉이 알약에 붙지 않게 조금 띄운다
+            L = math.hypot(x2 - x1, y2 - y1) or 1
+            x2 -= (x2 - x1) / L * 2.5
+            y2 -= (y2 - y1) / L * 2.5
+        edges.append([EDGE_CODE[kind], x1, y1, x2, y2])
 
     def row(items, y):
         ws = [box_w(n["head"]) for n in items]
@@ -167,23 +187,23 @@ def ego_svg(e, nodes, color_of, max_side=4):
 
     def row_label(rp, y, s):
         x0 = min(x - box_w(n["head"]) / 2 for n, x, _ in rp)
-        out.append(_label(x0 - 10, y + 4, s, "end"))
+        labels.append([x0 - 10, y + 4, s, "end"])
 
     if up:
         rp = row(up, top + BOX_H / 2)
         row_label(rp, top + BOX_H / 2, "상위")
         for n, x, y in rp:
-            edges.append(_link("broader", C, cw, (x, y), box_w(n["head"]), p))
-            boxes.append(node_svg(n, x, y, color=color_of(n["id"])))
+            link("broader", C, cw, (x, y), box_w(n["head"]))
+            boxes.append([n["id"], x, y, box_w(n["head"])])
     if down:
         rp = row(down, bottom_y)
         row_label(rp, bottom_y, "하위")
         if more_down > 0:
             x_end = max(x + box_w(n["head"]) / 2 for n, x, _ in rp)
-            out.append(_label(x_end + 8, bottom_y + 4, f"+{more_down}", "start"))
+            labels.append([x_end + 8, bottom_y + 4, f"+{more_down}", "start"])
         for n, x, y in rp:
-            edges.append(_link("broader", (x, y), box_w(n["head"]), C, cw, p))
-            boxes.append(node_svg(n, x, y, color=color_of(n["id"])))
+            link("broader", (x, y), box_w(n["head"]), C, cw)
+            boxes.append([n["id"], x, y, box_w(n["head"])])
 
     def column(items, x, side):
         y0 = yc - (len(items) - 1) * gap / 2
@@ -191,26 +211,59 @@ def ego_svg(e, nodes, color_of, max_side=4):
             y = y0 + i * gap
             w = box_w(n["head"])
             if side == "left":
-                edges.append(_link(kind, (x, y), w, C, cw, p))
+                link(kind, (x, y), w, C, cw)
             else:
-                edges.append(_link(kind, C, cw, (x, y), w, p))
-            boxes.append(node_svg(n, x, y, color=color_of(n["id"])))
+                link(kind, C, cw, (x, y), w)
+            boxes.append([n["id"], x, y, w])
         return y0
 
     if left:
         y0 = column(left, xl, "left")
         kinds = {k for k, _ in left}
-        out.append(_label(xl, y0 - BOX_H / 2 - 8,
-                          " · ".join(s for k, s in (("requires", "먼저 알 개념"), ("leads_to", "앞 단계")) if k in kinds)))
+        labels.append([xl, y0 - BOX_H / 2 - 8,
+                       " · ".join(s for k, s in (("requires", "먼저 알 개념"), ("leads_to", "앞 단계")) if k in kinds),
+                       "middle"])
     if right:
         y0 = column(right, xr, "right")
         kinds = {k for k, _ in right}
-        out.append(_label(xr, y0 - BOX_H / 2 - 8,
-                          " · ".join(s for k, s in (("leads_to", "다음 단계"), ("contrasts", "혼동 주의")) if k in kinds)))
-    out += edges + boxes
-    out.append(node_svg(e, xc, yc, center=True, color=color_of(e["id"])))
+        labels.append([xr, y0 - BOX_H / 2 - 8,
+                       " · ".join(s for k, s in (("leads_to", "다음 단계"), ("contrasts", "혼동 주의")) if k in kinds),
+                       "middle"])
+    return {"w": W, "h": int(round(H)), "c": [e["id"], xc, yc, cw], "n": boxes, "e": edges, "l": labels}
+
+
+def ego_layout_compact(lay, nd=1):
+    """rel.js 용 — 좌표를 소수 nd자리로 줄인 사본(JS는 이 값을 그대로 찍는다)."""
+    rd = lambda v: round(v, nd) if isinstance(v, float) else v
+    return {"w": lay["w"], "h": lay["h"],
+            "c": [rd(v) for v in lay["c"]],
+            "n": [[rd(v) for v in b] for b in lay["n"]],
+            "e": [[rd(v) for v in ed] for ed in lay["e"]],
+            "l": [[rd(v) for v in lb] for lb in lay["l"]]}
+
+
+def ego_draw(lay, nodes, color_of):
+    """ego_layout 결과를 SVG 문자열로. build_site.py의 EGO_JS(drawEgo)와 같은 순서·같은 마크업."""
+    cid = lay["c"][0]
+    e = nodes[cid]
+    p = "e-" + cid
+    out = [f'<svg class="rel-ego" viewBox="0 0 {lay["w"]} {lay["h"]}" role="img" '
+           f'aria-label="{html.escape(e["head"])} 관계도">', defs(p)]
+    for x, y, s, anchor in lay["l"]:
+        out.append(_label(x, y, s, anchor))
+    for k, x1, y1, x2, y2 in lay["e"]:
+        out.append(edge_svg(EDGE_KIND[k], x1, y1, x2, y2, p))
+    for i, x, y, _w in lay["n"]:
+        out.append(node_svg(nodes[i], x, y, color=color_of(i)))
+    out.append(node_svg(e, lay["c"][1], lay["c"][2], center=True, color=color_of(cid)))
     out.append("</svg>")
     return "".join(out)
+
+
+def ego_svg(e, nodes, color_of, max_side=4):
+    """카드 안 관계도 전체(SVG 문자열). 이웃이 없으면 빈 문자열."""
+    lay = ego_layout(e, nodes, max_side)
+    return ego_draw(lay, nodes, color_of) if lay else ""
 
 
 # ── 맨 위 전체 개념 지도 ─────────────────────────────────────────
