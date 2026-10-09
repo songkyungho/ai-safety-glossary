@@ -965,7 +965,7 @@ def main() -> None:
             "built_at": datetime.now(KST).isoformat(timespec="seconds"),
             "method": "corpus-frequency → score → bucket-quota → verbatim definitions",
             "inspired_by": "동향 Glossary (df·지속성·쿼터·병기율≈gloss_rate)",
-            "evidence_db": cfg.EVIDENCE_DB,
+            "evidence_db": os.path.basename(cfg.EVIDENCE_DB),  # 로컬 절대경로는 적지 않는다 (공개 레포)
             "corpus_candidates": len(cands),
             "coverage": {
                 "total": len(entries),

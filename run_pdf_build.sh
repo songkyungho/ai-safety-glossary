@@ -8,4 +8,4 @@ python3 scripts/select_pdf_glossary.py
 python3 scripts/pdf_localize.py
 python3 scripts/merge_glossary.py
 python3 scripts/build_site.py
-echo "OK → docs/index.html (통합) · docs/pdf/index.html → ?src=pdf"
+echo "OK → docs/index.html (통합; 옛 docs/pdf/ 주소는 리다이렉트)"

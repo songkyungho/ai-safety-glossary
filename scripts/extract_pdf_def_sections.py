@@ -401,7 +401,7 @@ def main() -> None:
     with open(raw_path, "w", encoding="utf-8") as f:
         json.dump(
             {
-                "db": cfg.EVIDENCE_DB,
+                "db": os.path.basename(cfg.EVIDENCE_DB),  # 로컬 절대경로는 적지 않는다 (공개 레포)
                 "n_chunks": len(chunks),
                 "chunks": chunks,
             },

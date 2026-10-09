@@ -21,7 +21,7 @@
 ./run_pdf_build.sh      # PDF 파이프라인 → 병합 → docs/index.html
 ```
 
-- 방법론: [`docs/pdf-glossary.md`](docs/pdf-glossary.md)
+- 방법론(PDF판, 보관): `_archive/pdf-glossary.md`
 - 예전 `docs/pdf/` 경로는 통합본으로 리다이렉트한다.
 
 ## 빠른 사용

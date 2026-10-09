@@ -5,3 +5,8 @@ logs/
 data/_top100_plain.md
 
 .claude/launch.json
+
+# PDF 원문 청크(내부 자료)는 로컬에만 둔다 — 공개 레포
+data/pdf/def_sections_raw.json
+data/pdf/def_parsed.json
+docs/pdf/glossary.json
