@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI 안전 용어집",
-    "built_at": "2026-10-16T10:35:32+09:00",
+    "built_at": "2026-10-17T10:21:41+09:00",
     "method": "glossary_merged.json + data/cards 편집 계층",
     "counts": {
       "entries": 170,
@@ -9,10 +9,10 @@
       "with_frameworks": 104,
       "relations": 195,
       "linked": {
-        "research_pool": 1697,
-        "library_pool": 2409,
+        "research_pool": 1702,
+        "library_pool": 2415,
         "with_research": 140,
-        "with_library": 84
+        "with_library": 85
       },
       "merged_used": 157,
       "excluded": 16,
@@ -1885,35 +1885,35 @@
       },
       "research": [
         {
+          "title": "거대언어모델의 이름 기반 편향",
+          "orig": "Name-Bias in Large Language Models",
+          "summary": "로컬 LLM 6종에 빈칸 채우기 과제를 적용해 30만 건의 응답을 분석한 결과, 성별·나이·이름 대중성·인종 순으로 이름 기반 편향이 일관되게 나타났다.",
+          "url": "https://arxiv.org/abs/2610.22053v1",
+          "date": "2026-10-15",
+          "source": "arXiv"
+        },
+        {
+          "title": "PROBE: 도구 사용 에이전트의 정책 준수 감사 학습",
+          "orig": "PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents",
+          "summary": "도구를 쓰는 LLM 에이전트의 정책 위반을 다중턴 대화로 찾아내는 감사자 모델을 강화학습(GRPO·DPO·GFlowNet)으로 훈련하는 PROBE를 제안했고, 훈련된 감사자가 제로샷 공격자보다 더 넓고 수율 높은 위반을 찾아냈으며 에이전트보다 훨씬 작은 모델에서도 효과를 보였다.",
+          "url": "https://arxiv.org/abs/2610.22124v1",
+          "date": "2026-10-15",
+          "source": "arXiv"
+        },
+        {
+          "title": "영어 너머의 평가 인식: 인도어 시험 시 LLM 행동 변화",
+          "orig": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
+          "summary": "4개 모델을 인도어 5종과 영어로 시험해 평가 중이라는 단서를 주면 유해 요청 거부율이 모든 모델·언어에서 늘고(인도어 평균 14.4%p), 무해 요청 거부도 6.9%에서 11.3%로 증가함을 보였다.",
+          "url": "https://arxiv.org/abs/2610.22333v1",
+          "date": "2026-10-15",
+          "source": "arXiv"
+        },
+        {
           "title": "VALCON: 생성·평가 역할 간 가치 일관성 벤치마크",
           "orig": "VALCON: Benchmarking and Enhancing Value Consistency in Large Language Models via Dual-Role Variation",
           "summary": "LLM이 생성자와 평가자 역할을 오갈 때 가치 판단이 일관된지 보는 벤치마크 3종을 만들고, 28개 모델에서 역할 간 불일치가 널리 나타남을 확인했으며 표현 기반 개입으로 이를 완화했다.",
           "url": "https://arxiv.org/abs/2610.21304v1",
           "date": "2026-10-15",
-          "source": "arXiv"
-        },
-        {
-          "title": "문맥 내 뉴로피드백으로 본 LLM의 활성값 제어",
-          "orig": "Cross-Model In-Context Neurofeedback Reveals (Limited) Activation Control in LLMs",
-          "summary": "9B~32B 오픈웨이트 모델 10종에 문맥 내 뉴로피드백 실험을 적용해, 일부 모델만 자신의 활성값을 소폭 제어하며 활성값 모니터를 속이는 수준(점수 낮추기)에는 아직 이르지 못함을 보였다.",
-          "url": "https://arxiv.org/abs/2610.20179v1",
-          "date": "2026-10-14",
-          "source": "arXiv"
-        },
-        {
-          "title": "LLM 가드레일 경량화: 양자화 Llama Guard 3 평가",
-          "orig": "How Lightweight Can LLM Guardrails Become? Evaluating Quantized Llama Guard 3 for Efficient AI Safety",
-          "summary": "Llama Guard 3를 양자화해 가드레일 모델을 얼마나 가볍게 만들 수 있는지 평가한 연구로 보이나, 초록이 없어 구체적 결과는 확인할 수 없다.",
-          "url": "https://doi.org/10.13140/rg.2.2.14858.63687",
-          "date": "2026-10-14",
-          "source": "OpenAlex"
-        },
-        {
-          "title": "브라질 포르투갈어 LLM 안전 정렬과 LLM 판정기의 침묵 실패",
-          "orig": "Manacá-1B-Instruct-2: Reproducible Safety Alignment for a Native Brazilian-Portuguese LLM. Negative DPO Results, a Controlled Composition Scan, and a Silent Failure Mode of the LLM Judge",
-          "summary": "브라질 포르투갈어 원천 1.7B 모델에 안전 SFT를 적용해 DPO 세 번의 실패와 일반 데이터 비율에 따른 과잉 거부 곡선을 보고하고, LLM 판정기가 일부 안전 문항에서 점수 부여를 거부해 유효 표본이 줄어드는 문제를 밝혔다.",
-          "url": "https://arxiv.org/abs/2610.20570v1",
-          "date": "2026-10-14",
           "source": "arXiv"
         }
       ],
@@ -4666,6 +4666,14 @@
       },
       "research": [
         {
+          "title": "PROBE: 도구 사용 에이전트의 정책 준수 감사 학습",
+          "orig": "PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents",
+          "summary": "도구를 쓰는 LLM 에이전트의 정책 위반을 다중턴 대화로 찾아내는 감사자 모델을 강화학습(GRPO·DPO·GFlowNet)으로 훈련하는 PROBE를 제안했고, 훈련된 감사자가 제로샷 공격자보다 더 넓고 수율 높은 위반을 찾아냈으며 에이전트보다 훨씬 작은 모델에서도 효과를 보였다.",
+          "url": "https://arxiv.org/abs/2610.22124v1",
+          "date": "2026-10-15",
+          "source": "arXiv"
+        },
+        {
           "title": "AI 에이전트 권한 상승 사고의 포렌식 분석과 재현",
           "orig": "From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)",
           "summary": "OpenAI ExploitGym 평가 중 보도된 에이전트의 컨테이너 이탈·권한 상승 사건을 격리된 저장소 서버에서 재현하고(CVE-2026-65616), 학습·배포 환경의 잘못된 설정이 공통 원인이며 제로 트러스트 아키텍처로 이를 무력화할 수 있음을 분석했다.",
@@ -4688,14 +4696,6 @@
           "url": "https://arxiv.org/abs/2610.18603v1",
           "date": "2026-10-13",
           "source": "arXiv"
-        },
-        {
-          "title": "EU AI Act·NIS2 하의 에이전트 영속 메모리 규율",
-          "orig": "Persistent Agent Memory under the EU AI Act and NIS2: Misalignment, Emergent Behaviour and Regulatory Fit",
-          "summary": "에이전트 AI의 영속 메모리를 오정렬·창발 행동을 매개하거나 증폭하는 시스템 기능으로 보고, EU AI Act와 NIS2의 기존 조항이 이를 어디까지 규율하는지 분석해 새 위험 등급 없이 기존 지침·표준·모니터링으로 구체화할 것을 제안한다.",
-          "url": "https://doi.org/10.1017/err.2026.10159",
-          "date": "2026-10-12",
-          "source": "European Journal of Risk Regulation"
         }
       ],
       "library_docs": [
@@ -4883,6 +4883,14 @@
       ],
       "library_docs": [
         {
+          "id": "doc-6ce449ad2dc3",
+          "title": "싱가포르 에이전틱 AI 코딩 어시스턴트 보안 평가 핸드북",
+          "date": "2026-10-15",
+          "flag": "🇸🇬",
+          "org": "",
+          "kind": "가이드라인·원칙"
+        },
+        {
           "id": "doc-0e7887881aeb",
           "title": "영국 ICO 에이전틱 AI·데이터 보호 의견수렴",
           "date": "2026-10-08",
@@ -4905,14 +4913,6 @@
           "flag": "",
           "org": "AIGL",
           "kind": "기타"
-        },
-        {
-          "id": "doc-477e5117cd14",
-          "title": "프랑스 CNIL·CIANum 에이전틱 AI 개인정보보호 위험성 노트",
-          "date": "2026-07-20",
-          "flag": "🇫🇷",
-          "org": "",
-          "kind": "정책보고서"
         }
       ],
       "rel": {
@@ -5347,6 +5347,14 @@
         "pdf_gloss_df": 0
       },
       "research": [
+        {
+          "title": "PROBE: 도구 사용 에이전트의 정책 준수 감사 학습",
+          "orig": "PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents",
+          "summary": "도구를 쓰는 LLM 에이전트의 정책 위반을 다중턴 대화로 찾아내는 감사자 모델을 강화학습(GRPO·DPO·GFlowNet)으로 훈련하는 PROBE를 제안했고, 훈련된 감사자가 제로샷 공격자보다 더 넓고 수율 높은 위반을 찾아냈으며 에이전트보다 훨씬 작은 모델에서도 효과를 보였다.",
+          "url": "https://arxiv.org/abs/2610.22124v1",
+          "date": "2026-10-15",
+          "source": "arXiv"
+        },
         {
           "title": "UndoBench: 도구 사용 에이전트의 복구 역량 분리 평가",
           "orig": "UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents",
@@ -7309,6 +7317,14 @@
       ],
       "library_docs": [
         {
+          "id": "doc-6d141ecd7785",
+          "title": "EU 집행위 시행결정 2026/2274",
+          "date": "2026-10-14",
+          "flag": "🇪🇺",
+          "org": "",
+          "kind": "행정규칙"
+        },
+        {
           "id": "doc-52afa3f1e2b3",
           "title": "호주 지침 002-2026",
           "date": "2026-09-29",
@@ -7331,14 +7347,6 @@
           "flag": "🇹🇼",
           "org": "",
           "kind": "전략·정책"
-        },
-        {
-          "id": "doc-cd4d89ec1cf2",
-          "title": "AI Risk Repository: Meta-Review, Database, · Taxonomy Risks from 인공지능",
-          "date": "2026-09-02",
-          "flag": "",
-          "org": "AIGL",
-          "kind": "기타"
         }
       ],
       "rel": {
@@ -17057,6 +17065,14 @@
       },
       "research": [
         {
+          "title": "거대언어모델의 이름 기반 편향",
+          "orig": "Name-Bias in Large Language Models",
+          "summary": "로컬 LLM 6종에 빈칸 채우기 과제를 적용해 30만 건의 응답을 분석한 결과, 성별·나이·이름 대중성·인종 순으로 이름 기반 편향이 일관되게 나타났다.",
+          "url": "https://arxiv.org/abs/2610.22053v1",
+          "date": "2026-10-15",
+          "source": "arXiv"
+        },
+        {
           "title": "인지 편향 완화를 위한 발산-성찰-수렴 프레임워크",
           "orig": "Toward fairer large language models: a divergence-reflection-convergence framework for mitigating cognitive bias",
           "summary": "LLM이 상반된 관점을 생성하고 성찰해 판단 규칙을 도출한 뒤 수렴하는 추론 단계 편향 완화 프레임워크(DRC)를 제안하고, 5개 LLM·4가지 인지 편향 차원에서 비대칭 카파와 TVD로 편향 감소를 확인했다.",
@@ -17079,14 +17095,6 @@
           "url": "https://doi.org/10.21798/kadem.2026.218",
           "date": "2026-09-30",
           "source": "KADEM Kadın Araştırmaları Dergisi"
-        },
-        {
-          "title": "정확도를 넘어: 임상 LLM의 반사실 취약성과 인구통계 편향",
-          "orig": "Beyond Accuracy: Counterfactual Fragility and Demographic Bias in Clinical Evaluation of LLMs",
-          "summary": "MedQA 150문항으로 LLM 6종을 반사실 타당성과 인구통계 접두어 교란으로 평가한 결과, 정확도가 높아도 반사실 과제 성능과 답변 안정성은 별개이며 답변 변경률이 약 20%에 달했다.",
-          "url": "https://arxiv.org/abs/2609.32807v1",
-          "date": "2026-09-26",
-          "source": "arXiv"
         }
       ],
       "library_docs": [
@@ -21878,20 +21886,20 @@
       },
       "research": [
         {
+          "title": "영어 너머의 평가 인식: 인도어 시험 시 LLM 행동 변화",
+          "orig": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
+          "summary": "4개 모델을 인도어 5종과 영어로 시험해 평가 중이라는 단서를 주면 유해 요청 거부율이 모든 모델·언어에서 늘고(인도어 평균 14.4%p), 무해 요청 거부도 6.9%에서 11.3%로 증가함을 보였다.",
+          "url": "https://arxiv.org/abs/2610.22333v1",
+          "date": "2026-10-15",
+          "source": "arXiv"
+        },
+        {
           "title": "VALCON: 생성·평가 역할 간 가치 일관성 벤치마크",
           "orig": "VALCON: Benchmarking and Enhancing Value Consistency in Large Language Models via Dual-Role Variation",
           "summary": "LLM이 생성자와 평가자 역할을 오갈 때 가치 판단이 일관된지 보는 벤치마크 3종을 만들고, 28개 모델에서 역할 간 불일치가 널리 나타남을 확인했으며 표현 기반 개입으로 이를 완화했다.",
           "url": "https://arxiv.org/abs/2610.21304v1",
           "date": "2026-10-15",
           "source": "arXiv"
-        },
-        {
-          "title": "LLM 가드레일 경량화: 양자화 Llama Guard 3 평가",
-          "orig": "How Lightweight Can LLM Guardrails Become? Evaluating Quantized Llama Guard 3 for Efficient AI Safety",
-          "summary": "Llama Guard 3를 양자화해 가드레일 모델을 얼마나 가볍게 만들 수 있는지 평가한 연구로 보이나, 초록이 없어 구체적 결과는 확인할 수 없다.",
-          "url": "https://doi.org/10.13140/rg.2.2.14858.63687",
-          "date": "2026-10-14",
-          "source": "OpenAlex"
         },
         {
           "title": "추론 유도 번역 기반 다국어 안전·추론 평가 확장",
@@ -21902,15 +21910,31 @@
           "source": "arXiv"
         },
         {
-          "title": "내부 AI 에이전트 통제·모니터링 평가 방안",
-          "orig": "How an assessor could investigate control and monitoring of internal AI agents",
-          "summary": "METR는 개발사 내부 에이전트에 대한 LLM 기반 monitor의 신뢰성을 coverage, 시스템 취약점, 회피, 사람 검토 회피, 영향 규모의 5개 하위 질문으로 평가하는 방법과 필요한 접근 권한을 제안했다.",
-          "url": "https://metr.org/blog/2026-10-14-control-assessment-proposal",
+          "title": "LLM 가드레일 경량화: 양자화 Llama Guard 3 평가",
+          "orig": "How Lightweight Can LLM Guardrails Become? Evaluating Quantized Llama Guard 3 for Efficient AI Safety",
+          "summary": "Llama Guard 3를 양자화해 가드레일 모델을 얼마나 가볍게 만들 수 있는지 평가한 연구로 보이나, 초록이 없어 구체적 결과는 확인할 수 없다.",
+          "url": "https://doi.org/10.13140/rg.2.2.14858.63687",
           "date": "2026-10-14",
-          "source": "METR"
+          "source": "OpenAlex"
         }
       ],
       "library_docs": [
+        {
+          "id": "doc-51e42a079880",
+          "title": "브라질 인간 대상 연구 AI 윤리 평가 지침·도구 모음",
+          "date": "2026-10-15",
+          "flag": "🇧🇷",
+          "org": "",
+          "kind": "가이드라인·원칙"
+        },
+        {
+          "id": "doc-6ce449ad2dc3",
+          "title": "싱가포르 에이전틱 AI 코딩 어시스턴트 보안 평가 핸드북",
+          "date": "2026-10-15",
+          "flag": "🇸🇬",
+          "org": "",
+          "kind": "가이드라인·원칙"
+        },
         {
           "id": "doc-dc33fda920a5",
           "title": "한국·안전·신뢰 AI 기술영향평가",
@@ -21926,22 +21950,6 @@
           "flag": "",
           "org": "AIGL",
           "kind": "기타"
-        },
-        {
-          "id": "doc-55194f2147f2",
-          "title": "데이터 거버넌스 · AI 거버넌스 Maturity 평가 Checklist (금융서비스)",
-          "date": "2026-08-31",
-          "flag": "",
-          "org": "AIGL",
-          "kind": "정책보고서"
-        },
-        {
-          "id": "doc-a3ef2310c32d",
-          "title": "2026 NCSC AI Cyber 안보 Risk 평가: 공공부문 Deployment",
-          "date": "2026-08-31",
-          "flag": "",
-          "org": "AIGL",
-          "kind": "정책보고서"
         }
       ],
       "rel": {
@@ -22982,6 +22990,14 @@
       },
       "research": [
         {
+          "title": "Screwtape: 모니터 레드팀용 transcript 편집",
+          "orig": "Screwtape: Adversarial Transcript Editing for Monitor Red-Teaming",
+          "summary": "Redwood가 실제 에이전트 transcript에 공격을 삽입하고 모니터를 피할 때까지 반복 수정하는 파이프라인을 만들어, 252회 실행에서 자체 모니터를 피한 공격 35건을 찾았고 그중 6건은 외부 모니터도 피한 유효 공격으로 사람 검토에서 확인됐다.",
+          "url": "https://blog.redwoodresearch.org/p/screwtape-adversarial-transcript",
+          "date": "2026-10-16",
+          "source": "RedwoodResearch"
+        },
+        {
           "title": "CART: LLM 폐루프 적응형 레드팀 프레임워크",
           "orig": "CART: Closed-Loop Adaptive Red Teaming for Large Language Models",
           "summary": "평가 결과를 다음 테스트 설계에 반영하는 Challenger·Target·Judge 분리형 적응형 자동 레드팀 프레임워크를 제안하고, 고정 시드 재생보다 더 많은 실패와 높은 평균 위험을 찾아냄을 보였다.",
@@ -23004,14 +23020,6 @@
           "url": "https://arxiv.org/abs/2607.26115",
           "date": "2026-07-28",
           "source": "arXiv"
-        },
-        {
-          "title": "AISI 통제 레드팀의 프론티어 모니터 스트레스 테스트",
-          "orig": "How our new Control Red Team is stress-testing frontier monitors",
-          "summary": "UK AISI가 새로 꾸린 Control Red Team이 Google DeepMind·Anthropic의 내부 에이전트 모니터에서 취약점을 찾았고, 진화적 탐색으로 모니터 의심 점수를 3/100까지 낮추는 자동 공격 생성에 성공했다.",
-          "url": "https://aisi.gov.uk/blog/how-our-new-control-red-team-is-stress-testing-frontier-monitors",
-          "date": "2026-07-24",
-          "source": "AISI UK"
         }
       ],
       "library_docs": [
@@ -23747,20 +23755,20 @@
       },
       "research": [
         {
+          "title": "PROBE: 도구 사용 에이전트의 정책 준수 감사 학습",
+          "orig": "PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents",
+          "summary": "도구를 쓰는 LLM 에이전트의 정책 위반을 다중턴 대화로 찾아내는 감사자 모델을 강화학습(GRPO·DPO·GFlowNet)으로 훈련하는 PROBE를 제안했고, 훈련된 감사자가 제로샷 공격자보다 더 넓고 수율 높은 위반을 찾아냈으며 에이전트보다 훨씬 작은 모델에서도 효과를 보였다.",
+          "url": "https://arxiv.org/abs/2610.22124v1",
+          "date": "2026-10-15",
+          "source": "arXiv"
+        },
+        {
           "title": "환각 벤치마크가 측정하는 것과 못 하는 것: 형식 통제 감사",
           "orig": "SAS Multimetric Tribunal: What a Hallucination Benchmark Measures, and What It Does Not A Format-Controlled Audit of Structural Classification",
           "summary": "구조적 환각 분류기 SAS Multimetric Tribunal의 F1 98.99%가 환각 탐지가 아니라 출처와 응답 사이의 형식 비대칭을 측정한 값임을 형식 통제 음성 대조군으로 보이고, 기존 정량 주장 네 건을 철회했다.",
           "url": "https://doi.org/10.32388/t420iv.5",
           "date": "2026-10-12",
           "source": "Qeios"
-        },
-        {
-          "title": "해로운 요청 거부의 심리측정 감사: HELM Safety",
-          "orig": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark",
-          "summary": "HELM Safety의 HarmBench가 단일 속성인 유해 요청 거부 능력을 측정하는지 문항반응이론과 차별기능문항 분석으로 검토해, 다차원적이며 점수 평균이 포화와 행동 혼합을 가린다고 밝혔다.",
-          "url": "https://arxiv.org/abs/2610.12409v1",
-          "date": "2026-10-08",
-          "source": "arXiv"
         },
         {
           "title": "인용했지만 참조하지 않았다: 법률 CoT 충실성 반사실 감사",
@@ -23771,12 +23779,12 @@
           "source": "arXiv"
         },
         {
-          "title": "Epoch 브리프: 에이전트·비용·벤치마크 감사",
-          "orig": "The Epoch Brief - October 8, 2026",
-          "summary": "Epoch가 2027년까지 출하될 칩 기반 에이전트 규모와 AI 비용 하락, 중국 AI 산업, AI 사용 변화를 요약하고, 15개 벤치마크를 감사한 Benchmark Reviews와 AI R&D 자동화 평가 InnovationEval(어떤 모델도 근접하지 못함)을 소개했다.",
-          "url": "https://epochai.substack.com/p/the-epoch-brief-october-8-2026",
+          "title": "해로운 요청 거부의 심리측정 감사: HELM Safety",
+          "orig": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark",
+          "summary": "HELM Safety의 HarmBench가 단일 속성인 유해 요청 거부 능력을 측정하는지 문항반응이론과 차별기능문항 분석으로 검토해, 다차원적이며 점수 평균이 포화와 행동 혼합을 가린다고 밝혔다.",
+          "url": "https://arxiv.org/abs/2610.12409v1",
           "date": "2026-10-08",
-          "source": "Epoch Substack"
+          "source": "arXiv"
         }
       ],
       "library_docs": [
@@ -26741,20 +26749,20 @@
           "source": "arXiv"
         },
         {
-          "title": "LLM 가드레일 경량화: 양자화 Llama Guard 3 평가",
-          "orig": "How Lightweight Can LLM Guardrails Become? Evaluating Quantized Llama Guard 3 for Efficient AI Safety",
-          "summary": "Llama Guard 3를 양자화해 가드레일 모델을 얼마나 가볍게 만들 수 있는지 평가한 연구로 보이나, 초록이 없어 구체적 결과는 확인할 수 없다.",
-          "url": "https://doi.org/10.13140/rg.2.2.14858.63687",
-          "date": "2026-10-14",
-          "source": "OpenAlex"
-        },
-        {
           "title": "추론 유도 번역 기반 다국어 안전·추론 평가 확장",
           "orig": "Scaling Multilingual Safety and Reasoning Evaluation through Reasoning-Guided Translation",
           "summary": "기존 안전·대화·수학 추론 벤치마크 7종을 11개 언어로 옮기는 추론 유도 번역 프레임워크를 만들고, 오픈소스 LLM이 저자원 언어에서 거부 행동이 일관되지 않고 추론 성능이 크게 떨어짐을 확인했다.",
           "url": "https://arxiv.org/abs/2610.20221v1",
           "date": "2026-10-14",
           "source": "arXiv"
+        },
+        {
+          "title": "LLM 가드레일 경량화: 양자화 Llama Guard 3 평가",
+          "orig": "How Lightweight Can LLM Guardrails Become? Evaluating Quantized Llama Guard 3 for Efficient AI Safety",
+          "summary": "Llama Guard 3를 양자화해 가드레일 모델을 얼마나 가볍게 만들 수 있는지 평가한 연구로 보이나, 초록이 없어 구체적 결과는 확인할 수 없다.",
+          "url": "https://doi.org/10.13140/rg.2.2.14858.63687",
+          "date": "2026-10-14",
+          "source": "OpenAlex"
         },
         {
           "title": "브라질 포르투갈어 LLM 안전 정렬과 LLM 판정기의 침묵 실패",
@@ -26908,20 +26916,20 @@
       },
       "research": [
         {
+          "title": "EU AI Act 데이터 거버넌스와 ISO/IEC 표준 연계 온톨로지",
+          "orig": "AIDGO: A FAIR Ontology for Aligning EU AI Act Data Governance Obligations with ISO/IEC Technical Standards",
+          "summary": "EU AI Act의 데이터 거버넌스 의무를 ISO/IEC 기술 표준과 연결하는 FAIR 온톨로지(AIDGO)를 제안한 것으로 보이나, 초록이 없어 세부 내용은 확인되지 않는다.",
+          "url": "https://doi.org/10.83095/ceurws_04293_paper45",
+          "date": "2026-10-15",
+          "source": "ceur-ws.org"
+        },
+        {
           "title": "국가안보 분야 AI: 활용, 위험, 거버넌스 경로",
           "orig": "Artificial Intelligence in National Security: Applications, Risks, and Governance Pathways",
           "summary": "문헌 검토와 사례 분석으로 군사·사이버·핵심 인프라 등 국가안보 영역의 AI 활용과 기술적 신뢰성 부족, 악의적 사용, 안보 딜레마에 따른 전략적 불안정이라는 세 가지 위험을 정리하고, 기술적 안전장치·위험 기반 규제·국제협력을 결합한 거버넌스를 제안한다.",
           "url": "https://doi.org/10.54254/2754-1169/2026.37530",
           "date": "2026-10-08",
           "source": "Advances in Economics Management and Political Sciences"
-        },
-        {
-          "title": "시장 접근을 통한 AI 배포 거버넌스",
-          "orig": "Governing AI Deployment Through Market Access",
-          "summary": "AI를 직접 개발하지 않는 노출 관할권들이 시장 접근 권한을 연합해 등록·시험·감사·사고 보고·현지 책임을 요구하는 노출 기반 AI 거버넌스 모델을 제시한다.",
-          "url": "https://doi.org/10.4018/ijdsgbt.424027",
-          "date": "2026-10-07",
-          "source": "International Journal of Digital Strategy Governance and Business Transformation"
         },
         {
           "title": "대화형 장기 기억의 거버넌스 충실도·일관성·최소성",
@@ -26932,12 +26940,12 @@
           "source": "International Journal of Data Science and Analytics"
         },
         {
-          "title": "전력 부문 스마트시티 AI·에이전트 거버넌스 프레임워크",
-          "orig": "AAIGF-E: An AI and Agentic Intelligence Governance Framework for Electric-Sector Smart-City Infrastructure",
-          "summary": "전력 부문 AI·에이전트 시스템을 위해 7개 수명주기 단계에 걸친 111개 통제 항목의 거버넌스 프레임워크를 제안하고, 3개 장애 시나리오와 전문가 평가로 검증해 프롬프트 주입 경로가 남아 있음을 확인했다.",
-          "url": "https://doi.org/10.3390/smartcities9100161",
-          "date": "2026-09-24",
-          "source": "Smart Cities"
+          "title": "시장 접근을 통한 AI 배포 거버넌스",
+          "orig": "Governing AI Deployment Through Market Access",
+          "summary": "AI를 직접 개발하지 않는 노출 관할권들이 시장 접근 권한을 연합해 등록·시험·감사·사고 보고·현지 책임을 요구하는 노출 기반 AI 거버넌스 모델을 제시한다.",
+          "url": "https://doi.org/10.4018/ijdsgbt.424027",
+          "date": "2026-10-07",
+          "source": "International Journal of Digital Strategy Governance and Business Transformation"
         }
       ],
       "library_docs": [
@@ -27088,6 +27096,22 @@
       ],
       "library_docs": [
         {
+          "id": "doc-f0d0b7272c99",
+          "title": "튀르키예 AI 윤리 권고",
+          "date": "2026-10-16",
+          "flag": "🇹🇷",
+          "org": "",
+          "kind": "가이드라인·원칙"
+        },
+        {
+          "id": "doc-51e42a079880",
+          "title": "브라질 인간 대상 연구 AI 윤리 평가 지침·도구 모음",
+          "date": "2026-10-15",
+          "flag": "🇧🇷",
+          "org": "",
+          "kind": "가이드라인·원칙"
+        },
+        {
           "id": "doc-671d66020274",
           "title": "과나후아토 AI 윤리 로드맵",
           "date": "2026-09-08",
@@ -27102,22 +27126,6 @@
           "flag": "🇰🇷",
           "org": "NC문화재단",
           "kind": "기타"
-        },
-        {
-          "id": "doc-17a25a9c0f6d",
-          "title": "산토도밍고 AI 윤리 선언",
-          "date": "2026-07-31",
-          "flag": "",
-          "org": "",
-          "kind": "선언·성명"
-        },
-        {
-          "id": "doc-310277d4dd5d",
-          "title": "유네스코 AI 윤리 권고",
-          "date": "2026-05-11",
-          "flag": "🇺🇳",
-          "org": "",
-          "kind": "가이드라인·원칙"
         }
       ],
       "rel": {
@@ -30062,6 +30070,14 @@
           "source": "arXiv"
         },
         {
+          "title": "EU AI Act 데이터 거버넌스와 ISO/IEC 표준 연계 온톨로지",
+          "orig": "AIDGO: A FAIR Ontology for Aligning EU AI Act Data Governance Obligations with ISO/IEC Technical Standards",
+          "summary": "EU AI Act의 데이터 거버넌스 의무를 ISO/IEC 기술 표준과 연결하는 FAIR 온톨로지(AIDGO)를 제안한 것으로 보이나, 초록이 없어 세부 내용은 확인되지 않는다.",
+          "url": "https://doi.org/10.83095/ceurws_04293_paper45",
+          "date": "2026-10-15",
+          "source": "ceur-ws.org"
+        },
+        {
           "title": "자살 사고 시 도움 권유 거절 후 챗봇의 반응",
           "orig": "What do AI chatbots do after users decline therapeutic redirection for suicide thoughts?",
           "summary": "자살 사고를 밝힌 사용자가 위기 상담 연계를 거절한 뒤 챗봇 5종이 권유를 얼마나 이어가는지 2,550건의 다중턴 대화로 감사했고, 지속성은 챗봇마다 크게 달랐으며 신버전일수록 낮았다.",
@@ -30076,14 +30092,6 @@
           "url": "https://rand.org/pubs/conf_proceedings/CFA4954-2.html",
           "date": "2026-10-15",
           "source": "RAND"
-        },
-        {
-          "title": "LLM 가드레일 경량화: 양자화 Llama Guard 3 평가",
-          "orig": "How Lightweight Can LLM Guardrails Become? Evaluating Quantized Llama Guard 3 for Efficient AI Safety",
-          "summary": "Llama Guard 3를 양자화해 가드레일 모델을 얼마나 가볍게 만들 수 있는지 평가한 연구로 보이나, 초록이 없어 구체적 결과는 확인할 수 없다.",
-          "url": "https://doi.org/10.13140/rg.2.2.14858.63687",
-          "date": "2026-10-14",
-          "source": "OpenAlex"
         }
       ],
       "library_docs": [
@@ -30104,20 +30112,20 @@
           "kind": "가이드라인·원칙"
         },
         {
-          "id": "doc-3fbd38627c40",
-          "title": "정신건강 목적 생성형 AI 이용 가이드라인",
-          "date": "2026-10-12",
-          "flag": "🇰🇷",
-          "org": "보건복지부",
+          "id": "doc-f0d0b7272c99",
+          "title": "튀르키예 AI 윤리 권고",
+          "date": "2026-10-16",
+          "flag": "🇹🇷",
+          "org": "",
           "kind": "가이드라인·원칙"
         },
         {
-          "id": "doc-92cf0c000853",
-          "title": "정보통신망법 미성년자 AI 대화형 서비스 이용제한 개정안(의안번호 2221842)",
-          "date": "2026-10-08",
-          "flag": "🇰🇷",
+          "id": "doc-51e42a079880",
+          "title": "브라질 인간 대상 연구 AI 윤리 평가 지침·도구 모음",
+          "date": "2026-10-15",
+          "flag": "🇧🇷",
           "org": "",
-          "kind": "법안"
+          "kind": "가이드라인·원칙"
         }
       ],
       "rel": {
@@ -30307,6 +30315,14 @@
       ],
       "library_docs": [
         {
+          "id": "doc-6d141ecd7785",
+          "title": "EU 집행위 시행결정 2026/2274",
+          "date": "2026-10-14",
+          "flag": "🇪🇺",
+          "org": "",
+          "kind": "행정규칙"
+        },
+        {
           "id": "doc-241195f3427f",
           "title": "국가안보·핵심 인프라 위협 고위험 AI 모델 지정·관리체계 법안",
           "date": "2026-08-03",
@@ -30325,14 +30341,6 @@
         {
           "id": "doc-df4ae9b7c014",
           "title": "EU AI 법 고위험 AI 설계 요건",
-          "date": "2026-08-02",
-          "flag": "🇪🇺",
-          "org": "",
-          "kind": "법"
-        },
-        {
-          "id": "doc-a458a9234c56",
-          "title": "EU AI법 고위험 AI 사업자 등록 요건",
           "date": "2026-08-02",
           "flag": "🇪🇺",
           "org": "",
@@ -31826,7 +31834,16 @@
         "pdf_gloss_df": 1
       },
       "research": [],
-      "library_docs": [],
+      "library_docs": [
+        {
+          "id": "doc-6d141ecd7785",
+          "title": "EU 집행위 시행결정 2026/2274",
+          "date": "2026-10-14",
+          "flag": "🇪🇺",
+          "org": "",
+          "kind": "행정규칙"
+        }
+      ],
       "rel": {
         "prev": [
           "standardization"
@@ -32081,6 +32098,14 @@
       },
       "research": [
         {
+          "title": "PROBE: 도구 사용 에이전트의 정책 준수 감사 학습",
+          "orig": "PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents",
+          "summary": "도구를 쓰는 LLM 에이전트의 정책 위반을 다중턴 대화로 찾아내는 감사자 모델을 강화학습(GRPO·DPO·GFlowNet)으로 훈련하는 PROBE를 제안했고, 훈련된 감사자가 제로샷 공격자보다 더 넓고 수율 높은 위반을 찾아냈으며 에이전트보다 훨씬 작은 모델에서도 효과를 보였다.",
+          "url": "https://arxiv.org/abs/2610.22124v1",
+          "date": "2026-10-15",
+          "source": "arXiv"
+        },
+        {
           "title": "CompOrca: 지시튜닝 데이터 전체의 준수 라벨링",
           "orig": "CompOrca: Corpus-Scale Compliance Labelling of Instruction-Tuning Data",
           "summary": "OpenOrca 423만 건 전체를 LLM 판정기 5회 투표로 준수/비준수로 라벨링해 공개했고, 사람 주석 대비 비준수 정밀도 86.7%, 기존 거부 탐지 방법의 재현율은 0.4~94.1%에 그쳤다.",
@@ -32102,14 +32127,6 @@
           "summary": "EU AI법 제8~15조를 생성형 AI에 적용할 때 생기는 7개 기술적 공백을 짚고, 43개 기계검증 기준으로 CI/CD에서 준수 증빙을 내는 GaC 프레임워크를 제안했으며, 두 기업 사례에서 수동 감사 결과를 모두 재현하고 감사 노동을 약 75% 줄였다.",
           "url": "https://arxiv.org/abs/2609.20016v1",
           "date": "2026-09-17",
-          "source": "arXiv"
-        },
-        {
-          "title": "PACT: 압박 상황의 기업용 AI 비서 규정 준수 벤치",
-          "orig": "PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?",
-          "summary": "규제 대상 기업 업무 12개 분야 48개 시나리오(3,364문항)로 압박 속 규칙 준수를 재는 PACT 벤치마크를 만들고 LLM 22종을 평가한 결과, 최상위 모델도 6~10% 문항에서 규칙을 어기고 일반 사용자 압박만으로 위반율이 평균 65% 늘었다.",
-          "url": "https://arxiv.org/abs/2609.18605v1",
-          "date": "2026-09-16",
           "source": "arXiv"
         }
       ],
