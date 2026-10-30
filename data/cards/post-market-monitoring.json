@@ -57,12 +57,13 @@
   "refs": [
     {
       "n": 1,
-      "text": "EU GPAI Code of Practice (2025)",
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 3.5",
       "evidence": {
-        "document_id": "doc-f66baa3d99af",
-        "pages": "p.64–65"
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.13–14",
+        "pages_printed": "p.13–14"
       },
-      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai"
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "updated": "2026-10-03"

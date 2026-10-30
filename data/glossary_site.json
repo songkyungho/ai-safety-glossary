@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI 안전 용어집",
-    "built_at": "2026-10-30T20:14:13+09:00",
+    "built_at": "2026-10-30T20:17:52+09:00",
     "method": "glossary_merged.json + data/cards 편집 계층",
     "counts": {
       "entries": 171,
@@ -23040,12 +23040,13 @@
       "refs": [
         {
           "n": 1,
-          "text": "EU GPAI Code of Practice (2025)",
+          "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 3.5",
           "evidence": {
-            "document_id": "doc-f66baa3d99af",
-            "pages": "p.64–65"
+            "document_id": "doc-d879f9b54c60",
+            "pages": "p.13–14",
+            "pages_printed": "p.13–14"
           },
-          "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai"
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
         }
       ],
       "commentary": [],
@@ -33887,9 +33888,11 @@
               ]
             },
             {
-              "text": "제공자에게 EU 저작권법 준수 정책과 학습 콘텐츠 요약 공개를 요구하고, 누적 학습 연산량 10^25 FLOP 초과 모델은 시스템적 위험을 가진 범용 AI 모델로 추정해 추가 의무를 부과함.",
+              "text": "제공자에게 EU 저작권법 준수 정책과 학습 콘텐츠 요약 공개를 요구하고(제53조제1항(c)·(d)), 누적 학습 연산량이 10^25 FLOP을 넘는 모델은 고영향 역량을 가진 것으로 추정해 시스템적 위험이 있는 범용 AI 모델로 분류하며(제51조), 이런 모델에는 추가 의무를 부과함(제55조).",
               "refs": [
-                1
+                2,
+                3,
+                4
               ]
             }
           ]
@@ -33901,7 +33904,7 @@
             {
               "text": "범용 AI라는 명칭 대신, 학습에 사용된 누적 연산량이 대통령령으로 정하는 기준 이상인 AI 시스템에 위험 식별·평가·완화와 위험관리체계 구축 의무를 부과하는 방식(제32조)으로 대규모 모델을 다룸.",
               "refs": [
-                2
+                5
               ]
             }
           ]
@@ -33913,7 +33916,7 @@
             {
               "text": "한 가지 기능에 특화되지 않고 여러 영역에 걸쳐 폭넓은 과제를 수행하도록 설계된 AI 시스템으로 정의하고, 협소 AI와 대조함.",
               "refs": [
-                3
+                6
               ]
             }
           ]
@@ -33922,15 +33925,46 @@
       "refs": [
         {
           "n": 1,
-          "text": "European Commission (2025). GPAI Guidelines",
+          "text": "EU AI Act, Art. 3(63)",
           "evidence": {
-            "document_id": "doc-f66baa3d99af",
-            "pages": "p.4–7"
+            "document_id": "doc-bba630444b32",
+            "pages": "p.50",
+            "pages_printed": "p.50"
           },
-          "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act"
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
         },
         {
           "n": 2,
+          "text": "EU AI Act, Art. 53(1)(c)·(d)",
+          "evidence": {
+            "document_id": "doc-bba630444b32",
+            "pages": "p.84",
+            "pages_printed": "p.84"
+          },
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+        },
+        {
+          "n": 3,
+          "text": "EU AI Act, Art. 51",
+          "evidence": {
+            "document_id": "doc-bba630444b32",
+            "pages": "p.83",
+            "pages_printed": "p.83"
+          },
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+        },
+        {
+          "n": 4,
+          "text": "EU AI Act, Art. 55",
+          "evidence": {
+            "document_id": "doc-bba630444b32",
+            "pages": "p.86",
+            "pages_printed": "p.86"
+          },
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+        },
+        {
+          "n": 5,
           "text": "「인공지능기본법」, 제32조",
           "evidence": {
             "document_id": "doc-6311a32b59e6",
@@ -33939,7 +33973,7 @@
           "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
         },
         {
-          "n": 3,
+          "n": 6,
           "text": "International AI Safety Report 2025, Glossary",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
@@ -36435,12 +36469,13 @@
         },
         {
           "n": 2,
-          "text": "European Commission (2025). GPAI Guidelines",
+          "text": "EU AI Act, Art. 53(1)(c)·(d)",
           "evidence": {
-            "document_id": "doc-f66baa3d99af",
-            "pages": "p.4–5"
+            "document_id": "doc-bba630444b32",
+            "pages": "p.84",
+            "pages_printed": "p.84"
           },
-          "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act"
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
         }
       ],
       "commentary": [],
