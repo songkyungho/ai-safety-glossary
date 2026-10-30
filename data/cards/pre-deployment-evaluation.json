@@ -48,16 +48,62 @@
           ]
         }
       ]
+    },
+    {
+      "org": "NIST",
+      "sub": "AI 800-1",
+      "points": [
+        {
+          "text": "오용 위험을 낳을 수 있는 특정 역량의 성능을 측정하는 배포 전 평가를 권고하고, 저비용 시험 결과가 불확실하거나 위험 징후가 있으면 더 정밀한 측정을 하도록 함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "위험 식별·분석·수용 여부 결정·완화로 이어지는 전체 시스템적 위험 평가·완화 절차를 최소한 모델을 시장에 출시하기 전에 수행하도록 함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.100–101"
-      }
+        "pages": "p.100–101",
+        "pages_printed": "p.99–100"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 2,
+      "text": "NIST AI 800-1 2차 초안, Practice 4.1",
+      "evidence": {
+        "document_id": "doc-362c24f9cfc1",
+        "pages": "p.18–19",
+        "pages_printed": "p.13–14"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.800-1.2pd"
+    },
+    {
+      "n": 3,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 1.2",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.8",
+        "pages_printed": "p.8"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "updated": "2026-10-03"

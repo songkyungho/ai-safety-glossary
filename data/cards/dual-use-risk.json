@@ -42,7 +42,7 @@
       "sub": "AI 800-1",
       "points": [
         {
-          "text": "이중 용도 파운데이션 모델을, 비전문가의 화학·생물·방사능·핵 무기 설계·획득 장벽을 크게 낮추거나, 자동 취약점 탐지·악용으로 강력한 공격적 사이버 작전을 가능하게 하거나, 기만으로 인간 통제를 회피하게 하는 등 안보·공중 안전에 심각한 위험을 주는 과업에서 높은 성능을 보이는(또는 쉽게 그렇게 바뀔 수 있는) 모델로 정의함.",
+          "text": "이중 용도 파운데이션 모델의 정의에는, 비전문가의 화학·생물·방사능·핵 무기 설계·획득 장벽을 크게 낮추거나, 자동 취약점 탐지·악용으로 강력한 공격적 사이버 작전을 가능하게 하거나, 기만으로 인간 통제를 회피하게 하는 등 안보·공중 안전에 심각한 위험을 주는 과업에서 높은 성능을 보이는(또는 쉽게 그렇게 바뀔 수 있는) 모델이라는 위험 역량 요건이 포함됨.",
           "refs": [
             1
           ]
@@ -54,16 +54,78 @@
           ]
         }
       ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "범용 AI 모델은 좋은 목적에도 악의적 목적에도 쓰일 수 있는 이중 용도라고 설명함.",
+          "refs": [
+            2
+          ]
+        },
+        {
+          "text": "생물·화학 역량의 이중 용도 성격이 유익한 연구를 살리면서 유해 사용을 막으려는 정책에 과제를 준다고 지적함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "특정 시스템적 위험으로 화생방 위험을 두고, 관련 무기의 설계·획득·사용에서 악의적 행위자의 진입 장벽을 크게 낮추는 경우를 포함함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "NIST (2025). Managing Misuse Risk for Dual-Use Foundation Models (NIST AI 800-1, 2nd public draft). Glossary, p.27.",
+      "text": "NIST AI 800-1 2차 초안, Glossary",
       "evidence": {
         "document_id": "doc-362c24f9cfc1",
-        "pages": "p.27"
-      }
+        "pages": "p.27",
+        "pages_printed": "p.22"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.800-1.2pd"
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report 2025, 2.4",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.153–154",
+        "pages_printed": "p.153–154"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
+    },
+    {
+      "n": 3,
+      "text": "International AI Safety Report 2026",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.71–72",
+        "pages_printed": "p.70–71"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 4,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Appendix 1.4",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.37",
+        "pages_printed": "p.37"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "updated": "2026-10-03"

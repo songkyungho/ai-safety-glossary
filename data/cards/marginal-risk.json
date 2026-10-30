@@ -56,11 +56,13 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 2.4 Impact of open-weight general-purpose AI models on AI risks.",
+      "text": "International AI Safety Report 2025, 2.4",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.154"
-      }
+        "pages": "p.154",
+        "pages_printed": "p.154"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     }
   ],
   "updated": "2026-10-03"

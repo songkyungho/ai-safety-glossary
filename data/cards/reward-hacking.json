@@ -56,11 +56,13 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. p.80.",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.80"
-      }
+        "pages": "p.80",
+        "pages_printed": "p.79"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     }
   ],
   "updated": "2026-10-03"

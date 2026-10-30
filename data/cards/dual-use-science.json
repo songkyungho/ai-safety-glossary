@@ -59,19 +59,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.80; Glossary, p.221–222.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.80, p.221–222"
-      }
+        "pages": "p.80, p.221–222",
+        "pages_printed": "p.80, p.221–222"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.150.",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.150"
-      }
+        "pages": "p.150",
+        "pages_printed": "p.149"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     }
   ],
   "updated": "2026-10-03"

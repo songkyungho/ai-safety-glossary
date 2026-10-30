@@ -79,27 +79,33 @@
   "refs": [
     {
       "n": 1,
-      "text": "OECD (2024). Defining AI incidents and related terms. OECD AI Papers. Draft definition of an AI hazard.",
+      "text": "OECD (2024). Defining AI incidents and related terms",
       "evidence": {
         "document_id": "doc-9c46e00f1b3f",
-        "pages": "p.13"
-      }
+        "pages": "p.13",
+        "pages_printed": "p.13"
+      },
+      "url": "https://doi.org/10.1787/d1a8d965-en"
     },
     {
       "n": 2,
-      "text": "OECD (2024). Defining AI incidents and related terms. OECD AI Papers. 3. Actual vs. potential harm as the starting point.",
+      "text": "OECD (2024). Defining AI incidents and related terms",
       "evidence": {
         "document_id": "doc-9c46e00f1b3f",
-        "pages": "p.10"
-      }
+        "pages": "p.10",
+        "pages_printed": "p.10"
+      },
+      "url": "https://doi.org/10.1787/d1a8d965-en"
     },
     {
       "n": 3,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Key Definitions, p.158–159.",
+      "text": "International AI Safety Report 2025",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.158–159"
-      }
+        "pages": "p.158–159",
+        "pages_printed": "p.158–159"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     }
   ],
   "updated": "2026-10-03",

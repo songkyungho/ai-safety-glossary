@@ -53,7 +53,43 @@
         {
           "text": "2026년 보고서는 현재의 평가 방법이 역량과 성향을 모두 신뢰성 있게 측정하지 못하며, 배포 전 평가와 실제 성능 사이에 격차가 있다고 지적함.",
           "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "NIST",
+      "sub": "AI 800-1",
+      "points": [
+        {
+          "text": "오용 위험과 관련된 역량을 배포 전에 평가하고, 학습 중·학습 후·하위 시스템 통합 시점 등 개발 과정 전반에서 평가하도록 권고함.",
+          "refs": [
             3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "시스템적 위험이 있는 모델의 역량·경향·영향을 최첨단 수준으로 평가하고, 벤치마크·레드티밍·인간 능력 향상 연구 등을 방법으로 예시함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "모델 평가를 AI 모델의 특정 과제 성능을 평가·측정하는 절차로 소개하고, 위험 관리 방법의 하나로 둠.",
+          "refs": [
+            5
           ]
         }
       ]
@@ -62,27 +98,53 @@
   "refs": [
     {
       "n": 1,
-      "text": "International Scientific Report on the Safety of Advanced AI (국제 AI 안전 보고서, 2025), Glossary.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.221–222"
-      }
+        "pages": "p.221–222",
+        "pages_printed": "p.221–222"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.150"
-      }
+        "pages": "p.100–101, p.150",
+        "pages_printed": "p.99–100, p.149"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 3,
-      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "text": "NIST AI 800-1 2차 초안, Practice 4.1",
       "evidence": {
-        "document_id": "doc-971d6902bec8",
-        "pages": "p.100–101"
-      }
+        "document_id": "doc-362c24f9cfc1",
+        "pages": "p.18–19",
+        "pages_printed": "p.13–14"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.800-1.2pd"
+    },
+    {
+      "n": 4,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 3.2",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.12–13",
+        "pages_printed": "p.12–13"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 5,
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3, 3-1",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.43",
+        "pages_printed": "p.43"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
     }
   ],
   "updated": "2026-10-03"

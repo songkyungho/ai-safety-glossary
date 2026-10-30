@@ -52,16 +52,84 @@
           ]
         }
       ]
+    },
+    {
+      "org": "NIST",
+      "sub": "AI 600-1",
+      "points": [
+        {
+          "text": "정보 무결성 위험에서 거짓·오도적 정보의 의도적 생산·유포를 허위정보, 비의도적인 것을 오정보로 나누고, 생성형 AI가 둘 다 대규모로 쉽게 만든다고 봄.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "시스템적 위험 식별 때 참고할 예로 민주적 절차에 대한 위험과 불법·폭력·혐오·급진화·거짓 콘텐츠에서 오는 위험을 듦.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "윤리원칙의 책임 명확화 항목에서 공급자는 이용자가 AI를 허위정보 유포 등에 쓰지 않도록 안내·예방 조치를 마련하고, 이용자는 그런 데 쓰지 않아야 한다고 제시함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "Bengio, Y. 외 (2025). International Scientific Report on the Safety of Advanced AI (IASR 2025). 용어 정의. p.220–221, p.221–222.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.220–221, p.221–222"
-      }
+        "pages": "p.221–222",
+        "pages_printed": "p.221–222"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
+    },
+    {
+      "n": 2,
+      "text": "NIST AI 600-1, 2.8",
+      "evidence": {
+        "document_id": "doc-6e73620ab6b6",
+        "pages": "p.13–14",
+        "pages_printed": "p.9–10"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.600-1"
+    },
+    {
+      "n": 3,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Appendix 1.1",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.34",
+        "pages_printed": "p.34"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 4,
+      "text": "『대한민국 인공지능 윤리원칙』(2026)",
+      "evidence": {
+        "document_id": "doc-04a2f219c4f8",
+        "pages": "p.16",
+        "pages_printed": "p.14"
+      },
+      "url": "https://m.korea.kr/archive/expDocView.do?docId=41882"
     }
   ],
   "commentary": [

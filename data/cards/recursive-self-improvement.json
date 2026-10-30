@@ -16,7 +16,7 @@
     "points": [
       "AI가 AI 연구·개발 업무(코드 작성, 실험 설계, 학습 수행 등)를 상당 부분 자동화하는 단계에서 나타날 수 있는 현상으로 논의됨.",
       "개선 주기가 사람의 검토 속도보다 빨라지면 역량이 짧은 기간에 급격히 높아지고 인간 감독이 따라가지 못할 수 있어, 통제 상실과 초지능 시나리오의 핵심 경로로 꼽힘.",
-      "실제로 어느 정도 속도로 일어날지, 연산·데이터 같은 물리적 제약이 이를 얼마나 늦출지에 대해서는 견해가 갈림."
+      "실제로 어느 정도 속도로 일어날지, 연산·데이터 같은 물리적 제약이 이를 얼마나 늦출지는 견해가 갈림."
     ]
   },
   "related": [
@@ -33,5 +33,113 @@
     ]
   },
   "status": "draft",
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "AI 연구 개발을 가속하는 각 발전이 다음 발전을 촉진하면 수십 년의 진전이 몇 년 안에 일어날 수 있다고 보면서도, AI 지원 연구 자동화가 실제로 얼마나 가속할지는 전문가 의견이 엇갈린다고 정리함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "프론티어 AI 안전 프레임워크 가운데 오픈AI의 대비 프레임워크는 AI 자기 개선 역량을 생물·화학, 사이버와 함께 관리 위험 범주로 둠.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "부록 1.4의 특정 시스템적 위험인 '통제 상실'은 자기 개선, AI 모델·시스템의 자율적 생성·개선 등에서 비롯될 수 있다고 명시함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "UK AISI",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "안전 프레임워크의 머신러닝 연구개발 역량 임계값 사례로, 모델 자기 개선의 핵심 경로상 중요한 단계가 될 새로운 ML 과업 수행 능력(오픈AI) 등을 소개함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "위험 식별 시 고도화된 자율성·자기개선·조작 능력을 위험성 증가 요인으로 보고, 역량 임계치 기반 위험 시나리오를 수립하도록 함.",
+          "refs": [
+            5
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "『2026 국제 AI 안전 보고서』 한국어판, 1.3",
+      "evidence": {
+        "document_id": "doc-bd1392396bb5",
+        "pages": "p.48–49",
+        "pages_printed": "p.42–43"
+      },
+      "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/119"
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report 2026",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.116",
+        "pages_printed": "p.115"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Appendix 1.4",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.37",
+        "pages_printed": "p.37"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 4,
+      "text": "UK AISI (2025). Emerging Practices in Frontier AI Safety Frameworks",
+      "evidence": {
+        "document_id": "doc-85aff17d77b6",
+        "pages": "p.11",
+        "pages_printed": "p.11"
+      },
+      "url": "https://www.aisi.gov.uk/research/emerging-practices-in-frontier-ai-safety-frameworks"
+    },
+    {
+      "n": 5,
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.28",
+        "pages_printed": "p.28"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
+    }
+  ]
 }

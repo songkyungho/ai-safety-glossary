@@ -72,11 +72,13 @@
   "refs": [
     {
       "n": 1,
-      "text": "OECD (2026). Trends in AI incidents and hazards reported by the media.",
+      "text": "OECD (2026). Trends in AI incidents and hazards reported by the media",
       "evidence": {
         "document_id": "doc-aab2727da192",
-        "pages": "p.12"
-      }
+        "pages": "p.12",
+        "pages_printed": "p.11"
+      },
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/trends-in-ai-incidents-and-hazards-reported-by-the-media_7c824ca9/4f5ff43c-en.pdf"
     },
     {
       "n": 2,

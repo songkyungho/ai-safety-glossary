@@ -64,11 +64,13 @@
   "refs": [
     {
       "n": 1,
-      "text": "OECD (2024). Defining AI incidents and related terms. OECD Artificial Intelligence Papers.",
+      "text": "OECD (2024). Defining AI incidents and related terms",
       "evidence": {
         "document_id": "doc-9c46e00f1b3f",
-        "pages": "p.12–13"
-      }
+        "pages": "p.12–13",
+        "pages_printed": "p.12–13"
+      },
+      "url": "https://doi.org/10.1787/d1a8d965-en"
     }
   ],
   "updated": "2026-10-03",

@@ -49,9 +49,9 @@
           ]
         },
         {
-          "text": "여러 AI 개발사가 AI 시스템의 잠재적 오용 시나리오를 예상하기 위해 위협 모델링을 쓴다고 정리함.",
+          "text": "메타가 AI 모델의 잠재적 오용 시나리오를 예상하려고 위협 모델링을 쓰고, 앤트로픽이 ASL-3 배포 기준에 위협 모델링을 넣은 사례를 듦.",
           "refs": [
-            2
+            1
           ]
         }
       ]
@@ -63,7 +63,7 @@
         {
           "text": "시스템적 위험이 실현될 수 있는 경로를 구체화하는 구조화된 과정을 '시스템적 위험 모델링'이라 하고, 흔히 위협 모델링과 혼용되지만 위협 모델링은 사이버 보안에서 특정한 의미가 있어 '위험 모델링'이라는 용어를 쓴다고 밝힘.",
           "refs": [
-            3
+            2
           ]
         }
       ]
@@ -72,27 +72,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Threat modelling and risk taxonomies are prominent risk identification methods.",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.108–109"
-      }
+        "pages": "p.108–109",
+        "pages_printed": "p.107–108"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Risk identification (Table).",
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Glossary",
       "evidence": {
-        "document_id": "doc-971d6902bec8",
-        "pages": "p.108"
-      }
-    },
-    {
-      "n": 3,
-      "text": "EU General-Purpose AI Code of Practice (2025), Safety and Security Chapter, Glossary.",
-      "evidence": {
-        "document_id": "doc-f66baa3d99af",
-        "pages": "p.82"
-      }
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.32",
+        "pages_printed": "p.32"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "updated": "2026-10-03"

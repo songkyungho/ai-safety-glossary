@@ -24,7 +24,7 @@
       "파운데이션 모델 개발자, 미세조정·통합 사업자, 배포자, 운영 조직으로 이어지는 가치사슬이 길어 책임이 분산·소실되기 쉬우므로, 단계별 의무 배분과 기록 의무가 AI 거버넌스의 핵심 과제가 됨."
     ],
     "distinction": {
-      "text": "'책임 있는 AI(responsible AI)'가 조직이 자율적으로 갖추는 실무 관행을 가리킨다면, '책임성(accountability)'은 결과에 대해 답하고 시정하게 만드는 구조 자체를 가리킴.",
+      "text": "'책임 있는 AI(responsible AI)'가 조직이 자율적으로 갖추는 실무 관행을 가리킨다면, '책임성(accountability)'은 결과를 설명하고 시정하게 만드는 구조 자체를 가리킴.",
       "terms": [
         "responsible-ai"
       ]
@@ -47,5 +47,112 @@
   },
   "status": "draft",
   "updated": "2026-10-03",
-  "head_override": "AI를 떼는 원칙(2026-10-03) — 'AI ○○' 표기는 대체어로 둠"
+  "head_override": "AI를 떼는 원칙(2026-10-03) — 'AI ○○' 표기는 대체어로 둠",
+  "frameworks": [
+    {
+      "org": "NIST",
+      "sub": "2023",
+      "points": [
+        {
+          "text": "신뢰할 수 있는 AI는 책임성에 달려 있고 책임성은 투명성을 전제로 한다고 보며, 잘못된 출력에 대한 실질적 구제에 투명성이 흔히 필요하다고 설명함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "GOVERN 2는 AI 위험의 매핑·측정·관리에 적절한 팀과 개인이 권한·책임·교육을 갖도록 책임 구조를 갖추고, 역할·책임·소통 경로를 문서화하도록 함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "이행조치 8.1은 시스템적 위험 관리 책임을 조직 모든 층위에 명확히 정의하고, 감독·소유·지원과 모니터링·신뢰보증 책임을 감독 기구와 경영진 등에 배분하도록 함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국 AI 기본법",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "제34조는 고영향 AI 사업자에게 위험관리방안, 결과·주요 기준·학습데이터 개요의 설명 방안, 이용자 보호 방안, 사람의 관리·감독, 조치 내용을 확인할 문서의 작성·보관을 이행하게 함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "인공지능 윤리원칙은 책임성 원칙으로 AI 행위자가 생애주기 전반의 역할과 책임을 인식하고 이행하려 노력하며, 문제 발생 시 책임 소재를 밝혀 실질적 피해 구제가 이루어지게 하도록 함.",
+          "refs": [
+            5
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "NIST AI 100-1 (AI RMF 1.0), 3.4",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.20–21",
+        "pages_printed": "p.15–16"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
+    },
+    {
+      "n": 2,
+      "text": "NIST AI 100-1 (AI RMF 1.0), GOVERN 2",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.28",
+        "pages_printed": "p.23"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
+    },
+    {
+      "n": 3,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 8.1",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.23–24",
+        "pages_printed": "p.23–24"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 4,
+      "text": "「인공지능기본법」, 제34조",
+      "evidence": {
+        "document_id": "doc-6311a32b59e6",
+        "pages": "p.12–13"
+      },
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
+    },
+    {
+      "n": 5,
+      "text": "『대한민국 인공지능 윤리원칙』(2026), 3.2.4",
+      "evidence": {
+        "document_id": "doc-04a2f219c4f8",
+        "pages": "p.7",
+        "pages_printed": "p.5"
+      },
+      "url": "https://m.korea.kr/archive/expDocView.do?docId=41882"
+    }
+  ]
 }

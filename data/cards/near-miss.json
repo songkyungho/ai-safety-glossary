@@ -65,19 +65,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "OECD (2024). Defining AI incidents and related terms. OECD Artificial Intelligence Papers.",
+      "text": "OECD (2024). Defining AI incidents and related terms",
       "evidence": {
         "document_id": "doc-9c46e00f1b3f",
-        "pages": "p.13"
-      }
+        "pages": "p.13",
+        "pages_printed": "p.13"
+      },
+      "url": "https://doi.org/10.1787/d1a8d965-en"
     },
     {
       "n": 2,
-      "text": "「인공지능 안전성 확보 가이드라인」 v1.3 (2026.1.21).",
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3",
       "evidence": {
         "document_id": "doc-c49c4fa002e6",
-        "pages": "p.57"
-      }
+        "pages": "p.57",
+        "pages_printed": "p.57"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
     }
   ],
   "updated": "2026-10-03"

@@ -63,7 +63,7 @@
           ]
         },
         {
-          "text": "벤치마크와 모델 평가, 레드티밍, 영향 평가, 감사 등을 그 수단으로 들고, 독립 검토와 다양한 관점을 포함할 때 위험을 더 잘 식별할 수 있다고 봄.",
+          "text": "벤치마크와 모델 평가, 레드티밍, 영향 평가, 감사 등을 그 수단으로 들고, 독립 검토와 분야 간 전문성, 다양한 관점을 포함할 때 위험을 더 잘 식별할 수 있다고 흔히 여겨진다고 소개함.",
           "refs": [
             1
           ]
@@ -86,19 +86,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 3. Risk analysis and evaluation.",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.109"
-      }
+        "pages": "p.109",
+        "pages_printed": "p.108"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 2,
-      "text": "The Singapore Consensus on Global AI Safety Research Priorities (2025). 1 Risk Assessment.",
+      "text": "Singapore Consensus (2025)",
       "evidence": {
         "document_id": "doc-9f4db4590790",
-        "pages": "p.10–11"
-      }
+        "pages": "p.10–11",
+        "pages_printed": "p.9–10"
+      },
+      "url": "https://aisafetypriorities.org/"
     }
   ],
   "updated": "2026-10-03"

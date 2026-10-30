@@ -61,19 +61,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). Glossary.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.224–225 (Glossary)"
-      }
+        "pages": "p.224–225",
+        "pages_printed": "p.224–225"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2026).",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.154"
-      }
+        "pages": "p.154",
+        "pages_printed": "p.153"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     }
   ],
   "status": "draft",

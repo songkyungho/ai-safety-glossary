@@ -72,7 +72,7 @@
         {
           "text": "오정렬이 거짓 정보 제공, 바람직하지 않은 행동 은폐, 어긋난 목표를 계속 추구하기 위한 정지 저항으로 이어질 수 있다고 설명함.",
           "refs": [
-            2
+            3
           ]
         }
       ]
@@ -81,19 +81,33 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.100–101; Glossary, p.223–224.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.100–101, p.223–224"
-      }
+        "pages": "p.100–101, p.223–224",
+        "pages_printed": "p.100–101, p.223–224"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.152; p.82–83.",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.82–83, p.152"
-      }
+        "pages": "p.152",
+        "pages_printed": "p.151"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "International AI Safety Report 2026",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.82–83",
+        "pages_printed": "p.81–82"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     }
   ],
   "updated": "2026-10-03"

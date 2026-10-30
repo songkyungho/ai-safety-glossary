@@ -20,7 +20,7 @@
     "points": [
       "문항·정답·채점 규칙을 묶어 공개함으로써 서로 다른 모델을 같은 조건에서 비교할 수 있게 하며, 지식·추론·코딩·에이전트 과제·안전성 등 영역별로 쓰임.",
       "AI 안전에서는 위험 역량의 수준이나 유해 요청 거절 성능을 추적하는 지표로 쓰여, 위험 임계값 판단과 정책 논의의 근거가 됨.",
-      "문항이 학습 데이터에 섞이는 오염, 특정 점수를 겨냥한 과적합, 측정한다고 주장하는 역량을 실제로 재지 못하는 타당성 문제가 지적됨."
+      "문항이 학습 데이터에 섞이는 오염, 특정 점수를 겨냥한 과적합, 측정한다고 주장하는 역량을 실제로 측정하지 못하는 타당성 문제가 지적됨."
     ],
     "distinction": {
       "text": "'벤치마크'는 평가에 쓰이는 표준화된 도구의 하나이고, '평가'는 벤치마크·레드티밍·감사 등을 아우르는 활동 전체임.",
@@ -53,9 +53,46 @@
           ]
         },
         {
-          "text": "2026년 보고서는 많은 벤치마크가 측정한다고 주장하는 역량을 정확히 재지 못하며, 객관식 형식에서는 지름길로 정답을 맞혀 점수가 부풀려질 수 있다고 지적함.",
+          "text": "2026년 보고서는 많은 벤치마크가 측정한다고 주장하는 역량을 정확히 측정하지 못하며, 객관식 형식에서는 지름길로 정답을 맞혀 점수가 부풀려질 수 있다고 지적함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "NIST",
+      "sub": "2024",
+      "points": [
+        {
+          "text": "편향·혐오 콘텐츠 정량화에 용도에 맞는 벤치마크를 쓰되, 학습·시험 데이터 교차 오염 등 벤치마크의 가정과 한계를 문서화하도록 권고함.",
           "refs": [
             3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "시스템적 위험 평가를 위한 모델 평가 방법의 하나로 벤치마크를 질의응답 세트·과제 기반 평가·레드티밍과 함께 예시함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "벤치마크를 실제 사용 사례를 대표하는 고정 과제 집합으로 AI 모델 성능을 평가·비교하는 표준화된 정량 시험으로 소개하고, 위험 평가의 정량 분석 자료로 예시함.",
+          "refs": [
+            5,
+            6
           ]
         }
       ]
@@ -64,27 +101,63 @@
   "refs": [
     {
       "n": 1,
-      "text": "International Scientific Report on the Safety of Advanced AI (국제 AI 안전 보고서, 2025).",
+      "text": "International AI Safety Report First Key Update (2025)",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.319"
-      }
+        "pages": "p.319",
+        "pages_printed": "p.21"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/first-key-update-capabilities-and-risk-implications"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.149"
-      }
+        "pages": "p.100–101, p.149",
+        "pages_printed": "p.99–100, p.148"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 3,
-      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "text": "NIST AI 600-1, MS-2.11-001",
       "evidence": {
-        "document_id": "doc-971d6902bec8",
-        "pages": "p.100–101"
-      }
+        "document_id": "doc-6e73620ab6b6",
+        "pages": "p.40",
+        "pages_printed": "p.36"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.600-1"
+    },
+    {
+      "n": 4,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 3.2",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.12–13",
+        "pages_printed": "p.12–13"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 5,
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3, 3-1",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.43",
+        "pages_printed": "p.43"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
+    },
+    {
+      "n": 6,
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.41",
+        "pages_printed": "p.41"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
     }
   ],
   "updated": "2026-10-03"

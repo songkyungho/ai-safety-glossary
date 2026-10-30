@@ -16,10 +16,10 @@
   ],
   "chapter": "01",
   "definition": {
-    "lead": "모델 가중치를 공개하지 않고, 개발사가 통제하는 응용 프로그램이나 API를 통해서만 이용하게 하는 AI 모델을 말함.",
+    "lead": "모델 가중치를 공개하지 않고, 외부 이용을 허용하지 않거나 개발사가 통제하는 응용 프로그램이나 API로만 이용하게 하는 AI 모델을 말함.",
     "points": [
       "공개 방식은 완전 폐쇄부터 호스팅 접근, API 접근, API를 통한 미세조정 허용까지 단계가 있으며, 가중치 내려받기가 허용되지 않는 쪽을 넓게 폐쇄형으로 부름.",
-      "개발사가 안전장치를 유지하고 이용 정책을 적용하며 문제가 생기면 접근을 중단·회수할 수 있음. 반면 외부 연구자의 독립 검증이 어렵고 소수 기업에 대한 의존이 커진다는 지적이 있음.",
+      "개발사가 안전장치를 유지하고 이용 정책을 적용하며 문제가 생기면 접근을 중단·회수할 수 있음. 반면 외부 연구자의 독립 검증이 어렵고 소수 기업에 의존하는 정도가 커진다는 지적이 있음.",
       "가중치가 비공개여도 유출·탈취되면 통제가 사라지므로 가중치 보안이 함께 요구됨."
     ],
     "distinction": {
@@ -61,24 +61,72 @@
           ]
         }
       ]
+    },
+    {
+      "org": "NIST",
+      "sub": "AI 800-1",
+      "points": [
+        {
+          "text": "기밀성에 기대어 오용 위험을 관리하는 모델은 무단 접근 위험이 충분히 완화된 때에만 개발하고, 가중치 유출·내부자 위협을 막는 보안 조치를 권고함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "공개하지 않은 모델 파라미터를 보호하도록 저장 위치 등록, 무단 복사 방지, 전송·저장 시 암호화 등 보안 완화 목표를 제시함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 2.4절 모델 공개 방식 및 표 2.5.",
+      "text": "International AI Safety Report 2025, 2.4",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.151–152"
-      }
+        "pages": "p.149–152",
+        "pages_printed": "p.149–152"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 오픈 웨이트 모델 절의 접근 수준 표.",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.134"
-      }
+        "pages": "p.134",
+        "pages_printed": "p.133"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "NIST AI 800-1 2차 초안, Practice 3.2",
+      "evidence": {
+        "document_id": "doc-362c24f9cfc1",
+        "pages": "p.18",
+        "pages_printed": "p.13"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.800-1.2pd"
+    },
+    {
+      "n": 4,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Appendix 4.2",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.41–42",
+        "pages_printed": "p.41–42"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "status": "draft",

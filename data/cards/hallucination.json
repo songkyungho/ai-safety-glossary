@@ -21,7 +21,7 @@
       "형식이 정교할수록 걸러내기 어려워, 자동화 편향과 겹치면 의료·법률·행정 판단에서 피해로 이어질 수 있음. 검색 결합·출처 표기로 줄일 수 있으나 완전히 없애기는 어려워 보정이 함께 강조됨."
     ],
     "distinction": {
-      "text": "'환각'은 의도를 전제하지 않는 근거 없는 출력이고, '기만'은 목표를 위해 잘못된 믿음을 유도하는 행동임. 사람이 퍼뜨리는 '오정보'·'허위 정보'와도 구별됨.",
+      "text": "'환각'은 의도를 전제하지 않는 근거 없는 출력이고, '기만'은 목표를 위해 잘못된 믿음을 유도하는 행동임. '오정보'·'허위 정보'는 정보의 정확성과 유포 의도를 기준으로 구별하는 개념이며, 환각으로 생성된 내용이 오정보로 유포될 수도 있음.",
       "terms": [
         "deception",
         "misinformation",
@@ -60,16 +60,62 @@
           ]
         }
       ]
+    },
+    {
+      "org": "NIST",
+      "sub": "AI 600-1",
+      "points": [
+        {
+          "text": "생성형 AI가 잘못되거나 거짓인 내용을 확신 있게 제시하는 현상을 '작화(confabulation)'라 하고 환각을 그 통칭으로 봄. 학습 데이터 분포를 근사하는 설계에서 자연히 생긴다고 설명함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "시스템적 위험 원천인 모델 경향의 하나로 '환각'을 일으키거나 오정보를 생성하거나 정보 출처를 흐리는 경향을 듦.",
+          "refs": [
+            3
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary, p.222–223.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.222–223"
-      }
+        "pages": "p.222",
+        "pages_printed": "p.222"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
+    },
+    {
+      "n": 2,
+      "text": "NIST AI 600-1, 2.2",
+      "evidence": {
+        "document_id": "doc-6e73620ab6b6",
+        "pages": "p.10",
+        "pages_printed": "p.6"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.600-1"
+    },
+    {
+      "n": 3,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Appendix 1.3.2",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.36",
+        "pages_printed": "p.36"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "updated": "2026-10-03"

@@ -78,19 +78,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "「유럽연합 인공지능법 범용인공지능모델 실천강령 안내서(GPAI)」 (2026). p.121.",
+      "text": "『EU GPAI 실천강령 한글 안내서』(2026)",
       "evidence": {
         "document_id": "doc-670ed9d255e5",
-        "pages": "p.121"
-      }
+        "pages": "p.121",
+        "pages_printed": "p.117"
+      },
+      "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/114"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. p.80.",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.80"
-      }
+        "pages": "p.80",
+        "pages_printed": "p.79"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     }
   ],
   "updated": "2026-10-03"

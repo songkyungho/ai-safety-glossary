@@ -22,7 +22,7 @@
       "검토 시간·근거 정보·권한이 없으면 승인만 남는 형식적 감독이 되어 책임만 사람에게 옮겨 가는 문제가 지적됨."
     ],
     "distinction": {
-      "text": "'인간 감독'은 감독 가능성을 보장하는 상위 원칙·요건이고, '휴먼 인 더 루프'는 사람이 결정 과정 안에서 개별 결정을 직접 승인·개입하는 구체적 구현 방식 중 하나임. 휴먼 인 더 루프가 없어도 모니터링·중단 권한을 통해 인간 감독이 이뤄질 수 있음.",
+      "text": "'인간 감독'은 감독 가능성을 보장하는 상위 원칙·요건이고, '휴먼 인 더 루프'는 사람이 결정 과정 안에서 개별 결정을 직접 승인·개입하는 구체적 구현 방식 중 하나임. 휴먼 인 더 루프가 없어도 모니터링·중단 권한으로 인간 감독이 이뤄질 수 있음.",
       "terms": [
         "human-in-the-loop"
       ]
@@ -52,16 +52,84 @@
           ]
         }
       ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "피해가 큰 사용처에서는 휴먼 인 더 루프가 직접 감독을 가능하게 하지만, 결정 속도·규모 때문에 비현실적일 때가 많고 자동화 편향이 생길 수 있다고 봄.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "NIST",
+      "sub": "AI 100-1",
+      "points": [
+        {
+          "text": "AI 의사결정·감독에서 인간의 역할과 책임을 명확히 정의·구분해야 하며, 인간과 AI의 구성은 완전 자율부터 완전 수동까지 걸친다고 봄.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국 AI 기본법",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "제34조는 고영향 AI 사업자 책무로 사람의 관리·감독을 둠. 사례집은 오류·성능 저하 등 비상 시 사람이 즉시 통제·개입할 기준과 방법, 정기 점검·교육 체계로 설명함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "High-Level Expert Group on AI (2019). Ethics Guidelines for Trustworthy AI, 1.1 Human agency and oversight.",
+      "text": "AI HLEG (2019). Ethics Guidelines for Trustworthy AI, 1.1",
       "evidence": {
         "document_id": "doc-4a89863a9655",
-        "pages": "p.18"
-      }
+        "pages": "p.18",
+        "pages_printed": "p.16"
+      },
+      "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai"
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report 2026",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.129",
+        "pages_printed": "p.128"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "NIST AI 100-1 (AI RMF 1.0), Appendix C",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.45–46",
+        "pages_printed": "p.40–41"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
+    },
+    {
+      "n": 4,
+      "text": "『인공지능기본법 지원데스크 사례집』(2026), 제34조",
+      "evidence": {
+        "document_id": "doc-db293b2c15ea",
+        "pages": "p.25",
+        "pages_printed": "p.17"
+      },
+      "url": "https://iaae.ai/research/?bmode=view&idx=170644595"
     }
   ],
   "updated": "2026-10-03"

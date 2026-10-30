@@ -80,19 +80,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "「인공지능기본법 지원데스크 사례집」(2026).",
+      "text": "『인공지능기본법 지원데스크 사례집』(2026)",
       "evidence": {
         "document_id": "doc-db293b2c15ea",
-        "pages": "p.19"
-      }
+        "pages": "p.19",
+        "pages_printed": "p.11"
+      },
+      "url": "https://iaae.ai/research/?bmode=view&idx=170644595"
     },
     {
       "n": 2,
-      "text": "Regulating Under Uncertainty: Governance Options for Generative AI (2024). Chapter 5, EU AI Act.",
+      "text": "G'sell (2024). Regulating Under Uncertainty, Ch.5",
       "evidence": {
         "document_id": "doc-0de6e16e0acb",
-        "pages": "p.213"
-      }
+        "pages": "p.213",
+        "pages_printed": "p.211"
+      },
+      "url": "https://cyber.fsi.stanford.edu/node/36847"
     }
   ],
   "status": "draft",

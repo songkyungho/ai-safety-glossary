@@ -106,27 +106,31 @@
   "refs": [
     {
       "n": 1,
-      "text": "European Commission (2025). Guidelines on the scope of the obligations for general-purpose AI models established by Regulation (EU) 2024/1689 (AI Act).",
+      "text": "European Commission (2025). GPAI Guidelines",
       "evidence": {
         "document_id": "doc-f66baa3d99af",
         "pages": "p.4–7"
-      }
+      },
+      "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act"
     },
     {
       "n": 2,
-      "text": "「인공지능 발전과 신뢰 기반 조성 등에 관한 기본법」(법률 제20676호, 2026.1.22 시행).",
+      "text": "「인공지능기본법」, 제32조",
       "evidence": {
         "document_id": "doc-6311a32b59e6",
         "pages": "p.12–13"
-      }
+      },
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
     },
     {
       "n": 3,
-      "text": "International AI Safety Report (2025). Glossary.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.221–222"
-      }
+        "pages": "p.221–222",
+        "pages_printed": "p.221–222"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     }
   ],
   "status": "draft",

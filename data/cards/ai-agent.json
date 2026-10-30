@@ -73,19 +73,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 용어 정의.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.38, p.47–48, p.80, p.111, p.170"
-      }
+        "pages": "p.38, p.47–48, p.80, p.111, p.170",
+        "pages_printed": "p.38, p.47–48, p.80, p.111, p.170"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 용어 정의.",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.148"
-      }
+        "pages": "p.148",
+        "pages_printed": "p.147"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     }
   ],
   "status": "draft",

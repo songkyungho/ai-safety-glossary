@@ -18,7 +18,7 @@
   "definition": {
     "lead": "AI 시스템이 오용, 오작동, 통제 상실 등으로 사람과 사회에 피해를 일으키지 않도록 하는 성질, 그리고 이를 위한 연구·기술·제도적 노력의 분야를 의미함.",
     "points": [
-      "역량 평가·레드티밍·위험 평가 같은 위험 식별, 정렬·강건성 확보 같은 개발 단계의 기법, 안전장치·배포 후 모니터링·AI 사고 보고 같은 배포 후 통제를 포괄함.",
+      "역량 평가·레드티밍·위험 평가 같은 위험 식별, 정렬·강건성 확보 같은 개발 단계의 기법, 안전장치·배포 후 모니터링·사고 보고 같은 배포 후 통제를 포괄함.",
       "범용 AI의 역량이 빠르게 늘면서 개별 제품 결함을 넘어 악의적 사용, 시스템적 위험, 통제 상실까지 다루는 분야로 범위가 넓어짐."
     ],
     "distinction": {
@@ -46,9 +46,45 @@
       "sub": "2026",
       "points": [
         {
-          "text": "AI 시스템의 안전을 악의적 오용이나 시스템 오작동 등을 통해 피해를 일으킬 가능성이 낮은 성질로 정의함.",
+          "text": "AI 시스템의 안전을 악의적 오용이나 시스템 오작동 등으로 피해를 일으킬 가능성이 낮은 성질로 정의함.",
           "refs": [
             1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "NIST",
+      "sub": "2023",
+      "points": [
+        {
+          "text": "AI RMF 1.0은 안전을 신뢰할 수 있는 AI의 특성으로 두고, 정해진 조건에서 사람의 생명·건강·재산이나 환경을 위태롭게 하는 상태로 이어지지 않아야 한다고 정의함(ISO/IEC TS 5723 인용).",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU AI HLEG",
+      "sub": "2019",
+      "points": [
+        {
+          "text": "신뢰할 수 있는 AI의 강건성 요소로, AI 시스템이 의도치 않은 피해를 일으키지 않도록 안전·보안·신뢰성 있게 작동하고 부정적 영향을 막는 안전장치를 갖춰야 한다고 봄.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국 AI 기본법",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "누적 연산량이 기준 이상인 AI 시스템의 안전성 확보를 위해 수명주기 전반의 위험 식별·평가·완화와 안전사고 모니터링·대응 위험관리체계 구축을 의무로 둠.",
+          "refs": [
+            4
           ]
         }
       ]
@@ -57,11 +93,42 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026).",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.154–155 (Glossary)"
-      }
+        "pages": "p.154–155",
+        "pages_printed": "p.153–154"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 2,
+      "text": "NIST AI 100-1 (AI RMF 1.0), 3.2",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.19–20",
+        "pages_printed": "p.14–15"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
+    },
+    {
+      "n": 3,
+      "text": "AI HLEG (2019). Ethics Guidelines for Trustworthy AI",
+      "evidence": {
+        "document_id": "doc-4a89863a9655",
+        "pages": "p.9",
+        "pages_printed": "p.7"
+      },
+      "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai"
+    },
+    {
+      "n": 4,
+      "text": "「인공지능기본법」, 제32조",
+      "evidence": {
+        "document_id": "doc-6311a32b59e6",
+        "pages": "p.12"
+      },
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
     }
   ],
   "status": "draft",

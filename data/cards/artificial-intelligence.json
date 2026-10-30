@@ -91,35 +91,41 @@
   "refs": [
     {
       "n": 1,
-      "text": "「인공지능 발전과 신뢰 기반 조성 등에 관한 기본법」(법률 제20676호, 2026.1.22 시행).",
+      "text": "「인공지능기본법」, 제2조",
       "evidence": {
         "document_id": "doc-6311a32b59e6",
         "pages": "p.3"
-      }
+      },
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
     },
     {
       "n": 2,
-      "text": "「인공지능 안전성 확보 가이드라인」 v1.3 (2026).",
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3",
       "evidence": {
         "document_id": "doc-c49c4fa002e6",
-        "pages": "p.13"
-      }
+        "pages": "p.13",
+        "pages_printed": "p.13"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
     },
     {
       "n": 3,
       "text": "Fraunhofer IKS (2025). AI Regulatory Roadmap: Past, present, and future trends in AI regulation.",
       "evidence": {
         "document_id": "doc-ae03eca109af",
-        "pages": "p.4–5"
+        "pages": "p.4–5",
+        "pages_printed": "p.3–4"
       }
     },
     {
       "n": 4,
-      "text": "International AI Safety Report (2025). Glossary.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.219–220"
-      }
+        "pages": "p.219–220",
+        "pages_printed": "p.219–220"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     }
   ],
   "status": "draft",

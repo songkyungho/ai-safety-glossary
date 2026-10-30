@@ -53,7 +53,7 @@
       "sub": "2024/1689",
       "points": [
         {
-          "text": "제6조에 따라 부속서 I의 EU 조화 법령상 제3자 적합성 평가 대상인 제품·안전 구성요소이거나, 부속서 III에 열거된 용도(핵심 기반시설, 교육·직업훈련, 고용 등)에 쓰이는 AI 시스템을 고위험으로 분류함.",
+          "text": "제6조에 따라 부속서 I의 EU 조화 법령상 제3자 적합성 평가 대상인 제품·안전 구성요소이거나, 부속서 III에 열거된 용도(핵심 기반시설, 교육·직업훈련, 고용 등)에 쓰이는 AI 시스템을 고위험으로 분류함. 다만 부속서 III 시스템이라도 건강·안전·기본권에 중대한 위해 위험이 없으면 고위험으로 보지 않음(제6조제3항).",
           "refs": [
             1
           ]
@@ -61,7 +61,7 @@
         {
           "text": "고위험 AI 시스템에는 위험 관리, 데이터 품질·거버넌스, 기술 문서, 기록 유지, 배포자에 대한 정보 제공, 인간 감독, 정확성·강건성·사이버 보안 요건이 적용되고, 시장 출시 전 적합성 평가를 거쳐야 함.",
           "refs": [
-            1
+            2
           ]
         }
       ]
@@ -73,7 +73,7 @@
         {
           "text": "'고위험' 대신 '고영향 인공지능'이라는 용어를 쓰며, 생명·신체의 안전과 기본권에 중대한 영향을 미치거나 위험을 초래할 우려가 있는 AI 시스템으로서 열거된 영역에서 활용되는 것으로 정의함.",
           "refs": [
-            2
+            3
           ]
         }
       ]
@@ -82,19 +82,32 @@
   "refs": [
     {
       "n": 1,
-      "text": "Regulating Under Uncertainty: Governance Options for Generative AI (2024). Chapter 5, EU AI Act.",
+      "text": "EU AI Act, Art. 6",
       "evidence": {
-        "document_id": "doc-0de6e16e0acb",
-        "pages": "p.206–210"
-      }
+        "document_id": "doc-bba630444b32",
+        "pages": "p.53–54",
+        "pages_printed": "p.53–54"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
     },
     {
       "n": 2,
-      "text": "「인공지능 발전과 신뢰 기반 조성 등에 관한 기본법」(법률 제20676호, 2026.1.22 시행).",
+      "text": "EU AI Act, Art. 8–16",
+      "evidence": {
+        "document_id": "doc-bba630444b32",
+        "pages": "p.55–62",
+        "pages_printed": "p.55–62"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    },
+    {
+      "n": 3,
+      "text": "「인공지능기본법」, 제2조",
       "evidence": {
         "document_id": "doc-6311a32b59e6",
         "pages": "p.3"
-      }
+      },
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
     }
   ],
   "status": "draft",

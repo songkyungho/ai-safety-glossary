@@ -17,7 +17,7 @@
     "points": [
       "적대적 예제, 탈옥 프롬프트, 프롬프트 인젝션 등 알려진 공격 기법을 체계적으로 적용하고, 공격 성공률 같은 지표로 결과를 측정함.",
       "정상 입력에서는 드러나지 않는 취약점을 찾아 강건성을 확인하고, 적대적 학습이나 안전장치 보강의 근거로 쓰임.",
-      "알려진 공격 기법 위주로 시험하게 되어 새로운 공격에 대한 방어력은 보장하지 못한다는 한계가 있음."
+      "알려진 공격 기법 위주로 시험하게 되어 새로운 공격까지 막아 낸다고 보장하지 못한다는 한계가 있음."
     ],
     "distinction": {
       "text": "'적대적 시험'은 적대적 입력을 이용한 시험 방법을 가리키고, '레드티밍'은 공격자 관점에서 사회적·운영적 오용 경로까지 폭넓게 탐색하는 활동으로 적대적 시험을 수단으로 포함함.",
@@ -42,5 +42,118 @@
       "red-teaming"
     ]
   },
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "레드티밍과 적대적 공격을 위험 식별·평가의 주요 방법으로 보고, 자동·수동으로 만든 입력으로 최악의 행동·악용 기회·예상치 못한 실패를 찾는다고 설명함. 특별한 접근 권한이 필요할 수 있다고 지적함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "2026년판은 적대적 공격 같은 시험 방법을 학습 단계 안전장치 뒤에 남은 취약점을 찾아내는 기술적 안전장치의 한 단계로 정리함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "제55조제1항(a)는 시스템적 위험이 있는 GPAI 모델 제공자에게 적대적 시험의 수행·문서화를 포함한 모델 평가 의무를 부과하고, 전문 제114항은 이러한 모델 평가를 특히 최초 시장 출시 전에 하고 적절한 경우 내부 또는 독립적 외부 시험으로 하도록 설명함.",
+          "refs": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "이행조치 3.2는 시스템적 위험 평가에 쓸 최첨단 모델 평가 방법의 예로 레드티밍과 그 밖의 적대적 시험을 제시함.",
+          "refs": [
+            5
+          ]
+        },
+        {
+          "text": "부록 3.3은 미세조정 공격·탈옥 같은 적대적 압력 아래에서도 안전 완화 조치가 효과적인지, 우회·무력화된 적이 있는지 평가하도록 함.",
+          "refs": [
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report 2025",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.186",
+        "pages_printed": "p.186"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report 2026, Figure 3.6",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.124",
+        "pages_printed": "p.123"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "EU AI Act, Art. 55(1)(a)",
+      "evidence": {
+        "document_id": "doc-bba630444b32",
+        "pages": "p.86",
+        "pages_printed": "p.86"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    },
+    {
+      "n": 4,
+      "text": "EU AI Act, Recital 114",
+      "evidence": {
+        "document_id": "doc-bba630444b32",
+        "pages": "p.30",
+        "pages_printed": "p.30"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    },
+    {
+      "n": 5,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 3.2",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.12–13",
+        "pages_printed": "p.12–13"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 6,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Appendix 3.3",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.39",
+        "pages_printed": "p.39"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    }
+  ]
 }

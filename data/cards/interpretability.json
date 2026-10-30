@@ -69,7 +69,31 @@
         {
           "text": "해석 가능성 연구는 범용 AI 모델의 내부 작동을 연구하고 이를 인간이 이해할 수 있게 만드는 방법을 개발하는 일로 정의함.",
           "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "NIST",
+      "sub": "2023",
+      "points": [
+        {
+          "text": "설명 가능성은 AI 시스템 작동 메커니즘의 표현, 해석 가능성은 설계된 기능 목적의 맥락에서 출력이 갖는 의미로 구분함.",
+          "refs": [
             3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "싱가포르 합의",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "해석 가능성 기법은 AI 시스템이 왜 그렇게 행동하는지에 대한 통찰에 근거해 신뢰성의 정성·정량 증거를 제공하려는 것으로 설명함.",
+          "refs": [
+            4
           ]
         }
       ]
@@ -78,27 +102,43 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary.",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.152"
-      }
+        "pages": "p.152",
+        "pages_printed": "p.151"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.192, p.201–202, p.223"
-      }
+        "pages": "p.192, p.201–202, p.223",
+        "pages_printed": "p.192, p.201–202, p.223"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 3,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary.",
+      "text": "NIST AI 100-1 (AI RMF 1.0), 3.5",
       "evidence": {
-        "document_id": "doc-c4fe09068d6e",
-        "pages": "p.170, p.223"
-      }
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.21–22",
+        "pages_printed": "p.16–17"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
+    },
+    {
+      "n": 4,
+      "text": "Singapore Consensus (2025), 2.3.3",
+      "evidence": {
+        "document_id": "doc-9f4db4590790",
+        "pages": "p.24–25",
+        "pages_printed": "p.23–24"
+      },
+      "url": "https://aisafetypriorities.org/"
     }
   ],
   "updated": "2026-10-03"

@@ -85,27 +85,33 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Key Definitions, p.158–159.",
+      "text": "International AI Safety Report 2025",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.158–159"
-      }
+        "pages": "p.158–159",
+        "pages_printed": "p.158–159"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "NIST (2023). AI Risk Management Framework (AI RMF 1.0), 1.1 Understanding and Addressing Risks, Impacts, and Harms.",
+      "text": "NIST AI 100-1 (AI RMF 1.0), 1.1",
       "evidence": {
         "document_id": "doc-7576edb531d9",
-        "pages": "p.9–10"
-      }
+        "pages": "p.9–10",
+        "pages_printed": "p.4–5"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
     },
     {
       "n": 3,
-      "text": "OECD (2024). Defining AI incidents and related terms. OECD AI Papers. 3. Actual vs. potential harm as the starting point.",
+      "text": "OECD (2024). Defining AI incidents and related terms",
       "evidence": {
         "document_id": "doc-9c46e00f1b3f",
-        "pages": "p.10"
-      }
+        "pages": "p.10",
+        "pages_printed": "p.10"
+      },
+      "url": "https://doi.org/10.1787/d1a8d965-en"
     }
   ],
   "updated": "2026-10-03"

@@ -14,9 +14,9 @@
   "definition": {
     "lead": "AI 시스템이 학습 때와 다른 입력, 예상치 못한 환경, 의도적 공격 등 넓은 범위의 상황에서도 안전하고 의도대로 작동하는 성질을 의미함.",
     "points": [
-      "분포 변화에 대한 일반화, 적대적 입력·탈옥·프롬프트 인젝션에 대한 저항, 잡음이나 오류가 섞인 입력에 대한 안정성 등을 포괄함.",
+      "분포가 바뀐 입력에서도 일반화하는 능력, 적대적 입력·탈옥·프롬프트 인젝션을 견디는 힘, 잡음이나 오류가 섞인 입력에도 흔들리지 않는 안정성 등을 포괄함.",
       "배포 환경의 낯선 입력이 예상치 못한 실패를 일으킬 수 있어, 적대적 학습·레드티밍·적대적 시험이 강건성 확보와 검증 수단으로 쓰임.",
-      "알려진 공격에 대한 방어가 새로운 공격에는 통하지 않는 경우가 많아, 강건성을 충분히 입증하기 어렵다는 한계가 있음."
+      "알려진 공격을 막는 방어가 새로운 공격에는 통하지 않는 경우가 많아, 강건성을 충분히 입증하기 어렵다는 한계가 있음."
     ],
     "distinction": {
       "text": "'강건성(robustness)'이 넓은 상황에서의 안전한 작동을 가리킨다면, '신뢰성(reliability)'은 의도된 기능을 일관되게 수행하는 성질을 가리킴.",
@@ -49,16 +49,84 @@
           ]
         }
       ]
+    },
+    {
+      "org": "NIST",
+      "sub": "2023",
+      "points": [
+        {
+          "text": "정확성과 강건성은 AI 시스템의 타당성·신뢰성에 기여하지만 서로 긴장 관계일 수 있으며, 학습 범위 밖으로 일반화되지 못한 시스템은 위험을 키운다고 봄.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU AI HLEG",
+      "sub": "2019",
+      "points": [
+        {
+          "text": "강건성을 적용 맥락에 맞는 기술적 강건성과 운영 환경을 고려하는 사회적 강건성을 아우르는 것으로 보고, 신뢰할 수 있는 AI의 세 요소 중 하나로 둠.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "안전 완화 조치가 미세조정 공격·탈옥 같은 적대적 압박에도 충분히 강건해야 한다고 요구함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026).",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.154–155 (Glossary)"
-      }
+        "pages": "p.154–155",
+        "pages_printed": "p.153–154"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 2,
+      "text": "NIST AI 100-1 (AI RMF 1.0), 3.1",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.18–19",
+        "pages_printed": "p.13–14"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
+    },
+    {
+      "n": 3,
+      "text": "AI HLEG (2019). Ethics Guidelines for Trustworthy AI, Glossary",
+      "evidence": {
+        "document_id": "doc-4a89863a9655",
+        "pages": "p.39",
+        "pages_printed": "p.37"
+      },
+      "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai"
+    },
+    {
+      "n": 4,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 5.1",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.17",
+        "pages_printed": "p.17"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "status": "draft",

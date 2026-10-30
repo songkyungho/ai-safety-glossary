@@ -43,7 +43,7 @@
       "sub": "2026",
       "points": [
         {
-          "text": "같은 정의를 유지하고, 에이전트 역량·기만·상황 인식·감독 회피·설득·자율 복제 등을 통제 상실을 가능하게 할 역량 후보로 제시함.",
+          "text": "2025년 정의를 바꿔, 통제를 되찾는 데 막대한 비용이 들거나 불가능한 시나리오로 정의하고, 에이전트 역량·기만·마음 이론·상황 인식·감독 회피·설득·자율 복제 및 적응을 통제 상실을 가능하게 할 역량 후보로 제시함.",
           "refs": [
             2
           ]
@@ -54,19 +54,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.100–101; Glossary, p.223.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.100–101, p.223"
-      }
+        "pages": "p.100–101, p.223",
+        "pages_printed": "p.100–101, p.223"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.152; p.79.",
+      "text": "International AI Safety Report 2026, 2.2.2",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.79, p.152"
-      }
+        "pages": "p.77–79",
+        "pages_printed": "p.76–78"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     }
   ],
   "updated": "2026-10-03"

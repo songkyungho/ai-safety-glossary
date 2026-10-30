@@ -75,19 +75,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "Bengio, Y. 외 (2025). International Scientific Report on the Safety of Advanced AI (IASR 2025). 용어 정의. p.62–63.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.62–63"
-      }
+        "pages": "p.62–63",
+        "pages_printed": "p.62–63"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "Bengio, Y. 외 (2026). International AI Safety Report 2026. 용어 정의. p.150.",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.150"
-      }
+        "pages": "p.150",
+        "pages_printed": "p.149"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     }
   ],
   "updated": "2026-10-03"

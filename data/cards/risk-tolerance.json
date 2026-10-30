@@ -56,32 +56,120 @@
           ]
         }
       ]
+    },
+    {
+      "org": "NIST",
+      "sub": "AI 100-1·800-1",
+      "points": [
+        {
+          "text": "위험 허용도를 조직이나 AI 행위자가 목표 달성을 위해 위험을 감수할 준비 정도로 정의하고, 맥락에 따라 다르며 시간에 따라 바뀐다고 봄.",
+          "refs": [
+            4
+          ]
+        },
+        {
+          "text": "배포 위험이 조직의 위험 허용도 안에 있다는 판단 근거를 문서화하도록 권고함.",
+          "refs": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "서명자가 시스템적 위험 수용 기준을 정해 위험이 수용 가능한지 판단하고, 그 결과에 따라 개발·출시·사용 진행 여부를 결정하도록 함.",
+          "refs": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "가이드라인",
+      "points": [
+        {
+          "text": "위험 평가에서 식별한 AI 위험을 수용 가능한 수준으로 제거하거나 완화하는 조치를 수립·시행하도록 함.",
+          "refs": [
+            7
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.154–155.",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.154–155"
-      }
+        "pages": "p.154–155",
+        "pages_printed": "p.153–154"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary, p.225–226.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.225–226"
-      }
+        "pages": "p.226",
+        "pages_printed": "p.226"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 3,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Figure 3.4.",
+      "text": "International AI Safety Report 2026, Figure 3.4",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.107"
-      }
+        "pages": "p.107",
+        "pages_printed": "p.106"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 4,
+      "text": "NIST AI 100-1 (AI RMF 1.0), 1.2.2",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.12",
+        "pages_printed": "p.7"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
+    },
+    {
+      "n": 5,
+      "text": "NIST AI 800-1 2차 초안, Practice 5.3",
+      "evidence": {
+        "document_id": "doc-362c24f9cfc1",
+        "pages": "p.22",
+        "pages_printed": "p.17"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.800-1.2pd"
+    },
+    {
+      "n": 6,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measures 4.1–4.2",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.15–16",
+        "pages_printed": "p.15–16"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 7,
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3, 3-1",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.47",
+        "pages_printed": "p.47"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
     }
   ],
   "updated": "2026-10-03"

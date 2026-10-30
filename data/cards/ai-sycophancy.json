@@ -67,16 +67,40 @@
           ]
         }
       ]
+    },
+    {
+      "org": "UN 과학 패널",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "사람이 동조하는 응답을 선호해 챗봇이 과장된 아첨을 익혔다고 보고, 아첨을 피해가 기록된 시스템적 위험이자 정렬·보안 실패로 규정함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.154–155.",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.154–155"
-      }
+        "pages": "p.155–156",
+        "pages_printed": "p.154–155"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 2,
+      "text": "UN Scientific Panel on AI (2026). Preliminary Report, 2.7",
+      "evidence": {
+        "document_id": "doc-7939c552f36b",
+        "pages": "p.24–25",
+        "pages_printed": "p.24–25"
+      },
+      "url": "https://www.un.org/independent-international-scientific-panel-ai/en/preliminary-report"
     }
   ],
   "updated": "2026-10-03",

@@ -59,7 +59,7 @@
           ]
         },
         {
-          "text": "각국이 국내 정책·법제에 맞게 조정해 채택할 수 있는 비구속적 공통 기준으로, 보고의 상호운용성과 비교 가능성을 높이는 데 목적이 있음.",
+          "text": "각국이 국내 정책·법제에 맞게 대응을 조정하면서 채택할 수 있는 공통 보고 방식으로, 의무 보고와 자율 보고 모두의 기반이 되고 보고의 상호운용성과 비교 가능성을 높이는 데 목적이 있음.",
           "refs": [
             1
           ]
@@ -79,7 +79,7 @@
         {
           "text": "법정 신고 의무가 아니라 자율적 위험관리 체계 안의 문서화·의사소통 절차로 제시됨.",
           "refs": [
-            2
+            3
           ]
         }
       ]
@@ -89,15 +89,16 @@
       "sub": "2024/1689",
       "points": [
         {
-          "text": "제73조는 고위험 AI 시스템 제공자가 중대 사고를 발생 회원국의 시장감시당국에 보고하도록 하며, 인지 후 15일 이내 보고가 원칙임.",
+          "text": "제73조는 고위험 AI 시스템 제공자가 중대 사고를 발생 회원국의 시장감시당국에 보고하도록 함. AI 시스템과 사고 사이의 인과관계 또는 그 합리적 개연성을 확인한 즉시 보고하되, 늦어도 제공자 또는 해당되는 경우 배포자가 사고를 인지한 후 15일을 넘겨서는 안 됨.",
           "refs": [
-            3
+            4
           ]
         },
         {
-          "text": "광범위한 침해·핵심 기반시설의 중대한 교란은 2일, 사망 사고는 10일 이내 보고해야 하며, 제55조제1항(c)는 시스템적 위험 GPAI 모델 제공자에게도 중대 사고 보고를 요구함.",
+          "text": "광범위한 침해 또는 핵심 기반시설의 관리·운영에 대한 중대하고 되돌릴 수 없는 교란은 즉시, 늦어도 인지 후 2일 이내 보고해야 함. 사망 사고는 AI 시스템과 사고 사이의 인과관계를 확인하거나 의심하는 즉시, 늦어도 인지 후 10일 이내 보고해야 함. 제55조제1항(c)는 시스템적 위험 GPAI 모델 제공자에게도 중대 사고 보고를 요구함.",
           "refs": [
-            3
+            4,
+            5
           ]
         }
       ]
@@ -109,13 +110,13 @@
         {
           "text": "사고보고에 대한 별도 정의는 없으나, 제32조는 일정 기준 이상의 AI 시스템에 안전사고 모니터링·대응 위험관리체계 구축과 이행 결과 제출을 요구함.",
           "refs": [
-            4
+            6
           ]
         },
         {
-          "text": "제34조는 고영향 AI 사업자에게 안전성·신뢰성 확보 조치 관련 문서의 작성·보관을 규정해, 사고 관련 기록·관리까지 포괄하는 근거로 볼 수 있음.",
+          "text": "제34조제1항제5호는 고영향 AI를 제공하는 사업자에게 안전성·신뢰성 확보 조치의 내용을 확인할 수 있는 문서를 작성·보관하도록 규정함.",
           "refs": [
-            4
+            7
           ]
         }
       ]
@@ -124,19 +125,71 @@
   "refs": [
     {
       "n": 1,
-      "text": "OECD (2025). Towards a common reporting framework for AI incidents. OECD AI Papers, No. 34."
+      "text": "OECD (2025). Towards a common reporting framework for AI incidents",
+      "evidence": {
+        "document_id": "doc-e8c1a12dd0f6",
+        "pages": "p.7, p.13, p.15",
+        "pages_printed": "p.7, p.13, p.15"
+      },
+      "url": "https://doi.org/10.1787/f326d4ac-en"
     },
     {
       "n": 2,
-      "text": "NIST (2023). AI Risk Management Framework (AI RMF 1.0), MANAGE 4.1 & 4.3."
+      "text": "NIST AI 100-1 (AI RMF 1.0), MANAGE 4.1·4.3",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.38",
+        "pages_printed": "p.33"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
     },
     {
       "n": 3,
-      "text": "Regulation (EU) 2024/1689 (EU AI Act), Articles 55(1)(c) and 73."
+      "text": "NIST AI 100-1 (AI RMF 1.0)",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.7, p.38",
+        "pages_printed": "p.2, p.33"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
     },
     {
       "n": 4,
-      "text": "「인공지능 발전과 신뢰 기반 조성 등에 관한 기본법」 제32조·제34조 (2026.1.22 시행)."
+      "text": "EU AI Act, Art. 73",
+      "evidence": {
+        "document_id": "doc-bba630444b32",
+        "pages": "p.101–102",
+        "pages_printed": "p.101–102"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    },
+    {
+      "n": 5,
+      "text": "EU AI Act, Art. 55(1)(c)",
+      "evidence": {
+        "document_id": "doc-bba630444b32",
+        "pages": "p.86",
+        "pages_printed": "p.86"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    },
+    {
+      "n": 6,
+      "text": "「인공지능기본법」, 제32조",
+      "evidence": {
+        "document_id": "doc-6311a32b59e6",
+        "pages": "p.12"
+      },
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
+    },
+    {
+      "n": 7,
+      "text": "「인공지능기본법」, 제34조",
+      "evidence": {
+        "document_id": "doc-6311a32b59e6",
+        "pages": "p.13"
+      },
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
     }
   ],
   "status": "reviewed",

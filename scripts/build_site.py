@@ -10,6 +10,7 @@ from __future__ import annotations
 import html
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone, timedelta
 
@@ -670,6 +671,14 @@ details:not([open]).term-card .ribbon { display: none; }
 """
 
 
+
+def shown_pages(r):
+    """출처에 붙일 쪽수: 인쇄 쪽(pages_printed)이 있으면 그것, 없으면 색인의 물리 쪽. 법령은 조문으로 인용해 쪽수를 달지 않는다."""
+    if r.get("text", "").startswith(("「", "EU AI Act")):
+        return None
+    ev = r.get("evidence") or {}
+    return ev.get("pages_printed") or ev.get("pages")
+
 def page(title, current, body, *, head_count=None, extra_js=""):
     return ui.page(title, current, body, css=GLOSSARY_CSS, head_count=head_count, extra_js=extra_js)
 
@@ -901,7 +910,7 @@ def card_html(e):
         lis = "".join(
             f'<li id="{html.escape(cid)}-ref-{r.get("n")}"><span class="ref-n">{r.get("n")}</span>'
             f'<span>{html.escape(r.get("text", ""))}'
-            f'{(" · " + html.escape(r["evidence"]["pages"])) if (r.get("evidence") or {}).get("pages") and r["evidence"]["pages"] not in r.get("text", "") else ""}'
+            f'{(", " + html.escape(shown_pages(r))) if shown_pages(r) and shown_pages(r) not in r.get("text", "") else ""}'
             f'{(" · <a href=" + chr(34) + html.escape(r["url"]) + chr(34) + " target=_blank rel=noopener>원문</a>") if r.get("url") else ""}'
             f'{library_link(r.get("library_id"))}</span></li>'
             for r in e["refs"])

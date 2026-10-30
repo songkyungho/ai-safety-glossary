@@ -86,27 +86,33 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report 2026 (국제 AI 안전 보고서 2026).",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.152"
-      }
+        "pages": "p.152",
+        "pages_printed": "p.151"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 2,
-      "text": "OECD (2024). Defining AI incidents and related terms. OECD Artificial Intelligence Papers.",
+      "text": "OECD (2024). Defining AI incidents and related terms",
       "evidence": {
         "document_id": "doc-9c46e00f1b3f",
-        "pages": "p.11–13"
-      }
+        "pages": "p.11–13",
+        "pages_printed": "p.11–13"
+      },
+      "url": "https://doi.org/10.1787/d1a8d965-en"
     },
     {
       "n": 3,
-      "text": "「인공지능 안전성 확보 가이드라인」 v1.3 (2026.1.21).",
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3",
       "evidence": {
         "document_id": "doc-c49c4fa002e6",
-        "pages": "p.57"
-      }
+        "pages": "p.57",
+        "pages_printed": "p.57"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
     }
   ],
   "updated": "2026-10-03"

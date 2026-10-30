@@ -74,27 +74,32 @@
   "refs": [
     {
       "n": 1,
-      "text": "「인공지능 발전과 신뢰 기반 조성 등에 관한 기본법」(법률 제20676호, 2026.1.22 시행).",
+      "text": "「인공지능기본법」, 제2조",
       "evidence": {
         "document_id": "doc-6311a32b59e6",
         "pages": "p.3"
-      }
+      },
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
     },
     {
       "n": 2,
-      "text": "「인공지능기본법 지원데스크 사례집」(2026).",
+      "text": "『인공지능기본법 지원데스크 사례집』(2026)",
       "evidence": {
         "document_id": "doc-db293b2c15ea",
-        "pages": "p.25"
-      }
+        "pages": "p.25",
+        "pages_printed": "p.17"
+      },
+      "url": "https://iaae.ai/research/?bmode=view&idx=170644595"
     },
     {
       "n": 3,
-      "text": "Regulating Under Uncertainty: Governance Options for Generative AI (2024). Chapter 5, EU AI Act.",
+      "text": "G'sell (2024). Regulating Under Uncertainty, Ch.5",
       "evidence": {
         "document_id": "doc-0de6e16e0acb",
-        "pages": "p.206–207"
-      }
+        "pages": "p.206–207",
+        "pages_printed": "p.204–205"
+      },
+      "url": "https://cyber.fsi.stanford.edu/node/36847"
     }
   ],
   "status": "draft",

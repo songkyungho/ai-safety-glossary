@@ -51,5 +51,103 @@
     "'사고연쇄 감시' → '사고 사슬 감시' (kit 번역어)"
   ],
   "status": "draft",
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "문제 해결·답변 과정에서 거치는 중간 설명 단계를 '사고 사슬'이라 부르며, 이를 생성하도록 학습된 추론 시스템은 사용 시점에 더 많은 연산을 들여 복잡한 문제를 작은 단계로 나눠 풂.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "일부 AI 시스템이 최종 답 전에 생성하는 중간 추론 단계를 검토하는 '사고 사슬 모니터'를 입력·내부 계산·출력 감시와 함께 주요 감시·개입 수단으로 제시함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "이행조치 5.1은 안전 완화 예시로 충실하지 않은 사고 사슬 흔적 같은 바람직하지 않은 모델 경향을 낳을 수 있는 학습 데이터의 필터링·정제를 듦.",
+          "refs": [
+            3
+          ]
+        },
+        {
+          "text": "사고 사슬 추론의 투명성을 확보하거나 모델이 다른 안전 완화를 무력화하는 능력에 대응하는 기법을 새로운 안전 완화의 예로 제시함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "싱가포르 합의",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "사고 사슬이 모델이 답에 이른 실제 과정을 늘 충실히 반영하지는 않아, 말과 행동이 다른 모델이 감독자를 속일 수 있다는 점을 안전 과제로 봄.",
+          "refs": [
+            4
+          ]
+        },
+        {
+          "text": "추론에 최적화 압력이 가해지면 모델이 추론을 오도하는 방식으로 감추도록 학습할 수 있어 사고 사슬 감시의 잠재적 한계로 지적함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "『2026 국제 AI 안전 보고서』 한국어판",
+      "evidence": {
+        "document_id": "doc-bd1392396bb5",
+        "pages": "p.29–30",
+        "pages_printed": "p.23–24"
+      },
+      "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/119"
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report Second Key Update (2025)",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.341–343",
+        "pages_printed": "p.11–13"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/second-key-update-technical-safeguards-and-risk-management"
+    },
+    {
+      "n": 3,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 5.1",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.17",
+        "pages_printed": "p.17"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 4,
+      "text": "Singapore Consensus (2025), 2.3.3",
+      "evidence": {
+        "document_id": "doc-9f4db4590790",
+        "pages": "p.25–26",
+        "pages_printed": "p.24–25"
+      },
+      "url": "https://aisafetypriorities.org/"
+    }
+  ]
 }

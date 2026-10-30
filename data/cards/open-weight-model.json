@@ -17,7 +17,7 @@
     "lead": "모델 가중치를 공개해 누구나 내려받아 직접 실행·연구·수정할 수 있게 한 AI 모델을 말함.",
     "points": [
       "대개 가중치와 실행 코드만 공개되고 학습 코드·데이터는 공개되지 않으며, 이용 제한 라이선스가 붙기도 함. 그래서 '오픈소스 모델'이라는 표현이 부정확한 경우가 많음.",
-      "외부 검증과 연구가 쉬워지고 시장 집중을 완화하며 자원이 적은 주체도 활용할 수 있다는 이점이 있음. 반면 한 번 공개된 가중치는 회수할 수 없고, 미세조정으로 안전장치를 제거해 악의적으로 사용할 수 있음.",
+      "외부 검증과 연구가 쉬워지고 시장 집중을 완화할 가능성이 있으며 자원이 적은 주체도 활용할 수 있다는 이점이 있음. 반면 한 번 공개된 가중치는 회수할 수 없고, 미세조정으로 안전장치를 제거해 악의적으로 사용할 수 있음.",
       "논의는 공개 여부의 찬반에서 어떤 역량 수준까지 공개해도 되는지, 공개 전 어떤 평가를 거쳐야 하는지로 옮겨 가고 있음."
     ],
     "distinction": {
@@ -64,24 +64,50 @@
           ]
         }
       ]
+    },
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "가중치·아키텍처·사용 정보를 공개하고 접근·사용·수정·배포를 허용하는 자유 오픈소스 라이선스 모델에 일부 의무를 면제하나, 시스템적 위험 GPAI 모델은 제외함(제53조(2), 제54조(6)).",
+          "refs": [
+            3
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 2.4절 상자 '오픈 웨이트 모델과 오픈소스 모델의 차이'.",
+      "text": "International AI Safety Report 2025, 2.4",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.150–151"
-      }
+        "pages": "p.150–151",
+        "pages_printed": "p.150–151"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. 오픈 웨이트 모델 절.",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.134"
-      }
+        "pages": "p.134",
+        "pages_printed": "p.133"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "European Commission (2025). GPAI Guidelines, 4",
+      "evidence": {
+        "document_id": "doc-13481bd90108",
+        "pages": "p.22–23",
+        "pages_printed": "p.19–20"
+      },
+      "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act"
     }
   ],
   "status": "draft",

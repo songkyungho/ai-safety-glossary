@@ -40,5 +40,96 @@
     ]
   },
   "status": "draft",
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "frameworks": [
+    {
+      "org": "NIST",
+      "sub": "2023",
+      "points": [
+        {
+          "text": "투명성을 AI 시스템과 그 출력에 관한 정보가 상호작용하는 사람에게 제공되는 정도로 정의하고, 설계 결정·학습 데이터부터 배포 결정과 그 결정 주체까지를 범위로 보며 책임성의 전제로 둠.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "제50조는 사람과 직접 상호작용하는 AI 시스템이 AI와 상호작용 중임을 알리도록 설계하게 하고, 합성 음성·이미지·영상·텍스트 출력은 기계 판독 가능한 형식으로 표시해 탐지할 수 있게 함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "투명성 장은 제53조(1)(a)·(b)의 문서화 의무 이행을 위한 세 이행조치와 모델 문서화 양식을 두고, 항목별로 하류 제공자용인지 AI 사무국·국가 당국용(요청 시 제공)인지 표시함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국 AI 기본법",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "제31조는 고영향·생성형 AI 기반 제품·서비스임을 이용자에게 사전 고지하고, 생성형 AI 결과물임을 표시하며, 실제와 구분하기 어려운 가상 음향·이미지·영상은 명확히 인식할 수 있게 고지·표시하도록 함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "NIST AI 100-1 (AI RMF 1.0), 3.4",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.20–21",
+        "pages_printed": "p.15–16"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
+    },
+    {
+      "n": 2,
+      "text": "EU AI Act, Art. 50",
+      "evidence": {
+        "document_id": "doc-bba630444b32",
+        "pages": "p.82",
+        "pages_printed": "p.82"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    },
+    {
+      "n": 3,
+      "text": "EU GPAI Code of Practice (2025), Transparency",
+      "evidence": {
+        "document_id": "doc-407e3a0a6632",
+        "pages": "p.2",
+        "pages_printed": "p.2"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118120"
+    },
+    {
+      "n": 4,
+      "text": "「인공지능기본법」, 제31조",
+      "evidence": {
+        "document_id": "doc-6311a32b59e6",
+        "pages": "p.12"
+      },
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
+    }
+  ]
 }

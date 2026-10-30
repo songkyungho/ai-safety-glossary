@@ -1,4 +1,23 @@
 {
   "_note": "PDF 근거 색인의 문서 제목이 틀렸을 때 화면 표기만 바로잡는다 (색인 원본은 그대로).",
-  "doc-c49c4fa002e6": {"title": "인공지능 안전성 확보 가이드라인 v1.3 (2026.1.21)", "short": "안전성 확보 가이드라인"}
+  "doc-c49c4fa002e6": {
+    "title": "인공지능 안전성 확보 가이드라인 v1.3 (2026.1.21)",
+    "short": "안전성 확보 가이드라인"
+  },
+  "doc-bba630444b32": {
+    "title": "Regulation (EU) 2024/1689 (AI Act), Official Journal",
+    "short": "EU AI Act"
+  },
+  "doc-d879f9b54c60": {
+    "title": "General-Purpose AI Code of Practice: Safety and Security Chapter (2025)",
+    "short": "GPAI 실천강령 안전·보안 장"
+  },
+  "doc-407e3a0a6632": {
+    "title": "General-Purpose AI Code of Practice: Transparency Chapter (2025)",
+    "short": "GPAI 실천강령 투명성 장"
+  },
+  "doc-13481bd90108": {
+    "title": "Commission Guidelines on the scope of the obligations for providers of GPAI models, C(2025) 7719",
+    "short": "집행위 GPAI 지침"
+  }
 }

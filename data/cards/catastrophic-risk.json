@@ -39,5 +39,107 @@
       "ai-risk"
     ]
   },
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "통제 상실 시나리오의 가설적 결과는 심각도가 다양하나 일부 전문가는 인류의 주변화·멸종까지 고려하며, 가능성에 대한 전문가 견해는 크게 갈린다고 정리함.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "프론티어 AI 안전 프레임워크 사례로 앤트로픽의 책임 있는 스케일링 정책(RSP)이 AI 안전 수준(ASL)을 파국적 위험의 정도에 따라 나누고 단계별 배포·보안 기준을 연동한다고 소개함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "'파국적 위험' 대신 시스템적 위험 개념을 쓰며, 부록 1.4에서 CBRN, 통제 상실, 사이버 공격, 유해한 조작을 특정 시스템적 위험으로 지정함.",
+          "refs": [
+            3
+          ]
+        },
+        {
+          "text": "시스템적 위험의 기여 특성으로 고속성, 연쇄성, 복구가 어렵거나 영구히 되돌릴 수 없는 특성, 소수 행위자에 의한 비대칭적 영향 등을 듦.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "EU 실천강령의 4대 위험을 고도화된 모델 특유의 위험, 대규모 영향, 빠른 전개, 회복 불가능의 특징을 가진 반드시 고려할 위험 유형으로 소개하고 관리 후보 위험 목록으로 활용하도록 함.",
+          "refs": [
+            5
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report 2025, 2.2.3",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.100",
+        "pages_printed": "p.100"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report 2026",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.116",
+        "pages_printed": "p.115"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Appendix 1.4",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.37",
+        "pages_printed": "p.37"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 4,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Appendix 1.2.2",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.35",
+        "pages_printed": "p.35"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 5,
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.33",
+        "pages_printed": "p.33"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
+    }
+  ]
 }

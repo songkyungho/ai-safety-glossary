@@ -48,24 +48,72 @@
           ]
         }
       ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "원칙적으로 식별된 시스템적 위험마다 모델 역량 기준으로 정의되고 측정 가능하며, 모델이 아직 도달하지 않은 등급을 하나 이상 포함하는 시스템적 위험 등급을 정하도록 함. 다만 위험 등급 방식이 적합하지 않고 부록 1.4의 지정된 시스템적 위험에 해당하지 않는 경우에는 다른 적절한 위험 수용 기준을 정할 수 있음.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "UK AISI",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "위험 임계값을 피해의 가능성과 규모로 허용할 수 없는 위험을 규정하는 기준으로 보고, 구체적 위험 역량을 정한 역량 임계값과 구별함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.154–155.",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.154–155"
-      }
+        "pages": "p.154–155",
+        "pages_printed": "p.153–154"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary, p.225–226.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.225–226"
-      }
+        "pages": "p.226",
+        "pages_printed": "p.226"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
+    },
+    {
+      "n": 3,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 4.1",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.15–16",
+        "pages_printed": "p.15–16"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 4,
+      "text": "UK AISI (2025). Emerging Practices in Frontier AI Safety Frameworks",
+      "evidence": {
+        "document_id": "doc-85aff17d77b6",
+        "pages": "p.9–10",
+        "pages_printed": "p.9–10"
+      },
+      "url": "https://www.aisi.gov.uk/research/emerging-practices-in-frontier-ai-safety-frameworks"
     }
   ],
   "updated": "2026-10-03"

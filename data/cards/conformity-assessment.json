@@ -60,19 +60,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "「유럽연합 인공지능법 범용인공지능모델 실천강령 안내서(GPAI)」(2026). 용어 정의.",
+      "text": "『EU GPAI 실천강령 한글 안내서』(2026), 용어 정의",
       "evidence": {
         "document_id": "doc-670ed9d255e5",
-        "pages": "p.12"
-      }
+        "pages": "p.12",
+        "pages_printed": "p.8"
+      },
+      "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/114"
     },
     {
       "n": 2,
-      "text": "Regulating Under Uncertainty: Governance Options for Generative AI (2024). Chapter 5, EU AI Act.",
+      "text": "G'sell (2024). Regulating Under Uncertainty, Ch.5",
       "evidence": {
         "document_id": "doc-0de6e16e0acb",
-        "pages": "p.209–210"
-      }
+        "pages": "p.209–210",
+        "pages_printed": "p.207–208"
+      },
+      "url": "https://cyber.fsi.stanford.edu/node/36847"
     }
   ],
   "status": "draft",

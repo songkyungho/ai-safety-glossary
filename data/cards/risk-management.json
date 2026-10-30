@@ -19,7 +19,7 @@
     "lead": "AI 위험을 식별·분석·판정하고 완화한 뒤 그 결과를 지속적으로 모니터링·갱신하는 조직적·체계적 활동을 말함.",
     "points": [
       "위험 식별, 위험 분석·판정, 위험 완화, 이를 뒷받침하는 책임·감독 구조(위험 거버넌스)가 반복되는 순환 과정으로 구성됨.",
-      "AI 위험의 상당 부분이 배포 후 드러나므로, 배포 후 모니터링과 AI 사고 보고에서 얻은 정보로 위험 목록과 조치를 갱신하는 것이 체계의 핵심임.",
+      "AI 위험의 상당 부분이 배포 후 드러나므로, 배포 후 모니터링과 사고 보고에서 얻은 정보로 위험 목록과 조치를 갱신하는 것이 체계의 핵심임.",
       "NIST AI RMF, ISO/IEC 42001, EU AI법의 위험 관리 의무 등 여러 틀이 있으며, 문서를 갖추는 것과 실제로 갱신이 돌아가는 것은 다르다는 점이 지적됨."
     ],
     "distinction": {
@@ -86,7 +86,7 @@
       "sub": "2026",
       "points": [
         {
-          "text": "「안전성 확보 가이드라인」은 고시 제2조를 인용해 위험관리체계를 인공지능 관련 안전사고를 모니터링하고 대응하는 책임 주체의 권한과 의무 등을 규정한 체계로 정의함.",
+          "text": "『안전성 확보 가이드라인』은 고시 제2조를 인용해 위험관리체계를 인공지능 관련 안전사고를 모니터링하고 대응하는 책임 주체의 권한과 의무 등을 규정한 체계로 정의함.",
           "refs": [
             4
           ]
@@ -97,35 +97,43 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Key Definitions, p.158–159.",
+      "text": "International AI Safety Report 2025",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.158–159"
-      }
+        "pages": "p.158–159",
+        "pages_printed": "p.158–159"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Figure 3.4.",
+      "text": "International AI Safety Report 2026, Figure 3.4",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.107"
-      }
+        "pages": "p.107",
+        "pages_printed": "p.106"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 3,
-      "text": "NIST (2023). AI Risk Management Framework (AI RMF 1.0), 1.1 Understanding and Addressing Risks, Impacts, and Harms.",
+      "text": "NIST AI 100-1 (AI RMF 1.0), 1.1",
       "evidence": {
         "document_id": "doc-7576edb531d9",
-        "pages": "p.9–10"
-      }
+        "pages": "p.9–10",
+        "pages_printed": "p.4–5"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
     },
     {
       "n": 4,
-      "text": "「인공지능 안전성 확보 가이드라인」 v1.3 (2026). 용어 정의(고시 제2조 인용).",
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3, 용어 정의",
       "evidence": {
         "document_id": "doc-c49c4fa002e6",
-        "pages": "p.13"
-      }
+        "pages": "p.13",
+        "pages_printed": "p.13"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
     }
   ],
   "updated": "2026-10-03"

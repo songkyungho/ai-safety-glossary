@@ -60,16 +60,84 @@
           ]
         }
       ]
+    },
+    {
+      "org": "NIST",
+      "sub": "2023",
+      "points": [
+        {
+          "text": "의사결정·감독에서 사람의 역할과 책임을 명확히 정의·구분해야 하며, 사람과 AI의 구성은 완전 자율부터 완전 수동까지 걸친다고 봄.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU AI HLEG",
+      "sub": "2019",
+      "points": [
+        {
+          "text": "인간 감독은 AI 시스템이 인간의 자율성을 훼손하지 않도록 돕는 장치이며, 휴먼 인 더 루프 같은 거버넌스 메커니즘으로 달성할 수 있다고 봄.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "고영향 AI 사업자 책무인 사람의 관리·감독을 오류·성능 저하 등 비상 상황에서 사람이 즉시 통제·개입할 수 있는 기준과 방법의 확립으로 설명함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026, 'Humans in the loop allow for direct oversight in high-stakes settings'.",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.129"
-      }
+        "pages": "p.129",
+        "pages_printed": "p.128"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 2,
+      "text": "NIST AI 100-1 (AI RMF 1.0), Appendix C",
+      "evidence": {
+        "document_id": "doc-7576edb531d9",
+        "pages": "p.45–46",
+        "pages_printed": "p.40–41"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.100-1"
+    },
+    {
+      "n": 3,
+      "text": "AI HLEG (2019). Ethics Guidelines for Trustworthy AI, 1.1",
+      "evidence": {
+        "document_id": "doc-4a89863a9655",
+        "pages": "p.18",
+        "pages_printed": "p.16"
+      },
+      "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai"
+    },
+    {
+      "n": 4,
+      "text": "『인공지능기본법 지원데스크 사례집』(2026), 제34조",
+      "evidence": {
+        "document_id": "doc-db293b2c15ea",
+        "pages": "p.25",
+        "pages_printed": "p.17"
+      },
+      "url": "https://iaae.ai/research/?bmode=view&idx=170644595"
     }
   ],
   "updated": "2026-10-03"

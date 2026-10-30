@@ -52,19 +52,22 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). Glossary.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.144–145, p.220–221"
-      }
+        "pages": "p.144–145, p.220–221",
+        "pages_printed": "p.144–145, p.220–221"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 2,
-      "text": "European Commission (2025). Guidelines on the scope of the obligations for general-purpose AI models established by Regulation (EU) 2024/1689 (AI Act).",
+      "text": "European Commission (2025). GPAI Guidelines",
       "evidence": {
         "document_id": "doc-f66baa3d99af",
         "pages": "p.4–5"
-      }
+      },
+      "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act"
     }
   ],
   "status": "draft",

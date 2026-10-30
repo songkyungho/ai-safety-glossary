@@ -21,7 +21,7 @@
       "새 모델마다 새 우회 기법이 발견되는 양상이 반복되어, 실무 목표는 완전 차단보다 공격 성공률을 낮추고 뚫렸을 때의 피해를 제한하는 데 놓임. 레드티밍과 적대적 학습이 주요 대응임."
     ],
     "distinction": {
-      "text": "'탈옥'은 이용자가 자기 요청을 통과시키려 안전장치를 우회하는 공격이고, '프롬프트 인젝션'은 제3자가 데이터에 심은 지시가 이용자 의도와 무관하게 모델을 가로채는 공격임.",
+      "text": "'탈옥'은 안전장치를 우회해 유해한 출력을 얻으려는 공격이고, '프롬프트 인젝션'은 직접 입력하거나 데이터에 심은 지시로 시스템이 의도와 다르게 행동하게 만드는 공격임.",
       "terms": [
         "prompt-injection"
       ]
@@ -74,19 +74,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.152.",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.152"
-      }
+        "pages": "p.152",
+        "pages_printed": "p.151"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.170, p.182, p.192; Glossary, p.223.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.170, p.182, p.192, p.223"
-      }
+        "pages": "p.223",
+        "pages_printed": "p.223"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     }
   ],
   "updated": "2026-10-03"

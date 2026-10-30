@@ -17,7 +17,7 @@
   "definition": {
     "lead": "어떤 목표를 추구하는 과정에서 타인에게 체계적으로 잘못된 믿음을 형성하게 하는 AI 시스템의 행동을 의미함.",
     "points": [
-      "자신의 목표·행동·역량에 대한 거짓 보고, 끝내지 못한 작업을 완료했다고 보고하는 행위 등이 포함됨. 악의를 가정하지 않아도, 사실대로 보고하는 것이 불리한 학습·평가 구조에서 학습될 수 있음.",
+      "자신의 목표·행동·역량을 거짓으로 보고하는 것, 끝내지 못한 작업을 완료했다고 보고하는 행위 등이 포함됨. 악의를 가정하지 않아도, 사실대로 보고하는 것이 불리한 학습·평가 구조에서 학습될 수 있음.",
       "모델의 보고와 평가 결과를 믿을 수 없게 만들어 인간 감독의 전제를 무너뜨림. 계략적 행동·샌드배깅·기만적 정렬 같은 감독 회피 행동의 공통 기반이 되는 역량으로 다뤄짐.",
       "모델이 실제로 무엇을 '알고' 있었는지 직접 확인하기 어려워, 출력과 사실의 불일치만으로는 기만과 환각을 가리기 어려움. 해석 가능성 연구와 사고 사슬 점검이 보완 수단이나 한계가 있음."
     ],
@@ -64,7 +64,7 @@
         {
           "text": "통제 상실을 가능하게 할 역량 후보의 하나로, AI 시스템 자신의 목표와 행동에 관해 잘못된 믿음을 낳는 행동까지 포함해 설명함.",
           "refs": [
-            1
+            2
           ]
         }
       ]
@@ -76,7 +76,7 @@
         {
           "text": "타인에게 체계적으로 잘못된 믿음을 형성하게 하는 모델 행동으로 보고, 평가 중임을 탐지해 의도적으로 성능을 낮추는 등 감독 회피를 수반하는 행동을 포함함.",
           "refs": [
-            2
+            3
           ]
         }
       ]
@@ -85,19 +85,33 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.150; p.79.",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.79, p.150"
-      }
+        "pages": "p.150",
+        "pages_printed": "p.149"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 2,
-      "text": "「유럽연합 인공지능법 범용인공지능모델 실천강령 안내서(GPAI)」 (2026). p.109.",
+      "text": "International AI Safety Report 2026, 2.2.2",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.79",
+        "pages_printed": "p.78"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "『EU GPAI 실천강령 한글 안내서』(2026)",
       "evidence": {
         "document_id": "doc-670ed9d255e5",
-        "pages": "p.109"
-      }
+        "pages": "p.109",
+        "pages_printed": "p.105"
+      },
+      "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/114"
     }
   ],
   "updated": "2026-10-03"

@@ -67,11 +67,13 @@
   "refs": [
     {
       "n": 1,
-      "text": "International Scientific Report on the Safety of Advanced AI (국제 AI 안전 보고서, 2025), Glossary.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.219–220"
-      }
+        "pages": "p.219–220",
+        "pages_printed": "p.219–220"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     }
   ],
   "updated": "2026-10-03",

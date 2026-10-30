@@ -12,7 +12,7 @@
   "definition": {
     "lead": "AI 시스템이 해를 끼치지 않고 의도대로 작동하도록 개발·배포·운영 단계에 두는 기술적·절차적 보호 조치를 통칭함.",
     "points": [
-      "안전 학습(거부 학습·적대적 학습 등), 입출력 필터와 AI 가드레일, 접근 통제·이용 정책, 모니터링, 인간 감독 등 여러 층의 조치를 포괄함.",
+      "안전 학습(거부 학습·적대적 학습 등), 입출력 필터와 가드레일, 접근 통제·이용 정책, 모니터링, 인간 감독 등 여러 층의 조치를 포괄함.",
       "위험 관리에서 위험 완화 수단의 핵심이며, 위험 임계값에 이른 모델의 배포 조건이나 오픈 웨이트 공개 여부를 판단할 때 그 충분성이 쟁점이 됨.",
       "탈옥·미세조정 등으로 우회·제거될 수 있어 단일 조치가 아니라 다층 방어로 설계해야 한다는 견해가 일반적임."
     ],
@@ -47,9 +47,45 @@
           ]
         },
         {
-          "text": "2025년 보고서는 AI 시스템이 의도대로 작동하고 해로운 결과를 피하도록 하는 내장 안전 제약으로 정의함.",
+          "text": "2025년 보고서는 가드레일을 AI 시스템이 의도대로 작동하고 해로운 결과를 피하도록 하는 내장 안전 제약으로 정의함.",
           "refs": [
             2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "NIST",
+      "sub": "AI 800-1",
+      "points": [
+        {
+          "text": "배포 결정은 가용한 안전장치와 그 효과가 오용 위험을 충분히 완화하는지에 근거해야 하며, 위협 행위자의 우회 가능성을 고려해 안전 여유를 두도록 권고함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "미세조정 공격·탈옥 같은 적대적 압박에도 강건한 안전 완화를 요구하고, 학습 데이터 정제, 입출력 필터링, 거부 학습, 단계적 접근을 예시함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "위험 완화 조치를 모델 설계(유해 요청 거부 학습), 보안, 배포 전략, 운영(실시간 모니터링) 전반에 다층적으로 설계하도록 함.",
+          "refs": [
+            5
           ]
         }
       ]
@@ -58,19 +94,53 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary.",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.154–155"
-      }
+        "pages": "p.154–155",
+        "pages_printed": "p.153–154"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.222–223"
-      }
+        "pages": "p.222–223",
+        "pages_printed": "p.222–223"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
+    },
+    {
+      "n": 3,
+      "text": "NIST AI 800-1 2차 초안, Practice 5.3",
+      "evidence": {
+        "document_id": "doc-362c24f9cfc1",
+        "pages": "p.21–22",
+        "pages_printed": "p.16–17"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.800-1.2pd"
+    },
+    {
+      "n": 4,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 5.1",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.17",
+        "pages_printed": "p.17"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 5,
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3, 3-1",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.47–48",
+        "pages_printed": "p.47–48"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
     }
   ],
   "updated": "2026-10-03"

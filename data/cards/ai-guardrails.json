@@ -43,5 +43,102 @@
     "대체어 '안전장치'(public)는 kit의 safeguard 번역어와 겹쳐 safeguard/guardrail 구별을 흐리므로 지움."
   ],
   "updated": "2026-10-03",
-  "head_override": "AI를 떼는 원칙(2026-10-03) — 'AI ○○' 표기는 대체어로 둠"
+  "head_override": "AI를 떼는 원칙(2026-10-03) — 'AI ○○' 표기는 대체어로 둠",
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2025·2026",
+      "points": [
+        {
+          "text": "입력·출력·모델 자체에 모니터링·개입·통제 기법을 적용해 시스템 행동을 감독하고 가드레일을 세운다고 보고, 입출력 유해 콘텐츠 탐지기·사고 사슬 모니터·샌드박싱 등을 예로 듦.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "입출력 콘텐츠 필터는 우발적 피해와 오용 위험을 줄이는 매우 효과적인 수단이지만, 추가 연산이 들고 일부 공격에 취약해 최적화된 악의적 공격 앞에서는 불완전하다고 평가함.",
+          "refs": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "NIST",
+      "sub": "2024",
+      "points": [
+        {
+          "text": "생성형 AI 프로파일(MS-2.5-006)은 보안·안전 가드레일을 정기적으로 검토하되, 특히 시스템이 새로운 상황에서 운영될 때 검토하도록 권고함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "이행조치 5.1은 미세조정 공격·탈옥 같은 적대적 압박에도 충분히 견디는 안전 완화를 요구하고, 그 예로 모델 입력·출력의 모니터링·필터링을 듦.",
+          "refs": [
+            5
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report Second Key Update (2025), Figure 3",
+      "evidence": {
+        "document_id": "doc-c4fe09068d6e",
+        "pages": "p.342",
+        "pages_printed": "p.12"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/second-key-update-technical-safeguards-and-risk-management"
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report 2026, Table 3.6",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.123",
+        "pages_printed": "p.122"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "International AI Safety Report 2026, 3.3",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.128–129",
+        "pages_printed": "p.127–128"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 4,
+      "text": "NIST AI 600-1, MS-2.5-006",
+      "evidence": {
+        "document_id": "doc-6e73620ab6b6",
+        "pages": "p.35",
+        "pages_printed": "p.31"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.600-1"
+    },
+    {
+      "n": 5,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 5.1",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.17",
+        "pages_printed": "p.17"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    }
+  ]
 }

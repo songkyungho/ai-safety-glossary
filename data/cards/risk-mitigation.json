@@ -63,24 +63,94 @@
           ]
         }
       ]
+    },
+    {
+      "org": "NIST",
+      "sub": "2024",
+      "points": [
+        {
+          "text": "우선순위 위험에 대한 대응 선택지로 완화·이전·회피·수용을 들고, 조직의 위험 허용 한도를 넘는 위험은 완화·이전·회피하며 통제의 효과성을 레드티밍 등으로 모니터링하도록 함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "적대적 압력에도 견디는 안전 완화를 요구하고, 학습 데이터 필터링, 입출력 모니터링·필터링, 거부 미세조정, 단계적 접근 허용 등을 예시로 듦.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "안전성 확보 가이드라인은 위험 평가 결과에 직접 연계해 고위험부터 완화 조치를 수립·시행하고, 시급성·효과성·실행 가능성과 부작용을 함께 따지도록 함.",
+          "refs": [
+            5
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Figure 3.4.",
+      "text": "International AI Safety Report 2026, Figure 3.4",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.107"
-      }
+        "pages": "p.107",
+        "pages_printed": "p.106"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Defence-in-depth and release strategies are important mitigation tools.",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.113"
-      }
+        "pages": "p.113",
+        "pages_printed": "p.112"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "NIST AI 600-1, MANAGE 1.3",
+      "evidence": {
+        "document_id": "doc-6e73620ab6b6",
+        "pages": "p.44",
+        "pages_printed": "p.40"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.600-1"
+    },
+    {
+      "n": 4,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 5.1",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.17",
+        "pages_printed": "p.17"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 5,
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3, 3-1",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.47",
+        "pages_printed": "p.47"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
     }
   ],
   "updated": "2026-10-03"

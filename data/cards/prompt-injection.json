@@ -15,13 +15,13 @@
   "chapter": "05",
   "status": "draft",
   "definition": {
-    "lead": "AI 모델이 처리하는 문서·웹페이지·도구 출력 등 데이터 안에 지시를 숨겨, 원래 지시를 가로채 모델이 의도와 다르게 행동하게 만드는 공격을 의미함.",
+    "lead": "AI 시스템에 직접 악성 지시를 입력하거나, 모델이 처리하는 문서·웹페이지·도구 출력 등 데이터 안에 지시를 숨겨, 모델이 의도와 다르게 행동하게 만드는 공격을 의미함.",
     "points": [
       "모델이 개발자의 지시와 처리 대상 데이터를 같은 텍스트 흐름으로 받아 구조적으로 구별하지 못한다는 점을 이용함. 이용자는 숨은 지시의 존재를 모르는 경우가 많음.",
       "파일 열람·메일 발송·코드 실행 권한을 가진 AI 에이전트가 가로채이면 정보 유출과 시스템 조작으로 이어짐. 원리적 해법이 없어 최소 권한, 실행 환경 격리, 되돌릴 수 없는 행위의 사람 승인 같은 피해 제한형 대응이 쓰임."
     ],
     "distinction": {
-      "text": "'프롬프트 인젝션'은 제3자가 데이터에 심은 지시가 이용자 의도와 무관하게 모델을 가로채는 공격이고, '탈옥'은 이용자 자신이 안전장치를 우회해 금지된 출력을 얻으려는 공격임.",
+      "text": "'프롬프트 인젝션'은 직접 입력하거나 데이터에 심은 지시로 모델이 의도와 다르게 행동하게 만드는 공격이고, '탈옥'은 안전장치를 우회해 유해한 출력을 얻으려는 공격임.",
       "terms": [
         "jailbreak"
       ]
@@ -38,5 +38,97 @@
   "review_notes": [
     "원천 pdf_definitions('AI 핵심용어 단면' p.86)는 사용자가 직접 지시를 숨겨 넣는 공격으로 서술해 탈옥과 경계가 흐려지므로 frameworks에 쓰지 않음."
   ],
-  "updated": "2026-10-03"
+  "updated": "2026-10-03",
+  "frameworks": [
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "웹사이트·데이터베이스에 숨긴 지시 등 간접 경로로 에이전트를 '탈취'해 사용자 의도에 반해 행동하게 하는 공격으로 설명함. 통제 밖 외부 콘텐츠로 전달돼 방어가 특히 어렵다고 봄.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "text": "개발사가 보고한 주요 모델의 프롬프트 인젝션 공격 성공률(10회 시도 내)은 2024~2025년 사이 낮아졌으나 여전히 비교적 높은 수준이라고 평가함.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "NIST",
+      "sub": "2024",
+      "points": [
+        {
+          "text": "공격자가 악성 프롬프트를 생성형 AI 시스템에 직접 입력하는 직접 프롬프트 인젝션과, 검색될 가능성이 있는 데이터에 프롬프트를 심어 원격으로 LLM 통합 애플리케이션을 악용하는 간접 프롬프트 인젝션을 구분함.",
+          "refs": [
+            3
+          ]
+        },
+        {
+          "text": "생성형 AI 프로파일은 생성형 AI 자체가 프롬프트 인젝션·데이터 오염 같은 공격에 취약해 공격 표면을 넓힌다고 보고, 이를 정보보안 위험의 한 축으로 다룸.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "한국",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "안전성 확보 가이드라인은 위험 식별 문서화 예시로 '프롬프트 인젝션에 의한 시스템 응답 왜곡 가능성'을 들고, 외부 입력으로 시스템 지침을 우회하거나 응답을 왜곡할 수 있는 구조적 취약점으로 기록함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "n": 1,
+      "text": "International AI Safety Report 2026, Box 2.4",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.75",
+        "pages_printed": "p.74"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report 2026, Figure 3.9",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.131",
+        "pages_printed": "p.130"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "NIST AI 600-1, 2.9",
+      "evidence": {
+        "document_id": "doc-6e73620ab6b6",
+        "pages": "p.14–15",
+        "pages_printed": "p.10–11"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.600-1"
+    },
+    {
+      "n": 4,
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3",
+      "evidence": {
+        "document_id": "doc-c49c4fa002e6",
+        "pages": "p.36",
+        "pages_printed": "p.36"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
+    }
+  ]
 }

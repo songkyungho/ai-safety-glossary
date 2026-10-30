@@ -62,19 +62,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "OECD (2025). Towards a common reporting framework for AI incidents. OECD AI Papers, No. 34.",
+      "text": "OECD (2025). Towards a common reporting framework for AI incidents",
       "evidence": {
         "document_id": "doc-e8c1a12dd0f6",
-        "pages": "p.17"
-      }
+        "pages": "p.17",
+        "pages_printed": "p.17"
+      },
+      "url": "https://doi.org/10.1787/f326d4ac-en"
     },
     {
       "n": 2,
-      "text": "「인공지능 안전성 확보 가이드라인」 v1.3 (2026.1.21).",
+      "text": "『인공지능 안전성 확보 가이드라인』 v1.3",
       "evidence": {
         "document_id": "doc-c49c4fa002e6",
-        "pages": "p.67"
-      }
+        "pages": "p.67",
+        "pages_printed": "p.67"
+      },
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
     }
   ],
   "updated": "2026-10-03"

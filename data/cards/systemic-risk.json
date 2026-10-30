@@ -87,35 +87,43 @@
   "refs": [
     {
       "n": 1,
-      "text": "Regulation (EU) 2024/1689 (EU AI Act), Article 3(65). 집행위원회 범용 AI 지침 수록 법문 인용.",
+      "text": "EU AI Act, Art. 3(65)",
       "evidence": {
-        "document_id": "doc-f66baa3d99af",
-        "pages": "p.83"
-      }
+        "document_id": "doc-bba630444b32",
+        "pages": "p.50–51",
+        "pages_printed": "p.50–51"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
     },
     {
       "n": 2,
-      "text": "EU General-Purpose AI Code of Practice (2025), Safety and Security Chapter, Glossary.",
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Glossary",
       "evidence": {
-        "document_id": "doc-f66baa3d99af",
-        "pages": "p.82"
-      }
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.33",
+        "pages_printed": "p.33"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     },
     {
       "n": 3,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. Glossary, p.227–228.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.227–228"
-      }
+        "pages": "p.227–228",
+        "pages_printed": "p.227–228"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     },
     {
       "n": 4,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. Glossary, p.155–156.",
+      "text": "International AI Safety Report 2026, Glossary",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.155–156"
-      }
+        "pages": "p.155–156",
+        "pages_printed": "p.154–155"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     }
   ],
   "updated": "2026-10-03"

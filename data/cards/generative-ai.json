@@ -68,19 +68,22 @@
   "refs": [
     {
       "n": 1,
-      "text": "「인공지능 발전과 신뢰 기반 조성 등에 관한 기본법」(법률 제20676호, 2026.1.22 시행) 정의 규정.",
+      "text": "「인공지능기본법」, 제2조",
       "evidence": {
         "document_id": "doc-6311a32b59e6",
         "pages": "p.3"
-      }
+      },
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
     },
     {
       "n": 2,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. 용어 정의.",
+      "text": "International AI Safety Report 2025, Glossary",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.222–223"
-      }
+        "pages": "p.222–223",
+        "pages_printed": "p.222–223"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     }
   ],
   "status": "draft",

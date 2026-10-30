@@ -44,16 +44,78 @@
           ]
         }
       ]
+    },
+    {
+      "org": "NIST",
+      "sub": "AI 800-1",
+      "points": [
+        {
+          "text": "사람이 AI 시스템을 조수로 써서 평가 과업을 수행하는 '업리프트 연구'를 측정 과업 유형으로 둠.",
+          "refs": [
+            2
+          ]
+        },
+        {
+          "text": "위협 행위자 수준에 맞춘 참가자, 대조군, 충분한 표본 크기를 설계 고려 사항으로 제시함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "시스템적 위험 평가에 쓰는 모델 평가 방법의 예로 벤치마크, 레드티밍 등과 함께 인간 업리프트 연구를 듦.",
+          "refs": [
+            4
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026). International AI Safety Report 2026. p.68.",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.68"
-      }
+        "pages": "p.68",
+        "pages_printed": "p.67"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 2,
+      "text": "NIST AI 800-1 2차 초안, Appendix C",
+      "evidence": {
+        "document_id": "doc-362c24f9cfc1",
+        "pages": "p.33",
+        "pages_printed": "p.28"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.800-1.2pd"
+    },
+    {
+      "n": 3,
+      "text": "NIST AI 800-1 2차 초안, Appendix D",
+      "evidence": {
+        "document_id": "doc-362c24f9cfc1",
+        "pages": "p.44–45",
+        "pages_printed": "p.39–40"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.800-1.2pd"
+    },
+    {
+      "n": 4,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 3.2",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.12–13",
+        "pages_printed": "p.12–13"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "updated": "2026-10-03"

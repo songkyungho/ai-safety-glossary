@@ -70,19 +70,23 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2026).",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
-        "pages": "p.116"
-      }
+        "pages": "p.116",
+        "pages_printed": "p.115"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
       "n": 2,
-      "text": "UK AISI (2025). Emerging Practices in Frontier AI Safety Frameworks.",
+      "text": "UK AISI (2025). Emerging Practices in Frontier AI Safety Frameworks",
       "evidence": {
         "document_id": "doc-85aff17d77b6",
-        "pages": "p.13, p.31"
-      }
+        "pages": "p.13, p.31",
+        "pages_printed": "p.13, p.31"
+      },
+      "url": "https://www.aisi.gov.uk/research/emerging-practices-in-frontier-ai-safety-frameworks"
     }
   ],
   "status": "draft",

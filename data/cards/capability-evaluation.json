@@ -60,16 +60,84 @@
           ]
         }
       ]
+    },
+    {
+      "org": "국제 AI 안전 보고서",
+      "sub": "2026",
+      "points": [
+        {
+          "text": "유해 역량 평가를 모델이 사이버공격 지원 같은 특히 위험한 지식·기술을 보유했는지 평가하는 도구로 설명하고, 기업·정부의 출시 결정이 일부 이에 의존한다고 봄.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "NIST",
+      "sub": "AI 800-1",
+      "points": [
+        {
+          "text": "오용 위험과 관련된 과업에서 모델 역량을 배포 전에 평가하고, 학습 중·학습 후·하위 시스템 통합 시점까지 개발 전반에 걸쳐 평가하도록 권고함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "시스템적 위험과 관련해 모델의 역량·성향·기능활용성·영향을 평가하는 최첨단 모델 평가를 요구하고, 예상치 못한 행동과 역량 한계를 찾는 개방형 테스트를 포함하도록 함.",
+          "refs": [
+            4
+          ]
+        }
+      ]
     }
   ],
   "refs": [
     {
       "n": 1,
-      "text": "UK AISI (2025). Emerging Practices in Frontier AI Safety Frameworks.",
+      "text": "UK AISI (2025). Emerging Practices in Frontier AI Safety Frameworks",
       "evidence": {
         "document_id": "doc-85aff17d77b6",
-        "pages": "p.11–12"
-      }
+        "pages": "p.11–12",
+        "pages_printed": "p.11–12"
+      },
+      "url": "https://www.aisi.gov.uk/research/emerging-practices-in-frontier-ai-safety-frameworks"
+    },
+    {
+      "n": 2,
+      "text": "International AI Safety Report 2026",
+      "evidence": {
+        "document_id": "doc-971d6902bec8",
+        "pages": "p.111",
+        "pages_printed": "p.110"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    },
+    {
+      "n": 3,
+      "text": "NIST AI 800-1 2차 초안, Practice 4.1",
+      "evidence": {
+        "document_id": "doc-362c24f9cfc1",
+        "pages": "p.18–19",
+        "pages_printed": "p.13–14"
+      },
+      "url": "https://doi.org/10.6028/NIST.AI.800-1.2pd"
+    },
+    {
+      "n": 4,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 3.2",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.12–13",
+        "pages_printed": "p.12–13"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "updated": "2026-10-03"

@@ -45,9 +45,33 @@
       "sub": "2025",
       "points": [
         {
-          "text": "통제를 약화시킬 수 있는 역량 후보의 하나로, 기만 등을 통해 감독 회피를 수반하는 목표 달성 방법을 찾아내는 역량으로 설명함.",
+          "text": "통제를 약화시킬 수 있는 역량 후보의 하나로, 기만 등으로 감독 회피를 수반하는 목표 달성 방법을 찾아내는 역량으로 설명함.",
           "refs": [
             1
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "시스템적 위험 원천인 모델 경향으로 조작·기만 경향, 목표 변경에 대한 유해한 저항, 권력 추구, 다른 AI와의 공모를 들어 위험 식별 대상으로 둠.",
+          "refs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "UK AISI",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "평가 결과 해석 때 모델이 평가에서 전략적으로 성능을 낮추는 샌드배깅 가능성을 특수 사례로 짚고, 현 시스템에는 가능성이 낮다고 봄.",
+          "refs": [
+            3
           ]
         }
       ]
@@ -56,11 +80,33 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report (2025). International Scientific Report on the Safety of Advanced AI. p.104.",
+      "text": "International AI Safety Report 2025",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
-        "pages": "p.104"
-      }
+        "pages": "p.104",
+        "pages_printed": "p.104"
+      },
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
+    },
+    {
+      "n": 2,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Appendix 1.3.2",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.36",
+        "pages_printed": "p.36"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
+    },
+    {
+      "n": 3,
+      "text": "UK AISI (2025). Emerging Practices in Frontier AI Safety Frameworks",
+      "evidence": {
+        "document_id": "doc-85aff17d77b6",
+        "pages": "p.13",
+        "pages_printed": "p.13"
+      },
+      "url": "https://www.aisi.gov.uk/research/emerging-practices-in-frontier-ai-safety-frameworks"
     }
   ],
   "updated": "2026-10-03"

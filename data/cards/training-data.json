@@ -58,11 +58,13 @@
   "refs": [
     {
       "n": 1,
-      "text": "유럽연합 인공지능법 범용인공지능모델 실천강령 안내서(GPAI) (2026). 용어 정의.",
+      "text": "『EU GPAI 실천강령 한글 안내서』(2026)",
       "evidence": {
         "document_id": "doc-670ed9d255e5",
-        "pages": "p.13"
-      }
+        "pages": "p.13",
+        "pages_printed": "p.9"
+      },
+      "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/114"
     }
   ],
   "status": "draft",
