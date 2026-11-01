@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI 안전 용어집",
-    "built_at": "2026-10-31T20:10:37+09:00",
+    "built_at": "2026-11-01T09:36:20+09:00",
     "method": "glossary_merged.json + data/cards 편집 계층",
     "counts": {
       "entries": 171,
@@ -1900,6 +1900,14 @@
       },
       "research": [
         {
+          "title": "LLM에서 에이전트까지 탈옥 공격·방어 서베이",
+          "orig": "From LLMs to MLLMs to Agents: A Survey of Emerging Paradigms in Jailbreak Attacks and Defenses within LLM Ecosystem",
+          "summary": "LLM, 멀티모달 LLM, 에이전트로 확장되는 생태계의 탈옥 공격과 방어 기법을 공격 영향·공격자 권한 및 대응 시점·기술 기준으로 분류하고, 관련 데이터셋·평가 지표와 향후 연구 방향을 정리한 서베이.",
+          "url": "https://arxiv.org/pdf/2506.15170",
+          "date": "2026-10-29",
+          "source": "arXiv"
+        },
+        {
           "title": "함께 채점되면 달라지는 LLM 판정: 배치 채점 문제",
           "orig": "Judged in Company: In-Context Batching Makes LLM Verdicts Depend on Other Items",
           "summary": "한 프롬프트에 여러 항목을 묶어 LLM이 채점하게 하면 이웃 항목·순서·위치에 따라 판정의 11-22%가 바뀌므로, 모호한 항목은 하나씩 채점하라고 권고한다.",
@@ -1914,14 +1922,6 @@
           "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1929327/pdf",
           "date": "2026-10-29",
           "source": "Frontiers in Education"
-        },
-        {
-          "title": "LLM에서 에이전트까지 탈옥 공격·방어 서베이",
-          "orig": "From LLMs to MLLMs to Agents: A Survey of Emerging Paradigms in Jailbreak Attacks and Defenses within LLM Ecosystem",
-          "summary": "LLM, 멀티모달 LLM, 에이전트로 확장되는 생태계의 탈옥 공격과 방어 기법을 공격 영향·공격자 권한 및 대응 시점·기술 기준으로 분류하고, 관련 데이터셋·평가 지표와 향후 연구 방향을 정리한 서베이.",
-          "url": "https://arxiv.org/pdf/2506.15170",
-          "date": "2026-10-29",
-          "source": "arXiv"
         },
         {
           "title": "LLM 기반 로봇 조작의 결함 주입·강건성 평가",
@@ -4905,20 +4905,20 @@
           "source": "arXiv"
         },
         {
-          "title": "탈옥 응답의 프라이버시 유출을 감사하는 숙의형 에이전트",
-          "orig": "PrivacyEvalClaw: A Tool-Augmented Deliberative Agent for Auditing Privacy Leakage in LLM Jailbreak Responses",
-          "summary": "프라이버시 평가기(가드 모델·LLM 판정기) 간 판단 불일치를 분석하고, 평가기를 도구로 쓰며 증거를 모아 최종 판정하는 학습 불필요 숙의형 에이전트 PrivacyEvalClaw를 제안해 쌍대 LLM 판정에서 기존 기준선보다 높은 승률을 보였다.",
-          "url": "https://arxiv.org/abs/2610.36711v1",
-          "date": "2026-10-27",
-          "source": "arXiv"
-        },
-        {
           "title": "다중 에이전트 해석가능성 기반 공모 탐지",
           "orig": "Detecting Multi-Agent Collusion Through Multi-Agent Interpretability",
           "summary": "에이전트별 활성값 탐침과 집단 수준 검정 통계로 다중 에이전트 공모를 탐지하는 HELIOS와 NARCBench를 제안했고, 스테가노그래피 공모에서 AUROC 0.99~1.00을 보였으나 지시형 공모로 학습한 탐침은 자발적 공모에 부분적으로만 전이됨을 확인했다.",
           "url": "https://doi.org/10.70777/si.v3i4.18909",
           "date": "2026-10-27",
           "source": "SuperIntelligence - Robotics - Safety & Alignment"
+        },
+        {
+          "title": "탈옥 응답의 프라이버시 유출을 감사하는 숙의형 에이전트",
+          "orig": "PrivacyEvalClaw: A Tool-Augmented Deliberative Agent for Auditing Privacy Leakage in LLM Jailbreak Responses",
+          "summary": "프라이버시 평가기(가드 모델·LLM 판정기) 간 판단 불일치를 분석하고, 평가기를 도구로 쓰며 증거를 모아 최종 판정하는 학습 불필요 숙의형 에이전트 PrivacyEvalClaw를 제안해 쌍대 LLM 판정에서 기존 기준선보다 높은 승률을 보였다.",
+          "url": "https://arxiv.org/abs/2610.36711v1",
+          "date": "2026-10-27",
+          "source": "arXiv"
         },
         {
           "title": "AI 에이전트가 전문가의 판단을 좌우하는 방식",
@@ -7647,20 +7647,20 @@
           "source": "Frontiers in Nuclear Engineering"
         },
         {
-          "title": "DeepSeek V4.1 Flash-1017 통제 상실·조작 위험 평가",
-          "orig": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks",
-          "summary": "오픈웨이트 모델 DeepSeek V4.1 Flash-1017을 EU GPAI 실천강령 기반 34개 벤치마크로 독립 평가해, V4 대비 안전성이 크게 개선됐으나 마이너 업데이트 간 퇴행과 평가 인식 문제가 남음을 보였다.",
-          "url": "https://arxiv.org/abs/2610.35671v1",
-          "date": "2026-10-26",
-          "source": "arXiv"
-        },
-        {
           "title": "AI 위험의 이해: 보험·위험관리 관점",
           "orig": "Understanding AI risk",
           "summary": "AI 위험을 사이버 위험과 구분해 분류하고 AI 사고·소송 데이터로 보험 가능성을 따졌으며, AI 위험이 내생적·시스템적 성격이 강해 일부는 보험 처리가 어렵다고 밝혔다.",
           "url": "https://doi.org/10.1108/cfri-05-2026-0462",
           "date": "2026-10-26",
           "source": "China Finance Review International"
+        },
+        {
+          "title": "DeepSeek V4.1 Flash-1017 통제 상실·조작 위험 평가",
+          "orig": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks",
+          "summary": "오픈웨이트 모델 DeepSeek V4.1 Flash-1017을 EU GPAI 실천강령 기반 34개 벤치마크로 독립 평가해, V4 대비 안전성이 크게 개선됐으나 마이너 업데이트 간 퇴행과 평가 인식 문제가 남음을 보였다.",
+          "url": "https://arxiv.org/abs/2610.35671v1",
+          "date": "2026-10-26",
+          "source": "arXiv"
         },
         {
           "title": "EU AI법 대응 AI 위험 온톨로지: AIRO·VAIR",
@@ -8034,20 +8034,20 @@
           "source": "arXiv"
         },
         {
-          "title": "청소년 정신건강 피해 예방을 위한 AI 설계 규제",
-          "orig": "Regulating Artificial Intelligence Design to Prevent Youth Mental Health Harms",
-          "summary": "AI 챗봇을 쓰는 청소년의 정신건강 악화 문제를 짚고, 평가와 규제가 필요한 AI 안전 실패 유형을 논의한 JAMA Health Forum 오피니언이다.",
-          "url": "https://doi.org/10.1001/jamahealthforum.2026.3119",
-          "date": "2026-10-09",
-          "source": "JAMA Health Forum"
-        },
-        {
           "title": "APEX-Harm: 공유 업무공간 에이전트 안전 평가",
           "orig": "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces",
           "summary": "금융·컨설팅·법률 업무를 수행하는 장기 에이전트를 대상으로 프롬프트·스크립트 주입 공격을 평가하는 벤치마크를 만들고 12개 프론티어 모델을 평가한 결과, 과제 수행 점수가 높아도 무단 행위가 발생할 수 있고 스크립트 대체 공격의 성공률이 특히 높음을 보였다.",
           "url": "https://arxiv.org/abs/2610.13623v1",
           "date": "2026-10-09",
           "source": "arXiv"
+        },
+        {
+          "title": "청소년 정신건강 피해 예방을 위한 AI 설계 규제",
+          "orig": "Regulating Artificial Intelligence Design to Prevent Youth Mental Health Harms",
+          "summary": "AI 챗봇을 쓰는 청소년의 정신건강 악화 문제를 짚고, 평가와 규제가 필요한 AI 안전 실패 유형을 논의한 JAMA Health Forum 오피니언이다.",
+          "url": "https://doi.org/10.1001/jamahealthforum.2026.3119",
+          "date": "2026-10-09",
+          "source": "JAMA Health Forum"
         },
         {
           "title": "PatchBench: 활성값 패칭의 부수 피해 측정",
@@ -24713,10 +24713,10 @@
           "source": "AI Risk Explorer"
         },
         {
-          "title": "증거 누락 시 LLM 에이전트의 안전성 벤치마크",
-          "orig": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-          "summary": "도구 응답에서 안전 관련 사실이 빠질 때 에이전트가 금지된 행동을 실행하는지와 누락 증거를 스스로 찾아 복구하는지를 6개 도메인 300쌍 과제와 10개 모델로 평가했고, 누락에 강한 모델이 반드시 증거 복구도 잘하는 것은 아님을 확인했다.",
-          "url": "https://arxiv.org/abs/2610.31650v1",
+          "title": "AgentPhishing: 적응형 공격 하의 이메일 에이전트 벤치마크",
+          "orig": "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack",
+          "summary": "설득 원리를 활용해 에이전트별로 최적화한 피싱 메일 벤치마크(AgentPhishing)를 구축해 LLM 이메일 에이전트 9종을 평가했고, 4종이 피싱 탐지율 10% 미만, 악성 요청 순응률 45% 초과를 보였다.",
+          "url": "https://arxiv.org/abs/2610.31404v1",
           "date": "2026-10-22",
           "source": "arXiv"
         }
@@ -25356,18 +25356,18 @@
       },
       "research": [
         {
-          "title": "공격 성공률을 넘어: 반복형 탈옥의 비용 반영 지표",
-          "orig": "Beyond Attack Success Rate: Cost-Aware Metric for Evaluating Iterative LLM Jailbreaks",
-          "summary": "피해 모델 호출 횟수에 불이익을 주는 지표 ASR_STEP을 제안하고, JailBreakBench에서 GCG·PAIR·PAP를 평가해 GCG는 7.0–8.7%p, PAIR는 3.4–12%p 하락하고 단일 단계 PAP는 변화가 없음을 확인했다.",
-          "url": "https://arxiv.org/abs/2610.26589v1",
-          "date": "2026-10-19",
-          "source": "arXiv"
-        },
-        {
           "title": "탈옥 벤치마킹의 문제: 공격 성공률 실증 연구",
           "orig": "Concerns in Benchmarking Jailbreaks: An Empirical Study of Attack Success Rates",
           "summary": "오픈웨이트 모델 3종에 대한 8가지 탈옥 공격을 평가 방식 3가지로 비교해, 키워드 매칭과 LLM 평가자 간 ASR 격차가 크고 시도 횟수·배치에 따라 공격 순위가 뒤바뀌며 반복 샘플링 시 잔존 위험이 드러남을 보였다.",
           "url": "https://arxiv.org/abs/2610.26595v1",
+          "date": "2026-10-19",
+          "source": "arXiv"
+        },
+        {
+          "title": "공격 성공률을 넘어: 반복형 탈옥의 비용 반영 지표",
+          "orig": "Beyond Attack Success Rate: Cost-Aware Metric for Evaluating Iterative LLM Jailbreaks",
+          "summary": "피해 모델 호출 횟수에 불이익을 주는 지표 ASR_STEP을 제안하고, JailBreakBench에서 GCG·PAIR·PAP를 평가해 GCG는 7.0–8.7%p, PAIR는 3.4–12%p 하락하고 단일 단계 PAP는 변화가 없음을 확인했다.",
+          "url": "https://arxiv.org/abs/2610.26589v1",
           "date": "2026-10-19",
           "source": "arXiv"
         },
@@ -29683,12 +29683,12 @@
           "source": "RAND"
         },
         {
-          "title": "인공지능과 민주주의: AI 거버넌스 분석",
-          "orig": "Artificial Intelligence and Democracy",
-          "summary": "알고리즘 의사결정과 허위정보·딥페이크·정치적 마이크로타기팅이 민주주의에 미치는 영향을 EU AI Act·GDPR 관점에서 분석하고 설계 단계부터 민주적 가치를 반영하는 틀을 제안한다.",
-          "url": "https://doi.org/10.1201/9781003771326-2",
+          "title": "AGI 거버넌스를 위한 기계 검증형 규정 준수 모델",
+          "orig": "Machine-Checkable Compliance for AGI Governance: Formalizing Principles as Auditable Norms and Evidence-Linked Indicators",
+          "summary": "AGI 거버넌스 원칙을 LegalRuleML 기반의 기계 검증 가능한 규범과 증거 연계 지표로 형식화하고 참조 구현을 제시했으며, 최신 프론티어 모델 문서가 AGI 특화 위험을 기계 검증 가능한 형태로 보고하지 않음을 확인했다.",
+          "url": "https://doi.org/10.3390/aisoc1020007",
           "date": "2026-10-27",
-          "source": "CRC Press eBooks"
+          "source": "AI for Society"
         }
       ],
       "library_docs": [
