@@ -63,11 +63,11 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report 2026, Glossary",
+      "text": "International AI Safety Report 2026",
       "evidence": {
         "document_id": "doc-971d6902bec8",
         "pages": "p.79, p.152–153",
-        "pages_printed": "p.78, p.151–152"
+        "pages_printed": "p.78; Glossary p.151–152"
       },
       "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     }

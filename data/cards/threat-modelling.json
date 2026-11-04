@@ -3,7 +3,8 @@
   "kit_id": "threat-modelling",
   "join_keys": [],
   "head": "위협 모델링",
-  "en": "threat modelling",
+  "en": "threat modeling",
+  "en_search": "threat modelling",
   "alternatives": [],
   "chapter": "03",
   "status": "draft",
@@ -15,7 +16,7 @@
       "AI 통제 연구에서는 오정렬된 모델 자체를 가상의 공격자로 상정해 위협 모델을 세우기도 함."
     ],
     "distinction": {
-      "text": "'위협 모델링'은 보안 분야에서 공격자와 취약점을 중심으로 쓰이던 말로, EU 범용 AI 실천강령은 이 때문에 시스템적 위험의 실현 경로를 정리하는 작업을 '위험 모델링'이라 따로 부름. 두 용어가 혼용되기도 함.",
+      "text": "'위협 모델링'은 보안 분야에서 공격자와 취약점을 중심으로 쓰이던 말로, EU 범용 AI 실천강령은 이 때문에 시스템적 위험의 실현 경로를 정리하는 작업을 '위험 모델링'이라 따로 부르지만 두 용어가 혼용되기도 함.",
       "terms": [
         "threat",
         "systemic-risk-assessment"

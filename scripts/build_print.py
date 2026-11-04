@@ -83,9 +83,25 @@ def paint(root, cat_no: str):
                 c.set("val", role[m[c.get("val").upper()]])
 
 
+# 조지연 연구원 요청(2026-11-04): 인쇄본은 마침표를 빼고 '~함'을 명사로 끝낸다. 웹 카드는 문장 그대로 둔다.
+NOUN_END = ("의미 정의 설명 제시 지적 권고 구분 소개 포함 요구 예시 정리 규정 포괄 구별 명시 평가 측정 활용 제외 이용 연결 "
+            "기록 판단 대응 통칭 식별 시도 강조 제안 표시 판정 분류 구성 적용 언급 인용 반영 추정 보고").split()
+
+
+def gaejo(t):
+    """'…설명함.' → '…설명'. 괄호로 끝나면 괄호 앞을 본다. 명사로 끝낼 수 없는 어미(있음·봄·말함 등)는 마침표만 뺀다."""
+    t = t.strip().rstrip(".")
+    m = re.search(r"([가-힣]+)함(\([^()]*\))?$", t)
+    if m:
+        for w in NOUN_END:
+            if m.group(1).endswith(w) and (len(m.group(1)) == len(w) or not m.group(1).endswith("아니" + w)):
+                return t[:m.start()] + m.group(1) + (m.group(2) or "")
+    return t
+
+
 def shown_pages(r):
-    """출처에 붙일 쪽수: 인쇄 쪽(pages_printed)이 있으면 그것, 없으면 색인의 물리 쪽. 법령은 조문으로 인용해 쪽수를 달지 않는다."""
-    if r.get("text", "").startswith(("「", "EU AI Act")):
+    """출처에 붙일 쪽수: 인쇄 쪽(pages_printed)이 있으면 그것, 없으면 색인의 물리 쪽. 한국 법령은 조문으로 인용해 쪽수를 달지 않는다."""
+    if r.get("text", "").startswith("「"):
         return None
     ev = r.get("evidence") or {}
     return ev.get("pages_printed") or ev.get("pages")
@@ -96,7 +112,7 @@ def org_row(org: str) -> int:
         return 2
     if any(k in org for k in ("NIST", "미국")):
         return 1
-    if any(k in org for k in ("한국", "과기정통부", "기본법")):
+    if any(k in org for k in ("한국", "과기정통부", "기본법", "가이드라인", "윤리원칙", "프레임워크")):
         return 3
     return 0  # 국제·영국·기타는 지구본 행
 
@@ -211,10 +227,46 @@ REL_NS = "http://schemas.openxmlformats.org/package/2006/relationships"
 HLINK = "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
 
 
+def in_print_order(card):
+    """기관 행을 국제·미국·EU·한국 순으로 놓고, 출처 번호를 본문 등장 순서로 다시 매긴 사본을 돌려준다."""
+    c = copy.deepcopy(card)
+    c["frameworks"] = sorted(c.get("frameworks") or [], key=lambda f: org_row(f["org"]))
+    old = {r["n"]: r for r in c.get("refs") or []}
+    new, seen = [], {}
+    for f in c["frameworks"]:
+        for p in f.get("points") or []:
+            ns = []
+            for n in p.get("refs") or []:
+                if n not in seen:
+                    seen[n] = len(new) + 1
+                    new.append({**old[n], "n": seen[n]})
+                ns.append(seen[n])
+            p["refs"] = sorted(ns)
+    c["refs"] = new
+    return c
+
+
+def clean_alts(item, card, head):
+    """대체어: 표제어 반복을 빼고, 'X(Y)' 꼴 회의 표기는 Y만 남기며, alt_drop에 적은 것은 뺀다."""
+    drop = {nospace(x) for x in item.get("alt_drop") or []}
+    alts = []
+    m = (item.get("meeting") or "").strip()
+    g = re.fullmatch(r"(.+?)\((.+)\)", m)
+    if nospace(m) in drop:
+        m = ""
+    elif g and nospace(g.group(1)) == nospace(head):
+        m = g.group(2)
+    for a in [m] + [x["text"] for x in card.get("alternatives") or []]:
+        if a and nospace(a) != nospace(head) and nospace(a) not in drop and nospace(a) not in {nospace(x) for x in alts}:
+            alts.append(a)
+    return alts
+
+
 # ── 카드 → 슬라이드 ──────────────────────────────────────────────
 
 def fill_slide(root, item, card, entry, cat, warns, next_id, links):
     head = card["head"]
+    card = in_print_order(card)
     paint(root, cat["no"])
     set_text(sp_by_id(root, ID_NO), f"{item['no']:03d}")
     set_text(sp_by_id(root, ID_CHAPTER), f"{int(cat['no']):02d}. {cat['label']} ({cat['en']})")
@@ -224,18 +276,12 @@ def fill_slide(root, item, card, entry, cat, warns, next_id, links):
     set_text(sp_by_id(root, ID_EN), en, sz=esz)
 
     # 구분 · 대체어 (폭을 글자에 맞춰 늘리고 뒤 요소를 민다)
-    cat_label = entry["category_label"]
+    cat_label = item.get("chip") or entry["category_label"]
     cat_w = max(1.17, text_w(cat_label, 10.5) + 0.3)
     set_box(sp_by_id(root, ID_CAT_PILL), w=cat_w)
     set_box(sp_by_id(root, ID_CAT), w=cat_w)
     set_text(sp_by_id(root, ID_CAT), cat_label)
-    alts = []
-    m = item.get("meeting") or ""
-    if m and nospace(m) != nospace(head):
-        alts.append(m)
-    for a in card.get("alternatives") or []:
-        if nospace(a["text"]) not in {nospace(x) for x in alts + [head]}:
-            alts.append(a["text"])
+    alts = clean_alts(item, card, head)
     x_div = 0.98 + cat_w + 0.13
     if not alts:
         for sid in (ID_DIV, ID_ALT_LBL_BG, ID_ALT_LBL, ID_ALT_PILL, ID_ALT):
@@ -268,9 +314,10 @@ def fill_slide(root, item, card, entry, cat, warns, next_id, links):
     dist = (d.get("distinction") or {}).get("text")
     if dist:
         paras.append(dist)
+    paras = [gaejo(p) for p in paras]
     defbox = sp_by_id(root, ID_DEF)
     set_box(defbox, y=2.86, h=3.02)          # 제목 아래 빈 공간까지 올려 쓴다 (구분선 5.95 위에서 끝남)
-    box_h = 2.92
+    box_h = 2.74   # 렌더 실측으로 맞춘 값 (구분선 5.95 위에서 끝남)
     size = 12.5
     for s_ in (12.5, 12, 11.5, 11, 10.5, 10):
         size = s_
@@ -299,7 +346,7 @@ def fill_slide(root, item, card, entry, cat, warns, next_id, links):
     for r in FW_ROWS:
         for sid in r:
             remove(sp_by_id(root, sid))
-    fws = sorted(card.get("frameworks") or [], key=lambda f: org_row(f["org"]))   # 국제·미국·EU·한국 순
+    fws = card["frameworks"]
     if len(fws) > 4:
         warns.append(f"기관 {len(fws)}개 중 4개만 실음: 뺀 것 {', '.join(f['org'] for f in fws[4:])}")
         fws = fws[:4]
@@ -334,12 +381,14 @@ def fill_slide(root, item, card, entry, cat, warns, next_id, links):
         else:
             set_box(pic, y=ry + 0.20); set_box(org_el, y=ry + 0.59, h=0.25); set_box(sub_el, y=ry + 0.84)
         sub = str(f.get("sub") or "")
-        set_text(sub_el, f"({sub})" if sub and not sub.startswith("(") else sub)
+        sub = f"({sub})" if sub and not sub.startswith("(") else sub
+        ssz = next((z for z in (10.5, 10, 9.5, 9, 8.5, 8) if text_w(sub, z) <= 1.26), 8)
+        set_text(sub_el, sub, sz=ssz)
         if placeholder:
             remove(pic)
         pts = []
         for p in f.get("points") or []:
-            txt = p["text"] if isinstance(p, dict) else p
+            txt = gaejo(p["text"] if isinstance(p, dict) else p)
             refs = p.get("refs") if isinstance(p, dict) else []
             runs = [(txt, 0)]
             if refs:
@@ -400,6 +449,51 @@ def fill_slide(root, item, card, entry, cat, warns, next_id, links):
         warns.append(f"출처 {len(refs)}개 — 칸이 빠듯함")
 
 
+NOTES_PAGE = [
+    "기준일: 법령과 문서의 현황은 2026.11.4 기준",
+    "구성: 맨 위 분류(01~08)는 인쇄본의 8개 분류이고, '구분'은 온라인 용어집의 4개 대분류(기술·역량, 위험·사고, 평가·안전 대책, 거버넌스·제도)임. 두 체계는 서로 다른 기준이라 같은 분류 안에서도 구분이 다를 수 있음",
+    "표제어: AI 안전 번역 용어 정본을 따르고 AI를 붙이지 않음. 예외는 AI를 빼면 뜻이 달라지는 용어. 영문 표제어도 같은 원칙에 단수·미국식 철자로 적음",
+    "대체어: 표제어와 다른 역어·음차어만 적음",
+    "위험과 피해: risk는 '위험', harm은 '피해', hazard는 '위험원'으로 통일함. 인공지능기본법과 가이드라인의 용례에 맞춰 '리스크'를 쓰지 않음",
+    "관련 용어(#): 이 인쇄본에 없는 용어는 온라인 용어집에서 찾을 수 있음(songkyungho.github.io/ai-safety-glossary)",
+    "법령 이름: 본문은 'EU AI법', 기관 칸과 출처는 'EU AI Act'로 적음. 「인공지능 발전과 신뢰 기반 조성 등에 관한 기본법」은 '인공지능기본법' 또는 '한국 AI 기본법'으로 줄임",
+    "쪽 번호: 출처의 쪽 번호는 문서에 인쇄된 번호임. 한국 법령은 조문으로, EU AI Act는 조문과 관보(OJ L, 2024/1689) 쪽으로 적음",
+    "국제 AI 안전 보고서: 영문판을 기준으로 하고, 한국어 번역 표현을 인용할 때만 한국어판을 씀",
+    "EU AI법 적용일: 옴니버스 규정(Regulation (EU) 2026/1744, 2026.7.27 발효)으로 고위험 요건(제3장 제1~3절) 적용일이 부속서 III 시스템 2027.12.2, 부속서 I 시스템 2028.8.2로 늦춰짐",
+    "NIST AI 800-1: 2차 공개 초안(2025.1) 기준이며 최종본이 아님. 이 초안의 근거였던 행정명령 14110은 2025.1.20 폐지됨",
+    "UK AISI: 인용 문서를 낸 2025년 2월 초의 이름은 AI Safety Institute이고, 2025.2.14 AI Security Institute로 이름을 바꿈",
+]
+
+
+def fill_notes_page(root):
+    """마지막 장 일러두기: 샘플 슬라이드에서 머리 띠만 남기고 설명 글상자를 넓혀 쓴다."""
+    keep = {"2", "3", "4", "5", "6", "7"}
+    box = sp_by_id(root, ID_DEF)
+    tree_ = box.getparent()
+    set_text(sp_by_id(root, ID_NO), "안내")
+    set_text(sp_by_id(root, ID_CHAPTER), "일러두기")
+    set_box(sp_by_id(root, "7"), w=12.73)
+    for el in list(tree_):
+        if etree.QName(el).localname not in ("sp", "pic", "cxnSp", "grpSp", "graphicFrame"):
+            continue   # nvGrpSpPr·grpSpPr는 슬라이드 필수 요소라 지우면 PowerPoint가 복구를 요구한다
+        nv = el.find(".//p:cNvPr", NS)
+        if nv is not None and nv.get("id") not in keep and nv.get("id") != ID_DEF:
+            tree_.remove(el)
+    set_box(box, x=0.45, y=0.8, w=12.43, h=6.4)
+    bp = box.find("p:txBody/a:bodyPr", NS)
+    bp.set("numCol", "2"); bp.set("spcCol", str(int(0.35 * EMU)))
+    set_paras(box, [(1, [(t, 0)]) for t in NOTES_PAGE], sz=12)
+
+
+def clear_notes(unp):
+    """샘플 슬라이드의 발표자 노트가 복제본에 남지 않게 비운다."""
+    for path in glob.glob(os.path.join(unp, "ppt", "notesSlides", "*.xml")):
+        t = etree.parse(path)
+        for e in t.getroot().iter("{%s}t" % NS["a"]):
+            e.text = ""
+        t.write(path, xml_declaration=True, encoding="UTF-8", standalone=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--list", default=DEF_LIST)
@@ -432,7 +526,7 @@ def main():
     zipfile.ZipFile(args.template).extractall(unp)
     # 구조 먼저: 슬라이드 1장을 목록 수만큼 복제
     add_slide = args.add_slide
-    for k in range(1, len(items)):
+    for k in range(1, len(items) + 1):   # 마지막 한 장은 일러두기 (슬라이드 번호 = 카드 번호 유지)
         subprocess.run([sys.executable, add_slide, unp, "slide1.xml", "--after", f"slide{k}.xml"],
                        check=True, capture_output=True)
     pres = etree.parse(os.path.join(unp, "ppt", "presentation.xml"))
@@ -458,6 +552,18 @@ def main():
                 etree.SubElement(rt.getroot(), "{%s}Relationship" % REL_NS, Id=rid, Type=HLINK, Target=url, TargetMode="External")
             rt.write(rpath, xml_declaration=True, encoding="UTF-8", standalone=True)
         report.append((item, card, warns))
+
+    path = os.path.join(unp, "ppt", order[len(items)])
+    tree = etree.parse(path)
+    fill_notes_page(tree.getroot())
+    tree.write(path, xml_declaration=True, encoding="UTF-8", standalone=True)
+    clear_notes(unp)
+    for t_ in order:   # 구조 점검: 여기서 어긋나면 PowerPoint가 복구를 요구한다
+        r_ = etree.parse(os.path.join(unp, "ppt", t_)).getroot()
+        kids = [etree.QName(k).localname for k in r_.find("p:cSld/p:spTree", NS)]
+        ids = [e.get("id") for e in r_.iter("{%s}cNvPr" % NS["p"])]
+        if kids[:2] != ["nvGrpSpPr", "grpSpPr"] or len(ids) != len(set(ids)):
+            sys.exit(f"슬라이드 구조 오류: {t_}")
 
     if os.path.exists(out):
         os.remove(out)

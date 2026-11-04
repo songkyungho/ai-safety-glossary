@@ -19,7 +19,7 @@
   "definition": {
     "lead": "AI 시스템의 결정·행동 과정 안에 사람이 직접 참여해, 실행 전에 검토·승인·수정할 수 있도록 설계한 운영 방식을 말함.",
     "points": [
-      "사람이 개별 결정마다 확인하거나, 신뢰도가 낮은 출력·되돌릴 수 없는 행위 등 특정 지점에서 승인하도록 하는 방식으로 구현됨. AI 에이전트의 고위험 행위 통제에 자주 쓰임.",
+      "사람이 개별 결정마다 확인하거나 신뢰도가 낮은 출력·되돌릴 수 없는 행위 등 특정 지점에서 승인하도록 하는 방식으로 구현되며, AI 에이전트의 고위험 행위 통제에 자주 쓰임.",
       "금융·의료·치안처럼 잘못된 결정의 피해가 큰 영역에서 직접 감독 수단이 되지만, 결정 속도·규모 때문에 비현실적인 경우가 많음.",
       "사람이 AI 출력을 과신하는 자동화 편향, 검토 시간·정보 부족 탓에 승인만 남는 형식적 개입이 한계로 지적됨."
     ],
@@ -62,37 +62,13 @@
       ]
     },
     {
-      "org": "NIST",
-      "sub": "2023",
-      "points": [
-        {
-          "text": "의사결정·감독에서 사람의 역할과 책임을 명확히 정의·구분해야 하며, 사람과 AI의 구성은 완전 자율부터 완전 수동까지 걸친다고 봄.",
-          "refs": [
-            2
-          ]
-        }
-      ]
-    },
-    {
       "org": "EU AI HLEG",
       "sub": "2019",
       "points": [
         {
-          "text": "인간 감독은 AI 시스템이 인간의 자율성을 훼손하지 않도록 돕는 장치이며, 휴먼 인 더 루프 같은 거버넌스 메커니즘으로 달성할 수 있다고 봄.",
+          "text": "HITL을 시스템의 모든 의사결정 주기에 사람이 개입할 수 있는 역량으로, HOTL(human-on-the-loop)을 설계 주기 개입과 작동 모니터링 역량으로, HIC(human-in-command)를 전반적 활동을 감독하고 언제 어떻게 쓸지 결정하는 역량으로 구분하고, HITL은 많은 경우 가능하지도 바람직하지도 않다고 봄.",
           "refs": [
             3
-          ]
-        }
-      ]
-    },
-    {
-      "org": "한국",
-      "sub": "2026",
-      "points": [
-        {
-          "text": "고영향 AI 사업자 책무인 사람의 관리·감독을 오류·성능 저하 등 비상 상황에서 사람이 즉시 통제·개입할 수 있는 기준과 방법의 확립으로 설명함.",
-          "refs": [
-            4
           ]
         }
       ]
@@ -110,16 +86,6 @@
       "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
     },
     {
-      "n": 2,
-      "text": "NIST AI 100-1 (AI RMF 1.0), Appendix C",
-      "evidence": {
-        "document_id": "doc-7576edb531d9",
-        "pages": "p.45–46",
-        "pages_printed": "p.40–41"
-      },
-      "url": "https://doi.org/10.6028/NIST.AI.100-1"
-    },
-    {
       "n": 3,
       "text": "AI HLEG (2019). Ethics Guidelines for Trustworthy AI, 1.1",
       "evidence": {
@@ -128,16 +94,6 @@
         "pages_printed": "p.16"
       },
       "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai"
-    },
-    {
-      "n": 4,
-      "text": "『인공지능기본법 지원데스크 사례집』(2026), 제34조",
-      "evidence": {
-        "document_id": "doc-db293b2c15ea",
-        "pages": "p.25",
-        "pages_printed": "p.17"
-      },
-      "url": "https://iaae.ai/research/?bmode=view&idx=170644595"
     }
   ],
   "updated": "2026-10-03"

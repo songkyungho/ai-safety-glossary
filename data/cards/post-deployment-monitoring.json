@@ -12,7 +12,7 @@
     "points": [
       "입출력 모니터링, 사용자 피드백·신고 채널, 버그 바운티, 사고 추적, 출처 추적 등으로 배포 전 평가에서 드러나지 않은 문제를 찾음.",
       "배포 전 평가만으로는 실제 사용에서 나타나는 역량·행동을 충분히 예측하기 어려워, 운영 단계의 관찰이 위험 관리의 필수 요소로 다뤄짐.",
-      "개방형 모델은 배포 후 사용을 관찰하기 어려워 모니터링 수단이 제한되는 문제가 있음."
+      "오픈 웨이트 모델은 배포 후 사용을 관찰하기 어려워 모니터링 수단이 제한되는 문제가 있음."
     ],
     "distinction": {
       "text": "'배포 후 모니터링'은 기술·위험관리 일반에서 쓰는 넓은 표현이고, '출시 후 모니터링(post-market monitoring)'은 EU AI Act 등 제품 규제 맥락에서 제공자에게 부과되는 법적 의무를 가리키는 경우가 많음.",
@@ -40,7 +40,7 @@
   "frameworks": [
     {
       "org": "NIST",
-      "sub": "2023",
+      "sub": "AI 100-1, 2023",
       "points": [
         {
           "text": "AI RMF 1.0의 MANAGE 4.1은 사용자·관련 주체의 의견 수렴, 이의 제기와 수동 개입, 폐기, 사고 대응, 복구, 변경 관리를 포함한 배포 후 모니터링 계획을 이행하도록 함.",
@@ -58,6 +58,30 @@
           "text": "배포 후 모니터링 도구는 AI 모델·에이전트·출력이 실제로 어떻게 유통·사용되는지 추적해 출처 확인, 피해 발생 시 사고 조사, 책임 메커니즘 이행을 돕는다고 설명함.",
           "refs": [
             2
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU AI Act",
+      "sub": "2024/1689",
+      "points": [
+        {
+          "text": "제72조는 고위험 AI 시스템 제공자가 위험에 비례한 출시 후 모니터링 체계를 수립·문서화하고, 수명주기 전반의 성능 자료를 능동적·체계적으로 수집·분석하도록 함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "이행조치 3.5는 시스템적 위험의 허용 가능성과 모델 보고서 갱신 필요 여부를 판단할 정보를 모으도록 출시 후 모니터링을 요구하고, 이용자 피드백·신고 채널·버그 바운티 등을 방법으로 예시함.",
+          "refs": [
+            4
           ]
         }
       ]
@@ -83,6 +107,26 @@
         "pages_printed": "p.13"
       },
       "url": "https://internationalaisafetyreport.org/publication/second-key-update-technical-safeguards-and-risk-management"
+    },
+    {
+      "n": 3,
+      "text": "EU AI Act, Art. 72",
+      "evidence": {
+        "document_id": "doc-bba630444b32",
+        "pages": "p.101",
+        "pages_printed": "p.101"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    },
+    {
+      "n": 4,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 3.5",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.13–14",
+        "pages_printed": "p.13–14"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "updated": "2026-10-03"

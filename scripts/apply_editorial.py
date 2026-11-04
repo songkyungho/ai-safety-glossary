@@ -293,6 +293,7 @@ def main() -> None:
             "id": cid,
             "head": c["head"],
             "en": c["en"],
+            "en_search": c.get("en_search") or c["en"],
             "kit_id": kid,
             "alternatives": [a for a in c.get("alternatives") or [] if a.get("text")],
             "chapter": ch["no"],

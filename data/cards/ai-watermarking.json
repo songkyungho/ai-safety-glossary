@@ -6,7 +6,8 @@
     "watermark"
   ],
   "head": "워터마킹",
-  "en": "AI watermarking",
+  "en": "watermarking",
+  "en_search": "AI watermarking",
   "alternatives": [
     {
       "text": "AI 워터마킹",
@@ -73,11 +74,11 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report 2025, Glossary",
+      "text": "International AI Safety Report 2025",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
         "pages": "p.201–202, p.227–228",
-        "pages_printed": "p.201–202, p.227–228"
+        "pages_printed": "p.201–202; Glossary p.227–228"
       },
       "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     }

@@ -73,18 +73,6 @@
           ]
         }
       ]
-    },
-    {
-      "org": "한국",
-      "sub": "2026",
-      "points": [
-        {
-          "text": "위험 식별 문서화 예시로, 배포 전 레드팀 테스트에서 악의적 사용자가 지시를 삽입해 시스템 지침을 우회하거나 응답을 왜곡할 수 있는 프롬프트 인젝션 위험을 식별·기록하는 사례를 제시함.",
-          "refs": [
-            4
-          ]
-        }
-      ]
     }
   ],
   "refs": [
@@ -117,16 +105,6 @@
         "pages_printed": "p.17"
       },
       "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
-    },
-    {
-      "n": 4,
-      "text": "『인공지능 안전성 확보 가이드라인』 v1.3",
-      "evidence": {
-        "document_id": "doc-c49c4fa002e6",
-        "pages": "p.36",
-        "pages_printed": "p.36"
-      },
-      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
     }
   ]
 }

@@ -80,11 +80,11 @@
     },
     {
       "n": 2,
-      "text": "International AI Safety Report 2025, Glossary",
+      "text": "International AI Safety Report 2025",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
         "pages": "p.192, p.218–219",
-        "pages_printed": "p.192, p.218–219"
+        "pages_printed": "p.192; Glossary p.218–219"
       },
       "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     }

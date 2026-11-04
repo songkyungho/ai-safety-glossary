@@ -3,7 +3,8 @@
   "kit_id": "ai-hazard",
   "join_keys": [],
   "head": "위험원",
-  "en": "AI hazard",
+  "en": "hazard",
+  "en_search": "AI hazard",
   "alternatives": [
     {
       "text": "AI 위험원",

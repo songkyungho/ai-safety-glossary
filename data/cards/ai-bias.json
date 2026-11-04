@@ -5,7 +5,8 @@
     "bias"
   ],
   "head": "편향",
-  "en": "AI bias",
+  "en": "bias",
+  "en_search": "AI bias",
   "alternatives": [
     {
       "text": "AI 편향",
@@ -67,11 +68,11 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report 2025, Glossary",
+      "text": "International AI Safety Report 2025",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
         "pages": "p.92–93, p.219–220",
-        "pages_printed": "p.92–93, p.219–220"
+        "pages_printed": "p.92–93; Glossary p.219–220"
       },
       "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     }

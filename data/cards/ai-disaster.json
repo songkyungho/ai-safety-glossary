@@ -3,7 +3,8 @@
   "kit_id": "ai-disaster",
   "join_keys": [],
   "head": "재해",
-  "en": "AI disaster",
+  "en": "disaster",
+  "en_search": "AI disaster",
   "alternatives": [
     {
       "text": "AI 재해",

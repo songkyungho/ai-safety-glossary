@@ -48,7 +48,7 @@ def surface_forms(entry: dict) -> tuple[list[str], list[re.Pattern]]:
                 k2 = _nospace(h[3:])
                 if len(k2) >= 3:
                     ko.add(k2)
-    raw = entry["en"]
+    raw = entry.get("en_search") or entry["en"]
     base = re.sub(r"\s*\(.*?\)", "", raw).strip()
     abbr = re.findall(r"\(([A-Z][A-Za-z0-9\-]{1,9})\)", raw)
     words = [base]

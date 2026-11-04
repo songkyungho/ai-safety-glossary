@@ -673,8 +673,8 @@ details:not([open]).term-card .ribbon { display: none; }
 
 
 def shown_pages(r):
-    """출처에 붙일 쪽수: 인쇄 쪽(pages_printed)이 있으면 그것, 없으면 색인의 물리 쪽. 법령은 조문으로 인용해 쪽수를 달지 않는다."""
-    if r.get("text", "").startswith(("「", "EU AI Act")):
+    """출처에 붙일 쪽수: 인쇄 쪽(pages_printed)이 있으면 그것, 없으면 색인의 물리 쪽. 한국 법령은 조문으로 인용해 쪽수를 달지 않는다."""
+    if r.get("text", "").startswith("「"):
         return None
     ev = r.get("evidence") or {}
     return ev.get("pages_printed") or ev.get("pages")
@@ -945,7 +945,7 @@ def card_html(e):
     more_html = (f'<details class="term-more"><summary>{" · ".join(more_label) or "지표"}</summary>{more_s}</details>'
                  if more_s.strip() else "")
 
-    q_bits = [e["head"], e["en"], e["chapter_label"], e["category_label"]]
+    q_bits = [e["head"], e["en"], e.get("en_search") or "", e["chapter_label"], e["category_label"]]
     q_bits += [a["text"] for a in alts]
     q_bits += [d.get("lead") or ""] + list(d.get("points") or []) + [(dist or {}).get("text") or ""]
     q_bits += [r.get("head") or r.get("label") or "" for r in e.get("related") or []]
@@ -964,7 +964,7 @@ def card_html(e):
         f'<details class="term-card" id="{html.escape(cid)}" data-cat="{e["category"]}" '
         f'data-ch="{e["chapter"]}" data-n="{e["n"]}" data-head="{html.escape(e["head"])}" '
         f'data-q="{html.escape(" ".join(q_bits).lower())}" '
-        f'data-qn="{html.escape(nospace(" ".join([e["head"], e["en"]] + [a["text"] for a in alts])).lower())}" '
+        f'data-qn="{html.escape(nospace(" ".join([e["head"], e["en"], e.get("en_search") or ""] + [a["text"] for a in alts])).lower())}" '
         f'style="--chip:{html.escape(e["color"])};--ch:{html.escape(e.get("chapter_color") or e["color"])}">'
         f'<summary class="card-sum"><span class="term-n">{e["n"]:03d}</span>'
         f'<span class="sum-head">{html.escape(e["head"])}</span>'

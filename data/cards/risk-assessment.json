@@ -22,7 +22,7 @@
       "어느 수준의 위험을 감수할지는 데이터만으로 정해지지 않아 가치 판단이 개입하며, 그 근거를 사후에 검증할 수 있도록 문서화가 요구됨."
     ],
     "distinction": {
-      "text": "'위험 평가(risk assessment)'는 위험의 수준을 판단하는 관리 절차이고, '평가(evaluation)'는 모델·시스템의 역량이나 안전성을 시험해 측정하는 활동임. 위험 평가 안의 '위험 판정(risk evaluation)' 단계도 모델 평가와는 다른 개념임.",
+      "text": "'위험 평가(risk assessment)'는 위험의 수준을 판단하는 관리 절차이고 '평가(evaluation)'는 모델·시스템의 역량이나 안전성을 시험해 측정하는 활동이며, 위험 평가 안의 '위험 판정(risk evaluation)' 단계도 모델 평가와는 다른 개념임.",
       "terms": [
         "evaluation",
         "safety-evaluation",
@@ -81,6 +81,18 @@
           ]
         }
       ]
+    },
+    {
+      "org": "EU GPAI 실천강령",
+      "sub": "2025",
+      "points": [
+        {
+          "text": "약정 3은 식별한 시스템적 위험마다 모델 독립 정보 수집, 모델 평가, 위험 모델링, 위험 추정, 출시 후 모니터링의 다섯 요소로 분석하도록 함.",
+          "refs": [
+            3
+          ]
+        }
+      ]
     }
   ],
   "refs": [
@@ -103,6 +115,16 @@
         "pages_printed": "p.9–10"
       },
       "url": "https://aisafetypriorities.org/"
+    },
+    {
+      "n": 3,
+      "text": "EU GPAI Code of Practice (2025), Safety & Security, Commitment 3",
+      "evidence": {
+        "document_id": "doc-d879f9b54c60",
+        "pages": "p.12–14",
+        "pages_printed": "p.12–14"
+      },
+      "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
     }
   ],
   "updated": "2026-10-03"

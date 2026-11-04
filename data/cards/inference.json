@@ -49,11 +49,11 @@
   "refs": [
     {
       "n": 1,
-      "text": "International AI Safety Report 2025, Glossary",
+      "text": "International AI Safety Report 2025",
       "evidence": {
         "document_id": "doc-c4fe09068d6e",
         "pages": "p.38, p.47–48, p.222–223, p.319",
-        "pages_printed": "p.38, p.47–48, p.222–223, p.319"
+        "pages_printed": "p.38, p.47–48; Glossary p.222–223; First Key Update p.21"
       },
       "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
     }

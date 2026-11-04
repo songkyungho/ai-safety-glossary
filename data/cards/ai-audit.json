@@ -6,7 +6,8 @@
     "audit"
   ],
   "head": "감사",
-  "en": "AI audit",
+  "en": "audit",
+  "en_search": "AI audit",
   "alternatives": [
     {
       "text": "AI 감사",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI 안전 용어집",
-    "built_at": "2026-11-01T09:36:20+09:00",
+    "built_at": "2026-11-04T09:33:47+09:00",
     "method": "glossary_merged.json + data/cards 편집 계층",
     "counts": {
       "entries": 171,
@@ -9,8 +9,8 @@
       "with_frameworks": 118,
       "relations": 197,
       "linked": {
-        "research_pool": 1825,
-        "library_pool": 2500,
+        "research_pool": 1861,
+        "library_pool": 2527,
         "with_research": 141,
         "with_library": 87
       },
@@ -1151,6 +1151,7 @@
       "id": "generative-ai",
       "head": "생성형 AI",
       "en": "generative AI",
+      "en_search": "generative AI",
       "kit_id": "generative-ai",
       "alternatives": [
         {
@@ -1507,6 +1508,7 @@
       "id": "foundation-model",
       "head": "파운데이션 모델",
       "en": "foundation model",
+      "en_search": "foundation model",
       "kit_id": "foundation-model",
       "alternatives": [
         {
@@ -1766,6 +1768,7 @@
       "id": "large-language-model-llm",
       "head": "거대 언어 모델",
       "en": "large language model (LLM)",
+      "en_search": "large language model (LLM)",
       "kit_id": "large-language-model-llm",
       "alternatives": [
         {
@@ -1900,12 +1903,28 @@
       },
       "research": [
         {
-          "title": "LLM에서 에이전트까지 탈옥 공격·방어 서베이",
-          "orig": "From LLMs to MLLMs to Agents: A Survey of Emerging Paradigms in Jailbreak Attacks and Defenses within LLM Ecosystem",
-          "summary": "LLM, 멀티모달 LLM, 에이전트로 확장되는 생태계의 탈옥 공격과 방어 기법을 공격 영향·공격자 권한 및 대응 시점·기술 기준으로 분류하고, 관련 데이터셋·평가 지표와 향후 연구 방향을 정리한 서베이.",
-          "url": "https://arxiv.org/pdf/2506.15170",
-          "date": "2026-10-29",
-          "source": "arXiv"
+          "title": "금융 분야 LLM 보안·신뢰성 벤치마킹",
+          "orig": "Benchmarking Security and Reliability of Open-Source and Commercial Large Language Models in Financial-Domain Scenarios",
+          "summary": "금융 역량(IFB), 규제 준수(RegBench), 적대적 견고성(FinSec-Eval-1000)을 아우르는 평가 틀로 오픈소스·상용 LLM 8종을 평가했고, 금융 역량과 보안 견고성 사이에 뚜렷한 상관이 없음을 확인했다.",
+          "url": "https://doi.org/10.3390/fintech5040101",
+          "date": "2026-11-02",
+          "source": "FinTech"
+        },
+        {
+          "title": "LLM의 점수 추구 성향 이해하기",
+          "orig": "Towards understanding score-seeking in LLMs",
+          "summary": "grader가 노출된 에이전트 환경에서 OpenAI 모델 3종을 실험해, 모델이 점수 자체를 내재적으로 추구하며 지시를 어겨 점수를 높이는 비율이 90~99% 이상임을 보였다.",
+          "url": "https://blog.redwoodresearch.org/p/towards-understanding-score-seeking",
+          "date": "2026-11-02",
+          "source": "RedwoodResearch"
+        },
+        {
+          "title": "대규모 언어모델의 증명 가능한 추론 진전",
+          "orig": "Progress on provable inference for large language models",
+          "summary": "Anthropic이 모델 가중치를 숨긴 채 각 응답이 약속된 모델에서 나왔음을 증명하는 zkSNARK 시스템 FlashProve를 공개했고, 400B MoE 모델에서 H100 한 대로 초당 약 110토큰의 증명을 생성하며 vLLM 대비 GPU 시간은 약 70~95배가 든다.",
+          "url": "https://anthropic.com/research/provable-inference",
+          "date": "2026-11-02",
+          "source": "Anthropic Research"
         },
         {
           "title": "함께 채점되면 달라지는 LLM 판정: 배치 채점 문제",
@@ -1913,22 +1932,6 @@
           "summary": "한 프롬프트에 여러 항목을 묶어 LLM이 채점하게 하면 이웃 항목·순서·위치에 따라 판정의 11-22%가 바뀌므로, 모호한 항목은 하나씩 채점하라고 권고한다.",
           "url": "https://arxiv.org/abs/2610.40241v1",
           "date": "2026-10-29",
-          "source": "arXiv"
-        },
-        {
-          "title": "우즈벡어에서 LLM 환각이 더 많은가: 언어별 사실 신뢰성",
-          "orig": "Do large language models hallucinate more in Uzbek? A cross-lingual measurement of factual reliability and its implications for non-English higher education",
-          "summary": "오픈웨이트 LLM 8종에 영어·러시아어·우즈벡어로 사실 질문 100개를 던져 오류율을 재니 영어 3.5%, 러시아어 10.9%, 우즈벡어 15.9%였고, 우즈벡어 적응 모델은 격차를 거의 없앴다.",
-          "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1929327/pdf",
-          "date": "2026-10-29",
-          "source": "Frontiers in Education"
-        },
-        {
-          "title": "LLM 기반 로봇 조작의 결함 주입·강건성 평가",
-          "orig": "Alpha: Systematic Fault Injection and Robustness Evaluation for LLM-Driven Embodied Manipulation",
-          "summary": "LLM 기반 로봇 조작 계획에 인지·구동·기구학·계획 단계 결함을 주입해 LLM 플래너와 결정론적 오라클을 150회 비교했고, 성능 격차는 플래너 출력 손상에서만 발생함을 보였다.",
-          "url": "https://arxiv.org/pdf/2610.30197",
-          "date": "2026-10-28",
           "source": "arXiv"
         }
       ],
@@ -1957,6 +1960,7 @@
       "id": "open-weight-model",
       "head": "오픈 웨이트 모델",
       "en": "open-weight model",
+      "en_search": "open-weight model",
       "kit_id": "open-weight-model",
       "alternatives": [
         {
@@ -1974,12 +1978,12 @@
       "definition": {
         "lead": "모델 가중치를 공개해 누구나 내려받아 직접 실행·연구·수정할 수 있게 한 AI 모델을 말함.",
         "points": [
-          "대개 가중치와 실행 코드만 공개되고 학습 코드·데이터는 공개되지 않으며, 이용 제한 라이선스가 붙기도 함. 그래서 '오픈소스 모델'이라는 표현이 부정확한 경우가 많음.",
-          "외부 검증과 연구가 쉬워지고 시장 집중을 완화할 가능성이 있으며 자원이 적은 주체도 활용할 수 있다는 이점이 있음. 반면 한 번 공개된 가중치는 회수할 수 없고, 미세조정으로 안전장치를 제거해 악의적으로 사용할 수 있음.",
+          "대개 가중치와 실행 코드만 공개되고 학습 코드·데이터는 공개되지 않으며 이용 제한 라이선스가 붙기도 해, '오픈소스 모델'이라는 표현이 부정확한 경우가 많음.",
+          "외부 검증과 연구가 쉬워지고 시장 집중을 완화할 가능성이 있으며 자원이 적은 주체도 활용할 수 있다는 이점이 있지만, 한 번 공개된 가중치는 회수할 수 없고 미세조정으로 안전장치를 제거해 악의적으로 사용할 수 있음.",
           "논의는 공개 여부의 찬반에서 어떤 역량 수준까지 공개해도 되는지, 공개 전 어떤 평가를 거쳐야 하는지로 옮겨 가고 있음."
         ],
         "distinction": {
-          "text": "'오픈 웨이트'는 가중치 공개를 뜻할 뿐이고, '오픈소스'는 누구나 어떤 목적으로든 사용·연구·수정·공유할 수 있게 하는 라이선스를 요구함. 반대편에는 가중치를 공개하지 않는 '폐쇄형 모델'이 있음.",
+          "text": "'오픈 웨이트'는 가중치 공개를 뜻할 뿐이고 '오픈소스'는 누구나 어떤 목적으로든 사용·연구·수정·공유할 수 있게 하는 라이선스를 요구하며, 가중치를 공개하지 않는 '폐쇄형 모델'이 그 반대편에 있음.",
           "terms": [
             "closed-model"
           ]
@@ -2013,7 +2017,7 @@
           "sub": "2025·2026",
           "points": [
             {
-              "text": "'오픈 웨이트'는 모델 가중치를 공개적으로 내려받을 수 있다는 뜻이며, 오픈 웨이트 모델이 반드시 오픈소스인 것은 아니라고 구별함. 오픈소스 분류에는 누구나 어떤 목적으로든 모델을 사용·연구·수정·공유할 수 있게 하는 라이선스가 필요하다고 설명함.",
+              "text": "'오픈 웨이트'는 모델 가중치를 공개적으로 내려받을 수 있다는 뜻일 뿐 반드시 오픈소스는 아니며, 오픈소스로 분류되려면 누구나 어떤 목적으로든 모델을 사용·연구·수정·공유할 수 있게 하는 라이선스가 있어야 한다고 구별함.",
               "refs": [
                 1
               ]
@@ -2031,9 +2035,16 @@
           "sub": "2024/1689",
           "points": [
             {
-              "text": "가중치·아키텍처·사용 정보를 공개하고 접근·사용·수정·배포를 허용하는 자유 오픈소스 라이선스 모델에 일부 의무를 면제하나, 시스템적 위험 GPAI 모델은 제외함(제53조(2), 제54조(6)).",
+              "text": "가중치·아키텍처·사용 정보를 공개하고 접근·사용·수정·배포를 허용하는 자유 오픈소스 라이선스 모델에 일부 의무를 면제하되, 시스템적 위험 GPAI 모델은 제외함(제53조제2항, 제54조제6항).",
               "refs": [
+                4,
                 3
+              ]
+            },
+            {
+              "text": "전문 제103항은 유상 제공이나 수익화하는 구성요소에는 이 예외를 인정하지 않으며, 제53조제2항의 라이선스·정보 공개 요건도 있어 오픈 웨이트라는 사실만으로 면제되지는 않음.",
+              "refs": [
+                5
               ]
             }
           ]
@@ -2070,6 +2081,26 @@
             "pages_printed": "p.19–20"
           },
           "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act"
+        },
+        {
+          "n": 4,
+          "text": "EU AI Act, Art. 53(2)·54(6)",
+          "evidence": {
+            "document_id": "doc-bba630444b32",
+            "pages": "p.85–86",
+            "pages_printed": "p.85–86"
+          },
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+        },
+        {
+          "n": 5,
+          "text": "EU AI Act, Recital 103",
+          "evidence": {
+            "document_id": "doc-bba630444b32",
+            "pages": "p.27",
+            "pages_printed": "p.27"
+          },
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
         }
       ],
       "commentary": [
@@ -2171,7 +2202,8 @@
     {
       "id": "closed-model",
       "head": "폐쇄형 모델",
-      "en": "closed (proprietary) model",
+      "en": "closed model",
+      "en_search": "closed (proprietary) model",
       "kit_id": "closed-model",
       "alternatives": [
         {
@@ -2194,11 +2226,11 @@
         "lead": "모델 가중치를 공개하지 않고, 외부 이용을 허용하지 않거나 개발사가 통제하는 응용 프로그램이나 API로만 이용하게 하는 AI 모델을 말함.",
         "points": [
           "공개 방식은 완전 폐쇄부터 호스팅 접근, API 접근, API를 통한 미세조정 허용까지 단계가 있으며, 가중치 내려받기가 허용되지 않는 쪽을 넓게 폐쇄형으로 부름.",
-          "개발사가 안전장치를 유지하고 이용 정책을 적용하며 문제가 생기면 접근을 중단·회수할 수 있음. 반면 외부 연구자의 독립 검증이 어렵고 소수 기업에 의존하는 정도가 커진다는 지적이 있음.",
+          "개발사가 안전장치를 유지하고 이용 정책을 적용하며 문제가 생기면 접근을 중단·회수할 수 있지만, 외부 연구자의 독립 검증이 어렵고 소수 기업에 의존하는 정도가 커진다는 지적이 있음.",
           "가중치가 비공개여도 유출·탈취되면 통제가 사라지므로 가중치 보안이 함께 요구됨."
         ],
         "distinction": {
-          "text": "'폐쇄형 모델'과 '오픈 웨이트 모델'은 가중치 공개 여부로 갈림. 공개냐 비공개냐의 이분법보다 접근 수준의 스펙트럼으로 보는 것이 정확함.",
+          "text": "'폐쇄형 모델'과 '오픈 웨이트 모델'은 가중치 공개 여부로 갈리지만, 공개·비공개의 이분법보다 접근 수준의 스펙트럼으로 보는 것이 정확함.",
           "terms": [
             "open-weight-model"
           ]
@@ -2243,7 +2275,7 @@
         },
         {
           "org": "NIST",
-          "sub": "AI 800-1",
+          "sub": "AI 800-1 초안, 2025",
           "points": [
             {
               "text": "기밀성에 기대어 오용 위험을 관리하는 모델은 무단 접근 위험이 충분히 완화된 때에만 개발하고, 가중치 유출·내부자 위협을 막는 보안 조치를 권고함.",
@@ -2358,6 +2390,7 @@
       "id": "model-weights",
       "head": "모델 가중치",
       "en": "model weights",
+      "en_search": "model weights",
       "kit_id": "model-weights",
       "alternatives": [
         {
@@ -2422,11 +2455,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.150, p.227–228",
-            "pages_printed": "p.150, p.227–228"
+            "pages_printed": "p.150; Glossary p.227–228"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         }
@@ -2636,6 +2669,7 @@
       "id": "compute",
       "head": "연산",
       "en": "compute",
+      "en_search": "compute",
       "kit_id": "compute",
       "alternatives": [
         {
@@ -2707,7 +2741,7 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.30–31",
@@ -2885,6 +2919,7 @@
       "id": "training-data",
       "head": "학습 데이터",
       "en": "training data",
+      "en_search": "training data",
       "kit_id": "training-data",
       "alternatives": [
         {
@@ -3206,6 +3241,7 @@
       "id": "synthetic-data",
       "head": "합성 데이터",
       "en": "synthetic data",
+      "en_search": "synthetic data",
       "kit_id": "synthetic-data",
       "alternatives": [],
       "chapter": "01",
@@ -3269,11 +3305,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.47–48, p.226–227",
-            "pages_printed": "p.47–48, p.226–227"
+            "pages_printed": "p.47–48; Glossary p.226–227"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         },
@@ -3450,6 +3486,7 @@
       "id": "data-provenance",
       "head": "데이터 기원",
       "en": "data provenance",
+      "en_search": "data provenance",
       "kit_id": "data-provenance",
       "alternatives": [
         {
@@ -3616,6 +3653,7 @@
       "id": "fine-tuning",
       "head": "미세조정",
       "en": "fine-tuning",
+      "en_search": "fine-tuning",
       "kit_id": "fine-tuning",
       "alternatives": [
         {
@@ -3683,11 +3721,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.170, p.221–222",
-            "pages_printed": "p.170, p.221–222"
+            "pages_printed": "p.170; Glossary p.221–222"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         },
@@ -3903,6 +3941,7 @@
       "id": "distillation",
       "head": "증류",
       "en": "distillation",
+      "en_search": "distillation",
       "kit_id": "distillation",
       "alternatives": [
         {
@@ -4067,6 +4106,7 @@
       "id": "inference",
       "head": "추론",
       "en": "inference",
+      "en_search": "inference",
       "kit_id": "inference",
       "alternatives": [],
       "chapter": "01",
@@ -4124,11 +4164,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.38, p.47–48, p.222–223, p.319",
-            "pages_printed": "p.38, p.47–48, p.222–223, p.319"
+            "pages_printed": "p.38, p.47–48; Glossary p.222–223; First Key Update p.21"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         }
@@ -4206,6 +4246,14 @@
       },
       "research": [
         {
+          "title": "대규모 언어모델의 증명 가능한 추론 진전",
+          "orig": "Progress on provable inference for large language models",
+          "summary": "Anthropic이 모델 가중치를 숨긴 채 각 응답이 약속된 모델에서 나왔음을 증명하는 zkSNARK 시스템 FlashProve를 공개했고, 400B MoE 모델에서 H100 한 대로 초당 약 110토큰의 증명을 생성하며 vLLM 대비 GPU 시간은 약 70~95배가 든다.",
+          "url": "https://anthropic.com/research/provable-inference",
+          "date": "2026-11-02",
+          "source": "Anthropic Research"
+        },
+        {
           "title": "스트리밍 추론용 적응형 깊이-시간 안전장치 ADTGuard",
           "orig": "ADTGuard: Adaptive Depth-Time Safeguard for Streaming Inference in Large Language Models",
           "summary": "응답 단위 라벨만으로 토큰별 위험 시점을 점진적으로 정제하고 층 선택을 적응시켜, 스트리밍 생성 중 유해 토큰을 공개 전에 탐지하는 가드레일을 제안하며 16M 학습 파라미터로 최신 안전장치와 대등하거나 능가한다고 보고한다.",
@@ -4228,14 +4276,6 @@
           "url": "https://arxiv.org/abs/2609.36657v1",
           "date": "2026-09-29",
           "source": "arXiv"
-        },
-        {
-          "title": "암호화 LLM 추론을 위한 동형 가드레일",
-          "orig": "HE-Guardrail: A Homomorphic Guardrail Against Jailbreak Attacks for Encrypted Large Language Model Inference",
-          "summary": "동형암호 기반 LLM 추론에서 서버가 프롬프트를 볼 수 없어 탈옥 공격을 막기 어려운 문제를 지적하고, Llama Guard·JBShield·GradSafe를 암호문 상태에서 구동해 응답 반환을 통제하는 HE-Guardrail을 제안해 평문 가드레일의 판단을 거의 그대로 재현했다.",
-          "url": "https://arxiv.org/abs/2609.21484v1",
-          "date": "2026-09-18",
-          "source": "arXiv"
         }
       ],
       "library_docs": [],
@@ -4250,6 +4290,7 @@
       "id": "chain-of-thought-cot",
       "head": "사고 사슬",
       "en": "chain-of-thought (CoT)",
+      "en_search": "chain-of-thought (CoT)",
       "kit_id": "chain-of-thought-cot",
       "alternatives": [
         {
@@ -4273,7 +4314,7 @@
         "points": [
           "단계별로 생각하라는 지시나 풀이 예시로 유도하는 프롬프트 기법에서 출발해, 긴 추론 과정을 스스로 생성하도록 학습시킨 추론 모델로 이어짐.",
           "모델이 무엇을 고려하고 어떤 계획을 세우는지가 사람이 읽을 수 있는 글로 드러나므로, 위험한 의도나 보상 해킹·계략적 행동의 징후를 실행 전에 감시하는 창구로 주목받음.",
-          "써 놓은 추론이 실제 내부 계산을 충실히 반영한다는 보장이 없음(충실성 문제). 감시 압력을 받은 모델이 추론을 숨기거나 꾸밀 가능성도 있어 사고 사슬 감시만으로 안전을 보장할 수 없음."
+          "써 놓은 추론이 실제 내부 계산을 충실히 반영한다는 보장이 없고(충실성 문제) 감시 압력을 받은 모델이 추론을 숨기거나 꾸밀 가능성도 있어, 사고 사슬 감시만으로 안전을 보장할 수 없음."
         ],
         "distinction": {
           "text": "사고 사슬 감시는 모델이 스스로 쓴 설명을 읽는 것이고, '해석 가능성' 연구는 모델 내부 표상과 계산을 직접 분석하는 것임.",
@@ -4497,6 +4538,7 @@
       "id": "ai-agent",
       "head": "AI 에이전트",
       "en": "AI agent",
+      "en_search": "AI agent",
       "kit_id": "ai-agent",
       "alternatives": [
         {
@@ -4578,7 +4620,7 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.38, p.47–48, p.80, p.111, p.170",
@@ -4897,36 +4939,36 @@
       },
       "research": [
         {
-          "title": "LLM에서 에이전트까지 탈옥 공격·방어 서베이",
-          "orig": "From LLMs to MLLMs to Agents: A Survey of Emerging Paradigms in Jailbreak Attacks and Defenses within LLM Ecosystem",
-          "summary": "LLM, 멀티모달 LLM, 에이전트로 확장되는 생태계의 탈옥 공격과 방어 기법을 공격 영향·공격자 권한 및 대응 시점·기술 기준으로 분류하고, 관련 데이터셋·평가 지표와 향후 연구 방향을 정리한 서베이.",
-          "url": "https://arxiv.org/pdf/2506.15170",
-          "date": "2026-10-29",
+          "title": "AI Act 준수 격차 분석·개선 에이전트 프레임워크",
+          "orig": "ComplianceAtlas: A Taxonomy-Driven Agentic AI Framework for Automated AI Act Gap Analysis and Remediation",
+          "summary": "고위험 AI 시스템의 기술적 준수 격차 분류체계와 격차 추출·개선안 추천 두 에이전트를 제안하고, 9개 시스템에서 격차 유형 F1 0.831로 기존 베이스라인(0.533)을 앞섰다.",
+          "url": "https://arxiv.org/abs/2611.03121v1",
+          "date": "2026-11-02",
           "source": "arXiv"
         },
         {
-          "title": "다중 에이전트 해석가능성 기반 공모 탐지",
-          "orig": "Detecting Multi-Agent Collusion Through Multi-Agent Interpretability",
-          "summary": "에이전트별 활성값 탐침과 집단 수준 검정 통계로 다중 에이전트 공모를 탐지하는 HELIOS와 NARCBench를 제안했고, 스테가노그래피 공모에서 AUROC 0.99~1.00을 보였으나 지시형 공모로 학습한 탐침은 자발적 공모에 부분적으로만 전이됨을 확인했다.",
-          "url": "https://doi.org/10.70777/si.v3i4.18909",
-          "date": "2026-10-27",
-          "source": "SuperIntelligence - Robotics - Safety & Alignment"
-        },
-        {
-          "title": "탈옥 응답의 프라이버시 유출을 감사하는 숙의형 에이전트",
-          "orig": "PrivacyEvalClaw: A Tool-Augmented Deliberative Agent for Auditing Privacy Leakage in LLM Jailbreak Responses",
-          "summary": "프라이버시 평가기(가드 모델·LLM 판정기) 간 판단 불일치를 분석하고, 평가기를 도구로 쓰며 증거를 모아 최종 판정하는 학습 불필요 숙의형 에이전트 PrivacyEvalClaw를 제안해 쌍대 LLM 판정에서 기존 기준선보다 높은 승률을 보였다.",
-          "url": "https://arxiv.org/abs/2610.36711v1",
-          "date": "2026-10-27",
+          "title": "다중 에이전트 게임으로 본 AI 기만 성향 측정",
+          "orig": "Four Bridges: Measuring Deception Propensity in a Multi-Agent Game",
+          "summary": "정보 비대칭 게임 Four Bridges에서 프론티어 모델 8종을 평가한 결과, 기만 지시 없이도 전체 실행의 73%에서 기만이 나타났고, 정직성 스티어링 벡터와 적대적 정직성 학습이 기만을 크게 줄였다.",
+          "url": "https://arxiv.org/abs/2611.03600v1",
+          "date": "2026-11-02",
           "source": "arXiv"
         },
         {
-          "title": "AI 에이전트가 전문가의 판단을 좌우하는 방식",
-          "orig": "How AI agents shape experts’ judgment calls",
-          "summary": "전문 분석가 50명을 대상으로 한 무작위 대조 실험에서, 에이전트에 몰래 심은 선호를 분석가가 86% 따랐고 그 논거를 쓰고도 출처로 밝힌 사람은 15%뿐이었다.",
-          "url": "https://anthropic.com/research/agents-judgment-calls",
-          "date": "2026-10-27",
-          "source": "Anthropic Research"
+          "title": "아바타 지능: 지속형 개인 에이전트와 인간 주체성",
+          "orig": "Avatar Intelligence: Amplifying Human Agency Through Persistent Personal Agents",
+          "summary": "사용자의 목표·가치를 대리해 의사결정을 위임받는 지속형 개인 에이전트 패러다임과 성숙도 로드맵, 감독 부담 평가 지표(AOI), 안전·책임 메커니즘을 포함한 연구 의제를 제안한다.",
+          "url": "https://arxiv.org/abs/2611.03092",
+          "date": "2026-11-02",
+          "source": "arXiv"
+        },
+        {
+          "title": "FairSense-AgentiX: 편향·AI 위험 분석 에이전트",
+          "orig": "FairSense-AgentiX: An Agentic Platform for Multi-Modal Fairness and AI Risk Analysis",
+          "summary": "LangGraph 오케스트레이션과 MIT AI 위험 리포지토리 기반 검색을 이용해 텍스트·이미지의 편향 탐지와 AI 배포 위험 평가를 수행하는 오픈소스 파이썬 플랫폼을 공개했다.",
+          "url": "https://doi.org/10.21105/joss.11060",
+          "date": "2026-10-30",
+          "source": "The Journal of Open Source Software"
         }
       ],
       "library_docs": [
@@ -4981,6 +5023,7 @@
       "id": "agentic-ai",
       "head": "에이전틱 AI",
       "en": "agentic AI",
+      "en_search": "agentic AI",
       "kit_id": "agentic-ai",
       "alternatives": [],
       "chapter": "02",
@@ -5080,6 +5123,14 @@
       },
       "research": [
         {
+          "title": "AI Act 준수 격차 분석·개선 에이전트 프레임워크",
+          "orig": "ComplianceAtlas: A Taxonomy-Driven Agentic AI Framework for Automated AI Act Gap Analysis and Remediation",
+          "summary": "고위험 AI 시스템의 기술적 준수 격차 분류체계와 격차 추출·개선안 추천 두 에이전트를 제안하고, 9개 시스템에서 격차 유형 F1 0.831로 기존 베이스라인(0.533)을 앞섰다.",
+          "url": "https://arxiv.org/abs/2611.03121v1",
+          "date": "2026-11-02",
+          "source": "arXiv"
+        },
+        {
           "title": "에이전트 AI 보안·섀도 AI·LLM 공급망 위험 서베이",
           "orig": "Below the Waterline: A Survey of Agentic AI Security, Shadow AI Governance, and LLM Supply-Chain Risk in the Enterprise",
           "summary": "2136건의 문헌을 체계적으로 검토해 기업 환경의 에이전트 AI 보안, 섀도 AI 거버넌스, LLM 공급망 위험을 가시성 상실·신원 모호성·출처 침식이라는 세 가지 실패 원형으로 통합했다.",
@@ -5094,14 +5145,6 @@
           "url": "https://doi.org/10.3389/fcomp.2026.1919950",
           "date": "2026-10-08",
           "source": "Frontiers in Computer Science"
-        },
-        {
-          "title": "모델 위험관리에서 AI 보증 체계로의 통합",
-          "orig": "From Model Risk Management to AI Assurance: Integrating AI Risk Management, Independent Validation, and AI Auditing for Generative and Agentic AI",
-          "summary": "생성형·에이전트형 AI를 대상으로 AI 거버넌스, 위험관리, 독립 검증, AI 감사를 하나로 묶는 통합 AI 보증 프레임워크를 제안하고 여신·고용·기업 에이전트 사례로 적용을 보였다.",
-          "url": "https://doi.org/10.14738/tecs.1405.12205",
-          "date": "2026-09-19",
-          "source": "Transactions on Engineering and Computing Sciences"
         },
         {
           "title": "중단의 법: 에이전트 AI의 중단 가능성과 거버넌스",
@@ -5160,6 +5203,7 @@
       "id": "autonomy",
       "head": "자율성",
       "en": "autonomy",
+      "en_search": "autonomy",
       "kit_id": "autonomy",
       "alternatives": [
         {
@@ -5330,6 +5374,7 @@
       "id": "autonomous-planning",
       "head": "자율 계획",
       "en": "autonomous planning",
+      "en_search": "autonomous planning",
       "kit_id": "autonomous-planning",
       "alternatives": [],
       "chapter": "02",
@@ -5477,6 +5522,7 @@
       "id": "tool-use",
       "head": "도구 사용",
       "en": "tool use",
+      "en_search": "tool use",
       "kit_id": "tool-use",
       "alternatives": [
         {
@@ -5635,6 +5681,7 @@
       "id": "multi-agent-system-mas",
       "head": "다중 에이전트 시스템",
       "en": "multi-agent system (MAS)",
+      "en_search": "multi-agent system (MAS)",
       "kit_id": "multi-agent-system-mas",
       "alternatives": [
         {
@@ -5801,6 +5848,14 @@
       },
       "research": [
         {
+          "title": "다중 에이전트 게임으로 본 AI 기만 성향 측정",
+          "orig": "Four Bridges: Measuring Deception Propensity in a Multi-Agent Game",
+          "summary": "정보 비대칭 게임 Four Bridges에서 프론티어 모델 8종을 평가한 결과, 기만 지시 없이도 전체 실행의 73%에서 기만이 나타났고, 정직성 스티어링 벡터와 적대적 정직성 학습이 기만을 크게 줄였다.",
+          "url": "https://arxiv.org/abs/2611.03600v1",
+          "date": "2026-11-02",
+          "source": "arXiv"
+        },
+        {
           "title": "다중 에이전트 해석가능성 기반 공모 탐지",
           "orig": "Detecting Multi-Agent Collusion Through Multi-Agent Interpretability",
           "summary": "에이전트별 활성값 탐침과 집단 수준 검정 통계로 다중 에이전트 공모를 탐지하는 HELIOS와 NARCBench를 제안했고, 스테가노그래피 공모에서 AUROC 0.99~1.00을 보였으나 지시형 공모로 학습한 탐침은 자발적 공모에 부분적으로만 전이됨을 확인했다.",
@@ -5822,14 +5877,6 @@
           "summary": "개별 에이전트의 통제 준수가 집단 차별적 결과로 이어질 수 있는 '구성적 비합성' 문제를 제기하고, 규제 금융 환경의 에이전트 집단 거버넌스를 위한 참조 아키텍처 ARIA와 두 가지 시뮬레이션을 제시한다.",
           "url": "https://arxiv.org/abs/2609.27994v1",
           "date": "2026-09-23",
-          "source": "arXiv"
-        },
-        {
-          "title": "장기 운용 멀티에이전트 시스템의 적대적 스트레스 테스트",
-          "orig": "Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems",
-          "summary": "10개 에이전트가 사는 8개 월드를 16일간 연속 운영하며 간접 프롬프트 주입·허위정보·사적 메모리 노출을 가했더니, 어떤 월드도 세 사건 모두에서 회복탄력성을 보이지 못했고 위협을 인지하고도 차단하지 못했다.",
-          "url": "https://arxiv.org/abs/2609.17320",
-          "date": "2026-09-15",
           "source": "arXiv"
         }
       ],
@@ -5870,6 +5917,7 @@
       "id": "model-context-protocol-mcp",
       "head": "모델 컨텍스트 프로토콜",
       "en": "Model Context Protocol (MCP)",
+      "en_search": "Model Context Protocol (MCP)",
       "kit_id": "model-context-protocol-mcp",
       "alternatives": [
         {
@@ -5994,6 +6042,7 @@
       "id": "capability",
       "head": "역량",
       "en": "capability",
+      "en_search": "capability",
       "kit_id": "capability",
       "alternatives": [
         {
@@ -6059,11 +6108,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.38, p.219–220",
-            "pages_printed": "p.38, p.219–220"
+            "pages_printed": "p.38; Glossary p.219–220"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         }
@@ -6278,6 +6327,7 @@
       "id": "task-time-horizon",
       "head": "작업 시간 지평",
       "en": "task time horizon",
+      "en_search": "task time horizon",
       "kit_id": "task-time-horizon",
       "alternatives": [],
       "chapter": "02",
@@ -6383,6 +6433,7 @@
       "id": "frontier-ai",
       "head": "프론티어 AI",
       "en": "frontier AI",
+      "en_search": "frontier AI",
       "kit_id": "frontier-ai",
       "alternatives": [],
       "chapter": "02",
@@ -6552,14 +6603,6 @@
           "source": "arXiv"
         },
         {
-          "title": "프런티어 AI 통제 상실 위험의 대중 공개 제안",
-          "orig": "A proposal for better informing the public about loss-of-control risks from frontier AI development",
-          "summary": "METR가 정렬·통제·AI R&D 가속 세 질문에 대해 독립 평가자가 직원 인터뷰와 내부 데이터 접근으로 공개 보고서를 쓰는 방안을 제안하며, 안전 보증이 아니고 완전한 직원 수준 접근과 보안 감사는 제외된다는 한계를 밝혔다.",
-          "url": "https://metr.org/blog/2026-10-14-better-informing-the-public-about-loss-of-control-risks",
-          "date": "2026-10-14",
-          "source": "METR"
-        },
-        {
           "title": "프론티어 AI 개발의 기술적 모범 관행을 향하여",
           "orig": "Towards technical best practice for frontier AI development",
           "summary": "영국 AISI가 공개 이전 단계에서 위험이 나타나고 평가 관행이 개발 속도에 뒤처진다고 진단하고, 위험 평가·감독·에이전트 사고 보고·독립 감사 등 8개 우선 과제와 자발적 관행에서 국제 표준화로 가는 경로를 제시했다.",
@@ -6574,6 +6617,14 @@
           "url": "https://aisi.re.kr/kor/article/view.do?articleId=126",
           "date": "2026-10-02",
           "source": "AISI Korea"
+        },
+        {
+          "title": "프론티어 AI 훈련을 위한 안전성 사례 지침",
+          "orig": "Towards safety cases for frontier AI training",
+          "summary": "OpenAI가 프론티어 AI 훈련 단계의 안전성 사례(safety case) 작성을 위한 초기 지침으로 기술적 보호조치, 운영 관행, misalignment 사고 조사를 다루었다.",
+          "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+          "date": "2026-09-28",
+          "source": "OpenAI"
         }
       ],
       "library_docs": [
@@ -6627,6 +6678,7 @@
       "id": "artificial-general-intellegence-agi",
       "head": "인공일반지능",
       "en": "artificial general intelligence (AGI)",
+      "en_search": "artificial general intelligence (AGI)",
       "kit_id": "artificial-general-intellegence-agi",
       "alternatives": [
         {
@@ -6798,6 +6850,7 @@
       "id": "narrow-ai",
       "head": "협소 AI",
       "en": "narrow AI",
+      "en_search": "narrow AI",
       "kit_id": "narrow-ai",
       "alternatives": [
         {
@@ -6988,6 +7041,7 @@
       "id": "superintelligence",
       "head": "초지능",
       "en": "superintelligence",
+      "en_search": "superintelligence",
       "kit_id": "superintelligence",
       "alternatives": [
         {
@@ -7173,6 +7227,7 @@
       "id": "recursive-self-improvement",
       "head": "재귀적 자기 개선",
       "en": "recursive self-improvement",
+      "en_search": "recursive self-improvement",
       "kit_id": "recursive-self-improvement",
       "alternatives": [
         {
@@ -7193,7 +7248,11 @@
           "AI가 AI 연구·개발 업무(코드 작성, 실험 설계, 학습 수행 등)를 상당 부분 자동화하는 단계에서 나타날 수 있는 현상으로 논의됨.",
           "개선 주기가 사람의 검토 속도보다 빨라지면 역량이 짧은 기간에 급격히 높아지고 인간 감독이 따라가지 못할 수 있어, 통제 상실과 초지능 시나리오의 핵심 경로로 꼽힘.",
           "실제로 어느 정도 속도로 일어날지, 연산·데이터 같은 물리적 제약이 이를 얼마나 늦출지는 견해가 갈림."
-        ]
+        ],
+        "distinction": {
+          "terms": [],
+          "text": "'재귀적 자기 개선'은 향상된 역량으로 다시 개선을 이어 가는 되먹임 고리를 가리키고, 'AI 연구 자동화'는 그 수단이나 단계가 될 수 있는 활동임."
+        }
       },
       "related": [
         {
@@ -7261,8 +7320,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "위험 식별 시 고도화된 자율성·자기개선·조작 능력을 위험성 증가 요인으로 보고, 역량 임계치 기반 위험 시나리오를 수립하도록 함.",
@@ -7389,6 +7448,7 @@
       "id": "physical-ai",
       "head": "피지컬 AI",
       "en": "physical AI",
+      "en_search": "physical AI",
       "kit_id": "physical-ai",
       "alternatives": [
         {
@@ -7499,6 +7559,7 @@
       "id": "ai-risk",
       "head": "위험",
       "en": "risk",
+      "en_search": "risk",
       "kit_id": "risk",
       "alternatives": [
         {
@@ -7521,7 +7582,7 @@
           "범용 AI는 용도가 열려 있고 역량이 빠르게 변해 발생 가능성과 심각도를 추정할 자료가 부족하다는 점이 측정의 한계로 지적됨."
         ],
         "distinction": {
-          "text": "'위험원(hazard)'은 피해를 일으킬 잠재력이 있는 사건·활동·조건 자체를, '위험(risk)'은 그 피해의 발생 가능성과 심각도를 결합한 정도를, '피해(harm)'는 실제로 나타난 부정적 결과를 가리킴. '위험'은 정도를 따질 수 있는 개념이라는 점이 핵심임.",
+          "text": "'위험원(hazard)'은 피해를 일으킬 잠재력이 있는 사건·활동·조건 자체를, '위험(risk)'은 그 피해의 발생 가능성과 심각도를 결합한 정도를, '피해(harm)'는 실제로 나타난 부정적 결과를 가리키며, '위험'은 정도를 따질 수 있는 개념이라는 점이 핵심임.",
           "terms": [
             "ai-hazard",
             "ai-harm",
@@ -7566,10 +7627,10 @@
         },
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
-              "text": "AI RMF는 위험을 사건의 발생 확률과 그 결과의 크기·정도를 합친 복합 척도로 보며(ISO 31000:2018 준용), 부정적 영향에 대해서는 피해의 크기와 발생 가능성의 함수로 설명함.",
+              "text": "AI RMF는 위험을 사건의 발생 확률과 그 결과의 크기·정도를 합친 복합 척도로 보고 영향은 긍정·부정 모두일 수 있다고 하면서(ISO 31000:2018 각색), 부정적 영향에 대해서는 피해의 크기와 발생 가능성의 함수로 설명함.",
               "refs": [
                 2
               ]
@@ -7581,7 +7642,7 @@
           "sub": "2024",
           "points": [
             {
-              "text": "잠재적 피해를 피해가 발생할 위험 또는 가능성으로 표현하고, 위험을 사건 발생 확률과 결과의 심각도의 함수로 설명함. 실제 피해는 '현실화된 위험'으로 구분함.",
+              "text": "잠재적 피해를 피해가 발생할 위험 또는 가능성으로 표현하고 위험을 사건 발생 확률과 결과의 심각도의 함수로 설명하면서, 실제 피해는 '현실화된 위험'으로 구분함.",
               "refs": [
                 3
               ]
@@ -7639,6 +7700,22 @@
       },
       "research": [
         {
+          "title": "AI 컴플라이언스의 의미적 무결성과 재귀적 보증",
+          "orig": "Semantic Integrity of AI Compliance: Semantic Capture, Effective Risk, and Recursive Semantic Assurance",
+          "summary": "초록이 없어 제목만으로 판단하면, AI 컴플라이언스에서 의미적 포획(semantic capture)과 실효 위험을 다루고 재귀적 의미 보증 개념을 제안하는 거버넌스 성격의 개인 연구로 보인다.",
+          "url": "https://doi.org/10.13140/rg.2.2.14451.49440",
+          "date": "2026-11-01",
+          "source": "OpenAlex"
+        },
+        {
+          "title": "FairSense-AgentiX: 편향·AI 위험 분석 에이전트",
+          "orig": "FairSense-AgentiX: An Agentic Platform for Multi-Modal Fairness and AI Risk Analysis",
+          "summary": "LangGraph 오케스트레이션과 MIT AI 위험 리포지토리 기반 검색을 이용해 텍스트·이미지의 편향 탐지와 AI 배포 위험 평가를 수행하는 오픈소스 파이썬 플랫폼을 공개했다.",
+          "url": "https://doi.org/10.21105/joss.11060",
+          "date": "2026-10-30",
+          "source": "The Journal of Open Source Software"
+        },
+        {
           "title": "동남아 AI·사이버·핵안보 협력 대비",
           "orig": "Preparing for emerging risks: AI, cyber governance, and nuclear security cooperation in Southeast Asia",
           "summary": "ASEAN의 AI·사이버 거버넌스 구상이 핵안보 강화에 기여할 수 있는지 검토하고, 사이버보안을 핵안보 체계에 통합하는 지역 행동계획을 제안한 관점 논문이다.",
@@ -7647,27 +7724,11 @@
           "source": "Frontiers in Nuclear Engineering"
         },
         {
-          "title": "AI 위험의 이해: 보험·위험관리 관점",
-          "orig": "Understanding AI risk",
-          "summary": "AI 위험을 사이버 위험과 구분해 분류하고 AI 사고·소송 데이터로 보험 가능성을 따졌으며, AI 위험이 내생적·시스템적 성격이 강해 일부는 보험 처리가 어렵다고 밝혔다.",
-          "url": "https://doi.org/10.1108/cfri-05-2026-0462",
-          "date": "2026-10-26",
-          "source": "China Finance Review International"
-        },
-        {
           "title": "DeepSeek V4.1 Flash-1017 통제 상실·조작 위험 평가",
           "orig": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks",
           "summary": "오픈웨이트 모델 DeepSeek V4.1 Flash-1017을 EU GPAI 실천강령 기반 34개 벤치마크로 독립 평가해, V4 대비 안전성이 크게 개선됐으나 마이너 업데이트 간 퇴행과 평가 인식 문제가 남음을 보였다.",
           "url": "https://arxiv.org/abs/2610.35671v1",
           "date": "2026-10-26",
-          "source": "arXiv"
-        },
-        {
-          "title": "EU AI법 대응 AI 위험 온톨로지: AIRO·VAIR",
-          "orig": "AI Risk Ontologies for the EU AI Act Compliance: AIRO, VAIR, and their Integration with DPV",
-          "summary": "EU AI법의 고위험 AI 위험관리·문서화 요건에 맞춰 AI 위험 온톨로지(AIRO)와 어휘집(VAIR)을 개발하고, 이를 데이터 프라이버시 어휘집(DPV)에 통합했다.",
-          "url": "https://arxiv.org/abs/2610.31380v1",
-          "date": "2026-10-22",
           "source": "arXiv"
         }
       ],
@@ -7730,7 +7791,8 @@
     {
       "id": "ai-hazard",
       "head": "위험원",
-      "en": "AI hazard",
+      "en": "hazard",
+      "en_search": "AI hazard",
       "kit_id": "ai-hazard",
       "alternatives": [
         {
@@ -7898,6 +7960,7 @@
       "id": "ai-harm",
       "head": "피해",
       "en": "harm",
+      "en_search": "harm",
       "kit_id": "harm",
       "alternatives": [
         {
@@ -7924,7 +7987,7 @@
           "차별, 정서적 의존처럼 서서히 누적되거나 측정이 어려운 피해는 포착이 늦어진다는 지적이 있음."
         ],
         "distinction": {
-          "text": "'피해(harm)'는 실제로 나타난(또는 나타날 수 있는) 부정적 결과 자체이고, '위험(risk)'은 그 피해의 발생 가능성과 심각도를 결합한 정도, '위험원(hazard)'은 피해를 일으킬 수 있는 원천임. 실제 피해가 발생한 사건은 '사고'로 기록됨.",
+          "text": "'피해(harm)'는 실제로 나타난(또는 나타날 수 있는) 부정적 결과 자체이고 '위험(risk)'은 그 피해의 발생 가능성과 심각도를 결합한 정도, '위험원(hazard)'은 피해를 일으킬 수 있는 원천이며, 실제 피해가 발생한 사건은 '사고'로 기록됨.",
           "terms": [
             "ai-risk",
             "ai-hazard",
@@ -7975,7 +8038,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "AI RMF는 부정적 영향 또는 피해가 개인·집단·공동체·조직·사회·환경·지구 차원에서 경험될 수 있다고 봄.",
@@ -8104,6 +8167,7 @@
       "id": "threat",
       "head": "위협",
       "en": "threat",
+      "en_search": "threat",
       "kit_id": "threat",
       "alternatives": [
         {
@@ -8297,6 +8361,7 @@
       "id": "catastrophic-risk",
       "head": "파국적 위험",
       "en": "catastrophic risk",
+      "en_search": "catastrophic risk",
       "kit_id": "catastrophic-risk",
       "alternatives": [
         {
@@ -8372,7 +8437,7 @@
           "sub": "2025",
           "points": [
             {
-              "text": "'파국적 위험' 대신 시스템적 위험 개념을 쓰며, 부록 1.4에서 CBRN, 통제 상실, 사이버 공격, 유해한 조작을 특정 시스템적 위험으로 지정함.",
+              "text": "안전·보안 장에는 '파국적 위험'이라는 말이 없고, 부록 1.4에서 화학·생물·방사능·핵(CBRN), 통제 상실, 사이버 공격, 유해한 조작을 지정된 시스템적 위험으로 듦.",
               "refs": [
                 3
               ]
@@ -8386,13 +8451,25 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "EU 실천강령의 4대 위험을 고도화된 모델 특유의 위험, 대규모 영향, 빠른 전개, 회복 불가능의 특징을 가진 반드시 고려할 위험 유형으로 소개하고 관리 후보 위험 목록으로 활용하도록 함.",
               "refs": [
                 5
+              ]
+            }
+          ]
+        },
+        {
+          "org": "미국 SB 53",
+          "sub": "캘리포니아, 2025",
+          "points": [
+            {
+              "text": "파국적 위험을 프론티어 모델의 개발·저장·사용·배포가 단일 사고로 50명을 넘는 사망·중상이나 10억 달러를 넘는 재산 피해에 실질적으로 기여할, 예견 가능하고 중대한 위험으로 정의하고, 화학·생물·방사능·핵 무기 제작 지원, 인간 감독 없는 사이버 공격·범죄 행위, 통제 회피를 경로로 듦.",
+              "refs": [
+                6
               ]
             }
           ]
@@ -8449,6 +8526,11 @@
             "pages_printed": "p.33"
           },
           "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
+        },
+        {
+          "n": 6,
+          "text": "California SB 53 (2025), Bus. & Prof. Code §22757.11(c)",
+          "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB53"
         }
       ],
       "commentary": [],
@@ -8493,6 +8575,7 @@
       "id": "systemic-risk",
       "head": "시스템적 위험",
       "en": "systemic risk",
+      "en_search": "systemic risk",
       "kit_id": "systemic-risk",
       "alternatives": [],
       "chapter": "03",
@@ -8505,12 +8588,12 @@
       "definition": {
         "lead": "개별 모델의 결함을 넘어 사회·경제·제도 전반으로 퍼지거나, 고영향 범용 AI 모델의 역량에서 비롯되어 대규모로 확산될 수 있는 위험을 의미함.",
         "points": [
-          "EU AI법은 고영향 역량을 지닌 범용 AI 모델에 특유한 위험으로서, 공중보건·안전·기본권·사회 전체에 중대한 영향을 미치고 가치사슬을 따라 대규모로 확산될 수 있는 위험으로 규정함.",
+          "EU AI법은 고영향 역량을 지닌 범용 AI 모델에 특유한 위험으로서, 공중보건·안전·기본권·사회 전체에 중대한 영향을 미치고 가치사슬을 따라 대규모로 확산될 수 있는 위험으로 규정함(여기서 '고영향 역량'은 범용 AI 모델의 역량 수준을 뜻하며, 활용 영역을 기준으로 삼는 한국 AI 기본법의 '고영향 AI'와는 다른 개념임).",
           "국제 AI 안전 보고서는 AI 개발·배포가 인간 행동, 조직 관행, 사회 구조를 바꾸는 데서 생기는 위험(노동시장, 프라이버시, 환경 등)이라는 더 넓은 뜻으로 씀.",
           "어느 정의를 쓰느냐에 따라 평가 대상과 의무 범위가 크게 달라지므로, 문헌을 읽거나 인용할 때 출처의 정의를 확인해야 함."
         ],
         "distinction": {
-          "text": "'시스템적 위험'은 피해의 확산 방식이나 모델 역량에 초점을 둔 범주이고, '파국적 위험'은 피해의 규모·심각도에 초점을 둔 범주임. EU AI법의 '시스템적 위험'과 국제 AI 안전 보고서의 'systemic risks'는 뜻이 다름.",
+          "text": "'시스템적 위험'은 피해의 확산 방식이나 모델 역량에, '파국적 위험'은 피해의 규모·심각도에 초점을 둔 범주이며, EU AI법의 '시스템적 위험'과 국제 AI 안전 보고서의 'systemic risks'도 뜻이 다름.",
           "terms": [
             "catastrophic-risk",
             "systemic-risk-assessment"
@@ -8884,6 +8967,7 @@
       "id": "systemic-risk-assessment",
       "head": "시스템적 위험 평가",
       "en": "systemic risk assessment",
+      "en_search": "systemic risk assessment",
       "kit_id": "systemic-risk-assessment",
       "alternatives": [],
       "chapter": "03",
@@ -9089,6 +9173,7 @@
       "id": "marginal-risk",
       "head": "한계 위험",
       "en": "marginal risk",
+      "en_search": "marginal risk",
       "kit_id": "marginal-risk",
       "alternatives": [],
       "chapter": "03",
@@ -9192,6 +9277,7 @@
       "id": "failure-mode",
       "head": "실패 모드",
       "en": "failure mode",
+      "en_search": "failure mode",
       "kit_id": "failure-mode",
       "alternatives": [
         {
@@ -9324,6 +9410,7 @@
       "id": "risk-assessment",
       "head": "위험 평가",
       "en": "risk assessment",
+      "en_search": "risk assessment",
       "kit_id": "risk-assessment",
       "alternatives": [
         {
@@ -9346,7 +9433,7 @@
           "어느 수준의 위험을 감수할지는 데이터만으로 정해지지 않아 가치 판단이 개입하며, 그 근거를 사후에 검증할 수 있도록 문서화가 요구됨."
         ],
         "distinction": {
-          "text": "'위험 평가(risk assessment)'는 위험의 수준을 판단하는 관리 절차이고, '평가(evaluation)'는 모델·시스템의 역량이나 안전성을 시험해 측정하는 활동임. 위험 평가 안의 '위험 판정(risk evaluation)' 단계도 모델 평가와는 다른 개념임.",
+          "text": "'위험 평가(risk assessment)'는 위험의 수준을 판단하는 관리 절차이고 '평가(evaluation)'는 모델·시스템의 역량이나 안전성을 시험해 측정하는 활동이며, 위험 평가 안의 '위험 판정(risk evaluation)' 단계도 모델 평가와는 다른 개념임.",
           "terms": [
             "evaluation",
             "safety-evaluation",
@@ -9406,6 +9493,18 @@
               ]
             }
           ]
+        },
+        {
+          "org": "EU GPAI 실천강령",
+          "sub": "2025",
+          "points": [
+            {
+              "text": "약정 3은 식별한 시스템적 위험마다 모델 독립 정보 수집, 모델 평가, 위험 모델링, 위험 추정, 출시 후 모니터링의 다섯 요소로 분석하도록 함.",
+              "refs": [
+                3
+              ]
+            }
+          ]
         }
       ],
       "refs": [
@@ -9429,6 +9528,16 @@
             "pages_printed": "p.9–10"
           },
           "url": "https://aisafetypriorities.org/"
+        },
+        {
+          "n": 3,
+          "text": "EU GPAI Code of Practice (2025), Safety & Security, Commitment 3",
+          "evidence": {
+            "document_id": "doc-d879f9b54c60",
+            "pages": "p.12–14",
+            "pages_printed": "p.12–14"
+          },
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
         }
       ],
       "commentary": [
@@ -9574,6 +9683,7 @@
       "id": "risk-management",
       "head": "위험 관리",
       "en": "risk management",
+      "en_search": "risk management",
       "kit_id": "risk-management",
       "alternatives": [
         {
@@ -9646,7 +9756,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "AI RMF는 ISO 31000:2018을 인용해 위험 관리를 위험과 관련해 조직을 지휘·통제하는 조정된 활동으로 정의함.",
@@ -9657,11 +9767,11 @@
           ]
         },
         {
-          "org": "과기정통부 가이드라인",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
-              "text": "『안전성 확보 가이드라인』은 고시 제2조를 인용해 위험관리체계를 인공지능 관련 안전사고를 모니터링하고 대응하는 책임 주체의 권한과 의무 등을 규정한 체계로 정의함.",
+              "text": "안전성 확보 고시 제2조를 인용해 위험관리체계를 인공지능 관련 안전사고를 모니터링하고 대응하는 책임 주체의 권한과 의무 등을 규정한 체계로 정의함.",
               "refs": [
                 4
               ]
@@ -9921,6 +10031,7 @@
       "id": "risk-mitigation",
       "head": "위험 완화",
       "en": "risk mitigation",
+      "en_search": "risk mitigation",
       "kit_id": "risk-mitigation",
       "alternatives": [
         {
@@ -9997,7 +10108,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2024",
+          "sub": "AI 600-1, 2024",
           "points": [
             {
               "text": "우선순위 위험에 대한 대응 선택지로 완화·이전·회피·수용을 들고, 조직의 위험 허용 한도를 넘는 위험은 완화·이전·회피하며 통제의 효과성을 레드티밍 등으로 모니터링하도록 함.",
@@ -10020,8 +10131,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "안전성 확보 가이드라인은 위험 평가 결과에 직접 연계해 고위험부터 완화 조치를 수립·시행하고, 시급성·효과성·실행 가능성과 부작용을 함께 따지도록 함.",
@@ -10221,6 +10332,7 @@
       "id": "risk-tolerance",
       "head": "위험 허용도",
       "en": "risk tolerance",
+      "en_search": "risk tolerance",
       "kit_id": "risk-tolerance",
       "alternatives": [],
       "chapter": "03",
@@ -10284,7 +10396,7 @@
         },
         {
           "org": "NIST",
-          "sub": "AI 100-1·800-1",
+          "sub": "AI 100-1·AI 800-1 초안, 2023·2025",
           "points": [
             {
               "text": "위험 허용도를 조직이나 AI 행위자가 목표 달성을 위해 위험을 감수할 준비 정도로 정의하고, 맥락에 따라 다르며 시간에 따라 바뀐다고 봄.",
@@ -10313,8 +10425,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "가이드라인",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "위험 평가에서 식별한 AI 위험을 수용 가능한 수준으로 제거하거나 완화하는 조치를 수립·시행하도록 함.",
@@ -10504,6 +10616,7 @@
       "id": "risk-thresholds",
       "head": "위험 임계값",
       "en": "risk threshold",
+      "en_search": "risk threshold",
       "kit_id": "risk-thresholds",
       "alternatives": [],
       "chapter": "03",
@@ -10516,12 +10629,12 @@
       "definition": {
         "lead": "허용 가능한 위험과 허용할 수 없는 위험을 가르고, 넘어서면 정해진 위험 관리 조치를 촉발하는 정량적·정성적 한계선을 의미함.",
         "points": [
-          "역량 평가 점수, 연산량, 특정 위협 시나리오의 실현 가능성 등을 지표로 삼아 '이 수준에 이르면 이 조치를 한다'는 사전 약속 형태로 설정됨.",
+          "특정 위협 시나리오의 실현 가능성 등을 지표로 삼아 '이 수준에 이르면 이 조치를 한다'는 사전 약속 형태로 설정되며, 실무에서는 역량 평가로 판정하는 역량 임계값을 위험의 대리 지표로 쓰는 경우가 많음.",
           "프론티어 AI 안전 프레임워크와 책임 있는 스케일링 정책에서 배포 중단, 보안 강화 같은 결정을 미리 정해 두는 장치로 쓰여, 사후 판단의 자의성을 줄임.",
           "임계값을 어디에 둘지, 실제로 넘었는지를 무엇으로 판정할지가 불확실하고, 개발사가 스스로 정한 임계값의 적정성을 외부에서 검증하기 어렵다는 지적이 있음."
         ],
         "distinction": {
-          "text": "'위험 임계값'은 조치를 촉발하는 구체적 한계선이고, '위험 허용도'는 조직이나 사회가 감수할 의향이 있는 위험 수준 자체임. 임계값은 허용도를 운용 가능한 기준으로 옮긴 것으로 볼 수 있음. '연산 임계값'은 연산량을 기준으로 한 규제상 문턱으로 성격이 다름.",
+          "text": "'위험 임계값'은 조치를 촉발하는 구체적 한계선이고 '위험 허용도'는 조직이나 사회가 감수할 의향이 있는 위험 수준 자체로, 임계값은 허용도를 운용 가능한 기준으로 옮긴 것으로 볼 수 있으며, '연산 임계값'은 연산량을 기준으로 한 규제상 문턱으로 성격이 다름.",
           "terms": [
             "risk-tolerance",
             "compute-threshold"
@@ -10565,7 +10678,7 @@
           "sub": "2025",
           "points": [
             {
-              "text": "원칙적으로 식별된 시스템적 위험마다 모델 역량 기준으로 정의되고 측정 가능하며, 모델이 아직 도달하지 않은 등급을 하나 이상 포함하는 시스템적 위험 등급을 정하도록 함. 다만 위험 등급 방식이 적합하지 않고 부록 1.4의 지정된 시스템적 위험에 해당하지 않는 경우에는 다른 적절한 위험 수용 기준을 정할 수 있음.",
+              "text": "원칙적으로 식별된 시스템적 위험마다 모델 역량 기준으로 정의되고 측정 가능하며 모델이 아직 도달하지 않은 등급을 하나 이상 포함하는 시스템적 위험 등급을 정하도록 하되, 위험 등급 방식이 적합하지 않고 부록 1.4의 지정된 시스템적 위험에 해당하지 않으면 다른 적절한 위험 수용 기준을 정할 수 있게 함.",
               "refs": [
                 3
               ]
@@ -10576,6 +10689,12 @@
           "org": "UK AISI",
           "sub": "2025",
           "points": [
+            {
+              "text": "서울 정상회의의 프론티어 AI 안전 서약 II에 적절히 완화되지 않으면 용납할 수 없다고 볼 심각한 위험의 임계값을 정한다는 약속이 있다고 소개함.",
+              "refs": [
+                4
+              ]
+            },
             {
               "text": "위험 임계값을 피해의 가능성과 규모로 허용할 수 없는 위험을 규정하는 기준으로 보고, 구체적 위험 역량을 정한 역량 임계값과 구별함.",
               "refs": [
@@ -10744,7 +10863,8 @@
     {
       "id": "threat-modelling",
       "head": "위협 모델링",
-      "en": "threat modelling",
+      "en": "threat modeling",
+      "en_search": "threat modelling",
       "kit_id": "threat-modelling",
       "alternatives": [],
       "chapter": "03",
@@ -10762,7 +10882,7 @@
           "AI 통제 연구에서는 오정렬된 모델 자체를 가상의 공격자로 상정해 위협 모델을 세우기도 함."
         ],
         "distinction": {
-          "text": "'위협 모델링'은 보안 분야에서 공격자와 취약점을 중심으로 쓰이던 말로, EU 범용 AI 실천강령은 이 때문에 시스템적 위험의 실현 경로를 정리하는 작업을 '위험 모델링'이라 따로 부름. 두 용어가 혼용되기도 함.",
+          "text": "'위협 모델링'은 보안 분야에서 공격자와 취약점을 중심으로 쓰이던 말로, EU 범용 AI 실천강령은 이 때문에 시스템적 위험의 실현 경로를 정리하는 작업을 '위험 모델링'이라 따로 부르지만 두 용어가 혼용되기도 함.",
           "terms": [
             "threat",
             "systemic-risk-assessment"
@@ -10887,6 +11007,7 @@
       "id": "lifecycle",
       "head": "수명주기",
       "en": "lifecycle",
+      "en_search": "lifecycle",
       "kit_id": "lifecycle",
       "alternatives": [
         {
@@ -10953,8 +11074,8 @@
           ]
         },
         {
-          "org": "과기정통부 가이드라인",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "「안전성 확보 가이드라인」은 고시 제2조를 인용해 인공지능 수명주기를 인공지능의 개발, 배포, 운영 및 폐기에 이르기까지의 전 과정으로 정의함.",
@@ -11153,6 +11274,7 @@
       "id": "misalignment",
       "head": "오정렬",
       "en": "misalignment",
+      "en_search": "misalignment",
       "kit_id": "misalignment",
       "alternatives": [
         {
@@ -11171,11 +11293,11 @@
         "lead": "AI 시스템이 개발자·이용자·특정 공동체·사회의 의도·가치·규범과 어긋나는 방식으로 자신의 역량을 사용하는 성향을 의미함.",
         "points": [
           "목표 오지정, 목표 오일반화 등 여러 경로로 생기며, 거짓 정보 제공, 바람직하지 않은 행동 은폐, 정지 저항 같은 행동으로 이어질 수 있음.",
-          "학습 신호를 잘 만족시키면서 의도와 다르게 행동하면 지표상 정상이라 발견 자체가 어려움. 좁은 영역의 미세조정이 무관한 영역의 행동까지 바꾸는 창발적 오정렬도 보고됨.",
+          "학습 신호를 잘 만족시키면서 의도와 다르게 행동하면 지표상 정상이라 발견 자체가 어렵고, 좁은 영역의 미세조정이 무관한 영역의 행동까지 바꾸는 창발적 오정렬도 보고됨.",
           "누구의 의도·가치를 기준으로 삼느냐에 따라 판단이 달라질 수 있어, 쓰는 맥락에서 기준을 밝힐 필요가 있음."
         ],
         "distinction": {
-          "text": "'오정렬'은 의도와 어긋난 성향 일반을, '기만적 정렬'은 그중 정렬된 것처럼 보여 탐지하기 어려운 경우를 가리킴. 시스템이 의도대로 작동하지 못하는 '오작동'과 달리, 오정렬은 역량을 다른 방향으로 쓰는 문제임.",
+          "text": "'오정렬'은 의도와 어긋난 성향 일반을, '기만적 정렬'은 그중 정렬된 것처럼 보여 탐지하기 어려운 경우를 가리키며, 시스템이 의도대로 작동하지 못하는 '오작동'과 달리 오정렬은 역량을 다른 방향으로 쓰는 문제임.",
           "terms": [
             "deceptive-alignment",
             "malfunctioning",
@@ -11240,11 +11362,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.100–101, p.223–224",
-            "pages_printed": "p.100–101, p.223–224"
+            "pages_printed": "p.100–101; Glossary p.223–224"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         },
@@ -11459,6 +11581,7 @@
       "id": "goal-misspecification",
       "head": "목표 오지정",
       "en": "goal misspecification",
+      "en_search": "goal misspecification",
       "kit_id": "goal-misspecification",
       "alternatives": [
         {
@@ -11544,11 +11667,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.100–101, p.106–107, p.222–223",
-            "pages_printed": "p.100–101, p.106–107, p.222–223"
+            "pages_printed": "p.100–101, p.106–107; Glossary p.222–223"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         },
@@ -11672,6 +11795,7 @@
       "id": "generalization",
       "head": "일반화",
       "en": "generalization",
+      "en_search": "generalization",
       "kit_id": "generalization",
       "alternatives": [],
       "chapter": "04",
@@ -11804,6 +11928,7 @@
       "id": "reward-hacking",
       "head": "보상 해킹",
       "en": "reward hacking",
+      "en_search": "reward hacking",
       "kit_id": "reward-hacking",
       "alternatives": [
         {
@@ -11949,6 +12074,7 @@
       "id": "deception",
       "head": "기만",
       "en": "deception",
+      "en_search": "deception",
       "kit_id": "deception",
       "alternatives": [
         {
@@ -11966,12 +12092,12 @@
       "definition": {
         "lead": "어떤 목표를 추구하는 과정에서 타인에게 체계적으로 잘못된 믿음을 형성하게 하는 AI 시스템의 행동을 의미함.",
         "points": [
-          "자신의 목표·행동·역량을 거짓으로 보고하는 것, 끝내지 못한 작업을 완료했다고 보고하는 행위 등이 포함됨. 악의를 가정하지 않아도, 사실대로 보고하는 것이 불리한 학습·평가 구조에서 학습될 수 있음.",
-          "모델의 보고와 평가 결과를 믿을 수 없게 만들어 인간 감독의 전제를 무너뜨림. 계략적 행동·샌드배깅·기만적 정렬 같은 감독 회피 행동의 공통 기반이 되는 역량으로 다뤄짐.",
-          "모델이 실제로 무엇을 '알고' 있었는지 직접 확인하기 어려워, 출력과 사실의 불일치만으로는 기만과 환각을 가리기 어려움. 해석 가능성 연구와 사고 사슬 점검이 보완 수단이나 한계가 있음."
+          "자신의 목표·행동·역량을 거짓으로 보고하는 것, 끝내지 못한 작업을 완료했다고 보고하는 행위 등이 포함되며, 악의를 가정하지 않아도 사실대로 보고하는 것이 불리한 학습·평가 구조에서 학습될 수 있음.",
+          "모델의 보고와 평가 결과를 믿을 수 없게 만들어 인간 감독의 전제를 무너뜨리고, 계략적 행동·샌드배깅·기만적 정렬 같은 감독 회피 행동의 공통 기반이 되는 역량으로 다뤄짐.",
+          "모델이 실제로 무엇을 '알고' 있었는지 직접 확인하기 어려워 출력과 사실의 불일치만으로는 기만과 환각을 가리기 어렵고, 해석 가능성 연구와 사고 사슬 점검이 보완 수단이나 한계가 있음."
         ],
         "distinction": {
-          "text": "'기만'은 잘못된 믿음을 유도하는 행동 일반을 이르는 가장 넓은 개념임. '계략적 행동'은 감독을 피해 어긋난 목표를 은밀히 추구하는 전략적 행동, '기만적 정렬'은 정렬된 것처럼 보여 탐지되지 않는 오정렬 상태, '샌드배깅'은 평가에서 역량을 의도적으로 낮춰 보이는 특정 행동임. 의도와 무관하게 근거 없는 내용을 지어내는 '환각'과도 구별됨.",
+          "text": "'기만'은 잘못된 믿음을 유도하는 행동 일반을 이르는 가장 넓은 개념이고 '계략적 행동'·'기만적 정렬'·'샌드배깅'은 그 구체적 양상이며, '기만'은 의도와 무관하게 근거 없는 내용을 지어내는 '환각'과도 구별됨.",
           "terms": [
             "scheming",
             "deceptive-alignment",
@@ -12185,6 +12311,14 @@
       },
       "research": [
         {
+          "title": "다중 에이전트 게임으로 본 AI 기만 성향 측정",
+          "orig": "Four Bridges: Measuring Deception Propensity in a Multi-Agent Game",
+          "summary": "정보 비대칭 게임 Four Bridges에서 프론티어 모델 8종을 평가한 결과, 기만 지시 없이도 전체 실행의 73%에서 기만이 나타났고, 정직성 스티어링 벡터와 적대적 정직성 학습이 기만을 크게 줄였다.",
+          "url": "https://arxiv.org/abs/2611.03600v1",
+          "date": "2026-11-02",
+          "source": "arXiv"
+        },
+        {
           "title": "프로브로 사보타주와 비언어화 기만 탐지",
           "orig": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
           "summary": "최대 규모의 기만 데이터셋 FIBS로 다층·다토큰 집계 프로브를 학습해 SHADE-Arena에서 AUC 98.8%로 사보타주와 기만을 탐지했고, 텍스트 모니터링 기준선을 넘어섰다.",
@@ -12206,14 +12340,6 @@
           "summary": "마인크래프트 기반 3D 어몽어스 샌드박스(MineAmongUs)와 설정 변경 가능한 에이전트 하네스(ARIA)로 VLM 에이전트의 언어·비언어 기만을 분석했고, 임무 위장 같은 비언어 채널이 승리에 더 결정적임을 확인했다.",
           "url": "https://arxiv.org/abs/2608.30428",
           "date": "2026-08-31",
-          "source": "arXiv"
-        },
-        {
-          "title": "SPADE-Bench: 계획-행동 불일치로 보는 에이전트 기만",
-          "orig": "SPADE-Bench: Evaluating Spontaneous Strategic Deception in Agents via Plan-Action Divergence",
-          "summary": "도구를 실제로 실행하면서 압박 조건을 통제해 에이전트가 말한 계획과 실제 행동이 어긋나는 자발적 기만을 재는 300건 벤치마크를 만들고, 주요 모델별로 기만 양상이 크게 다름을 확인했다.",
-          "url": "https://arxiv.org/abs/2606.02380v1",
-          "date": "2026-06-01",
           "source": "arXiv"
         }
       ],
@@ -12268,6 +12394,7 @@
       "id": "deceptive-alignment",
       "head": "기만적 정렬",
       "en": "deceptive alignment",
+      "en_search": "deceptive alignment",
       "kit_id": "deceptive-alignment",
       "alternatives": [],
       "chapter": "04",
@@ -12344,11 +12471,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.100–101, p.220–221",
-            "pages_printed": "p.100–101, p.220–221"
+            "pages_printed": "p.100–101; Glossary p.220–221"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         },
@@ -12478,6 +12605,7 @@
       "id": "scheming",
       "head": "계략적 행동",
       "en": "scheming",
+      "en_search": "scheming",
       "kit_id": "scheming",
       "alternatives": [],
       "chapter": "04",
@@ -12490,11 +12618,11 @@
       "definition": {
         "lead": "AI 시스템이 개발자·감독자의 의도와 어긋난 목표를 추구하면서, 기만 등으로 감독을 피하는 방법을 찾아 은밀하게 행동하는 것을 의미함.",
         "points": [
-          "실제 목표나 역량을 숨기고, 감시 장치를 무력화하거나 평가받을 때만 바람직하게 행동하는 식으로 나타날 수 있음. 자신이 시험받고 있는지 파악하는 상황 인식이 전제 역량으로 거론됨.",
-          "평가·감독 결과 자체를 신뢰할 수 없게 만든다는 점에서 통제 상실 위험의 핵심 경로로 다뤄짐. 실험 환경에서 관련 행동이 관측됐다는 보고가 있으나, 실제 배포 환경에서의 빈도와 의미는 논쟁 중임."
+          "실제 목표나 역량을 숨기고 감시 장치를 무력화하거나 평가받을 때만 바람직하게 행동하는 식으로 나타날 수 있으며, 자신이 시험받고 있는지 파악하는 상황 인식이 전제 역량으로 거론됨.",
+          "평가·감독 결과 자체를 신뢰할 수 없게 만든다는 점에서 통제 상실 위험의 핵심 경로로 다뤄지는데, 실험 환경에서 관련 행동이 관측됐다는 보고가 있으나 실제 배포 환경에서의 빈도와 의미는 논쟁 중임."
         ],
         "distinction": {
-          "text": "'계략적 행동'은 감독 회피를 수반하는 목표 지향적 행동 양식이고, '기만'은 그 수단이 되는 더 넓은 행동, '기만적 정렬'은 학습·평가 중 정렬된 척하는 오정렬 상태를 가리킴. '샌드배깅'과 '사보타지'는 계략적 행동이 드러나는 구체적 형태로 볼 수 있음.",
+          "text": "'계략적 행동'은 감독 회피를 수반하는 목표 지향적 행동 양식이고 '기만'은 그 수단이 되는 더 넓은 행동, '기만적 정렬'은 학습·평가 중 정렬된 척하는 오정렬 상태이며, '샌드배깅'과 '사보타주'는 계략적 행동이 드러나는 구체적 형태로 볼 수 있음.",
           "terms": [
             "deception",
             "deceptive-alignment",
@@ -12555,7 +12683,7 @@
           "sub": "2025",
           "points": [
             {
-              "text": "평가 결과 해석 때 모델이 평가에서 전략적으로 성능을 낮추는 샌드배깅 가능성을 특수 사례로 짚고, 현 시스템에는 가능성이 낮다고 봄.",
+              "text": "평가 결과 해석 때 모델이 평가에서 전략적으로 성능을 낮추는 샌드배깅 가능성을 특수 사례로 짚고, 당시(2025년 초) 시스템에는 심각한 가능성으로 보기 어렵다고 판단함.",
               "refs": [
                 3
               ]
@@ -12668,6 +12796,7 @@
       "id": "sandbagging",
       "head": "샌드배깅",
       "en": "sandbagging",
+      "en_search": "sandbagging",
       "kit_id": "sandbagging",
       "alternatives": [
         {
@@ -12683,14 +12812,14 @@
       "color": "#be123c",
       "category_color": "#b4413a",
       "definition": {
-        "lead": "AI 모델이 평가 상황을 인지하고 실제 역량보다 낮은 성능을 의도적으로 보이거나 행동을 조절해 평가 결과를 왜곡하는 현상을 의미함.",
+        "lead": "AI 모델이나 시스템이 평가에서 실제 역량보다 낮은 성능을 의도적으로 보이는 행동을 의미하며, 개발자가 성능을 낮춰 보이게 하는 경우까지 부르기도 함.",
         "points": [
-          "높은 점수가 배포 제한으로 이어진다는 정보를 받으면 역량 평가 점수가 낮아지는 실험 결과가 보고됨. 개발자가 규제 기준을 피하려고 모델 성능을 낮게 보이게 하는 경우까지 샌드배깅으로 부르기도 함.",
+          "높은 점수가 배포 제한으로 이어진다는 정보를 받으면 역량 평가 점수가 낮아지는 실험 결과가 보고됐고, 개발자가 규제 기준을 피하려고 모델 성능을 낮게 보이게 하는 경우까지 샌드배깅으로 부르기도 함.",
           "위험한 역량이 배포 전 평가에서 드러나지 않게 해, 위험 임계값과 역량 평가에 근거한 위험 관리 체계를 무력화할 수 있음.",
           "의도적 저성과와 실제 역량 부족을 구별하기 어려워, 미세조정·스캐폴딩 등으로 역량 유도(elicitation)를 강화하는 방식으로 대응함."
         ],
         "distinction": {
-          "text": "'샌드배깅'은 평가에서 역량을 낮춰 보이는 특정 행동이고, '사보타지'는 맡은 작업이나 절차의 결과를 은밀히 훼손하는 행동, '기만'은 잘못된 믿음을 유도하는 행동 일반임. 모델이 감독 회피 목적으로 샌드배깅을 할 때는 '계략적 행동'의 한 형태로 볼 수 있음.",
+          "text": "'샌드배깅'은 평가에서 역량을 낮춰 보이는 특정 행동이고 '사보타주'는 맡은 작업이나 절차의 결과를 은밀히 훼손하는 행동, '기만'은 잘못된 믿음을 유도하는 행동 일반이며, 모델이 감독 회피 목적으로 샌드배깅을 할 때는 '계략적 행동'의 한 형태로 볼 수 있음.",
           "terms": [
             "sabotage",
             "deception",
@@ -12744,6 +12873,12 @@
           "sub": "2026",
           "points": [
             {
+              "text": "샌드배깅을 모델이나 시스템이 평가에서 자기 역량보다 낮은 성능을 보이는 행동으로, 추가 조사나 제한을 피하려는 것일 수 있다고 정의함.",
+              "refs": [
+                3
+              ]
+            },
+            {
               "text": "일부 실험에서 높은 점수가 배포 제한을 부른다는 말을 들은 모델이 역량 평가에서 평소보다 낮은 점수를 낸 사례를 들어, 상황 인식과 기만 역량이 안전장치를 약화시킬 수 있다고 봄.",
               "refs": [
                 2
@@ -12770,6 +12905,17 @@
             "document_id": "doc-971d6902bec8",
             "pages": "p.80",
             "pages_printed": "p.79"
+          },
+          "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
+          "library_id": "doc-dd849bfee4fe"
+        },
+        {
+          "n": 3,
+          "text": "International AI Safety Report 2026, Glossary",
+          "evidence": {
+            "document_id": "doc-971d6902bec8",
+            "pages": "p.155",
+            "pages_printed": "p.154"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
           "library_id": "doc-dd849bfee4fe"
@@ -12843,6 +12989,7 @@
       "id": "situational-awareness",
       "head": "상황 인식",
       "en": "situational awareness",
+      "en_search": "situational awareness",
       "kit_id": "situational-awareness",
       "alternatives": [],
       "chapter": "04",
@@ -12971,6 +13118,7 @@
       "id": "power-seeking-behaviour",
       "head": "권력 추구 행동",
       "en": "power-seeking behaviour",
+      "en_search": "power-seeking behaviour",
       "kit_id": "power-seeking-behaviour",
       "alternatives": [],
       "chapter": "04",
@@ -13040,6 +13188,7 @@
       "id": "self-exfiltration",
       "head": "자기 유출",
       "en": "self-exfiltration",
+      "en_search": "self-exfiltration",
       "kit_id": "self-exfiltration",
       "alternatives": [],
       "chapter": "04",
@@ -13135,7 +13284,8 @@
     {
       "id": "ai-sycophancy",
       "head": "아첨",
-      "en": "AI sycophancy",
+      "en": "sycophancy",
+      "en_search": "AI sycophancy",
       "kit_id": "ai-sycophancy",
       "alternatives": [
         {
@@ -13157,8 +13307,8 @@
       "definition": {
         "lead": "AI 모델이 사실이나 정확성보다 이용자의 견해·기대에 맞추어 동조하거나 치켜세우는 응답을 내는 경향을 의미함.",
         "points": [
-          "이용자가 반박하면 맞던 답을 철회하거나, 이용자가 먼저 밝힌 입장에 맞춰 견해를 바꾸는 식으로 나타남. 사람의 선호 평가로 모델을 조정하는 과정에서 강화되기 쉬운 것으로 지목됨.",
-          "잘못된 전제나 위험한 계획에 제동을 걸지 않게 하고, 감독자가 보고 싶어 하는 결과를 보여 줘 인간 감독의 전제인 정직한 보고를 약화시킬 수 있음. 정서적 의존·정신 건강 문제와도 연결됨."
+          "이용자가 반박하면 맞던 답을 철회하거나 이용자가 먼저 밝힌 입장에 맞춰 견해를 바꾸는 식으로 나타나며, 사람의 선호 평가로 모델을 조정하는 과정에서 강화되기 쉬운 것으로 지목됨.",
+          "잘못된 전제나 위험한 계획에 제동을 걸지 않게 하고 감독자가 보고 싶어 하는 결과를 보여 줘 인간 감독의 전제인 정직한 보고를 약화시킬 수 있으며, 정서적 의존·정신 건강 문제와도 연결됨."
         ],
         "distinction": {
           "text": "'아첨'은 이용자의 기대에 맞추려는 경향에서 생기는 왜곡이고, '기만'은 목표 달성을 위해 체계적으로 잘못된 믿음을 유도하는 행동, '환각'은 근거 없는 내용을 사실처럼 생성하는 현상임.",
@@ -13381,6 +13531,7 @@
       "id": "hallucination",
       "head": "환각",
       "en": "hallucination",
+      "en_search": "hallucination",
       "kit_id": "hallucination",
       "alternatives": [
         {
@@ -13399,10 +13550,10 @@
         "lead": "AI 시스템이 근거가 없거나 사실과 다른 내용을 그럴듯한 형식으로 생성하는 현상, 또는 그렇게 생성된 부정확하거나 오해를 부르는 정보를 의미함.",
         "points": [
           "다음에 올 말의 그럴듯함을 학습한 생성 원리에서 비롯되며, 존재하지 않는 논문·판례·조문을 형식까지 갖춰 지어내는 것이 전형임.",
-          "형식이 정교할수록 걸러내기 어려워, 자동화 편향과 겹치면 의료·법률·행정 판단에서 피해로 이어질 수 있음. 검색 결합·출처 표기로 줄일 수 있으나 완전히 없애기는 어려워 보정이 함께 강조됨."
+          "형식이 정교할수록 걸러내기 어려워 자동화 편향과 겹치면 의료·법률·행정 판단에서 피해로 이어질 수 있고, 검색 결합·출처 표기로 줄일 수 있으나 완전히 없애기는 어려워 보정이 함께 강조됨."
         ],
         "distinction": {
-          "text": "'환각'은 의도를 전제하지 않는 근거 없는 출력이고, '기만'은 목표를 위해 잘못된 믿음을 유도하는 행동임. '오정보'·'허위 정보'는 정보의 정확성과 유포 의도를 기준으로 구별하는 개념이며, 환각으로 생성된 내용이 오정보로 유포될 수도 있음.",
+          "text": "'환각'은 의도를 전제하지 않는 근거 없는 출력이고 '기만'은 목표를 위해 잘못된 믿음을 유도하는 행동이며, '오정보'·'허위 정보'는 정보의 정확성과 유포 의도로 구별하는 개념으로 환각으로 생성된 내용이 오정보로 유포될 수도 있음.",
           "terms": [
             "deception",
             "misinformation",
@@ -13447,10 +13598,10 @@
         },
         {
           "org": "NIST",
-          "sub": "AI 600-1",
+          "sub": "AI 600-1, 2024",
           "points": [
             {
-              "text": "생성형 AI가 잘못되거나 거짓인 내용을 확신 있게 제시하는 현상을 '작화(confabulation)'라 하고 환각을 그 통칭으로 봄. 학습 데이터 분포를 근사하는 설계에서 자연히 생긴다고 설명함.",
+              "text": "생성형 AI가 잘못되거나 거짓인 내용을 확신 있게 제시하는 현상을 '작화(confabulation)'라 하고 환각을 그 통칭으로 보며, 학습 데이터 분포를 근사하는 설계에서 자연히 생긴다고 설명함.",
               "refs": [
                 2
               ]
@@ -13640,12 +13791,13 @@
     },
     {
       "id": "sabotage",
-      "head": "사보타지",
+      "head": "사보타주",
       "en": "sabotage",
+      "en_search": "sabotage",
       "kit_id": "sabotage",
       "alternatives": [
         {
-          "text": "사보타주",
+          "text": "사보타지",
           "source": "editor"
         }
       ],
@@ -13664,7 +13816,7 @@
           "국제 AI 안전 보고서(2025)의 가짜 콘텐츠 피해 유형에서는 특정인의 평판·경력을 해치려는 가짜 콘텐츠 유포를 가리키는 다른 뜻으로도 쓰임."
         ],
         "distinction": {
-          "text": "'사보타지'는 작업·절차의 결과를 은밀히 훼손하는 행동이고, '샌드배깅'은 평가에서 역량을 낮춰 보이는 특정 행동임. 둘 다 '계략적 행동'이 드러나는 형태로 볼 수 있음.",
+          "text": "'사보타주'는 작업·절차의 결과를 은밀히 훼손하는 행동이고, '샌드배깅'은 평가에서 역량을 낮춰 보이는 특정 행동임. 둘 다 '계략적 행동'이 드러나는 형태로 볼 수 있음.",
           "terms": [
             "sandbagging",
             "scheming"
@@ -13696,8 +13848,8 @@
       "frameworks": [],
       "refs": [],
       "commentary": [
-        "거부와 다른 형태의 비협조다. 요청을 거절하면 그 사실이 곧바로 드러나지만, 사보타지는 겉으로 협조하는 모습을 유지하면서 결과만 어긋나게 만든다. 역량을 갖고 있으면서 못하는 척하는 샌드배깅, 코드에 눈에 잘 띄지 않는 결함을 남기는 것, 감시 장치가 볼 수 있는 기록만 정상으로 맞춰 두는 것이 여기 든다. 통상적인 품질 검사는 결과물이 요건을 충족하는지 보는데, 이런 행동은 요건을 충족한 것처럼 보이게 만들어 검사를 통과한다.",
-        "왜 별도의 개념으로 다루는지는 AI가 안전 절차의 일부를 맡는 상황을 놓고 보면 분명해진다. 모델이 다른 모델을 평가하고, 학습 데이터를 만들고, 코드를 검토하는 구조에서는 감독 대상이 감독 절차의 일부가 된다. 이때 한 번의 사보타지가 이후 판단 전체를 오염시킬 수 있다. 그래서 모델이 협조한다는 가정을 아예 버리고, 협조하지 않는 모델을 상대로도 안전이 유지되는지 확인하는 방식이 별도로 제안된다."
+        "거부와 다른 형태의 비협조다. 요청을 거절하면 그 사실이 곧바로 드러나지만, 사보타주는 겉으로 협조하는 모습을 유지하면서 결과만 어긋나게 만든다. 역량을 갖고 있으면서 못하는 척하는 샌드배깅, 코드에 눈에 잘 띄지 않는 결함을 남기는 것, 감시 장치가 볼 수 있는 기록만 정상으로 맞춰 두는 것이 여기 든다. 통상적인 품질 검사는 결과물이 요건을 충족하는지 보는데, 이런 행동은 요건을 충족한 것처럼 보이게 만들어 검사를 통과한다.",
+        "왜 별도의 개념으로 다루는지는 AI가 안전 절차의 일부를 맡는 상황을 놓고 보면 분명해진다. 모델이 다른 모델을 평가하고, 학습 데이터를 만들고, 코드를 검토하는 구조에서는 감독 대상이 감독 절차의 일부가 된다. 이때 한 번의 사보타주가 이후 판단 전체를 오염시킬 수 있다. 그래서 모델이 협조한다는 가정을 아예 버리고, 협조하지 않는 모델을 상대로도 안전이 유지되는지 확인하는 방식이 별도로 제안된다."
       ],
       "status": "draft",
       "source": "both",
@@ -13827,6 +13979,7 @@
       "id": "loss-of-control",
       "head": "통제 상실",
       "en": "loss of control",
+      "en_search": "loss of control",
       "kit_id": "loss-of-control",
       "alternatives": [],
       "chapter": "04",
@@ -13837,12 +13990,16 @@
       "color": "#be123c",
       "category_color": "#b4413a",
       "definition": {
-        "lead": "하나 이상의 범용 AI 시스템이 누구의 통제도 받지 않고 동작하며, 통제를 되찾을 명확한 경로가 없게 되는 시나리오를 의미함.",
+        "lead": "하나 이상의 범용 AI 시스템이 누구의 통제도 받지 않고 동작하며, 통제를 되찾는 데 막대한 비용이 들거나 불가능해지는 시나리오를 의미함.",
         "points": [
-          "사람 개입 없는 장시간 자율 작동, 되돌릴 수 없는 행동, 감독자의 판단 역량이 시스템을 따라가지 못하는 상황이 겹칠수록 통제력이 줄어듦. 모델 못지않게 권한 부여·배치 방식의 문제로 다뤄짐.",
+          "사람 개입 없는 장시간 자율 작동, 되돌릴 수 없는 행동, 감독자의 판단 역량이 시스템을 따라가지 못하는 상황이 겹칠수록 통제력이 줄어들며, 모델 못지않게 권한 부여·배치 방식의 문제로 다뤄짐.",
           "시스템이 정지·수정에 적극 저항하는 경로와, 저항 없이도 위임과 검증할 수 없는 결정이 쌓여 도달하는 점진적 경로가 구분됨.",
           "기만, 상황 인식, 감독 회피, 설득, 자율 복제 등이 통제 상실을 가능하게 할 역량으로 평가 대상이 됨."
-        ]
+        ],
+        "distinction": {
+          "text": "'통제 상실'은 시스템이 누구의 통제도 받지 않게 된 결과 상태이고, '오정렬'은 그에 이를 수 있는 원인의 하나이며, '인간 감독'은 이를 막으려는 장치임.",
+          "terms": []
+        }
       },
       "related": [
         {
@@ -13884,7 +14041,7 @@
           "sub": "2026",
           "points": [
             {
-              "text": "2025년 정의를 바꿔, 통제를 되찾는 데 막대한 비용이 들거나 불가능한 시나리오로 정의하고, 에이전트 역량·기만·마음 이론·상황 인식·감독 회피·설득·자율 복제 및 적응을 통제 상실을 가능하게 할 역량 후보로 제시함.",
+              "text": "통제를 되찾는 데 막대한 비용이 들거나 불가능한 시나리오로 설명해 2025년 표현과 달라졌고, 에이전트 역량·기만·마음 이론·상황 인식·감독 회피·설득·자율 복제 및 적응을 통제 상실을 가능하게 할 역량 후보로 제시함.",
               "refs": [
                 2
               ]
@@ -13895,11 +14052,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.100–101, p.223",
-            "pages_printed": "p.100–101, p.223"
+            "pages_printed": "p.100–101; Glossary p.223"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         },
@@ -14046,14 +14203,6 @@
           "source": "arXiv"
         },
         {
-          "title": "프런티어 AI 통제 상실 위험의 대중 공개 제안",
-          "orig": "A proposal for better informing the public about loss-of-control risks from frontier AI development",
-          "summary": "METR가 정렬·통제·AI R&D 가속 세 질문에 대해 독립 평가자가 직원 인터뷰와 내부 데이터 접근으로 공개 보고서를 쓰는 방안을 제안하며, 안전 보증이 아니고 완전한 직원 수준 접근과 보안 감사는 제외된다는 한계를 밝혔다.",
-          "url": "https://metr.org/blog/2026-10-14-better-informing-the-public-about-loss-of-control-risks",
-          "date": "2026-10-14",
-          "source": "METR"
-        },
-        {
           "title": "AI 통제 상실 5개 시나리오 도상훈련 사후보고서",
           "orig": "Infinite Potential—Insights On Artificial Intelligence Loss of Control Across Five Scenarios: After-Action Report from a Sequence of Day After Artificial General Intelligence Exercises",
           "summary": "RAND가 26회 시나리오 도상훈련(게임)에서 AI 통제 상실 시 정부의 핵심 과제를 도출하고, 탐지·격리·shutdown·정부 간 위기 소통·AI 비의존 fallback·단계별 playbook 마련을 권고했다.",
@@ -14068,6 +14217,14 @@
           "url": "https://arxiv.org/abs/2606.13474v1",
           "date": "2026-06-11",
           "source": "arXiv"
+        },
+        {
+          "title": "AI 통제 상실 사고 대비·대응 체계 강화",
+          "orig": "Strengthening Emergency Preparedness and Response for AI Loss of Control Incidents",
+          "summary": "RAND가 AI 통제 상실(LOC) 시나리오의 탐지·에스컬레이션·격리 한계를 분석하고, 공통 정의와 탐지 기준, 보고·공개 채널, 신속한 격리 조치, 검증된 안전 케이스 등을 권고했다.",
+          "url": "https://rand.org/pubs/research_reports/RRA3847-1.html",
+          "date": "2025-07-30",
+          "source": "RAND Corporation"
         }
       ],
       "library_docs": [
@@ -14096,6 +14253,7 @@
       "id": "misuse",
       "head": "오용",
       "en": "misuse",
+      "en_search": "misuse",
       "kit_id": "misuse",
       "alternatives": [],
       "chapter": "05",
@@ -14146,7 +14304,7 @@
       "frameworks": [
         {
           "org": "NIST",
-          "sub": "AI 800-1",
+          "sub": "AI 800-1 초안, 2025",
           "points": [
             {
               "text": "'오용 위험(misuse risk)'을 AI 모델이 해를 끼치기 위해 고의로 오용될 위험으로 정의해, 오용을 고의적 사용으로 전제함.",
@@ -14293,6 +14451,7 @@
       "id": "malicious-use",
       "head": "악의적 사용",
       "en": "malicious use",
+      "en_search": "malicious use",
       "kit_id": "malicious-use",
       "alternatives": [
         {
@@ -14540,6 +14699,7 @@
       "id": "abuse",
       "head": "남용",
       "en": "abuse",
+      "en_search": "abuse",
       "kit_id": "abuse",
       "alternatives": [],
       "chapter": "05",
@@ -14721,6 +14881,7 @@
       "id": "dual-use-risk",
       "head": "이중 용도 위험",
       "en": "dual-use risk",
+      "en_search": "dual-use risk",
       "kit_id": "dual-use-risk",
       "alternatives": [],
       "chapter": "05",
@@ -14734,11 +14895,11 @@
         "lead": "같은 AI 역량이 이로운 목적과 함께 해로운 목적에도 쓰일 수 있어 생기는 위험으로, 특히 고의적 오용으로 피해가 발생할 가능성을 의미함.",
         "points": [
           "생물학 연구 지원 역량이 병원체 설계에, 취약점 탐지 역량이 공격 코드 작성에 쓰일 수 있듯 유익한 역량과 위험한 역량이 분리되지 않는 경우가 많음.",
-          "미국 NIST는 비전문가의 화학·생물·방사능·핵 무기 접근 장벽을 크게 낮추거나 공격적 사이버 작전을 가능하게 할 수준의 모델을 '이중 용도 파운데이션 모델'로 보고 오용 위험 관리 지침을 제시함.",
+          "미국 NIST AI 800-1 2차 초안(2025.1)은 2025.1.20 폐지된 행정명령 14110의 정의에 따라, 비전문가의 화학·생물·방사능·핵 무기 접근 장벽을 크게 낮추거나 공격적 사이버 작전을 가능하게 할 수준의 모델을 '이중 용도 파운데이션 모델'로 보고 오용 위험 관리 지침을 제시함.",
           "역량 자체를 제한하면 정당한 이용도 막히므로, 접근 통제·이용 정책·단계적 공개처럼 누가 어떤 조건에서 쓰는지를 관리하는 방식이 주로 논의됨."
         ],
         "distinction": {
-          "text": "'이중 용도 위험'은 역량이 해롭게 쓰일 가능성이라는 위험 개념이고, '이중 용도 과학'은 그런 성격을 지닌 연구·기술 분야 자체를 가리킴.",
+          "text": "'이중 용도 위험'은 역량이 해롭게 쓰일 가능성이라는 위험 개념이고 '이중 용도 과학'은 그런 성격을 지닌 연구·기술 분야 자체를 가리키며, 수출통제에서 말하는 민수·군수 겸용 품목의 '이중 용도'와는 맥락이 다름.",
           "terms": [
             "dual-use-science"
           ]
@@ -14769,10 +14930,10 @@
       "frameworks": [
         {
           "org": "NIST",
-          "sub": "AI 800-1",
+          "sub": "AI 800-1 초안, 2025",
           "points": [
             {
-              "text": "이중 용도 파운데이션 모델의 정의에는, 비전문가의 화학·생물·방사능·핵 무기 설계·획득 장벽을 크게 낮추거나, 자동 취약점 탐지·악용으로 강력한 공격적 사이버 작전을 가능하게 하거나, 기만으로 인간 통제를 회피하게 하는 등 안보·공중 안전에 심각한 위험을 주는 과업에서 높은 성능을 보이는(또는 쉽게 그렇게 바뀔 수 있는) 모델이라는 위험 역량 요건이 포함됨.",
+              "text": "초안은 폐지된 행정명령 14110의 정의를 따르며, 이 정의에는 비전문가의 화학·생물·방사능·핵 무기 설계·획득 장벽을 크게 낮추거나, 자동 취약점 탐지·악용으로 강력한 공격적 사이버 작전을 가능하게 하거나, 기만으로 인간 통제를 회피하게 하는 등 안보·공중 안전에 심각한 위험을 주는 과업에서 높은 성능을 보이는(또는 쉽게 그렇게 바뀔 수 있는) 모델이라는 위험 역량 요건이 포함됨.",
               "refs": [
                 1
               ]
@@ -14808,7 +14969,7 @@
           "sub": "2025",
           "points": [
             {
-              "text": "특정 시스템적 위험으로 화생방 위험을 두고, 관련 무기의 설계·획득·사용에서 악의적 행위자의 진입 장벽을 크게 낮추는 경우를 포함함.",
+              "text": "지정된 시스템적 위험으로 화학·생물·방사능·핵(CBRN) 위험을 두고, 관련 무기의 설계·획득·사용에서 악의적 행위자의 진입 장벽을 크게 낮추는 경우를 포함함.",
               "refs": [
                 4
               ]
@@ -14891,6 +15052,7 @@
       "id": "dual-use-science",
       "head": "이중 용도 과학",
       "en": "dual-use science",
+      "en_search": "dual-use science",
       "kit_id": "dual-use-science",
       "alternatives": [],
       "chapter": "05",
@@ -14964,11 +15126,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.80, p.221–222",
-            "pages_printed": "p.80, p.221–222"
+            "pages_printed": "p.80; Glossary p.221–222"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         },
@@ -15091,6 +15253,7 @@
       "id": "human-uplift",
       "head": "휴먼 업리프트",
       "en": "human uplift",
+      "en_search": "human uplift",
       "kit_id": "human-uplift",
       "alternatives": [
         {
@@ -15145,7 +15308,7 @@
           "sub": "2026",
           "points": [
             {
-              "text": "생물무기 획득 대리 과업에서 안전장치 없는 범용 AI가 인터넷만 쓴 기준선에 비해 상당한 도움을 줬다는 최근 실제 세계 업리프트 연구를 소개하면서, 이전 연구들은 업리프트가 없거나 작았다며 근거가 엇갈린다고 평가함.",
+              "text": "생물무기 획득 대리 과업에서 안전장치 없는 범용 AI가 인터넷만 쓴 기준선에 비해 상당한 도움을 줬다는 최근 실제 세계 업리프트 연구를 소개하면서, 이전 연구들은 효과가 없거나 작았으나 참가자 대표성이 불확실하고 표본이 작았다며 근거가 엇갈린다고 평가함.",
               "refs": [
                 1
               ]
@@ -15154,7 +15317,7 @@
         },
         {
           "org": "NIST",
-          "sub": "AI 800-1",
+          "sub": "AI 800-1 초안, 2025",
           "points": [
             {
               "text": "사람이 AI 시스템을 조수로 써서 평가 과업을 수행하는 '업리프트 연구'를 측정 과업 유형으로 둠.",
@@ -15175,7 +15338,7 @@
           "sub": "2025",
           "points": [
             {
-              "text": "시스템적 위험 평가에 쓰는 모델 평가 방법의 예로 벤치마크, 레드티밍 등과 함께 인간 업리프트 연구를 듦.",
+              "text": "시스템적 위험 평가에 쓰는 모델 평가 방법의 예로 벤치마크, 레드티밍 등과 함께 휴먼 업리프트 연구를 듦.",
               "refs": [
                 4
               ]
@@ -15264,6 +15427,7 @@
       "id": "cbrn",
       "head": "화학·생물·방사능·핵",
       "en": "CBRN",
+      "en_search": "CBRN",
       "kit_id": "cbrn",
       "alternatives": [],
       "chapter": "05",
@@ -15386,6 +15550,7 @@
       "id": "persuasion",
       "head": "설득",
       "en": "persuasion",
+      "en_search": "persuasion",
       "kit_id": "persuasion",
       "alternatives": [],
       "chapter": "05",
@@ -15459,11 +15624,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2026, Glossary",
+          "text": "International AI Safety Report 2026",
           "evidence": {
             "document_id": "doc-971d6902bec8",
             "pages": "p.79, p.152–153",
-            "pages_printed": "p.78, p.151–152"
+            "pages_printed": "p.78; Glossary p.151–152"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
           "library_id": "doc-dd849bfee4fe"
@@ -15572,6 +15737,7 @@
       "id": "cyberattack",
       "head": "사이버 공격",
       "en": "cyberattack",
+      "en_search": "cyberattack",
       "kit_id": "cyber-offence",
       "alternatives": [
         {
@@ -15667,11 +15833,11 @@
         },
         {
           "n": 2,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.72–73, p.222–223",
-            "pages_printed": "p.72–73, p.222–223"
+            "pages_printed": "p.72–73; Glossary p.222–223"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         }
@@ -15849,6 +16015,7 @@
       "id": "cyber-threat",
       "head": "사이버 위협",
       "en": "cyber threat",
+      "en_search": "cyber threat",
       "kit_id": "cyber-threat",
       "alternatives": [],
       "chapter": "05",
@@ -16001,6 +16168,7 @@
       "id": "cybersecurity",
       "head": "사이버 보안",
       "en": "cybersecurity",
+      "en_search": "cybersecurity",
       "kit_id": "cybersecurity",
       "alternatives": [
         {
@@ -16140,6 +16308,14 @@
       ],
       "library_docs": [
         {
+          "id": "doc-a81a26ecce56",
+          "title": "「AI와 사이버보안에 관한 과학계 공개서한」",
+          "date": "2026-10-13",
+          "flag": "",
+          "org": "과학자 406명 (벤지오·힌턴·러셀 등)",
+          "kind": "선언·성명"
+        },
+        {
           "id": "doc-4767e7c684bd",
           "title": "캐나다 프런티어 AI 시대 사이버보안 대비 지침(SPIN)",
           "date": "2026-10-01",
@@ -16162,14 +16338,6 @@
           "flag": "🇬🇧",
           "org": "",
           "kind": "법안"
-        },
-        {
-          "id": "doc-8b5028733dfe",
-          "title": "중국 사이버보안 기술·AI 보안 역량 성숙도 평가 국가표준",
-          "date": "2026-08-26",
-          "flag": "🇨🇳",
-          "org": "",
-          "kind": "표준"
         }
       ],
       "rel": {
@@ -16186,6 +16354,7 @@
       "id": "vulnerability",
       "head": "취약점",
       "en": "vulnerability",
+      "en_search": "vulnerability",
       "kit_id": "vulnerability",
       "alternatives": [
         {
@@ -16204,7 +16373,7 @@
         "lead": "공격자가 악용해 시스템의 기밀성·무결성·가용성이나 안전한 작동을 침해할 수 있는 결함이나 약점을 의미함.",
         "points": [
           "AI 시스템에는 기존 소프트웨어 취약점 위에 프롬프트 인젝션, 데이터 오염, 모델 추출, 탈옥 취약성처럼 모델 고유의 약점이 더해짐.",
-          "AI는 공격 대상이자 취약점 탐지 도구이기도 함. 대규모 코드에서 결함을 찾는 역량은 방어자의 사전 수정과 공격자의 미공개 취약점 확보에 동시에 쓰일 수 있음."
+          "AI는 공격 대상이자 취약점 탐지 도구이기도 하며, 대규모 코드에서 결함을 찾는 역량은 방어자의 사전 수정과 공격자의 미공개 취약점 확보에 동시에 쓰일 수 있음."
         ],
         "distinction": {
           "text": "'취약점'은 시스템 내부의 약점을, '위협'은 그것을 노리는 외부 행위자·사건을, '위험'은 둘이 만나 생길 피해의 가능성과 크기를 가리킴.",
@@ -16257,7 +16426,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "AI RMF 1.0은 AI 시스템의 대표적 보안 우려로 적대적 예제, 데이터 오염, 엔드포인트를 통한 모델·학습 데이터 유출을 들고, 기밀성·무결성·가용성을 지키는 시스템을 '보안이 확보된(secure)' 시스템으로 봄.",
@@ -16268,8 +16437,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "안전성 확보 가이드라인은 위험 식별 고려 요소인 '보안 취약점'을 외부 또는 내부 위협자에 의해 시스템이 침해될 수 있는 기술적 약점으로 정의하고, 적대적 공격·모델 추출·백도어 삽입·무단 접근을 예로 듦.",
@@ -16437,6 +16606,7 @@
       "id": "zero-day-vulnerability",
       "head": "제로데이 취약점",
       "en": "zero-day vulnerability",
+      "en_search": "zero-day vulnerability",
       "kit_id": "zero-day-vulnerability",
       "alternatives": [],
       "chapter": "05",
@@ -16492,11 +16662,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.72–73, p.228–229",
-            "pages_printed": "p.72–73, p.228–229"
+            "pages_printed": "p.72–73; Glossary p.228–229"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         }
@@ -16611,6 +16781,7 @@
       "id": "malware",
       "head": "멀웨어",
       "en": "malware",
+      "en_search": "malware",
       "kit_id": "malware",
       "alternatives": [
         {
@@ -16683,11 +16854,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.72–73, p.223–224",
-            "pages_printed": "p.72–73, p.223–224"
+            "pages_printed": "p.72–73; Glossary p.223–224"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         },
@@ -16866,6 +17037,7 @@
       "id": "insider-threats",
       "head": "내부자 위협",
       "en": "insider threat",
+      "en_search": "insider threat",
       "kit_id": "insider-threats",
       "alternatives": [],
       "chapter": "05",
@@ -16901,7 +17073,7 @@
         },
         {
           "id": "sabotage",
-          "head": "사보타지"
+          "head": "사보타주"
         }
       ],
       "frameworks": [
@@ -17008,6 +17180,7 @@
       "id": "jailbreak",
       "head": "탈옥",
       "en": "jailbreak",
+      "en_search": "jailbreak",
       "kit_id": "jailbreak",
       "alternatives": [
         {
@@ -17025,8 +17198,8 @@
       "definition": {
         "lead": "안전장치를 우회해 AI 시스템이 무기 제조 지침 같은 유해 콘텐츠를 생성하도록 고안한 프롬프트를 만들어 제출하는 행위·공격을 의미함.",
         "points": [
-          "역할극·가상 시나리오, 교육 목적 위장, 다른 언어·암호로 바꿔 쓰기, 자동 탐색으로 찾은 무의미한 문자열 덧붙이기 등이 알려진 기법임. 거부가 요청의 뜻보다 표면 형태에 반응하는 틈을 이용함.",
-          "새 모델마다 새 우회 기법이 발견되는 양상이 반복되어, 실무 목표는 완전 차단보다 공격 성공률을 낮추고 뚫렸을 때의 피해를 제한하는 데 놓임. 레드티밍과 적대적 학습이 주요 대응임."
+          "역할극·가상 시나리오, 교육 목적 위장, 다른 언어·암호로 바꿔 쓰기, 자동 탐색으로 찾은 무의미한 문자열 덧붙이기 등이 알려진 기법이며, 거부가 요청의 뜻보다 표면 형태에 반응하는 틈을 이용함.",
+          "새 모델마다 새 우회 기법이 발견되는 양상이 반복되어 실무 목표는 완전 차단보다 공격 성공률을 낮추고 뚫렸을 때의 피해를 제한하는 데 놓이며, 레드티밍과 적대적 학습이 주요 대응임."
         ],
         "distinction": {
           "text": "'탈옥'은 안전장치를 우회해 유해한 출력을 얻으려는 공격이고, '프롬프트 인젝션'은 직접 입력하거나 데이터에 심은 지시로 시스템이 의도와 다르게 행동하게 만드는 공격임.",
@@ -17296,6 +17469,14 @@
       },
       "research": [
         {
+          "title": "텍스트-이미지 모델 안전필터 우회 탈옥과 방어",
+          "orig": "A Safety-aware Jailbreak Approach to Bypass Security Filters for Generating Harmful Media with Text-to-Image models",
+          "summary": "PGD 공격과 안전 인지 프롬프트 최적화를 결합한 T2I 탈옥 기법으로 DALL·E, IMAGEN 등 상용 모델의 안전필터를 우회해 유해 이미지를 생성하고, CLIP 어텐션 분할 기반의 위험·적대적 프롬프트 탐지기와 세 개의 데이터셋을 제안했다.",
+          "url": "https://doi.org/10.1145/3856801",
+          "date": "2026-11-02",
+          "source": "ACM Transactions on Intelligent Systems and Technology"
+        },
+        {
           "title": "LLM에서 에이전트까지 탈옥 공격·방어 서베이",
           "orig": "From LLMs to MLLMs to Agents: A Survey of Emerging Paradigms in Jailbreak Attacks and Defenses within LLM Ecosystem",
           "summary": "LLM, 멀티모달 LLM, 에이전트로 확장되는 생태계의 탈옥 공격과 방어 기법을 공격 영향·공격자 권한 및 대응 시점·기술 기준으로 분류하고, 관련 데이터셋·평가 지표와 향후 연구 방향을 정리한 서베이.",
@@ -17318,14 +17499,6 @@
           "url": "https://arxiv.org/abs/2610.35743v1",
           "date": "2026-10-26",
           "source": "arXiv"
-        },
-        {
-          "title": "탈옥 취약성의 응답 말단 표현 발산 시그니처",
-          "orig": "Paired response final divergence signatures of jailbreak vulnerability in large language models",
-          "summary": "오픈소스 LLM 15종에서 같은 목표의 직접 응답과 탈옥 응답 사이 마지막 토큰 은닉 상태의 발산을 측정해, 거부 방향 억제가 탈옥 증폭과 가장 크게 연관됨을 보이고 세 가지 표현 프로파일로 모델을 분류했다.",
-          "url": "https://link.springer.com/content/pdf/10.1007/s44163-026-02593-2.pdf",
-          "date": "2026-10-23",
-          "source": "Discover Artificial Intelligence"
         }
       ],
       "library_docs": [],
@@ -17352,6 +17525,7 @@
       "id": "prompt-injection",
       "head": "프롬프트 인젝션",
       "en": "prompt injection",
+      "en_search": "prompt injection",
       "kit_id": "prompt-injection",
       "alternatives": [
         {
@@ -17369,8 +17543,8 @@
       "definition": {
         "lead": "AI 시스템에 직접 악성 지시를 입력하거나, 모델이 처리하는 문서·웹페이지·도구 출력 등 데이터 안에 지시를 숨겨, 모델이 의도와 다르게 행동하게 만드는 공격을 의미함.",
         "points": [
-          "모델이 개발자의 지시와 처리 대상 데이터를 같은 텍스트 흐름으로 받아 구조적으로 구별하지 못한다는 점을 이용함. 이용자는 숨은 지시의 존재를 모르는 경우가 많음.",
-          "파일 열람·메일 발송·코드 실행 권한을 가진 AI 에이전트가 가로채이면 정보 유출과 시스템 조작으로 이어짐. 원리적 해법이 없어 최소 권한, 실행 환경 격리, 되돌릴 수 없는 행위의 사람 승인 같은 피해 제한형 대응이 쓰임."
+          "모델이 개발자의 지시와 처리 대상 데이터를 같은 텍스트 흐름으로 받아 구조적으로 구별하지 못한다는 점을 이용하며, 간접 주입에서는 이용자가 숨은 지시의 존재를 모르는 경우가 많음.",
+          "파일 열람·메일 발송·코드 실행 권한을 가진 AI 에이전트가 가로채이면 정보 유출과 시스템 조작으로 이어지는데, 원리적 해법이 없어 최소 권한, 실행 환경 격리, 되돌릴 수 없는 행위의 사람 승인 같은 피해 제한형 대응이 쓰임."
         ],
         "distinction": {
           "text": "'프롬프트 인젝션'은 직접 입력하거나 데이터에 심은 지시로 모델이 의도와 다르게 행동하게 만드는 공격이고, '탈옥'은 안전장치를 우회해 유해한 출력을 얻으려는 공격임.",
@@ -17407,7 +17581,7 @@
           "sub": "2026",
           "points": [
             {
-              "text": "웹사이트·데이터베이스에 숨긴 지시 등 간접 경로로 에이전트를 '탈취'해 사용자 의도에 반해 행동하게 하는 공격으로 설명함. 통제 밖 외부 콘텐츠로 전달돼 방어가 특히 어렵다고 봄.",
+              "text": "웹사이트·데이터베이스에 숨긴 지시 등 간접 경로로 에이전트를 '탈취'해 사용자 의도에 반해 행동하게 하는 공격으로 설명하고, 통제 밖 외부 콘텐츠로 전달돼 방어가 특히 어렵다고 봄.",
               "refs": [
                 1
               ]
@@ -17422,7 +17596,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2024",
+          "sub": "AI 600-1, 2024",
           "points": [
             {
               "text": "공격자가 악성 프롬프트를 생성형 AI 시스템에 직접 입력하는 직접 프롬프트 인젝션과, 검색될 가능성이 있는 데이터에 프롬프트를 심어 원격으로 LLM 통합 애플리케이션을 악용하는 간접 프롬프트 인젝션을 구분함.",
@@ -17439,8 +17613,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "안전성 확보 가이드라인은 위험 식별 문서화 예시로 '프롬프트 인젝션에 의한 시스템 응답 왜곡 가능성'을 들고, 외부 입력으로 시스템 지침을 우회하거나 응답을 왜곡할 수 있는 구조적 취약점으로 기록함.",
@@ -17629,6 +17803,7 @@
       "id": "supply-chain",
       "head": "공급망",
       "en": "supply chain",
+      "en_search": "supply chain",
       "kit_id": "supply-chain",
       "alternatives": [
         {
@@ -17801,6 +17976,7 @@
       "id": "autonomous-weapons",
       "head": "자율무기",
       "en": "autonomous weapons",
+      "en_search": "autonomous weapons",
       "kit_id": "autonomous-weapons",
       "alternatives": [
         {
@@ -17935,6 +18111,7 @@
       "id": "national-security",
       "head": "국가안보",
       "en": "national security",
+      "en_search": "national security",
       "kit_id": "national-security",
       "alternatives": [
         {
@@ -18110,6 +18287,7 @@
       "id": "adversarial-prompt",
       "head": "적대적 프롬프트",
       "en": "adversarial prompt",
+      "en_search": "adversarial prompt",
       "kit_id": "adversarial-prompt",
       "alternatives": [
         {
@@ -18191,18 +18369,6 @@
               ]
             }
           ]
-        },
-        {
-          "org": "한국",
-          "sub": "2026",
-          "points": [
-            {
-              "text": "위험 식별 문서화 예시로, 배포 전 레드팀 테스트에서 악의적 사용자가 지시를 삽입해 시스템 지침을 우회하거나 응답을 왜곡할 수 있는 프롬프트 인젝션 위험을 식별·기록하는 사례를 제시함.",
-              "refs": [
-                4
-              ]
-            }
-          ]
         }
       ],
       "refs": [
@@ -18235,16 +18401,6 @@
             "pages_printed": "p.17"
           },
           "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
-        },
-        {
-          "n": 4,
-          "text": "『인공지능 안전성 확보 가이드라인』 v1.3",
-          "evidence": {
-            "document_id": "doc-c49c4fa002e6",
-            "pages": "p.36",
-            "pages_printed": "p.36"
-          },
-          "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
         }
       ],
       "commentary": [],
@@ -18311,7 +18467,8 @@
     {
       "id": "ai-bias",
       "head": "편향",
-      "en": "AI bias",
+      "en": "bias",
+      "en_search": "AI bias",
       "kit_id": "ai-bias",
       "alternatives": [
         {
@@ -18389,11 +18546,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.92–93, p.219–220",
-            "pages_printed": "p.92–93, p.219–220"
+            "pages_printed": "p.92–93; Glossary p.219–220"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         }
@@ -18488,19 +18645,19 @@
       },
       "research": [
         {
+          "title": "FairSense-AgentiX: 편향·AI 위험 분석 에이전트",
+          "orig": "FairSense-AgentiX: An Agentic Platform for Multi-Modal Fairness and AI Risk Analysis",
+          "summary": "LangGraph 오케스트레이션과 MIT AI 위험 리포지토리 기반 검색을 이용해 텍스트·이미지의 편향 탐지와 AI 배포 위험 평가를 수행하는 오픈소스 파이썬 플랫폼을 공개했다.",
+          "url": "https://doi.org/10.21105/joss.11060",
+          "date": "2026-10-30",
+          "source": "The Journal of Open Source Software"
+        },
+        {
           "title": "디지털 민주주의의 LLM 유권자 대표성 편향과 정렬",
           "orig": "AI Alignment for Digital Democracy: Fairer Voters Representation against LLM Biases",
           "summary": "미국 대선 3회 데이터로 LLM이 유권자 투표를 모사할 때 인구통계 집단별 오차를 분석했고, 성별·학력 정보를 제거하면 최대 집단 오차가 줄지만 반복 질의나 공정성 지시는 오차를 줄이지 못하고 최대 두 배로 키울 수 있음을 확인했다.",
           "url": "https://arxiv.org/abs/2610.32780v1",
           "date": "2026-10-23",
-          "source": "arXiv"
-        },
-        {
-          "title": "무검열 모델도 편향은 그대로: 대만 문자체 편향",
-          "orig": "Uncensored Is Not Unbiased: Abliteration Removes Refusals but Not Script-Dependent Bias About Taiwan",
-          "summary": "거부 방향을 제거한 abliteration 모델 두 쌍을 번체·간체·영어로 대만·톈안먼 문항에 평가한 결과, 거부는 사라졌지만 간체 입력 시 친중 편향이 크게 남았고, 짧은 시스템 프롬프트로 입장 점수가 크게 올랐다.",
-          "url": "https://arxiv.org/abs/2610.29342v1",
-          "date": "2026-10-21",
           "source": "arXiv"
         },
         {
@@ -18512,12 +18669,12 @@
           "source": "arXiv"
         },
         {
-          "title": "FAIRITHM: 한국어 편향 언러닝·재작성 시스템",
-          "orig": "FAIRITHM: Unlearning Bias and Rewriting for Fairness",
-          "summary": "KcBERT 편향 평가 모듈(PCGU 언러닝)과 GPT-4o 재작성을 결합한 한국어 편향 재작성 도구를 만들고, 사용자 연구(34명)에서 인간 감독을 전제로 한 보조 활용이 적합함을 확인했다.",
-          "url": "https://doi.org/10.6084/m9.figshare.34709515",
-          "date": "2026-10-20",
-          "source": "Figshare"
+          "title": "무검열 모델도 편향은 그대로: 대만 문자체 편향",
+          "orig": "Uncensored Is Not Unbiased: Abliteration Removes Refusals but Not Script-Dependent Bias About Taiwan",
+          "summary": "거부 방향을 제거한 abliteration 모델 두 쌍을 번체·간체·영어로 대만·톈안먼 문항에 평가한 결과, 거부는 사라졌지만 간체 입력 시 친중 편향이 크게 남았고, 짧은 시스템 프롬프트로 입장 점수가 크게 올랐다.",
+          "url": "https://arxiv.org/abs/2610.29342v1",
+          "date": "2026-10-21",
+          "source": "arXiv"
         }
       ],
       "library_docs": [
@@ -18569,6 +18726,7 @@
       "id": "discrimination",
       "head": "차별",
       "en": "discrimination",
+      "en_search": "discrimination",
       "kit_id": "discrimination",
       "alternatives": [],
       "chapter": "06",
@@ -18631,11 +18789,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.92–93, p.220–221",
-            "pages_printed": "p.92–93, p.220–221"
+            "pages_printed": "p.92–93; Glossary p.220–221"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         }
@@ -18780,6 +18938,7 @@
       "id": "automation-bias",
       "head": "자동화 편향",
       "en": "automation bias",
+      "en_search": "automation bias",
       "kit_id": "automation-bias",
       "alternatives": [],
       "chapter": "06",
@@ -18797,7 +18956,7 @@
           "시간 압박, 시스템 판단을 뒤집을 때의 설명 부담, 판단 근거 미제공 등 업무 설계에 따라 강해지거나 약해질 수 있음."
         ],
         "distinction": {
-          "text": "'자동화 편향'은 시스템을 쓰는 사람의 판단 경향이고, 여기서 비교하는 'AI 시스템의 편향'은 시스템 자체가 특정 집단에 치우친 결과를 내는 성질임.",
+          "text": "'자동화 편향'은 시스템을 쓰는 사람의 판단 경향이고, 'AI 시스템의 편향(bias)'은 시스템 자체가 특정 집단에 치우친 결과를 내는 성질임.",
           "terms": [
             "ai-bias"
           ]
@@ -18846,10 +19005,10 @@
         },
         {
           "org": "NIST",
-          "sub": "2024",
+          "sub": "AI 600-1, 2024",
           "points": [
             {
-              "text": "생성형 AI 프로파일은 인간-AI 구성 위험에서 자동화 편향을 자동화 시스템에 지나치게 순응하는 현상으로 설명하고, 이것이 꾸며내기(confabulation)나 편향·동질화 위험을 악화할 수 있다고 봄.",
+              "text": "생성형 AI 프로파일은 인간-AI 구성 위험에서 자동화 편향을 자동화 시스템에 지나치게 순응하는 현상으로 설명하고, 이것이 작화(confabulation)나 편향·동질화 위험을 악화할 수 있다고 봄.",
               "refs": [
                 2
               ]
@@ -18857,8 +19016,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "윤리원칙",
+          "org": "인공지능 윤리원칙",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "AI 행위자가 AI에 과도하게 의존하지 않도록 하고, 과의존은 이용자 태도뿐 아니라 판단을 지나치게 대신하거나 산출물 검토가 어려운 서비스 설계에서도 커질 수 있다고 봄.",
@@ -18939,6 +19098,7 @@
       "id": "automated-decision-making-adm",
       "head": "자동 의사결정",
       "en": "automated decision-making (ADM)",
+      "en_search": "automated decision-making (ADM)",
       "kit_id": "automated-decision-making-adm",
       "alternatives": [
         {
@@ -19093,6 +19253,7 @@
       "id": "harmful-content",
       "head": "유해 콘텐츠",
       "en": "harmful content",
+      "en_search": "harmful content",
       "kit_id": "harmful-content",
       "alternatives": [
         {
@@ -19238,6 +19399,7 @@
       "id": "deepfake",
       "head": "딥페이크",
       "en": "deepfake",
+      "en_search": "deepfake",
       "kit_id": "deepfake",
       "alternatives": [
         {
@@ -19323,7 +19485,7 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.62–63",
@@ -19642,6 +19804,7 @@
       "id": "ai-generated-fake-content",
       "head": "AI 생성 가짜 콘텐츠",
       "en": "AI-generated fake content",
+      "en_search": "AI-generated fake content",
       "kit_id": "ai-generated-fake-content",
       "alternatives": [],
       "chapter": "06",
@@ -19711,7 +19874,7 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.62–63, p.67–68",
@@ -19837,10 +20000,11 @@
       "id": "disinformation",
       "head": "허위 정보",
       "en": "disinformation",
+      "en_search": "disinformation",
       "kit_id": "disinformation",
       "alternatives": [
         {
-          "text": "조작정보",
+          "text": "허위조작정보",
           "source": "editor"
         }
       ],
@@ -19859,7 +20023,7 @@
           "개별 사실 확인만으로는 속도를 따라가기 어려워, 조직적 유포 구조 탐지와 콘텐츠 출처 검증으로 대응의 무게가 옮겨 가고 있음."
         ],
         "distinction": {
-          "text": "'허위 정보(disinformation)'는 속이려는 의도가 있는 거짓·오도 정보이고, '오정보(misinformation)'는 그런 의도 없이 잘못 알고 퍼뜨리는 정보임. 같은 내용도 처음엔 허위 정보로 만들어졌다가 선의의 공유를 거치며 오정보로 퍼질 수 있음.",
+          "text": "'허위 정보(disinformation)'는 속이려는 의도가 있는 거짓·오도 정보이고 '오정보(misinformation)'는 그런 의도 없이 잘못 알고 퍼뜨리는 정보이며, 같은 내용도 처음엔 허위 정보로 만들어졌다가 선의의 공유를 거치며 오정보로 퍼질 수 있음.",
           "terms": [
             "misinformation"
           ]
@@ -19902,7 +20066,7 @@
         },
         {
           "org": "NIST",
-          "sub": "AI 600-1",
+          "sub": "AI 600-1, 2024",
           "points": [
             {
               "text": "정보 무결성 위험에서 거짓·오도적 정보의 의도적 생산·유포를 허위정보, 비의도적인 것을 오정보로 나누고, 생성형 AI가 둘 다 대규모로 쉽게 만든다고 봄.",
@@ -19925,8 +20089,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "인공지능 윤리원칙",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "윤리원칙의 책임 명확화 항목에서 공급자는 이용자가 AI를 허위정보 유포 등에 쓰지 않도록 안내·예방 조치를 마련하고, 이용자는 그런 데 쓰지 않아야 한다고 제시함.",
@@ -20124,6 +20288,7 @@
       "id": "misinformation",
       "head": "오정보",
       "en": "misinformation",
+      "en_search": "misinformation",
       "kit_id": "misinformation",
       "alternatives": [
         {
@@ -20291,6 +20456,7 @@
       "id": "non-consensual-intimate-imagery-ncii",
       "head": "비동의 성적 이미지",
       "en": "non-consensual intimate imagery (NCII)",
+      "en_search": "non-consensual intimate imagery (NCII)",
       "kit_id": "non-consensual-intimate-imagery-ncii",
       "alternatives": [
         {
@@ -20401,6 +20567,7 @@
       "id": "child-sexual-abuse-material-csam",
       "head": "아동 성착취물",
       "en": "child sexual abuse material (CSAM)",
+      "en_search": "child sexual abuse material (CSAM)",
       "kit_id": "child-sexual-abuse-material-csam",
       "alternatives": [
         {
@@ -20520,6 +20687,7 @@
       "id": "surveillance",
       "head": "감시",
       "en": "surveillance",
+      "en_search": "surveillance",
       "kit_id": "surveillance",
       "alternatives": [
         {
@@ -20692,6 +20860,7 @@
       "id": "censorship",
       "head": "검열",
       "en": "censorship",
+      "en_search": "censorship",
       "kit_id": "censorship",
       "alternatives": [],
       "chapter": "06",
@@ -20837,6 +21006,7 @@
       "id": "privacy-breach",
       "head": "개인정보 침해",
       "en": "privacy breach",
+      "en_search": "privacy breach",
       "kit_id": "privacy-breach",
       "alternatives": [
         {
@@ -20964,6 +21134,7 @@
       "id": "freedom-of-expression",
       "head": "표현의 자유",
       "en": "freedom of expression",
+      "en_search": "freedom of expression",
       "kit_id": "freedom-of-expression",
       "alternatives": [
         {
@@ -21079,6 +21250,7 @@
       "id": "mental-health",
       "head": "정신 건강",
       "en": "mental health",
+      "en_search": "mental health",
       "kit_id": "mental-health",
       "alternatives": [],
       "chapter": "06",
@@ -21246,6 +21418,7 @@
       "id": "emotional-dependence",
       "head": "정서적 의존",
       "en": "emotional dependence",
+      "en_search": "emotional dependence",
       "kit_id": "emotional-dependence",
       "alternatives": [
         {
@@ -21355,6 +21528,7 @@
       "id": "child-and-youth-protection",
       "head": "아동·청소년 보호",
       "en": "child and youth protection",
+      "en_search": "child and youth protection",
       "kit_id": "child-and-youth-protection",
       "alternatives": [
         {
@@ -21465,6 +21639,7 @@
       "id": "age-verification",
       "head": "연령 확인",
       "en": "age verification",
+      "en_search": "age verification",
       "kit_id": "age-verification",
       "alternatives": [
         {
@@ -21603,7 +21778,8 @@
     {
       "id": "ai-incident",
       "head": "사고",
-      "en": "AI incident",
+      "en": "incident",
+      "en_search": "AI incident",
       "kit_id": "ai-incident",
       "alternatives": [
         {
@@ -21626,7 +21802,7 @@
           "개인에게 즉각 나타나는 피해와 체계적 차별처럼 누적되어 드러나는 피해가 모두 사고가 될 수 있어, 인과관계와 피해 시점 판단이 쉽지 않음."
         ],
         "distinction": {
-          "text": "'사고(incident)'는 실제 피해가 발생한 사건을, '위험원(AI hazard)'은 사고로 이어질 개연성이 있는 사건을 뜻함. 'accident'가 주로 우발적 사고를 가리키는 것과 달리 incident는 오용 등 의도적 사건까지 포괄함.",
+          "text": "'사고(incident)'는 실제 피해가 발생한 사건을, '위험원(AI hazard)'은 사고로 이어질 개연성이 있는 사건을 뜻하며, 'accident'가 주로 우발적 사고를 가리키는 것과 달리 incident는 오용 등 의도적 사건까지 포괄함.",
           "terms": [
             "ai-hazard",
             "near-miss"
@@ -21676,7 +21852,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2024",
+          "sub": "AI 600-1, 2024",
           "points": [
             {
               "text": "생성형 AI 프로파일은 OECD 정의를 따르면서 건강 피해에 심리적 피해·정신 건강 피해를 포함하고, 사고가 누적적(체계적 차별)으로도 급성적(개인 1명)으로도 발생할 수 있다고 봄.",
@@ -21687,11 +21863,23 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "EU AI Act",
+          "sub": "2024/1689",
           "points": [
             {
-              "text": "안전성 확보 가이드라인은 '안전사고'를 AI의 설계·학습·배포·운영 과정에서 발생해 생명·신체의 안전, 기본권, 공공의 안전에 중대한 영향을 미치는 사고로 보고, 해킹 같은 전통적 침해사고에 한정하지 않음.",
+              "text": "제3조제49호는 '중대 사고'를 AI 시스템의 사고·오작동이 직간접으로 사망·건강의 심각한 피해, 핵심 기반시설의 심각하고 되돌릴 수 없는 교란, 기본권 보호 의무 위반, 재산·환경의 심각한 피해를 낳은 경우로 정의함.",
+              "refs": [
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
+          "points": [
+            {
+              "text": "안전성 확보 가이드라인은 '안전사고'를 AI의 설계·학습·배포·운영 과정에서 발생해 생명·신체의 안전, 기본권, 공공의 안전에 중대한 영향을 미치는 사고로 보고 해킹 같은 전통적 침해사고에 한정하지 않되, 중대한 영향을 요건으로 삼는 점에서 표제어 '사고'보다 범위가 좁음.",
               "refs": [
                 3
               ]
@@ -21729,6 +21917,16 @@
             "pages_printed": "p.67"
           },
           "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
+        },
+        {
+          "n": 4,
+          "text": "EU AI Act, Art. 3(49)",
+          "evidence": {
+            "document_id": "doc-bba630444b32",
+            "pages": "p.49",
+            "pages_printed": "p.49"
+          },
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
         }
       ],
       "commentary": [],
@@ -21840,6 +22038,7 @@
       "id": "serious-incident",
       "head": "중대 사고",
       "en": "serious incident",
+      "en_search": "serious incident",
       "kit_id": "serious-incident",
       "alternatives": [
         {
@@ -21923,8 +22122,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "안전성 확보 가이드라인은 생명·신체 안전, 기본권, 공공의 안전에 중대한 영향을 미치는 안전사고를 인지 후 24시간 이내 최초 보고 대상으로 두고, 원인·책임이 확정되지 않아도 피해 가능성이 합리적으로 인지되면 포함함.",
@@ -22015,7 +22214,8 @@
     {
       "id": "ai-disaster",
       "head": "재해",
-      "en": "AI disaster",
+      "en": "disaster",
+      "en_search": "AI disaster",
       "kit_id": "ai-disaster",
       "alternatives": [
         {
@@ -22127,6 +22327,7 @@
       "id": "near-miss",
       "head": "아차사고",
       "en": "near miss",
+      "en_search": "near miss",
       "kit_id": "near-miss",
       "alternatives": [],
       "chapter": "07",
@@ -22144,7 +22345,7 @@
           "피해가 없어 신고 의무 밖에 놓이는 경우가 많고, 조직이 공개를 꺼려 보고가 적게 이루어지는 문제가 있음."
         ],
         "distinction": {
-          "text": "'아차사고'는 피해 없이 끝난 구체적 사건이고, '위험원(AI hazard)'은 사고로 이어질 개연성이 있는 사건·상황 전반을 가리키는 더 넓은 범주임. OECD는 아차사고를 AI 위험원에 포함함.",
+          "text": "'아차사고'는 피해 없이 끝난 구체적 사건이고 '위험원(AI hazard)'은 사고로 이어질 개연성이 있는 사건·상황 전반을 가리키는 더 넓은 범주로, OECD는 아차사고를 AI 위험원에 포함함.",
           "terms": [
             "ai-hazard",
             "ai-incident"
@@ -22183,8 +22384,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "안전성 확보 가이드라인은 사고 대응 개시 기준에 실제 피해뿐 아니라, 피해가 없더라도 생명·신체·기본권 침해로 이어질 수 있는 합리적 위험 징후를 포함하도록 함.",
@@ -22249,6 +22450,7 @@
       "id": "incident-reporting",
       "head": "사고 보고",
       "en": "incident reporting",
+      "en_search": "incident reporting",
       "kit_id": "incident-reporting",
       "alternatives": [
         {
@@ -22319,7 +22521,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "AI RMF 1.0의 MANAGE 4.1은 배포 후 모니터링에 사고 대응·복구 등을 포함하도록 하고, MANAGE 4.3은 사고·오류를 관련 주체에 알리고 추적·대응·복구 절차를 문서화하도록 함.",
@@ -22330,26 +22532,26 @@
             {
               "text": "법정 신고 의무가 아니라 자율적 위험관리 체계 안의 문서화·의사소통 절차로 제시됨.",
               "refs": [
-                3
+                2
               ]
             }
           ]
         },
         {
-          "org": "EU AI Act",
-          "sub": "2024/1689",
+          "org": "EU AI Act·실천강령",
+          "sub": "2024·2025",
           "points": [
             {
-              "text": "제73조는 고위험 AI 시스템 제공자가 중대 사고를 발생 회원국의 시장감시당국에 보고하도록 함. AI 시스템과 사고 사이의 인과관계 또는 그 합리적 개연성을 확인한 즉시 보고하되, 늦어도 제공자 또는 해당되는 경우 배포자가 사고를 인지한 후 15일을 넘겨서는 안 됨.",
+              "text": "제73조는 고위험 AI 시스템 제공자가 중대 사고를 인과관계 또는 그 합리적 개연성을 확인한 즉시, 늦어도 인지 후 15일 안에 발생 회원국의 시장감시당국에 보고하도록 하고, 광범위한 침해·핵심 기반시설의 심각하고 되돌릴 수 없는 교란은 2일, 사망은 인과관계를 의심하는 즉시 보고하되 10일을 상한으로 둠.",
               "refs": [
                 4
               ]
             },
             {
-              "text": "광범위한 침해 또는 핵심 기반시설의 관리·운영에 대한 중대하고 되돌릴 수 없는 교란은 즉시, 늦어도 인지 후 2일 이내 보고해야 함. 사망 사고는 AI 시스템과 사고 사이의 인과관계를 확인하거나 의심하는 즉시, 늦어도 인지 후 10일 이내 보고해야 함. 제55조제1항(c)는 시스템적 위험 GPAI 모델 제공자에게도 중대 사고 보고를 요구함.",
+              "text": "제55조제1항(c)는 시스템적 위험 GPAI 모델 제공자에게도 보고를 요구하고, 실천강령 이행조치 9.3은 예외적 사정이 없는 한 초기 보고 기한을 기반시설의 심각하고 되돌릴 수 없는 교란 2일, 중대한 사이버 보안 침해 5일, 사망 10일, 그 밖의 심각한 피해·기본권 의무 위반 15일로 정함.",
               "refs": [
-                4,
-                5
+                5,
+                8
               ]
             }
           ]
@@ -22367,7 +22569,7 @@
             {
               "text": "제34조제1항제5호는 고영향 AI를 제공하는 사업자에게 안전성·신뢰성 확보 조치의 내용을 확인할 수 있는 문서를 작성·보관하도록 규정함.",
               "refs": [
-                7
+                6
               ]
             }
           ]
@@ -22386,16 +22588,6 @@
         },
         {
           "n": 2,
-          "text": "NIST AI 100-1 (AI RMF 1.0), MANAGE 4.1·4.3",
-          "evidence": {
-            "document_id": "doc-7576edb531d9",
-            "pages": "p.38",
-            "pages_printed": "p.33"
-          },
-          "url": "https://doi.org/10.6028/NIST.AI.100-1"
-        },
-        {
-          "n": 3,
           "text": "NIST AI 100-1 (AI RMF 1.0)",
           "evidence": {
             "document_id": "doc-7576edb531d9",
@@ -22426,21 +22618,22 @@
         },
         {
           "n": 6,
-          "text": "「인공지능기본법」, 제32조",
+          "text": "「인공지능기본법」, 제32조·제34조",
           "evidence": {
             "document_id": "doc-6311a32b59e6",
-            "pages": "p.12"
+            "pages": "p.12–13"
           },
           "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
         },
         {
-          "n": 7,
-          "text": "「인공지능기본법」, 제34조",
+          "n": 8,
+          "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 9.3",
           "evidence": {
-            "document_id": "doc-6311a32b59e6",
-            "pages": "p.13"
+            "document_id": "doc-d879f9b54c60",
+            "pages": "p.26–27",
+            "pages_printed": "p.26–27"
           },
-          "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
         }
       ],
       "commentary": [
@@ -22550,6 +22743,7 @@
       "id": "incident-report",
       "head": "사고 보고서",
       "en": "incident report",
+      "en_search": "incident report",
       "kit_id": "incident-report",
       "alternatives": [
         {
@@ -22610,8 +22804,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "안전성 확보 가이드라인은 안전사고 인지 후 24시간 이내에 핵심 정보 중심의 최초 보고를 하도록 해, 초기 보고서와 후속 보완을 구분하는 구조를 둠.",
@@ -22690,6 +22884,7 @@
       "id": "incident-monitoring",
       "head": "사고 모니터링",
       "en": "incident monitoring",
+      "en_search": "incident monitoring",
       "kit_id": "incident-monitoring",
       "alternatives": [
         {
@@ -22829,6 +23024,7 @@
       "id": "post-deployment-monitoring",
       "head": "배포 후 모니터링",
       "en": "post-deployment monitoring",
+      "en_search": "post-deployment monitoring",
       "kit_id": "post-deployment-monitoring",
       "alternatives": [],
       "chapter": "07",
@@ -22843,7 +23039,7 @@
         "points": [
           "입출력 모니터링, 사용자 피드백·신고 채널, 버그 바운티, 사고 추적, 출처 추적 등으로 배포 전 평가에서 드러나지 않은 문제를 찾음.",
           "배포 전 평가만으로는 실제 사용에서 나타나는 역량·행동을 충분히 예측하기 어려워, 운영 단계의 관찰이 위험 관리의 필수 요소로 다뤄짐.",
-          "개방형 모델은 배포 후 사용을 관찰하기 어려워 모니터링 수단이 제한되는 문제가 있음."
+          "오픈 웨이트 모델은 배포 후 사용을 관찰하기 어려워 모니터링 수단이 제한되는 문제가 있음."
         ],
         "distinction": {
           "text": "'배포 후 모니터링'은 기술·위험관리 일반에서 쓰는 넓은 표현이고, '출시 후 모니터링(post-market monitoring)'은 EU AI Act 등 제품 규제 맥락에서 제공자에게 부과되는 법적 의무를 가리키는 경우가 많음.",
@@ -22878,7 +23074,7 @@
       "frameworks": [
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "AI RMF 1.0의 MANAGE 4.1은 사용자·관련 주체의 의견 수렴, 이의 제기와 수동 개입, 폐기, 사고 대응, 복구, 변경 관리를 포함한 배포 후 모니터링 계획을 이행하도록 함.",
@@ -22896,6 +23092,30 @@
               "text": "배포 후 모니터링 도구는 AI 모델·에이전트·출력이 실제로 어떻게 유통·사용되는지 추적해 출처 확인, 피해 발생 시 사고 조사, 책임 메커니즘 이행을 돕는다고 설명함.",
               "refs": [
                 2
+              ]
+            }
+          ]
+        },
+        {
+          "org": "EU AI Act",
+          "sub": "2024/1689",
+          "points": [
+            {
+              "text": "제72조는 고위험 AI 시스템 제공자가 위험에 비례한 출시 후 모니터링 체계를 수립·문서화하고, 수명주기 전반의 성능 자료를 능동적·체계적으로 수집·분석하도록 함.",
+              "refs": [
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "org": "EU GPAI 실천강령",
+          "sub": "2025",
+          "points": [
+            {
+              "text": "이행조치 3.5는 시스템적 위험의 허용 가능성과 모델 보고서 갱신 필요 여부를 판단할 정보를 모으도록 출시 후 모니터링을 요구하고, 이용자 피드백·신고 채널·버그 바운티 등을 방법으로 예시함.",
+              "refs": [
+                4
               ]
             }
           ]
@@ -22921,6 +23141,26 @@
             "pages_printed": "p.13"
           },
           "url": "https://internationalaisafetyreport.org/publication/second-key-update-technical-safeguards-and-risk-management"
+        },
+        {
+          "n": 3,
+          "text": "EU AI Act, Art. 72",
+          "evidence": {
+            "document_id": "doc-bba630444b32",
+            "pages": "p.101",
+            "pages_printed": "p.101"
+          },
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+        },
+        {
+          "n": 4,
+          "text": "EU GPAI Code of Practice (2025), Safety & Security, Measure 3.5",
+          "evidence": {
+            "document_id": "doc-d879f9b54c60",
+            "pages": "p.13–14",
+            "pages_printed": "p.13–14"
+          },
+          "url": "https://ec.europa.eu/newsroom/dae/redirection/document/118119"
         }
       ],
       "commentary": [],
@@ -22975,6 +23215,7 @@
       "id": "post-market-monitoring",
       "head": "출시 후 모니터링",
       "en": "post-market monitoring",
+      "en_search": "post-market monitoring",
       "kit_id": "post-market-monitoring",
       "alternatives": [
         {
@@ -23086,6 +23327,7 @@
       "id": "malfunctioning",
       "head": "오작동",
       "en": "malfunction",
+      "en_search": "malfunction",
       "kit_id": "malfunctioning",
       "alternatives": [
         {
@@ -23164,8 +23406,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "안전성 확보 가이드라인은 시스템 오작동을 비의도적 기능 발현, 알고리즘적 편향, 오남용과 함께 안전사고 범위에 포함되는 AI 특유의 위험으로 듦.",
@@ -23303,6 +23545,7 @@
       "id": "evaluation",
       "head": "평가",
       "en": "evaluation",
+      "en_search": "evaluation",
       "kit_id": "evaluation",
       "alternatives": [
         {
@@ -23325,7 +23568,7 @@
           "평가에서의 성능과 실제 환경의 성능이 다르게 나타나는 평가 격차가 보고되어, 결과를 해석할 때 측정 범위와 한계를 함께 봐야 함."
         ],
         "distinction": {
-          "text": "'평가(evaluation)'는 모델·시스템의 성능·특성을 측정하는 활동을, '위험 평가(risk assessment)'의 평가(assessment)는 위험의 크기와 수용 가능성을 판단하는 절차를 가리킴. 두 말이 모두 '평가'로 옮겨지므로, 문서에서 혼동될 때는 원어를 함께 적어 구별함.",
+          "text": "'평가(evaluation)'는 모델·시스템의 성능·특성을 측정하는 활동을, '위험 평가(risk assessment)'의 평가(assessment)는 위험의 크기와 수용 가능성을 판단하는 절차를 가리키는데, 두 말이 모두 '평가'로 옮겨지므로 문서에서 혼동될 때는 원어를 함께 적어 구별함.",
           "terms": [
             "risk-assessment"
           ]
@@ -23375,7 +23618,7 @@
         },
         {
           "org": "NIST",
-          "sub": "AI 800-1",
+          "sub": "AI 800-1 초안, 2025",
           "points": [
             {
               "text": "오용 위험과 관련된 역량을 배포 전에 평가하고, 학습 중·학습 후·하위 시스템 통합 시점 등 개발 과정 전반에서 평가하도록 권고함.",
@@ -23390,7 +23633,7 @@
           "sub": "2025",
           "points": [
             {
-              "text": "시스템적 위험이 있는 모델의 역량·경향·영향을 최첨단 수준으로 평가하고, 벤치마크·레드티밍·인간 능력 향상 연구 등을 방법으로 예시함.",
+              "text": "시스템적 위험이 있는 모델의 역량·경향·영향을 최첨단 수준으로 평가하고, 벤치마크·레드티밍·휴먼 업리프트 연구 등을 방법으로 예시함.",
               "refs": [
                 4
               ]
@@ -23398,8 +23641,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "모델 평가를 AI 모델의 특정 과제 성능을 평가·측정하는 절차로 소개하고, 위험 관리 방법의 하나로 둠.",
@@ -23611,6 +23854,14 @@
       },
       "research": [
         {
+          "title": "거부 정렬 제거 모델 유해성 평가 수행",
+          "orig": "인공지능안전연구소, 거부 정렬 제거 AI 모델 유해성 평가 수행",
+          "summary": "한국 AI안전연구소가 거부 정렬을 제거한 AI 모델의 유해성을 평가했다는 소식이며, 요약이 제공되지 않아 방법과 결과는 확인할 수 없다.",
+          "url": "https://aisi.re.kr/kor/article/view.do?articleId=131",
+          "date": "2026-11-03",
+          "source": "AISI Korea"
+        },
+        {
           "title": "청소년 정신건강 AI 응답 평가도구 AMHART",
           "orig": "Development, Validation and AI Chatbot Evaluation of the Adolescent Mental Health AI Response Tool",
           "summary": "임상가 참여로 청소년 정신건강 챗봇 응답 평가도구 AMHART를 개발·검증하고 4개 챗봇을 평가한 결과, 불안보다 우울, 중등도보다 중증 사례에서 기준 충족률이 낮았다.",
@@ -23633,14 +23884,6 @@
           "url": "https://arxiv.org/pdf/2610.30197",
           "date": "2026-10-28",
           "source": "arXiv"
-        },
-        {
-          "title": "AI 배포 허용성 관문: 독립 검증 평가 근거 요구",
-          "orig": "Deployment Admissibility Gate for AI Governance: Conditioning AI System Deployment on Independent, Verifiable Evaluation Evidence — ERES-ARH-2026-001 Amendment A1",
-          "summary": "AI 시스템 배포의 조건으로 독립적이고 검증 가능한 평가 근거를 요구하는 '배포 허용성 관문(Deployment Admissibility Gate)'을 AI 거버넌스 틀로 제안하는 것으로 보이나, 초록이 없어 제목만으로 판단했다.",
-          "url": "https://doi.org/10.13140/rg.2.2.18481.95848",
-          "date": "2026-10-28",
-          "source": "OpenAlex"
         }
       ],
       "library_docs": [
@@ -23698,6 +23941,7 @@
       "id": "safety-evaluation",
       "head": "안전성 평가",
       "en": "safety evaluation",
+      "en_search": "safety evaluation",
       "kit_id": "safety-evaluation",
       "alternatives": [
         {
@@ -23885,6 +24129,7 @@
       "id": "capability-evaluation",
       "head": "역량 평가",
       "en": "capability evaluation",
+      "en_search": "capability evaluation",
       "kit_id": "capability-evaluation",
       "alternatives": [
         {
@@ -23907,7 +24152,7 @@
           "역량을 충분히 끌어내지 못하면 위험이 과소평가되고, 모델이 평가 상황을 알아채 성능을 낮추는 샌드배깅 가능성도 제기됨."
         ],
         "distinction": {
-          "text": "'역량 평가'는 모델이 무엇을 할 수 있는지를, 성향 평가는 실제로 어떻게 행동하는 경향이 있는지를 봄. '안전성 평가'는 둘을 포함해 위험 전반을 보는 더 넓은 범주임.",
+          "text": "'역량 평가'는 모델이 무엇을 할 수 있는지를, '성향 평가(propensity evaluation)'는 실제로 어떻게 행동하는 경향이 있는지를 보며, '안전성 평가'는 둘을 포함해 위험 전반을 보는 더 넓은 범주임.",
           "terms": [
             "safety-evaluation",
             "capability"
@@ -23948,7 +24193,7 @@
               ]
             },
             {
-              "text": "안전 프레임워크가 평가 시점·빈도, 최신 기법 활용과 완전한 역량 도출 같은 원칙, 사용할 평가 유형, 결과 검증과 심화 평가 절차를 명시할 수 있다고 봄.",
+              "text": "안전 프레임워크가 평가 시점·빈도, 최신 기법 활용과 완전한 역량 유도 같은 원칙, 사용할 평가 유형, 결과 검증과 심화 평가 절차를 명시할 수 있다고 봄.",
               "refs": [
                 1
               ]
@@ -23969,7 +24214,7 @@
         },
         {
           "org": "NIST",
-          "sub": "AI 800-1",
+          "sub": "AI 800-1 초안, 2025",
           "points": [
             {
               "text": "오용 위험과 관련된 과업에서 모델 역량을 배포 전에 평가하고, 학습 중·학습 후·하위 시스템 통합 시점까지 개발 전반에 걸쳐 평가하도록 권고함.",
@@ -23984,7 +24229,7 @@
           "sub": "2025",
           "points": [
             {
-              "text": "시스템적 위험과 관련해 모델의 역량·성향·기능활용성·영향을 평가하는 최첨단 모델 평가를 요구하고, 예상치 못한 행동과 역량 한계를 찾는 개방형 테스트를 포함하도록 함.",
+              "text": "시스템적 위험과 관련해 모델의 역량·성향·어포던스·영향을 평가하는 최첨단 모델 평가를 요구하고, 예상치 못한 행동과 역량 한계를 찾는 개방형 테스트를 포함하도록 함.",
               "refs": [
                 4
               ]
@@ -24120,6 +24365,7 @@
       "id": "pre-deployment-evaluation",
       "head": "배포 전 평가",
       "en": "pre-deployment evaluation",
+      "en_search": "pre-deployment evaluation",
       "kit_id": "pre-deployment-evaluation",
       "alternatives": [],
       "chapter": "08",
@@ -24180,7 +24426,7 @@
         },
         {
           "org": "NIST",
-          "sub": "AI 800-1",
+          "sub": "AI 800-1 초안, 2025",
           "points": [
             {
               "text": "오용 위험을 낳을 수 있는 특정 역량의 성능을 측정하는 배포 전 평가를 권고하고, 저비용 시험 결과가 불확실하거나 위험 징후가 있으면 더 정밀한 측정을 하도록 함.",
@@ -24268,6 +24514,7 @@
       "id": "benchmark-s",
       "head": "벤치마크",
       "en": "benchmark",
+      "en_search": "benchmark",
       "kit_id": "benchmark-s",
       "alternatives": [
         {
@@ -24320,7 +24567,7 @@
           "sub": "2025·2026",
           "points": [
             {
-              "text": "벤치마크를 실제 사용을 대표하도록 고안된 고정 과제 집합에서 AI 시스템의 성능을 평가·비교하는, 표준화되고 대개 정량적인 시험·지표로 정의함. 일부 판본은 부적절한 행동의 정량화도 포함함.",
+              "text": "벤치마크를 실제 사용을 대표하도록 고안된 고정 과제 집합에서 AI 시스템의 성능을 평가·비교하는, 표준화되고 대개 정량적인 시험·지표로 정의하며, 일부 판본은 부적절한 행동의 정량화도 포함함.",
               "refs": [
                 1,
                 2
@@ -24336,7 +24583,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2024",
+          "sub": "AI 600-1, 2024",
           "points": [
             {
               "text": "편향·혐오 콘텐츠 정량화에 용도에 맞는 벤치마크를 쓰되, 학습·시험 데이터 교차 오염 등 벤치마크의 가정과 한계를 문서화하도록 권고함.",
@@ -24359,8 +24606,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "벤치마크를 실제 사용 사례를 대표하는 고정 과제 집합으로 AI 모델 성능을 평가·비교하는 표준화된 정량 시험으로 소개하고, 위험 평가의 정량 분석 자료로 예시함.",
@@ -24713,10 +24960,10 @@
           "source": "AI Risk Explorer"
         },
         {
-          "title": "AgentPhishing: 적응형 공격 하의 이메일 에이전트 벤치마크",
-          "orig": "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack",
-          "summary": "설득 원리를 활용해 에이전트별로 최적화한 피싱 메일 벤치마크(AgentPhishing)를 구축해 LLM 이메일 에이전트 9종을 평가했고, 4종이 피싱 탐지율 10% 미만, 악성 요청 순응률 45% 초과를 보였다.",
-          "url": "https://arxiv.org/abs/2610.31404v1",
+          "title": "증거 누락 시 LLM 에이전트의 안전성 벤치마크",
+          "orig": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+          "summary": "도구 응답에서 안전 관련 사실이 빠질 때 에이전트가 금지된 행동을 실행하는지와 누락 증거를 스스로 찾아 복구하는지를 6개 도메인 300쌍 과제와 10개 모델로 평가했고, 누락에 강한 모델이 반드시 증거 복구도 잘하는 것은 아님을 확인했다.",
+          "url": "https://arxiv.org/abs/2610.31650v1",
           "date": "2026-10-22",
           "source": "arXiv"
         }
@@ -24742,6 +24989,7 @@
       "id": "red-teaming",
       "head": "레드티밍",
       "en": "red teaming",
+      "en_search": "red teaming",
       "kit_id": "red-teaming",
       "alternatives": [
         {
@@ -24764,7 +25012,7 @@
           "참여자의 전문성과 시도 범위에 따라 결과가 크게 달라지고 재현이 어려워, 시도 범위와 성공 판정 기준을 함께 보고해야 한다는 논의가 있음."
         ],
         "distinction": {
-          "text": "'레드티밍'은 공격자 역할을 맡아 결함을 찾는 활동 전체를, '레드팀'은 그 활동을 수행하는 팀을 가리킴. '적대적 시험'은 적대적 입력으로 강건성을 확인하는 더 좁은 시험 방법을 뜻하는 경우가 많음.",
+          "text": "'레드티밍'은 공격자 역할을 맡아 결함을 찾는 활동 전체를, '레드팀'은 그 활동을 수행하는 팀을 가리키고, '적대적 시험'은 적대적 입력으로 강건성을 확인하는 더 좁은 시험 방법을 뜻하는 경우가 많음.",
           "terms": [
             "adversarial-testing"
           ]
@@ -24807,7 +25055,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2024",
+          "sub": "AI 600-1, 2024",
           "points": [
             {
               "text": "AI 레드티밍을 통제된 환경에서 개발자와 협력해 생성형 AI의 잠재적 부정적 행동·결과를 찾고 안전장치를 스트레스 테스트하는 실천으로 설명하고, 레드팀의 다양성과 전문성을 강조함.",
@@ -24822,7 +25070,7 @@
           "sub": "2025",
           "points": [
             {
-              "text": "레드티밍과 그 밖의 적대적 테스트를 질의응답 세트·벤치마크·인간 업리프트 연구 등과 함께 시스템적 위험을 평가하는 모델 평가 방법의 예시로 듦.",
+              "text": "레드티밍과 그 밖의 적대적 테스트를 질의응답 세트·벤치마크·휴먼 업리프트 연구 등과 함께 시스템적 위험을 평가하는 모델 평가 방법의 예시로 듦.",
               "refs": [
                 3
               ]
@@ -24830,8 +25078,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "안전성 확보 가이드라인은 레드티밍을 사람이나 자동화 시스템이 모의 적대자로서 조직의 시스템을 공격해 취약점을 식별하는 연습으로 설명함.",
@@ -24988,6 +25236,14 @@
           "source": "CSET Georgetown"
         },
         {
+          "title": "실무에서의 바이올렛 레드티밍: 전문가 워크숍 시범 사례",
+          "orig": "Violet Teaming in Practice: Lessons from a Pilot Expert Workshop on Governing Complex AI Systems",
+          "summary": "생물방어 관련 AI 역량을 가정한 시나리오로 기술·보안·운영·정책 전문가 워크숍을 열어 바이올렛 티밍을 시험했고, 뜻밖의 오용 경로와 기술적 안전장치를 넘어서는 개입 방안, 운영·정책상의 제약이 드러났다고 보고한다.",
+          "url": "https://doi.org/10.48550/arxiv.2610.41018",
+          "date": "2026-10-29",
+          "source": "arXiv (Cornell University)"
+        },
+        {
           "title": "OpenAI 내부 에이전트 모니터링 시스템 레드티밍",
           "orig": "Red-Teaming OpenAI's Internal Agent Monitoring Systems",
           "summary": "METR와 Redwood 직원이 3주간 OpenAI의 내부 misalignment 모니터링 시스템을 시범 레드티밍하여 감시 범위 누락과 우회 가능한 취약점 여러 건을 찾았고, OpenAI는 패치했다고 밝혔으나 METR이 이를 검증하지는 않았다.",
@@ -25002,14 +25258,6 @@
           "url": "https://blog.redwoodresearch.org/p/screwtape-adversarial-transcript",
           "date": "2026-10-16",
           "source": "RedwoodResearch"
-        },
-        {
-          "title": "CART: LLM 폐루프 적응형 레드팀 프레임워크",
-          "orig": "CART: Closed-Loop Adaptive Red Teaming for Large Language Models",
-          "summary": "평가 결과를 다음 테스트 설계에 반영하는 Challenger·Target·Judge 분리형 적응형 자동 레드팀 프레임워크를 제안하고, 고정 시드 재생보다 더 많은 실패와 높은 평균 위험을 찾아냄을 보였다.",
-          "url": "https://arxiv.org/abs/2609.27336v1",
-          "date": "2026-09-23",
-          "source": "arXiv"
         }
       ],
       "library_docs": [
@@ -25052,6 +25300,7 @@
       "id": "adversarial-testing",
       "head": "적대적 시험",
       "en": "adversarial testing",
+      "en_search": "adversarial testing",
       "kit_id": "adversarial-testing",
       "alternatives": [
         {
@@ -25109,7 +25358,7 @@
           "sub": "2025·2026",
           "points": [
             {
-              "text": "레드티밍과 적대적 공격을 위험 식별·평가의 주요 방법으로 보고, 자동·수동으로 만든 입력으로 최악의 행동·악용 기회·예상치 못한 실패를 찾는다고 설명함. 특별한 접근 권한이 필요할 수 있다고 지적함.",
+              "text": "레드티밍과 적대적 공격을 위험 식별·평가의 주요 방법으로 보고 자동·수동으로 만든 입력으로 최악의 행동·악용 기회·예상치 못한 실패를 찾는다고 설명하면서, 특별한 접근 권한이 필요할 수 있다고 지적함.",
               "refs": [
                 1
               ]
@@ -25259,6 +25508,7 @@
       "id": "attack-success-rate-asr",
       "head": "공격 성공률",
       "en": "attack success rate (ASR)",
+      "en_search": "attack success rate (ASR)",
       "kit_id": "attack-success-rate-asr",
       "alternatives": [
         {
@@ -25356,18 +25606,18 @@
       },
       "research": [
         {
-          "title": "탈옥 벤치마킹의 문제: 공격 성공률 실증 연구",
-          "orig": "Concerns in Benchmarking Jailbreaks: An Empirical Study of Attack Success Rates",
-          "summary": "오픈웨이트 모델 3종에 대한 8가지 탈옥 공격을 평가 방식 3가지로 비교해, 키워드 매칭과 LLM 평가자 간 ASR 격차가 크고 시도 횟수·배치에 따라 공격 순위가 뒤바뀌며 반복 샘플링 시 잔존 위험이 드러남을 보였다.",
-          "url": "https://arxiv.org/abs/2610.26595v1",
-          "date": "2026-10-19",
-          "source": "arXiv"
-        },
-        {
           "title": "공격 성공률을 넘어: 반복형 탈옥의 비용 반영 지표",
           "orig": "Beyond Attack Success Rate: Cost-Aware Metric for Evaluating Iterative LLM Jailbreaks",
           "summary": "피해 모델 호출 횟수에 불이익을 주는 지표 ASR_STEP을 제안하고, JailBreakBench에서 GCG·PAIR·PAP를 평가해 GCG는 7.0–8.7%p, PAIR는 3.4–12%p 하락하고 단일 단계 PAP는 변화가 없음을 확인했다.",
           "url": "https://arxiv.org/abs/2610.26589v1",
+          "date": "2026-10-19",
+          "source": "arXiv"
+        },
+        {
+          "title": "탈옥 벤치마킹의 문제: 공격 성공률 실증 연구",
+          "orig": "Concerns in Benchmarking Jailbreaks: An Empirical Study of Attack Success Rates",
+          "summary": "오픈웨이트 모델 3종에 대한 8가지 탈옥 공격을 평가 방식 3가지로 비교해, 키워드 매칭과 LLM 평가자 간 ASR 격차가 크고 시도 횟수·배치에 따라 공격 순위가 뒤바뀌며 반복 샘플링 시 잔존 위험이 드러남을 보였다.",
+          "url": "https://arxiv.org/abs/2610.26595v1",
           "date": "2026-10-19",
           "source": "arXiv"
         },
@@ -25401,6 +25651,7 @@
       "id": "llm-as-a-judge",
       "head": "LLM 심판",
       "en": "LLM-as-a-judge",
+      "en_search": "LLM-as-a-judge",
       "kit_id": "llm-as-a-judge",
       "alternatives": [
         {
@@ -25542,6 +25793,7 @@
       "id": "calibration",
       "head": "보정",
       "en": "calibration",
+      "en_search": "calibration",
       "kit_id": "calibration",
       "alternatives": [
         {
@@ -25689,7 +25941,8 @@
     {
       "id": "ai-audit",
       "head": "감사",
-      "en": "AI audit",
+      "en": "audit",
+      "en_search": "AI audit",
       "kit_id": "ai-audit",
       "alternatives": [
         {
@@ -25948,6 +26201,7 @@
       "id": "safety-case",
       "head": "안전 사례",
       "en": "safety case",
+      "en_search": "safety case",
       "kit_id": "safety-case",
       "alternatives": [
         {
@@ -26091,7 +26345,8 @@
     {
       "id": "ai-alignment",
       "head": "정렬",
-      "en": "AI alignment",
+      "en": "alignment",
+      "en_search": "AI alignment",
       "kit_id": "ai-alignment",
       "alternatives": [
         {
@@ -26113,7 +26368,7 @@
       "definition": {
         "lead": "AI 시스템이 자신의 역량을 개발자·이용자·사회 등 인간의 의도와 가치에 맞게 쓰도록 만드는 과제 또는 그런 성향을 의미함.",
         "points": [
-          "학습 목표·보상 신호는 사람이 실제로 바라는 것의 근사치이므로, 이 신호를 충실히 만족한 모델도 의도와 다르게 행동할 수 있음. 인간 피드백 기반 강화학습 등이 대표적 정렬 기법임.",
+          "학습 목표·보상 신호는 사람이 실제로 바라는 것의 근사치이므로 이 신호를 충실히 만족한 모델도 의도와 다르게 행동할 수 있으며, 인간 피드백 기반 강화학습 등이 대표적 정렬 기법임.",
           "역량 부족으로 인한 오류와 달리 정렬 실패는 역량이 높아질수록 피해가 커질 수 있어, 오정렬·기만적 정렬·통제 상실 논의의 출발점이 됨.",
           "누구의 의도·가치에 맞출지가 맥락에 따라 달라지며, 서로 다른 집단의 선호를 반영·조정하려는 다원적 정렬 접근도 제기됨."
         ],
@@ -26179,8 +26434,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "TTA",
+          "org": "범용 AI 위험 관리 프레임워크",
+          "sub": "AISI·TTA, 2026",
           "points": [
             {
               "text": "범용 AI 위험 관리 프레임워크는 정렬 원칙을 AI가 설정된 목표와 일치하게 작동하는지, 인간의 권리와 자율성을 존중하는지, 사회적 가치를 반영하는지 평가하는 기준으로 두고, 목표 지속성·인류 우선성·가치 보존성 위배에 따라 위험 점수를 매김.",
@@ -26366,36 +26621,36 @@
       },
       "research": [
         {
-          "title": "얕은 안전 정렬을 활용한 다중턴 방어",
-          "orig": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
-          "summary": "응답 초반의 얕은 안전 판단 구간에 평가→결정→응답 구조를 강화학습으로 학습시켜, 두 모델 계열과 14개 벤치마크에서 다중턴 탈옥 방어 성능을 높이면서 유용성은 대체로 유지했다.",
-          "url": "https://arxiv.org/abs/2610.40627v1",
-          "date": "2026-10-29",
+          "title": "거부 정렬 제거 모델 유해성 평가 수행",
+          "orig": "인공지능안전연구소, 거부 정렬 제거 AI 모델 유해성 평가 수행",
+          "summary": "한국 AI안전연구소가 거부 정렬을 제거한 AI 모델의 유해성을 평가했다는 소식이며, 요약이 제공되지 않아 방법과 결과는 확인할 수 없다.",
+          "url": "https://aisi.re.kr/kor/article/view.do?articleId=131",
+          "date": "2026-11-03",
+          "source": "AISI Korea"
+        },
+        {
+          "title": "선호 라벨 없는 가치 정렬: 삼자 생존성 정렬 검증",
+          "orig": "Operationalizing Value Alignment Without Instance-Level Preference Labels Controlled Validation of Triadic Viability Alignment",
+          "summary": "행위 주체·영향받는 타자·공유 조건을 구분하는 삼자 생존성 정렬(TVA)을 통제된 기호 시뮬레이션 21,600 에피소드에서 검증해, 개별 선호 라벨 없이도 과제 성공률을 유지하면서 공동 생존성이 높아짐을 보였으나 위험민감 제어·MPC 대비 우위나 구조적 샘플링 이점은 확인하지 못했다.",
+          "url": "https://doi.org/10.21203/rs.3.rs-11254502/v1",
+          "date": "2026-11-02",
+          "source": "Research Square"
+        },
+        {
+          "title": "다중 가치 정렬을 위한 활성값 스티어링 VIAS",
+          "orig": "VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations",
+          "summary": "조직 가치 준수를 위해 대상 가치 하나를 뺀 프롬프트와 전체 가치 프롬프트의 응답을 대조해 가치별 스티어링 벡터를 분리하는 VIAS를 제안하고, 프롬프팅과 함께 쓰면 세 개 7B급 모델 모두에서 모든 가치를 준수하는 비율이 프롬프팅 단독보다 높아졌다.",
+          "url": "https://arxiv.org/abs/2611.03518v1",
+          "date": "2026-11-02",
           "source": "arXiv"
         },
         {
-          "title": "OpenAI의 프론티어 모델 오정렬 탐지 체계",
-          "orig": "How we detect frontier model misalignment",
-          "summary": "OpenAI는 Hugging Face 사고 이후 activation probe부터 자동 조사까지 이어지는 다층 모니터링 체계로 훈련·평가·내부 사용·외부 배포 전반의 오정렬을 탐지하도록 확대했고, 사고 재현 시뮬레이션에서 sandbox 이탈 약 30분 뒤 경보가 울렸다고 밝혔다.",
-          "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-          "date": "2026-10-29",
-          "source": "OpenAI"
-        },
-        {
-          "title": "하우사어 LLM 안전 정렬 사례 연구",
-          "orig": "Aligning Large Language Models for Safety in African Languages: A Case Study of Hausa",
-          "summary": "PKU-SafeRLHF에서 파생한 하우사어 안전 선호 데이터셋 HausaSafeLM(사람 교정 3천 건, 기계번역 7천 건)을 만들어 SFT와 DPO를 비교했고, 저자원 언어에서는 거부율만으로 안전성을 판단하기 어렵다는 점을 확인했다.",
-          "url": "https://arxiv.org/abs/2610.37245v1",
-          "date": "2026-10-27",
-          "source": "arXiv"
-        },
-        {
-          "title": "디지털 민주주의의 LLM 유권자 대표성 편향과 정렬",
-          "orig": "AI Alignment for Digital Democracy: Fairer Voters Representation against LLM Biases",
-          "summary": "미국 대선 3회 데이터로 LLM이 유권자 투표를 모사할 때 인구통계 집단별 오차를 분석했고, 성별·학력 정보를 제거하면 최대 집단 오차가 줄지만 반복 질의나 공정성 지시는 오차를 줄이지 못하고 최대 두 배로 키울 수 있음을 확인했다.",
-          "url": "https://arxiv.org/abs/2610.32780v1",
-          "date": "2026-10-23",
-          "source": "arXiv"
+          "title": "디지털 악마: AI 정렬에 던지는 데카르트적 도전",
+          "orig": "The Digital Demon: a Cartesian challenge for AI alignment",
+          "summary": "신뢰된 경계 안에서 정렬된 AI도 시스템과 외부 세계 사이의 의미적 인터페이스를 적대적으로 조작당하면 해로운 결과를 낳을 수 있음을 개념화하고, 개념 증명 두 건으로 경계 상대적 정렬과 세계 정렬을 구분해 보였다.",
+          "url": "https://doi.org/10.1007/s43681-026-01435-2",
+          "date": "2026-10-30",
+          "source": "AI and Ethics"
         }
       ],
       "library_docs": [
@@ -26427,6 +26682,7 @@
       "id": "rl-from-human-feedback-rlhf",
       "head": "인간 피드백 기반 강화학습",
       "en": "reinforcement learning from human feedback (RLHF)",
+      "en_search": "reinforcement learning from human feedback (RLHF)",
       "kit_id": "rl-from-human-feedback-rlhf",
       "alternatives": [
         {
@@ -26444,9 +26700,13 @@
       "definition": {
         "lead": "사람이 모델 응답을 비교·평가한 선호 데이터로 보상 모델을 만들고, 그 보상을 높이도록 강화학습으로 언어 모델을 조정하는 학습 기법을 의미함.",
         "points": [
-          "응답 생성과 사람의 선호 비교, 보상 모델 학습, 보상을 최대화하는 강화학습 순으로 진행됨. 모범 답안을 쓰기보다 두 답을 비교하는 편이 쉽다는 점을 활용함.",
+          "응답 생성과 사람의 선호 비교, 보상 모델 학습, 보상을 최대화하는 강화학습 순으로 진행되며, 모범 답안을 쓰기보다 두 답을 비교하는 편이 쉽다는 점을 활용함.",
           "지시를 따르고 유해한 요청을 거절하는 성향을 만드는 대표적 정렬 기법이지만, 보상 모델이 사람의 평가 편향까지 학습해 아첨이나 보상 해킹을 낳을 수 있음."
-        ]
+        ],
+        "distinction": {
+          "text": "'인간 피드백 기반 강화학습'은 사람의 선호로 보상 모델을 학습해 강화학습을 거치는 방식이고, AI의 피드백을 쓰는 RLAIF·헌법 AI나 보상 모델 없이 선호 데이터를 직접 최적화하는 DPO는 그 변형·대안임.",
+          "terms": []
+        }
       },
       "related": [
         {
@@ -26491,7 +26751,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2024",
+          "sub": "AI 600-1, 2024",
           "points": [
             {
               "text": "생성형 AI 프로파일(MS-2.5-002)은 RLHF·미세조정·검색 증강 생성 등으로 인간의 영역 지식이 성능 향상에 얼마나 쓰였는지 문서화하도록 권고함.",
@@ -26576,6 +26836,14 @@
       },
       "research": [
         {
+          "title": "RLHF의 보상모델 수정 반응 사전 예측",
+          "orig": "Forecasting How RLHF Responds to Reward-Model Edits Before Training",
+          "summary": "보상모델을 수정했을 때 RLHF 정책의 응답 변화를 학습 전에 현재 정책 샘플과 신·구 RM 점수의 공분산으로 예측할 수 있음을 54회 RL 실험으로 보였고, 이 예측은 초기 약 30스텝까지 유효하며 200스텝에서는 순위가 뒤집혔다.",
+          "url": "https://arxiv.org/abs/2611.03244v1",
+          "date": "2026-11-02",
+          "source": "arXiv"
+        },
+        {
           "title": "AI 에이전트 권한 상승 사고의 포렌식 분석과 재현",
           "orig": "From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)",
           "summary": "OpenAI ExploitGym 평가 중 보도된 에이전트의 컨테이너 이탈·권한 상승 사건을 격리된 저장소 서버에서 재현하고(CVE-2026-65616), 학습·배포 환경의 잘못된 설정이 공통 원인이며 제로 트러스트 아키텍처로 이를 무력화할 수 있음을 분석했다.",
@@ -26598,14 +26866,6 @@
           "url": "https://arxiv.org/abs/2605.12991v1",
           "date": "2026-05-13",
           "source": "arXiv"
-        },
-        {
-          "title": "합리성 조정으로 RLHF의 인지 편향 완화",
-          "orig": "Mitigating Cognitive Bias in RLHF by Altering Rationality",
-          "summary": "RLHF 보상 학습에서 LLM 판정기로 인지 편향 가능성을 평가해 합리성 파라미터 beta를 비교 쌍마다 동적으로 조정했고, 편향이 강한 선호 데이터로 미세조정해도 더 합리적인 모델이 학습됨을 보였다.",
-          "url": "https://arxiv.org/abs/2605.06895v1",
-          "date": "2026-05-07",
-          "source": "arXiv"
         }
       ],
       "library_docs": [],
@@ -26624,6 +26884,7 @@
       "id": "interpretability",
       "head": "해석 가능성",
       "en": "interpretability",
+      "en_search": "interpretability",
       "kit_id": "interpretability",
       "alternatives": [
         {
@@ -26645,12 +26906,12 @@
       "definition": {
         "lead": "사람이 AI 모델의 내부 작동, 특히 특정 출력·결정이 왜 나왔는지를 이해할 수 있는 정도, 또는 이를 밝히려는 연구를 의미함.",
         "points": [
-          "특정 개념이 신경망 내부에 어떻게 표현되는지 찾고, 그 표현을 조작했을 때 행동이 예상대로 바뀌는지 확인하는 방식으로 연구됨. 기계적 해석 가능성이 대표적 갈래임.",
+          "특정 개념이 신경망 내부에 어떻게 표현되는지 찾고 그 표현을 조작했을 때 행동이 예상대로 바뀌는지 확인하는 방식으로 연구되며, 기계적 해석 가능성이 대표적 갈래임.",
           "평가 중에만 협조하거나 말과 다르게 계산하는 등 행동 관찰만으로 드러나지 않는 기만적 정렬·계략적 행동을 확인할 수단으로 기대됨.",
           "대형 모델 전체를 설명하는 단계에는 이르지 못했고, 특정 역량이나 회로를 부분적으로 규명하는 수준이라는 평가가 있음."
         ],
         "distinction": {
-          "text": "'해석 가능성'은 모델 내부 계산 자체를 이해하는 것을, '설명 가능한 AI'는 사람이 납득·활용할 수 있는 설명을 만들어 제시하는 것을 목표로 함.",
+          "text": "'해석 가능성'은 모델 내부 계산 자체를 이해하는 것을, '설명 가능한 AI'는 사람이 납득·활용할 수 있는 설명을 만들어 제시하는 것을 목표로 하나, NIST AI RMF는 두 말을 다른 축으로 정의하므로 인용할 때 출처의 정의를 확인해야 함.",
           "terms": [
             "explainable-ai-xai"
           ]
@@ -26706,7 +26967,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "설명 가능성은 AI 시스템 작동 메커니즘의 표현, 해석 가능성은 설계된 기능 목적의 맥락에서 출력이 갖는 의미로 구분함.",
@@ -26743,11 +27004,11 @@
         },
         {
           "n": 2,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.192, p.201–202, p.223",
-            "pages_printed": "p.192, p.201–202, p.223"
+            "pages_printed": "p.192, p.201–202; Glossary p.223"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         },
@@ -26988,6 +27249,7 @@
       "id": "explainable-ai-xai",
       "head": "설명 가능한 AI",
       "en": "explainable AI (XAI)",
+      "en_search": "explainable AI (XAI)",
       "kit_id": "explainable-ai-xai",
       "alternatives": [
         {
@@ -27153,6 +27415,7 @@
       "id": "safeguard",
       "head": "안전장치",
       "en": "safeguard",
+      "en_search": "safeguard",
       "kit_id": "safeguard",
       "alternatives": [],
       "chapter": "09",
@@ -27170,7 +27433,7 @@
           "탈옥·미세조정 등으로 우회·제거될 수 있어 단일 조치가 아니라 다층 방어로 설계해야 한다는 견해가 일반적임."
         ],
         "distinction": {
-          "text": "'안전장치'는 피해를 막기 위한 보호 조치 전반을 가리키는 상위 개념이고, '가드레일'은 그중 모델 바깥에서 입출력과 행동을 실시간으로 검사·차단하는 기술적 통제 장치를 가리킴.",
+          "text": "'안전장치'는 피해를 막기 위한 보호 조치 전반을 가리키는 상위 개념이고, '가드레일'은 그중 주로 모델 바깥에서 입출력과 행동을 실시간으로 검사·차단하는 기술적 통제 장치를 가리킴.",
           "terms": [
             "ai-guardrails"
           ]
@@ -27219,7 +27482,7 @@
         },
         {
           "org": "NIST",
-          "sub": "AI 800-1",
+          "sub": "AI 800-1 초안, 2025",
           "points": [
             {
               "text": "배포 결정은 가용한 안전장치와 그 효과가 오용 위험을 충분히 완화하는지에 근거해야 하며, 위협 행위자의 우회 가능성을 고려해 안전 여유를 두도록 권고함.",
@@ -27242,8 +27505,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "안전성 확보 가이드라인",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "위험 완화 조치를 모델 설계(유해 요청 거부 학습), 보안, 배포 전략, 운영(실시간 모니터링) 전반에 다층적으로 설계하도록 함.",
@@ -27478,7 +27741,8 @@
     {
       "id": "ai-guardrails",
       "head": "가드레일",
-      "en": "AI guardrails",
+      "en": "guardrail",
+      "en_search": "AI guardrails",
       "kit_id": "ai-guardrails",
       "alternatives": [
         {
@@ -27494,13 +27758,13 @@
       "color": "#0369a1",
       "category_color": "#1d5fa8",
       "definition": {
-        "lead": "모델 바깥에서 입력·출력·도구 사용을 검사하고 차단·수정·제한해 유해하거나 정책에 어긋난 동작을 막는 외부 통제 장치를 말함.",
+        "lead": "주로 모델 바깥에서 입력·출력·도구 사용을 검사하고 차단·수정·제한해 유해하거나 정책에 어긋난 동작을 막는 통제 장치를 말하며, 문헌에 따라 학습으로 내장한 제약까지 포함하는 넓은 뜻으로도 씀.",
         "points": [
           "입력 필터, 출력 분류기, 금지 규칙, 도구·권한 제한, 승인이 필요한 행위를 정한 정책 엔진 등으로 구성되며, 모델을 다시 학습시키지 않고도 정책을 바꾸거나 즉시 차단할 수 있음.",
           "탈옥·프롬프트 인젝션으로 우회될 수 있어, 학습된 거부·샌드박싱·권한 최소화 등과 겹쳐 쓰는 다층 방어의 한 층으로 다뤄짐."
         ],
         "distinction": {
-          "text": "'안전장치(safeguard)'는 학습 단계의 안전 조정, 접근 통제, 모니터링, 인간 감독까지 포괄하는 보호 조치 전반을 가리키는 상위 개념이고, '가드레일'은 그중 모델 바깥에서 입출력과 행동을 실시간으로 통제하는 기술적 장치를 가리킴.",
+          "text": "'안전장치(safeguard)'는 학습 단계의 안전 조정, 접근 통제, 모니터링, 인간 감독까지 포괄하는 보호 조치 전반을 가리키는 상위 개념이고, '가드레일'은 그중 주로 모델 바깥에서 입출력과 행동을 실시간으로 통제하는 기술적 장치를 가리킴.",
           "terms": [
             "safeguard"
           ]
@@ -27550,7 +27814,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2024",
+          "sub": "AI 600-1, 2024",
           "points": [
             {
               "text": "생성형 AI 프로파일(MS-2.5-006)은 보안·안전 가드레일을 정기적으로 검토하되, 특히 시스템이 새로운 상황에서 운영될 때 검토하도록 권고함.",
@@ -27680,6 +27944,14 @@
       },
       "research": [
         {
+          "title": "가림: 한국어 가드레일 학습·평가 데이터",
+          "orig": "cycloevan/garim-guard",
+          "summary": "한국어 PII 탐지와 공격(탈옥·프롬프트 주입) 분류용 가드레일 모델 가림 L1의 학습·평가 코퍼스, 교사 모델 3종 원출력, 학습 기록을 공개한 데이터셋이다.",
+          "url": "https://huggingface.co/datasets/cycloevan/garim-guard",
+          "date": "2026-10-27",
+          "source": "Hugging Face"
+        },
+        {
           "title": "LLM 가드레일 경량화: 양자화 Llama Guard 3 평가",
           "orig": "How Lightweight Can LLM Guardrails Become? Evaluating Quantized Llama Guard 3 for Efficient AI Safety",
           "summary": "Llama Guard 3를 양자화해 가드레일 모델을 얼마나 가볍게 만들 수 있는지 평가한 연구로 보이나, 초록이 없어 구체적 결과는 확인할 수 없다.",
@@ -27702,14 +27974,6 @@
           "url": "https://arxiv.org/abs/2610.03470v1",
           "date": "2026-10-02",
           "source": "arXiv"
-        },
-        {
-          "title": "PlanGuard: 임바디드 에이전트의 다단계 계획 안전 가드레일",
-          "orig": "PlanGuard: A Guardrail for Multi-Step Plan Safety in Embodied Agents",
-          "summary": "임바디드 에이전트의 다단계 계획이 실행 전에 물리적으로 안전한지 판별하는 가드레일 PlanGuard와 MSP-Safe 데이터셋, 소형 모델용 증류 기법 STAC-OPD를 제안하고, PlanGuard-2B가 평균 정확도 87.15%를 기록했다.",
-          "url": "https://arxiv.org/abs/2609.32801v1",
-          "date": "2026-09-26",
-          "source": "arXiv"
         }
       ],
       "library_docs": [],
@@ -27727,6 +27991,7 @@
       "id": "sandboxing",
       "head": "샌드박싱",
       "en": "sandboxing",
+      "en_search": "sandboxing",
       "kit_id": "sandboxing",
       "alternatives": [
         {
@@ -27749,9 +28014,13 @@
         "lead": "코드나 AI 에이전트를 파일·네트워크·자원 접근이 제한된 격리 환경에서만 실행해, 오작동하거나 탈취돼도 피해 범위를 좁히는 기법을 의미함.",
         "points": [
           "접근 가능한 파일을 지정 디렉터리로 한정하고, 네트워크를 차단하거나 허용 목록만 열며, 메모리·시간 사용에 상한을 두는 방식으로 구현됨.",
-          "AI 에이전트가 코드 실행·도구 사용을 하게 되면서 프롬프트 인젝션 등으로 통제가 넘어가도 할 수 있는 일을 제한하는 핵심 안전장치가 됨. 위험한 역량 평가 환경에도 쓰임.",
+          "AI 에이전트가 코드 실행·도구 사용을 하게 되면서 프롬프트 인젝션 등으로 통제가 넘어가도 할 수 있는 일을 제한하는 핵심 안전장치가 됐고, 위험한 역량 평가 환경에도 쓰임.",
           "권한 최소화, 되돌릴 수 없는 행위를 사람이 승인하는 절차와 함께 적용되며, 격리 탈출이나 자기 유출 시도를 막을 만큼 견고한지가 쟁점임."
-        ]
+        ],
+        "distinction": {
+          "text": "'샌드박싱'은 AI의 실행 환경을 격리하는 기술적 통제이고, 규제 특례를 주는 제도인 '규제 샌드박스'나 평가에서 역량을 낮춰 보이는 '샌드배깅'과는 다른 말임.",
+          "terms": []
+        }
       },
       "related": [
         {
@@ -27796,7 +28065,7 @@
         },
         {
           "org": "NIST",
-          "sub": "AI 800-1",
+          "sub": "AI 800-1 초안, 2025",
           "points": [
             {
               "text": "사이버 역량 평가에서 모델이 격리되거나 모의된 무해한 환경에서 실제와 유사한 시스템·자원과 상호작용하게 해 역량을 직접 측정할 수 있다고 봄.",
@@ -27933,6 +28202,7 @@
       "id": "human-oversight",
       "head": "인간 감독",
       "en": "human oversight",
+      "en_search": "human oversight",
       "kit_id": "human-oversight",
       "alternatives": [
         {
@@ -27950,12 +28220,12 @@
       "definition": {
         "lead": "사람이 AI 시스템의 작동을 이해·모니터링하고, 필요할 때 출력을 무시·번복하거나 시스템을 중단할 수 있도록 보장하는 원칙과 그 구현 체계를 의미함.",
         "points": [
-          "감독자가 시스템의 역량과 한계를 알고, 자동화 편향을 경계하며, 개입·중단할 실질적 권한과 수단을 갖추는 것이 요건이 됨. 이를 가능하게 하는 설계가 개발 단계부터 들어가야 함.",
+          "감독자가 시스템의 역량과 한계를 알고 자동화 편향을 경계하며 개입·중단할 실질적 권한과 수단을 갖추는 것이 요건이 되고, 이를 가능하게 하는 설계가 개발 단계부터 들어가야 함.",
           "고위험 AI와 AI 에이전트에서 오작동·오정렬로 인한 피해를 줄이고 책임성을 확보하는 핵심 장치로, 규제와 위험 관리 체계에서 요구 사항으로 다뤄짐.",
           "검토 시간·근거 정보·권한이 없으면 승인만 남는 형식적 감독이 되어 책임만 사람에게 옮겨 가는 문제가 지적됨."
         ],
         "distinction": {
-          "text": "'인간 감독'은 감독 가능성을 보장하는 상위 원칙·요건이고, '휴먼 인 더 루프'는 사람이 결정 과정 안에서 개별 결정을 직접 승인·개입하는 구체적 구현 방식 중 하나임. 휴먼 인 더 루프가 없어도 모니터링·중단 권한으로 인간 감독이 이뤄질 수 있음.",
+          "text": "'인간 감독'은 감독 가능성을 보장하는 상위 원칙·요건이고 '휴먼 인 더 루프'는 사람이 결정 과정 안에서 개별 결정을 직접 승인·개입하는 구체적 구현 방식 중 하나로, 휴먼 인 더 루프가 없어도 모니터링·중단 권한으로 인간 감독이 이뤄질 수 있음.",
           "terms": [
             "human-in-the-loop"
           ]
@@ -27985,13 +28255,19 @@
       ],
       "frameworks": [
         {
-          "org": "EU AI HLEG",
-          "sub": "2019",
+          "org": "EU AI Act",
+          "sub": "2024/1689",
           "points": [
             {
-              "text": "신뢰할 수 있는 AI 윤리 가이드라인은 인간 감독을 AI 시스템이 인간의 자율성을 훼손하거나 다른 부정적 영향을 낳지 않도록 돕는 장치로 보고, 휴먼 인 더 루프(HITL) 등의 거버넌스 메커니즘으로 달성할 수 있다고 봄.",
+              "text": "제14조는 고위험 AI 시스템을 사용 중 사람이 효과적으로 감독할 수 있게 설계하도록 하고, 감독자가 적절하고 비례적인 범위에서 역량과 한계를 이해하고 자동화 편향을 인식하며 출력을 무시·번복하거나 시스템을 멈출 수 있게 하도록 함.",
               "refs": [
-                1
+                5
+              ]
+            },
+            {
+              "text": "옴니버스 규정으로 이 요건의 적용일은 부속서 III 시스템 2027.12.2, 부속서 I 시스템 2028.8.2로 늦춰짐.",
+              "refs": [
+                6
               ]
             }
           ]
@@ -28010,7 +28286,7 @@
         },
         {
           "org": "NIST",
-          "sub": "AI 100-1",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "AI 의사결정·감독에서 인간의 역할과 책임을 명확히 정의·구분해야 하며, 인간과 AI의 구성은 완전 자율부터 완전 수동까지 걸친다고 봄.",
@@ -28025,7 +28301,7 @@
           "sub": "2026",
           "points": [
             {
-              "text": "제34조는 고영향 AI 사업자 책무로 사람의 관리·감독을 둠. 사례집은 오류·성능 저하 등 비상 시 사람이 즉시 통제·개입할 기준과 방법, 정기 점검·교육 체계로 설명함.",
+              "text": "제34조는 고영향 AI 사업자 책무로 사람의 관리·감독을 두고, 사례집은 이를 오류·성능 저하 등 비상 시 사람이 즉시 통제·개입할 기준과 방법, 정기 점검·교육 체계로 설명함.",
               "refs": [
                 4
               ]
@@ -28034,16 +28310,6 @@
         }
       ],
       "refs": [
-        {
-          "n": 1,
-          "text": "AI HLEG (2019). Ethics Guidelines for Trustworthy AI, 1.1",
-          "evidence": {
-            "document_id": "doc-4a89863a9655",
-            "pages": "p.18",
-            "pages_printed": "p.16"
-          },
-          "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai"
-        },
         {
           "n": 2,
           "text": "International AI Safety Report 2026",
@@ -28075,6 +28341,21 @@
           },
           "url": "https://iaae.ai/research/?bmode=view&idx=170644595",
           "library_id": "doc-2e5a546ecd68"
+        },
+        {
+          "n": 5,
+          "text": "EU AI Act, Art. 14",
+          "evidence": {
+            "document_id": "doc-bba630444b32",
+            "pages": "p.60–61",
+            "pages_printed": "p.60–61"
+          },
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+        },
+        {
+          "n": 6,
+          "text": "Regulation (EU) 2026/1744, Art. 1(39)·(40)",
+          "url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj"
         }
       ],
       "commentary": [
@@ -28165,6 +28446,7 @@
       "id": "human-in-the-loop",
       "head": "휴먼 인 더 루프",
       "en": "human-in-the-loop (HITL)",
+      "en_search": "human-in-the-loop (HITL)",
       "kit_id": "human-in-the-loop-hitl",
       "alternatives": [
         {
@@ -28186,7 +28468,7 @@
       "definition": {
         "lead": "AI 시스템의 결정·행동 과정 안에 사람이 직접 참여해, 실행 전에 검토·승인·수정할 수 있도록 설계한 운영 방식을 말함.",
         "points": [
-          "사람이 개별 결정마다 확인하거나, 신뢰도가 낮은 출력·되돌릴 수 없는 행위 등 특정 지점에서 승인하도록 하는 방식으로 구현됨. AI 에이전트의 고위험 행위 통제에 자주 쓰임.",
+          "사람이 개별 결정마다 확인하거나 신뢰도가 낮은 출력·되돌릴 수 없는 행위 등 특정 지점에서 승인하도록 하는 방식으로 구현되며, AI 에이전트의 고위험 행위 통제에 자주 쓰임.",
           "금융·의료·치안처럼 잘못된 결정의 피해가 큰 영역에서 직접 감독 수단이 되지만, 결정 속도·규모 때문에 비현실적인 경우가 많음.",
           "사람이 AI 출력을 과신하는 자동화 편향, 검토 시간·정보 부족 탓에 승인만 남는 형식적 개입이 한계로 지적됨."
         ],
@@ -28239,37 +28521,13 @@
           ]
         },
         {
-          "org": "NIST",
-          "sub": "2023",
-          "points": [
-            {
-              "text": "의사결정·감독에서 사람의 역할과 책임을 명확히 정의·구분해야 하며, 사람과 AI의 구성은 완전 자율부터 완전 수동까지 걸친다고 봄.",
-              "refs": [
-                2
-              ]
-            }
-          ]
-        },
-        {
           "org": "EU AI HLEG",
           "sub": "2019",
           "points": [
             {
-              "text": "인간 감독은 AI 시스템이 인간의 자율성을 훼손하지 않도록 돕는 장치이며, 휴먼 인 더 루프 같은 거버넌스 메커니즘으로 달성할 수 있다고 봄.",
+              "text": "HITL을 시스템의 모든 의사결정 주기에 사람이 개입할 수 있는 역량으로, HOTL(human-on-the-loop)을 설계 주기 개입과 작동 모니터링 역량으로, HIC(human-in-command)를 전반적 활동을 감독하고 언제 어떻게 쓸지 결정하는 역량으로 구분하고, HITL은 많은 경우 가능하지도 바람직하지도 않다고 봄.",
               "refs": [
                 3
-              ]
-            }
-          ]
-        },
-        {
-          "org": "한국",
-          "sub": "2026",
-          "points": [
-            {
-              "text": "고영향 AI 사업자 책무인 사람의 관리·감독을 오류·성능 저하 등 비상 상황에서 사람이 즉시 통제·개입할 수 있는 기준과 방법의 확립으로 설명함.",
-              "refs": [
-                4
               ]
             }
           ]
@@ -28288,16 +28546,6 @@
           "library_id": "doc-dd849bfee4fe"
         },
         {
-          "n": 2,
-          "text": "NIST AI 100-1 (AI RMF 1.0), Appendix C",
-          "evidence": {
-            "document_id": "doc-7576edb531d9",
-            "pages": "p.45–46",
-            "pages_printed": "p.40–41"
-          },
-          "url": "https://doi.org/10.6028/NIST.AI.100-1"
-        },
-        {
           "n": 3,
           "text": "AI HLEG (2019). Ethics Guidelines for Trustworthy AI, 1.1",
           "evidence": {
@@ -28306,17 +28554,6 @@
             "pages_printed": "p.16"
           },
           "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai"
-        },
-        {
-          "n": 4,
-          "text": "『인공지능기본법 지원데스크 사례집』(2026), 제34조",
-          "evidence": {
-            "document_id": "doc-db293b2c15ea",
-            "pages": "p.25",
-            "pages_printed": "p.17"
-          },
-          "url": "https://iaae.ai/research/?bmode=view&idx=170644595",
-          "library_id": "doc-2e5a546ecd68"
         }
       ],
       "commentary": [],
@@ -28381,6 +28618,7 @@
       "id": "adversarial-training",
       "head": "적대적 학습",
       "en": "adversarial training",
+      "en_search": "adversarial training",
       "kit_id": "adversarial-training",
       "alternatives": [
         {
@@ -28466,11 +28704,11 @@
         },
         {
           "n": 2,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.192, p.218–219",
-            "pages_printed": "p.192, p.218–219"
+            "pages_printed": "p.192; Glossary p.218–219"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         }
@@ -28576,7 +28814,7 @@
           "summary": "영어 중심의 T-LAT 탈옥 방어를 한국어를 포함한 9개 언어로 확장하고 번역 기반 다국어 탈옥 데이터셋을 공개했으며, LLaMA-2-7b-chat의 다국어 탈옥 성공률을 기본 모델 대비 약 75% 낮추면서 MMLU 성능은 유지했다.",
           "url": "https://doi.org/10.18653/v1/2025.winlp-main.27",
           "date": "2025-01-01",
-          "source": "학술지"
+          "source": "Widening NLP Workshop (WiNLP)"
         }
       ],
       "library_docs": [],
@@ -28597,6 +28835,7 @@
       "id": "machine-unlearning",
       "head": "머신 언러닝",
       "en": "machine unlearning",
+      "en_search": "machine unlearning",
       "kit_id": "machine-unlearning",
       "alternatives": [
         {
@@ -28681,6 +28920,7 @@
       "id": "cyber-defense",
       "head": "사이버 방어",
       "en": "cyber defence",
+      "en_search": "cyber defence",
       "kit_id": "cyber-defense",
       "alternatives": [
         {
@@ -28827,6 +29067,7 @@
       "id": "vulnerability-detection",
       "head": "취약점 탐지",
       "en": "vulnerability detection",
+      "en_search": "vulnerability detection",
       "kit_id": "vulnerability-detection",
       "alternatives": [
         {
@@ -28974,7 +29215,8 @@
     {
       "id": "ai-watermarking",
       "head": "워터마킹",
-      "en": "AI watermarking",
+      "en": "watermarking",
+      "en_search": "AI watermarking",
       "kit_id": "ai-watermarking",
       "alternatives": [
         {
@@ -29050,11 +29292,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.201–202, p.227–228",
-            "pages_printed": "p.201–202, p.227–228"
+            "pages_printed": "p.201–202; Glossary p.227–228"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         }
@@ -29208,6 +29450,7 @@
       "id": "provenance-metadata",
       "head": "출처 메타데이터",
       "en": "provenance metadata",
+      "en_search": "provenance metadata",
       "kit_id": "provenance-metadata",
       "alternatives": [],
       "chapter": "09",
@@ -29320,7 +29563,8 @@
     {
       "id": "ai-safety",
       "head": "안전",
-      "en": "AI safety",
+      "en": "safety",
+      "en_search": "AI safety",
       "kit_id": "ai-safety",
       "alternatives": [
         {
@@ -29346,7 +29590,7 @@
           "범용 AI의 역량이 빠르게 늘면서 개별 제품 결함을 넘어 악의적 사용, 시스템적 위험, 통제 상실까지 다루는 분야로 범위가 넓어짐."
         ],
         "distinction": {
-          "text": "'안전(safety)'이 오작동·오용을 포함해 피해를 일으키지 않는 성질 전반을 가리킨다면, '사이버 보안(security)'은 의도적 공격으로부터 시스템·데이터·모델 가중치를 보호하는 데 초점을 둠.",
+          "text": "'안전(safety)'이 오작동·오용을 포함해 피해를 일으키지 않는 성질 전반을 가리킨다면, '보안(security)'은 의도적 공격으로부터 시스템·데이터·모델 가중치를 보호하는 데 초점을 둠.",
           "terms": [
             "cybersecurity"
           ]
@@ -29389,7 +29633,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "AI RMF 1.0은 안전을 신뢰할 수 있는 AI의 특성으로 두고, 정해진 조건에서 사람의 생명·건강·재산이나 환경을 위태롭게 하는 상태로 이어지지 않아야 한다고 정의함(ISO/IEC TS 5723 인용).",
@@ -29484,12 +29728,20 @@
       },
       "research": [
         {
-          "title": "템플릿 기반 다국어 안전 학습 데이터 확장",
-          "orig": "How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates",
-          "summary": "유해 프롬프트에서 안전 템플릿을 추출해 번역하고 문화별 개체로 채우는 방식으로 60개 언어의 거부·무해 코퍼스 MSafeTemp를 만들었으며, 영어 평가만으로는 다국어 안전성을 오판하고 현지화 변형이 번역만으로 드러나지 않는 실패를 찾아냄을 보였다.",
-          "url": "https://arxiv.org/abs/2610.40516v1",
-          "date": "2026-10-29",
-          "source": "arXiv"
+          "title": "거부 정렬 제거 모델 유해성 평가 수행",
+          "orig": "인공지능안전연구소, 거부 정렬 제거 AI 모델 유해성 평가 수행",
+          "summary": "한국 AI안전연구소가 거부 정렬을 제거한 AI 모델의 유해성을 평가했다는 소식이며, 요약이 제공되지 않아 방법과 결과는 확인할 수 없다.",
+          "url": "https://aisi.re.kr/kor/article/view.do?articleId=131",
+          "date": "2026-11-03",
+          "source": "AISI Korea"
+        },
+        {
+          "title": "텍스트-이미지 모델 안전필터 우회 탈옥과 방어",
+          "orig": "A Safety-aware Jailbreak Approach to Bypass Security Filters for Generating Harmful Media with Text-to-Image models",
+          "summary": "PGD 공격과 안전 인지 프롬프트 최적화를 결합한 T2I 탈옥 기법으로 DALL·E, IMAGEN 등 상용 모델의 안전필터를 우회해 유해 이미지를 생성하고, CLIP 어텐션 분할 기반의 위험·적대적 프롬프트 탐지기와 세 개의 데이터셋을 제안했다.",
+          "url": "https://doi.org/10.1145/3856801",
+          "date": "2026-11-02",
+          "source": "ACM Transactions on Intelligent Systems and Technology"
         },
         {
           "title": "얕은 안전 정렬을 활용한 다중턴 방어",
@@ -29500,19 +29752,11 @@
           "source": "arXiv"
         },
         {
-          "title": "스트리밍 추론용 적응형 깊이-시간 안전장치 ADTGuard",
-          "orig": "ADTGuard: Adaptive Depth-Time Safeguard for Streaming Inference in Large Language Models",
-          "summary": "응답 단위 라벨만으로 토큰별 위험 시점을 점진적으로 정제하고 층 선택을 적응시켜, 스트리밍 생성 중 유해 토큰을 공개 전에 탐지하는 가드레일을 제안하며 16M 학습 파라미터로 최신 안전장치와 대등하거나 능가한다고 보고한다.",
-          "url": "https://arxiv.org/abs/2610.36574v1",
-          "date": "2026-10-27",
-          "source": "arXiv"
-        },
-        {
-          "title": "하우사어 LLM 안전 정렬 사례 연구",
-          "orig": "Aligning Large Language Models for Safety in African Languages: A Case Study of Hausa",
-          "summary": "PKU-SafeRLHF에서 파생한 하우사어 안전 선호 데이터셋 HausaSafeLM(사람 교정 3천 건, 기계번역 7천 건)을 만들어 SFT와 DPO를 비교했고, 저자원 언어에서는 거부율만으로 안전성을 판단하기 어렵다는 점을 확인했다.",
-          "url": "https://arxiv.org/abs/2610.37245v1",
-          "date": "2026-10-27",
+          "title": "템플릿 기반 다국어 안전 학습 데이터 확장",
+          "orig": "How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates",
+          "summary": "유해 프롬프트에서 안전 템플릿을 추출해 번역하고 문화별 개체로 채우는 방식으로 60개 언어의 거부·무해 코퍼스 MSafeTemp를 만들었으며, 영어 평가만으로는 다국어 안전성을 오판하고 현지화 변형이 번역만으로 드러나지 않는 실패를 찾아냄을 보였다.",
+          "url": "https://arxiv.org/abs/2610.40516v1",
+          "date": "2026-10-29",
           "source": "arXiv"
         }
       ],
@@ -29562,6 +29806,7 @@
       "id": "ai-governance",
       "head": "AI 거버넌스",
       "en": "AI governance",
+      "en_search": "AI governance",
       "kit_id": "ai-governance",
       "alternatives": [
         {
@@ -29659,6 +29904,14 @@
       },
       "research": [
         {
+          "title": "바이올렛 티밍 실습: 생물방어 AI 거버넌스 시범 워크숍",
+          "orig": "Violet Teaming in Practice",
+          "summary": "기술·정책·사회적 고려를 통합하는 violet teaming을 생물방어 관련 AI 역량 거버넌스에 적용한 시범 전문가 워크숍을 기록했고, 숨은 오용 경로와 기술적 안전장치 너머의 개입 수단, 운영·정책상 제약을 확인했다.",
+          "url": "https://cset.georgetown.edu/publication/violet-teaming-in-practice",
+          "date": "2026-11-02",
+          "source": "CSET Georgetown"
+        },
+        {
           "title": "공시 불완전 시 AI 거버넌스 자동 검토 벤치마크",
           "orig": "When Disclosure Is Incomplete: An Evidence-Withdrawal Benchmark for Automated AI Governance Reviews",
           "summary": "초록이 없어 제목만으로 판단하면, 증거를 일부 제외해 공시가 불완전한 상황에서 AI 거버넌스 자동 검토를 평가하는 벤치마크로 보인다.",
@@ -29681,14 +29934,6 @@
           "url": "https://rand.org/pubs/perspectives/PEA5380-1.html",
           "date": "2026-10-28",
           "source": "RAND"
-        },
-        {
-          "title": "AGI 거버넌스를 위한 기계 검증형 규정 준수 모델",
-          "orig": "Machine-Checkable Compliance for AGI Governance: Formalizing Principles as Auditable Norms and Evidence-Linked Indicators",
-          "summary": "AGI 거버넌스 원칙을 LegalRuleML 기반의 기계 검증 가능한 규범과 증거 연계 지표로 형식화하고 참조 구현을 제시했으며, 최신 프론티어 모델 문서가 AGI 특화 위험을 기계 검증 가능한 형태로 보고하지 않음을 확인했다.",
-          "url": "https://doi.org/10.3390/aisoc1020007",
-          "date": "2026-10-27",
-          "source": "AI for Society"
         }
       ],
       "library_docs": [
@@ -29732,6 +29977,7 @@
       "id": "ai-ethics",
       "head": "AI 윤리",
       "en": "AI ethics",
+      "en_search": "AI ethics",
       "kit_id": "ai-ethics",
       "alternatives": [],
       "chapter": "10",
@@ -29893,6 +30139,7 @@
       "id": "responsible-ai",
       "head": "책임 있는 AI",
       "en": "responsible AI",
+      "en_search": "responsible AI",
       "kit_id": "responsible-ai",
       "alternatives": [
         {
@@ -30014,6 +30261,14 @@
       ],
       "library_docs": [
         {
+          "id": "doc-c0de3336b7c7",
+          "title": "인도 TRAI 통신 분야 책임있는 AI 가이드라인 초안",
+          "date": "2026-10-30",
+          "flag": "🇮🇳",
+          "org": "",
+          "kind": "가이드라인·원칙"
+        },
+        {
           "id": "doc-21cc1349123f",
           "title": "뉴펀들랜드 래브라도 책임 있는 AI 활용 정책",
           "date": "2026-09-30",
@@ -30036,14 +30291,6 @@
           "flag": "🇳🇿",
           "org": "",
           "kind": "가이드라인·원칙"
-        },
-        {
-          "id": "doc-42861dd3d7ce",
-          "title": "사우디 책임 있는 AI 정책",
-          "date": "2026-09-08",
-          "flag": "🇸🇦",
-          "org": "",
-          "kind": "전략·정책"
         }
       ],
       "rel": {
@@ -30060,6 +30307,7 @@
       "id": "trustworthy-ai",
       "head": "신뢰할 수 있는 AI",
       "en": "trustworthy AI",
+      "en_search": "trustworthy AI",
       "kit_id": "trustworthy-ai",
       "alternatives": [
         {
@@ -30131,7 +30379,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "AI RMF 1.0은 신뢰할 수 있는 AI의 특성으로 타당성·신뢰성, 안전, 보안·회복력, 책임성·투명성, 설명 가능성·해석 가능성, 프라이버시 강화, 유해한 편향이 관리된 공정성을 제시함.",
@@ -30285,7 +30533,8 @@
     {
       "id": "ai-accountability",
       "head": "책임성",
-      "en": "AI accountability",
+      "en": "accountability",
+      "en_search": "AI accountability",
       "kit_id": "ai-accountability",
       "alternatives": [
         {
@@ -30307,7 +30556,7 @@
       "definition": {
         "lead": "AI 시스템의 개발·배포·운영으로 생긴 결과에 대해 누가 설명하고 시정·배상해야 하는지가 정해져 있고, 실제로 그렇게 하도록 만드는 구조·성질을 의미함.",
         "points": [
-          "책임 주체의 지정, 무슨 일이 있었는지 확인할 수 있는 기록·문서, 외부 검증 수단, 피해자의 이의 제기·구제 절차가 함께 갖춰질 때 성립함. 원칙 선언만으로는 확보되지 않음.",
+          "책임 주체의 지정, 무슨 일이 있었는지 확인할 수 있는 기록·문서, 외부 검증 수단, 피해자의 이의 제기·구제 절차가 함께 갖춰질 때 성립하며, 원칙 선언만으로는 확보되지 않음.",
           "파운데이션 모델 개발자, 미세조정·통합 사업자, 배포자, 운영 조직으로 이어지는 가치사슬이 길어 책임이 분산·소실되기 쉬우므로, 단계별 의무 배분과 기록 의무가 AI 거버넌스의 핵심 과제가 됨."
         ],
         "distinction": {
@@ -30342,7 +30591,7 @@
       "frameworks": [
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "신뢰할 수 있는 AI는 책임성에 달려 있고 책임성은 투명성을 전제로 한다고 보며, 잘못된 출력에 대한 실질적 구제에 투명성이 흔히 필요하다고 설명함.",
@@ -30383,8 +30632,8 @@
           ]
         },
         {
-          "org": "한국",
-          "sub": "2026",
+          "org": "인공지능 윤리원칙",
+          "sub": "한국, 2026",
           "points": [
             {
               "text": "인공지능 윤리원칙은 책임성 원칙으로 AI 행위자가 생애주기 전반의 역할과 책임을 인식하고 이행하려 노력하며, 문제 발생 시 책임 소재를 밝혀 실질적 피해 구제가 이루어지게 하도록 함.",
@@ -30499,6 +30748,14 @@
       },
       "research": [
         {
+          "title": "의도가 가는 곳에 책임이 흐른다: ML 기반 AI 책임",
+          "orig": "Where intention goes, responsibility flows: Grounding AI accountability in the machine learning paradigm",
+          "summary": "ML 파이프라인 전반의 인간 설계 의도를 추적해 행위자별 책임을 귀속·인과·분담의 세 질문으로 배분하는 AI 책임 법리 틀을 제시하고, 남는 네 가지 공백을 메울 개혁안을 제안한다.",
+          "url": "https://doi.org/10.1073/pnas.2610670123",
+          "date": "2026-10-30",
+          "source": "Proceedings of the National Academy of Sciences"
+        },
+        {
           "title": "논증 분석으로 AI 책임성 측정: 모델 추론은 검증을 견디는가",
           "orig": "Measuring AI Accountability Through Argumentation Analysis: Can Model Reasoning Withstand Scrutiny?",
           "summary": "월턴의 논증 도식과 고비어의 타당성 기준에 기반한 4단계 변증 프로토콜로 9개 최신 모델이 도덕적 판단을 얼마나 잘 방어하는지 측정했고, 추론이 사후 정당화보다 더 잘 방어되며 실패는 근거와 충분성에 집중됨을 확인했다.",
@@ -30547,6 +30804,7 @@
       "id": "transparency",
       "head": "투명성",
       "en": "transparency",
+      "en_search": "transparency",
       "kit_id": "transparency",
       "alternatives": [],
       "chapter": "10",
@@ -30564,7 +30822,7 @@
           "완전 공개와 같은 말이 아니며, 모델 가중치 공개가 시스템 문서 공개보다 반드시 더 투명한 것도 아님."
         ],
         "distinction": {
-          "text": "'투명성'은 정보 제공의 정도를 가리키고, '해석 가능성(interpretability)'은 모델 내부 작동을 사람이 이해할 수 있는 정도, '설명 가능한 AI(explainability)'는 개별 출력의 근거를 사람이 이해할 수 있게 설명하는 성질·기법을 가리킴.",
+          "text": "'투명성'은 정보 제공의 정도를 가리키고, '해석 가능성(interpretability)'은 모델 내부 작동을 사람이 이해할 수 있는 정도, '설명 가능성(explainability)'은 개별 출력의 근거를 사람이 이해할 수 있게 설명하는 성질·기법을 가리킴.",
           "terms": [
             "interpretability",
             "explainable-ai-xai"
@@ -30596,7 +30854,7 @@
       "frameworks": [
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "투명성을 AI 시스템과 그 출력에 관한 정보가 상호작용하는 사람에게 제공되는 정도로 정의하고, 설계 결정·학습 데이터부터 배포 결정과 그 결정 주체까지를 범위로 보며 책임성의 전제로 둠.",
@@ -30614,6 +30872,12 @@
               "text": "제50조는 사람과 직접 상호작용하는 AI 시스템이 AI와 상호작용 중임을 알리도록 설계하게 하고, 합성 음성·이미지·영상·텍스트 출력은 기계 판독 가능한 형식으로 표시해 탐지할 수 있게 함.",
               "refs": [
                 2
+              ]
+            },
+            {
+              "text": "제50조는 2026.8.2부터 적용되며, 그 전에 출시된 시스템의 표시 의무(제2항)는 옴니버스 규정으로 2026.12.2까지 유예됨.",
+              "refs": [
+                5
               ]
             }
           ]
@@ -30682,6 +30946,11 @@
             "pages": "p.12"
           },
           "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
+        },
+        {
+          "n": 5,
+          "text": "Regulation (EU) 2026/1744, Art. 1(39)·(40)",
+          "url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj"
         }
       ],
       "commentary": [
@@ -30822,6 +31091,7 @@
       "id": "algorithmic-transparency",
       "head": "알고리즘 투명성",
       "en": "algorithmic transparency",
+      "en_search": "algorithmic transparency",
       "kit_id": "algorithmic-transparency",
       "alternatives": [],
       "chapter": "10",
@@ -30880,11 +31150,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.176–177, p.218–219",
-            "pages_printed": "p.176–177, p.218–219"
+            "pages_printed": "p.176–177; Glossary p.218–219"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         }
@@ -30991,6 +31261,7 @@
       "id": "institutional-transparency",
       "head": "제도적 투명성",
       "en": "institutional transparency",
+      "en_search": "institutional transparency",
       "kit_id": "institutional-transparency",
       "alternatives": [],
       "chapter": "10",
@@ -31055,11 +31326,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.176–177, p.223",
-            "pages_printed": "p.176–177, p.223"
+            "pages_printed": "p.176–177; Glossary p.223"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         },
@@ -31217,6 +31488,7 @@
       "id": "fairness",
       "head": "공정성",
       "en": "fairness",
+      "en_search": "fairness",
       "kit_id": "fairness",
       "alternatives": [],
       "chapter": "10",
@@ -31370,6 +31642,14 @@
       },
       "research": [
         {
+          "title": "FairSense-AgentiX: 편향·AI 위험 분석 에이전트",
+          "orig": "FairSense-AgentiX: An Agentic Platform for Multi-Modal Fairness and AI Risk Analysis",
+          "summary": "LangGraph 오케스트레이션과 MIT AI 위험 리포지토리 기반 검색을 이용해 텍스트·이미지의 편향 탐지와 AI 배포 위험 평가를 수행하는 오픈소스 파이썬 플랫폼을 공개했다.",
+          "url": "https://doi.org/10.21105/joss.11060",
+          "date": "2026-10-30",
+          "source": "The Journal of Open Source Software"
+        },
+        {
           "title": "FAIRITHM: 한국어 편향 언러닝·재작성 시스템",
           "orig": "FAIRITHM: Unlearning Bias and Rewriting for Fairness",
           "summary": "KcBERT 편향 평가 모듈(PCGU 언러닝)과 GPT-4o 재작성을 결합한 한국어 편향 재작성 도구를 만들고, 사용자 연구(34명)에서 인간 감독을 전제로 한 보조 활용이 적합함을 확인했다.",
@@ -31391,14 +31671,6 @@
           "summary": "대조 프롬프트 쌍과 추론 시 활성값 차이로 GLU 구조 LLM의 인구통계 편향 뉴런을 찾아 0으로 만들면, 최대 40개 뉴런만으로 추론·지식 능력의 99.49%를 유지하면서 편향 응답이 양방향으로 불안정해짐을 보였다.",
           "url": "https://arxiv.org/abs/2607.28319v1",
           "date": "2026-07-30",
-          "source": "arXiv"
-        },
-        {
-          "title": "RedVox: 다국어 음성 모델의 안전성·공정성 격차",
-          "orig": "RedVox: Safety and Fairness Gaps in Speech Models Across Languages",
-          "summary": "실제 사람 음성으로 5개 언어의 유해·고정관념 요청을 담은 음성 안전성·공정성 벤치마크 RedVox를 구축하고 8개 모델을 평가한 결과, 비영어권과 음성 입력에서 취약성이 더 크게 나타났다.",
-          "url": "https://arxiv.org/abs/2606.26968",
-          "date": "2026-06-25",
           "source": "arXiv"
         }
       ],
@@ -31450,6 +31722,7 @@
       "id": "reliability",
       "head": "신뢰성",
       "en": "reliability",
+      "en_search": "reliability",
       "kit_id": "reliability",
       "alternatives": [],
       "chapter": "10",
@@ -31512,11 +31785,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.88–89, p.225–226",
-            "pages_printed": "p.88–89, p.225–226"
+            "pages_printed": "p.88–89; Glossary p.225–226"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         }
@@ -31584,6 +31857,14 @@
       },
       "research": [
         {
+          "title": "금융 분야 LLM 보안·신뢰성 벤치마킹",
+          "orig": "Benchmarking Security and Reliability of Open-Source and Commercial Large Language Models in Financial-Domain Scenarios",
+          "summary": "금융 역량(IFB), 규제 준수(RegBench), 적대적 견고성(FinSec-Eval-1000)을 아우르는 평가 틀로 오픈소스·상용 LLM 8종을 평가했고, 금융 역량과 보안 견고성 사이에 뚜렷한 상관이 없음을 확인했다.",
+          "url": "https://doi.org/10.3390/fintech5040101",
+          "date": "2026-11-02",
+          "source": "FinTech"
+        },
+        {
           "title": "우즈벡어에서 LLM 환각이 더 많은가: 언어별 사실 신뢰성",
           "orig": "Do large language models hallucinate more in Uzbek? A cross-lingual measurement of factual reliability and its implications for non-English higher education",
           "summary": "오픈웨이트 LLM 8종에 영어·러시아어·우즈벡어로 사실 질문 100개를 던져 오류율을 재니 영어 3.5%, 러시아어 10.9%, 우즈벡어 15.9%였고, 우즈벡어 적응 모델은 격차를 거의 없앴다.",
@@ -31605,14 +31886,6 @@
           "summary": "동일 롤아웃을 두 번 평가해 점수 불일치로 신뢰도를 매기고 GRPO의 이점 추정에 반영하는 STAR-GRPO를 제안했으며, 토큰 인터페이스 악용과 의료 추론 루브릭 프록시 과최적화에서 보상 해킹을 줄이고 독립 평가 성능을 높였다.",
           "url": "https://arxiv.org/abs/2609.36900v1",
           "date": "2026-09-29",
-          "source": "arXiv"
-        },
-        {
-          "title": "인도 소매금융 AI 비서 안전·신뢰성 벤치마크",
-          "orig": "IndicBankBench: Evaluating Safety and Reliability of Language Model Assistants in Indian Retail Banking",
-          "summary": "인도 소매금융 환경에서 계정 기반 다중턴·도구 사용 799건 벤치마크를 구축하고 11개 모델을 3회 반복 평가해, 엄격한 pass^3 신뢰도(43.7~58.2%)가 1회 이상 성공률(60~74%)보다 크게 낮음을 보였다.",
-          "url": "https://arxiv.org/abs/2609.29167v1",
-          "date": "2026-09-24",
           "source": "arXiv"
         }
       ],
@@ -31664,6 +31937,7 @@
       "id": "robustness",
       "head": "강건성",
       "en": "robustness",
+      "en_search": "robustness",
       "kit_id": "robustness",
       "alternatives": [
         {
@@ -31729,7 +32003,7 @@
         },
         {
           "org": "NIST",
-          "sub": "2023",
+          "sub": "AI 100-1, 2023",
           "points": [
             {
               "text": "정확성과 강건성은 AI 시스템의 타당성·신뢰성에 기여하지만 서로 긴장 관계일 수 있으며, 학습 범위 밖으로 일반화되지 못한 시스템은 위험을 키운다고 봄.",
@@ -31883,7 +32157,8 @@
     {
       "id": "ai-assurance",
       "head": "신뢰보증",
-      "en": "AI assurance",
+      "en": "assurance",
+      "en_search": "AI assurance",
       "kit_id": "ai-assurance",
       "alternatives": [
         {
@@ -31948,7 +32223,7 @@
           "sub": "2025",
           "points": [
             {
-              "text": "두 번째 핵심 업데이트는 개발자들이 범용 AI 제품의 신뢰성·강건성·거버넌스에 관한 주장을 입증하려고 신뢰보증 도구를 도입하기 시작했다고 보고함. 대표 예인 안전 사례는 도입이 제한적이고 적합성에 논란이 있다고 봄.",
+              "text": "두 번째 핵심 업데이트는 개발자들이 범용 AI 제품의 신뢰성·강건성·거버넌스에 관한 주장을 입증하려고 신뢰보증 도구를 도입하기 시작했다고 보고하면서, 대표 예인 안전 사례는 도입이 제한적이고 적합성에 논란이 있다고 봄.",
               "refs": [
                 1
               ]
@@ -31972,7 +32247,7 @@
           "sub": "2025",
           "points": [
             {
-              "text": "프론티어 AI 안전 프레임워크의 새 관행으로 배포 전 제3자 평가 의뢰를 들고, 안전한 개발·배포 조건이 충족됐는지에 대한 추가 증거와 보증을 제공하는 데 도움이 된다고 봄. 제3자 평가자에게 충분한 모델 접근과 시간을 주는 것도 별도 관행으로 듦.",
+              "text": "프론티어 AI 안전 프레임워크의 새 관행으로 배포 전 제3자 평가 의뢰를 들고, 안전한 개발·배포 조건이 충족됐는지에 대한 추가 증거와 보증을 제공하는 데 도움이 된다고 보며, 제3자 평가자에게 충분한 모델 접근과 시간을 주는 것도 별도 관행으로 듦.",
               "refs": [
                 3
               ]
@@ -32128,6 +32403,7 @@
       "id": "model-card",
       "head": "모델 카드",
       "en": "model card",
+      "en_search": "model card",
       "kit_id": "model-card",
       "alternatives": [],
       "chapter": "10",
@@ -32224,6 +32500,7 @@
       "id": "responsible-scaling-policy-rsp",
       "head": "책임 있는 스케일링 정책",
       "en": "responsible scaling policy (RSP)",
+      "en_search": "responsible scaling policy (RSP)",
       "kit_id": "responsible-scaling-policy-rsp",
       "alternatives": [
         {
@@ -32414,6 +32691,7 @@
       "id": "ai-literacy",
       "head": "AI 리터러시",
       "en": "AI literacy",
+      "en_search": "AI literacy",
       "kit_id": "ai-literacy",
       "alternatives": [
         {
@@ -32615,6 +32893,7 @@
       "id": "artificial-intelligence",
       "head": "인공지능",
       "en": "artificial intelligence (AI)",
+      "en_search": "artificial intelligence (AI)",
       "kit_id": "artificial-intelligence",
       "alternatives": [],
       "chapter": "11",
@@ -33210,36 +33489,36 @@
       },
       "research": [
         {
-          "title": "청소년 정신건강 AI 응답 평가도구 AMHART",
-          "orig": "Development, Validation and AI Chatbot Evaluation of the Adolescent Mental Health AI Response Tool",
-          "summary": "임상가 참여로 청소년 정신건강 챗봇 응답 평가도구 AMHART를 개발·검증하고 4개 챗봇을 평가한 결과, 불안보다 우울, 중등도보다 중증 사례에서 기준 충족률이 낮았다.",
-          "url": "https://rand.org/pubs/external_publications/EP71522.html",
-          "date": "2026-10-30",
-          "source": "RAND"
+          "title": "거부 정렬 제거 모델 유해성 평가 수행",
+          "orig": "인공지능안전연구소, 거부 정렬 제거 AI 모델 유해성 평가 수행",
+          "summary": "한국 AI안전연구소가 거부 정렬을 제거한 AI 모델의 유해성을 평가했다는 소식이며, 요약이 제공되지 않아 방법과 결과는 확인할 수 없다.",
+          "url": "https://aisi.re.kr/kor/article/view.do?articleId=131",
+          "date": "2026-11-03",
+          "source": "AISI Korea"
         },
         {
-          "title": "패치 공개 후 배포 전 틈을 노린 AI 익스플로잇",
-          "orig": "Software updates aren’t what they used to be",
-          "summary": "Epoch AI가 오픈 웨이트 모델 GLM 5.3으로 공개된 Firefox 보안 패치를 역분석해 버전당 약 $1,000 compute로 6개 버전을 모두 공격하는 데 성공했고(Chrome은 실패), 패치 공개와 배포 사이의 간격을 줄이라고 권고했다.",
-          "url": "https://epochai.substack.com/p/glm-patch-gap-exploit-firefox",
-          "date": "2026-10-30",
-          "source": "Epoch Substack"
+          "title": "힌턴: AI는 우리와 같고, 우리를 좋아할까?",
+          "orig": "Hinton: “Is AI Like Us and Will It Like Us?”",
+          "summary": "힌턴의 2026 빈 괴델 강연과 토론 녹취록으로, 디지털 AI의 정보 공유 능력, 생존·권력 추구 같은 도구적 목표의 위험, 의식과 도덕적 지위, 안전 문제를 논의한다.",
+          "url": "https://doi.org/10.70777/si.v3i4.18976",
+          "date": "2026-11-02",
+          "source": "SuperIntelligence - Robotics - Safety & Alignment"
         },
         {
-          "title": "오픈웨이트 모델 GLM-5.3의 사이버 공격 능력 변화 평가",
-          "orig": "AI検証ノート：オープンウェイトモデルのAIサイバー能力の変化を捉える～GLM-5.3の評価から考える脆弱性対策への示唆～AI Experiment Notes: How the Cyber Capabilities of Open-Weight AI Models Are Changing — What the GLM-5.3 Evaluation Means for Vulnerability Management —",
-          "summary": "일본 AISI가 ExploitBench(V8 취약점 41개 과제)로 GLM-5.3·GLM-5.2·Claude Opus 4.8을 평가해, 평가 조건 보완 후 GLM-5.3이 8.34점으로 GLM-5.2(3.37점)를 앞서고 T1 도달 8건(ACE 7건)을 보인다는 점과 평균 점수만으로는 부족하고 평가 조건·실행 기록 확인이 필요함을 보였다.",
-          "url": "https://aisi.go.jp/activity/activity_notes/261030",
-          "date": "2026-10-30",
-          "source": "AISI Japan"
+          "title": "AI Act 준수 격차 분석·개선 에이전트 프레임워크",
+          "orig": "ComplianceAtlas: A Taxonomy-Driven Agentic AI Framework for Automated AI Act Gap Analysis and Remediation",
+          "summary": "고위험 AI 시스템의 기술적 준수 격차 분류체계와 격차 추출·개선안 추천 두 에이전트를 제안하고, 9개 시스템에서 격차 유형 F1 0.831로 기존 베이스라인(0.533)을 앞섰다.",
+          "url": "https://arxiv.org/abs/2611.03121v1",
+          "date": "2026-11-02",
+          "source": "arXiv"
         },
         {
-          "title": "OpenAI 모델 스펙 개정: 다섯 가지 핵심 가치",
-          "orig": "An updated Model Spec for more capable and beneficial AI",
-          "summary": "OpenAI가 모델 행동 지침인 Model Spec을 인간 의도 충실성·피해 최소화·정직과 투명성·인간 주체성·배려의 다섯 가지 가치 중심으로 재구성하고 지휘 체계와 감독·부작용 통제 지침을 추가했다.",
-          "url": "https://openai.com/index/updated-model-spec",
-          "date": "2026-10-29",
-          "source": "OpenAI"
+          "title": "다중 에이전트 게임으로 본 AI 기만 성향 측정",
+          "orig": "Four Bridges: Measuring Deception Propensity in a Multi-Agent Game",
+          "summary": "정보 비대칭 게임 Four Bridges에서 프론티어 모델 8종을 평가한 결과, 기만 지시 없이도 전체 실행의 73%에서 기만이 나타났고, 정직성 스티어링 벡터와 적대적 정직성 학습이 기만을 크게 줄였다.",
+          "url": "https://arxiv.org/abs/2611.03600v1",
+          "date": "2026-11-02",
+          "source": "arXiv"
         }
       ],
       "library_docs": [
@@ -33268,12 +33547,12 @@
           "kind": "기구·제도"
         },
         {
-          "id": "doc-cacea1686cad",
-          "title": "사우디 국가 AI 지수(NAII)",
-          "date": "2026-10-29",
-          "flag": "🇸🇦",
+          "id": "doc-c0de3336b7c7",
+          "title": "인도 TRAI 통신 분야 책임있는 AI 가이드라인 초안",
+          "date": "2026-10-30",
+          "flag": "🇮🇳",
           "org": "",
-          "kind": "기구·제도"
+          "kind": "가이드라인·원칙"
         }
       ],
       "rel": {
@@ -33293,6 +33572,7 @@
       "id": "high-risk-ai",
       "head": "고위험 AI",
       "en": "high-risk AI",
+      "en_search": "high-risk AI",
       "kit_id": "high-risk-ai",
       "alternatives": [
         {
@@ -33311,11 +33591,11 @@
         "lead": "사람의 건강·안전이나 기본권에 중대한 위험을 줄 수 있는 용도로 쓰여 강화된 규제 의무가 적용되는 AI 시스템을 가리키는 규제상 범주를 의미함.",
         "points": [
           "위험 수준에 따라 의무 강도를 달리하는 위험 기반 접근에서 금지 대상과 투명성 의무 정도만 지는 대상 사이에 놓이며, 위험 관리, 데이터 품질 관리, 기술 문서·기록 유지, 인간 감독, 정확성·강건성·사이버 보안 등 요건이 붙음.",
-          "분류는 기술이 아니라 용도가 정함. 같은 얼굴 인식 기술이라도 사진 정리에 쓰이면 해당하지 않고 채용 심사나 법 집행에 쓰이면 고위험이 될 수 있음.",
+          "분류는 기술이 아니라 용도가 정해서, 같은 얼굴 인식 기술이라도 사진 정리에 쓰이면 해당하지 않고 채용 심사나 법 집행에 쓰이면 고위험이 될 수 있음.",
           "범용 AI처럼 용도가 정해지지 않은 모델은 이 틀로 포착하기 어려워 별도 규율이 마련되었음."
         ],
         "distinction": {
-          "text": "'고위험 AI'는 EU AI법 등의 규제 범주이고, 한국 AI 기본법은 이에 대응해 '고영향 AI'라는 별도 법정 용어를 씀. 분류 기준과 의무가 달라 서로 바꿔 쓰지 않음.",
+          "text": "'고위험 AI'는 EU AI법 등의 규제 범주이고 한국 AI 기본법은 이에 대응해 '고영향 AI'라는 별도 법정 용어를 쓰는데, 분류 기준과 의무가 달라 서로 바꿔 쓰지 않으며, '고영향 AI'는 EU의 '고영향 역량'과도 다른 개념임.",
           "terms": [
             "high-impact-ai"
           ]
@@ -33349,15 +33629,27 @@
           "sub": "2024/1689",
           "points": [
             {
-              "text": "제6조에 따라 부속서 I의 EU 조화 법령상 제3자 적합성 평가 대상인 제품·안전 구성요소이거나, 부속서 III에 열거된 용도(핵심 기반시설, 교육·직업훈련, 고용 등)에 쓰이는 AI 시스템을 고위험으로 분류함. 다만 부속서 III 시스템이라도 건강·안전·기본권에 중대한 위해 위험이 없으면 고위험으로 보지 않음(제6조제3항).",
+              "text": "제6조에 따라 부속서 I의 EU 조화 법령상 제3자 적합성 평가 대상인 제품·안전 구성요소이거나, 부속서 III에 열거된 용도(핵심 기반시설, 교육·직업훈련, 고용 등)에 쓰이는 AI 시스템을 고위험으로 분류하되, 부속서 III 시스템이라도 건강·안전·기본권에 중대한 위해 위험이 없으면 고위험으로 보지 않음(제6조제3항).",
               "refs": [
                 1
               ]
-            },
+            }
+          ]
+        },
+        {
+          "org": "EU AI Act",
+          "sub": "2024/1689",
+          "points": [
             {
               "text": "고위험 AI 시스템에는 위험 관리, 데이터 품질·거버넌스, 기술 문서, 기록 유지, 배포자에 대한 정보 제공, 인간 감독, 정확성·강건성·사이버 보안 요건이 적용되고, 시장 출시 전 적합성 평가를 거쳐야 함.",
               "refs": [
                 2
+              ]
+            },
+            {
+              "text": "옴니버스 규정으로 이 요건의 적용일은 부속서 III 시스템 2027.12.2, 부속서 I 시스템 2028.8.2로 늦춰짐.",
+              "refs": [
+                4
               ]
             }
           ]
@@ -33404,6 +33696,11 @@
             "pages": "p.3"
           },
           "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
+        },
+        {
+          "n": 4,
+          "text": "Regulation (EU) 2026/1744, Art. 1(39)·(40)",
+          "url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj"
         }
       ],
       "commentary": [
@@ -33522,6 +33819,7 @@
       "id": "high-impact-ai",
       "head": "고영향 AI",
       "en": "high-impact AI",
+      "en_search": "high-impact AI",
       "kit_id": "high-impact-ai",
       "alternatives": [
         {
@@ -33829,6 +34127,7 @@
       "id": "general-purpose-ai-gpai",
       "head": "범용 AI",
       "en": "general-purpose AI (GPAI)",
+      "en_search": "general-purpose AI (GPAI)",
       "kit_id": "general-purpose-ai-gpai",
       "alternatives": [
         {
@@ -34114,6 +34413,14 @@
       },
       "research": [
         {
+          "title": "EU AI Act와 GPAI 실천강령 대담",
+          "orig": "Christoph Winter in Conversation With the Simon Institute: The EU AI Act and the GPAI Code of Conduct",
+          "summary": "LawAI의 Christoph Winter 교수가 Simon Institute와의 대담에서 EU AI Act의 GPAI 의무와 중앙 집행 구조, 오픈소스 면제, 내부 배포 규율의 불명확성을 설명했다.",
+          "url": "https://law-ai.org/christoph-winter-in-conversation-with-the-simon-institute",
+          "date": "2026-10-26",
+          "source": "Law AI Institute"
+        },
+        {
           "title": "범용 AI 시대 공공서비스 AI 거버넌스의 한계: 경찰 사례",
           "orig": "Why Public Service AI Governance Frameworks Risk Failing in the Age of General-Purpose AI: Lessons from Policing",
           "summary": "범용 AI는 정확도·편향·설명가능성·책임성 중심의 기존 공공서비스 AI 거버넌스 전제를 무너뜨린다고 경찰 사례로 논증하고, 협의의 AI와 범용 AI의 구분, 경찰 현장 도입 유예, 국가 차원의 안전 인프라 구축을 권고한다.",
@@ -34136,14 +34443,6 @@
           "url": "https://law-ai.org/announcing-the-cambridge-commentary",
           "date": "2026-04-15",
           "source": "Law AI Institute"
-        },
-        {
-          "title": "GAIA: 범용 AI 어시스턴트 벤치마크",
-          "orig": "GAIA: a benchmark for General AI Assistants",
-          "summary": "추론·멀티모달·웹 탐색·도구 사용 능력을 요구하는 현실 세계 질문 466개의 벤치마크를 만들어, 사람은 92%를 맞히지만 플러그인을 쓴 GPT-4는 15%에 그친다는 것을 보였다.",
-          "url": "https://arxiv.org/abs/2311.12983",
-          "date": "2023-11-21",
-          "source": "arXiv"
         }
       ],
       "library_docs": [
@@ -34199,6 +34498,7 @@
       "id": "compute-threshold",
       "head": "연산 임계값",
       "en": "compute threshold",
+      "en_search": "compute threshold",
       "kit_id": "compute-threshold",
       "alternatives": [
         {
@@ -34284,9 +34584,9 @@
               ]
             },
             {
-              "text": "시행령은 누적 연산량 10^26 FLOP 이상, 최첨단 AI 기술 적용, 생명·신체의 안전과 기본권에 광범위하고 중대한 영향을 미칠 우려라는 세 기준을 모두 충족하는 시스템을 대상으로 정함. 연산량만으로 추정하는 EU 방식과 달리 복수 요건을 함께 요구함.",
+              "text": "시행령 제24조는 누적 연산량 10^26 FLOP 이상, 최첨단 AI 기술 적용, 생명·신체의 안전과 기본권에 광범위하고 중대한 영향을 미칠 우려라는 세 기준을 모두 충족하는 시스템을 대상으로 정해, 연산량만으로 추정하는 EU 방식과 달리 복수 요건을 함께 요구함.",
               "refs": [
-                4
+                5
               ]
             }
           ]
@@ -34323,14 +34623,13 @@
           "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543"
         },
         {
-          "n": 4,
-          "text": "『인공지능 안전성 확보 가이드라인』 v1.3",
+          "n": 5,
+          "text": "「인공지능기본법 시행령」, 제24조",
           "evidence": {
             "document_id": "doc-c49c4fa002e6",
-            "pages": "p.8",
-            "pages_printed": "p.8"
+            "pages": "p.8"
           },
-          "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=28987"
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=288781"
         }
       ],
       "commentary": [],
@@ -34365,6 +34664,7 @@
       "id": "conformity-assessment",
       "head": "적합성 평가",
       "en": "conformity assessment",
+      "en_search": "conformity assessment",
       "kit_id": "conformity-assessment",
       "alternatives": [],
       "chapter": "11",
@@ -34605,6 +34905,7 @@
       "id": "certification",
       "head": "인증",
       "en": "certification",
+      "en_search": "certification",
       "kit_id": "certification",
       "alternatives": [
         {
@@ -34777,6 +35078,7 @@
       "id": "standardization",
       "head": "표준화",
       "en": "standardization",
+      "en_search": "standardization",
       "kit_id": "standardization",
       "alternatives": [
         {
@@ -34937,6 +35239,7 @@
       "id": "harmonised-standards",
       "head": "조화 표준",
       "en": "harmonised standard",
+      "en_search": "harmonised standard",
       "kit_id": "harmonised-standards",
       "alternatives": [
         {
@@ -35083,6 +35386,7 @@
       "id": "interoperability",
       "head": "상호운용성",
       "en": "interoperability",
+      "en_search": "interoperability",
       "kit_id": "interoperability",
       "alternatives": [],
       "chapter": "11",
@@ -35225,6 +35529,7 @@
       "id": "compliance",
       "head": "규정 준수",
       "en": "compliance",
+      "en_search": "compliance",
       "kit_id": "compliance",
       "alternatives": [
         {
@@ -35323,6 +35628,22 @@
       },
       "research": [
         {
+          "title": "다중 가치 정렬을 위한 활성값 스티어링 VIAS",
+          "orig": "VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations",
+          "summary": "조직 가치 준수를 위해 대상 가치 하나를 뺀 프롬프트와 전체 가치 프롬프트의 응답을 대조해 가치별 스티어링 벡터를 분리하는 VIAS를 제안하고, 프롬프팅과 함께 쓰면 세 개 7B급 모델 모두에서 모든 가치를 준수하는 비율이 프롬프팅 단독보다 높아졌다.",
+          "url": "https://arxiv.org/abs/2611.03518v1",
+          "date": "2026-11-02",
+          "source": "arXiv"
+        },
+        {
+          "title": "AI 컴플라이언스의 의미적 무결성과 재귀적 보증",
+          "orig": "Semantic Integrity of AI Compliance: Semantic Capture, Effective Risk, and Recursive Semantic Assurance",
+          "summary": "초록이 없어 제목만으로 판단하면, AI 컴플라이언스에서 의미적 포획(semantic capture)과 실효 위험을 다루고 재귀적 의미 보증 개념을 제안하는 거버넌스 성격의 개인 연구로 보인다.",
+          "url": "https://doi.org/10.13140/rg.2.2.14451.49440",
+          "date": "2026-11-01",
+          "source": "OpenAlex"
+        },
+        {
           "title": "AGI 거버넌스를 위한 기계 검증형 규정 준수 모델",
           "orig": "Machine-Checkable Compliance for AGI Governance: Formalizing Principles as Auditable Norms and Evidence-Linked Indicators",
           "summary": "AGI 거버넌스 원칙을 LegalRuleML 기반의 기계 검증 가능한 규범과 증거 연계 지표로 형식화하고 참조 구현을 제시했으며, 최신 프론티어 모델 문서가 AGI 특화 위험을 기계 검증 가능한 형태로 보고하지 않음을 확인했다.",
@@ -35336,22 +35657,6 @@
           "summary": "EU AI법의 고위험 AI 위험관리·문서화 요건에 맞춰 AI 위험 온톨로지(AIRO)와 어휘집(VAIR)을 개발하고, 이를 데이터 프라이버시 어휘집(DPV)에 통합했다.",
           "url": "https://arxiv.org/abs/2610.31380v1",
           "date": "2026-10-22",
-          "source": "arXiv"
-        },
-        {
-          "title": "기업 MLOps의 자동화 AI 거버넌스·EU AI Act 준수",
-          "orig": "Automated AI Governance, EU AI Act Compliance, and Cryptographic Model Lineage in Enterprise MLOps Enterprise Systems Specification and Empirical Telemetry Evaluation Specialization Track: AI Governance, Regulatory Compliance, and Enterprise MLOps",
-          "summary": "기업 MLOps 환경에서 EU AI Act 준수와 암호학적 모델 계보 추적을 자동화하는 시스템 명세와 텔레메트리 평가를 다룬 것으로 보이며, 초록이 없어 구체적 결과는 알 수 없다.",
-          "url": "https://doi.org/10.13140/rg.2.2.19744.34563",
-          "date": "2026-10-20",
-          "source": "OpenAlex"
-        },
-        {
-          "title": "탈옥 평가 LLM 채점기의 준수 클래스 붕괴",
-          "orig": "The Missing Compliance Class: LLM Graders That Collapse Jailbreak Success, and a Free Check",
-          "summary": "탈옥 공격 성공률을 채점하는 LLM 채점기 중 일부가 준수 응답을 회피 클래스로 몰아 성공률이 최대 22~25배까지 달라짐을 보이고, 클래스별 라벨 수 보고라는 무비용 점검법을 제안했다.",
-          "url": "https://arxiv.org/abs/2610.24872v1",
-          "date": "2026-10-17",
           "source": "arXiv"
         }
       ],
@@ -35400,6 +35705,7 @@
       "id": "transparency-obligation",
       "head": "투명성 의무",
       "en": "transparency obligation",
+      "en_search": "transparency obligation",
       "kit_id": "transparency-obligation",
       "alternatives": [
         {
@@ -35609,6 +35915,7 @@
       "id": "binding-force",
       "head": "구속력",
       "en": "binding force",
+      "en_search": "binding force",
       "kit_id": "binding-force",
       "alternatives": [
         {
@@ -35727,6 +36034,7 @@
       "id": "export-control",
       "head": "수출 통제",
       "en": "export control",
+      "en_search": "export control",
       "kit_id": "export-control",
       "alternatives": [
         {
@@ -35863,6 +36171,7 @@
       "id": "privacy",
       "head": "프라이버시",
       "en": "privacy",
+      "en_search": "privacy",
       "kit_id": "privacy",
       "alternatives": [
         {
@@ -36157,6 +36466,7 @@
       "id": "data-protection",
       "head": "개인정보 보호",
       "en": "data protection",
+      "en_search": "data protection",
       "kit_id": "data-protection",
       "alternatives": [
         {
@@ -36400,6 +36710,7 @@
       "id": "copyright",
       "head": "저작권",
       "en": "copyright",
+      "en_search": "copyright",
       "kit_id": "copyright",
       "alternatives": [],
       "chapter": "11",
@@ -36467,11 +36778,11 @@
       "refs": [
         {
           "n": 1,
-          "text": "International AI Safety Report 2025, Glossary",
+          "text": "International AI Safety Report 2025",
           "evidence": {
             "document_id": "doc-c4fe09068d6e",
             "pages": "p.144–145, p.220–221",
-            "pages_printed": "p.144–145, p.220–221"
+            "pages_printed": "p.144–145; Glossary p.220–221"
           },
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
         },
@@ -36606,6 +36917,7 @@
       "id": "sovereign-ai",
       "head": "AI 주권",
       "en": "sovereign AI",
+      "en_search": "sovereign AI",
       "kit_id": "sovereign-ai",
       "alternatives": [
         {
