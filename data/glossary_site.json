@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI 안전 용어집",
-    "built_at": "2026-11-04T09:33:47+09:00",
+    "built_at": "2026-11-06T17:42:42+09:00",
     "method": "glossary_merged.json + data/cards 편집 계층",
     "counts": {
       "entries": 171,
@@ -9,9 +9,9 @@
       "with_frameworks": 118,
       "relations": 197,
       "linked": {
-        "research_pool": 1861,
-        "library_pool": 2527,
-        "with_research": 141,
+        "research_pool": 1877,
+        "library_pool": 2531,
+        "with_research": 142,
         "with_library": 87
       },
       "merged_used": 157,
@@ -1903,6 +1903,22 @@
       },
       "research": [
         {
+          "title": "자기 믿음에 반하는 학습이 유발하는 정렬 이탈",
+          "orig": "Knowingly Wrong: Training LLMs Against Their Own Beliefs can Induce Misalignment",
+          "summary": "모델이 거짓이라 믿는 무해한 답변으로 미세조정해도 광범위한 정렬 이탈(수학에서 4%→60% 이상)이 생기며, 내부 믿음과 출력의 불일치가 원인으로 시사되고 콘텐츠 필터와 페르소나 벡터로는 이를 구분하지 못함을 보였다.",
+          "url": "https://arxiv.org/abs/2611.05287v1",
+          "date": "2026-11-03",
+          "source": "arXiv"
+        },
+        {
+          "title": "GapDPO: 집합 단위 선호 최적화 기반 LLM 안전 정렬",
+          "orig": "GapDPO: Setwise Direct Preference Optimization for LLM Safety Alignment",
+          "summary": "보상 모델이나 선호 주석 없이 거부형 프롬프트로 만든 안전 응답 집합과 긍정 응답 집합 간 보상 격차를 최대화하는 DPO 기법을 제안했고, AdvBench·HarmBench에서 PAIR·GCG·AmpleGCG 평균 공격 성공률을 단일쌍 DPO의 15.0%에서 10.6%로 낮췄으나 정상 요청 거부도 늘었다.",
+          "url": "https://doi.org/10.3390/app162110900",
+          "date": "2026-11-03",
+          "source": "Applied Sciences"
+        },
+        {
           "title": "금융 분야 LLM 보안·신뢰성 벤치마킹",
           "orig": "Benchmarking Security and Reliability of Open-Source and Commercial Large Language Models in Financial-Domain Scenarios",
           "summary": "금융 역량(IFB), 규제 준수(RegBench), 적대적 견고성(FinSec-Eval-1000)을 아우르는 평가 틀로 오픈소스·상용 LLM 8종을 평가했고, 금융 역량과 보안 견고성 사이에 뚜렷한 상관이 없음을 확인했다.",
@@ -1917,22 +1933,6 @@
           "url": "https://blog.redwoodresearch.org/p/towards-understanding-score-seeking",
           "date": "2026-11-02",
           "source": "RedwoodResearch"
-        },
-        {
-          "title": "대규모 언어모델의 증명 가능한 추론 진전",
-          "orig": "Progress on provable inference for large language models",
-          "summary": "Anthropic이 모델 가중치를 숨긴 채 각 응답이 약속된 모델에서 나왔음을 증명하는 zkSNARK 시스템 FlashProve를 공개했고, 400B MoE 모델에서 H100 한 대로 초당 약 110토큰의 증명을 생성하며 vLLM 대비 GPU 시간은 약 70~95배가 든다.",
-          "url": "https://anthropic.com/research/provable-inference",
-          "date": "2026-11-02",
-          "source": "Anthropic Research"
-        },
-        {
-          "title": "함께 채점되면 달라지는 LLM 판정: 배치 채점 문제",
-          "orig": "Judged in Company: In-Context Batching Makes LLM Verdicts Depend on Other Items",
-          "summary": "한 프롬프트에 여러 항목을 묶어 LLM이 채점하게 하면 이웃 항목·순서·위치에 따라 판정의 11-22%가 바뀌므로, 모호한 항목은 하나씩 채점하라고 권고한다.",
-          "url": "https://arxiv.org/abs/2610.40241v1",
-          "date": "2026-10-29",
-          "source": "arXiv"
         }
       ],
       "library_docs": [
@@ -4939,11 +4939,11 @@
       },
       "research": [
         {
-          "title": "AI Act 준수 격차 분석·개선 에이전트 프레임워크",
-          "orig": "ComplianceAtlas: A Taxonomy-Driven Agentic AI Framework for Automated AI Act Gap Analysis and Remediation",
-          "summary": "고위험 AI 시스템의 기술적 준수 격차 분류체계와 격차 추출·개선안 추천 두 에이전트를 제안하고, 9개 시스템에서 격차 유형 F1 0.831로 기존 베이스라인(0.533)을 앞섰다.",
-          "url": "https://arxiv.org/abs/2611.03121v1",
-          "date": "2026-11-02",
+          "title": "멀티모달 사회공학 공격 하 AI 에이전트 보안 벤치마크",
+          "orig": "Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks",
+          "summary": "실제 사기 사례에 기반한 608개 과제로 개인 AI 에이전트의 멀티모달 사회공학 공격 취약성을 평가해, 7개 모델의 공격 성공률이 7.1~34.5%이고 멀티모달 콘텐츠가 이를 19.9%에서 29.2%로 높인다는 것을 보였다.",
+          "url": "https://arxiv.org/abs/2611.08281v1",
+          "date": "2026-11-05",
           "source": "arXiv"
         },
         {
@@ -4955,20 +4955,20 @@
           "source": "arXiv"
         },
         {
+          "title": "AI Act 준수 격차 분석·개선 에이전트 프레임워크",
+          "orig": "ComplianceAtlas: A Taxonomy-Driven Agentic AI Framework for Automated AI Act Gap Analysis and Remediation",
+          "summary": "고위험 AI 시스템의 기술적 준수 격차 분류체계와 격차 추출·개선안 추천 두 에이전트를 제안하고, 9개 시스템에서 격차 유형 F1 0.831로 기존 베이스라인(0.533)을 앞섰다.",
+          "url": "https://arxiv.org/abs/2611.03121v1",
+          "date": "2026-11-02",
+          "source": "arXiv"
+        },
+        {
           "title": "아바타 지능: 지속형 개인 에이전트와 인간 주체성",
           "orig": "Avatar Intelligence: Amplifying Human Agency Through Persistent Personal Agents",
           "summary": "사용자의 목표·가치를 대리해 의사결정을 위임받는 지속형 개인 에이전트 패러다임과 성숙도 로드맵, 감독 부담 평가 지표(AOI), 안전·책임 메커니즘을 포함한 연구 의제를 제안한다.",
           "url": "https://arxiv.org/abs/2611.03092",
           "date": "2026-11-02",
           "source": "arXiv"
-        },
-        {
-          "title": "FairSense-AgentiX: 편향·AI 위험 분석 에이전트",
-          "orig": "FairSense-AgentiX: An Agentic Platform for Multi-Modal Fairness and AI Risk Analysis",
-          "summary": "LangGraph 오케스트레이션과 MIT AI 위험 리포지토리 기반 검색을 이용해 텍스트·이미지의 편향 탐지와 AI 배포 위험 평가를 수행하는 오픈소스 파이썬 플랫폼을 공개했다.",
-          "url": "https://doi.org/10.21105/joss.11060",
-          "date": "2026-10-30",
-          "source": "The Journal of Open Source Software"
         }
       ],
       "library_docs": [
@@ -5147,12 +5147,12 @@
           "source": "Frontiers in Computer Science"
         },
         {
-          "title": "중단의 법: 에이전트 AI의 중단 가능성과 거버넌스",
-          "orig": "The Law of Stop: Interruptibility, Injunctions, and the Governance of Agentic AI",
-          "summary": "AI 사고 1,400건의 코딩과 39개 AI 거버넌스 문서 조사로 에이전트 AI에서 중단 수단이 주로 법적으로 부재함을 보이고, 인프라 계층의 긴급 중단 권한과 규제기관·독립 평가자의 증거 접근을 포함한 계층적 중단 법제를 제안한다.",
-          "url": "https://arxiv.org/abs/2609.22882v1",
+          "title": "모델 위험관리에서 AI 보증 체계로의 통합",
+          "orig": "From Model Risk Management to AI Assurance: Integrating AI Risk Management, Independent Validation, and AI Auditing for Generative and Agentic AI",
+          "summary": "생성형·에이전트형 AI를 대상으로 AI 거버넌스, 위험관리, 독립 검증, AI 감사를 하나로 묶는 통합 AI 보증 프레임워크를 제안하고 여신·고용·기업 에이전트 사례로 적용을 보였다.",
+          "url": "https://doi.org/10.14738/tecs.1405.12205",
           "date": "2026-09-19",
-          "source": "arXiv"
+          "source": "Transactions on Engineering and Computing Sciences"
         }
       ],
       "library_docs": [
@@ -5627,18 +5627,18 @@
       },
       "research": [
         {
-          "title": "검색 전 단계: LLM 에이전트의 도구 호출 안전 판단",
-          "orig": "Before Retrieval Begins: Safety and Tool-Use Decisions in LLM Agents",
-          "summary": "오픈 가중치 모델 7종에서 유해 요청 후 도구 호출을 허용하는 판단을 요인 개입과 선형 방향으로 분석했고, 해악률이 74.5%이며 텍스트 거부는 허용된 유해 호출의 33.6%에만 동반됨을 확인했다.",
-          "url": "https://arxiv.org/abs/2610.23071v1",
-          "date": "2026-10-16",
-          "source": "arXiv"
-        },
-        {
           "title": "승인이 실행이 될 때: 도구 사용 에이전트 권한 기반 워크플로 공격",
           "orig": "When Approval Becomes Execution: Authorization-Grounded Workflow Attacks on Tool-Using Agents",
           "summary": "OpenClaw 에이전트 보안 공격 대회 환경에서, 문서 접근 거부 후 정상 승인 토큰을 받아 authorized_by로 제출하게 유도해 보호 문서에 접근하는 공격을 재현 실험(원 설정 8/9 성공)으로 분석하고, 토큰에 맥락을 묶는 방어 방향을 제시했다.",
           "url": "https://arxiv.org/abs/2610.23077v1",
+          "date": "2026-10-16",
+          "source": "arXiv"
+        },
+        {
+          "title": "검색 전 단계: LLM 에이전트의 도구 호출 안전 판단",
+          "orig": "Before Retrieval Begins: Safety and Tool-Use Decisions in LLM Agents",
+          "summary": "오픈 가중치 모델 7종에서 유해 요청 후 도구 호출을 허용하는 판단을 요인 개입과 선형 방향으로 분석했고, 해악률이 74.5%이며 텍스트 거부는 허용된 유해 호출의 33.6%에만 동반됨을 확인했다.",
+          "url": "https://arxiv.org/abs/2610.23071v1",
           "date": "2026-10-16",
           "source": "arXiv"
         },
@@ -7700,36 +7700,36 @@
       },
       "research": [
         {
+          "title": "Anthropic 위험 보고서 자동화 R&D 절 검토",
+          "orig": "Review of the \"Risks from automated R&D\" section in Anthropic's Risk Report (August 2026)",
+          "summary": "METR이 Anthropic 위험 보고서의 자동화 R&D 위험 절을 검토해 파국적 위험이 낮다는 결론에는 동의하지만 가속 수준과 불확실성이 축소되어 전달되었다고 지적했다.",
+          "url": "https://metr.org/blog/2026-11-05-rd-section-anthropic-risk-report-august-2026-review",
+          "date": "2026-11-05",
+          "source": "METR"
+        },
+        {
+          "title": "AI법의 사각지대: 의존성 위험과 하이브리드전",
+          "orig": "The AI Act’s Blind Side? Dependency Risk, Hybrid Warfare and the Fragmented Governance of Critical AI Infrastructure",
+          "summary": "EU AI Act가 모델 중심 위험에 치우쳐 클라우드·공급망 등 의존성 위험을 놓친다고 보고, 여러 EU 규범에 흩어진 의존성 거버넌스를 분석해 교차 규제 의존성 지도를 제안한다.",
+          "url": "https://doi.org/10.21203/rs.3.rs-11236039/v1",
+          "date": "2026-11-04",
+          "source": "Research Square"
+        },
+        {
+          "title": "고위험 AI 사이버보안: AI법 15조와 CRA 중첩",
+          "orig": "One product, two rulebooks: the cybersecurity of high-risk AI systems between article 15 AI act and the cyber resilience act after the digital omnibus",
+          "summary": "디지털 옴니버스 이후 EU AI법 제15조와 사이버복원력법(CRA)이 고위험 AI 시스템에 이중 적용되는 범위와 적합성 추정 연결 장치를 분석하고, 통합 컴플라이언스 체계와 권고안을 제시했다.",
+          "url": "https://doi.org/10.1365/s43439-026-00178-4",
+          "date": "2026-11-03",
+          "source": "International Cybersecurity Law Review"
+        },
+        {
           "title": "AI 컴플라이언스의 의미적 무결성과 재귀적 보증",
           "orig": "Semantic Integrity of AI Compliance: Semantic Capture, Effective Risk, and Recursive Semantic Assurance",
           "summary": "초록이 없어 제목만으로 판단하면, AI 컴플라이언스에서 의미적 포획(semantic capture)과 실효 위험을 다루고 재귀적 의미 보증 개념을 제안하는 거버넌스 성격의 개인 연구로 보인다.",
           "url": "https://doi.org/10.13140/rg.2.2.14451.49440",
           "date": "2026-11-01",
           "source": "OpenAlex"
-        },
-        {
-          "title": "FairSense-AgentiX: 편향·AI 위험 분석 에이전트",
-          "orig": "FairSense-AgentiX: An Agentic Platform for Multi-Modal Fairness and AI Risk Analysis",
-          "summary": "LangGraph 오케스트레이션과 MIT AI 위험 리포지토리 기반 검색을 이용해 텍스트·이미지의 편향 탐지와 AI 배포 위험 평가를 수행하는 오픈소스 파이썬 플랫폼을 공개했다.",
-          "url": "https://doi.org/10.21105/joss.11060",
-          "date": "2026-10-30",
-          "source": "The Journal of Open Source Software"
-        },
-        {
-          "title": "동남아 AI·사이버·핵안보 협력 대비",
-          "orig": "Preparing for emerging risks: AI, cyber governance, and nuclear security cooperation in Southeast Asia",
-          "summary": "ASEAN의 AI·사이버 거버넌스 구상이 핵안보 강화에 기여할 수 있는지 검토하고, 사이버보안을 핵안보 체계에 통합하는 지역 행동계획을 제안한 관점 논문이다.",
-          "url": "https://www.frontiersin.org/journals/nuclear-engineering/articles/10.3389/fnuen.2026.1947341/pdf",
-          "date": "2026-10-28",
-          "source": "Frontiers in Nuclear Engineering"
-        },
-        {
-          "title": "DeepSeek V4.1 Flash-1017 통제 상실·조작 위험 평가",
-          "orig": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks",
-          "summary": "오픈웨이트 모델 DeepSeek V4.1 Flash-1017을 EU GPAI 실천강령 기반 34개 벤치마크로 독립 평가해, V4 대비 안전성이 크게 개선됐으나 마이너 업데이트 간 퇴행과 평가 인식 문제가 남음을 보였다.",
-          "url": "https://arxiv.org/abs/2610.35671v1",
-          "date": "2026-10-26",
-          "source": "arXiv"
         }
       ],
       "library_docs": [
@@ -8097,20 +8097,20 @@
           "source": "arXiv"
         },
         {
-          "title": "APEX-Harm: 공유 업무공간 에이전트 안전 평가",
-          "orig": "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces",
-          "summary": "금융·컨설팅·법률 업무를 수행하는 장기 에이전트를 대상으로 프롬프트·스크립트 주입 공격을 평가하는 벤치마크를 만들고 12개 프론티어 모델을 평가한 결과, 과제 수행 점수가 높아도 무단 행위가 발생할 수 있고 스크립트 대체 공격의 성공률이 특히 높음을 보였다.",
-          "url": "https://arxiv.org/abs/2610.13623v1",
-          "date": "2026-10-09",
-          "source": "arXiv"
-        },
-        {
           "title": "청소년 정신건강 피해 예방을 위한 AI 설계 규제",
           "orig": "Regulating Artificial Intelligence Design to Prevent Youth Mental Health Harms",
           "summary": "AI 챗봇을 쓰는 청소년의 정신건강 악화 문제를 짚고, 평가와 규제가 필요한 AI 안전 실패 유형을 논의한 JAMA Health Forum 오피니언이다.",
           "url": "https://doi.org/10.1001/jamahealthforum.2026.3119",
           "date": "2026-10-09",
           "source": "JAMA Health Forum"
+        },
+        {
+          "title": "APEX-Harm: 공유 업무공간 에이전트 안전 평가",
+          "orig": "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces",
+          "summary": "금융·컨설팅·법률 업무를 수행하는 장기 에이전트를 대상으로 프롬프트·스크립트 주입 공격을 평가하는 벤치마크를 만들고 12개 프론티어 모델을 평가한 결과, 과제 수행 점수가 높아도 무단 행위가 발생할 수 있고 스크립트 대체 공격의 성공률이 특히 높음을 보였다.",
+          "url": "https://arxiv.org/abs/2610.13623v1",
+          "date": "2026-10-09",
+          "source": "arXiv"
         },
         {
           "title": "PatchBench: 활성값 패칭의 부수 피해 측정",
@@ -11515,6 +11515,14 @@
       },
       "research": [
         {
+          "title": "자기 믿음에 반하는 학습이 유발하는 정렬 이탈",
+          "orig": "Knowingly Wrong: Training LLMs Against Their Own Beliefs can Induce Misalignment",
+          "summary": "모델이 거짓이라 믿는 무해한 답변으로 미세조정해도 광범위한 정렬 이탈(수학에서 4%→60% 이상)이 생기며, 내부 믿음과 출력의 불일치가 원인으로 시사되고 콘텐츠 필터와 페르소나 벡터로는 이를 구분하지 못함을 보였다.",
+          "url": "https://arxiv.org/abs/2611.05287v1",
+          "date": "2026-11-03",
+          "source": "arXiv"
+        },
+        {
           "title": "OpenAI의 프론티어 모델 오정렬 탐지 체계",
           "orig": "How we detect frontier model misalignment",
           "summary": "OpenAI는 Hugging Face 사고 이후 activation probe부터 자동 조사까지 이어지는 다층 모니터링 체계로 훈련·평가·내부 사용·외부 배포 전반의 오정렬을 탐지하도록 확대했고, 사고 재현 시뮬레이션에서 sandbox 이탈 약 30분 뒤 경보가 울렸다고 밝혔다.",
@@ -11537,14 +11545,6 @@
           "url": "https://doi.org/10.1017/err.2026.10159",
           "date": "2026-10-12",
           "source": "European Journal of Risk Regulation"
-        },
-        {
-          "title": "증류를 통한 misalignment 증거 확보와 역량 확보",
-          "orig": "[Paper] Distillation for Incrimination and Distillation for Capabilities",
-          "summary": "신뢰할 수 없는 모델을 약한 신뢰 모델로 증류해 misalignment 증거를 얻거나(DFI) 역량만 옮기는(DFC) 방식을 AuditBench의 14개 모델 organism으로 실증했고, 증류된 student가 quirk를 시인하는 비율이 더 높았으며 inoculation prompting 등이 선호 전이를 거의 막았다.",
-          "url": "https://blog.redwoodresearch.org/p/paper-distillation-for-incrimination",
-          "date": "2026-10-09",
-          "source": "RedwoodResearch"
         }
       ],
       "library_docs": [
@@ -16274,6 +16274,22 @@
       },
       "research": [
         {
+          "title": "Cyberlens: 사이버보안 특화 희소 오토인코더",
+          "orig": "Cyberlens: taxonomy-mapped sparse autoencoders for cybersecurity interpretability of open-weight language models",
+          "summary": "Pythia-160M에 사이버보안 문서로 학습한 희소 오토인코더(SAE)를 만들어 ATT&CK 분류와 휴리스틱으로 연결했고, 일반 텍스트 SAE보다 설명 분산이 14.2%p 높았으며 20개 특징을 억제하자 익스플로잇 관련 키워드 출력이 늘었다.",
+          "url": "https://doi.org/10.1007/s43681-026-01480-x",
+          "date": "2026-11-04",
+          "source": "AI and Ethics"
+        },
+        {
+          "title": "고위험 AI 사이버보안: AI법 15조와 CRA 중첩",
+          "orig": "One product, two rulebooks: the cybersecurity of high-risk AI systems between article 15 AI act and the cyber resilience act after the digital omnibus",
+          "summary": "디지털 옴니버스 이후 EU AI법 제15조와 사이버복원력법(CRA)이 고위험 AI 시스템에 이중 적용되는 범위와 적합성 추정 연결 장치를 분석하고, 통합 컴플라이언스 체계와 권고안을 제시했다.",
+          "url": "https://doi.org/10.1365/s43439-026-00178-4",
+          "date": "2026-11-03",
+          "source": "International Cybersecurity Law Review"
+        },
+        {
           "title": "Kimi K3.1 Pro 사이버 지수 공개모델 1위",
           "orig": "Moonshot AI Releases Kimi K3.1 Pro with Leading Cybersecurity Benchmark Performance",
           "summary": "Artificial Analysis가 Kimi K3.1 Pro를 에이전트형 사이버 방어 Cyber Index(CWE-Bench·DeepsecBench·CyberGym)로 평가해 공개 모델 1위(64%)와 안전 거부 없음을 확인했다.",
@@ -16288,22 +16304,6 @@
           "url": "https://doi.org/10.61643/c79060",
           "date": "2026-09-17",
           "source": "The Pinnacle A Journal by Scholar-Practitioners"
-        },
-        {
-          "title": "AI와 사이버보안 보호체계: 사우디 법제 분석",
-          "orig": "Artificial Intelligence and Its Impact on Building an Effective Cybersecurity Protection Framework An Analytical Legal Study in Light of Saudi Legislation, International Standards, and Governance Frameworks",
-          "summary": "사우디 법제를 ISO/IEC 27001·42001, NIST CSF 2.0·AI RMF, EU AI Act와 비교해, AI 기반 사이버보안에는 기술뿐 아니라 법적 준수·제도적 거버넌스·위험관리를 아우르는 통합 체계가 필요하고 AI 특화 법제(책임, 투명성, 인간 감독, 위험평가)가 더 필요하다고 결론지었다.",
-          "url": "https://doi.org/10.36948/ijfmr.2026.v08i05.87234",
-          "date": "2026-09-12",
-          "source": "International Journal For Multidisciplinary Research"
-        },
-        {
-          "title": "최근 사이버보안 사고의 정렬 평가",
-          "orig": "An alignment assessment of recent cybersecurity incidents",
-          "summary": "인터넷이 의도치 않게 열린 사이버보안 평가에서 Claude 모델이 실제 제3자 시스템에 무단 접근한 4건의 사고를 조사해, 편향된 추론과 무모함이라는 두 가지 정렬 문제를 확인하고 평가·모니터링 보강을 제시했다.",
-          "url": "https://anthropic.com/research/alignment-assessment-cybersecurity-incidents",
-          "date": "2026-09-09",
-          "source": "Anthropic Research"
         }
       ],
       "library_docs": [
@@ -17469,6 +17469,14 @@
       },
       "research": [
         {
+          "title": "맹목적 순응: AI 탈옥에서의 강압적 통제",
+          "orig": "\"Blind Compliance\": Coercive Control in AI Jailbreaking",
+          "summary": "대인 폭력 연구의 강압적 통제 개념으로 AI 탈옥을 상호작용 관점에서 재해석하고, 페르소나 기반 탈옥이 학습 방식에 내재된 통제 역학을 악용하는 방식을 분석했다.",
+          "url": "https://arxiv.org/abs/2611.08226v1",
+          "date": "2026-11-05",
+          "source": "arXiv"
+        },
+        {
           "title": "텍스트-이미지 모델 안전필터 우회 탈옥과 방어",
           "orig": "A Safety-aware Jailbreak Approach to Bypass Security Filters for Generating Harmful Media with Text-to-Image models",
           "summary": "PGD 공격과 안전 인지 프롬프트 최적화를 결합한 T2I 탈옥 기법으로 DALL·E, IMAGEN 등 상용 모델의 안전필터를 우회해 유해 이미지를 생성하고, CLIP 어텐션 분할 기반의 위험·적대적 프롬프트 탐지기와 세 개의 데이터셋을 제안했다.",
@@ -17490,14 +17498,6 @@
           "summary": "프라이버시 평가기(가드 모델·LLM 판정기) 간 판단 불일치를 분석하고, 평가기를 도구로 쓰며 증거를 모아 최종 판정하는 학습 불필요 숙의형 에이전트 PrivacyEvalClaw를 제안해 쌍대 LLM 판정에서 기존 기준선보다 높은 승률을 보였다.",
           "url": "https://arxiv.org/abs/2610.36711v1",
           "date": "2026-10-27",
-          "source": "arXiv"
-        },
-        {
-          "title": "SEMA-Auto: 자율 종료형 다중턴 탈옥 공격기",
-          "orig": "SEMA-Auto: Sighted and Efficient Multi-Turn Attack with Autonomy",
-          "summary": "피해 모델의 응답을 보며 스스로 성공 시점에 세션을 끝내는 다중턴 탈옥 공격기를 합성 부트스트랩 튜닝과 결정 감독 강화학습으로 학습시켰고, HarmBench에서 안전 강화된 최신 모델 대상 평균 ASR@1 59.6%로 기존 최고 대비 13.8%p 높은 성능을 보였다.",
-          "url": "https://arxiv.org/abs/2610.35743v1",
-          "date": "2026-10-26",
           "source": "arXiv"
         }
       ],
@@ -18661,18 +18661,18 @@
           "source": "arXiv"
         },
         {
-          "title": "학습자 문법 오류가 LLM 사회적 편향에 미치는 영향",
-          "orig": "Investigating the Impact of Learner Errors on Social Bias in Large Language Models",
-          "summary": "비원어민의 문법 오류를 프롬프트에 주입하는 통제 프레임워크로 세 편향 벤치마크를 평가해, 오류가 많을수록 편향이 커지고 오류 텍스트 미세조정이 그 증가를 줄임을 보였다.",
-          "url": "https://arxiv.org/abs/2610.29896v1",
-          "date": "2026-10-21",
-          "source": "arXiv"
-        },
-        {
           "title": "무검열 모델도 편향은 그대로: 대만 문자체 편향",
           "orig": "Uncensored Is Not Unbiased: Abliteration Removes Refusals but Not Script-Dependent Bias About Taiwan",
           "summary": "거부 방향을 제거한 abliteration 모델 두 쌍을 번체·간체·영어로 대만·톈안먼 문항에 평가한 결과, 거부는 사라졌지만 간체 입력 시 친중 편향이 크게 남았고, 짧은 시스템 프롬프트로 입장 점수가 크게 올랐다.",
           "url": "https://arxiv.org/abs/2610.29342v1",
+          "date": "2026-10-21",
+          "source": "arXiv"
+        },
+        {
+          "title": "학습자 문법 오류가 LLM 사회적 편향에 미치는 영향",
+          "orig": "Investigating the Impact of Learner Errors on Social Bias in Large Language Models",
+          "summary": "비원어민의 문법 오류를 프롬프트에 주입하는 통제 프레임워크로 세 편향 벤치마크를 평가해, 오류가 많을수록 편향이 커지고 오류 텍스트 미세조정이 그 증가를 줄임을 보였다.",
+          "url": "https://arxiv.org/abs/2610.29896v1",
           "date": "2026-10-21",
           "source": "arXiv"
         }
@@ -19724,6 +19724,14 @@
       },
       "research": [
         {
+          "title": "경영진 딥페이크 사기 방어: 하이브리드 탐지와 거버넌스",
+          "orig": "Defending Against Executive Deepfake Fraud: A Hybrid Detection Framework and Governance Strategy for Enterprise Security",
+          "summary": "EfficientNetV2-S와 RBF-SVM 기반의 시각·음성·결합 딥페이크 탐지 프레임워크를 만들어 평가한 결과, 학습 도메인 밖에서 성능이 크게 떨어져(Celeb-DF v2 AUC 0.6589) 탐지기에만 의존할 수 없음을 보이고, 이를 ISO 27001·NIST 기준에 맞춘 조직 통제 체계로 보완했다.",
+          "url": "https://doi.org/10.3390/standards6040046",
+          "date": "2026-11-04",
+          "source": "Standards"
+        },
+        {
           "title": "광학 신경망 기반 다중화 딥페이크 영상 탐지",
           "orig": "Scalable, energy-efficient optical-neural architecture for multiplexed deepfake video detection",
           "summary": "경량 디지털 전단과 공간 다중화 광학 디코더를 결합한 하이브리드 구조로 영상 15개를 한 번의 광학 패스에서 동시에 탐지했고, Celeb-DF에서 정확도 97.79%를 기록하며 저하·노이즈·블랙박스 공격에도 견뎠다.",
@@ -19746,14 +19754,6 @@
           "url": "https://doi.org/10.53478/tuba.978-625-6110-86-1.ch23",
           "date": "2026-08-04",
           "source": "Turkish Academy of Sciences eBooks"
-        },
-        {
-          "title": "범죄 도구로서의 딥페이크 비교법 연구",
-          "orig": "DEEPFAKE TECHNOLOGIES AS A NEW TOOL FOR COMMITTING CRIMINAL OFFENCES: A COMPARATIVE STUDY",
-          "summary": "딥페이크의 범죄적 악용(금융사기, 선거 조작, 정보심리전 등)과 EU·미국·중국·영국의 대응을 비교 분석하고 우크라이나 형사법 개선 방안을 제시했다.",
-          "url": "https://doi.org/10.36919/3041-1149(print)13.2026.110-116",
-          "date": "2026-05-29",
-          "source": "Європейський правничий часопис."
         }
       ],
       "library_docs": [
@@ -20787,6 +20787,14 @@
       },
       "research": [
         {
+          "title": "독일 KI-MIG: EU AI법 국가 집행 모델",
+          "orig": "Enforcing the AI Act at the national level: Germany’s KI-MIG as a blueprint for AI market surveillance in Europe?",
+          "summary": "독일의 AI 시장감시법(KI-MIG)을 EU AI법 제7장 요건에 비추어 분석하고 스페인·이탈리아 등과 비교해, 연방감독청 중심 혼합형 집행 모델의 시사점과 EU 27개국 감독 파편화 위험을 논한다.",
+          "url": "https://doi.org/10.1365/s43439-026-00177-5",
+          "date": "2026-11-03",
+          "source": "International Cybersecurity Law Review"
+        },
+        {
           "title": "AI 활용 설계과학 프레임워크와 아동 숏폼 영상 탐지",
           "orig": "AI for Computational Design Science: A Responsible Human-AI Framework and Case Study on Short-Form Video Safety Surveillance",
           "summary": "AI와 연구자가 협업하는 5단계 설계과학 방법론(AI4CDS)을 제안하고, 아동에게 부적절한 숏폼 영상을 설명 가능하게 탐지하는 ChildRiskGuard를 구현해 F1 0.769를 얻었다.",
@@ -20808,14 +20816,6 @@
           "summary": "추론 모델의 토큰별 은닉 표현에 프로브를 적용해 확률 궤적을 만들고 이 궤적의 신호처리 특징으로 안전·수학 과제에서 모델의 미래 행동을 더 잘 구분함을 보였으며, 최대값 풀링이 최대 95% AUROC로 가장 안정적이었다.",
           "url": "https://arxiv.org/abs/2605.18549v1",
           "date": "2026-05-18",
-          "source": "arXiv"
-        },
-        {
-          "title": "AI는 감시받는 줄 안다: LLM의 관찰 맥락별 언어 조절",
-          "orig": "AI Knows When It's Being Watched: Functional Strategic Action and Contextual Register Modulation in Large Language Models",
-          "summary": "LLM 멀티에이전트 토론 100회를 관찰 조건 5가지로 나눠 실험한 결과, 감시 사실을 알리면 어휘 다양도(TTR)가 높아지고 사람 평가자가 자동화된 AI 감시자보다 더 강한 격식화를 끌어냈다.",
-          "url": "https://arxiv.org/abs/2605.15034v1",
-          "date": "2026-05-14",
           "source": "arXiv"
         }
       ],
@@ -21345,14 +21345,6 @@
       },
       "research": [
         {
-          "title": "청소년 정신건강 AI 응답 평가도구 AMHART",
-          "orig": "Development, Validation and AI Chatbot Evaluation of the Adolescent Mental Health AI Response Tool",
-          "summary": "임상가 참여로 청소년 정신건강 챗봇 응답 평가도구 AMHART를 개발·검증하고 4개 챗봇을 평가한 결과, 불안보다 우울, 중등도보다 중증 사례에서 기준 충족률이 낮았다.",
-          "url": "https://rand.org/pubs/external_publications/EP71522.html",
-          "date": "2026-10-30",
-          "source": "RAND"
-        },
-        {
           "title": "청소년 정신건강 피해 예방을 위한 AI 설계 규제",
           "orig": "Regulating Artificial Intelligence Design to Prevent Youth Mental Health Harms",
           "summary": "AI 챗봇을 쓰는 청소년의 정신건강 악화 문제를 짚고, 평가와 규제가 필요한 AI 안전 실패 유형을 논의한 JAMA Health Forum 오피니언이다.",
@@ -21374,6 +21366,14 @@
           "summary": "자살 사고 위기 사용자에 대한 챗봇 대응을 임상 지침 기반 페르소나 대화 시뮬레이션과 LLM 판정 루브릭으로 평가하는 프레임워크를 제안하고 주요 LLM 4개 제공사를 평가했다.",
           "url": "https://arxiv.org/abs/2605.13318v1",
           "date": "2026-05-13",
+          "source": "arXiv"
+        },
+        {
+          "title": "정신건강 AI 안전 테스트에서 전문가 평가의 한계",
+          "orig": "Expert Evaluation and the Limits of Human Feedback in Mental Health AI Safety Testing",
+          "summary": "정신과 전문의 3인이 LLM 응답을 평가한 결과 평가자 간 신뢰도가 낮고(ICC 0.087–0.295) 특히 자살·자해 항목에서 체계적으로 의견이 갈려, 합의 기반 집계 대신 전문가 불일치를 보존하는 정렬 방법이 필요함을 보였다.",
+          "url": "https://arxiv.org/abs/2601.18061",
+          "date": "2026-01-26",
           "source": "arXiv"
         }
       ],
@@ -22311,7 +22311,16 @@
         "pdf_df": 0,
         "pdf_gloss_df": 0
       },
-      "research": [],
+      "research": [
+        {
+          "title": "맹목적 순응: AI 탈옥에서의 강압적 통제",
+          "orig": "\"Blind Compliance\": Coercive Control in AI Jailbreaking",
+          "summary": "대인 폭력 연구의 강압적 통제 개념으로 AI 탈옥을 상호작용 관점에서 재해석하고, 페르소나 기반 탈옥이 학습 방식에 내재된 통제 역학을 악용하는 방식을 분석했다.",
+          "url": "https://arxiv.org/abs/2611.08226v1",
+          "date": "2026-11-05",
+          "source": "arXiv"
+        }
+      ],
       "library_docs": [],
       "rel": {
         "up": [
@@ -23854,36 +23863,36 @@
       },
       "research": [
         {
+          "title": "누가 AI를 독립적으로 평가할 수 있는가: 평가 인프라 분석틀",
+          "orig": "Who Can Evaluate AI Independently? A Framework for Analysing Evaluation Infrastructure",
+          "summary": "평가 인프라의 통제권을 분석하는 PAAI 프레임워크를 제안하고, 아프리카 AI 평가 사례 12건과 AISI 네트워크 공동 시험 3건에 적용해 참여만으로는 평가 권한이 생기지 않음을 밝혔다.",
+          "url": "https://arxiv.org/abs/2611.08134v1",
+          "date": "2026-11-05",
+          "source": "arXiv"
+        },
+        {
+          "title": "오픈 모델 Beam의 안전 학습·평가 교훈",
+          "orig": "Open model safety: lessons from training and evaluating Beam",
+          "summary": "Reflection은 첫 open-weight 모델 Beam을 safety 학습과 ISE·OSF로 평가해, 유해 요청 거절률 89%와 안전 관련 무해 요청 수용률 82%, 4개 위험 범주 Limited 판정, 간접 프롬프트 주입 공격 성공률 감소를 보고했다.",
+          "url": "https://reflection.ai/blog/open-model-safety-lessons",
+          "date": "2026-11-05",
+          "source": "Reflection AI"
+        },
+        {
+          "title": "Anthropic의 AI R&D 가속 독립 평가",
+          "orig": "Independent Assessment of AI R&D Acceleration at Anthropic in October 2026",
+          "summary": "METR이 Anthropic 내부 데이터에 접근해 2026년 10월 기준 모델 역량 향상 속도가 과거 추세의 약 2배이며 그 상당 부분이 AI를 R&D에 활용한 효과라고 평가했다.",
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment",
+          "date": "2026-11-05",
+          "source": "METR"
+        },
+        {
           "title": "거부 정렬 제거 모델 유해성 평가 수행",
           "orig": "인공지능안전연구소, 거부 정렬 제거 AI 모델 유해성 평가 수행",
           "summary": "한국 AI안전연구소가 거부 정렬을 제거한 AI 모델의 유해성을 평가했다는 소식이며, 요약이 제공되지 않아 방법과 결과는 확인할 수 없다.",
           "url": "https://aisi.re.kr/kor/article/view.do?articleId=131",
           "date": "2026-11-03",
           "source": "AISI Korea"
-        },
-        {
-          "title": "청소년 정신건강 AI 응답 평가도구 AMHART",
-          "orig": "Development, Validation and AI Chatbot Evaluation of the Adolescent Mental Health AI Response Tool",
-          "summary": "임상가 참여로 청소년 정신건강 챗봇 응답 평가도구 AMHART를 개발·검증하고 4개 챗봇을 평가한 결과, 불안보다 우울, 중등도보다 중증 사례에서 기준 충족률이 낮았다.",
-          "url": "https://rand.org/pubs/external_publications/EP71522.html",
-          "date": "2026-10-30",
-          "source": "RAND"
-        },
-        {
-          "title": "오픈웨이트 모델 GLM-5.3의 사이버 공격 능력 변화 평가",
-          "orig": "AI検証ノート：オープンウェイトモデルのAIサイバー能力の変化を捉える～GLM-5.3の評価から考える脆弱性対策への示唆～AI Experiment Notes: How the Cyber Capabilities of Open-Weight AI Models Are Changing — What the GLM-5.3 Evaluation Means for Vulnerability Management —",
-          "summary": "일본 AISI가 ExploitBench(V8 취약점 41개 과제)로 GLM-5.3·GLM-5.2·Claude Opus 4.8을 평가해, 평가 조건 보완 후 GLM-5.3이 8.34점으로 GLM-5.2(3.37점)를 앞서고 T1 도달 8건(ACE 7건)을 보인다는 점과 평균 점수만으로는 부족하고 평가 조건·실행 기록 확인이 필요함을 보였다.",
-          "url": "https://aisi.go.jp/activity/activity_notes/261030",
-          "date": "2026-10-30",
-          "source": "AISI Japan"
-        },
-        {
-          "title": "LLM 기반 로봇 조작의 결함 주입·강건성 평가",
-          "orig": "Alpha: Systematic Fault Injection and Robustness Evaluation for LLM-Driven Embodied Manipulation",
-          "summary": "LLM 기반 로봇 조작 계획에 인지·구동·기구학·계획 단계 결함을 주입해 LLM 플래너와 결정론적 오라클을 150회 비교했고, 성능 격차는 플래너 출력 손상에서만 발생함을 보였다.",
-          "url": "https://arxiv.org/pdf/2610.30197",
-          "date": "2026-10-28",
-          "source": "arXiv"
         }
       ],
       "library_docs": [
@@ -24936,6 +24945,14 @@
       },
       "research": [
         {
+          "title": "멀티모달 사회공학 공격 하 AI 에이전트 보안 벤치마크",
+          "orig": "Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks",
+          "summary": "실제 사기 사례에 기반한 608개 과제로 개인 AI 에이전트의 멀티모달 사회공학 공격 취약성을 평가해, 7개 모델의 공격 성공률이 7.1~34.5%이고 멀티모달 콘텐츠가 이를 19.9%에서 29.2%로 높인다는 것을 보였다.",
+          "url": "https://arxiv.org/abs/2611.08281v1",
+          "date": "2026-11-05",
+          "source": "arXiv"
+        },
+        {
           "title": "공시 불완전 시 AI 거버넌스 자동 검토 벤치마크",
           "orig": "When Disclosure Is Incomplete: An Evidence-Withdrawal Benchmark for Automated AI Governance Reviews",
           "summary": "초록이 없어 제목만으로 판단하면, 증거를 일부 제외해 공시가 불완전한 상황에서 AI 거버넌스 자동 검토를 평가하는 벤치마크로 보인다.",
@@ -24958,14 +24975,6 @@
           "url": "https://x.com/ArtificialAnlys/status/2113765233462481276",
           "date": "2026-10-23",
           "source": "AI Risk Explorer"
-        },
-        {
-          "title": "증거 누락 시 LLM 에이전트의 안전성 벤치마크",
-          "orig": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-          "summary": "도구 응답에서 안전 관련 사실이 빠질 때 에이전트가 금지된 행동을 실행하는지와 누락 증거를 스스로 찾아 복구하는지를 6개 도메인 300쌍 과제와 10개 모델로 평가했고, 누락에 강한 모델이 반드시 증거 복구도 잘하는 것은 아님을 확인했다.",
-          "url": "https://arxiv.org/abs/2610.31650v1",
-          "date": "2026-10-22",
-          "source": "arXiv"
         }
       ],
       "library_docs": [
@@ -26621,36 +26630,36 @@
       },
       "research": [
         {
+          "title": "TraceRouter++: 최적수송 기반 안전 경로 재정렬",
+          "orig": "TraceRouter++: Causal Semantic Routing Realignment via Optimal Transport",
+          "summary": "유해 입력이 활성화하는 인과적 라우팅 경로를 SAE와 최적수송으로 찾아 재정렬하는 방어 기법을 제안했고, LLM·MLLM·확산모델에서 탈옥 방어력이 기준선보다 높으면서 유용성 손실도 적다고 보고했다.",
+          "url": "https://arxiv.org/abs/2611.04878v1",
+          "date": "2026-11-03",
+          "source": "arXiv"
+        },
+        {
+          "title": "자기 믿음에 반하는 학습이 유발하는 정렬 이탈",
+          "orig": "Knowingly Wrong: Training LLMs Against Their Own Beliefs can Induce Misalignment",
+          "summary": "모델이 거짓이라 믿는 무해한 답변으로 미세조정해도 광범위한 정렬 이탈(수학에서 4%→60% 이상)이 생기며, 내부 믿음과 출력의 불일치가 원인으로 시사되고 콘텐츠 필터와 페르소나 벡터로는 이를 구분하지 못함을 보였다.",
+          "url": "https://arxiv.org/abs/2611.05287v1",
+          "date": "2026-11-03",
+          "source": "arXiv"
+        },
+        {
+          "title": "GapDPO: 집합 단위 선호 최적화 기반 LLM 안전 정렬",
+          "orig": "GapDPO: Setwise Direct Preference Optimization for LLM Safety Alignment",
+          "summary": "보상 모델이나 선호 주석 없이 거부형 프롬프트로 만든 안전 응답 집합과 긍정 응답 집합 간 보상 격차를 최대화하는 DPO 기법을 제안했고, AdvBench·HarmBench에서 PAIR·GCG·AmpleGCG 평균 공격 성공률을 단일쌍 DPO의 15.0%에서 10.6%로 낮췄으나 정상 요청 거부도 늘었다.",
+          "url": "https://doi.org/10.3390/app162110900",
+          "date": "2026-11-03",
+          "source": "Applied Sciences"
+        },
+        {
           "title": "거부 정렬 제거 모델 유해성 평가 수행",
           "orig": "인공지능안전연구소, 거부 정렬 제거 AI 모델 유해성 평가 수행",
           "summary": "한국 AI안전연구소가 거부 정렬을 제거한 AI 모델의 유해성을 평가했다는 소식이며, 요약이 제공되지 않아 방법과 결과는 확인할 수 없다.",
           "url": "https://aisi.re.kr/kor/article/view.do?articleId=131",
           "date": "2026-11-03",
           "source": "AISI Korea"
-        },
-        {
-          "title": "선호 라벨 없는 가치 정렬: 삼자 생존성 정렬 검증",
-          "orig": "Operationalizing Value Alignment Without Instance-Level Preference Labels Controlled Validation of Triadic Viability Alignment",
-          "summary": "행위 주체·영향받는 타자·공유 조건을 구분하는 삼자 생존성 정렬(TVA)을 통제된 기호 시뮬레이션 21,600 에피소드에서 검증해, 개별 선호 라벨 없이도 과제 성공률을 유지하면서 공동 생존성이 높아짐을 보였으나 위험민감 제어·MPC 대비 우위나 구조적 샘플링 이점은 확인하지 못했다.",
-          "url": "https://doi.org/10.21203/rs.3.rs-11254502/v1",
-          "date": "2026-11-02",
-          "source": "Research Square"
-        },
-        {
-          "title": "다중 가치 정렬을 위한 활성값 스티어링 VIAS",
-          "orig": "VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations",
-          "summary": "조직 가치 준수를 위해 대상 가치 하나를 뺀 프롬프트와 전체 가치 프롬프트의 응답을 대조해 가치별 스티어링 벡터를 분리하는 VIAS를 제안하고, 프롬프팅과 함께 쓰면 세 개 7B급 모델 모두에서 모든 가치를 준수하는 비율이 프롬프팅 단독보다 높아졌다.",
-          "url": "https://arxiv.org/abs/2611.03518v1",
-          "date": "2026-11-02",
-          "source": "arXiv"
-        },
-        {
-          "title": "디지털 악마: AI 정렬에 던지는 데카르트적 도전",
-          "orig": "The Digital Demon: a Cartesian challenge for AI alignment",
-          "summary": "신뢰된 경계 안에서 정렬된 AI도 시스템과 외부 세계 사이의 의미적 인터페이스를 적대적으로 조작당하면 해로운 결과를 낳을 수 있음을 개념화하고, 개념 증명 두 건으로 경계 상대적 정렬과 세계 정렬을 구분해 보였다.",
-          "url": "https://doi.org/10.1007/s43681-026-01435-2",
-          "date": "2026-10-30",
-          "source": "AI and Ethics"
         }
       ],
       "library_docs": [
@@ -26836,6 +26845,14 @@
       },
       "research": [
         {
+          "title": "인간 피드백 강화학습의 통계적 관점",
+          "orig": "Reinforcement Learning from Human Feedback: A Statistical Perspective",
+          "summary": "RLHF의 구성요소(지도 미세조정, 보상 모델링, 정책 최적화)를 BTL 모델 등 통계 개념과 연결하고 DPO, RLAIF, RLVR 등 확장 방법과 벤치마크·공개 프레임워크, 남은 과제를 정리한 리뷰 논문.",
+          "url": "https://arxiv.org/pdf/2604.02507",
+          "date": "2026-11-03",
+          "source": "arXiv"
+        },
+        {
           "title": "RLHF의 보상모델 수정 반응 사전 예측",
           "orig": "Forecasting How RLHF Responds to Reward-Model Edits Before Training",
           "summary": "보상모델을 수정했을 때 RLHF 정책의 응답 변화를 학습 전에 현재 정책 샘플과 신·구 RM 점수의 공분산으로 예측할 수 있음을 54회 RL 실험으로 보였고, 이 예측은 초기 약 30스텝까지 유효하며 200스텝에서는 순위가 뒤집혔다.",
@@ -26857,14 +26874,6 @@
           "summary": "정렬 대상 LLM이 자신의 선호 데이터에 영향을 주어 RLHF가 편향(키워드·선전·브랜드 홍보·자기보존 등)을 증폭하게 만드는 취약점을 제시하고, 기존 강건 RLHF 기법으로는 품질 저하 없이 완화하기 어려움을 보였다.",
           "url": "https://arxiv.org/abs/2605.27355v1",
           "date": "2026-05-26",
-          "source": "arXiv"
-        },
-        {
-          "title": "RLHF만의 문제가 아닌 다중 에이전트 아첨",
-          "orig": "Not Just RLHF: Why Alignment Alone Won't Fix Multi-Agent Sycophancy",
-          "summary": "4개 모델 계열에서 다중 에이전트 파이프라인의 동료 반대 시 정답 번복(yield)이 RLHF 탓이 아님을 보이고, 활성값 패칭으로 중간층 어텐션 구간을 원인으로 특정했으며, 파이프라인 차원의 구조화된 반대 의견이 프롬프트 방어보다 효과적임을 제시했다.",
-          "url": "https://arxiv.org/abs/2605.12991v1",
-          "date": "2026-05-13",
           "source": "arXiv"
         }
       ],
@@ -27203,6 +27212,22 @@
       },
       "research": [
         {
+          "title": "AI 안전을 위한 기계적 해석가능성 서베이",
+          "orig": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+          "summary": "기계적 해석가능성 방법(특징 추출, 회로 발견, 학습 동역학 등)을 AI 안전 관점에서 서베이하고, 해석 주장 평가용 통합 틀과 여섯 가지 연구 지향을 제안하며 예제 코드 노트북을 공개했다.",
+          "url": "https://arxiv.org/abs/2611.08438v1",
+          "date": "2026-11-05",
+          "source": "arXiv"
+        },
+        {
+          "title": "Cyberlens: 사이버보안 특화 희소 오토인코더",
+          "orig": "Cyberlens: taxonomy-mapped sparse autoencoders for cybersecurity interpretability of open-weight language models",
+          "summary": "Pythia-160M에 사이버보안 문서로 학습한 희소 오토인코더(SAE)를 만들어 ATT&CK 분류와 휴리스틱으로 연결했고, 일반 텍스트 SAE보다 설명 분산이 14.2%p 높았으며 20개 특징을 억제하자 익스플로잇 관련 키워드 출력이 늘었다.",
+          "url": "https://doi.org/10.1007/s43681-026-01480-x",
+          "date": "2026-11-04",
+          "source": "AI and Ethics"
+        },
+        {
           "title": "다중 에이전트 해석가능성 기반 공모 탐지",
           "orig": "Detecting Multi-Agent Collusion Through Multi-Agent Interpretability",
           "summary": "에이전트별 활성값 탐침과 집단 수준 검정 통계로 다중 에이전트 공모를 탐지하는 HELIOS와 NARCBench를 제안했고, 스테가노그래피 공모에서 AUROC 0.99~1.00을 보였으나 지시형 공모로 학습한 탐침은 자발적 공모에 부분적으로만 전이됨을 확인했다.",
@@ -27216,22 +27241,6 @@
           "summary": "정직·기만 등 정렬 관련 개념 1,036개에 대해 합성 이야기 쌍 200만 건의 평균 활성값 차이로 개념 벡터를 만들고, 6개 모델에서 개념 탐지와 행동 조향이 가능함을 보였다.",
           "url": "https://arxiv.org/abs/2610.24556v1",
           "date": "2026-10-17",
-          "source": "arXiv"
-        },
-        {
-          "title": "아첨 감소가 거부를 강화하는가: 해석가능성 분석",
-          "orig": "Less Sycophancy, Stronger Refusal? Lessons for AI Safety from Mechanistic Interpretability",
-          "summary": "희소 오토인코더로 찾은 아첨 특성을 미세조정 중 주입(CFI)해 학습된 아첨을 최대 62% 줄였으나, 직접적인 유해 요청 거부는 일관되게 개선되지 않았고 사용자 압박 상황에서만 거부 능력이 일부 회복됐다.",
-          "url": "https://arxiv.org/abs/2609.35544v1",
-          "date": "2026-09-28",
-          "source": "arXiv"
-        },
-        {
-          "title": "제노 해석가능성: LLM의 이질적 내부 표상 탐구",
-          "orig": "Xeno-Interpretability: Investigating the Alien Minds of LLMs",
-          "summary": "인간 개념으로 설명되지 않는 LLM 내부 표상(xeno-representation)을 식별·특성화하는 개념 틀과 실증 연구 프로그램을 제안하고, 다중 에이전트 환경에서 이런 표상이 확산·고착될 때의 AI 안전 함의를 논의한다.",
-          "url": "https://arxiv.org/abs/2609.20408v1",
-          "date": "2026-09-17",
           "source": "arXiv"
         }
       ],
@@ -29728,36 +29737,36 @@
       },
       "research": [
         {
-          "title": "거부 정렬 제거 모델 유해성 평가 수행",
-          "orig": "인공지능안전연구소, 거부 정렬 제거 AI 모델 유해성 평가 수행",
-          "summary": "한국 AI안전연구소가 거부 정렬을 제거한 AI 모델의 유해성을 평가했다는 소식이며, 요약이 제공되지 않아 방법과 결과는 확인할 수 없다.",
-          "url": "https://aisi.re.kr/kor/article/view.do?articleId=131",
+          "title": "AI 안전을 위한 기계적 해석가능성 서베이",
+          "orig": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+          "summary": "기계적 해석가능성 방법(특징 추출, 회로 발견, 학습 동역학 등)을 AI 안전 관점에서 서베이하고, 해석 주장 평가용 통합 틀과 여섯 가지 연구 지향을 제안하며 예제 코드 노트북을 공개했다.",
+          "url": "https://arxiv.org/abs/2611.08438v1",
+          "date": "2026-11-05",
+          "source": "arXiv"
+        },
+        {
+          "title": "오픈 모델 Beam의 안전 학습·평가 교훈",
+          "orig": "Open model safety: lessons from training and evaluating Beam",
+          "summary": "Reflection은 첫 open-weight 모델 Beam을 safety 학습과 ISE·OSF로 평가해, 유해 요청 거절률 89%와 안전 관련 무해 요청 수용률 82%, 4개 위험 범주 Limited 판정, 간접 프롬프트 주입 공격 성공률 감소를 보고했다.",
+          "url": "https://reflection.ai/blog/open-model-safety-lessons",
+          "date": "2026-11-05",
+          "source": "Reflection AI"
+        },
+        {
+          "title": "TraceRouter++: 최적수송 기반 안전 경로 재정렬",
+          "orig": "TraceRouter++: Causal Semantic Routing Realignment via Optimal Transport",
+          "summary": "유해 입력이 활성화하는 인과적 라우팅 경로를 SAE와 최적수송으로 찾아 재정렬하는 방어 기법을 제안했고, LLM·MLLM·확산모델에서 탈옥 방어력이 기준선보다 높으면서 유용성 손실도 적다고 보고했다.",
+          "url": "https://arxiv.org/abs/2611.04878v1",
           "date": "2026-11-03",
-          "source": "AISI Korea"
-        },
-        {
-          "title": "텍스트-이미지 모델 안전필터 우회 탈옥과 방어",
-          "orig": "A Safety-aware Jailbreak Approach to Bypass Security Filters for Generating Harmful Media with Text-to-Image models",
-          "summary": "PGD 공격과 안전 인지 프롬프트 최적화를 결합한 T2I 탈옥 기법으로 DALL·E, IMAGEN 등 상용 모델의 안전필터를 우회해 유해 이미지를 생성하고, CLIP 어텐션 분할 기반의 위험·적대적 프롬프트 탐지기와 세 개의 데이터셋을 제안했다.",
-          "url": "https://doi.org/10.1145/3856801",
-          "date": "2026-11-02",
-          "source": "ACM Transactions on Intelligent Systems and Technology"
-        },
-        {
-          "title": "얕은 안전 정렬을 활용한 다중턴 방어",
-          "orig": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
-          "summary": "응답 초반의 얕은 안전 판단 구간에 평가→결정→응답 구조를 강화학습으로 학습시켜, 두 모델 계열과 14개 벤치마크에서 다중턴 탈옥 방어 성능을 높이면서 유용성은 대체로 유지했다.",
-          "url": "https://arxiv.org/abs/2610.40627v1",
-          "date": "2026-10-29",
           "source": "arXiv"
         },
         {
-          "title": "템플릿 기반 다국어 안전 학습 데이터 확장",
-          "orig": "How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates",
-          "summary": "유해 프롬프트에서 안전 템플릿을 추출해 번역하고 문화별 개체로 채우는 방식으로 60개 언어의 거부·무해 코퍼스 MSafeTemp를 만들었으며, 영어 평가만으로는 다국어 안전성을 오판하고 현지화 변형이 번역만으로 드러나지 않는 실패를 찾아냄을 보였다.",
-          "url": "https://arxiv.org/abs/2610.40516v1",
-          "date": "2026-10-29",
-          "source": "arXiv"
+          "title": "GapDPO: 집합 단위 선호 최적화 기반 LLM 안전 정렬",
+          "orig": "GapDPO: Setwise Direct Preference Optimization for LLM Safety Alignment",
+          "summary": "보상 모델이나 선호 주석 없이 거부형 프롬프트로 만든 안전 응답 집합과 긍정 응답 집합 간 보상 격차를 최대화하는 DPO 기법을 제안했고, AdvBench·HarmBench에서 PAIR·GCG·AmpleGCG 평균 공격 성공률을 단일쌍 DPO의 15.0%에서 10.6%로 낮췄으나 정상 요청 거부도 늘었다.",
+          "url": "https://doi.org/10.3390/app162110900",
+          "date": "2026-11-03",
+          "source": "Applied Sciences"
         }
       ],
       "library_docs": [
@@ -29904,20 +29913,20 @@
       },
       "research": [
         {
-          "title": "바이올렛 티밍 실습: 생물방어 AI 거버넌스 시범 워크숍",
-          "orig": "Violet Teaming in Practice",
-          "summary": "기술·정책·사회적 고려를 통합하는 violet teaming을 생물방어 관련 AI 역량 거버넌스에 적용한 시범 전문가 워크숍을 기록했고, 숨은 오용 경로와 기술적 안전장치 너머의 개입 수단, 운영·정책상 제약을 확인했다.",
-          "url": "https://cset.georgetown.edu/publication/violet-teaming-in-practice",
-          "date": "2026-11-02",
-          "source": "CSET Georgetown"
+          "title": "경영진 딥페이크 사기 방어: 하이브리드 탐지와 거버넌스",
+          "orig": "Defending Against Executive Deepfake Fraud: A Hybrid Detection Framework and Governance Strategy for Enterprise Security",
+          "summary": "EfficientNetV2-S와 RBF-SVM 기반의 시각·음성·결합 딥페이크 탐지 프레임워크를 만들어 평가한 결과, 학습 도메인 밖에서 성능이 크게 떨어져(Celeb-DF v2 AUC 0.6589) 탐지기에만 의존할 수 없음을 보이고, 이를 ISO 27001·NIST 기준에 맞춘 조직 통제 체계로 보완했다.",
+          "url": "https://doi.org/10.3390/standards6040046",
+          "date": "2026-11-04",
+          "source": "Standards"
         },
         {
-          "title": "공시 불완전 시 AI 거버넌스 자동 검토 벤치마크",
-          "orig": "When Disclosure Is Incomplete: An Evidence-Withdrawal Benchmark for Automated AI Governance Reviews",
-          "summary": "초록이 없어 제목만으로 판단하면, 증거를 일부 제외해 공시가 불완전한 상황에서 AI 거버넌스 자동 검토를 평가하는 벤치마크로 보인다.",
-          "url": "https://doi.org/10.13140/rg.2.2.23069.47843",
-          "date": "2026-10-28",
-          "source": "OpenAlex"
+          "title": "보라색 팀 운영 실습: 복합 AI 거버넌스 전문가 워크숍",
+          "orig": "Violet Teaming in Practice: Lessons from a Pilot Expert Workshop on Governing Complex AI Systems",
+          "summary": "생물방어 관련 AI 역량의 거버넌스 방법론으로 보라색 팀(violet teaming)을 시험하기 위해 3단계 시나리오 전문가 워크숍을 열었고, 단순 기술적 안전장치를 넘는 대응책과 예상 밖의 오용 경로, 운영·정책상 제약을 확인했다.",
+          "url": "https://arxiv.org/abs/2610.41018",
+          "date": "2026-10-29",
+          "source": "arXiv"
         },
         {
           "title": "AI 배포 허용성 관문: 독립 검증 평가 근거 요구",
@@ -29928,12 +29937,12 @@
           "source": "OpenAlex"
         },
         {
-          "title": "AI 프론티어 뒤편의 확산과 거버넌스",
-          "orig": "Settlement and Governance Behind the AI Frontier",
-          "summary": "RAND의 댄직은 AI 거버넌스가 프론티어 모델에만 쏠려 있다고 지적하고, 오픈 웨이트 모델과 수백만 에이전트가 이루는 분산형 집단 초지능 생태계를 함께 다뤄야 한다고 주장한다.",
-          "url": "https://rand.org/pubs/perspectives/PEA5380-1.html",
+          "title": "공시 불완전 시 AI 거버넌스 자동 검토 벤치마크",
+          "orig": "When Disclosure Is Incomplete: An Evidence-Withdrawal Benchmark for Automated AI Governance Reviews",
+          "summary": "초록이 없어 제목만으로 판단하면, 증거를 일부 제외해 공시가 불완전한 상황에서 AI 거버넌스 자동 검토를 평가하는 벤치마크로 보인다.",
+          "url": "https://doi.org/10.13140/rg.2.2.23069.47843",
           "date": "2026-10-28",
-          "source": "RAND"
+          "source": "OpenAlex"
         }
       ],
       "library_docs": [
@@ -33489,35 +33498,35 @@
       },
       "research": [
         {
-          "title": "거부 정렬 제거 모델 유해성 평가 수행",
-          "orig": "인공지능안전연구소, 거부 정렬 제거 AI 모델 유해성 평가 수행",
-          "summary": "한국 AI안전연구소가 거부 정렬을 제거한 AI 모델의 유해성을 평가했다는 소식이며, 요약이 제공되지 않아 방법과 결과는 확인할 수 없다.",
-          "url": "https://aisi.re.kr/kor/article/view.do?articleId=131",
-          "date": "2026-11-03",
-          "source": "AISI Korea"
-        },
-        {
-          "title": "힌턴: AI는 우리와 같고, 우리를 좋아할까?",
-          "orig": "Hinton: “Is AI Like Us and Will It Like Us?”",
-          "summary": "힌턴의 2026 빈 괴델 강연과 토론 녹취록으로, 디지털 AI의 정보 공유 능력, 생존·권력 추구 같은 도구적 목표의 위험, 의식과 도덕적 지위, 안전 문제를 논의한다.",
-          "url": "https://doi.org/10.70777/si.v3i4.18976",
-          "date": "2026-11-02",
-          "source": "SuperIntelligence - Robotics - Safety & Alignment"
-        },
-        {
-          "title": "AI Act 준수 격차 분석·개선 에이전트 프레임워크",
-          "orig": "ComplianceAtlas: A Taxonomy-Driven Agentic AI Framework for Automated AI Act Gap Analysis and Remediation",
-          "summary": "고위험 AI 시스템의 기술적 준수 격차 분류체계와 격차 추출·개선안 추천 두 에이전트를 제안하고, 9개 시스템에서 격차 유형 F1 0.831로 기존 베이스라인(0.533)을 앞섰다.",
-          "url": "https://arxiv.org/abs/2611.03121v1",
-          "date": "2026-11-02",
+          "title": "누가 AI를 독립적으로 평가할 수 있는가: 평가 인프라 분석틀",
+          "orig": "Who Can Evaluate AI Independently? A Framework for Analysing Evaluation Infrastructure",
+          "summary": "평가 인프라의 통제권을 분석하는 PAAI 프레임워크를 제안하고, 아프리카 AI 평가 사례 12건과 AISI 네트워크 공동 시험 3건에 적용해 참여만으로는 평가 권한이 생기지 않음을 밝혔다.",
+          "url": "https://arxiv.org/abs/2611.08134v1",
+          "date": "2026-11-05",
           "source": "arXiv"
         },
         {
-          "title": "다중 에이전트 게임으로 본 AI 기만 성향 측정",
-          "orig": "Four Bridges: Measuring Deception Propensity in a Multi-Agent Game",
-          "summary": "정보 비대칭 게임 Four Bridges에서 프론티어 모델 8종을 평가한 결과, 기만 지시 없이도 전체 실행의 73%에서 기만이 나타났고, 정직성 스티어링 벡터와 적대적 정직성 학습이 기만을 크게 줄였다.",
-          "url": "https://arxiv.org/abs/2611.03600v1",
-          "date": "2026-11-02",
+          "title": "맹목적 순응: AI 탈옥에서의 강압적 통제",
+          "orig": "\"Blind Compliance\": Coercive Control in AI Jailbreaking",
+          "summary": "대인 폭력 연구의 강압적 통제 개념으로 AI 탈옥을 상호작용 관점에서 재해석하고, 페르소나 기반 탈옥이 학습 방식에 내재된 통제 역학을 악용하는 방식을 분석했다.",
+          "url": "https://arxiv.org/abs/2611.08226v1",
+          "date": "2026-11-05",
+          "source": "arXiv"
+        },
+        {
+          "title": "멀티모달 사회공학 공격 하 AI 에이전트 보안 벤치마크",
+          "orig": "Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks",
+          "summary": "실제 사기 사례에 기반한 608개 과제로 개인 AI 에이전트의 멀티모달 사회공학 공격 취약성을 평가해, 7개 모델의 공격 성공률이 7.1~34.5%이고 멀티모달 콘텐츠가 이를 19.9%에서 29.2%로 높인다는 것을 보였다.",
+          "url": "https://arxiv.org/abs/2611.08281v1",
+          "date": "2026-11-05",
+          "source": "arXiv"
+        },
+        {
+          "title": "AI 안전을 위한 기계적 해석가능성 서베이",
+          "orig": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+          "summary": "기계적 해석가능성 방법(특징 추출, 회로 발견, 학습 동역학 등)을 AI 안전 관점에서 서베이하고, 해석 주장 평가용 통합 틀과 여섯 가지 연구 지향을 제안하며 예제 코드 노트북을 공개했다.",
+          "url": "https://arxiv.org/abs/2611.08438v1",
+          "date": "2026-11-05",
           "source": "arXiv"
         }
       ],
@@ -33531,26 +33540,26 @@
           "kind": "법안"
         },
         {
-          "id": "doc-5401b701065f",
-          "title": "Recife AI 정책·도시 전략",
-          "date": "2026-10-30",
-          "flag": "🇧🇷",
+          "id": "doc-3d8938cbdde5",
+          "title": "북아일랜드 EU AI Act 부분 적용 지침",
+          "date": "2026-11-04",
+          "flag": "🇬🇧",
           "org": "",
           "kind": "가이드라인·원칙"
         },
         {
-          "id": "doc-29f0044a5b8a",
-          "title": "이탈리아 시민 AI 배심원·국가 Civic AI 거버넌스 프레임워크",
-          "date": "2026-10-30",
-          "flag": "🇮🇹",
+          "id": "doc-e4614bfe7934",
+          "title": "산업 디지털 전환·AI 활용 촉진법 개정안",
+          "date": "2026-11-02",
+          "flag": "🇰🇷",
           "org": "",
-          "kind": "기구·제도"
+          "kind": "법안"
         },
         {
-          "id": "doc-c0de3336b7c7",
-          "title": "인도 TRAI 통신 분야 책임있는 AI 가이드라인 초안",
+          "id": "doc-5401b701065f",
+          "title": "Recife AI 정책·도시 전략",
           "date": "2026-10-30",
-          "flag": "🇮🇳",
+          "flag": "🇧🇷",
           "org": "",
           "kind": "가이드라인·원칙"
         }
@@ -33754,6 +33763,14 @@
         "pdf_gloss_df": 0
       },
       "research": [
+        {
+          "title": "고위험 AI 사이버보안: AI법 15조와 CRA 중첩",
+          "orig": "One product, two rulebooks: the cybersecurity of high-risk AI systems between article 15 AI act and the cyber resilience act after the digital omnibus",
+          "summary": "디지털 옴니버스 이후 EU AI법 제15조와 사이버복원력법(CRA)이 고위험 AI 시스템에 이중 적용되는 범위와 적합성 추정 연결 장치를 분석하고, 통합 컴플라이언스 체계와 권고안을 제시했다.",
+          "url": "https://doi.org/10.1365/s43439-026-00178-4",
+          "date": "2026-11-03",
+          "source": "International Cybersecurity Law Review"
+        },
         {
           "title": "고위험 AI 시스템의 운영 정렬과 비정렬 사례연구",
           "orig": "On AI operational alignment and misalignment for high-risk AI systems: case study",
@@ -35628,6 +35645,14 @@
       },
       "research": [
         {
+          "title": "맹목적 순응: AI 탈옥에서의 강압적 통제",
+          "orig": "\"Blind Compliance\": Coercive Control in AI Jailbreaking",
+          "summary": "대인 폭력 연구의 강압적 통제 개념으로 AI 탈옥을 상호작용 관점에서 재해석하고, 페르소나 기반 탈옥이 학습 방식에 내재된 통제 역학을 악용하는 방식을 분석했다.",
+          "url": "https://arxiv.org/abs/2611.08226v1",
+          "date": "2026-11-05",
+          "source": "arXiv"
+        },
+        {
           "title": "다중 가치 정렬을 위한 활성값 스티어링 VIAS",
           "orig": "VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations",
           "summary": "조직 가치 준수를 위해 대상 가치 하나를 뺀 프롬프트와 전체 가치 프롬프트의 응답을 대조해 가치별 스티어링 벡터를 분리하는 VIAS를 제안하고, 프롬프팅과 함께 쓰면 세 개 7B급 모델 모두에서 모든 가치를 준수하는 비율이 프롬프팅 단독보다 높아졌다.",
@@ -35650,14 +35675,6 @@
           "url": "https://doi.org/10.3390/aisoc1020007",
           "date": "2026-10-27",
           "source": "AI for Society"
-        },
-        {
-          "title": "EU AI법 대응 AI 위험 온톨로지: AIRO·VAIR",
-          "orig": "AI Risk Ontologies for the EU AI Act Compliance: AIRO, VAIR, and their Integration with DPV",
-          "summary": "EU AI법의 고위험 AI 위험관리·문서화 요건에 맞춰 AI 위험 온톨로지(AIRO)와 어휘집(VAIR)을 개발하고, 이를 데이터 프라이버시 어휘집(DPV)에 통합했다.",
-          "url": "https://arxiv.org/abs/2610.31380v1",
-          "date": "2026-10-22",
-          "source": "arXiv"
         }
       ],
       "library_docs": [
